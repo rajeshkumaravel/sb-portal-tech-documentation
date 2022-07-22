@@ -1,0 +1,1765 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  ValidateTeacherIdentifierPopupComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-validate-teacher-identifier-popup</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./validate-teacher-identifier-popup.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./validate-teacher-identifier-popup.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#channelData" >channelData</a>
+                            </li>
+                            <li>
+                                <a href="#closeInteractEdata" >closeInteractEdata</a>
+                            </li>
+                            <li>
+                                <a href="#createValidateModal" >createValidateModal</a>
+                            </li>
+                            <li>
+                                <a href="#enableSubmitButton" >enableSubmitButton</a>
+                            </li>
+                            <li>
+                                <a href="#extIdFailed" >extIdFailed</a>
+                            </li>
+                            <li>
+                                <a href="#extIdVerified" >extIdVerified</a>
+                            </li>
+                            <li>
+                                <a href="#formBuilder" >formBuilder</a>
+                            </li>
+                            <li>
+                                <a href="#pageId" >pageId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#popupControlService" >popupControlService</a>
+                            </li>
+                            <li>
+                                <a href="#processValidation" >processValidation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#resourceService" >resourceService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#router" >router</a>
+                            </li>
+                            <li>
+                                <a href="#showError" >showError</a>
+                            </li>
+                            <li>
+                                <a href="#showStateDropdown" >showStateDropdown</a>
+                            </li>
+                            <li>
+                                <a href="#telemetryCdata" >telemetryCdata</a>
+                            </li>
+                            <li>
+                                <a href="#telemetryImpressionData" >telemetryImpressionData</a>
+                            </li>
+                            <li>
+                                <a href="#telemetryInteractObject" >telemetryInteractObject</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toasterService" >toasterService</a>
+                            </li>
+                            <li>
+                                <a href="#userDetailsForm" >userDetailsForm</a>
+                            </li>
+                            <li>
+                                <a href="#userId" >userId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#userService" >userService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#closeModal" >closeModal</a>
+                            </li>
+                            <li>
+                                <a href="#handleSubmitButton" >handleSubmitButton</a>
+                            </li>
+                            <li>
+                                <a href="#initializeFormField" >initializeFormField</a>
+                            </li>
+                            <li>
+                                <a href="#navigateToValidateId" >navigateToValidateId</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#processUserFeedData" >processUserFeedData</a>
+                            </li>
+                            <li>
+                                <a href="#setTelemetryData" >setTelemetryData</a>
+                            </li>
+                            <li>
+                                <a href="#verifyExtId" >verifyExtId</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#labels" >labels</a>
+                            </li>
+                            <li>
+                                <a href="#userFeedData" >userFeedData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#close" >close</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, resourceService: <a href="../injectables/ResourceService.html" target="_self">ResourceService</a>, toasterService: <a href="../injectables/ToasterService.html" target="_self">ToasterService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, popupControlService: <a href="../injectables/PopupControlService.html" target="_self">PopupControlService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>resourceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toasterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>popupControlService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PopupControlService.html" target="_self" >PopupControlService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="labels"></a>
+                        <b>labels</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:18</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userFeedData"></a>
+                        <b>userFeedData</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/variables.html#type" target="_self" >literal type</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:17</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="close"></a>
+                        <b>close</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:19</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeModal"></a>
+                    <span class="name">
+                        <span ><b>closeModal</b></span>
+                        <a href="#closeModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeModal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="105"
+                            class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:105</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleSubmitButton"></a>
+                    <span class="name">
+                        <span ><b>handleSubmitButton</b></span>
+                        <a href="#handleSubmitButton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleSubmitButton()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeFormField"></a>
+                    <span class="name">
+                        <span ><b>initializeFormField</b></span>
+                        <a href="#initializeFormField"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializeFormField()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToValidateId"></a>
+                    <span class="name">
+                        <span ><b>navigateToValidateId</b></span>
+                        <a href="#navigateToValidateId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>navigateToValidateId()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="155"
+                            class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:155</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="processUserFeedData"></a>
+                    <span class="name">
+                        <span ><b>processUserFeedData</b></span>
+                        <a href="#processUserFeedData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>processUserFeedData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setTelemetryData"></a>
+                    <span class="name">
+                        <span ><b>setTelemetryData</b></span>
+                        <a href="#setTelemetryData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setTelemetryData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="118"
+                            class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:118</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="verifyExtId"></a>
+                    <span class="name">
+                        <span ><b>verifyExtId</b></span>
+                        <a href="#verifyExtId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>verifyExtId(action: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>action</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="channelData"></a>
+                    <span class="name">
+                        <span ><b>channelData</b></span>
+                        <a href="#channelData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeInteractEdata"></a>
+                    <span class="name">
+                        <span ><b>closeInteractEdata</b></span>
+                        <a href="#closeInteractEdata"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createValidateModal"></a>
+                    <span class="name">
+                        <span ><b>createValidateModal</b></span>
+                        <a href="#createValidateModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;createValidateModal&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="enableSubmitButton"></a>
+                    <span class="name">
+                        <span ><b>enableSubmitButton</b></span>
+                        <a href="#enableSubmitButton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="extIdFailed"></a>
+                    <span class="name">
+                        <span ><b>extIdFailed</b></span>
+                        <a href="#extIdFailed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="extIdVerified"></a>
+                    <span class="name">
+                        <span ><b>extIdVerified</b></span>
+                        <a href="#extIdVerified"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formBuilder"></a>
+                    <span class="name">
+                        <span ><b>formBuilder</b></span>
+                        <a href="#formBuilder"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pageId"></a>
+                    <span class="name">
+                        <span ><b>pageId</b></span>
+                        <a href="#pageId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;user-verification-popup&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="popupControlService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>popupControlService</b></span>
+                        <a href="#popupControlService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/PopupControlService.html" target="_self" >PopupControlService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="processValidation"></a>
+                    <span class="name">
+                        <span ><b>processValidation</b></span>
+                        <a href="#processValidation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resourceService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>resourceService</b></span>
+                        <a href="#resourceService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="router"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>router</b></span>
+                        <a href="#router"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showError"></a>
+                    <span class="name">
+                        <span ><b>showError</b></span>
+                        <a href="#showError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showStateDropdown"></a>
+                    <span class="name">
+                        <span ><b>showStateDropdown</b></span>
+                        <a href="#showStateDropdown"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryCdata"></a>
+                    <span class="name">
+                        <span ><b>telemetryCdata</b></span>
+                        <a href="#telemetryCdata"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/variables.html#type" target="_self" >Array&lt;literal type&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryImpressionData"></a>
+                    <span class="name">
+                        <span ><b>telemetryImpressionData</b></span>
+                        <a href="#telemetryImpressionData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IImpressionEventInput.html" target="_self" >IImpressionEventInput</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryInteractObject"></a>
+                    <span class="name">
+                        <span ><b>telemetryInteractObject</b></span>
+                        <a href="#telemetryInteractObject"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IInteractEventObject.html" target="_self" >IInteractEventObject</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toasterService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>toasterService</b></span>
+                        <a href="#toasterService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userDetailsForm"></a>
+                    <span class="name">
+                        <span ><b>userDetailsForm</b></span>
+                        <a href="#userDetailsForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userId"></a>
+                    <span class="name">
+                        <span ><b>userId</b></span>
+                        <a href="#userId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>userService</b></span>
+                        <a href="#userService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/modules/shared-feature/components/validate-teacher-identifier-popup/validate-teacher-identifier-popup.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { IInteractEventObject, IImpressionEventInput } from &#x27;@sunbird/telemetry&#x27;;
+import { ResourceService } from &#x27;@sunbird/shared&#x27;;
+import { Component, OnInit, ViewChild, Output, EventEmitter, Input, OnDestroy } from &#x27;@angular/core&#x27;;
+import { UserService } from &#x27;@sunbird/core&#x27;;
+import { ToasterService } from &#x27;@sunbird/shared&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import { FormBuilder, Validators, FormGroup, FormControl } from &#x27;@angular/forms&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { PopupControlService } from &#x27;../../../../service/popup-control.service&#x27;;
+
+@Component({
+  selector: &#x27;app-validate-teacher-identifier-popup&#x27;,
+  templateUrl: &#x27;./validate-teacher-identifier-popup.component.html&#x27;,
+  styleUrls: [&#x27;./validate-teacher-identifier-popup.component.scss&#x27;]
+})
+export class ValidateTeacherIdentifierPopupComponent implements OnInit, OnDestroy {
+  @Input() userFeedData: {};
+  @Input() labels: any;
+  @Output() close &#x3D; new EventEmitter&lt;any&gt;();
+  @ViewChild(&#x27;createValidateModal&#x27;) createValidateModal;
+  userDetailsForm: FormGroup;
+  formBuilder: FormBuilder;
+  processValidation &#x3D; false;
+  enableSubmitButton: boolean;
+  showError: boolean;
+  extIdVerified: boolean;
+  extIdFailed: boolean;
+  userId: string;
+  channelData: [];
+  showStateDropdown: boolean;
+  telemetryCdata: Array&lt;{}&gt; &#x3D; [];
+  telemetryInteractObject: IInteractEventObject;
+  telemetryImpressionData: IImpressionEventInput;
+  closeInteractEdata: any;
+  pageId &#x3D; &#x27;user-verification-popup&#x27;;
+  constructor(
+    public userService: UserService,
+    public resourceService: ResourceService,
+    public toasterService: ToasterService,
+    public router: Router, public popupControlService: PopupControlService) { }
+
+  ngOnInit() {
+    this.popupControlService.changePopupStatus(false);
+    this.setTelemetryData();
+    this.userId &#x3D; this.userService.userid;
+    this.processUserFeedData();
+    this.initializeFormField();
+  }
+
+  initializeFormField() {
+    this.userDetailsForm &#x3D; new FormGroup({
+      extId: new FormControl(&#x27;&#x27;, Validators.required)
+    });
+    if (this.showStateDropdown) {
+      this.userDetailsForm.addControl(&#x27;state&#x27;, new FormControl(&#x27;&#x27;, Validators.required));
+    }
+    this.handleSubmitButton();
+  }
+
+  handleSubmitButton() {
+    this.enableSubmitButton &#x3D; false;
+    this.userDetailsForm.valueChanges.subscribe(val &#x3D;&gt; {
+      this.showError &#x3D; false;
+      this.enableSubmitButton &#x3D; (this.userDetailsForm.status &#x3D;&#x3D;&#x3D; &#x27;VALID&#x27;);
+    });
+  }
+
+  verifyExtId(action: string) {
+    const req &#x3D; {
+      request: {
+        &#x27;userId&#x27;: this.userId,
+        &#x27;action&#x27;: action,
+        &#x27;feedId&#x27;: _.get(this.userFeedData, &#x27;id&#x27;)
+      }
+    };
+    if (action &#x3D;&#x3D;&#x3D; &#x27;accept&#x27;) {
+      const channelValue &#x3D; _.get(this.userFeedData, &#x27;data.prospectChannels&#x27;).length &gt; 1 ?
+        this.userDetailsForm.get(&#x27;state&#x27;).value : _.get(this.userFeedData, &#x27;data.prospectChannels[0]&#x27;);
+      req.request[&#x27;channel&#x27;] &#x3D; channelValue;
+      req.request[&#x27;userExtId&#x27;] &#x3D; this.userDetailsForm.get(&#x27;extId&#x27;).value;
+    }
+
+    this.userService.userMigrate(req).subscribe((data) &#x3D;&gt; {
+      if (_.get(data, &#x27;responseCode&#x27;) &#x3D;&#x3D;&#x3D; &#x27;OK&#x27; &amp;&amp; _.get(data, &#x27;result.response&#x27;) &#x3D;&#x3D;&#x3D; &#x27;SUCCESS&#x27;) {
+        this.extIdVerified &#x3D; true;
+      }
+    }, (error) &#x3D;&gt; {
+      if (_.get(error, &#x27;responseCode&#x27;) &#x3D;&#x3D;&#x3D; &#x27;invalidUserExternalId&#x27; &amp;&amp; _.get(error, &#x27;result.remainingAttempt&#x27;) &gt; 0) {
+        this.userDetailsForm.reset();
+        this.showError &#x3D; true;
+      } else if (_.get(error, &#x27;error.params.err&#x27;) &#x3D;&#x3D;&#x3D; &#x27;USER_MIGRATION_FAILED&#x27;) {
+        this.extIdFailed &#x3D; true;
+      } else {
+        this.toasterService.error(this.resourceService.messages.emsg.m0005);
+        this.closeModal();
+      }
+    });
+  }
+
+  processUserFeedData() {
+    this.channelData &#x3D; _.get(this.userFeedData, &#x27;data.prospectChannels&#x27;);
+    this.showStateDropdown &#x3D; this.channelData.length &gt; 1 ? true : false;
+  }
+
+  closeModal() {
+    if (this.extIdVerified) {
+      this.userService.getUserProfile();
+    }
+    this.createValidateModal.deny();
+    this.close.emit();
+    this.popupControlService.changePopupStatus(true);
+  }
+
+  navigateToValidateId() {
+    this.processValidation &#x3D; true;
+  }
+
+  setTelemetryData() {
+    this.closeInteractEdata &#x3D; {
+      id: this.extIdVerified ? &#x27;ext-user-verify-success&#x27; : &#x27;ext-user-verify-fail&#x27;,
+      type: &#x27;click&#x27;,
+      pageid: this.pageId
+
+    };
+    this.telemetryCdata &#x3D; [
+      {
+        id: &#x27;user:state:teacherId&#x27;,
+        type: &#x27;Feature&#x27;
+      },
+      {
+        id: &#x27;SC-1349&#x27;,
+        type: &#x27;Task&#x27;
+      }
+    ];
+
+    this.telemetryInteractObject &#x3D; {
+      id: this.userService.userid,
+      type: &#x27;User&#x27;,
+      ver: &#x27;1.0&#x27;
+    };
+
+    this.telemetryImpressionData &#x3D; {
+      context: {
+        env: &#x27;user-verification&#x27;,
+        cdata: this.telemetryCdata
+      },
+      edata: {
+        type: &#x27;view&#x27;,
+        pageid: this.pageId,
+        uri: this.router.url
+      }
+    };
+  }
+
+  ngOnDestroy(): void {
+    this.popupControlService.changePopupStatus(true);
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-modal-wrapper [config]&#x3D;&quot;{disableClose: true, size: &#x27;normal&#x27;}&quot; [appTelemetryImpression]&#x3D;&quot;telemetryImpressionData&quot;
+  #createValidateModal&gt;
+  &lt;ng-template sbModalContent&gt;
+    &lt;div class&#x3D;&quot;sb-modal&quot;&gt;
+      &lt;div class&#x3D;&quot;transition ui dimmer page modals active visible&quot;&gt;
+        &lt;div class&#x3D;&quot;ui modal transition active visible normal&quot;&gt;
+          &lt;!--Header--&gt;
+          &lt;div class&#x3D;&quot;sb-modal-header&quot;&gt;
+            {{labels?.popupHeaderLabel}}
+          &lt;/div&gt;
+          &lt;!--/Header--&gt;
+
+          &lt;!--modal content--&gt;
+          &lt;div class&#x3D;&quot;sb-modal-content&quot;&gt;
+            &lt;div *ngIf&#x3D;&quot;!processValidation&quot;&gt;
+              {{labels?.headerLabel}}
+            &lt;/div&gt;
+            &lt;form class&#x3D;&quot;sb-form&quot; [formGroup]&#x3D;&quot;userDetailsForm&quot;&gt;
+              &lt;div *ngIf&#x3D;&quot;processValidation &amp;&amp; !(extIdVerified || extIdFailed)&quot; class&#x3D;&quot;sb-field-group mb-16 text-left&quot;&gt;
+                &lt;div class&#x3D;&quot;sb-field&quot; *ngIf&#x3D;&quot;showStateDropdown&quot;&gt;
+                  &lt;label&gt;{{resourceService?.frmelmnts?.lbl?.state}}&lt;/label&gt;
+                  &lt;sui-select id&#x3D;&quot;stateField&quot; [isSearchable]&#x3D;&quot;false&quot; class&#x3D;&quot;selection&quot; [options]&#x3D;&quot;options&quot;
+                    formControlName&#x3D;&quot;state&quot;&gt;
+                    &lt;sui-select-option *ngFor&#x3D;&quot;let option of channelData&quot; [value]&#x3D;&quot;option&quot;&gt;&lt;/sui-select-option&gt;
+                  &lt;/sui-select&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;sb-field&quot;&gt;
+                  &lt;label class&#x3D;&quot;required&quot;&gt;{{labels?.fieldLabel}}&lt;/label&gt;
+                  &lt;input #extIdInputField type&#x3D;&quot;text&quot; required name&#x3D;&quot;extId&quot; placeholder&#x3D;&quot;For example, ER12345&quot;
+                    class&#x3D;&quot;sb-form-control&quot; formControlName&#x3D;&quot;extId&quot; /&gt;
+                  &lt;span *ngIf&#x3D;&quot;showError&quot; class&#x3D;&quot;sb-color-error fxsmall mt-8&quot;&gt;
+                    {{labels?.incorrectIDLabel}}
+                  &lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/form&gt;
+            &lt;!-- Success / error field  --&gt;
+            &lt;div *ngIf&#x3D;&quot;extIdVerified&quot; class&#x3D;&quot;text-center my-24&quot;&gt;
+              {{labels?.verificationSuccessfulLabel}}
+            &lt;/div&gt;
+
+            &lt;div *ngIf&#x3D;&quot;extIdFailed&quot; class&#x3D;&quot;text-center my-24&quot;&gt;
+              {{labels?.verficationFailureLabel}}
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!--modal content--&gt;
+
+          &lt;!--action buttons--&gt;
+
+          &lt;div class&#x3D;&quot;sb-modal-actions&quot;&gt;
+            &lt;div class&#x3D;&quot;action-btns&quot; *ngIf&#x3D;&quot;!processValidation&quot;&gt;
+              &lt;button tabindex&#x3D;&quot;0&quot; appTelemetryInteract
+                [telemetryInteractEdata]&#x3D;&quot;{id:&#x27;ext-user-verify-reject&#x27; , type:&#x27;click&#x27; , pageid: pageId }&quot;
+                [telemetryInteractCdata]&#x3D;&quot;telemetryCdata&quot; [telemetryInteractObject]&#x3D;&quot;telemetryInteractObject&quot;
+                type&#x3D;&quot;button&quot; class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-outline-primary mr-8&quot; tabindex&#x3D;&quot;0&quot;
+                (click)&#x3D;&quot;verifyExtId(&#x27;reject&#x27;); closeModal()&quot;&gt;
+                {{resourceService?.frmelmnts?.btn?.no}}
+              &lt;/button&gt;
+              &lt;button tabindex&#x3D;&quot;0&quot; appTelemetryInteract
+                [telemetryInteractEdata]&#x3D;&quot;{id:&#x27;ext-user-verify-confirm&#x27; , type:&#x27;click&#x27; , pageid: pageId }&quot;
+                [telemetryInteractCdata]&#x3D;&quot;telemetryCdata&quot; [telemetryInteractObject]&#x3D;&quot;telemetryInteractObject&quot;
+                type&#x3D;&quot;button&quot; class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-primary&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;navigateToValidateId()&quot;&gt;
+                {{resourceService?.frmelmnts?.btn?.yes}}
+              &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;button tabindex&#x3D;&quot;0&quot; appTelemetryInteract
+              [telemetryInteractEdata]&#x3D;&quot;{id:&#x27;ext-user-verify-submit&#x27; , type:&#x27;click&#x27; , pageid: pageId }&quot;
+              [telemetryInteractCdata]&#x3D;&quot;telemetryCdata&quot; [telemetryInteractObject]&#x3D;&quot;telemetryInteractObject&quot;
+              [disabled]&#x3D;&quot;!enableSubmitButton&quot; *ngIf&#x3D;&quot;processValidation &amp;&amp; !(extIdVerified || extIdFailed)&quot;
+              type&#x3D;&quot;submit&quot; class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-primary&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;verifyExtId(&#x27;accept&#x27;)&quot;&gt;
+              {{resourceService?.frmelmnts?.btn?.submit}}
+            &lt;/button&gt;
+            &lt;button tabindex&#x3D;&quot;0&quot; appTelemetryInteract [telemetryInteractEdata]&#x3D;&quot;closeInteractEdata&quot;
+              [telemetryInteractCdata]&#x3D;&quot;telemetryCdata&quot; [telemetryInteractObject]&#x3D;&quot;telemetryInteractObject&quot;
+              *ngIf&#x3D;&quot;extIdVerified || extIdFailed&quot;
+              [ngClass]&#x3D;&quot;{&#x27;sb-btn-error&#x27; : extIdFailed, &#x27;sb-btn-success&#x27; : extIdVerified }&quot; type&#x3D;&quot;button&quot;
+              class&#x3D;&quot;sb-btn sb-btn-normal&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;closeModal()&quot;&gt;
+              &lt;!--sb-btn-success--&gt;
+              {{resourceService?.frmelmnts?.btn?.ok}}
+            &lt;/button&gt;
+          &lt;/div&gt;
+          &lt;!--action buttons--&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/ng-template&gt;
+&lt;/app-modal-wrapper&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./validate-teacher-identifier-popup.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-modal-wrapper [config]="{disableClose: true, size: \'normal\'}" [appTelemetryImpression]="telemetryImpressionData"  #createValidateModal>  <ng-template sbModalContent>    <div class="sb-modal">      <div class="transition ui dimmer page modals active visible">        <div class="ui modal transition active visible normal">          <!--Header-->          <div class="sb-modal-header">            {{labels?.popupHeaderLabel}}          </div>          <!--/Header-->          <!--modal content-->          <div class="sb-modal-content">            <div *ngIf="!processValidation">              {{labels?.headerLabel}}            </div>            <form class="sb-form" [formGroup]="userDetailsForm">              <div *ngIf="processValidation && !(extIdVerified || extIdFailed)" class="sb-field-group mb-16 text-left">                <div class="sb-field" *ngIf="showStateDropdown">                  <label>{{resourceService?.frmelmnts?.lbl?.state}}</label>                  <sui-select id="stateField" [isSearchable]="false" class="selection" [options]="options"                    formControlName="state">                    <sui-select-option *ngFor="let option of channelData" [value]="option"></sui-select-option>                  </sui-select>                </div>                <div class="sb-field">                  <label class="required">{{labels?.fieldLabel}}</label>                  <input #extIdInputField type="text" required name="extId" placeholder="For example, ER12345"                    class="sb-form-control" formControlName="extId" />                  <span *ngIf="showError" class="sb-color-error fxsmall mt-8">                    {{labels?.incorrectIDLabel}}                  </span>                </div>              </div>            </form>            <!-- Success / error field  -->            <div *ngIf="extIdVerified" class="text-center my-24">              {{labels?.verificationSuccessfulLabel}}            </div>            <div *ngIf="extIdFailed" class="text-center my-24">              {{labels?.verficationFailureLabel}}            </div>          </div>          <!--modal content-->          <!--action buttons-->          <div class="sb-modal-actions">            <div class="action-btns" *ngIf="!processValidation">              <button tabindex="0" appTelemetryInteract                [telemetryInteractEdata]="{id:\'ext-user-verify-reject\' , type:\'click\' , pageid: pageId }"                [telemetryInteractCdata]="telemetryCdata" [telemetryInteractObject]="telemetryInteractObject"                type="button" class="sb-btn sb-btn-normal sb-btn-outline-primary mr-8" tabindex="0"                (click)="verifyExtId(\'reject\'); closeModal()">                {{resourceService?.frmelmnts?.btn?.no}}              </button>              <button tabindex="0" appTelemetryInteract                [telemetryInteractEdata]="{id:\'ext-user-verify-confirm\' , type:\'click\' , pageid: pageId }"                [telemetryInteractCdata]="telemetryCdata" [telemetryInteractObject]="telemetryInteractObject"                type="button" class="sb-btn sb-btn-normal sb-btn-primary" tabindex="0" (click)="navigateToValidateId()">                {{resourceService?.frmelmnts?.btn?.yes}}              </button>            </div>            <button tabindex="0" appTelemetryInteract              [telemetryInteractEdata]="{id:\'ext-user-verify-submit\' , type:\'click\' , pageid: pageId }"              [telemetryInteractCdata]="telemetryCdata" [telemetryInteractObject]="telemetryInteractObject"              [disabled]="!enableSubmitButton" *ngIf="processValidation && !(extIdVerified || extIdFailed)"              type="submit" class="sb-btn sb-btn-normal sb-btn-primary" tabindex="0" (click)="verifyExtId(\'accept\')">              {{resourceService?.frmelmnts?.btn?.submit}}            </button>            <button tabindex="0" appTelemetryInteract [telemetryInteractEdata]="closeInteractEdata"              [telemetryInteractCdata]="telemetryCdata" [telemetryInteractObject]="telemetryInteractObject"              *ngIf="extIdVerified || extIdFailed"              [ngClass]="{\'sb-btn-error\' : extIdFailed, \'sb-btn-success\' : extIdVerified }" type="button"              class="sb-btn sb-btn-normal" tabindex="0" (click)="closeModal()">              <!--sb-btn-success-->              {{resourceService?.frmelmnts?.btn?.ok}}            </button>          </div>          <!--action buttons-->        </div>      </div>    </div>  </ng-template></app-modal-wrapper></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'app-access-discussion'},{'name': 'AccountMergeModalComponent', 'selector': 'app-account-merge-modal'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-info'},{'name': 'ActivityDashboardComponent', 'selector': 'app-activity-dashboard'},{'name': 'ActivityDetailsComponent', 'selector': 'app-activity-details'},{'name': 'ActivityFormComponent', 'selector': 'app-activity-form'},{'name': 'ActivityListComponent', 'selector': 'app-activity-list'},{'name': 'ActivitySearchComponent', 'selector': 'app-activity-search'},{'name': 'AddActivityComponent', 'selector': 'app-add-activity'},{'name': 'AddActivityContentTypesComponent', 'selector': 'app-add-activity-content-types'},{'name': 'AddEntityComponent', 'selector': 'add-entity'},{'name': 'AddMemberComponent', 'selector': 'app-add-member'},{'name': 'AddSummaryModalComponent', 'selector': 'app-add-summary-modal'},{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AllContentComponent', 'selector': 'app-all-content'},{'name': 'AllEvidenceComponent', 'selector': 'app-all-evidence'},{'name': 'AllTextbooksComponent', 'selector': 'app-all-textbooks'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppLandingSectionComponent', 'selector': 'app-landing-section'},{'name': 'AppLoaderComponent', 'selector': 'app-loader'},{'name': 'AssessmentPlayerComponent', 'selector': 'app-assessment-player'},{'name': 'AssignBadgesContentComponent', 'selector': 'app-assign-badges-content'},{'name': 'AuthFailedComponent', 'selector': 'app-auth-failed'},{'name': 'BackButtonComponent', 'selector': 'app-back-button'},{'name': 'BatchCardComponent', 'selector': 'app-batch-card'},{'name': 'BatchDetailsComponent', 'selector': 'app-batch-details'},{'name': 'BatchInfoComponent', 'selector': 'app-batch-info'},{'name': 'BatchListComponent', 'selector': 'app-batch-list'},{'name': 'BatchPageSectionComponent', 'selector': 'app-batch-page-section'},{'name': 'BrowseImagePopupComponent', 'selector': 'browse-image-popup'},{'name': 'BrowserCompatibilityComponent', 'selector': 'app-browser-compatibility'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardCreationComponent', 'selector': 'app-card-creation'},{'name': 'CertificateConfigurationComponent', 'selector': 'app-certificate-configuration'},{'name': 'CertificateDetailsComponent', 'selector': 'app-certificate-details'},{'name': 'CertificateNameUpdatePopupComponent', 'selector': 'app-certificate-name-update-popup'},{'name': 'CertPreviewPopupComponent', 'selector': 'app-cert-preview-popup'},{'name': 'ChooseUserComponent', 'selector': 'app-choose-user'},{'name': 'CollaboratingOnComponent', 'selector': 'app-collaborating-on'},{'name': 'CollaborationContentFilterComponent', 'selector': 'app-collaboration-content-filter'},{'name': 'CollectionEditorComponent', 'selector': 'app-collection-editor'},{'name': 'CollectionPlayerComponent', 'selector': 'app-collection-player'},{'name': 'CollectionPlayerMetadataComponent', 'selector': 'app-collection-player-metadata'},{'name': 'CommingSoonComponent', 'selector': 'app-comming-soon'},{'name': 'ConfirmationPopupComponent', 'selector': 'app-confirmation-popup'},{'name': 'ConfirmPopupComponent', 'selector': 'app-confirm-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentBadgeComponent', 'selector': 'app-content-badge'},{'name': 'ContentChapterlistComponent', 'selector': 'app-content-chapterlist'},{'name': 'ContentCreditsComponent', 'selector': 'app-content-credits'},{'name': 'ContentEditorComponent', 'selector': 'app-content-editor'},{'name': 'ContentLicenceComponent', 'selector': 'app-content-licence'},{'name': 'ContentManagerComponent', 'selector': 'app-content-manager'},{'name': 'ContentManagerInfoPopUpComponent', 'selector': 'app-content-manager-info-pop-up'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerMetadataComponent', 'selector': 'app-content-player-metadata'},{'name': 'ContentPlayerPageComponent', 'selector': 'app-contentplayer-page'},{'name': 'ContentRatingComponent', 'selector': 'app-content-rating'},{'name': 'ContentTypeComponent', 'selector': 'app-content-type'},{'name': 'CourseCompletionComponent', 'selector': 'app-course-completion'},{'name': 'CourseConsumptionComponent', 'selector': 'app-course-consumption'},{'name': 'CourseConsumptionHeaderComponent', 'selector': 'app-course-consumption-header'},{'name': 'CourseConsumptionPageComponent', 'selector': ''},{'name': 'CourseDashboardComponent', 'selector': 'app-course-dashboard'},{'name': 'CourseDetailsComponent', 'selector': 'app-course-details'},{'name': 'CourseInfoComponent', 'selector': 'app-course-info'},{'name': 'CoursePageComponent', 'selector': ''},{'name': 'CoursePlayerComponent', 'selector': 'app-course-player'},{'name': 'CourseProgressComponent', 'selector': 'app-course-progress'},{'name': 'CreateBatchComponent', 'selector': 'app-create-batch'},{'name': 'CreateContentComponent', 'selector': 'app-create-content'},{'name': 'CreateEditGroupComponent', 'selector': 'app-create-edit-group'},{'name': 'CreateOrgTypeComponent', 'selector': 'app-create-org-type'},{'name': 'CreateTemplateComponent', 'selector': 'app-create-template'},{'name': 'CreateUserComponent', 'selector': 'app-create-user'},{'name': 'CreditsAndLicenceComponent', 'selector': 'app-credits-and-licence'},{'name': 'CurriculumCardComponent', 'selector': 'app-curriculum-card'},{'name': 'CurriculumCoursesComponent', 'selector': 'app-curriculum-courses'},{'name': 'CurriculumInfoComponent', 'selector': 'app-curriculum-info'},{'name': 'CustomMultiSelectComponent', 'selector': 'app-custom-multi-select'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardSidebarComponent', 'selector': 'app-dashboard-sidebar'},{'name': 'DataChartComponent', 'selector': 'app-data-chart'},{'name': 'DataDrivenComponent', 'selector': 'app-data-driven'},{'name': 'DataDrivenFilterComponent', 'selector': 'app-data-driven-filter'},{'name': 'DatasetComponent', 'selector': 'app-dataset'},{'name': 'DatasetsComponent', 'selector': 'app-datasets'},{'name': 'DataTableComponent', 'selector': 'app-data-table'},{'name': 'DefaultTemplateComponent', 'selector': 'app-content-creation-default-template'},{'name': 'DesktopAppUpdateComponent', 'selector': 'app-desktop-app-update'},{'name': 'DialCodeCardComponent', 'selector': 'app-dial-code-card'},{'name': 'DialCodeComponent', 'selector': 'app-dial-code'},{'name': 'DraftComponent', 'selector': 'app-draft'},{'name': 'EditSubmissionComponent', 'selector': 'app-edit-submission'},{'name': 'EnrollBatchComponent', 'selector': 'app-enroll-batch'},{'name': 'EntityListComponent', 'selector': 'entity-list'},{'name': 'EntityListComponent', 'selector': 'app-entity-list'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'ExploreContentComponent', 'selector': ''},{'name': 'ExploreCourseComponent', 'selector': ''},{'name': 'ExploreCurriculumCoursesComponent', 'selector': 'app-explore-curriculum-courses'},{'name': 'ExploreFtuPopupComponent', 'selector': 'app-explore-ftu-popup'},{'name': 'ExploreGroupComponent', 'selector': 'app-explore-group'},{'name': 'ExplorePageComponent', 'selector': 'app-explore-page-component'},{'name': 'FancyTreeComponent', 'selector': 'app-fancy-tree'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FaqReportComponent', 'selector': 'app-faq-report'},{'name': 'FilterComponent', 'selector': 'app-filter'},{'name': 'FlagConentplayerComponent', 'selector': 'app-flag-conentplayer'},{'name': 'FlaggedComponent', 'selector': 'app-flagged'},{'name': 'FlagReviewerComponent', 'selector': 'app-flag-reviewer'},{'name': 'ForumComponent', 'selector': 'app-forum'},{'name': 'FtuPopupComponent', 'selector': 'app-ftu-popup'},{'name': 'FullPageLoaderComponent', 'selector': 'app-full-page-loader'},{'name': 'FullPageModalComponent', 'selector': 'app-full-page-modal'},{'name': 'GenericEditorComponent', 'selector': 'app-generic-editor'},{'name': 'GetComponent', 'selector': 'app-get'},{'name': 'GlobalConsentPiiComponent', 'selector': 'app-global-consent-pii'},{'name': 'GlobalSearchFilterComponent', 'selector': 'app-global-search-filter'},{'name': 'GlobalSearchSelectedFilterComponent', 'selector': 'app-global-search-selected-filter'},{'name': 'GroupDetailsComponent', 'selector': 'app-group-details'},{'name': 'GroupHeaderComponent', 'selector': 'app-group-header'},{'name': 'GroupMembersComponent', 'selector': 'app-group-members'},{'name': 'GuestProfileComponent', 'selector': 'app-guest-profile'},{'name': 'HomeSearchComponent', 'selector': ''},{'name': 'IdentifyAccountComponent', 'selector': ''},{'name': 'InAppNotificationComponent', 'selector': 'app-in-app-notification'},{'name': 'InfoCardComponent', 'selector': 'app-info-card'},{'name': 'InstallAppComponent', 'selector': 'app-install-app'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'LanguageDropdownComponent', 'selector': 'app-language-dropdown'},{'name': 'LibraryComponent', 'selector': 'app-library'},{'name': 'LimitedPublishedComponent', 'selector': 'app-limited-published'},{'name': 'ListAllReportsComponent', 'selector': 'app-list-all-reports'},{'name': 'LoadContentComponent', 'selector': 'app-load-content'},{'name': 'LoadOfflineContentComponent', 'selector': 'app-load-offline-content'},{'name': 'LocationSelectionComponent', 'selector': 'app-location-selection'},{'name': 'LockInfoPopupComponent', 'selector': 'app-contentlock-info-popup'},{'name': 'MainFooterComponent', 'selector': 'app-footer'},{'name': 'MainHeaderComponent', 'selector': 'app-header'},{'name': 'MainMenuComponent', 'selector': 'app-main-menu'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialAutoCompleteComponent', 'selector': 'app-material-auto-complete'},{'name': 'MemberActionsComponent', 'selector': 'app-member-actions'},{'name': 'MergeAccountStatusComponent', 'selector': 'app-merge-account-status'},{'name': 'ModalWrapperComponent', 'selector': 'app-modal-wrapper'},{'name': 'MyGroupsComponent', 'selector': 'app-my-groups'},{'name': 'NetworkStatusComponent', 'selector': 'app-network-status'},{'name': 'NewCollectionEditorComponent', 'selector': 'app-new-collection-editor'},{'name': 'NoGroupResultComponent', 'selector': 'app-no-group-result'},{'name': 'NoResultComponent', 'selector': 'app-no-result-found'},{'name': 'NoResultComponent', 'selector': 'app-no-result'},{'name': 'ObservationDetailsComponent', 'selector': 'app-observation-details'},{'name': 'ObservationListingComponent', 'selector': 'app-observation-listing'},{'name': 'OfflineApplicationDownloadComponent', 'selector': 'app-offline-application-download'},{'name': 'OfflineBannerComponent', 'selector': 'app-offline-banner'},{'name': 'OfflineHelpVideosComponent', 'selector': 'app-offline-help-videos'},{'name': 'OnboardingUserSelectionComponent', 'selector': 'app-onboarding-user-selection'},{'name': 'OnDemandReportsComponent', 'selector': 'app-on-demand-reports'},{'name': 'OrganisationComponent', 'selector': 'app-organization'},{'name': 'OrganizationUploadComponent', 'selector': 'app-organization'},{'name': 'OtpComponent', 'selector': 'app-otp'},{'name': 'OtpPopupComponent', 'selector': 'app-otp-popup'},{'name': 'PageSectionComponent', 'selector': 'app-page-section'},{'name': 'PlayerComponent', 'selector': 'app-player'},{'name': 'PopupComponent', 'selector': 'app-modal'},{'name': 'ProfileBadgeComponent', 'selector': 'app-profile-badge'},{'name': 'ProfileFrameworkPopupComponent', 'selector': 'app-popup'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'PublicBatchDetailsComponent', 'selector': 'app-public-batch-details'},{'name': 'PublicCourseConsumptionPageComponent', 'selector': ''},{'name': 'PublicCoursePlayerComponent', 'selector': 'app-public-course-player'},{'name': 'PublishedComponent', 'selector': 'app-published'},{'name': 'PublishedPopupComponent', 'selector': 'app-published-popup'},{'name': 'QrCodeModalComponent', 'selector': 'app-qr-code-modal'},{'name': 'QuestionnaireComponent', 'selector': 'app-questionnaire'},{'name': 'RecoverAccountComponent', 'selector': ''},{'name': 'RedirectComponent', 'selector': 'app-redirect'},{'name': 'ReIssueCertificateComponent', 'selector': 'app-re-issue-certificate'},{'name': 'ReportComponent', 'selector': 'app-report'},{'name': 'ReportSummaryComponent', 'selector': 'app-report-summary'},{'name': 'ReportViewComponent', 'selector': 'app-report-view'},{'name': 'RequestChangesPopupComponent', 'selector': 'app-request-changes-popup'},{'name': 'ReviewCommentsComponent', 'selector': 'app-review-comments'},{'name': 'ReviewSubmissionsComponent', 'selector': 'app-review-submissions'},{'name': 'ReviewsubmissionsContentplayerComponent', 'selector': 'app-reviewsubmissions-contentplayer'},{'name': 'SbDatatableComponent', 'selector': 'sb-datatable'},{'name': 'SbTableComponent', 'selector': 'app-sb-table'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SearchFilterComponent', 'selector': 'app-search-filter'},{'name': 'SelectAccountIdentifierComponent', 'selector': ''},{'name': 'SelectOptionGroupComponent', 'selector': 'app-select-option-group'},{'name': 'SelectOrgComponent', 'selector': ''},{'name': 'ShareLinkComponent', 'selector': 'app-share-link'},{'name': 'SignupBasicInfoComponent', 'selector': 'app-signup-basic-info'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupEmailPasswordComponent', 'selector': 'app-signup-email-password'},{'name': 'SignupOnboardingInfoComponent', 'selector': 'app-signup-onboarding-info'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'SsoMergeConfirmationComponent', 'selector': 'app-sso-merge-confirmation'},{'name': 'StatusComponent', 'selector': 'app-status'},{'name': 'SubmissionsComponent', 'selector': 'submission'},{'name': 'SubmitTeacherDetailsComponent', 'selector': 'app-submit-teacher-details'},{'name': 'SvgEditorComponent', 'selector': 'app-svg-editor'},{'name': 'SystemWarningComponent', 'selector': 'app-system-warning'},{'name': 'TelemetryComponent', 'selector': 'app-telemetry'},{'name': 'TelemetryErrorModalComponent', 'selector': 'app-telemetry-error-modal'},{'name': 'TelemetryImportComponent', 'selector': 'app-telemetry-import'},{'name': 'TermsAndConditionsPopupComponent', 'selector': 'app-tnc-popup'},{'name': 'TopicPickerComponent', 'selector': 'app-topic-picker'},{'name': 'UciComponent', 'selector': 'app-uci'},{'name': 'UnEnrollBatchComponent', 'selector': 'app-unenroll-batch'},{'name': 'UpdateBatchComponent', 'selector': 'app-update-batch'},{'name': 'UpdateContactComponent', 'selector': ''},{'name': 'UpdateContactDetailsComponent', 'selector': 'app-update-contact-details'},{'name': 'UpdateCourseBatchComponent', 'selector': 'app-update-course-batch'},{'name': 'UpForReviewComponent', 'selector': 'app-up-for-review'},{'name': 'UpforreviewContentplayerComponent', 'selector': 'app-upforreview-contentplayer'},{'name': 'UpforReviewFilterComponent', 'selector': 'app-up-for-review-filter'},{'name': 'UploadedComponent', 'selector': 'app-uploaded'},{'name': 'UsageReportsComponent', 'selector': 'app-usage-reports'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserFilterComponent', 'selector': 'app-user-filter'},{'name': 'UserLocationComponent', 'selector': 'app-user-location'},{'name': 'UserOnboardingComponent', 'selector': 'app-user-onboarding'},{'name': 'UserOrgManagementComponent', 'selector': 'app-user-org-management'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRoleAssignComponent', 'selector': 'app-user-role-assign'},{'name': 'UserSearchComponent', 'selector': 'app-user-search'},{'name': 'ValidateTeacherIdentifierPopupComponent', 'selector': 'app-validate-teacher-identifier-popup'},{'name': 'VerifyAccountIdentifierComponent', 'selector': ''},{'name': 'ViewAllComponent', 'selector': 'app-view-all'},{'name': 'ViewOrgTypeComponent', 'selector': 'app-view-org-type'},{'name': 'WorkspaceComponent', 'selector': 'app-workspace'},{'name': 'WorkspaceContentFilterComponent', 'selector': 'app-workspace-content-filter'},{'name': 'WorkspacesidebarComponent', 'selector': 'app-workspacesidebar'},{'name': 'YearOfBirthComponent', 'selector': 'app-year-of-birth'}];
+    var DIRECTIVES = [{'name': 'ActivityDashboardDirective', 'selector': '[appActivityDashboard]'},{'name': 'AddToGroupDirective', 'selector': '[appAddToGroup]'},{'name': 'BodyScrollDirective', 'selector': '[appBodyScroll]'},{'name': 'ComponentDeactivate', 'selector': ''},{'name': 'ContentDirectionDirective', 'selector': '[appContentDirection]'},{'name': 'DesktopOnlyDirective', 'selector': '[appDesktopOnly]'},{'name': 'HighlightTextDirective', 'selector': '[appHighlightText]'},{'name': 'MarkdownDirective', 'selector': '[appMarkdown]'},{'name': 'ModalContentDirective', 'selector': '[sbModalContent]'},{'name': 'OnlineOnlyDirective', 'selector': '[appOnlineOnly]'},{'name': 'PermissionDirective', 'selector': '[appPermission]'},{'name': 'TelemetryEndDirective', 'selector': '[appTelemetryEnd]'},{'name': 'TelemetryErrorDirective', 'selector': '[appTelemetryError]'},{'name': 'TelemetryEventsDirective', 'selector': '[telemetryEventsButton]'},{'name': 'TelemetryImpressionDirective', 'selector': '[appTelemetryImpression]'},{'name': 'TelemetryInteractDirective', 'selector': '[appTelemetryInteract]'},{'name': 'TelemetryShareDirective', 'selector': '[appTelemetryShare]'},{'name': 'TelemetryStartDirective', 'selector': '[appTelemetryStart]'}];
+    var ACTUAL_COMPONENT = {'name': 'ValidateTeacherIdentifierPopupComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ValidateTeacherIdentifierPopupComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,1985 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >CourseBatchService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/learn/services/course-batch/course-batch.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_enrolledBatchDetails" >_enrolledBatchDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_enrollToBatchDetails" >_enrollToBatchDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_updateBatchDetails" >_updateBatchDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#configService" >configService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#content" >content</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#defaultUserList" >defaultUserList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#learnerService" >learnerService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#searchService" >searchService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#updateEvent" >updateEvent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#userService" >userService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addUsersToBatch" >addUsersToBatch</a>
+                            </li>
+                            <li>
+                                <a href="#batchSearch" >batchSearch</a>
+                            </li>
+                            <li>
+                                <a href="#createBatch" >createBatch</a>
+                            </li>
+                            <li>
+                                <a href="#enrollToCourse" >enrollToCourse</a>
+                            </li>
+                            <li>
+                                <a href="#getAllBatchDetails" >getAllBatchDetails</a>
+                            </li>
+                            <li>
+                                <a href="#getBatchDetails" >getBatchDetails</a>
+                            </li>
+                            <li>
+                                <a href="#getcertificateDescription" >getcertificateDescription</a>
+                            </li>
+                            <li>
+                                <a href="#getEnrolledBatchDetails" >getEnrolledBatchDetails</a>
+                            </li>
+                            <li>
+                                <a href="#getEnrollToBatchDetails" >getEnrollToBatchDetails</a>
+                            </li>
+                            <li>
+                                <a href="#getParticipantList" >getParticipantList</a>
+                            </li>
+                            <li>
+                                <a href="#getUpdateBatchDetails" >getUpdateBatchDetails</a>
+                            </li>
+                            <li>
+                                <a href="#getUserList" >getUserList</a>
+                            </li>
+                            <li>
+                                <a href="#removeUsersFromBatch" >removeUsersFromBatch</a>
+                            </li>
+                            <li>
+                                <a href="#setEnrollToBatchDetails" >setEnrollToBatchDetails</a>
+                            </li>
+                            <li>
+                                <a href="#setUpdateBatchDetails" >setUpdateBatchDetails</a>
+                            </li>
+                            <li>
+                                <a href="#unenrollFromCourse" >unenrollFromCourse</a>
+                            </li>
+                            <li>
+                                <a href="#updateBatch" >updateBatch</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(searchService: <a href="../injectables/SearchService.html" target="_self">SearchService</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, content: <a href="../injectables/ContentService.html" target="_self">ContentService</a>, configService: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, learnerService: <a href="../injectables/LearnerService.html" target="_self">LearnerService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>searchService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SearchService.html" target="_self" >SearchService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>content</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ContentService.html" target="_self" >ContentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>configService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>learnerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LearnerService.html" target="_self" >LearnerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addUsersToBatch"></a>
+                    <span class="name">
+                        <span ><b>addUsersToBatch</b></span>
+                        <a href="#addUsersToBatch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addUsersToBatch(request, batchId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="142"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:142</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>request</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>batchId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="batchSearch"></a>
+                    <span class="name">
+                        <span ><b>batchSearch</b></span>
+                        <a href="#batchSearch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>batchSearch(requestParam: <a href="../interfaces/SearchParam.html" target="_self">SearchParam</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="23"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:23</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requestParam</td>
+                                    <td>
+                                                <code><a href="../interfaces/SearchParam.html" target="_self" >SearchParam</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ServerResponse.html" target="_self" >Observable&lt;ServerResponse&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createBatch"></a>
+                    <span class="name">
+                        <span ><b>createBatch</b></span>
+                        <a href="#createBatch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createBatch(request)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:124</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>request</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="enrollToCourse"></a>
+                    <span class="name">
+                        <span ><b>enrollToCourse</b></span>
+                        <a href="#enrollToCourse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>enrollToCourse(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="110"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:110</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllBatchDetails"></a>
+                    <span class="name">
+                        <span ><b>getAllBatchDetails</b></span>
+                        <a href="#getAllBatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllBatchDetails(searchParams)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:20</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>searchParams</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ServerResponse.html" target="_self" >Observable&lt;ServerResponse&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBatchDetails"></a>
+                    <span class="name">
+                        <span ><b>getBatchDetails</b></span>
+                        <a href="#getBatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBatchDetails(bathId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:69</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bathId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getcertificateDescription"></a>
+                    <span class="name">
+                        <span ><b>getcertificateDescription</b></span>
+                        <a href="#getcertificateDescription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getcertificateDescription(enrolledBatchInfo)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="169"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:169</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>enrolledBatchInfo</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ isCertificate: boolean; description: string; }</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEnrolledBatchDetails"></a>
+                    <span class="name">
+                        <span ><b>getEnrolledBatchDetails</b></span>
+                        <a href="#getEnrolledBatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getEnrolledBatchDetails(batchId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="159"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:159</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>batchId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEnrollToBatchDetails"></a>
+                    <span class="name">
+                        <span ><b>getEnrollToBatchDetails</b></span>
+                        <a href="#getEnrollToBatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getEnrollToBatchDetails(bathId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bathId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getParticipantList"></a>
+                    <span class="name">
+                        <span ><b>getParticipantList</b></span>
+                        <a href="#getParticipantList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getParticipantList(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUpdateBatchDetails"></a>
+                    <span class="name">
+                        <span ><b>getUpdateBatchDetails</b></span>
+                        <a href="#getUpdateBatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getUpdateBatchDetails(bathId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:90</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bathId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserList"></a>
+                    <span class="name">
+                        <span ><b>getUserList</b></span>
+                        <a href="#getUserList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getUserList(requestParam: <a href="../interfaces/SearchParam.html" target="_self">SearchParam</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requestParam</td>
+                                    <td>
+                                                <code><a href="../interfaces/SearchParam.html" target="_self" >SearchParam</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>{}</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ServerResponse.html" target="_self" >Observable&lt;ServerResponse&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeUsersFromBatch"></a>
+                    <span class="name">
+                        <span ><b>removeUsersFromBatch</b></span>
+                        <a href="#removeUsersFromBatch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeUsersFromBatch(batchId, request)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>batchId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>request</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setEnrollToBatchDetails"></a>
+                    <span class="name">
+                        <span ><b>setEnrollToBatchDetails</b></span>
+                        <a href="#setEnrollToBatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setEnrollToBatchDetails(enrollBatchDetails: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>enrollBatchDetails</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setUpdateBatchDetails"></a>
+                    <span class="name">
+                        <span ><b>setUpdateBatchDetails</b></span>
+                        <a href="#setUpdateBatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setUpdateBatchDetails(enrollBatchDetails: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:78</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>enrollBatchDetails</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unenrollFromCourse"></a>
+                    <span class="name">
+                        <span ><b>unenrollFromCourse</b></span>
+                        <a href="#unenrollFromCourse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>unenrollFromCourse(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="117"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:117</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateBatch"></a>
+                    <span class="name">
+                        <span ><b>updateBatch</b></span>
+                        <a href="#updateBatch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateBatch(request)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="133"
+                            class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>request</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_enrolledBatchDetails"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_enrolledBatchDetails</b></span>
+                        <a href="#_enrolledBatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_enrollToBatchDetails"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_enrollToBatchDetails</b></span>
+                        <a href="#_enrollToBatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_updateBatchDetails"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_updateBatchDetails</b></span>
+                        <a href="#_updateBatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="configService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>configService</b></span>
+                        <a href="#configService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="content"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>content</b></span>
+                        <a href="#content"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ContentService.html" target="_self" >ContentService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="defaultUserList"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>defaultUserList</b></span>
+                        <a href="#defaultUserList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="learnerService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>learnerService</b></span>
+                        <a href="#learnerService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/LearnerService.html" target="_self" >LearnerService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>searchService</b></span>
+                        <a href="#searchService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/SearchService.html" target="_self" >SearchService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateEvent"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>updateEvent</b></span>
+                        <a href="#updateEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new EventEmitter()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>userService</b></span>
+                        <a href="#userService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/learn/services/course-batch/course-batch.service.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { of as observableOf, Observable } from &#x27;rxjs&#x27;;
+import { map } from &#x27;rxjs/operators&#x27;;
+import { Injectable, EventEmitter } from &#x27;@angular/core&#x27;;
+import { ConfigService, ServerResponse } from &#x27;@sunbird/shared&#x27;;
+import { SearchParam, LearnerService, UserService, ContentService, SearchService } from &#x27;@sunbird/core&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class CourseBatchService {
+  private _enrollToBatchDetails: any;
+  private _updateBatchDetails: any;
+  public updateEvent &#x3D; new EventEmitter();
+  private _enrolledBatchDetails: any;
+  private defaultUserList: any;
+  constructor(public searchService: SearchService, public userService: UserService, public content: ContentService,
+    public configService: ConfigService,
+    public learnerService: LearnerService) { }
+  getAllBatchDetails(searchParams) {
+    return this.batchSearch(searchParams);
+  }
+  batchSearch(requestParam: SearchParam): Observable&lt;ServerResponse&gt; {
+    const option &#x3D; {
+      url: this.configService.urlConFig.URLS.BATCH.GET_BATCHS,
+      param : {...requestParam.params},
+      data: {
+        request: {
+          filters: requestParam.filters,
+          limit: requestParam.limit,
+          sort_by: requestParam.sort_by
+        }
+      }
+    };
+    return this.learnerService.post(option);
+  }
+  getUserList(requestParam: SearchParam &#x3D; {}): Observable&lt;ServerResponse&gt; {
+    if (_.isEmpty(requestParam) &amp;&amp; this.defaultUserList) {
+      return observableOf(this.defaultUserList);
+    } else {
+      const request &#x3D; _.cloneDeep(requestParam);
+      const option &#x3D; {
+        url: this.configService.urlConFig.URLS.ADMIN.USER_SEARCH,
+        data: {
+          request: {
+            filters: requestParam.filters || {},
+            query: requestParam.query || &#x27;&#x27;
+          }
+        }
+      };
+      if (requestParam.limit) {
+        option.data.request[&#x27;limit&#x27;] &#x3D; requestParam.limit;
+      }
+      const mentorOrg &#x3D; this.userService.userProfile.roleOrgMap[&#x27;CONTENT_CREATOR&#x27;];
+      if (mentorOrg &amp;&amp; mentorOrg.includes(this.userService.rootOrgId)) {
+        option.data.request.filters[&#x27;rootOrgId&#x27;] &#x3D; this.userService.rootOrgId;
+      } else if (mentorOrg) {
+        option.data.request.filters[&#x27;organisations.organisationId&#x27;] &#x3D; mentorOrg;
+      }
+      option.data.request.filters[&#x27;organisations.roles&#x27;] &#x3D; [&#x27;COURSE_MENTOR&#x27;];
+      return this.learnerService.post(option).pipe(map((data) &#x3D;&gt; {
+        if (_.isEmpty(requestParam)) {
+          this.defaultUserList &#x3D; data;
+        }
+        return data;
+      }));
+    }
+  }
+  getBatchDetails(bathId) {
+    const option &#x3D; {
+      url: &#x60;${this.configService.urlConFig.URLS.BATCH.GET_DETAILS}/${bathId}&#x60;
+    };
+    return this.learnerService.get(option);
+  }
+  setEnrollToBatchDetails(enrollBatchDetails: any) {
+    this._enrollToBatchDetails &#x3D; enrollBatchDetails;
+  }
+  setUpdateBatchDetails(enrollBatchDetails: any) {
+    this._updateBatchDetails &#x3D; enrollBatchDetails;
+  }
+  getEnrollToBatchDetails(bathId) {
+    if (this._enrollToBatchDetails &amp;&amp; bathId &#x3D;&#x3D;&#x3D; this._enrollToBatchDetails.identifier) {
+      return observableOf(this._enrollToBatchDetails);
+    } else {
+      return this.getBatchDetails(bathId).pipe(map((data) &#x3D;&gt; {
+        return data.result.response;
+      }));
+    }
+  }
+  getUpdateBatchDetails(bathId) {
+    if (this._updateBatchDetails &amp;&amp; bathId &#x3D;&#x3D;&#x3D; this._updateBatchDetails.identifier) {
+      return observableOf(this._updateBatchDetails);
+    } else {
+      return this.getBatchDetails(bathId).pipe(map((date) &#x3D;&gt; {
+        return date.result.response;
+      }));
+    }
+  }
+
+  getParticipantList(data) {
+    const options &#x3D; {
+      url: this.configService.urlConFig.URLS.BATCH.GET_PARTICIPANT_LIST,
+      data: data
+    };
+    return this.learnerService.post(options).pipe(map((response: any) &#x3D;&gt; {
+      return _.get(response, &#x27;result.batch.participants&#x27;) || [];
+    }));
+  }
+
+  enrollToCourse(data) {
+    const options &#x3D; {
+      url: this.configService.urlConFig.URLS.COURSE.ENROLL_USER_COURSE,
+      data: data
+    };
+    return this.learnerService.post(options);
+  }
+  unenrollFromCourse(data) {
+    const options &#x3D; {
+      url: this.configService.urlConFig.URLS.COURSE.UNENROLL_USER_COURSE,
+      data: data
+    };
+    return this.learnerService.post(options);
+  }
+  createBatch(request) {
+    const option &#x3D; {
+      url: this.configService.urlConFig.URLS.BATCH.CREATE,
+      data: {
+        request: request
+      }
+    };
+    return this.learnerService.post(option);
+  }
+  updateBatch(request) {
+    const option &#x3D; {
+      url: this.configService.urlConFig.URLS.BATCH.UPDATE,
+      data: {
+        request: request
+      }
+    };
+    return this.learnerService.patch(option);
+  }
+  addUsersToBatch(request, batchId) {
+    const option &#x3D; {
+      url: this.configService.urlConFig.URLS.BATCH.ADD_USERS + &#x27;/&#x27; + batchId,
+      data: {
+        request: request
+      }
+    };
+    return this.learnerService.post(option);
+  }
+
+  removeUsersFromBatch(batchId, request) {
+    const option &#x3D; {
+      url: this.configService.urlConFig.URLS.BATCH.REMOVE_USERS + &#x27;/&#x27; + batchId,
+      data: request
+    };
+    return this.learnerService.post(option);
+  }
+  getEnrolledBatchDetails(batchId) {
+    if (this._enrolledBatchDetails &amp;&amp; this._enrolledBatchDetails.identifier &#x3D;&#x3D;&#x3D; batchId) {
+      return observableOf(this._enrolledBatchDetails);
+    } else {
+      return this.getBatchDetails(batchId).pipe(map((data) &#x3D;&gt; {
+        this._enrolledBatchDetails &#x3D; data.result.response;
+        return data.result.response;
+      }));
+    }
+  }
+  getcertificateDescription(enrolledBatchInfo) {
+    let certificateDescription &#x3D; {isCertificate: false, description: &#x27;&#x27;};
+    const certificateTemplate &#x3D; _.get(enrolledBatchInfo, &#x27;cert_templates&#x27;);
+    if (certificateTemplate &amp;&amp; Object.keys(certificateTemplate).length !&#x3D;&#x3D; 0) {
+      const templateKey &#x3D; Object.keys(certificateTemplate);
+      const description &#x3D; certificateTemplate[templateKey[0]].description;
+      if (description) {
+        certificateDescription &#x3D; {
+          isCertificate: true,
+          description: description
+        };
+      } else {
+        certificateDescription &#x3D; {
+          isCertificate: true,
+          description: &#x27;&#x27;
+        };
+      }
+    }
+    return certificateDescription;
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'CourseBatchService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

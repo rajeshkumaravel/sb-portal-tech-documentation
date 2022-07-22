@@ -1,0 +1,1041 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >DialCodeService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/dial-code-search/services/dial-code/dial-code.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#dialSearchResults" >dialSearchResults</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#filterDialSearchResults" >filterDialSearchResults</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getAllPlayableContent" >getAllPlayableContent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getCollectionHierarchy" >getCollectionHierarchy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getRequest" >getRequest</a>
+                            </li>
+                            <li>
+                                <a href="#groupCollections" >groupCollections</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#parseCollection" >parseCollection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#searchDialCodeAssemble" >searchDialCodeAssemble</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#dialCodeResult" >dialCodeResult</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(searchService: <a href="../injectables/SearchService.html" target="_self">SearchService</a>, configService: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, playerService: <a href="../injectables/PlayerService.html" target="_self">PlayerService</a>, config: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, user: <a href="../injectables/UserService.html" target="_self">UserService</a>, publicDataService: <a href="../injectables/PublicDataService.html" target="_self">PublicDataService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/dial-code-search/services/dial-code/dial-code.service.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>searchService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SearchService.html" target="_self" >SearchService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>configService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>playerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PlayerService.html" target="_self" >PlayerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>config</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>user</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>publicDataService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PublicDataService.html" target="_self" >PublicDataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllPlayableContent"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getAllPlayableContent</b></span>
+                        <a href="#getAllPlayableContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAllPlayableContent(collectionIds, option?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="62"
+                            class="link-to-prism">src/app/modules/dial-code-search/services/dial-code/dial-code.service.ts:62</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>collectionIds</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>option</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCollectionHierarchy"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getCollectionHierarchy</b></span>
+                        <a href="#getCollectionHierarchy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCollectionHierarchy(collectionId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, option?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="107"
+                            class="link-to-prism">src/app/modules/dial-code-search/services/dial-code/dial-code.service.ts:107</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>fetch collection hierarchy</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>collectionId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>option</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRequest"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getRequest</b></span>
+                        <a href="#getRequest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getRequest(dialCode: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="128"
+                            class="link-to-prism">src/app/modules/dial-code-search/services/dial-code/dial-code.service.ts:128</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dialCode</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ url: any; data: { request: { source: string; name: string; filters: { dialcodes: string; contentType: any; }; userProfile: { board: any; } | { board?: undefined; }; }; }; }</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="groupCollections"></a>
+                    <span class="name">
+                        <span ><b>groupCollections</b></span>
+                        <a href="#groupCollections"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>groupCollections(collections)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/modules/dial-code-search/services/dial-code/dial-code.service.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>groups an array of collections on basis of contentTypes</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>collections</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="parseCollection"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>parseCollection</b></span>
+                        <a href="#parseCollection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>parseCollection(collection)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="83"
+                            class="link-to-prism">src/app/modules/dial-code-search/services/dial-code/dial-code.service.ts:83</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>collection</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchDialCodeAssemble"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>searchDialCodeAssemble</b></span>
+                        <a href="#searchDialCodeAssemble"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>searchDialCodeAssemble(dialCode: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, online: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="119"
+                            class="link-to-prism">src/app/modules/dial-code-search/services/dial-code/dial-code.service.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>makes API call to search for dialCode</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dialCode</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>online</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dialSearchResults"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>dialSearchResults</b></span>
+                        <a href="#dialSearchResults"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/dial-code-search/services/dial-code/dial-code.service.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterDialSearchResults"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>filterDialSearchResults</b></span>
+                        <a href="#filterDialSearchResults"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>() &#x3D;&gt; {...}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/dial-code-search/services/dial-code/dial-code.service.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description">
+                                <b>Parameters :</b>
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                    <td>dialSearchResults</td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dialCodeResult"></a>
+                        <span class="name"><b>dialCodeResult</b><a href="#dialCodeResult"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>dialCodeResult()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="112" class="link-to-prism">src/app/modules/dial-code-search/services/dial-code/dial-code.service.ts:112</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ConfigService } from &#x27;@sunbird/shared&#x27;;
+import { SearchService, PlayerService, UserService, PublicDataService } from &#x27;@sunbird/core&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import { map, catchError } from &#x27;rxjs/operators&#x27;;
+import { of, Observable, iif, forkJoin } from &#x27;rxjs&#x27;;
+import * as TreeModel from &#x27;tree-model&#x27;;
+const treeModel &#x3D; new TreeModel();
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class DialCodeService {
+
+
+  private dialSearchResults;
+  constructor(private searchService: SearchService, private configService: ConfigService, private playerService: PlayerService,
+    private config: ConfigService, private user: UserService, private publicDataService: PublicDataService ) {
+    }
+
+
+  /**
+  * @param dialSearchResults
+  * @returns Returns an array of elements split into two groups , first is collections and second is contents
+  */
+  public filterDialSearchResults &#x3D; (dialSearchResults, option?) &#x3D;&gt; {
+    this.dialSearchResults &#x3D; dialSearchResults;
+    const response &#x3D; {};
+    const textbookUnitsWithoutParentBook &#x3D; [];
+
+    const [collections, contents] &#x3D; _.partition((_.get(dialSearchResults, &#x27;contents&#x27;) || []), result &#x3D;&gt; {
+      return (_.get(result, &#x27;mimeType&#x27;) &#x3D;&#x3D;&#x3D; &#x27;application/vnd.ekstep.content-collection&#x27; &amp;&amp; result.contentType.toLowerCase() !&#x3D;&#x3D; &#x27;course&#x27;);
+    });
+
+    const groupedCollections &#x3D; this.groupCollections(collections);
+    (response[&#x27;collection&#x27;] || (response[&#x27;collection&#x27;] &#x3D; [])).push(..._.flatMap(_.values(_.omit(groupedCollections, &#x27;textbookunit&#x27;))));
+    (response[&#x27;contents&#x27;] || (response[&#x27;contents&#x27;] &#x3D; [])).push(...contents);
+
+    if (_.has(groupedCollections, &#x27;textbookunit&#x27;)) {
+      const collectionsFromApi &#x3D; _.get(dialSearchResults, &#x27;collections&#x27;) || [];
+      _.forEach(_.get(groupedCollections, &#x27;textbookunit&#x27;), async (textbookunit) &#x3D;&gt; {
+        const collection &#x3D; _.find(collectionsFromApi, collectionObj &#x3D;&gt; {
+          return _.includes(collectionObj.childNodes, _.get(textbookunit, &#x27;identifier&#x27;));
+        });
+        if (collection) {
+          collection.childTextbookUnit &#x3D; textbookunit;
+          (response[&#x27;collection&#x27;] || (response[&#x27;collection&#x27;] &#x3D; [])).push(collection);
+        } else {
+          textbookUnitsWithoutParentBook.push(_.get(textbookunit, &#x27;identifier&#x27;));
+        }
+      });
+    }
+
+    return this.getAllPlayableContent(textbookUnitsWithoutParentBook, option).pipe(
+      map(apiResponse &#x3D;&gt; {
+        (response[&#x27;contents&#x27;] || (response[&#x27;contents&#x27;] &#x3D; [])).push(...apiResponse);
+        return response;
+      })
+    );
+  }
+
+  public getAllPlayableContent(collectionIds, option?) {
+    const apiArray &#x3D; _.map(collectionIds, (collectionId: string) &#x3D;&gt; this.getCollectionHierarchy(collectionId, option));
+    return iif(() &#x3D;&gt; !apiArray.length, of([]), forkJoin(apiArray)
+      .pipe(
+        map(results &#x3D;&gt; _.flatMap(_.map(results, this.parseCollection))),
+        catchError(err &#x3D;&gt; of([]))
+      ));
+  }
+
+  /**
+   * groups an array of collections on basis of contentTypes
+   * @param collections
+   */
+  groupCollections(collections) {
+    return _.groupBy(collections, collection &#x3D;&gt; _.toLower(_.get(collection, &#x27;contentType&#x27;)));
+  }
+
+  /**
+   * @description parses a collection
+   * @param collection
+   */
+  public parseCollection(collection) {
+    const contents &#x3D; [];
+    const parsedCollection &#x3D; treeModel.parse(collection);
+    parsedCollection.all(() &#x3D;&gt; true).forEach(node &#x3D;&gt; {
+      if (node.model.trackable &amp;&amp; node.model.trackable.enabled &#x3D;&#x3D;&#x3D; &#x27;Yes&#x27;) {
+        node.model.l1Parent &#x3D; collection.identifier;
+        contents.push(node.model);
+        node.drop();
+      }
+    });
+    parsedCollection.walk((node) &#x3D;&gt; {
+      if (_.get(node, &#x27;model.mimeType&#x27;) &amp;&amp; node.model.mimeType !&#x3D;&#x3D; &#x27;application/vnd.ekstep.content-collection&#x27;) {
+        node.model.l1Parent &#x3D; collection.identifier;
+        contents.push(node.model);
+      }
+      return true;
+    });
+    return contents;
+  }
+
+  /**
+   * fetch collection hierarchy
+   * @param collectionId
+   */
+  public getCollectionHierarchy(collectionId: string, option?): Observable&lt;any[]&gt; {
+    return this.playerService.getCollectionHierarchy(collectionId, option).pipe(
+      map((res) &#x3D;&gt; _.get(res, &#x27;result.content&#x27;)));
+  }
+
+  get dialCodeResult() {
+    return this.dialSearchResults;
+  }
+
+   /**
+   * makes API call to search for dialCode
+   */
+  public searchDialCodeAssemble(dialCode: string, online: boolean): Observable&lt;any[]&gt; {
+    const request &#x3D; this.getRequest(dialCode);
+    return this.publicDataService
+    .post(request)
+    .pipe(
+      map((apiResponse) &#x3D;&gt; _.get(apiResponse, &#x27;result.response.sections[0]&#x27;))
+    );
+  }
+
+  public getRequest(dialCode: string) {
+    return {
+      url: this.config.urlConFig.URLS.DIAL_ASSEMBLE_PREFIX,
+      data: {
+        request: {
+          source: &#x27;web&#x27;,
+          name: &#x27;DIAL Code Consumption&#x27;,
+          filters: {
+            dialcodes: dialCode,
+            contentType: this.config.appConfig.DialAssembleSearch.contentType,
+          },
+          userProfile:
+            this.user.loggedIn &amp;&amp; _.get(this.user.userProfile, &#x27;framework.board&#x27;)
+              ? { board: this.user.userProfile.framework.board }
+              : {},
+        },
+      },
+    };
+  }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'DialCodeService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,2438 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  SolutionListingComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/report/components/solution-listing/solution-listing.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-solution-listing</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./solution-listing.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./solution-listing.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#config" >config</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#configService" >configService</a>
+                            </li>
+                            <li>
+                                <a href="#dtOptions" >dtOptions</a>
+                            </li>
+                            <li>
+                                <a href="#entityType" >entityType</a>
+                            </li>
+                            <li>
+                                <a href="#filters" >filters</a>
+                            </li>
+                            <li>
+                                <a href="#layoutConfiguration" >layoutConfiguration</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#loaderMessage" >loaderMessage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#location" >location</a>
+                            </li>
+                            <li>
+                                <a href="#noResult" >noResult</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#noResultFoundError" >noResultFoundError</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#noResultMessage" >noResultMessage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#observationUtilService" >observationUtilService</a>
+                            </li>
+                            <li>
+                                <a href="#pageNo" >pageNo</a>
+                            </li>
+                            <li>
+                                <a href="#pageSize" >pageSize</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#paginationDetails" >paginationDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#paginationService" >paginationService</a>
+                            </li>
+                            <li>
+                                <a href="#payload" >payload</a>
+                            </li>
+                            <li>
+                                <a href="#reportViewerTncUrl" >reportViewerTncUrl</a>
+                            </li>
+                            <li>
+                                <a href="#reportViewerTncVersion" >reportViewerTncVersion</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#resourceService" >resourceService</a>
+                            </li>
+                            <li>
+                                <a href="#selectedEntity" >selectedEntity</a>
+                            </li>
+                            <li>
+                                <a href="#showLoader" >showLoader</a>
+                            </li>
+                            <li>
+                                <a href="#showLoadMore" >showLoadMore</a>
+                            </li>
+                            <li>
+                                <a href="#showModal" >showModal</a>
+                            </li>
+                            <li>
+                                <a href="#showTncPopup" >showTncPopup</a>
+                            </li>
+                            <li>
+                                <a href="#solution" >solution</a>
+                            </li>
+                            <li>
+                                <a href="#solutionList" >solutionList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#tncService" >tncService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#userProfile" >userProfile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#userService" >userService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeLimit" >changeLimit</a>
+                            </li>
+                            <li>
+                                <a href="#getDataByEntity" >getDataByEntity</a>
+                            </li>
+                            <li>
+                                <a href="#getProfileData" >getProfileData</a>
+                            </li>
+                            <li>
+                                <a href="#getSolutions" >getSolutions</a>
+                            </li>
+                            <li>
+                                <a href="#goBack" >goBack</a>
+                            </li>
+                            <li>
+                                <a href="#goToEntityList" >goToEntityList</a>
+                            </li>
+                            <li>
+                                <a href="#goToReports" >goToReports</a>
+                            </li>
+                            <li>
+                                <a href="#initLayout" >initLayout</a>
+                            </li>
+                            <li>
+                                <a href="#modalClose" >modalClose</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#navigateToPage" >navigateToPage</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(resourceService: <a href="../injectables/ResourceService.html" target="_self">ResourceService</a>, layoutService: <a href="../injectables/LayoutService.html" target="_self">LayoutService</a>, observationService: <a href="../injectables/ObservationService.html" target="_self">ObservationService</a>, config: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, observationUtilService: <a href="../injectables/ObservationUtilService.html" target="_self">ObservationUtilService</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, paginationService: <a href="../injectables/PaginationService.html" target="_self">PaginationService</a>, configService: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, tncService: <a href="../injectables/TncService.html" target="_self">TncService</a>, location: <a href="../s/L.html" target="_self">Location</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>resourceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>layoutService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LayoutService.html" target="_self" >LayoutService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>observationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ObservationService.html" target="_self" >ObservationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>config</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>observationUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ObservationUtilService.html" target="_self" >ObservationUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>paginationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PaginationService.html" target="_self" >PaginationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>configService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>tncService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TncService.html" target="_self" >TncService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>location</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../miscellaneous/variables.html#L" target="_self" >Location</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeLimit"></a>
+                    <span class="name">
+                        <span ><b>changeLimit</b></span>
+                        <a href="#changeLimit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeLimit(e)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="175"
+                            class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:175</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>e</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDataByEntity"></a>
+                    <span class="name">
+                        <span ><b>getDataByEntity</b></span>
+                        <a href="#getDataByEntity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDataByEntity(e)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="146"
+                            class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:146</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>e</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getProfileData"></a>
+                    <span class="name">
+                        <span ><b>getProfileData</b></span>
+                        <a href="#getProfileData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getProfileData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSolutions"></a>
+                    <span class="name">
+                        <span ><b>getSolutions</b></span>
+                        <a href="#getSolutions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSolutions()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="91"
+                            class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:91</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goBack"></a>
+                    <span class="name">
+                        <span ><b>goBack</b></span>
+                        <a href="#goBack"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goBack()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="87"
+                            class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:87</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goToEntityList"></a>
+                    <span class="name">
+                        <span ><b>goToEntityList</b></span>
+                        <a href="#goToEntityList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goToEntityList(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="182"
+                            class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:182</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goToReports"></a>
+                    <span class="name">
+                        <span ><b>goToReports</b></span>
+                        <a href="#goToReports"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goToReports(solution)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="187"
+                            class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:187</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>solution</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initLayout"></a>
+                    <span class="name">
+                        <span ><b>initLayout</b></span>
+                        <a href="#initLayout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initLayout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="237"
+                            class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:237</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="modalClose"></a>
+                    <span class="name">
+                        <span ><b>modalClose</b></span>
+                        <a href="#modalClose"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>modalClose(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="210"
+                            class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:210</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToPage"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>navigateToPage</b></span>
+                        <a href="#navigateToPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>navigateToPage(page: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="138"
+                            class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:138</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>page</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="59"
+                            class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:59</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="config"></a>
+                    <span class="name">
+                        <span ><b>config</b></span>
+                        <a href="#config"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="configService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>configService</b></span>
+                        <a href="#configService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dtOptions"></a>
+                    <span class="name">
+                        <span ><b>dtOptions</b></span>
+                        <a href="#dtOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="entityType"></a>
+                    <span class="name">
+                        <span ><b>entityType</b></span>
+                        <a href="#entityType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filters"></a>
+                    <span class="name">
+                        <span ><b>filters</b></span>
+                        <a href="#filters"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="layoutConfiguration"></a>
+                    <span class="name">
+                        <span ><b>layoutConfiguration</b></span>
+                        <a href="#layoutConfiguration"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loaderMessage"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>loaderMessage</b></span>
+                        <a href="#loaderMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ILoaderMessage.html" target="_self" >ILoaderMessage</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="location"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>location</b></span>
+                        <a href="#location"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/variables.html#L" target="_self" >Location</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="noResult"></a>
+                    <span class="name">
+                        <span ><b>noResult</b></span>
+                        <a href="#noResult"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="noResultFoundError"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>noResultFoundError</b></span>
+                        <a href="#noResultFoundError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="noResultMessage"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>noResultMessage</b></span>
+                        <a href="#noResultMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/INoResultMessage.html" target="_self" >INoResultMessage</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="observationUtilService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>observationUtilService</b></span>
+                        <a href="#observationUtilService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ObservationUtilService.html" target="_self" >ObservationUtilService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pageNo"></a>
+                    <span class="name">
+                        <span ><b>pageNo</b></span>
+                        <a href="#pageNo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>1</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pageSize"></a>
+                    <span class="name">
+                        <span ><b>pageSize</b></span>
+                        <a href="#pageSize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>10</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paginationDetails"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>paginationDetails</b></span>
+                        <a href="#paginationDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IPagination.html" target="_self" >IPagination</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paginationService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>paginationService</b></span>
+                        <a href="#paginationService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/PaginationService.html" target="_self" >PaginationService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="payload"></a>
+                    <span class="name">
+                        <span ><b>payload</b></span>
+                        <a href="#payload"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reportViewerTncUrl"></a>
+                    <span class="name">
+                        <span ><b>reportViewerTncUrl</b></span>
+                        <a href="#reportViewerTncUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reportViewerTncVersion"></a>
+                    <span class="name">
+                        <span ><b>reportViewerTncVersion</b></span>
+                        <a href="#reportViewerTncVersion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resourceService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>resourceService</b></span>
+                        <a href="#resourceService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedEntity"></a>
+                    <span class="name">
+                        <span ><b>selectedEntity</b></span>
+                        <a href="#selectedEntity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showLoader"></a>
+                    <span class="name">
+                        <span ><b>showLoader</b></span>
+                        <a href="#showLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showLoadMore"></a>
+                    <span class="name">
+                        <span ><b>showLoadMore</b></span>
+                        <a href="#showLoadMore"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showModal"></a>
+                    <span class="name">
+                        <span ><b>showModal</b></span>
+                        <a href="#showModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showTncPopup"></a>
+                    <span class="name">
+                        <span ><b>showTncPopup</b></span>
+                        <a href="#showTncPopup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="solution"></a>
+                    <span class="name">
+                        <span ><b>solution</b></span>
+                        <a href="#solution"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="solutionList"></a>
+                    <span class="name">
+                        <span ><b>solutionList</b></span>
+                        <a href="#solutionList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tncService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>tncService</b></span>
+                        <a href="#tncService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/TncService.html" target="_self" >TncService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userProfile"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>userProfile</b></span>
+                        <a href="#userProfile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>userService</b></span>
+                        <a href="#userService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/modules/report/components/solution-listing/solution-listing.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ConfigService, ResourceService, LayoutService, PaginationService, IPagination,
+  ILoaderMessage, INoResultMessage } from &#x27;@sunbird/shared&#x27;;
+import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import &#x27;datatables.net&#x27;;
+import { ObservationService, UserService, TncService, ObservationUtilService } from &#x27;@sunbird/core&#x27;;
+import { first } from &#x27;rxjs/operators&#x27;;
+import { Location } from &#x27;@angular/common&#x27;;
+
+@Component({
+  selector: &#x27;app-solution-listing&#x27;,
+  templateUrl: &#x27;./solution-listing.component.html&#x27;,
+  styleUrls: [&#x27;./solution-listing.component.scss&#x27;],
+})
+export class SolutionListingComponent implements OnInit {
+  public noResultFoundError: string;
+  layoutConfiguration: any;
+  config;
+  payload;
+  entityType &#x3D; &#x27;&#x27;;
+  pageSize &#x3D; 10;
+  pageNo &#x3D; 1;
+  solutionList &#x3D; [];
+  showLoadMore &#x3D; true;
+  filters &#x3D; [];
+  selectedEntity: any;
+  dtOptions: any &#x3D; {};
+  showModal &#x3D; false;
+  solution: any;
+  public paginationDetails: IPagination;
+  public loaderMessage: ILoaderMessage;
+  public noResultMessage: INoResultMessage;
+  showLoader &#x3D; true;
+  noResult &#x3D; false;
+  reportViewerTncVersion: string;
+  reportViewerTncUrl: string;
+  showTncPopup &#x3D; false;
+  public userProfile;
+  constructor(
+    public resourceService: ResourceService,
+    private layoutService: LayoutService,
+    private observationService: ObservationService,
+    config: ConfigService,
+    public observationUtilService: ObservationUtilService,
+    public userService: UserService,
+    private router: Router,
+    public paginationService: PaginationService,
+    public configService: ConfigService,
+    public tncService: TncService,
+    public location:Location
+  ) {
+    this.config &#x3D; config;
+    this.paginationDetails &#x3D; this.paginationService.getPager(0, 1, this.pageSize);
+    this.noResultMessage &#x3D; {
+      &#x27;messageText&#x27;:  &#x27;messages.stmsg.m0131&#x27;
+    };
+  }
+
+  ngOnInit() {
+    this.dtOptions &#x3D; {
+      autoWidth: true,
+      searching: false,
+      pageLength: this.pageSize,
+      info: false,
+      dom: &#x27;&lt;&quot;pull-right&quot;&gt;rt&#x27;
+    };
+    this.selectedEntity &#x3D; &#x27;selected&#x27;;
+    this.userService.userData$.pipe(first()).subscribe(async (user) &#x3D;&gt; {
+      if (user &amp;&amp; user.userProfile) {
+        this.userProfile &#x3D; user.userProfile;
+      }
+    });
+    this.initLayout();
+    this.getProfileData();
+  }
+
+  getProfileData() {
+    this.observationUtilService.getProfileDataList().then(
+      (data) &#x3D;&gt; {
+        this.payload &#x3D; data;
+        this.getSolutions();
+      },
+      (error) &#x3D;&gt; {}
+    );
+  }
+
+  goBack() {
+    this.location.back();
+  }
+
+  getSolutions() {
+    this.solutionList &#x3D; [];
+    const paramOptions &#x3D; {
+      url:
+        this.config.urlConFig.URLS.OBSERVATION
+          .OBSERVATION_REPORT_SOLUTION_LIST +
+        &#x60;limit&#x3D;${this.pageSize}&amp;page&#x3D;${this.pageNo}&amp;entityType&#x3D;${this.entityType}&#x60;,
+      data: this.payload,
+    };
+    this.observationService.post(paramOptions).subscribe(
+      (data) &#x3D;&gt; {
+        if (data.result) {
+          this.showLoader &#x3D; false;
+        } else {
+          this.showLoader &#x3D; false;
+          this.noResult &#x3D; true;
+        }
+        this.solutionList &#x3D;
+          data &amp;&amp; data.result ? this.solutionList.concat(data.result.data) : [];
+        this.filters &#x3D; data &amp;&amp; data.result &amp;&amp; !this.filters.length ? data.result.entityType : this.filters;
+        this.paginationDetails.currentPage &#x3D; this.pageNo;
+        this.paginationDetails &#x3D; this.paginationService.getPager(
+          data.result.count,
+          this.paginationDetails.currentPage,
+          this.pageSize
+        );
+        this.showLoadMore &#x3D;
+          this.solutionList.length &lt; data.result.count ? true : false;
+          if (this.solutionList.length &gt; 0) {
+            this.showLoader &#x3D; false;
+          } else {
+            this.showLoader &#x3D; false;
+            this.noResult &#x3D; true;
+          }
+      },
+      (error) &#x3D;&gt; {
+        this.showLoader &#x3D; false;
+          this.noResult &#x3D; true;
+      }
+    );
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: &#x27;smooth&#x27;,
+    });
+  }
+
+  public navigateToPage(page: number): void {
+    if (page &lt; 1 || page &gt; this.paginationDetails.totalPages) {
+      return;
+    }
+    this.pageNo &#x3D; page;
+    this.getSolutions();
+  }
+
+  getDataByEntity(e) {
+    this.selectedEntity &#x3D; e.target.value;
+    this.entityType &#x3D; this.selectedEntity;
+    this.pageNo &#x3D; 1;
+    this.solutionList &#x3D; [];
+    const paramOptions &#x3D; {
+      url:
+        this.config.urlConFig.URLS.OBSERVATION
+          .OBSERVATION_REPORT_SOLUTION_LIST +
+        &#x60;limit&#x3D;${this.pageSize}&amp;page&#x3D;${this.pageNo}&amp;entityType&#x3D;${this.entityType}&#x60;,
+      data: this.payload,
+    };
+    this.observationService.post(paramOptions).subscribe(
+      (data) &#x3D;&gt; {
+        this.solutionList &#x3D;
+          data &amp;&amp; data.result ? this.solutionList.concat(data.result.data) : [];
+        this.paginationDetails.currentPage &#x3D; this.pageNo;
+        this.paginationDetails &#x3D; this.paginationService.getPager(
+          data.result.count,
+          this.paginationDetails.currentPage,
+          this.pageSize
+        );
+        this.showLoadMore &#x3D;
+          this.solutionList.length &lt; data.result.count ? true : false;
+      },
+      (error) &#x3D;&gt; {}
+    );
+  }
+
+  changeLimit(e) {
+    this.pageSize &#x3D; e.target.value;
+    this.pageNo &#x3D; 1;
+    this.dtOptions.pageLength &#x3D; this.pageSize;
+    this.getSolutions();
+  }
+
+  goToEntityList(data) {
+    this.solution &#x3D; data;
+    this.showModal &#x3D; true;
+  }
+
+  goToReports(solution) {
+    this.showModal &#x3D; false;
+    const state &#x3D; {
+      scores: false,
+      observation: true,
+      entityId: solution.entities[0]._id,
+      entityType: solution.entityType,
+      observationId: solution.observationId,
+      solutionId: solution.solutionId,
+      // entity:solution.entities[0]
+    };
+    if (solution.isRubricDriven) {
+      state.scores &#x3D; true;
+    }
+    if (!solution.criteriaLevelReport) {
+      state[&#x27;filter&#x27;] &#x3D; { questionId: [] };
+      state[&#x27;criteriaWise&#x27;] &#x3D; false;
+    }
+    this.router.navigate([&#x27;solution/report-view&#x27;], {
+      queryParams: state,
+    });
+  }
+
+  modalClose(event) {
+    this.showModal &#x3D; false;
+    if (event.value) {
+    const entity &#x3D; event.value.selectedEntity;
+    const solutionDetails &#x3D; event.value.solutionDetail;
+    const state &#x3D; {
+      scores: false,
+      observation: true,
+      entityId: entity._id,
+      entityType: solutionDetails.entityType,
+      observationId: solutionDetails.observationId,
+      solutionId: solutionDetails.solutionId,
+      // entity:entity
+    };
+    if (solutionDetails.isRubricDriven) {
+      state.scores &#x3D; true;
+    }
+    if (!solutionDetails.criteriaLevelReport) {
+      state[&#x27;filter&#x27;] &#x3D; { questionId: [] };
+      state[&#x27;criteriaWise&#x27;] &#x3D; false;
+    }
+    this.router.navigate([&#x27;solution/report-view&#x27;], {
+      queryParams: state,
+    });
+  }
+  }
+
+  initLayout() {
+    this.layoutConfiguration &#x3D; this.layoutService.initlayoutConfig();
+    this.layoutService.switchableLayout().subscribe((layoutConfig) &#x3D;&gt; {
+      if (layoutConfig !&#x3D; null) {
+        this.layoutConfiguration &#x3D; layoutConfig.layout;
+      }
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-landing-section
+  [noTitle]&#x3D;&quot;true&quot;
+  [layoutConfiguration]&#x3D;&quot;layoutConfiguration&quot;
+&gt;
+&lt;/app-landing-section&gt;
+&lt;div
+  [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;sb-back-actionbar&#x27; : &#x27;sb-bg-color-white back-btn-container cc-player__btn-back relative9&#x27;&quot;
+  class&#x3D;&quot;relative position mt-0&quot;&gt;
+  &lt;div class&#x3D;&quot;ui container py-0 px-0 d-flex flex-ai-center&quot;&gt;
+    &lt;div class&#x3D;&quot;py-0 d-flex flex-ai-center w-100&quot;&gt;
+      &lt;!-- /* Back button */ --&gt;
+      &lt;button type&#x3D;&quot;button&quot; [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;sb-btn-round&#x27; : &#x27;&#x27;&quot;
+        class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-link sb-btn-link-primary sb-left-icon-btn px-0&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;goBack()&quot;&gt;
+        &lt;em class&#x3D;&quot;icon-svg icon-svg--xxs icon-back mr-4&quot;&gt;&lt;svg class&#x3D;&quot;icon icon-svg--primary&quot;&gt;
+            &lt;use xlink:href&#x3D;&quot;assets/images/sprite.svg#arrow-long-left&quot;&gt;&lt;/use&gt;
+          &lt;/svg&gt;&lt;/em&gt;
+        &lt;span&gt;{{resourceService?.frmelmnts?.btn?.back}}&lt;/span&gt;
+      &lt;/button&gt;
+     &lt;div class&#x3D;&quot;textbook d-flex flex-ai-center flex-jc-space-between w-100 ml-16&quot;&gt;
+        &lt;!-- title --&gt;
+        &lt;h5 class&#x3D;&quot;textbook__title sb-color-primary font-weight-bold mb-0&quot; tabindex&#x3D;&quot;0&quot;&gt;&lt;/h5&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;sbt-inside-page-container&#x27; : &#x27;pt-16&#x27;&quot;&gt;
+  &lt;div class&#x3D;&quot;sb-pageSection my-24 ui container listallreports-section&quot;&gt;
+    &lt;ng-container&gt;
+      &lt;div class&#x3D;&quot;sb-pageSection-content&quot;&gt;
+        &lt;ng-container *ngIf&#x3D;&quot;solutionList.length&quot;&gt;
+          &lt;div&gt;
+            &lt;sui-tabset&gt;
+              &lt;div class&#x3D;&quot;ui top attached tabular menu report-menu&quot;&gt;
+                &lt;a class&#x3D;&quot;item&quot; suiTabHeader&#x3D;&quot;1&quot;
+                  &gt;&lt;i class&#x3D;&quot;icon chart line alternate&quot;&gt;&lt;/i&gt; {{resourceService.frmelmnts?.lnk?.report}}&lt;/a
+                &gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;ui bottom attached segment&quot; suiTabContent&#x3D;&quot;1&quot;&gt;
+                &lt;div class&#x3D;&quot;ui bottom attached small p-0 b-0 no-bg py-24&quot;&gt;
+                  &lt;div class&#x3D;&quot;pull-left&quot;&gt;
+                    show &lt;select [(ngModel)]&#x3D;&quot;pageSize&quot; class&#x3D;&quot;dataTables_filter search-entries&quot; (change)&#x3D;&quot;changeLimit($event)&quot;&gt;
+                      &lt;option value&#x3D;&quot;10&quot; selected&gt;10&lt;/option&gt;
+                      &lt;option value&#x3D;&quot;20&quot;&gt;20&lt;/option&gt;
+                      &lt;option value&#x3D;&quot;25&quot;&gt;25&lt;/option&gt;
+                    &lt;/select&gt; entries
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;pull-right&quot;&gt;
+                    &lt;select [(ngModel)]&#x3D;&quot;selectedEntity&quot; class&#x3D;&quot;dataTables_filter search-entity&quot; (change)&#x3D;&quot;getDataByEntity($event)&quot;&gt;
+                      &lt;option value&#x3D;&quot;selected&quot; selected disabled hidden&gt;Entity Filter&lt;/option&gt;
+                      &lt;option value&#x3D;&quot;{{entity}}&quot; *ngFor&#x3D;&quot;let entity of filters&quot;&gt;{{entity}}&lt;/option&gt;
+                    &lt;/select&gt;
+                  &lt;/div&gt;
+                    
+                  &lt;table datatable [dtOptions]&#x3D;&quot;dtOptions&quot;
+                    class&#x3D;&quot;
+                      sb-table sb-table-hover sb-table-striped sb-table-sortable
+                      width-100 table-bottom 
+                    &quot;
+                  &gt;
+                  &lt;thead &gt;
+                    &lt;tr&gt;
+                      &lt;th class&#x3D;&quot;header-section&quot;&gt;{{resourceService?.frmelmnts?.lbl?.serialno}}&lt;/th&gt;
+                      &lt;th class&#x3D;&quot;header-section&quot;&gt;&lt;/th&gt;
+                      &lt;th&gt;{{resourceService?.frmelmnts?.lbl?.title}}&lt;/th&gt;
+                      &lt;th  class&#x3D;&quot;date-section&quot;&gt;{{resourceService?.frmelmnts?.lbl?.latestSubmission}}&lt;/th&gt;
+                    &lt;/tr&gt;
+                  &lt;/thead&gt;
+                  &lt;tbody&gt;
+                   &lt;tr *ngFor&#x3D;&quot;let solution of solutionList;let i&#x3D;index&quot; (click)&#x3D;&quot;(solution?.entities?.length &gt;1) ? goToEntityList(solution) : goToReports(solution)&quot;&gt;
+                         &lt;td class&#x3D;&quot;header-section&quot;&gt;{{i+1}}&lt;/td&gt;
+                         &lt;td&gt;&lt;button class&#x3D;&quot;sb-btn sb-btn-link sb-btn-link-primary sb-btn-normal iconSize&quot; aria-label&#x3D;&quot;file-icon&quot;&gt;
+                          &lt;i class&#x3D;&quot;icon copy outline alternate large&quot;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/td&gt;
+                         &lt;td&gt;&lt;div class&#x3D;&quot;sb-media&quot;&gt;&lt;div class&#x3D;&quot;sb-media-body&quot;&gt;&lt;h6 class&#x3D;&quot;p-0&quot;&gt;
+                          {{solution.name}}&lt;/h6&gt; &lt;p class&#x3D;&quot;media-description sb__ellipsis&quot;&gt; {{solution.programName}}&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+                          &lt;td class&#x3D;&quot;date-section&quot;&gt;{{solution.completedDate| date: &quot;yyyy/MM/dd&quot;}}&lt;/td&gt;
+                     &lt;/tr&gt;
+                  &lt;/tbody&gt;
+                 
+                &lt;/table&gt;
+                &lt;div class&#x3D;&quot;content-grid relative9&quot;&gt;
+                &lt;div class&#x3D;&quot;twelve wide column right aligned&quot;
+                    *ngIf&#x3D;&quot;paginationDetails.totalItems &gt; 5&quot;&gt;
+                    &lt;div class&#x3D;&quot;sb-pagination-container flex-jc-flex-end mt-16&quot; *ngIf&#x3D;&quot;paginationDetails.pages.length&quot;&gt;
+                      &lt;div class&#x3D;&quot;sb-pagination my-0&quot;&gt;
+                        &lt;a role&#x3D;&quot;button&quot; title&#x3D;&quot;{{resourceService?.frmelmnts?.lbl?.first}}&quot; attr.aria-label&#x3D;&quot;{{resourceService?.frmelmnts?.lbl?.first}}&quot; [ngClass]&#x3D;&quot;{disabled:paginationDetails.currentPage&#x3D;&#x3D;&#x3D;1 }&quot; class&#x3D;&quot;sb-item &quot;
+                          (click)&#x3D;&quot;navigateToPage(1) &quot;&gt;&amp;laquo;&lt;/a&gt;
+                        &lt;a role&#x3D;&quot;button&quot; title&#x3D;&quot;{{resourceService?.frmelmnts?.lbl?.previous}}&quot; attr.aria-label&#x3D;&quot;{{resourceService?.frmelmnts?.lbl?.previous}}&quot; [ngClass]&#x3D;&quot;{disabled:paginationDetails.currentPage&#x3D;&#x3D;&#x3D;1 }&quot; class&#x3D;&quot;sb-item &quot;
+                          (click)&#x3D;&quot;navigateToPage(paginationDetails.currentPage - 1)&quot;&gt;&amp;lt;&lt;/a&gt;
+                        &lt;a role&#x3D;“button” aria-current&#x3D;“page” title&#x3D;&quot;{{page}}&quot; attr.aria-label&#x3D;&quot;{{page}}&quot; *ngFor&#x3D;&quot;let page of paginationDetails.pages&quot; [ngClass]&#x3D;&quot;{active:paginationDetails.currentPage&#x3D;&#x3D;&#x3D;page}&quot;
+                          (click)&#x3D;&quot;navigateToPage(page)&quot; class&#x3D;&quot;sb-item&quot;&gt;{{page}}&lt;/a&gt;
+                        &lt;a title&#x3D;&quot;{{resourceService?.frmelmnts?.lbl?.next}}&quot; attr.aria-label&#x3D;&quot;{{resourceService?.frmelmnts?.lbl?.next}}&quot; role&#x3D;&quot;button&quot; [ngClass]&#x3D;&quot;{disabled:paginationDetails.currentPage&#x3D;&#x3D;&#x3D; paginationDetails.totalPages}&quot;
+                          (click)&#x3D;&quot;navigateToPage(paginationDetails.currentPage + 1)&quot; class&#x3D;&quot;sb-item&quot;&gt;&amp;gt;&lt;/a&gt;
+                        &lt;a role&#x3D;&quot;button&quot; title&#x3D;&quot;{{resourceService?.frmelmnts?.lbl?.last}}&quot; attr.aria-label&#x3D;&quot;{{resourceService?.frmelmnts?.lbl?.last}}&quot; [ngClass]&#x3D;&quot;{disabled:paginationDetails.currentPage&#x3D;&#x3D;&#x3D; paginationDetails.totalPages}&quot;
+                          (click)&#x3D;&quot;navigateToPage(paginationDetails.totalPages)&quot; class&#x3D;&quot;sb-item &quot;&gt;&amp;raquo;&lt;/a&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/sui-tabset&gt;
+          &lt;/div&gt;
+        &lt;/ng-container&gt;
+      &lt;/div&gt;
+    &lt;/ng-container&gt;
+
+    
+    &lt;div class&#x3D;&quot;twelve wide column&quot; *ngIf&#x3D;&quot;noResult&quot;&gt;
+      &lt;app-no-result [data]&#x3D;&quot;noResultMessage&quot;&gt;&lt;/app-no-result&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;twelve wide column&quot; *ngIf&#x3D;&quot;showLoader&quot;&gt;
+      &lt;app-loader [data]&#x3D;&#x27;loaderMessage&#x27;&gt;&lt;/app-loader&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div *ngIf&#x3D;&quot;showModal&quot;&gt;
+  &lt;app-entity-list (closeEvent)&#x3D;&quot;modalClose($event)&quot;  [solution]&#x3D;&quot;solution&quot;&gt; &lt;/app-entity-list&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./solution-listing.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;variables&quot;;
+@import &quot;mixins/mixins&quot;;
+
+.main-container {
+  padding:0 1%;
+}
+
+.sbgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(292px, 1fr));
+  grid-gap: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .sb__DesktopOnly {
+    display: none;
+  }
+}
+
+:host {
+  .ui.tabular.menu.report-menu .item {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+:host::ng-deep {
+  .listallreports-section {
+    .dataTables_wrapper .dataTables_filter input {
+      outline: 0;
+    }
+  }
+}
+
+
+.table-bottom {
+  border: 0.0625rem solid var(--gray-100);
+}
+
+.pull-right {
+  float: right !important;
+  width: 120px;
+}
+
+.pull-left {
+  float:left;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  margin-top:7px
+}
+
+select.search-entity {
+  width: 120px;
+  border: 1px solid #aaa;
+  color: #333;
+  border-radius: 3px;
+  padding: 4px;
+  font-size: 0.8125rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+select .select-entries{
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  background-color: transparent;
+  padding: 4px;
+  font-size: 0.8125rem;
+}
+
+.header-section {
+  width: 70px;
+  text-align: center;
+}
+
+.date-section {
+  width: 180px;
+  text-align: center;
+}
+
+label {
+  float: left;
+}
+
+.iconSize{
+  font-size: 18px;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-landing-section  [noTitle]="true"  [layoutConfiguration]="layoutConfiguration"></app-landing-section><div  [ngClass]="layoutConfiguration ? \'sb-back-actionbar\' : \'sb-bg-color-white back-btn-container cc-player__btn-back relative9\'"  class="relative position mt-0">  <div class="ui container py-0 px-0 d-flex flex-ai-center">    <div class="py-0 d-flex flex-ai-center w-100">      <!-- /* Back button */ -->      <button type="button" [ngClass]="layoutConfiguration ? \'sb-btn-round\' : \'\'"        class="sb-btn sb-btn-normal sb-btn-link sb-btn-link-primary sb-left-icon-btn px-0" tabindex="0" (click)="goBack()">        <em class="icon-svg icon-svg--xxs icon-back mr-4"><svg class="icon icon-svg--primary">            <use xlink:href="assets/images/sprite.svg#arrow-long-left"></use>          </svg></em>        <span>{{resourceService?.frmelmnts?.btn?.back}}</span>      </button>     <div class="textbook d-flex flex-ai-center flex-jc-space-between w-100 ml-16">        <!-- title -->        <h5 class="textbook__title sb-color-primary font-weight-bold mb-0" tabindex="0"></h5>    </div>    </div>  </div></div><div [ngClass]="layoutConfiguration ? \'sbt-inside-page-container\' : \'pt-16\'">  <div class="sb-pageSection my-24 ui container listallreports-section">    <ng-container>      <div class="sb-pageSection-content">        <ng-container *ngIf="solutionList.length">          <div>            <sui-tabset>              <div class="ui top attached tabular menu report-menu">                <a class="item" suiTabHeader="1"                  ><i class="icon chart line alternate"></i> {{resourceService.frmelmnts?.lnk?.report}}</a                >              </div>              <div class="ui bottom attached segment" suiTabContent="1">                <div class="ui bottom attached small p-0 b-0 no-bg py-24">                  <div class="pull-left">                    show <select [(ngModel)]="pageSize" class="dataTables_filter search-entries" (change)="changeLimit($event)">                      <option value="10" selected>10</option>                      <option value="20">20</option>                      <option value="25">25</option>                    </select> entries                  </div>                  <div class="pull-right">                    <select [(ngModel)]="selectedEntity" class="dataTables_filter search-entity" (change)="getDataByEntity($event)">                      <option value="selected" selected disabled hidden>Entity Filter</option>                      <option value="{{entity}}" *ngFor="let entity of filters">{{entity}}</option>                    </select>                  </div>                                      <table datatable [dtOptions]="dtOptions"                    class="                      sb-table sb-table-hover sb-table-striped sb-table-sortable                      width-100 table-bottom                     "                  >                  <thead >                    <tr>                      <th class="header-section">{{resourceService?.frmelmnts?.lbl?.serialno}}</th>                      <th class="header-section"></th>                      <th>{{resourceService?.frmelmnts?.lbl?.title}}</th>                      <th  class="date-section">{{resourceService?.frmelmnts?.lbl?.latestSubmission}}</th>                    </tr>                  </thead>                  <tbody>                   <tr *ngFor="let solution of solutionList;let i=index" (click)="(solution?.entities?.length >1) ? goToEntityList(solution) : goToReports(solution)">                         <td class="header-section">{{i+1}}</td>                         <td><button class="sb-btn sb-btn-link sb-btn-link-primary sb-btn-normal iconSize" aria-label="file-icon">                          <i class="icon copy outline alternate large"></i></button></td>                         <td><div class="sb-media"><div class="sb-media-body"><h6 class="p-0">                          {{solution.name}}</h6> <p class="media-description sb__ellipsis"> {{solution.programName}}</p></div></div></td>                          <td class="date-section">{{solution.completedDate| date: "yyyy/MM/dd"}}</td>                     </tr>                  </tbody>                                 </table>                <div class="content-grid relative9">                <div class="twelve wide column right aligned"                    *ngIf="paginationDetails.totalItems > 5">                    <div class="sb-pagination-container flex-jc-flex-end mt-16" *ngIf="paginationDetails.pages.length">                      <div class="sb-pagination my-0">                        <a role="button" title="{{resourceService?.frmelmnts?.lbl?.first}}" attr.aria-label="{{resourceService?.frmelmnts?.lbl?.first}}" [ngClass]="{disabled:paginationDetails.currentPage===1 }" class="sb-item "                          (click)="navigateToPage(1) ">&laquo;</a>                        <a role="button" title="{{resourceService?.frmelmnts?.lbl?.previous}}" attr.aria-label="{{resourceService?.frmelmnts?.lbl?.previous}}" [ngClass]="{disabled:paginationDetails.currentPage===1 }" class="sb-item "                          (click)="navigateToPage(paginationDetails.currentPage - 1)">&lt;</a>                        <a role=“button” aria-current=“page” title="{{page}}" attr.aria-label="{{page}}" *ngFor="let page of paginationDetails.pages" [ngClass]="{active:paginationDetails.currentPage===page}"                          (click)="navigateToPage(page)" class="sb-item">{{page}}</a>                        <a title="{{resourceService?.frmelmnts?.lbl?.next}}" attr.aria-label="{{resourceService?.frmelmnts?.lbl?.next}}" role="button" [ngClass]="{disabled:paginationDetails.currentPage=== paginationDetails.totalPages}"                          (click)="navigateToPage(paginationDetails.currentPage + 1)" class="sb-item">&gt;</a>                        <a role="button" title="{{resourceService?.frmelmnts?.lbl?.last}}" attr.aria-label="{{resourceService?.frmelmnts?.lbl?.last}}" [ngClass]="{disabled:paginationDetails.currentPage=== paginationDetails.totalPages}"                          (click)="navigateToPage(paginationDetails.totalPages)" class="sb-item ">&raquo;</a>                      </div>                    </div>                  </div>                </div>                </div>              </div>            </sui-tabset>          </div>        </ng-container>      </div>    </ng-container>        <div class="twelve wide column" *ngIf="noResult">      <app-no-result [data]="noResultMessage"></app-no-result>    </div>    <div class="twelve wide column" *ngIf="showLoader">      <app-loader [data]=\'loaderMessage\'></app-loader>    </div>  </div></div><div *ngIf="showModal">  <app-entity-list (closeEvent)="modalClose($event)"  [solution]="solution"> </app-entity-list></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'app-access-discussion'},{'name': 'AccountMergeModalComponent', 'selector': 'app-account-merge-modal'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-info'},{'name': 'ActivityDashboardComponent', 'selector': 'app-activity-dashboard'},{'name': 'ActivityDetailsComponent', 'selector': 'app-activity-details'},{'name': 'ActivityFormComponent', 'selector': 'app-activity-form'},{'name': 'ActivityListComponent', 'selector': 'app-activity-list'},{'name': 'ActivitySearchComponent', 'selector': 'app-activity-search'},{'name': 'AddActivityComponent', 'selector': 'app-add-activity'},{'name': 'AddActivityContentTypesComponent', 'selector': 'app-add-activity-content-types'},{'name': 'AddEntityComponent', 'selector': 'add-entity'},{'name': 'AddMemberComponent', 'selector': 'app-add-member'},{'name': 'AddSummaryModalComponent', 'selector': 'app-add-summary-modal'},{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AllContentComponent', 'selector': 'app-all-content'},{'name': 'AllEvidenceComponent', 'selector': 'app-all-evidence'},{'name': 'AllTextbooksComponent', 'selector': 'app-all-textbooks'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppLandingSectionComponent', 'selector': 'app-landing-section'},{'name': 'AppLoaderComponent', 'selector': 'app-loader'},{'name': 'AssessmentPlayerComponent', 'selector': 'app-assessment-player'},{'name': 'AssignBadgesContentComponent', 'selector': 'app-assign-badges-content'},{'name': 'AuthFailedComponent', 'selector': 'app-auth-failed'},{'name': 'BackButtonComponent', 'selector': 'app-back-button'},{'name': 'BatchCardComponent', 'selector': 'app-batch-card'},{'name': 'BatchDetailsComponent', 'selector': 'app-batch-details'},{'name': 'BatchInfoComponent', 'selector': 'app-batch-info'},{'name': 'BatchListComponent', 'selector': 'app-batch-list'},{'name': 'BatchPageSectionComponent', 'selector': 'app-batch-page-section'},{'name': 'BrowseImagePopupComponent', 'selector': 'browse-image-popup'},{'name': 'BrowserCompatibilityComponent', 'selector': 'app-browser-compatibility'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardCreationComponent', 'selector': 'app-card-creation'},{'name': 'CertificateConfigurationComponent', 'selector': 'app-certificate-configuration'},{'name': 'CertificateDetailsComponent', 'selector': 'app-certificate-details'},{'name': 'CertificateNameUpdatePopupComponent', 'selector': 'app-certificate-name-update-popup'},{'name': 'CertPreviewPopupComponent', 'selector': 'app-cert-preview-popup'},{'name': 'ChooseUserComponent', 'selector': 'app-choose-user'},{'name': 'CollaboratingOnComponent', 'selector': 'app-collaborating-on'},{'name': 'CollaborationContentFilterComponent', 'selector': 'app-collaboration-content-filter'},{'name': 'CollectionEditorComponent', 'selector': 'app-collection-editor'},{'name': 'CollectionPlayerComponent', 'selector': 'app-collection-player'},{'name': 'CollectionPlayerMetadataComponent', 'selector': 'app-collection-player-metadata'},{'name': 'CommingSoonComponent', 'selector': 'app-comming-soon'},{'name': 'ConfirmationPopupComponent', 'selector': 'app-confirmation-popup'},{'name': 'ConfirmPopupComponent', 'selector': 'app-confirm-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentBadgeComponent', 'selector': 'app-content-badge'},{'name': 'ContentChapterlistComponent', 'selector': 'app-content-chapterlist'},{'name': 'ContentCreditsComponent', 'selector': 'app-content-credits'},{'name': 'ContentEditorComponent', 'selector': 'app-content-editor'},{'name': 'ContentLicenceComponent', 'selector': 'app-content-licence'},{'name': 'ContentManagerComponent', 'selector': 'app-content-manager'},{'name': 'ContentManagerInfoPopUpComponent', 'selector': 'app-content-manager-info-pop-up'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerMetadataComponent', 'selector': 'app-content-player-metadata'},{'name': 'ContentPlayerPageComponent', 'selector': 'app-contentplayer-page'},{'name': 'ContentRatingComponent', 'selector': 'app-content-rating'},{'name': 'ContentTypeComponent', 'selector': 'app-content-type'},{'name': 'CourseCompletionComponent', 'selector': 'app-course-completion'},{'name': 'CourseConsumptionComponent', 'selector': 'app-course-consumption'},{'name': 'CourseConsumptionHeaderComponent', 'selector': 'app-course-consumption-header'},{'name': 'CourseConsumptionPageComponent', 'selector': ''},{'name': 'CourseDashboardComponent', 'selector': 'app-course-dashboard'},{'name': 'CourseDetailsComponent', 'selector': 'app-course-details'},{'name': 'CourseInfoComponent', 'selector': 'app-course-info'},{'name': 'CoursePageComponent', 'selector': ''},{'name': 'CoursePlayerComponent', 'selector': 'app-course-player'},{'name': 'CourseProgressComponent', 'selector': 'app-course-progress'},{'name': 'CreateBatchComponent', 'selector': 'app-create-batch'},{'name': 'CreateContentComponent', 'selector': 'app-create-content'},{'name': 'CreateEditGroupComponent', 'selector': 'app-create-edit-group'},{'name': 'CreateOrgTypeComponent', 'selector': 'app-create-org-type'},{'name': 'CreateTemplateComponent', 'selector': 'app-create-template'},{'name': 'CreateUserComponent', 'selector': 'app-create-user'},{'name': 'CreditsAndLicenceComponent', 'selector': 'app-credits-and-licence'},{'name': 'CurriculumCardComponent', 'selector': 'app-curriculum-card'},{'name': 'CurriculumCoursesComponent', 'selector': 'app-curriculum-courses'},{'name': 'CurriculumInfoComponent', 'selector': 'app-curriculum-info'},{'name': 'CustomMultiSelectComponent', 'selector': 'app-custom-multi-select'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardSidebarComponent', 'selector': 'app-dashboard-sidebar'},{'name': 'DataChartComponent', 'selector': 'app-data-chart'},{'name': 'DataDrivenComponent', 'selector': 'app-data-driven'},{'name': 'DataDrivenFilterComponent', 'selector': 'app-data-driven-filter'},{'name': 'DatasetComponent', 'selector': 'app-dataset'},{'name': 'DatasetsComponent', 'selector': 'app-datasets'},{'name': 'DataTableComponent', 'selector': 'app-data-table'},{'name': 'DefaultTemplateComponent', 'selector': 'app-content-creation-default-template'},{'name': 'DesktopAppUpdateComponent', 'selector': 'app-desktop-app-update'},{'name': 'DialCodeCardComponent', 'selector': 'app-dial-code-card'},{'name': 'DialCodeComponent', 'selector': 'app-dial-code'},{'name': 'DraftComponent', 'selector': 'app-draft'},{'name': 'EditSubmissionComponent', 'selector': 'app-edit-submission'},{'name': 'EnrollBatchComponent', 'selector': 'app-enroll-batch'},{'name': 'EntityListComponent', 'selector': 'entity-list'},{'name': 'EntityListComponent', 'selector': 'app-entity-list'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'ExploreContentComponent', 'selector': ''},{'name': 'ExploreCourseComponent', 'selector': ''},{'name': 'ExploreCurriculumCoursesComponent', 'selector': 'app-explore-curriculum-courses'},{'name': 'ExploreFtuPopupComponent', 'selector': 'app-explore-ftu-popup'},{'name': 'ExploreGroupComponent', 'selector': 'app-explore-group'},{'name': 'ExplorePageComponent', 'selector': 'app-explore-page-component'},{'name': 'FancyTreeComponent', 'selector': 'app-fancy-tree'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FaqReportComponent', 'selector': 'app-faq-report'},{'name': 'FilterComponent', 'selector': 'app-filter'},{'name': 'FlagConentplayerComponent', 'selector': 'app-flag-conentplayer'},{'name': 'FlaggedComponent', 'selector': 'app-flagged'},{'name': 'FlagReviewerComponent', 'selector': 'app-flag-reviewer'},{'name': 'ForumComponent', 'selector': 'app-forum'},{'name': 'FtuPopupComponent', 'selector': 'app-ftu-popup'},{'name': 'FullPageLoaderComponent', 'selector': 'app-full-page-loader'},{'name': 'FullPageModalComponent', 'selector': 'app-full-page-modal'},{'name': 'GenericEditorComponent', 'selector': 'app-generic-editor'},{'name': 'GetComponent', 'selector': 'app-get'},{'name': 'GlobalConsentPiiComponent', 'selector': 'app-global-consent-pii'},{'name': 'GlobalSearchFilterComponent', 'selector': 'app-global-search-filter'},{'name': 'GlobalSearchSelectedFilterComponent', 'selector': 'app-global-search-selected-filter'},{'name': 'GroupDetailsComponent', 'selector': 'app-group-details'},{'name': 'GroupHeaderComponent', 'selector': 'app-group-header'},{'name': 'GroupMembersComponent', 'selector': 'app-group-members'},{'name': 'GuestProfileComponent', 'selector': 'app-guest-profile'},{'name': 'HomeSearchComponent', 'selector': ''},{'name': 'IdentifyAccountComponent', 'selector': ''},{'name': 'InAppNotificationComponent', 'selector': 'app-in-app-notification'},{'name': 'InfoCardComponent', 'selector': 'app-info-card'},{'name': 'InstallAppComponent', 'selector': 'app-install-app'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'LanguageDropdownComponent', 'selector': 'app-language-dropdown'},{'name': 'LibraryComponent', 'selector': 'app-library'},{'name': 'LimitedPublishedComponent', 'selector': 'app-limited-published'},{'name': 'ListAllReportsComponent', 'selector': 'app-list-all-reports'},{'name': 'LoadContentComponent', 'selector': 'app-load-content'},{'name': 'LoadOfflineContentComponent', 'selector': 'app-load-offline-content'},{'name': 'LocationSelectionComponent', 'selector': 'app-location-selection'},{'name': 'LockInfoPopupComponent', 'selector': 'app-contentlock-info-popup'},{'name': 'MainFooterComponent', 'selector': 'app-footer'},{'name': 'MainHeaderComponent', 'selector': 'app-header'},{'name': 'MainMenuComponent', 'selector': 'app-main-menu'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialAutoCompleteComponent', 'selector': 'app-material-auto-complete'},{'name': 'MemberActionsComponent', 'selector': 'app-member-actions'},{'name': 'MergeAccountStatusComponent', 'selector': 'app-merge-account-status'},{'name': 'ModalWrapperComponent', 'selector': 'app-modal-wrapper'},{'name': 'MyGroupsComponent', 'selector': 'app-my-groups'},{'name': 'NetworkStatusComponent', 'selector': 'app-network-status'},{'name': 'NewCollectionEditorComponent', 'selector': 'app-new-collection-editor'},{'name': 'NoGroupResultComponent', 'selector': 'app-no-group-result'},{'name': 'NoResultComponent', 'selector': 'app-no-result-found'},{'name': 'NoResultComponent', 'selector': 'app-no-result'},{'name': 'ObservationDetailsComponent', 'selector': 'app-observation-details'},{'name': 'ObservationListingComponent', 'selector': 'app-observation-listing'},{'name': 'OfflineApplicationDownloadComponent', 'selector': 'app-offline-application-download'},{'name': 'OfflineBannerComponent', 'selector': 'app-offline-banner'},{'name': 'OfflineHelpVideosComponent', 'selector': 'app-offline-help-videos'},{'name': 'OnboardingUserSelectionComponent', 'selector': 'app-onboarding-user-selection'},{'name': 'OnDemandReportsComponent', 'selector': 'app-on-demand-reports'},{'name': 'OrganisationComponent', 'selector': 'app-organization'},{'name': 'OrganizationUploadComponent', 'selector': 'app-organization'},{'name': 'OtpComponent', 'selector': 'app-otp'},{'name': 'OtpPopupComponent', 'selector': 'app-otp-popup'},{'name': 'PageSectionComponent', 'selector': 'app-page-section'},{'name': 'PlayerComponent', 'selector': 'app-player'},{'name': 'PopupComponent', 'selector': 'app-modal'},{'name': 'ProfileBadgeComponent', 'selector': 'app-profile-badge'},{'name': 'ProfileFrameworkPopupComponent', 'selector': 'app-popup'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'PublicBatchDetailsComponent', 'selector': 'app-public-batch-details'},{'name': 'PublicCourseConsumptionPageComponent', 'selector': ''},{'name': 'PublicCoursePlayerComponent', 'selector': 'app-public-course-player'},{'name': 'PublishedComponent', 'selector': 'app-published'},{'name': 'PublishedPopupComponent', 'selector': 'app-published-popup'},{'name': 'QrCodeModalComponent', 'selector': 'app-qr-code-modal'},{'name': 'QuestionnaireComponent', 'selector': 'app-questionnaire'},{'name': 'RecoverAccountComponent', 'selector': ''},{'name': 'RedirectComponent', 'selector': 'app-redirect'},{'name': 'ReIssueCertificateComponent', 'selector': 'app-re-issue-certificate'},{'name': 'ReportComponent', 'selector': 'app-report'},{'name': 'ReportSummaryComponent', 'selector': 'app-report-summary'},{'name': 'ReportViewComponent', 'selector': 'app-report-view'},{'name': 'RequestChangesPopupComponent', 'selector': 'app-request-changes-popup'},{'name': 'ReviewCommentsComponent', 'selector': 'app-review-comments'},{'name': 'ReviewSubmissionsComponent', 'selector': 'app-review-submissions'},{'name': 'ReviewsubmissionsContentplayerComponent', 'selector': 'app-reviewsubmissions-contentplayer'},{'name': 'SbDatatableComponent', 'selector': 'sb-datatable'},{'name': 'SbTableComponent', 'selector': 'app-sb-table'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SearchFilterComponent', 'selector': 'app-search-filter'},{'name': 'SelectAccountIdentifierComponent', 'selector': ''},{'name': 'SelectOptionGroupComponent', 'selector': 'app-select-option-group'},{'name': 'SelectOrgComponent', 'selector': ''},{'name': 'ShareLinkComponent', 'selector': 'app-share-link'},{'name': 'SignupBasicInfoComponent', 'selector': 'app-signup-basic-info'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupEmailPasswordComponent', 'selector': 'app-signup-email-password'},{'name': 'SignupOnboardingInfoComponent', 'selector': 'app-signup-onboarding-info'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'SsoMergeConfirmationComponent', 'selector': 'app-sso-merge-confirmation'},{'name': 'StatusComponent', 'selector': 'app-status'},{'name': 'SubmissionsComponent', 'selector': 'submission'},{'name': 'SubmitTeacherDetailsComponent', 'selector': 'app-submit-teacher-details'},{'name': 'SvgEditorComponent', 'selector': 'app-svg-editor'},{'name': 'SystemWarningComponent', 'selector': 'app-system-warning'},{'name': 'TelemetryComponent', 'selector': 'app-telemetry'},{'name': 'TelemetryErrorModalComponent', 'selector': 'app-telemetry-error-modal'},{'name': 'TelemetryImportComponent', 'selector': 'app-telemetry-import'},{'name': 'TermsAndConditionsPopupComponent', 'selector': 'app-tnc-popup'},{'name': 'TopicPickerComponent', 'selector': 'app-topic-picker'},{'name': 'UciComponent', 'selector': 'app-uci'},{'name': 'UnEnrollBatchComponent', 'selector': 'app-unenroll-batch'},{'name': 'UpdateBatchComponent', 'selector': 'app-update-batch'},{'name': 'UpdateContactComponent', 'selector': ''},{'name': 'UpdateContactDetailsComponent', 'selector': 'app-update-contact-details'},{'name': 'UpdateCourseBatchComponent', 'selector': 'app-update-course-batch'},{'name': 'UpForReviewComponent', 'selector': 'app-up-for-review'},{'name': 'UpforreviewContentplayerComponent', 'selector': 'app-upforreview-contentplayer'},{'name': 'UpforReviewFilterComponent', 'selector': 'app-up-for-review-filter'},{'name': 'UploadedComponent', 'selector': 'app-uploaded'},{'name': 'UsageReportsComponent', 'selector': 'app-usage-reports'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserFilterComponent', 'selector': 'app-user-filter'},{'name': 'UserLocationComponent', 'selector': 'app-user-location'},{'name': 'UserOnboardingComponent', 'selector': 'app-user-onboarding'},{'name': 'UserOrgManagementComponent', 'selector': 'app-user-org-management'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRoleAssignComponent', 'selector': 'app-user-role-assign'},{'name': 'UserSearchComponent', 'selector': 'app-user-search'},{'name': 'ValidateTeacherIdentifierPopupComponent', 'selector': 'app-validate-teacher-identifier-popup'},{'name': 'VerifyAccountIdentifierComponent', 'selector': ''},{'name': 'ViewAllComponent', 'selector': 'app-view-all'},{'name': 'ViewOrgTypeComponent', 'selector': 'app-view-org-type'},{'name': 'WorkspaceComponent', 'selector': 'app-workspace'},{'name': 'WorkspaceContentFilterComponent', 'selector': 'app-workspace-content-filter'},{'name': 'WorkspacesidebarComponent', 'selector': 'app-workspacesidebar'},{'name': 'YearOfBirthComponent', 'selector': 'app-year-of-birth'}];
+    var DIRECTIVES = [{'name': 'ActivityDashboardDirective', 'selector': '[appActivityDashboard]'},{'name': 'AddToGroupDirective', 'selector': '[appAddToGroup]'},{'name': 'BodyScrollDirective', 'selector': '[appBodyScroll]'},{'name': 'ComponentDeactivate', 'selector': ''},{'name': 'ContentDirectionDirective', 'selector': '[appContentDirection]'},{'name': 'DesktopOnlyDirective', 'selector': '[appDesktopOnly]'},{'name': 'HighlightTextDirective', 'selector': '[appHighlightText]'},{'name': 'MarkdownDirective', 'selector': '[appMarkdown]'},{'name': 'ModalContentDirective', 'selector': '[sbModalContent]'},{'name': 'OnlineOnlyDirective', 'selector': '[appOnlineOnly]'},{'name': 'PermissionDirective', 'selector': '[appPermission]'},{'name': 'TelemetryEndDirective', 'selector': '[appTelemetryEnd]'},{'name': 'TelemetryErrorDirective', 'selector': '[appTelemetryError]'},{'name': 'TelemetryEventsDirective', 'selector': '[telemetryEventsButton]'},{'name': 'TelemetryImpressionDirective', 'selector': '[appTelemetryImpression]'},{'name': 'TelemetryInteractDirective', 'selector': '[appTelemetryInteract]'},{'name': 'TelemetryShareDirective', 'selector': '[appTelemetryShare]'},{'name': 'TelemetryStartDirective', 'selector': '[appTelemetryStart]'}];
+    var ACTUAL_COMPONENT = {'name': 'SolutionListingComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SolutionListingComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

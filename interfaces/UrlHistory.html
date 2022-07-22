@@ -1,0 +1,501 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Interfaces</li>
+  <li
+  >
+  UrlHistory</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/shared/services/navigation-helper/navigation-helper.service.ts</code>
+        </p>
+
+
+
+
+        <section>
+            <h3 id="index">Index</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Properties</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                            <span class="modifier">Optional</span>
+                                        <a href="#queryParams" 
+>
+                                            queryParams
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#url" 
+>
+                                            url
+                                        </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+            <section>
+                <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="queryParams"></a>
+                                        <span class="name "><b>queryParams</b>
+                                            <a href="#queryParams">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>queryParams:         <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Optional</i>
+                                        </td>
+                                    </tr>
+
+
+
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="url"></a>
+                                        <span class="name "><b>url</b>
+                                            <a href="#url">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>url:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable, EventEmitter } from &#x27;@angular/core&#x27;;
+import { Router, NavigationEnd, ActivatedRoute, NavigationStart } from &#x27;@angular/router&#x27;;
+import { CacheService } from &#x27;ng2-cache-service&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import { UtilService } from &#x27;../util/util.service&#x27;;
+import { Subject, asyncScheduler } from &#x27;rxjs&#x27;;
+import { throttleTime } from &#x27;rxjs/operators&#x27;;
+
+interface UrlHistory {
+  url: string;
+  queryParams?: any;
+}
+@Injectable()
+export class NavigationHelperService {
+  // Workaround for issue https://github.com/angular/angular/issues/12889
+  // Dependency injection creates new instance each time if used in router sub-modules
+  static singletonInstance: NavigationHelperService;
+
+  private _resourceCloseUrl: UrlHistory;
+  /**
+   * Stores workspaceCloseUrl
+   */
+  private _workspaceCloseUrl: UrlHistory;
+  /**
+   * Stores routing history, if query param changed in same url only latest copy will be stored rest ignored
+   */
+  private _history: Array&lt;UrlHistory&gt; &#x3D; [];
+
+  navigateToPreviousUrl$ &#x3D; new Subject;
+
+  private pageStartTime: any;
+
+  private pageEndTime: any;
+  /**
+   * Name used to store previous url in session
+   */
+  private cacheServiceName &#x3D; &#x27;previousUrl&#x27;;
+  public contentFullScreenEvent &#x3D; new EventEmitter&lt;any&gt;();
+  handleCMvisibility &#x3D; new EventEmitter&lt;any&gt;();
+  previousNavigationUrl;
+
+  constructor(
+    public router: Router,
+    public activatedRoute: ActivatedRoute,
+    public cacheService: CacheService,
+    public utilService: UtilService
+  ) {
+    this.handlePrevNavigation();
+    if (!NavigationHelperService.singletonInstance) {
+      NavigationHelperService.singletonInstance &#x3D; this;
+    }
+    return NavigationHelperService.singletonInstance;
+  }
+  /**
+   * Stores routing history
+   * @memberof NavigationHelperService
+   */
+  private storeUrlHistory(): void {
+    this.router.events.subscribe(e &#x3D;&gt; {
+      if (e instanceof NavigationStart) {
+        this.pageStartTime &#x3D; Date.now();
+      } else if (e instanceof NavigationEnd) {
+        const urlAfterRedirects &#x3D; e;
+        const queryParams &#x3D; this.activatedRoute.root.children[this.activatedRoute.root.children.length - 1].snapshot.queryParams;
+        const url &#x3D; urlAfterRedirects.url.split(&#x27;?&#x27;)[0];
+        let history: UrlHistory;
+        if (_.isEmpty(queryParams)) {
+          history &#x3D; {url};
+        } else {
+          history &#x3D; {url, queryParams};
+        }
+        const previousUrl &#x3D; this._history.pop();
+        if (previousUrl &#x3D;&#x3D;&#x3D; undefined || (previousUrl &amp;&amp; previousUrl.url &#x3D;&#x3D;&#x3D; history.url )) {
+          this._history.push(history);
+        } else {
+          this._history.push(previousUrl, history);
+        }
+      }
+    });
+  }
+  storeResourceCloseUrl() {
+    this._resourceCloseUrl &#x3D; this._history[this._history.length - 1];
+  }
+  storeWorkSpaceCloseUrl() {
+    this._workspaceCloseUrl &#x3D; this.history[this._history.length - 1];
+  }
+  public navigateToResource(defaultUrl: string &#x3D; &#x27;/explore&#x27;) {
+    if (this._resourceCloseUrl &amp;&amp; this._resourceCloseUrl.url) {
+      if (this._resourceCloseUrl.queryParams) {
+        this.router.navigate([this._resourceCloseUrl.url], {queryParams: this._resourceCloseUrl.queryParams});
+      } else {
+        this.router.navigate([this._resourceCloseUrl.url]);
+      }
+    } else {
+      this.router.navigateByUrl(defaultUrl);
+    }
+  }
+
+  public getPageLoadTime() {
+     this.pageEndTime &#x3D; Date.now();
+     const loadTime &#x3D; (this.pageEndTime - this.pageStartTime) / 1000;
+     return loadTime;
+  }
+
+  public navigateToWorkSpace(defaultUrl: string &#x3D; &#x27;/resources&#x27;) {
+    if (this._workspaceCloseUrl &amp;&amp; this._workspaceCloseUrl.url) {
+      if (this._workspaceCloseUrl.queryParams) {
+        this.router.navigate([this._workspaceCloseUrl.url], {queryParams: this._workspaceCloseUrl.queryParams});
+        this._workspaceCloseUrl &#x3D; undefined;
+      } else {
+        this.router.navigate([this._workspaceCloseUrl.url]);
+        this._workspaceCloseUrl &#x3D; undefined;
+      }
+    } else {
+      this.router.navigate([defaultUrl]);
+    }
+  }
+  /**
+   * returns routing history
+   */
+  get history(): Array&lt;UrlHistory&gt; {
+    return this._history;
+  }
+  /**
+   * initialize storeUrlHistory function to store routing history.
+   * Add callback function for window.onunload to store previous url.
+   */
+  initialize() {
+    this.pageStartTime &#x3D; Date.now();
+    this.storeUrlHistory();
+    window.onunload &#x3D; () &#x3D;&gt; {
+      if (this.history[this._history.length - 2]) {
+        this.cacheService.set(this.cacheServiceName, this.history[this._history.length - 2]);
+      }
+    };
+  }
+  /**
+   * returns PreviousUrl
+   * 1. First fetches from _history property.
+   * 2. From session if _history is not present, for reload case.
+   * 3. if both are not present then default explore is returned.
+   */
+  public getPreviousUrl(): UrlHistory {
+    const previousUrl &#x3D; this.history[this._history.length - 2];
+    const sessionUrl &#x3D; this.cacheService.get(this.cacheServiceName);
+    if (previousUrl) {
+      return previousUrl;
+    } else if (sessionUrl) {
+      return sessionUrl;
+    } else {
+      return {url: &#x27;/explore&#x27;};
+    }
+  }
+  /**
+   * Navigates to previous Url
+   * moved logic to subject subscription to prevent,
+   * multiple navigation if user click close multiple time before navigation trigers
+   */
+  public navigateToPreviousUrl(defaultUrl: string &#x3D; &#x27;/explore&#x27;) {
+    this.navigateToPreviousUrl$.next(defaultUrl);
+  }
+  handlePrevNavigation() {
+    this.navigateToPreviousUrl$.pipe(
+      throttleTime(250, asyncScheduler, { leading: true, trailing: false }))
+    .subscribe(defaultUrl &#x3D;&gt; {
+      const previousUrl &#x3D; this.getPreviousUrl();
+      this._history.pop(); // popping current url
+      this._history.pop(); // popping previous url as am navigating to same url it will be added again
+      if (previousUrl.url &#x3D;&#x3D;&#x3D; &#x27;/explore&#x27;) {
+        this.router.navigate([defaultUrl]);
+      } else {
+        if (previousUrl.queryParams) {
+          this.router.navigate([previousUrl.url], { queryParams: previousUrl.queryParams });
+        } else {
+          this.router.navigate([previousUrl.url]);
+        }
+      }
+    });
+  }
+
+  /* Returns previous URL for the desktop */
+  public getDesktopPreviousUrl(): UrlHistory {
+    const previousUrl &#x3D; this.history[this._history.length - 2];
+    if (previousUrl) {
+      return previousUrl;
+    } else {
+      return { url: &#x27;/&#x27; };
+    }
+  }
+
+  /* Used In Desktop for navigating to back page */
+  goBack() {
+    const previousUrl &#x3D; this.getDesktopPreviousUrl();
+    const redirectToExplore &#x3D; [
+      &#x27;/profile&#x27;
+    ];
+    this.history.pop();
+    if (_.includes(previousUrl.url, &#x27;/search&#x27;) &amp;&amp; previousUrl.queryParams) {
+      this.utilService.updateSearchKeyword(previousUrl.queryParams.key);
+    }
+
+    if (_.includes(redirectToExplore, this.router.url)) {
+      this.router.navigate([&#x27;/explore&#x27;]);
+    } else if (previousUrl.queryParams) {
+      this.router.navigate([previousUrl.url], { queryParams: previousUrl.queryParams });
+    } else {
+      this.router.navigate([previousUrl.url]);
+    }
+  }
+
+  public clearHistory() {
+    this._history &#x3D; [];
+  }
+
+  emitFullScreenEvent(value) {
+    this.contentFullScreenEvent.emit(value);
+  }
+
+  handleContentManagerOnFullscreen(value) {
+    this.handleCMvisibility.emit(value);
+  }
+
+  setNavigationUrl(navigationUrl?: UrlHistory) {
+    const urlToNavigate &#x3D; navigationUrl ? navigationUrl : this.getPreviousUrl();
+    if (urlToNavigate &amp;&amp; !(_.includes(urlToNavigate.url, &#x27;create-managed-user&#x27;) || _.includes(urlToNavigate.url, &#x27;choose-managed-user&#x27;))) {
+      this.previousNavigationUrl &#x3D; urlToNavigate;
+    }
+  }
+
+  navigateToLastUrl() {
+    if (this.previousNavigationUrl) {
+      if (this.previousNavigationUrl.queryParams) {
+        this.router.navigate([this.previousNavigationUrl.url], {queryParams: this.previousNavigationUrl.queryParams});
+      } else {
+        this.router.navigate([this.previousNavigationUrl.url]);
+      }
+    } else {
+      this.router.navigate([&#x27;/resources&#x27;]);
+    }
+  }
+
+  popHistory() {
+    this.history.pop();
+  }
+
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'UrlHistory.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

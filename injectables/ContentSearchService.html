@@ -1,0 +1,968 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >ContentSearchService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/content-search/services/content-search/content-search.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_filters" >_filters</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#_frameworkId" >_frameworkId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_searchResults$" >_searchResults$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#channelId" >channelId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#custodianOrg" >custodianOrg</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#defaultBoard" >defaultBoard</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#fetchChannelData" >fetchChannelData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#fetchFilter" >fetchFilter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#initialize" >initialize</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#mapCategories" >mapCategories</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#frameworkId" >frameworkId</a>
+                                </li>
+                                <li>
+                                    <a href="#filters" >filters</a>
+                                </li>
+                                <li>
+                                    <a href="#searchResults$" >searchResults$</a>
+                                </li>
+                                <li>
+                                    <a href="#getCategoriesMapping" >getCategoriesMapping</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(frameworkService: <a href="../injectables/FrameworkService.html" target="_self">FrameworkService</a>, channelService: <a href="../injectables/ChannelService.html" target="_self">ChannelService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/content-search/services/content-search/content-search.service.ts:30</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>frameworkService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FrameworkService.html" target="_self" >FrameworkService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>channelService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ChannelService.html" target="_self" >ChannelService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchChannelData"></a>
+                    <span class="name">
+                        <span ><b>fetchChannelData</b></span>
+                        <a href="#fetchChannelData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetchChannelData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/modules/content-search/services/content-search/content-search.service.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchFilter"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>fetchFilter</b></span>
+                        <a href="#fetchFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>fetchFilter(boardName?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/modules/content-search/services/content-search/content-search.service.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>boardName</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initialize"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>initialize</b></span>
+                        <a href="#initialize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initialize(channelId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, custodianOrg, defaultBoard: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">src/app/modules/content-search/services/content-search/content-search.service.ts:34</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>channelId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>custodianOrg</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>defaultBoard</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mapCategories"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>mapCategories</b></span>
+                        <a href="#mapCategories"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>mapCategories(undefined)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/modules/content-search/services/content-search/content-search.service.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_filters"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_filters</b></span>
+                        <a href="#_filters"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    board: [],
+    medium: [],
+    gradeLevel: [],
+    subject: [],
+    publisher: []
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/content-search/services/content-search/content-search.service.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_frameworkId"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>_frameworkId</b></span>
+                        <a href="#_frameworkId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/modules/content-search/services/content-search/content-search.service.ts:10</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_searchResults$"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_searchResults$</b></span>
+                        <a href="#_searchResults$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject&lt;any&gt;(undefined)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/content-search/services/content-search/content-search.service.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="channelId"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>channelId</b></span>
+                        <a href="#channelId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/modules/content-search/services/content-search/content-search.service.ts:9</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="custodianOrg"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>custodianOrg</b></span>
+                        <a href="#custodianOrg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/modules/content-search/services/content-search/content-search.service.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="defaultBoard"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>defaultBoard</b></span>
+                        <a href="#defaultBoard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/modules/content-search/services/content-search/content-search.service.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="frameworkId"></a>
+                        <span class="name"><b>frameworkId</b><a href="#frameworkId"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>frameworkId()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/modules/content-search/services/content-search/content-search.service.ts:11</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filters"></a>
+                        <span class="name"><b>filters</b><a href="#filters"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>filters()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/content-search/services/content-search/content-search.service.ts:23</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="searchResults$"></a>
+                        <span class="name"><b>searchResults$</b><a href="#searchResults$"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>searchResults$()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/content-search/services/content-search/content-search.service.ts:27</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getCategoriesMapping"></a>
+                        <span class="name"><b>getCategoriesMapping</b><a href="#getCategoriesMapping"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>getCategoriesMapping()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/app/modules/content-search/services/content-search/content-search.service.ts:91</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { FrameworkService, ChannelService } from &#x27;@sunbird/core&#x27;;
+import { Observable, BehaviorSubject, of } from &#x27;rxjs&#x27;;
+import { skipWhile, mergeMap, first, map } from &#x27;rxjs/operators&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+const requiredCategories &#x3D; { categories: &#x27;board,gradeLevel,medium,class,subject&#x27; };
+@Injectable({ providedIn: &#x27;root&#x27; })
+export class ContentSearchService {
+  private channelId: string;
+  public _frameworkId &#x3D; &#x27;&#x27;;
+  get frameworkId() {
+    return this._frameworkId;
+  }
+  private defaultBoard: string;
+  private custodianOrg: boolean;
+  private _filters &#x3D; {
+    board: [],
+    medium: [],
+    gradeLevel: [],
+    subject: [],
+    publisher: []
+  };
+  get filters() {
+    return _.cloneDeep(this._filters);
+  }
+  private _searchResults$ &#x3D; new BehaviorSubject&lt;any&gt;(undefined);
+  get searchResults$(): Observable&lt;any[]&gt; {
+    return this._searchResults$.asObservable()
+      .pipe(skipWhile(data &#x3D;&gt; data &#x3D;&#x3D;&#x3D; undefined || data &#x3D;&#x3D;&#x3D; null));
+  }
+
+  constructor(private frameworkService: FrameworkService, private channelService: ChannelService) { }
+
+  public initialize(channelId: string, custodianOrg &#x3D; false, defaultBoard: string) {
+    this.channelId &#x3D; channelId;
+    this.custodianOrg &#x3D; custodianOrg;
+    this.defaultBoard &#x3D; defaultBoard;
+    this._searchResults$.complete(); // to flush old subscription
+    this._searchResults$ &#x3D; new BehaviorSubject&lt;any&gt;(undefined);
+    return this.fetchChannelData();
+  }
+  fetchChannelData() {
+    return this.channelService.getFrameWork(this.channelId)
+      .pipe(mergeMap((channelDetails) &#x3D;&gt; {
+        if (this.custodianOrg) {
+          this._filters.board &#x3D; _.get(channelDetails, &#x27;result.channel.frameworks&#x27;) || [{
+            name: _.get(channelDetails, &#x27;result.channel.defaultFramework&#x27;),
+            identifier: _.get(channelDetails, &#x27;result.channel.defaultFramework&#x27;)
+          }]; // framework array is empty assigning defaultFramework as only board
+          const selectedBoard &#x3D; this._filters.board.find((board) &#x3D;&gt; board.name &#x3D;&#x3D;&#x3D; this.defaultBoard) || this._filters.board[0];
+          this._frameworkId &#x3D; _.get(selectedBoard, &#x27;identifier&#x27;);
+        } else {
+          this._frameworkId &#x3D; _.get(channelDetails, &#x27;result.channel.defaultFramework&#x27;);
+        }
+        if (_.get(channelDetails, &#x27;result.channel.publisher&#x27;)) {
+          this._filters.publisher &#x3D; JSON.parse(_.get(channelDetails, &#x27;result.channel.publisher&#x27;));
+        }
+        return this.frameworkService.getSelectedFrameworkCategories(this._frameworkId, requiredCategories);
+      }), map(frameworkDetails &#x3D;&gt; {
+        const frameworkCategories: any[] &#x3D; _.get(frameworkDetails, &#x27;result.framework.categories&#x27;);
+        frameworkCategories.forEach(category &#x3D;&gt; {
+          if ([&#x27;medium&#x27;, &#x27;gradeLevel&#x27;, &#x27;subject&#x27;].includes(category.code)) {
+            this._filters[category.code] &#x3D; category.terms || [];
+          } else if (!this.custodianOrg &amp;&amp; category.code &#x3D;&#x3D;&#x3D; &#x27;board&#x27;) {
+            this._filters[category.code] &#x3D; category.terms || [];
+          }
+        });
+        return true;
+      }), first());
+  }
+  public fetchFilter(boardName?) {
+    if (!this.custodianOrg || !boardName) {
+      return of(this.filters);
+    }
+    const selectedBoard &#x3D; this._filters.board.find((board) &#x3D;&gt; board.name &#x3D;&#x3D;&#x3D; boardName)
+      || this._filters.board.find((board) &#x3D;&gt; board.name &#x3D;&#x3D;&#x3D; this.defaultBoard) || this._filters.board[0];
+    this._frameworkId &#x3D; this._frameworkId &#x3D; _.get(selectedBoard, &#x27;identifier&#x27;);
+    return this.frameworkService.getSelectedFrameworkCategories(this._frameworkId, requiredCategories).pipe(map(frameworkDetails &#x3D;&gt; {
+      const frameworkCategories: any[] &#x3D; _.get(frameworkDetails, &#x27;result.framework.categories&#x27;);
+      frameworkCategories.forEach(category &#x3D;&gt; {
+        if ([&#x27;medium&#x27;, &#x27;gradeLevel&#x27;, &#x27;subject&#x27;].includes(category.code)) {
+          this._filters[category.code] &#x3D; category.terms || [];
+        } else if (category.code &#x3D;&#x3D;&#x3D; &#x27;board&#x27; &amp;&amp; !this.custodianOrg) {
+          this._filters[category.code] &#x3D; category.terms || [];
+        }
+      });
+      return this.filters;
+    }), first());
+  }
+
+  get getCategoriesMapping() {
+    return {
+      subject: &#x27;se_subjects&#x27;,
+      medium: &#x27;se_mediums&#x27;,
+      gradeLevel: &#x27;se_gradeLevels&#x27;,
+      board: &#x27;se_boards&#x27;
+    };
+  }
+
+  public mapCategories({ filters &#x3D; {} }) {
+    return _.reduce(filters, (acc, value, key) &#x3D;&gt; {
+      const mappedValue &#x3D; _.get(this.getCategoriesMapping, [key]);
+      if (mappedValue &amp;&amp; key !&#x3D;&#x3D; &#x27;subject&#x27;) { acc[mappedValue] &#x3D; value; delete acc[key]; }
+      return acc;
+    }, filters);
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'ContentSearchService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

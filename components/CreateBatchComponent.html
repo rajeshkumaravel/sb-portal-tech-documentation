@@ -1,0 +1,3567 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  CreateBatchComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/learn/components/batch/create-batch/create-batch.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-create-batch</code></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./create-batch.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#activatedRoute" >activatedRoute</a>
+                            </li>
+                            <li>
+                                <a href="#batchData" >batchData</a>
+                            </li>
+                            <li>
+                                <a href="#clearButtonInteractEdata" >clearButtonInteractEdata</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#configService" >configService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#courseBatchService" >courseBatchService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#courseConsumptionService" >courseConsumptionService</a>
+                            </li>
+                            <li>
+                                <a href="#courseCreator" >courseCreator</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#courseId" >courseId</a>
+                            </li>
+                            <li>
+                                <a href="#createBatchForm" >createBatchForm</a>
+                            </li>
+                            <li>
+                                <a href="#createBatchInteractEdata" >createBatchInteractEdata</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#createBatchModel" >createBatchModel</a>
+                            </li>
+                            <li>
+                                <a href="#createForumRequest" >createForumRequest</a>
+                            </li>
+                            <li>
+                                <a href="#disableSubmitBtn" >disableSubmitBtn</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#discussionCsService" >discussionCsService</a>
+                            </li>
+                            <li>
+                                <a href="#instance" >instance</a>
+                            </li>
+                            <li>
+                                <a href="#mentorList" >mentorList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#navigationhelperService" >navigationhelperService</a>
+                            </li>
+                            <li>
+                                <a href="#participantList" >participantList</a>
+                            </li>
+                            <li>
+                                <a href="#pickerMinDate" >pickerMinDate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#resourceService" >resourceService</a>
+                            </li>
+                            <li>
+                                <a href="#router" >router</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selectedMentors" >selectedMentors</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selectedParticipants" >selectedParticipants</a>
+                            </li>
+                            <li>
+                                <a href="#showCreateModal" >showCreateModal</a>
+                            </li>
+                            <li>
+                                <a href="#showDiscussionForum" >showDiscussionForum</a>
+                            </li>
+                            <li>
+                                <a href="#telemetryCdata" >telemetryCdata</a>
+                            </li>
+                            <li>
+                                <a href="#telemetryImpression" >telemetryImpression</a>
+                            </li>
+                            <li>
+                                <a href="#telemetryInteractObject" >telemetryInteractObject</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#toasterService" >toasterService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#unsubscribe" >unsubscribe</a>
+                            </li>
+                            <li>
+                                <a href="#url" >url</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#userSearchTime" >userSearchTime</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#userService" >userService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#addParticipantToBatch" >addParticipantToBatch</a>
+                            </li>
+                            <li>
+                                <a href="#checkEnableDiscussions" >checkEnableDiscussions</a>
+                            </li>
+                            <li>
+                                <a href="#checkIssueCertificate" >checkIssueCertificate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#createBatch" >createBatch</a>
+                            </li>
+                            <li>
+                                <a href="#enableDiscussionForum" >enableDiscussionForum</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#fetchBatchDetails" >fetchBatchDetails</a>
+                            </li>
+                            <li>
+                                <a href="#fetchForumConfig" >fetchForumConfig</a>
+                            </li>
+                            <li>
+                                <a href="#getPickerMinDateForEndDate" >getPickerMinDateForEndDate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getUserList" >getUserList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getUserListWithQuery" >getUserListWithQuery</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getUserOtherDetail" >getUserOtherDetail</a>
+                            </li>
+                            <li>
+                                <a href="#handleInputChange" >handleInputChange</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initDropDown" >initDropDown</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initializeFormFields" >initializeFormFields</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterViewInit" >ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#redirect" >redirect</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#reload" >reload</a>
+                            </li>
+                            <li>
+                                <a href="#setTelemetryCData" >setTelemetryCData</a>
+                            </li>
+                            <li>
+                                <a href="#setTelemetryInteractData" >setTelemetryInteractData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#sortUsers" >sortUsers</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(routerNavigationService: <a href="../injectables/RouterNavigationService.html" target="_self">RouterNavigationService</a>, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, route: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, resourceService: <a href="../injectables/ResourceService.html" target="_self">ResourceService</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, courseBatchService: <a href="../injectables/CourseBatchService.html" target="_self">CourseBatchService</a>, toasterService: <a href="../injectables/ToasterService.html" target="_self">ToasterService</a>, configService: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, courseConsumptionService: <a href="../injectables/CourseConsumptionService.html" target="_self">CourseConsumptionService</a>, navigationhelperService: <a href="../injectables/NavigationHelperService.html" target="_self">NavigationHelperService</a>, lazzyLoadScriptService: <a href="../injectables/LazzyLoadScriptService.html" target="_self">LazzyLoadScriptService</a>, telemetryService: <a href="../injectables/TelemetryService.html" target="_self">TelemetryService</a>, csLibInitializerService: <a href="../injectables/CsLibInitializerService.html" target="_self">CsLibInitializerService</a>, discussionService: <a href="../injectables/DiscussionService.html" target="_self">DiscussionService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:102</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor to create injected service(s) object</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>routerNavigationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RouterNavigationService.html" target="_self" >RouterNavigationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Reference of routerNavigationService</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>activatedRoute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Reference of ActivatedRoute</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>resourceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>courseBatchService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CourseBatchService.html" target="_self" >CourseBatchService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>toasterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>configService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>courseConsumptionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CourseConsumptionService.html" target="_self" >CourseConsumptionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>navigationhelperService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationHelperService.html" target="_self" >NavigationHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>lazzyLoadScriptService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LazzyLoadScriptService.html" target="_self" >LazzyLoadScriptService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryService.html" target="_self" >TelemetryService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>csLibInitializerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CsLibInitializerService.html" target="_self" >CsLibInitializerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>discussionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DiscussionService.html" target="_self" >DiscussionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addParticipantToBatch"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>addParticipantToBatch</b></span>
+                        <a href="#addParticipantToBatch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addParticipantToBatch(batchId, participants)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="275"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:275</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>batchId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>participants</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkEnableDiscussions"></a>
+                    <span class="name">
+                        <span ><b>checkEnableDiscussions</b></span>
+                        <a href="#checkEnableDiscussions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkEnableDiscussions(batchId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="432"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:432</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>batchId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkIssueCertificate"></a>
+                    <span class="name">
+                        <span ><b>checkIssueCertificate</b></span>
+                        <a href="#checkIssueCertificate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkIssueCertificate(batchId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="305"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:305</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>batchId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createBatch"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>createBatch</b></span>
+                        <a href="#createBatch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createBatch()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="230"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:230</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="enableDiscussionForum"></a>
+                    <span class="name">
+                        <span ><b>enableDiscussionForum</b></span>
+                        <a href="#enableDiscussionForum"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>enableDiscussionForum(batchId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="443"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:443</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>batchId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchBatchDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>fetchBatchDetails</b></span>
+                        <a href="#fetchBatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>fetchBatchDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="171"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:171</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchForumConfig"></a>
+                    <span class="name">
+                        <span ><b>fetchForumConfig</b></span>
+                        <a href="#fetchForumConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetchForumConfig()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="424"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:424</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPickerMinDateForEndDate"></a>
+                    <span class="name">
+                        <span ><b>getPickerMinDateForEndDate</b></span>
+                        <a href="#getPickerMinDateForEndDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPickerMinDateForEndDate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="485"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:485</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserList"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getUserList</b></span>
+                        <a href="#getUserList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserList(query: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="354"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:354</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p> api call to get user list</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>&#x27;&#x27;</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserListWithQuery"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getUserListWithQuery</b></span>
+                        <a href="#getUserListWithQuery"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserListWithQuery(query, type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="343"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:343</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>query</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserOtherDetail"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getUserOtherDetail</b></span>
+                        <a href="#getUserOtherDetail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserOtherDetail(userData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="310"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:310</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleInputChange"></a>
+                    <span class="name">
+                        <span ><b>handleInputChange</b></span>
+                        <a href="#handleInputChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleInputChange(inputId, cdata)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="464"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:464</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>inputId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>cdata</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initDropDown"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>initDropDown</b></span>
+                        <a href="#initDropDown"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initDropDown()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="321"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:321</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeFormFields"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>initializeFormFields</b></span>
+                        <a href="#initializeFormFields"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initializeFormFields()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="184"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:184</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>It helps to initialize form fields and apply field level validation</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <span ><b>ngAfterViewInit</b></span>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="378"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:378</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="416"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:416</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="139"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:139</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initialize form fields and getuserlist</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="redirect"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>redirect</b></span>
+                        <a href="#redirect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>redirect()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="294"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:294</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reload"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>reload</b></span>
+                        <a href="#reload"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>reload()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="298"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:298</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setTelemetryCData"></a>
+                    <span class="name">
+                        <span ><b>setTelemetryCData</b></span>
+                        <a href="#setTelemetryCData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setTelemetryCData(cdata: [])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="412"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:412</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cdata</td>
+                                    <td>
+                                            <code>[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setTelemetryInteractData"></a>
+                    <span class="name">
+                        <span ><b>setTelemetryInteractData</b></span>
+                        <a href="#setTelemetryInteractData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setTelemetryInteractData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="394"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:394</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortUsers"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>sortUsers</b></span>
+                        <a href="#sortUsers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>sortUsers(res)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="199"
+                            class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:199</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>res</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ participantList: any; mentorList: any; }</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="activatedRoute"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>activatedRoute</b></span>
+                        <a href="#activatedRoute"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:65</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To send activatedRoute.snapshot to router navigation
+service for redirection to update batch  component</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="batchData"></a>
+                    <span class="name">
+                        <span ><b>batchData</b></span>
+                        <a href="#batchData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:48</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>batchData for form</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearButtonInteractEdata"></a>
+                    <span class="name">
+                        <span ><b>clearButtonInteractEdata</b></span>
+                        <a href="#clearButtonInteractEdata"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IInteractEventEdata.html" target="_self" >IInteractEventEdata</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="95" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:95</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="configService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>configService</b></span>
+                        <a href="#configService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="117" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:117</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="courseBatchService"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>courseBatchService</b></span>
+                        <a href="#courseBatchService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/CourseBatchService.html" target="_self" >CourseBatchService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:73</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Reference of UserService</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="courseConsumptionService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>courseConsumptionService</b></span>
+                        <a href="#courseConsumptionService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/CourseConsumptionService.html" target="_self" >CourseConsumptionService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:89</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="courseCreator"></a>
+                    <span class="name">
+                        <span ><b>courseCreator</b></span>
+                        <a href="#courseCreator"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>courseCreator</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="courseId"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>courseId</b></span>
+                        <a href="#courseId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createBatchForm"></a>
+                    <span class="name">
+                        <span ><b>createBatchForm</b></span>
+                        <a href="#createBatchForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:56</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>form group for batchAddUserForm</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createBatchInteractEdata"></a>
+                    <span class="name">
+                        <span ><b>createBatchInteractEdata</b></span>
+                        <a href="#createBatchInteractEdata"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IInteractEventEdata.html" target="_self" >IInteractEventEdata</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="93" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:93</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createBatchModel"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>createBatchModel</b></span>
+                        <a href="#createBatchModel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;createBatchModel&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createForumRequest"></a>
+                    <span class="name">
+                        <span ><b>createForumRequest</b></span>
+                        <a href="#createForumRequest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="101" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:101</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="disableSubmitBtn"></a>
+                    <span class="name">
+                        <span ><b>disableSubmitBtn</b></span>
+                        <a href="#disableSubmitBtn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="discussionCsService"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>discussionCsService</b></span>
+                        <a href="#discussionCsService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:100</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="instance"></a>
+                    <span class="name">
+                        <span ><b>instance</b></span>
+                        <a href="#instance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="98" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:98</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mentorList"></a>
+                    <span class="name">
+                        <span ><b>mentorList</b></span>
+                        <a href="#mentorList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>mentorList for mentors in the batch</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigationhelperService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>navigationhelperService</b></span>
+                        <a href="#navigationhelperService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/NavigationHelperService.html" target="_self" >NavigationHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="119" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:119</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="participantList"></a>
+                    <span class="name">
+                        <span ><b>participantList</b></span>
+                        <a href="#participantList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>participantList for mentorList</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pickerMinDate"></a>
+                    <span class="name">
+                        <span ><b>pickerMinDate</b></span>
+                        <a href="#pickerMinDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Date(new Date().setHours(0, 0, 0, 0))</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:91</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resourceService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>resourceService</b></span>
+                        <a href="#resourceService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:77</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To call resource service which helps to use language constant</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="router"></a>
+                    <span class="name">
+                        <span ><b>router</b></span>
+                        <a href="#router"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:60</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To navigate to other pages</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedMentors"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>selectedMentors</b></span>
+                        <a href="#selectedMentors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedParticipants"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>selectedParticipants</b></span>
+                        <a href="#selectedParticipants"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showCreateModal"></a>
+                    <span class="name">
+                        <span ><b>showCreateModal</b></span>
+                        <a href="#showCreateModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showDiscussionForum"></a>
+                    <span class="name">
+                        <span ><b>showDiscussionForum</b></span>
+                        <a href="#showDiscussionForum"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:102</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryCdata"></a>
+                    <span class="name">
+                        <span ><b>telemetryCdata</b></span>
+                        <a href="#telemetryCdata"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/variables.html#type" target="_self" >Array&lt;literal type&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:96</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryImpression"></a>
+                    <span class="name">
+                        <span ><b>telemetryImpression</b></span>
+                        <a href="#telemetryImpression"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IImpressionEventInput.html" target="_self" >IImpressionEventInput</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:85</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>telemetryImpression object for create batch page</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryInteractObject"></a>
+                    <span class="name">
+                        <span ><b>telemetryInteractObject</b></span>
+                        <a href="#telemetryInteractObject"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IInteractEventObject.html" target="_self" >IInteractEventObject</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:94</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toasterService"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>toasterService</b></span>
+                        <a href="#toasterService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:81</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To show toaster(error, success etc) after any API calls</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unsubscribe"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>unsubscribe</b></span>
+                        <a href="#unsubscribe"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:87</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="url"></a>
+                    <span class="name">
+                        <span ><b>url</b></span>
+                        <a href="#url"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>document.location.origin</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:97</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userSearchTime"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>userSearchTime</b></span>
+                        <a href="#userSearchTime"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userService"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>userService</b></span>
+                        <a href="#userService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/modules/learn/components/batch/create-batch/create-batch.component.ts:69</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Reference of UserService</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild, OnDestroy, AfterViewInit } from &#x27;@angular/core&#x27;;
+import { takeUntil, mergeMap } from &#x27;rxjs/operators&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { RouterNavigationService, ResourceService, ToasterService, NavigationHelperService } from &#x27;@sunbird/shared&#x27;;
+import { FormGroup, FormControl, Validators } from &#x27;@angular/forms&#x27;;
+import { UserService } from &#x27;@sunbird/core&#x27;;
+import { CourseConsumptionService, CourseBatchService } from &#x27;./../../../services&#x27;;
+import { IImpressionEventInput, IInteractEventEdata, IInteractEventObject, TelemetryService } from &#x27;@sunbird/telemetry&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import dayjs from &#x27;dayjs&#x27;;
+import { Subject, combineLatest } from &#x27;rxjs&#x27;;
+import { LazzyLoadScriptService } from &#x27;LazzyLoadScriptService&#x27;;
+import { ConfigService } from &#x27;@sunbird/shared&#x27;;
+import { CsModule } from &#x27;@project-sunbird/client-services&#x27;;
+import { CsLibInitializerService } from &#x27;../../../../../service/CsLibInitializer/cs-lib-initializer.service&#x27;;
+import { DiscussionService } from &#x27;../../../../../../app/modules/discussion/services/discussion/discussion.service&#x27;;
+
+@Component({
+  selector: &#x27;app-create-batch&#x27;,
+  templateUrl: &#x27;./create-batch.component.html&#x27;
+})
+export class CreateBatchComponent implements OnInit, OnDestroy, AfterViewInit {
+
+  @ViewChild(&#x27;createBatchModel&#x27;) private createBatchModel;
+
+  private userSearchTime: any;
+
+  showCreateModal &#x3D; false;
+
+  disableSubmitBtn &#x3D; false;
+
+  private courseId: string;
+  /**
+  * courseCreator
+  */
+  courseCreator &#x3D; false;
+  /**
+  * participantList for mentorList
+  */
+  participantList &#x3D; [];
+
+  public selectedParticipants: any &#x3D; [];
+
+  public selectedMentors: any &#x3D; [];
+  /**
+  * batchData for form
+  */
+  batchData: any;
+  /**
+  * mentorList for mentors in the batch
+  */
+  mentorList: Array&lt;any&gt; &#x3D; [];
+  /**
+   * form group for batchAddUserForm
+  */
+  createBatchForm: FormGroup;
+  /**
+  * To navigate to other pages
+  */
+  router: Router;
+  /**
+   * To send activatedRoute.snapshot to router navigation
+   * service for redirection to update batch  component
+  */
+  private activatedRoute: ActivatedRoute;
+  /**
+  * Reference of UserService
+  */
+  private userService: UserService;
+  /**
+  * Reference of UserService
+  */
+  private courseBatchService: CourseBatchService;
+  /**
+  * To call resource service which helps to use language constant
+  */
+  public resourceService: ResourceService;
+  /**
+  * To show toaster(error, success etc) after any API calls
+  */
+  private toasterService: ToasterService;
+  /**
+	 * telemetryImpression object for create batch page
+	*/
+  telemetryImpression: IImpressionEventInput;
+
+  public unsubscribe &#x3D; new Subject&lt;void&gt;();
+
+  public courseConsumptionService: CourseConsumptionService;
+
+  pickerMinDate &#x3D; new Date(new Date().setHours(0, 0, 0, 0));
+
+  createBatchInteractEdata: IInteractEventEdata;
+  telemetryInteractObject: IInteractEventObject;
+  clearButtonInteractEdata: IInteractEventEdata;
+  telemetryCdata: Array&lt;{}&gt; &#x3D; [];
+  url &#x3D; document.location.origin;
+  instance: string;
+
+  private discussionCsService: any;
+  createForumRequest: any;
+  showDiscussionForum: string;
+
+  /**
+	 * Constructor to create injected service(s) object
+	 * @param {RouterNavigationService} routerNavigationService Reference of routerNavigationService
+   * @param {Router} router Reference of Router
+   * @param {ActivatedRoute} activatedRoute Reference of ActivatedRoute
+   * @param {UserService} UserService Reference of UserService
+  */
+  constructor(routerNavigationService: RouterNavigationService,
+    activatedRoute: ActivatedRoute,
+    route: Router,
+    resourceService: ResourceService, userService: UserService,
+    courseBatchService: CourseBatchService,
+    toasterService: ToasterService,
+    public configService: ConfigService,
+    courseConsumptionService: CourseConsumptionService,
+    public navigationhelperService: NavigationHelperService, private lazzyLoadScriptService: LazzyLoadScriptService,
+    private telemetryService: TelemetryService,
+    private csLibInitializerService: CsLibInitializerService,
+    private discussionService: DiscussionService) {
+    this.resourceService &#x3D; resourceService;
+    this.router &#x3D; route;
+    this.activatedRoute &#x3D; activatedRoute;
+    this.userService &#x3D; userService;
+    this.courseBatchService &#x3D; courseBatchService;
+    this.toasterService &#x3D; toasterService;
+    this.courseConsumptionService &#x3D; courseConsumptionService;
+    if (!CsModule.instance.isInitialised) {
+      this.csLibInitializerService.initializeCs();
+    }
+    this.discussionCsService &#x3D; CsModule.instance.discussionService;
+  }
+
+  /**
+   * Initialize form fields and getuserlist
+  */
+  ngOnInit() {
+    this.instance &#x3D; _.upperCase(this.resourceService.instance);
+    this.activatedRoute.parent.params.pipe(mergeMap((params) &#x3D;&gt; {
+      this.courseId &#x3D; params.courseId;
+      this.initializeFormFields();
+      this.setTelemetryInteractData();
+      this.showCreateModal &#x3D; true;
+      return this.fetchBatchDetails();
+    }),
+      takeUntil(this.unsubscribe))
+      .subscribe((data) &#x3D;&gt; {
+        this.showDiscussionForum &#x3D; _.get(data.courseDetails, &#x27;discussionForum.enabled&#x27;);
+        if (this.showDiscussionForum &#x3D;&#x3D;&#x3D; &#x27;Yes&#x27;) {
+          this.fetchForumConfig();
+        }
+        if (data.courseDetails.createdBy &#x3D;&#x3D;&#x3D; this.userService.userid) {
+          this.courseCreator &#x3D; true;
+        }
+        const userList &#x3D; this.sortUsers(data.userDetails);
+        this.participantList &#x3D; userList.participantList;
+        this.mentorList &#x3D; userList.mentorList;
+        this.initDropDown();
+      }, (err) &#x3D;&gt; {
+        if (err.error &amp;&amp; err.error?.params?.errmsg) {
+          this.toasterService.error(err.error.params.errmsg);
+        } else {
+          this.toasterService.error(this.resourceService.messages.fmsg.m0056);
+        }
+        this.redirect();
+      });
+  }
+
+  private fetchBatchDetails() {
+    const requestBody &#x3D; {
+      filters: {&#x27;status&#x27;: &#x27;1&#x27;},
+    };
+    return combineLatest(
+      this.courseBatchService.getUserList(requestBody),
+      this.courseConsumptionService.getCourseHierarchy(this.courseId),
+      (userDetails, courseDetails) &#x3D;&gt; ({ userDetails, courseDetails })
+    );
+  }
+  /**
+  * It helps to initialize form fields and apply field level validation
+  */
+  private initializeFormFields(): void {
+    this.createBatchForm &#x3D; new FormGroup({
+      name: new FormControl(&#x27;&#x27;, [Validators.required]),
+      description: new FormControl(&#x27;&#x27;),
+      enrollmentType: new FormControl(&#x27;open&#x27;, [Validators.required]),
+      startDate: new FormControl(null, [Validators.required]),
+      endDate: new FormControl(),
+      mentors: new FormControl(),
+      users: new FormControl(),
+      enrollmentEndDate: new FormControl(),
+      issueCertificate: new FormControl(null, [Validators.required]),
+      tncCheck: new FormControl(false, [Validators.requiredTrue]),
+      enableDiscussions: new FormControl(&#x27;false&#x27;, [Validators.required])
+    });
+  }
+  private sortUsers(res) {
+    const participantList &#x3D; [];
+    const mentorList &#x3D; [];
+    if (res.result.response.content &amp;&amp; res.result.response.content.length &gt; 0) {
+      _.forEach(res.result.response.content, (userData) &#x3D;&gt; {
+        if ( _.includes(this.selectedMentors , userData.identifier) ||
+          _.includes(this.selectedParticipants , userData.identifier)) {
+          return;
+        }
+        if (userData.identifier !&#x3D;&#x3D; this.userService.userid) {
+          const user &#x3D; {
+            id: userData.identifier,
+            name: userData.firstName + (userData.lastName ? &#x27; &#x27; + userData.lastName : &#x27;&#x27;),
+            avatar: userData.avatar,
+            otherDetail: this.getUserOtherDetail(userData)
+          };
+          _.forEach(userData.roles, (roles) &#x3D;&gt; {
+            if (roles.role &#x3D;&#x3D;&#x3D; &#x27;COURSE_MENTOR&#x27;) {
+              mentorList.push(user);
+            }
+          });
+          participantList.push(user);
+        }
+      });
+    }
+    return {
+      participantList: _.uniqBy(participantList, &#x27;id&#x27;),
+      mentorList: _.uniqBy(mentorList, &#x27;id&#x27;)
+    };
+  }
+
+  public createBatch() {
+    this.disableSubmitBtn &#x3D; true;
+    let participants &#x3D; [];
+    let mentors &#x3D; [];
+    mentors &#x3D; $(&#x27;#mentors&#x27;).dropdown(&#x27;get value&#x27;) ? $(&#x27;#mentors&#x27;).dropdown(&#x27;get value&#x27;).split(&#x27;,&#x27;) : [];
+    if (this.createBatchForm.value.enrollmentType !&#x3D;&#x3D; &#x27;open&#x27;) {
+      participants &#x3D; $(&#x27;#participants&#x27;).dropdown(&#x27;get value&#x27;) ? $(&#x27;#participants&#x27;).dropdown(&#x27;get value&#x27;).split(&#x27;,&#x27;) : [];
+    }
+    const startDate &#x3D; dayjs(this.createBatchForm.value.startDate).format(&#x27;YYYY-MM-DD&#x27;);
+    const endDate &#x3D; this.createBatchForm.value.endDate &amp;&amp; dayjs(this.createBatchForm.value.endDate).format(&#x27;YYYY-MM-DD&#x27;);
+    const requestBody &#x3D; {
+      courseId: this.courseId,
+      name: this.createBatchForm.value.name,
+      description: this.createBatchForm.value.description,
+      enrollmentType: this.createBatchForm.value.enrollmentType,
+      startDate: startDate,
+      endDate: endDate || null,
+      createdBy: this.userService.userid,
+      createdFor: this.userService.userProfile.organisationIds,
+      mentors: _.compact(mentors),
+      tandc : this.createBatchForm.value.tncCheck
+    };
+    if (this.createBatchForm.value.enrollmentType &#x3D;&#x3D;&#x3D; &#x27;open&#x27; &amp;&amp; this.createBatchForm.value.enrollmentEndDate) {
+      requestBody[&#x27;enrollmentEndDate&#x27;] &#x3D; dayjs(this.createBatchForm.value.enrollmentEndDate).format(&#x27;YYYY-MM-DD&#x27;);
+    }
+    this.courseBatchService.createBatch(requestBody).pipe(takeUntil(this.unsubscribe))
+      .subscribe((response) &#x3D;&gt; {
+        if (participants &amp;&amp; participants.length &gt; 0) {
+          this.addParticipantToBatch(response.result.batchId, participants);
+        } else {
+          this.toasterService.success(this.resourceService.messages.smsg.m0033);
+          this.reload();
+          this.checkIssueCertificate(response.result.batchId);
+          this.checkEnableDiscussions(response.result.batchId);
+        }
+      },
+        (err) &#x3D;&gt; {
+          this.disableSubmitBtn &#x3D; false;
+          if (err.error &amp;&amp; err.error.params.errmsg) {
+            this.toasterService.error(err.error.params.errmsg);
+          } else {
+            this.toasterService.error(this.resourceService.messages.fmsg.m0052);
+          }
+        });
+  }
+  private addParticipantToBatch(batchId, participants) {
+    const userRequest &#x3D; {
+      userIds: _.compact(participants)
+    };
+    this.courseBatchService.addUsersToBatch(userRequest, batchId).pipe(takeUntil(this.unsubscribe))
+      .subscribe((res) &#x3D;&gt; {
+        this.toasterService.success(this.resourceService.messages.smsg.m0033);
+        this.reload();
+        this.checkIssueCertificate(batchId);
+      },
+        (err) &#x3D;&gt; {
+          this.disableSubmitBtn &#x3D; false;
+          if (err.error &amp;&amp; err.error.params.errmsg) {
+            this.toasterService.error(err.error.params.errmsg);
+          } else {
+            this.toasterService.error(this.resourceService.messages.fmsg.m0053);
+          }
+        });
+  }
+  public redirect() {
+    this.createBatchModel.deny();
+    this.router.navigate([&#x27;./&#x27;], { relativeTo: this.activatedRoute.parent });
+  }
+  private reload() {
+    setTimeout(() &#x3D;&gt; {
+      this.courseBatchService.updateEvent.emit({ event: &#x27;create&#x27; });
+      this.router.navigate([&#x27;./&#x27;], { relativeTo: this.activatedRoute.parent });
+    }, 1000);
+  }
+
+  checkIssueCertificate(batchId) {
+    this.courseBatchService.updateEvent.emit({ event: &#x27;issueCert&#x27;, value: this.createBatchForm.value.issueCertificate,
+    mode: &#x27;create&#x27;, batchId: batchId });
+  }
+
+  private getUserOtherDetail(userData) {
+    if (userData.maskedEmail &amp;&amp; userData.maskedPhone) {
+      return &#x27; (&#x27; + userData.maskedEmail + &#x27;, &#x27; + userData.maskedPhone + &#x27;)&#x27;;
+    }
+    if (userData.maskedEmail &amp;&amp; !userData.maskedPhone) {
+      return &#x27; (&#x27; + userData.maskedEmail + &#x27;)&#x27;;
+    }
+    if (!userData.maskedEmail &amp;&amp; userData.maskedPhone) {
+      return &#x27; (&#x27; + userData.maskedPhone + &#x27;)&#x27;;
+    }
+  }
+  private initDropDown() {
+    this.lazzyLoadScriptService.loadScript(&#x27;semanticDropdown.js&#x27;).subscribe(() &#x3D;&gt; {
+      $(&#x27;#participants&#x27;).dropdown({
+        forceSelection: false,
+        fullTextSearch: true,
+        onAdd: () &#x3D;&gt; {
+        }
+      });
+      $(&#x27;#mentors&#x27;).dropdown({
+        fullTextSearch: true,
+        forceSelection: false,
+        onAdd: () &#x3D;&gt; {
+        }
+      });
+      $(&#x27;#participants input.search&#x27;).on(&#x27;keyup&#x27;, (e) &#x3D;&gt; {
+        this.getUserListWithQuery($(&#x27;#participants input.search&#x27;).val(), &#x27;participant&#x27;);
+      });
+      $(&#x27;#mentors input.search&#x27;).on(&#x27;keyup&#x27;, (e) &#x3D;&gt; {
+        this.getUserListWithQuery($(&#x27;#mentors input.search&#x27;).val(), &#x27;mentor&#x27;);
+      });
+    });
+  }
+  private getUserListWithQuery(query, type) {
+    if (this.userSearchTime) {
+      clearTimeout(this.userSearchTime);
+    }
+    this.userSearchTime &#x3D; setTimeout(() &#x3D;&gt; {
+      this.getUserList(query, type);
+    }, 1000);
+  }
+  /**
+  *  api call to get user list
+  */
+  private getUserList(query: string &#x3D; &#x27;&#x27;, type) {
+    this.selectedParticipants &#x3D; $(&#x27;#participants&#x27;).dropdown(&#x27;get value&#x27;) ? $(&#x27;#participants&#x27;).dropdown(&#x27;get value&#x27;).split(&#x27;,&#x27;) : [];
+    this.selectedMentors &#x3D; $(&#x27;#mentors&#x27;).dropdown(&#x27;get value&#x27;) ? $(&#x27;#mentors&#x27;).dropdown(&#x27;get value&#x27;).split(&#x27;,&#x27;) : [];
+    const requestBody &#x3D; {
+      filters: {&#x27;status&#x27;: &#x27;1&#x27;},
+      query: query
+    };
+    this.courseBatchService.getUserList(requestBody).pipe(takeUntil(this.unsubscribe))
+      .subscribe((res) &#x3D;&gt; {
+        const list &#x3D; this.sortUsers(res);
+        if (type &#x3D;&#x3D;&#x3D; &#x27;participant&#x27;) {
+          this.participantList &#x3D; list.participantList;
+        } else {
+          this.mentorList &#x3D; list.mentorList;
+        }
+      },
+        (err) &#x3D;&gt; {
+          if (err.error &amp;&amp; err.error.params.errmsg) {
+            this.toasterService.error(err.error.params.errmsg);
+          } else {
+            this.toasterService.error(this.resourceService.messages.fmsg.m0056);
+          }
+        });
+  }
+  ngAfterViewInit () {
+    setTimeout(() &#x3D;&gt; {
+      this.telemetryImpression &#x3D; {
+        context: {
+          env: this.activatedRoute.snapshot.data.telemetry.env
+        },
+        edata: {
+          type: this.activatedRoute.snapshot.data.telemetry.type,
+          pageid: this.activatedRoute.snapshot.data.telemetry.pageid,
+          uri: this.router.url,
+          duration: this.navigationhelperService.getPageLoadTime()
+        }
+      };
+    });
+  }
+
+  setTelemetryInteractData() {
+    this.createBatchInteractEdata &#x3D; {
+      id: &#x27;create-batch&#x27;,
+      type: &#x27;click&#x27;,
+      pageid: this.activatedRoute.snapshot.data.telemetry.pageid
+    };
+    this.clearButtonInteractEdata &#x3D; {
+      id: &#x27;clear-button&#x27;,
+      type: &#x27;click&#x27;,
+      pageid: this.activatedRoute.snapshot.data.telemetry.pageid
+    };
+    this.telemetryInteractObject &#x3D; {
+      id: this.courseId,
+      type: this.activatedRoute.snapshot.data.telemetry.object.type,
+      ver: this.activatedRoute.snapshot.data.telemetry.object.ver
+    };
+  }
+
+  setTelemetryCData(cdata: []) {
+    this.telemetryCdata &#x3D; _.unionBy(this.telemetryCdata, cdata, &#x27;id&#x27;);
+  }
+
+  ngOnDestroy() {
+    if (this.createBatchModel &amp;&amp; this.createBatchModel.deny) {
+      this.createBatchModel.deny();
+    }
+    this.unsubscribe.next();
+    this.unsubscribe.complete();
+  }
+
+  fetchForumConfig() {
+    this.discussionService.fetchForumConfig(&#x27;batch&#x27;).subscribe((formData: any) &#x3D;&gt; {
+      this.createForumRequest &#x3D; formData[0];
+    }, error &#x3D;&gt; {
+      this.toasterService.error(this.resourceService.messages.emsg.m0005);
+    });
+  }
+
+  checkEnableDiscussions(batchId) {
+    if (this.createBatchForm.value.enableDiscussions &#x3D;&#x3D;&#x3D; &#x27;true&#x27;) {
+      this.enableDiscussionForum(batchId);
+    } else {
+      this.handleInputChange(&#x27;enable-DF-no&#x27;, {
+        id: batchId,
+        type: &#x27;Batch&#x27;
+      });
+    }
+  }
+
+  enableDiscussionForum(batchId) {
+    const fetchForumConfigReq &#x3D; [{
+      type: &#x27;batch&#x27;,
+      identifier: batchId
+    }];
+    if (this.createForumRequest) {
+      this.createForumRequest[&#x27;category&#x27;][&#x27;context&#x27;] &#x3D;  fetchForumConfigReq;
+      this.discussionService.createForum(this.createForumRequest).subscribe(resp &#x3D;&gt; {
+        this.handleInputChange(&#x27;enable-DF-yes&#x27;, {
+          id: batchId,
+          type: &#x27;Batch&#x27;
+        });
+        this.toasterService.success(_.get(this.resourceService, &#x27;messages.smsg.m0065&#x27;));
+      }, error &#x3D;&gt; {
+        this.toasterService.error(this.resourceService.messages.emsg.m0005);
+      });
+    } else {
+      this.toasterService.error(this.resourceService.messages.emsg.m0005);
+    }
+  }
+
+  handleInputChange(inputId, cdata) {
+    const telemetryData &#x3D; {
+      context: {
+        env:  this.activatedRoute.snapshot.data.telemetry.env,
+        cdata: [{
+          id: this.courseId,
+          type: &#x27;Course&#x27;
+        }]
+      },
+      edata: {
+        id: inputId,
+        type: &#x27;click&#x27;,
+        pageid: this.activatedRoute.snapshot.data.telemetry.pageid
+      }
+    };
+    if (cdata) {
+      telemetryData.context.cdata.push(cdata);
+    }
+    this.telemetryService.interact(telemetryData);
+  }
+
+  getPickerMinDateForEndDate() {
+    const startDate &#x3D; this.createBatchForm.controls.startDate.value as Date;
+    const oneDayMs &#x3D; 24 * 60 * 60 * 1000;
+    if (startDate) {
+      return new Date(startDate.getTime() + oneDayMs);
+    }
+    return new Date(this.pickerMinDate.getTime() + oneDayMs);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-modal-wrapper *ngIf&#x3D;&quot;showCreateModal&quot;
+  [config]&#x3D;&quot;{disableClose: true, size: &#x27;normal&#x27;, panelClass: [&#x27;overflow-visible&#x27;, &#x27;material-modal&#x27;]}&quot; (dismiss)&#x3D;&quot;redirect()&quot;
+  #createBatchModel&gt;
+  &lt;ng-template sbModalContent&gt;
+    &lt;div class&#x3D;&quot;sb-mat__modal&quot;&gt;
+
+      &lt;!--Header--&gt;
+      &lt;div mat-dialog-title class&#x3D;&quot;mb-0&quot;&gt;
+        &lt;div class&#x3D;&quot;title&quot;&gt;
+          {{resourceService?.frmelmnts.lbl.createnewbatch}}
+        &lt;/div&gt;
+        &lt;button aria-label&#x3D;&quot;close dialog&quot; mat-dialog-close class&#x3D;&quot;close-btn&quot;&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;!--/Header--&gt;
+
+      &lt;!--Content--&gt;
+      &lt;div class&#x3D;&quot;sb-mat__modal__content&quot; [appTelemetryImpression]&#x3D;&quot;telemetryImpression&quot;&gt;
+        &lt;form [formGroup]&#x3D;&quot;createBatchForm&quot; class&#x3D;&quot;sb-form batchAddUserForm pt-8 px-8&quot;&gt;
+          &lt;div class&#x3D;&quot;sb-color-primary font-weight-bold pb-24&quot;&gt;Batch Details&lt;/div&gt;
+          &lt;div class&#x3D;&quot;ui stackable grid&quot;&gt;
+            &lt;div class&#x3D;&quot;eight wide column&quot;&gt;
+              &lt;div class&#x3D;&quot;sb-field-group&quot;
+                [ngClass]&#x3D;&quot;createBatchForm.controls[&#x27;name&#x27;].invalid &amp;&amp; createBatchForm.controls[&#x27;name&#x27;].errors.required &amp;&amp; !createBatchForm.controls[&#x27;name&#x27;].pristine ? &#x27;error&#x27;: &#x27;&#x27;&quot;&gt;
+                &lt;label class&#x3D;&quot;required&quot;&gt;{{resourceService?.frmelmnts?.lbl?.batchname}}&lt;/label&gt;
+                &lt;div class&#x3D;&quot;sb-field&quot;&gt;
+                  &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;name&quot; formControlName&#x3D;&quot;name&quot; class&#x3D;&quot;sb-form-control&quot; autofocus&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;mt-0 mb-8 ui pointing red basic label below&quot;
+                  *ngIf&#x3D;&quot;createBatchForm.controls.name.invalid &amp;&amp; createBatchForm.controls[&#x27;name&#x27;].errors.required &amp;&amp; !createBatchForm.controls[&#x27;name&#x27;].pristine&quot;&gt;
+                  {{resourceService?.messages?.stmsg?.m0114}}
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;sb-field-group&quot;&gt;
+              &lt;div class&#x3D;&quot;four wide column&quot;&gt;
+                &lt;div&gt;
+                  &lt;label class&#x3D;&quot;required&quot;&gt;{{resourceService?.frmelmnts?.cert?.lbl?.issueCertificate}}&lt;/label&gt;
+                  &lt;div class&#x3D;&quot;d-flex py-8 flex-w-wrap&quot;&gt;
+                    &lt;div class&#x3D;&quot;sb-radio-btn-checkbox sb-radio-btn-primary&quot;&gt;
+                      &lt;input (change)&#x3D;&quot;handleInputChange(&#x27;issue-certificate-yes&#x27;, undefined)&quot;
+                        formControlName&#x3D;&quot;issueCertificate&quot; value&#x3D;&quot;yes&quot; type&#x3D;&quot;radio&quot; id&#x3D;&quot;yes&quot;&gt;
+                      &lt;label for&#x3D;&quot;yes&quot;&gt;{{resourceService?.frmelmnts?.btn?.yes}}&lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;sb-radio-btn-checkbox sb-radio-btn-primary&quot;&gt;
+                      &lt;input (change)&#x3D;&quot;handleInputChange(&#x27;issue-certificate-no&#x27;, undefined)&quot;
+                        formControlName&#x3D;&quot;issueCertificate&quot; value&#x3D;&quot;no&quot; type&#x3D;&quot;radio&quot; id&#x3D;&quot;no&quot;&gt;
+                      &lt;label for&#x3D;&quot;no&quot;&gt;{{resourceService?.frmelmnts?.btn?.no}}&lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class&#x3D;&quot;ui stackable grid mt-0&quot;&gt;
+            &lt;div class&#x3D;&quot;eight wide column&quot;&gt;
+              &lt;div class&#x3D;&quot;sb-field-group&quot;&gt;
+                &lt;div class&#x3D;&quot;sb-field&quot;&gt;
+                  &lt;label&gt;{{resourceService?.frmelmnts?.lbl?.aboutbatch}}&lt;/label&gt;
+                  &lt;textarea rows&#x3D;&quot;4&quot; name&#x3D;&quot;description&quot; formControlName&#x3D;&quot;description&quot;
+                    class&#x3D;&quot;sb-form-control&quot;&gt;&lt;/textarea&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;four wide column&quot;&gt;
+              &lt;div *ngIf&#x3D;&quot;showDiscussionForum &#x3D;&#x3D;&#x3D; &#x27;Yes&#x27;&quot;&gt;
+                &lt;label&gt;{{resourceService?.frmelmnts?.lbl?.enableDiscussions}}&lt;/label&gt;
+                &lt;div class&#x3D;&quot;d-flex py-8 flex-w-wrap&quot;&gt;
+                  &lt;div class&#x3D;&quot;sb-radio-btn-checkbox sb-radio-btn-primary&quot;&gt;
+                    &lt;input formControlName&#x3D;&quot;enableDiscussions&quot; type&#x3D;&quot;radio&quot; id&#x3D;&quot;true&quot; value&#x3D;&quot;true&quot;&gt;
+                    &lt;label for&#x3D;&quot;true&quot;&gt;{{resourceService?.frmelmnts?.btn?.yes}}&lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;sb-radio-btn-checkbox sb-radio-btn-primary&quot;&gt;
+                    &lt;input formControlName&#x3D;&quot;enableDiscussions&quot; type&#x3D;&quot;radio&quot; id&#x3D;&quot;false&quot; value&#x3D;&quot;false&quot;&gt;
+                    &lt;label for&#x3D;&quot;false&quot;&gt;{{resourceService?.frmelmnts?.btn?.no}}&lt;/label&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;d-flex flex-dc flex-w-wrap&quot; *ngIf&#x3D;&quot;courseCreator&quot;&gt;
+                &lt;div class&#x3D;&quot;mr-8&quot;&gt;
+                  &lt;label for&#x3D;&quot;Enrollment Type&quot;&gt;{{resourceService?.frmelmnts?.lbl?.natureofbatch}}&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;sb-radio-btn-checkbox sb-radio-btn-primary py-8&quot;&gt;
+                  &lt;input id&#x3D;&quot;create-open&quot; type&#x3D;&quot;radio&quot; value&#x3D;&#x27;open&#x27; name&#x3D;&quot;enrollmentType&quot;
+                    formControlName&#x3D;&quot;enrollmentType&quot;&gt;
+                  &lt;label for&#x3D;&quot;create-open&quot;&gt;{{resourceService?.frmelmnts?.lbl?.open}}&lt;/label&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class&#x3D;&quot;d-flex flex-w-wrap my-16&quot;&gt;
+            &lt;div class&#x3D;&quot;sb-field-group pr-8&quot;
+              [ngClass]&#x3D;&quot;createBatchForm.controls[&#x27;startDate&#x27;].invalid &amp;&amp; createBatchForm.controls[&#x27;startDate&#x27;].errors.required &amp;&amp; !createBatchForm.controls[&#x27;startDate&#x27;].pristine ? &#x27;error&#x27;: &#x27;&#x27;&quot;&gt;
+              &lt;label class&#x3D;&quot;required&quot;&gt;{{resourceService?.frmelmnts?.lbl?.startdate}}&lt;/label&gt;
+              &lt;div class&#x3D;&quot;ui read-only calendar rangestartAdd&quot; id&#x3D;&quot;rangestartAdd&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;fill&quot; class&#x3D;&quot;sb-mat__datepicker&quot;&gt;
+                  &lt;mat-label&gt;{{resourceService?.frmelmnts?.lbl?.startdate}}&lt;/mat-label&gt;
+                  &lt;input matInput [matDatepicker]&#x3D;&quot;startPicker&quot; formControlName&#x3D;&quot;startDate&quot; [min]&#x3D;&quot;pickerMinDate&quot;&gt;
+                  &lt;mat-datepicker-toggle matSuffix [for]&#x3D;&quot;startPicker&quot;&gt;&lt;/mat-datepicker-toggle&gt;
+                  &lt;mat-datepicker #startPicker&gt;&lt;/mat-datepicker&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;mt-0 mb-8 ui pointing red basic label below&quot;
+                *ngIf&#x3D;&quot;createBatchForm.controls.startDate.invalid &amp;&amp; createBatchForm.controls[&#x27;startDate&#x27;].errors.required &amp;&amp; !createBatchForm.controls[&#x27;startDate&#x27;].pristine&quot;&gt;
+                {{resourceService?.messages?.stmsg?.m0113}}
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;sb-field-group&quot;&gt;
+              &lt;label&gt;{{resourceService?.frmelmnts?.lbl?.enddate}}&lt;/label&gt;
+              &lt;div apply-script class&#x3D;&quot;ui calendar rangeendAdd&quot; id&#x3D;&quot;rangeendAdd&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;fill&quot; class&#x3D;&quot;sb-mat__datepicker&quot;&gt;
+                  &lt;mat-label&gt;{{resourceService?.frmelmnts?.lbl?.enddate}}&lt;/mat-label&gt;
+                  &lt;input matInput [matDatepicker]&#x3D;&quot;endDatePicker&quot; formControlName&#x3D;&quot;endDate&quot;
+                    [min]&#x3D;&quot;getPickerMinDateForEndDate()&quot;&gt;
+                  &lt;mat-datepicker-toggle matSuffix [for]&#x3D;&quot;endDatePicker&quot;&gt;&lt;/mat-datepicker-toggle&gt;
+                  &lt;mat-datepicker #endDatePicker&gt;&lt;/mat-datepicker&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;sb-field-group pl-8&quot; *ngIf&#x3D;&quot;createBatchForm.value.enrollmentType &#x3D;&#x3D;&#x3D; &#x27;open&#x27;&quot;
+              [ngClass]&#x3D;&quot;(createBatchForm.controls[&#x27;enrollmentEndDate&#x27;].invalid &amp;&amp; !createBatchForm.controls[&#x27;enrollmentEndDate&#x27;].pristine) ? &#x27;error&#x27;: &#x27;&#x27;&quot;&gt;
+              &lt;label&gt;{{resourceService?.frmelmnts?.lbl?.enrollmentenddate | uppercase}}&lt;/label&gt;
+              &lt;div class&#x3D;&quot;ui read-only calendar rangeenrollMentEnd&quot; id&#x3D;&quot;rangeenrollMentEnd&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;fill&quot; class&#x3D;&quot;sb-mat__datepicker&quot; [ngClass]&#x3D;&quot;{&#x27;disabled&#x27;: !createBatchForm.value.startDate}&quot;
+                  (click)&#x3D;&quot;setTelemetryCData([{id:&#x27;course:enrollment:endDate&#x27;,type:&#x27;Feature&#x27;},{id:&#x27;SB-13073&#x27;,type:&#x27;Task&#x27;}])&quot;&gt;
+                  &lt;mat-label&gt;{{resourceService?.frmelmnts?.lbl?.enrollmentenddate}}&lt;/mat-label&gt;
+                  &lt;input matInput [matDatepicker]&#x3D;&quot;enrollmentEndDatePicker&quot; formControlName&#x3D;&quot;enrollmentEndDate&quot;
+                    [min]&#x3D;&quot;createBatchForm.value.startDate&quot; [max]&#x3D;&quot;createBatchForm.value.endDate&quot;&gt;
+                  &lt;mat-datepicker-toggle matSuffix [for]&#x3D;&quot;enrollmentEndDatePicker&quot;&gt;&lt;/mat-datepicker-toggle&gt;
+                  &lt;mat-datepicker #enrollmentEndDatePicker&gt;&lt;/mat-datepicker&gt;
+                &lt;/mat-form-field&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;mt-0 mb-8 ui pointing red basic label below&quot;
+                *ngIf&#x3D;&quot;createBatchForm.controls[&#x27;enrollmentEndDate&#x27;].invalid &amp;&amp; !createBatchForm.controls[&#x27;enrollmentEndDate&#x27;].pristine? &#x27;error&#x27;: &#x27;&#x27;&quot;&gt;
+                {{resourceService?.messages?.stmsg?.m0135}}
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;sb-field-group mb-8&quot;&gt;
+            &lt;label&gt;{{resourceService?.frmelmnts?.lbl?.batchmentors}}&lt;/label&gt;
+            &lt;div class&#x3D;&quot;createbatchdropdown ui fluid multiple search selection dropdown&quot; id&#x3D;&quot;mentors&quot;
+              ng-class&#x3D;&quot;batch.isUserSearch &#x3D;&#x3D;&#x3D; 1 ? &#x27;loading&#x27; : undefined&quot;&gt;
+              &lt;input id&#x3D;&quot;mentorSelList&quot; aria-label&#x3D;&quot;mentor list&quot;&gt;
+              &lt;i class&#x3D;&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+              &lt;div class&#x3D;&quot;default text&quot;&gt;{{resourceService?.frmelmnts?.intxt?.t0005}}&lt;/div&gt;
+              &lt;div class&#x3D;&quot;menu&quot;&gt;
+                &lt;div class&#x3D;&quot;item&quot; [attr.data-value]&#x3D;&quot;mentor.id&quot; *ngFor&#x3D;&quot;let mentor of mentorList&quot;&gt;
+                  &lt;img class&#x3D;&quot;ui mini avatar image&quot;
+                    src&#x3D;&quot;{{mentor.avatar || &#x27;assets/images/user_logo.png&#x27; | cdnprefixurl}}&quot; alt&#x3D;&quot;avatar image&quot;&gt;
+                  {{mentor.name}}{{mentor.otherDetail}}
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class&#x3D;&quot;sb-field-group &quot; *ngIf&#x3D;&quot;createBatchForm.value.enrollmentType !&#x3D;&#x3D; &#x27;open&#x27;&quot;&gt;
+            &lt;label&gt;{{resourceService?.frmelmnts?.lbl?.bacthmembers}}&lt;/label&gt;
+            &lt;div class&#x3D;&quot;createbatchdropdown ui fluid multiple search selection dropdown&quot; id&#x3D;&quot;participants&quot;
+              ng-class&#x3D;&quot;batch.isUserSearch &#x3D;&#x3D;&#x3D; 1 ? &#x27;loading&#x27; : undefined&quot;&gt;
+              &lt;input id&#x3D;&quot;userSelList&quot;&gt;
+              &lt;i class&#x3D;&quot;dropdown icon&quot;&gt;&lt;/i&gt;
+              &lt;div class&#x3D;&quot;default text&quot;&gt;{{resourceService?.frmelmnts?.intxt?.t0006}}&lt;/div&gt;
+              &lt;div class&#x3D;&quot;menu&quot;&gt;
+                &lt;div class&#x3D;&quot;item&quot; *ngFor&#x3D;&quot;let user of participantList&quot; [attr.data-value]&#x3D;&quot;user.id&quot;&gt;
+                  &lt;img class&#x3D;&quot;ui mini avatar image&quot;
+                    src&#x3D;&quot;{{user.avatar || &#x27;assets/images/user_logo.png&#x27; | cdnprefixurl}}&quot; alt&#x3D;&quot;avatar image&quot;&gt;
+                  {{user.name}}{{user.otherDetail}}
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class&#x3D;&quot;sb-field mt-24 mb-8&quot;&gt;
+            &lt;label class&#x3D;&quot;d-flex flex-ai-center&quot;&gt;
+              &lt;input type&#x3D;&quot;checkbox&quot; formControlName&#x3D;&quot;tncCheck&quot; role&#x3D;&quot;checkbox&quot; class&#x3D;&quot;mr-8 cursor-pointer&quot;&gt;
+              &lt;span class&#x3D;&quot;font-weight-normal fnormal&quot;&gt;
+                {{resourceService?.frmelmnts?.lbl?.agreeCourseToc | interpolate:&#x27;{instance}&#x27;: instance }} &lt;a
+                  href&#x3D;&quot;{{url}}/term-of-use.html#courseGuidelines&quot; target&#x3D;&quot;_blank&quot;
+                  class&#x3D;&quot;sb-color-primary&quot;&gt;{{resourceService?.frmelmnts?.lbl?.courseGuidelines}}&lt;/a&gt;&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;small class&#x3D;&quot;line-height-normal d-block message sb-color-error font-weight-bold mt-8 pl-20&quot;
+              *ngIf&#x3D;&quot;!createBatchForm.get(&#x27;tncCheck&#x27;).valid &amp;&amp; this.createBatchForm.get(&#x27;tncCheck&#x27;).dirty&quot;&gt;{{resourceService?.frmelmnts?.lbl?.courseToc}}&lt;/small&gt;
+          &lt;/div&gt;
+
+        &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;!--/Content--&gt;
+
+      &lt;!--Actions--&gt;
+      &lt;div class&#x3D;&quot;sb-mat__modal__actions&quot;&gt;
+
+        &lt;button appTelemetryInteract [telemetryInteractObject]&#x3D;&quot;telemetryInteractObject&quot; tabindex&#x3D;&quot;0&quot;
+          [telemetryInteractEdata]&#x3D;&quot;clearButtonInteractEdata&quot; [telemetryInteractCdata]&#x3D;&quot;telemetryCdata&quot;
+          class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-outline-primary mr-8&quot; (click)&#x3D;&quot;createBatchForm.reset()&quot;&gt;
+          {{resourceService?.frmelmnts?.btn?.clear}}
+        &lt;/button&gt;
+
+        &lt;button class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-primary&quot; tabindex&#x3D;&quot;0&quot;
+          [ngClass]&#x3D;&quot;{&#x27;sb-btn-disabled&#x27;: !createBatchForm.valid || disableSubmitBtn}&quot; id&#x3D;&quot;submitbutton&quot;
+          [disabled]&#x3D;&quot;!createBatchForm.valid || disableSubmitBtn&quot; (click)&#x3D;&quot;createBatch()&quot; appTelemetryInteract
+          [telemetryInteractObject]&#x3D;&quot;telemetryInteractObject&quot; [telemetryInteractEdata]&#x3D;&quot;createBatchInteractEdata&quot;
+          [telemetryInteractCdata]&#x3D;&quot;telemetryCdata&quot;&gt;
+          {{resourceService?.frmelmnts?.btn?.create}}
+        &lt;/button&gt;
+
+      &lt;/div&gt;
+      &lt;!--/Actions--&gt;
+
+    &lt;/div&gt;
+  &lt;/ng-template&gt;
+&lt;/app-modal-wrapper&gt;</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-modal-wrapper *ngIf="showCreateModal"  [config]="{disableClose: true, size: \'normal\', panelClass: [\'overflow-visible\', \'material-modal\']}" (dismiss)="redirect()"  #createBatchModel>  <ng-template sbModalContent>    <div class="sb-mat__modal">      <!--Header-->      <div mat-dialog-title class="mb-0">        <div class="title">          {{resourceService?.frmelmnts.lbl.createnewbatch}}        </div>        <button aria-label="close dialog" mat-dialog-close class="close-btn"></button>      </div>      <!--/Header-->      <!--Content-->      <div class="sb-mat__modal__content" [appTelemetryImpression]="telemetryImpression">        <form [formGroup]="createBatchForm" class="sb-form batchAddUserForm pt-8 px-8">          <div class="sb-color-primary font-weight-bold pb-24">Batch Details</div>          <div class="ui stackable grid">            <div class="eight wide column">              <div class="sb-field-group"                [ngClass]="createBatchForm.controls[\'name\'].invalid && createBatchForm.controls[\'name\'].errors.required && !createBatchForm.controls[\'name\'].pristine ? \'error\': \'\'">                <label class="required">{{resourceService?.frmelmnts?.lbl?.batchname}}</label>                <div class="sb-field">                  <input type="text" name="name" formControlName="name" class="sb-form-control" autofocus>                </div>                <div class="mt-0 mb-8 ui pointing red basic label below"                  *ngIf="createBatchForm.controls.name.invalid && createBatchForm.controls[\'name\'].errors.required && !createBatchForm.controls[\'name\'].pristine">                  {{resourceService?.messages?.stmsg?.m0114}}                </div>              </div>            </div>            <div class="sb-field-group">              <div class="four wide column">                <div>                  <label class="required">{{resourceService?.frmelmnts?.cert?.lbl?.issueCertificate}}</label>                  <div class="d-flex py-8 flex-w-wrap">                    <div class="sb-radio-btn-checkbox sb-radio-btn-primary">                      <input (change)="handleInputChange(\'issue-certificate-yes\', undefined)"                        formControlName="issueCertificate" value="yes" type="radio" id="yes">                      <label for="yes">{{resourceService?.frmelmnts?.btn?.yes}}</label>                    </div>                    <div class="sb-radio-btn-checkbox sb-radio-btn-primary">                      <input (change)="handleInputChange(\'issue-certificate-no\', undefined)"                        formControlName="issueCertificate" value="no" type="radio" id="no">                      <label for="no">{{resourceService?.frmelmnts?.btn?.no}}</label>                    </div>                  </div>                </div>              </div>            </div>          </div>          <div class="ui stackable grid mt-0">            <div class="eight wide column">              <div class="sb-field-group">                <div class="sb-field">                  <label>{{resourceService?.frmelmnts?.lbl?.aboutbatch}}</label>                  <textarea rows="4" name="description" formControlName="description"                    class="sb-form-control"></textarea>                </div>              </div>            </div>            <div class="four wide column">              <div *ngIf="showDiscussionForum === \'Yes\'">                <label>{{resourceService?.frmelmnts?.lbl?.enableDiscussions}}</label>                <div class="d-flex py-8 flex-w-wrap">                  <div class="sb-radio-btn-checkbox sb-radio-btn-primary">                    <input formControlName="enableDiscussions" type="radio" id="true" value="true">                    <label for="true">{{resourceService?.frmelmnts?.btn?.yes}}</label>                  </div>                  <div class="sb-radio-btn-checkbox sb-radio-btn-primary">                    <input formControlName="enableDiscussions" type="radio" id="false" value="false">                    <label for="false">{{resourceService?.frmelmnts?.btn?.no}}</label>                  </div>                </div>              </div>              <div class="d-flex flex-dc flex-w-wrap" *ngIf="courseCreator">                <div class="mr-8">                  <label for="Enrollment Type">{{resourceService?.frmelmnts?.lbl?.natureofbatch}}</label>                </div>                <div class="sb-radio-btn-checkbox sb-radio-btn-primary py-8">                  <input id="create-open" type="radio" value=\'open\' name="enrollmentType"                    formControlName="enrollmentType">                  <label for="create-open">{{resourceService?.frmelmnts?.lbl?.open}}</label>                </div>              </div>            </div>          </div>          <div class="d-flex flex-w-wrap my-16">            <div class="sb-field-group pr-8"              [ngClass]="createBatchForm.controls[\'startDate\'].invalid && createBatchForm.controls[\'startDate\'].errors.required && !createBatchForm.controls[\'startDate\'].pristine ? \'error\': \'\'">              <label class="required">{{resourceService?.frmelmnts?.lbl?.startdate}}</label>              <div class="ui read-only calendar rangestartAdd" id="rangestartAdd">                <mat-form-field appearance="fill" class="sb-mat__datepicker">                  <mat-label>{{resourceService?.frmelmnts?.lbl?.startdate}}</mat-label>                  <input matInput [matDatepicker]="startPicker" formControlName="startDate" [min]="pickerMinDate">                  <mat-datepicker-toggle matSuffix [for]="startPicker"></mat-datepicker-toggle>                  <mat-datepicker #startPicker></mat-datepicker>                </mat-form-field>              </div>              <div class="mt-0 mb-8 ui pointing red basic label below"                *ngIf="createBatchForm.controls.startDate.invalid && createBatchForm.controls[\'startDate\'].errors.required && !createBatchForm.controls[\'startDate\'].pristine">                {{resourceService?.messages?.stmsg?.m0113}}              </div>            </div>            <div class="sb-field-group">              <label>{{resourceService?.frmelmnts?.lbl?.enddate}}</label>              <div apply-script class="ui calendar rangeendAdd" id="rangeendAdd">                <mat-form-field appearance="fill" class="sb-mat__datepicker">                  <mat-label>{{resourceService?.frmelmnts?.lbl?.enddate}}</mat-label>                  <input matInput [matDatepicker]="endDatePicker" formControlName="endDate"                    [min]="getPickerMinDateForEndDate()">                  <mat-datepicker-toggle matSuffix [for]="endDatePicker"></mat-datepicker-toggle>                  <mat-datepicker #endDatePicker></mat-datepicker>                </mat-form-field>              </div>            </div>            <div class="sb-field-group pl-8" *ngIf="createBatchForm.value.enrollmentType === \'open\'"              [ngClass]="(createBatchForm.controls[\'enrollmentEndDate\'].invalid && !createBatchForm.controls[\'enrollmentEndDate\'].pristine) ? \'error\': \'\'">              <label>{{resourceService?.frmelmnts?.lbl?.enrollmentenddate | uppercase}}</label>              <div class="ui read-only calendar rangeenrollMentEnd" id="rangeenrollMentEnd">                <mat-form-field appearance="fill" class="sb-mat__datepicker" [ngClass]="{\'disabled\': !createBatchForm.value.startDate}"                  (click)="setTelemetryCData([{id:\'course:enrollment:endDate\',type:\'Feature\'},{id:\'SB-13073\',type:\'Task\'}])">                  <mat-label>{{resourceService?.frmelmnts?.lbl?.enrollmentenddate}}</mat-label>                  <input matInput [matDatepicker]="enrollmentEndDatePicker" formControlName="enrollmentEndDate"                    [min]="createBatchForm.value.startDate" [max]="createBatchForm.value.endDate">                  <mat-datepicker-toggle matSuffix [for]="enrollmentEndDatePicker"></mat-datepicker-toggle>                  <mat-datepicker #enrollmentEndDatePicker></mat-datepicker>                </mat-form-field>              </div>              <div class="mt-0 mb-8 ui pointing red basic label below"                *ngIf="createBatchForm.controls[\'enrollmentEndDate\'].invalid && !createBatchForm.controls[\'enrollmentEndDate\'].pristine? \'error\': \'\'">                {{resourceService?.messages?.stmsg?.m0135}}              </div>            </div>          </div>          <div class="sb-field-group mb-8">            <label>{{resourceService?.frmelmnts?.lbl?.batchmentors}}</label>            <div class="createbatchdropdown ui fluid multiple search selection dropdown" id="mentors"              ng-class="batch.isUserSearch === 1 ? \'loading\' : undefined">              <input id="mentorSelList" aria-label="mentor list">              <i class="dropdown icon"></i>              <div class="default text">{{resourceService?.frmelmnts?.intxt?.t0005}}</div>              <div class="menu">                <div class="item" [attr.data-value]="mentor.id" *ngFor="let mentor of mentorList">                  <img class="ui mini avatar image"                    src="{{mentor.avatar || \'assets/images/user_logo.png\' | cdnprefixurl}}" alt="avatar image">                  {{mentor.name}}{{mentor.otherDetail}}                </div>              </div>            </div>          </div>          <div class="sb-field-group " *ngIf="createBatchForm.value.enrollmentType !== \'open\'">            <label>{{resourceService?.frmelmnts?.lbl?.bacthmembers}}</label>            <div class="createbatchdropdown ui fluid multiple search selection dropdown" id="participants"              ng-class="batch.isUserSearch === 1 ? \'loading\' : undefined">              <input id="userSelList">              <i class="dropdown icon"></i>              <div class="default text">{{resourceService?.frmelmnts?.intxt?.t0006}}</div>              <div class="menu">                <div class="item" *ngFor="let user of participantList" [attr.data-value]="user.id">                  <img class="ui mini avatar image"                    src="{{user.avatar || \'assets/images/user_logo.png\' | cdnprefixurl}}" alt="avatar image">                  {{user.name}}{{user.otherDetail}}                </div>              </div>            </div>          </div>          <div class="sb-field mt-24 mb-8">            <label class="d-flex flex-ai-center">              <input type="checkbox" formControlName="tncCheck" role="checkbox" class="mr-8 cursor-pointer">              <span class="font-weight-normal fnormal">                {{resourceService?.frmelmnts?.lbl?.agreeCourseToc | interpolate:\'{instance}\': instance }} <a                  href="{{url}}/term-of-use.html#courseGuidelines" target="_blank"                  class="sb-color-primary">{{resourceService?.frmelmnts?.lbl?.courseGuidelines}}</a></span>            </label>            <small class="line-height-normal d-block message sb-color-error font-weight-bold mt-8 pl-20"              *ngIf="!createBatchForm.get(\'tncCheck\').valid && this.createBatchForm.get(\'tncCheck\').dirty">{{resourceService?.frmelmnts?.lbl?.courseToc}}</small>          </div>        </form>      </div>      <!--/Content-->      <!--Actions-->      <div class="sb-mat__modal__actions">        <button appTelemetryInteract [telemetryInteractObject]="telemetryInteractObject" tabindex="0"          [telemetryInteractEdata]="clearButtonInteractEdata" [telemetryInteractCdata]="telemetryCdata"          class="sb-btn sb-btn-normal sb-btn-outline-primary mr-8" (click)="createBatchForm.reset()">          {{resourceService?.frmelmnts?.btn?.clear}}        </button>        <button class="sb-btn sb-btn-normal sb-btn-primary" tabindex="0"          [ngClass]="{\'sb-btn-disabled\': !createBatchForm.valid || disableSubmitBtn}" id="submitbutton"          [disabled]="!createBatchForm.valid || disableSubmitBtn" (click)="createBatch()" appTelemetryInteract          [telemetryInteractObject]="telemetryInteractObject" [telemetryInteractEdata]="createBatchInteractEdata"          [telemetryInteractCdata]="telemetryCdata">          {{resourceService?.frmelmnts?.btn?.create}}        </button>      </div>      <!--/Actions-->    </div>  </ng-template></app-modal-wrapper></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'app-access-discussion'},{'name': 'AccountMergeModalComponent', 'selector': 'app-account-merge-modal'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-info'},{'name': 'ActivityDashboardComponent', 'selector': 'app-activity-dashboard'},{'name': 'ActivityDetailsComponent', 'selector': 'app-activity-details'},{'name': 'ActivityFormComponent', 'selector': 'app-activity-form'},{'name': 'ActivityListComponent', 'selector': 'app-activity-list'},{'name': 'ActivitySearchComponent', 'selector': 'app-activity-search'},{'name': 'AddActivityComponent', 'selector': 'app-add-activity'},{'name': 'AddActivityContentTypesComponent', 'selector': 'app-add-activity-content-types'},{'name': 'AddEntityComponent', 'selector': 'add-entity'},{'name': 'AddMemberComponent', 'selector': 'app-add-member'},{'name': 'AddSummaryModalComponent', 'selector': 'app-add-summary-modal'},{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AllContentComponent', 'selector': 'app-all-content'},{'name': 'AllEvidenceComponent', 'selector': 'app-all-evidence'},{'name': 'AllTextbooksComponent', 'selector': 'app-all-textbooks'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppLandingSectionComponent', 'selector': 'app-landing-section'},{'name': 'AppLoaderComponent', 'selector': 'app-loader'},{'name': 'AssessmentPlayerComponent', 'selector': 'app-assessment-player'},{'name': 'AssignBadgesContentComponent', 'selector': 'app-assign-badges-content'},{'name': 'AuthFailedComponent', 'selector': 'app-auth-failed'},{'name': 'BackButtonComponent', 'selector': 'app-back-button'},{'name': 'BatchCardComponent', 'selector': 'app-batch-card'},{'name': 'BatchDetailsComponent', 'selector': 'app-batch-details'},{'name': 'BatchInfoComponent', 'selector': 'app-batch-info'},{'name': 'BatchListComponent', 'selector': 'app-batch-list'},{'name': 'BatchPageSectionComponent', 'selector': 'app-batch-page-section'},{'name': 'BrowseImagePopupComponent', 'selector': 'browse-image-popup'},{'name': 'BrowserCompatibilityComponent', 'selector': 'app-browser-compatibility'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardCreationComponent', 'selector': 'app-card-creation'},{'name': 'CertificateConfigurationComponent', 'selector': 'app-certificate-configuration'},{'name': 'CertificateDetailsComponent', 'selector': 'app-certificate-details'},{'name': 'CertificateNameUpdatePopupComponent', 'selector': 'app-certificate-name-update-popup'},{'name': 'CertPreviewPopupComponent', 'selector': 'app-cert-preview-popup'},{'name': 'ChooseUserComponent', 'selector': 'app-choose-user'},{'name': 'CollaboratingOnComponent', 'selector': 'app-collaborating-on'},{'name': 'CollaborationContentFilterComponent', 'selector': 'app-collaboration-content-filter'},{'name': 'CollectionEditorComponent', 'selector': 'app-collection-editor'},{'name': 'CollectionPlayerComponent', 'selector': 'app-collection-player'},{'name': 'CollectionPlayerMetadataComponent', 'selector': 'app-collection-player-metadata'},{'name': 'CommingSoonComponent', 'selector': 'app-comming-soon'},{'name': 'ConfirmationPopupComponent', 'selector': 'app-confirmation-popup'},{'name': 'ConfirmPopupComponent', 'selector': 'app-confirm-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentBadgeComponent', 'selector': 'app-content-badge'},{'name': 'ContentChapterlistComponent', 'selector': 'app-content-chapterlist'},{'name': 'ContentCreditsComponent', 'selector': 'app-content-credits'},{'name': 'ContentEditorComponent', 'selector': 'app-content-editor'},{'name': 'ContentLicenceComponent', 'selector': 'app-content-licence'},{'name': 'ContentManagerComponent', 'selector': 'app-content-manager'},{'name': 'ContentManagerInfoPopUpComponent', 'selector': 'app-content-manager-info-pop-up'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerMetadataComponent', 'selector': 'app-content-player-metadata'},{'name': 'ContentPlayerPageComponent', 'selector': 'app-contentplayer-page'},{'name': 'ContentRatingComponent', 'selector': 'app-content-rating'},{'name': 'ContentTypeComponent', 'selector': 'app-content-type'},{'name': 'CourseCompletionComponent', 'selector': 'app-course-completion'},{'name': 'CourseConsumptionComponent', 'selector': 'app-course-consumption'},{'name': 'CourseConsumptionHeaderComponent', 'selector': 'app-course-consumption-header'},{'name': 'CourseConsumptionPageComponent', 'selector': ''},{'name': 'CourseDashboardComponent', 'selector': 'app-course-dashboard'},{'name': 'CourseDetailsComponent', 'selector': 'app-course-details'},{'name': 'CourseInfoComponent', 'selector': 'app-course-info'},{'name': 'CoursePageComponent', 'selector': ''},{'name': 'CoursePlayerComponent', 'selector': 'app-course-player'},{'name': 'CourseProgressComponent', 'selector': 'app-course-progress'},{'name': 'CreateBatchComponent', 'selector': 'app-create-batch'},{'name': 'CreateContentComponent', 'selector': 'app-create-content'},{'name': 'CreateEditGroupComponent', 'selector': 'app-create-edit-group'},{'name': 'CreateOrgTypeComponent', 'selector': 'app-create-org-type'},{'name': 'CreateTemplateComponent', 'selector': 'app-create-template'},{'name': 'CreateUserComponent', 'selector': 'app-create-user'},{'name': 'CreditsAndLicenceComponent', 'selector': 'app-credits-and-licence'},{'name': 'CurriculumCardComponent', 'selector': 'app-curriculum-card'},{'name': 'CurriculumCoursesComponent', 'selector': 'app-curriculum-courses'},{'name': 'CurriculumInfoComponent', 'selector': 'app-curriculum-info'},{'name': 'CustomMultiSelectComponent', 'selector': 'app-custom-multi-select'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardSidebarComponent', 'selector': 'app-dashboard-sidebar'},{'name': 'DataChartComponent', 'selector': 'app-data-chart'},{'name': 'DataDrivenComponent', 'selector': 'app-data-driven'},{'name': 'DataDrivenFilterComponent', 'selector': 'app-data-driven-filter'},{'name': 'DatasetComponent', 'selector': 'app-dataset'},{'name': 'DatasetsComponent', 'selector': 'app-datasets'},{'name': 'DataTableComponent', 'selector': 'app-data-table'},{'name': 'DefaultTemplateComponent', 'selector': 'app-content-creation-default-template'},{'name': 'DesktopAppUpdateComponent', 'selector': 'app-desktop-app-update'},{'name': 'DialCodeCardComponent', 'selector': 'app-dial-code-card'},{'name': 'DialCodeComponent', 'selector': 'app-dial-code'},{'name': 'DraftComponent', 'selector': 'app-draft'},{'name': 'EditSubmissionComponent', 'selector': 'app-edit-submission'},{'name': 'EnrollBatchComponent', 'selector': 'app-enroll-batch'},{'name': 'EntityListComponent', 'selector': 'entity-list'},{'name': 'EntityListComponent', 'selector': 'app-entity-list'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'ExploreContentComponent', 'selector': ''},{'name': 'ExploreCourseComponent', 'selector': ''},{'name': 'ExploreCurriculumCoursesComponent', 'selector': 'app-explore-curriculum-courses'},{'name': 'ExploreFtuPopupComponent', 'selector': 'app-explore-ftu-popup'},{'name': 'ExploreGroupComponent', 'selector': 'app-explore-group'},{'name': 'ExplorePageComponent', 'selector': 'app-explore-page-component'},{'name': 'FancyTreeComponent', 'selector': 'app-fancy-tree'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FaqReportComponent', 'selector': 'app-faq-report'},{'name': 'FilterComponent', 'selector': 'app-filter'},{'name': 'FlagConentplayerComponent', 'selector': 'app-flag-conentplayer'},{'name': 'FlaggedComponent', 'selector': 'app-flagged'},{'name': 'FlagReviewerComponent', 'selector': 'app-flag-reviewer'},{'name': 'ForumComponent', 'selector': 'app-forum'},{'name': 'FtuPopupComponent', 'selector': 'app-ftu-popup'},{'name': 'FullPageLoaderComponent', 'selector': 'app-full-page-loader'},{'name': 'FullPageModalComponent', 'selector': 'app-full-page-modal'},{'name': 'GenericEditorComponent', 'selector': 'app-generic-editor'},{'name': 'GetComponent', 'selector': 'app-get'},{'name': 'GlobalConsentPiiComponent', 'selector': 'app-global-consent-pii'},{'name': 'GlobalSearchFilterComponent', 'selector': 'app-global-search-filter'},{'name': 'GlobalSearchSelectedFilterComponent', 'selector': 'app-global-search-selected-filter'},{'name': 'GroupDetailsComponent', 'selector': 'app-group-details'},{'name': 'GroupHeaderComponent', 'selector': 'app-group-header'},{'name': 'GroupMembersComponent', 'selector': 'app-group-members'},{'name': 'GuestProfileComponent', 'selector': 'app-guest-profile'},{'name': 'HomeSearchComponent', 'selector': ''},{'name': 'IdentifyAccountComponent', 'selector': ''},{'name': 'InAppNotificationComponent', 'selector': 'app-in-app-notification'},{'name': 'InfoCardComponent', 'selector': 'app-info-card'},{'name': 'InstallAppComponent', 'selector': 'app-install-app'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'LanguageDropdownComponent', 'selector': 'app-language-dropdown'},{'name': 'LibraryComponent', 'selector': 'app-library'},{'name': 'LimitedPublishedComponent', 'selector': 'app-limited-published'},{'name': 'ListAllReportsComponent', 'selector': 'app-list-all-reports'},{'name': 'LoadContentComponent', 'selector': 'app-load-content'},{'name': 'LoadOfflineContentComponent', 'selector': 'app-load-offline-content'},{'name': 'LocationSelectionComponent', 'selector': 'app-location-selection'},{'name': 'LockInfoPopupComponent', 'selector': 'app-contentlock-info-popup'},{'name': 'MainFooterComponent', 'selector': 'app-footer'},{'name': 'MainHeaderComponent', 'selector': 'app-header'},{'name': 'MainMenuComponent', 'selector': 'app-main-menu'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialAutoCompleteComponent', 'selector': 'app-material-auto-complete'},{'name': 'MemberActionsComponent', 'selector': 'app-member-actions'},{'name': 'MergeAccountStatusComponent', 'selector': 'app-merge-account-status'},{'name': 'ModalWrapperComponent', 'selector': 'app-modal-wrapper'},{'name': 'MyGroupsComponent', 'selector': 'app-my-groups'},{'name': 'NetworkStatusComponent', 'selector': 'app-network-status'},{'name': 'NewCollectionEditorComponent', 'selector': 'app-new-collection-editor'},{'name': 'NoGroupResultComponent', 'selector': 'app-no-group-result'},{'name': 'NoResultComponent', 'selector': 'app-no-result-found'},{'name': 'NoResultComponent', 'selector': 'app-no-result'},{'name': 'ObservationDetailsComponent', 'selector': 'app-observation-details'},{'name': 'ObservationListingComponent', 'selector': 'app-observation-listing'},{'name': 'OfflineApplicationDownloadComponent', 'selector': 'app-offline-application-download'},{'name': 'OfflineBannerComponent', 'selector': 'app-offline-banner'},{'name': 'OfflineHelpVideosComponent', 'selector': 'app-offline-help-videos'},{'name': 'OnboardingUserSelectionComponent', 'selector': 'app-onboarding-user-selection'},{'name': 'OnDemandReportsComponent', 'selector': 'app-on-demand-reports'},{'name': 'OrganisationComponent', 'selector': 'app-organization'},{'name': 'OrganizationUploadComponent', 'selector': 'app-organization'},{'name': 'OtpComponent', 'selector': 'app-otp'},{'name': 'OtpPopupComponent', 'selector': 'app-otp-popup'},{'name': 'PageSectionComponent', 'selector': 'app-page-section'},{'name': 'PlayerComponent', 'selector': 'app-player'},{'name': 'PopupComponent', 'selector': 'app-modal'},{'name': 'ProfileBadgeComponent', 'selector': 'app-profile-badge'},{'name': 'ProfileFrameworkPopupComponent', 'selector': 'app-popup'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'PublicBatchDetailsComponent', 'selector': 'app-public-batch-details'},{'name': 'PublicCourseConsumptionPageComponent', 'selector': ''},{'name': 'PublicCoursePlayerComponent', 'selector': 'app-public-course-player'},{'name': 'PublishedComponent', 'selector': 'app-published'},{'name': 'PublishedPopupComponent', 'selector': 'app-published-popup'},{'name': 'QrCodeModalComponent', 'selector': 'app-qr-code-modal'},{'name': 'QuestionnaireComponent', 'selector': 'app-questionnaire'},{'name': 'RecoverAccountComponent', 'selector': ''},{'name': 'RedirectComponent', 'selector': 'app-redirect'},{'name': 'ReIssueCertificateComponent', 'selector': 'app-re-issue-certificate'},{'name': 'ReportComponent', 'selector': 'app-report'},{'name': 'ReportSummaryComponent', 'selector': 'app-report-summary'},{'name': 'ReportViewComponent', 'selector': 'app-report-view'},{'name': 'RequestChangesPopupComponent', 'selector': 'app-request-changes-popup'},{'name': 'ReviewCommentsComponent', 'selector': 'app-review-comments'},{'name': 'ReviewSubmissionsComponent', 'selector': 'app-review-submissions'},{'name': 'ReviewsubmissionsContentplayerComponent', 'selector': 'app-reviewsubmissions-contentplayer'},{'name': 'SbDatatableComponent', 'selector': 'sb-datatable'},{'name': 'SbTableComponent', 'selector': 'app-sb-table'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SearchFilterComponent', 'selector': 'app-search-filter'},{'name': 'SelectAccountIdentifierComponent', 'selector': ''},{'name': 'SelectOptionGroupComponent', 'selector': 'app-select-option-group'},{'name': 'SelectOrgComponent', 'selector': ''},{'name': 'ShareLinkComponent', 'selector': 'app-share-link'},{'name': 'SignupBasicInfoComponent', 'selector': 'app-signup-basic-info'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupEmailPasswordComponent', 'selector': 'app-signup-email-password'},{'name': 'SignupOnboardingInfoComponent', 'selector': 'app-signup-onboarding-info'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'SsoMergeConfirmationComponent', 'selector': 'app-sso-merge-confirmation'},{'name': 'StatusComponent', 'selector': 'app-status'},{'name': 'SubmissionsComponent', 'selector': 'submission'},{'name': 'SubmitTeacherDetailsComponent', 'selector': 'app-submit-teacher-details'},{'name': 'SvgEditorComponent', 'selector': 'app-svg-editor'},{'name': 'SystemWarningComponent', 'selector': 'app-system-warning'},{'name': 'TelemetryComponent', 'selector': 'app-telemetry'},{'name': 'TelemetryErrorModalComponent', 'selector': 'app-telemetry-error-modal'},{'name': 'TelemetryImportComponent', 'selector': 'app-telemetry-import'},{'name': 'TermsAndConditionsPopupComponent', 'selector': 'app-tnc-popup'},{'name': 'TopicPickerComponent', 'selector': 'app-topic-picker'},{'name': 'UciComponent', 'selector': 'app-uci'},{'name': 'UnEnrollBatchComponent', 'selector': 'app-unenroll-batch'},{'name': 'UpdateBatchComponent', 'selector': 'app-update-batch'},{'name': 'UpdateContactComponent', 'selector': ''},{'name': 'UpdateContactDetailsComponent', 'selector': 'app-update-contact-details'},{'name': 'UpdateCourseBatchComponent', 'selector': 'app-update-course-batch'},{'name': 'UpForReviewComponent', 'selector': 'app-up-for-review'},{'name': 'UpforreviewContentplayerComponent', 'selector': 'app-upforreview-contentplayer'},{'name': 'UpforReviewFilterComponent', 'selector': 'app-up-for-review-filter'},{'name': 'UploadedComponent', 'selector': 'app-uploaded'},{'name': 'UsageReportsComponent', 'selector': 'app-usage-reports'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserFilterComponent', 'selector': 'app-user-filter'},{'name': 'UserLocationComponent', 'selector': 'app-user-location'},{'name': 'UserOnboardingComponent', 'selector': 'app-user-onboarding'},{'name': 'UserOrgManagementComponent', 'selector': 'app-user-org-management'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRoleAssignComponent', 'selector': 'app-user-role-assign'},{'name': 'UserSearchComponent', 'selector': 'app-user-search'},{'name': 'ValidateTeacherIdentifierPopupComponent', 'selector': 'app-validate-teacher-identifier-popup'},{'name': 'VerifyAccountIdentifierComponent', 'selector': ''},{'name': 'ViewAllComponent', 'selector': 'app-view-all'},{'name': 'ViewOrgTypeComponent', 'selector': 'app-view-org-type'},{'name': 'WorkspaceComponent', 'selector': 'app-workspace'},{'name': 'WorkspaceContentFilterComponent', 'selector': 'app-workspace-content-filter'},{'name': 'WorkspacesidebarComponent', 'selector': 'app-workspacesidebar'},{'name': 'YearOfBirthComponent', 'selector': 'app-year-of-birth'}];
+    var DIRECTIVES = [{'name': 'ActivityDashboardDirective', 'selector': '[appActivityDashboard]'},{'name': 'AddToGroupDirective', 'selector': '[appAddToGroup]'},{'name': 'BodyScrollDirective', 'selector': '[appBodyScroll]'},{'name': 'ComponentDeactivate', 'selector': ''},{'name': 'ContentDirectionDirective', 'selector': '[appContentDirection]'},{'name': 'DesktopOnlyDirective', 'selector': '[appDesktopOnly]'},{'name': 'HighlightTextDirective', 'selector': '[appHighlightText]'},{'name': 'MarkdownDirective', 'selector': '[appMarkdown]'},{'name': 'ModalContentDirective', 'selector': '[sbModalContent]'},{'name': 'OnlineOnlyDirective', 'selector': '[appOnlineOnly]'},{'name': 'PermissionDirective', 'selector': '[appPermission]'},{'name': 'TelemetryEndDirective', 'selector': '[appTelemetryEnd]'},{'name': 'TelemetryErrorDirective', 'selector': '[appTelemetryError]'},{'name': 'TelemetryEventsDirective', 'selector': '[telemetryEventsButton]'},{'name': 'TelemetryImpressionDirective', 'selector': '[appTelemetryImpression]'},{'name': 'TelemetryInteractDirective', 'selector': '[appTelemetryInteract]'},{'name': 'TelemetryShareDirective', 'selector': '[appTelemetryShare]'},{'name': 'TelemetryStartDirective', 'selector': '[appTelemetryStart]'}];
+    var ACTUAL_COMPONENT = {'name': 'CreateBatchComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CreateBatchComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

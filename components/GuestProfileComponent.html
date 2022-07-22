@@ -1,0 +1,1993 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  GuestProfileComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-guest-profile</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./guest-profile.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./guest-profile.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#activatedRoute" >activatedRoute</a>
+                            </li>
+                            <li>
+                                <a href="#avatarStyle" >avatarStyle</a>
+                            </li>
+                            <li>
+                                <a href="#deviceProfile" >deviceProfile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#deviceRegisterService" >deviceRegisterService</a>
+                            </li>
+                            <li>
+                                <a href="#editFrameworkInteractEData" >editFrameworkInteractEData</a>
+                            </li>
+                            <li>
+                                <a href="#editProfileInteractEdata" >editProfileInteractEdata</a>
+                            </li>
+                            <li>
+                                <a href="#guestUser" >guestUser</a>
+                            </li>
+                            <li>
+                                <a href="#isDesktop" >isDesktop</a>
+                            </li>
+                            <li>
+                                <a href="#layoutConfiguration" >layoutConfiguration</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#layoutService" >layoutService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#navigationHelperService" >navigationHelperService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#resourceService" >resourceService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#router" >router</a>
+                            </li>
+                            <li>
+                                <a href="#showEdit" >showEdit</a>
+                            </li>
+                            <li>
+                                <a href="#showEditUserDetailsPopup" >showEditUserDetailsPopup</a>
+                            </li>
+                            <li>
+                                <a href="#telemetryImpression" >telemetryImpression</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toasterService" >toasterService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#unsubscribe$" >unsubscribe$</a>
+                            </li>
+                            <li>
+                                <a href="#userName" >userName</a>
+                            </li>
+                            <li>
+                                <a href="#userRole" >userRole</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#userService" >userService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#utilService" >utilService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#closeEditDetailsPopup" >closeEditDetailsPopup</a>
+                            </li>
+                            <li>
+                                <a href="#convertToString" >convertToString</a>
+                            </li>
+                            <li>
+                                <a href="#getGuestUser" >getGuestUser</a>
+                            </li>
+                            <li>
+                                <a href="#getLocation" >getLocation</a>
+                            </li>
+                            <li>
+                                <a href="#goBack" >goBack</a>
+                            </li>
+                            <li>
+                                <a href="#initLayout" >initLayout</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#setInteractEventData" >setInteractEventData</a>
+                            </li>
+                            <li>
+                                <a href="#updateGuestUser" >updateGuestUser</a>
+                            </li>
+                            <li>
+                                <a href="#updateProfile" >updateProfile</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, resourceService: <a href="../injectables/ResourceService.html" target="_self">ResourceService</a>, layoutService: <a href="../injectables/LayoutService.html" target="_self">LayoutService</a>, deviceRegisterService: <a href="../injectables/DeviceRegisterService.html" target="_self">DeviceRegisterService</a>, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, navigationHelperService: <a href="../injectables/NavigationHelperService.html" target="_self">NavigationHelperService</a>, toasterService: <a href="../injectables/ToasterService.html" target="_self">ToasterService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>activatedRoute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>resourceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>layoutService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LayoutService.html" target="_self" >LayoutService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>deviceRegisterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DeviceRegisterService.html" target="_self" >DeviceRegisterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>navigationHelperService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationHelperService.html" target="_self" >NavigationHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toasterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeEditDetailsPopup"></a>
+                    <span class="name">
+                        <span ><b>closeEditDetailsPopup</b></span>
+                        <a href="#closeEditDetailsPopup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeEditDetailsPopup()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="111"
+                            class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:111</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="convertToString"></a>
+                    <span class="name">
+                        <span ><b>convertToString</b></span>
+                        <a href="#convertToString"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>convertToString(value)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getGuestUser"></a>
+                    <span class="name">
+                        <span ><b>getGuestUser</b></span>
+                        <a href="#getGuestUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getGuestUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:61</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLocation"></a>
+                    <span class="name">
+                        <span ><b>getLocation</b></span>
+                        <a href="#getLocation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getLocation()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:78</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goBack"></a>
+                    <span class="name">
+                        <span ><b>goBack</b></span>
+                        <a href="#goBack"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goBack()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="156"
+                            class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:156</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initLayout"></a>
+                    <span class="name">
+                        <span ><b>initLayout</b></span>
+                        <a href="#initLayout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initLayout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="151"
+                            class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:151</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setInteractEventData"></a>
+                    <span class="name">
+                        <span ><b>setInteractEventData</b></span>
+                        <a href="#setInteractEventData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setInteractEventData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="117"
+                            class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:117</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateGuestUser"></a>
+                    <span class="name">
+                        <span ><b>updateGuestUser</b></span>
+                        <a href="#updateGuestUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateGuestUser(user)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="101"
+                            class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:101</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateProfile"></a>
+                    <span class="name">
+                        <span ><b>updateProfile</b></span>
+                        <a href="#updateProfile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateProfile(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="activatedRoute"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>activatedRoute</b></span>
+                        <a href="#activatedRoute"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="avatarStyle"></a>
+                    <span class="name">
+                        <span ><b>avatarStyle</b></span>
+                        <a href="#avatarStyle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    backgroundColor: &#x27;#ffffff&#x27;,
+    border: &#x27;1px solid #fff&#x27;,
+    boxShadow: &#x27;0 0 6px 0 rgba(0,0,0,0.38)&#x27;,
+    borderRadius: &#x27;50%&#x27;,
+    color: &#x27;#9017FF&#x27;,
+    fontWeight: &#x27;700&#x27;,
+    fontFamily: &#x27;inherit&#x27;
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deviceProfile"></a>
+                    <span class="name">
+                        <span ><b>deviceProfile</b></span>
+                        <a href="#deviceProfile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deviceRegisterService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>deviceRegisterService</b></span>
+                        <a href="#deviceRegisterService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/DeviceRegisterService.html" target="_self" >DeviceRegisterService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editFrameworkInteractEData"></a>
+                    <span class="name">
+                        <span ><b>editFrameworkInteractEData</b></span>
+                        <a href="#editFrameworkInteractEData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IInteractEventEdata.html" target="_self" >IInteractEventEdata</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editProfileInteractEdata"></a>
+                    <span class="name">
+                        <span ><b>editProfileInteractEdata</b></span>
+                        <a href="#editProfileInteractEdata"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IInteractEventEdata.html" target="_self" >IInteractEventEdata</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="guestUser"></a>
+                    <span class="name">
+                        <span ><b>guestUser</b></span>
+                        <a href="#guestUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isDesktop"></a>
+                    <span class="name">
+                        <span ><b>isDesktop</b></span>
+                        <a href="#isDesktop"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="layoutConfiguration"></a>
+                    <span class="name">
+                        <span ><b>layoutConfiguration</b></span>
+                        <a href="#layoutConfiguration"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="layoutService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>layoutService</b></span>
+                        <a href="#layoutService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/LayoutService.html" target="_self" >LayoutService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigationHelperService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>navigationHelperService</b></span>
+                        <a href="#navigationHelperService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/NavigationHelperService.html" target="_self" >NavigationHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resourceService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>resourceService</b></span>
+                        <a href="#resourceService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="router"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>router</b></span>
+                        <a href="#router"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showEdit"></a>
+                    <span class="name">
+                        <span ><b>showEdit</b></span>
+                        <a href="#showEdit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showEditUserDetailsPopup"></a>
+                    <span class="name">
+                        <span ><b>showEditUserDetailsPopup</b></span>
+                        <a href="#showEditUserDetailsPopup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryImpression"></a>
+                    <span class="name">
+                        <span ><b>telemetryImpression</b></span>
+                        <a href="#telemetryImpression"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IImpressionEventInput.html" target="_self" >IImpressionEventInput</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toasterService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>toasterService</b></span>
+                        <a href="#toasterService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unsubscribe$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>unsubscribe$</b></span>
+                        <a href="#unsubscribe$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userName"></a>
+                    <span class="name">
+                        <span ><b>userName</b></span>
+                        <a href="#userName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;Guest User&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userRole"></a>
+                    <span class="name">
+                        <span ><b>userRole</b></span>
+                        <a href="#userRole"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>userService</b></span>
+                        <a href="#userService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="utilService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>utilService</b></span>
+                        <a href="#utilService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/modules/public/module/guest-profile/components/guest-profile/guest-profile.component.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { DeviceRegisterService, UserService } from &#x27;@sunbird/core&#x27;;
+import { ResourceService, UtilService, NavigationHelperService, ToasterService } from &#x27;@sunbird/shared&#x27;;
+import { IInteractEventEdata, IImpressionEventInput } from &#x27;@sunbird/telemetry&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import { Subject } from &#x27;rxjs&#x27;;
+import { takeUntil } from &#x27;rxjs/operators&#x27;;
+import { LayoutService } from &#x27;../../../../../shared/services/layoutconfig/layout.service&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+
+const USER_DETAILS_KEY &#x3D; &#x27;guestUserDetails&#x27;;
+@Component({
+  selector: &#x27;app-guest-profile&#x27;,
+  templateUrl: &#x27;./guest-profile.component.html&#x27;,
+  styleUrls: [&#x27;./guest-profile.component.scss&#x27;]
+})
+
+export class GuestProfileComponent implements OnInit {
+  avatarStyle &#x3D; {
+    backgroundColor: &#x27;#ffffff&#x27;,
+    border: &#x27;1px solid #fff&#x27;,
+    boxShadow: &#x27;0 0 6px 0 rgba(0,0,0,0.38)&#x27;,
+    borderRadius: &#x27;50%&#x27;,
+    color: &#x27;#9017FF&#x27;,
+    fontWeight: &#x27;700&#x27;,
+    fontFamily: &#x27;inherit&#x27;
+  };
+  userName &#x3D; &#x27;Guest User&#x27;;
+  layoutConfiguration: any;
+  showEdit &#x3D; false;
+  showEditUserDetailsPopup &#x3D; false;
+  guestUser;
+  deviceProfile;
+  isDesktop &#x3D; false;
+  userRole: string;
+
+  editProfileInteractEdata: IInteractEventEdata;
+  editFrameworkInteractEData: IInteractEventEdata;
+  telemetryImpression: IImpressionEventInput;
+  public unsubscribe$ &#x3D; new Subject&lt;void&gt;();
+  constructor(
+    public activatedRoute: ActivatedRoute,
+    public resourceService: ResourceService,
+    public layoutService: LayoutService,
+    public deviceRegisterService: DeviceRegisterService,
+    public utilService: UtilService,
+    public userService: UserService,
+    public router: Router,
+    public navigationHelperService: NavigationHelperService,
+    public toasterService: ToasterService
+  ) { }
+
+  ngOnInit() {
+    this.isDesktop &#x3D; this.utilService.isDesktopApp;
+    this.getGuestUser();
+    this.initLayout();
+    this.getLocation();
+    this.setInteractEventData();
+  }
+
+  getGuestUser() {
+    this.userService.getGuestUser().subscribe((response) &#x3D;&gt; {
+      this.guestUser &#x3D; response;
+      this.userRole &#x3D; this.isDesktop &amp;&amp; _.get(this.guestUser, &#x27;role&#x27;) ? this.guestUser.role : localStorage.getItem(&#x27;guestUserType&#x27;);
+    });
+  }
+
+  initLayout() {
+    this.layoutConfiguration &#x3D; this.layoutService.initlayoutConfig();
+    this.layoutService.switchableLayout().pipe(takeUntil(this.unsubscribe$)).subscribe(layoutConfig &#x3D;&gt; {
+      /* istanbul ignore else */
+      if (layoutConfig !&#x3D; null) {
+        this.layoutConfiguration &#x3D; layoutConfig.layout;
+      }
+    });
+  }
+
+  getLocation() {
+    this.deviceRegisterService.fetchDeviceProfile().pipe(takeUntil(this.unsubscribe$)).subscribe((response) &#x3D;&gt; {
+      this.deviceProfile &#x3D; _.get(response, &#x27;result&#x27;);
+    });
+  }
+
+  updateProfile(event) {
+    // this.showEdit &#x3D; !this.showEdit;
+    this.guestUser.framework &#x3D; event;
+
+    if (window[&#x27;TagManager&#x27;]) {
+      window[&#x27;TagManager&#x27;].SBTagService.pushTag(this.guestUser, &#x27;USERFRAMEWORK_&#x27;, true);
+    }
+
+    if (this.isDesktop) {
+      this.updateGuestUser(this.guestUser);
+    } else {
+      localStorage.setItem(USER_DETAILS_KEY, JSON.stringify(this.guestUser));
+      this.getGuestUser();
+      this.toasterService.success(_.get(this.resourceService, &#x27;messages.smsg.m0058&#x27;));
+    }
+  }
+
+  updateGuestUser(user) {
+    const req &#x3D; { request: { ...user, identifier: user._id } };
+    this.userService.updateAnonymousUserDetails(req).subscribe((response) &#x3D;&gt; {
+      this.getGuestUser();
+      this.toasterService.success(_.get(this.resourceService, &#x27;messages.smsg.m0058&#x27;));
+    }, error &#x3D;&gt; {
+      console.error(&#x27;Error while updating guest user&#x27;, error);
+    });
+  }
+
+  closeEditDetailsPopup() {
+    this.getGuestUser();
+    this.getLocation();
+    this.showEditUserDetailsPopup &#x3D; !this.showEditUserDetailsPopup;
+  }
+
+  setInteractEventData() {
+    this.editProfileInteractEdata &#x3D; {
+      id: &#x27;guest-profile-edit&#x27;,
+      type: &#x27;click&#x27;,
+      pageid: &#x27;guest-profile-read&#x27;
+    };
+    this.editFrameworkInteractEData &#x3D; {
+      id: &#x27;guest-profile-framework-edit&#x27;,
+      type: &#x27;click&#x27;,
+      pageid: &#x27;guest-profile-read&#x27;
+    };
+    this.telemetryImpression &#x3D; {
+      context: {
+        env: _.get(this.activatedRoute, &#x27;snapshot.data.telemetry.env&#x27;)
+      },
+      object: {
+        id: &#x27;guest&#x27;,
+        type: &#x27;User&#x27;,
+        ver: &#x27;1.0&#x27;
+      },
+      edata: {
+        type: _.get(this.activatedRoute, &#x27;snapshot.data.telemetry.type&#x27;),
+        pageid: _.get(this.activatedRoute, &#x27;snapshot.data.telemetry.pageid&#x27;),
+        subtype: _.get(this.activatedRoute, &#x27;snapshot.data.telemetry.subtype&#x27;),
+        uri: this.router.url,
+        duration: this.navigationHelperService.getPageLoadTime()
+      },
+    };
+  }
+
+  convertToString(value) {
+    return _.isArray(value) ? _.join(value, &#x27;, &#x27;) : undefined;
+  }
+
+  ngOnDestroy() {
+      this.unsubscribe$.next();
+      this.unsubscribe$.complete();
+    }
+
+  goBack() {
+    this.navigationHelperService.goBack();
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-landing-section [textToDisplay]&#x3D;&quot;&quot; [layoutConfiguration]&#x3D;&quot;{}&quot; [noTitle]&#x3D;&quot;true&quot;&gt;&lt;/app-landing-section&gt;
+&lt;!--profile Content Header --&gt;
+  &lt;div [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;sb-back-actionbar&#x27; : &#x27;sb-bg-white cc-player__btn-back&#x27;&quot; class&#x3D;&quot;relative position mt-0&quot; [ngClass]&#x3D;&quot;{&#x27;header-block&#x27;: isFullScreenView}&quot;&gt;
+    &lt;div class&#x3D;&quot;ui container py-0 px-0 d-flex flex-ai-center&quot;&gt;
+      &lt;button type&#x3D;&quot;button&quot; (click)&#x3D;&quot;goBack()&quot; [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;sb-btn-round&#x27; : &#x27;&#x27;&quot; class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-link sb-btn-link-primary sb-left-icon-btn px-0&quot;
+      tabindex&#x3D;&quot;0&quot;&gt;
+      &lt;i class&#x3D;&quot;icon-svg icon-svg--xxs icon-back mr-4&quot;&gt;&lt;svg class&#x3D;&quot;icon icon-svg--primary&quot;&gt;
+          &lt;use xlink:href&#x3D;&quot;assets/images/sprite.svg#arrow-long-left&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;&lt;/i&gt;
+     &lt;span&gt;{{resourceService?.frmelmnts?.btn?.back}}&lt;/span&gt;
+    &lt;/button&gt;
+      &lt;div class&#x3D;&quot;content-header__content w-100 ml-16&quot;&gt;
+        &lt;div class&#x3D;&quot;d-flex flex-dc flex-basis-1 mr-32 min-w-0 content-header__content__title&quot;&gt;
+          &lt;div class&#x3D;&quot;content-header__title font-weight-bold ellipsis text-left&quot;  tabindex&#x3D;&quot;0&quot; role&#x3D;&quot;heading&quot; aria-level&#x3D;&quot;2&quot;&gt;{{resourceService.frmelmnts?.lnk?.profile}}&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;div [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;sbt-inside-page-container&#x27; : &#x27;&#x27;&quot;&gt;
+&lt;div [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;relative9&#x27; : &#x27;&#x27;&quot; [appTelemetryImpression]&#x3D;&quot;telemetryImpression&quot;&gt;
+  &lt;section class&#x3D;&quot;py-24 d-flex flex-ai-center flex-dc&quot;&gt;
+    &lt;div class&#x3D;&quot;ui container&quot;&gt;
+      &lt;div class&#x3D;&quot;mb-15 d-flex flex-jc-center relative avatar-container&quot; aria-label&#x3D;&quot;Profile&quot;&gt;
+        &lt;ngx-avatar class&#x3D;&quot;my-avatar&quot; [style]&#x3D;&quot;avatarStyle&quot; size&#x3D;&quot;98&quot; initialsSize&#x3D;&quot;1&quot; textSizeRatio&#x3D;&quot;2&quot;
+          [name]&#x3D;&quot;guestUser?.formatedName&quot;&gt;
+        &lt;/ngx-avatar&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;profile-user-label font-w-bold d-flex text-center relative position&quot;&gt;{{guestUser?.formatedName |
+      titlecase}}
+    &lt;/div&gt;
+
+  &lt;/section&gt;
+  &lt;section class&#x3D;&quot;d-flex flex-ai-center flex-dc pb-24 content-preference&quot;&gt;
+    &lt;h3 class&#x3D;&quot;content-header-info font-weight-bold mb-16 d-flex flex-jc-center&quot;&gt;
+      {{resourceService?.frmelemnts?.lbl?.profiledetails}}&lt;/h3&gt;
+    &lt;div class&#x3D;&quot;ui container content-preference__info pt-16&quot;&gt;
+      &lt;div *ngIf&#x3D;&quot;userRole&quot; class&#x3D;&quot;mb-0 d-flex flex-jc-center m-responsive-flex-dc m-responsive-mt-15&quot;&gt;
+        &lt;div class&#x3D;&quot;fmedium text-center&quot;&gt;{{resourceService?.frmelmnts?.lbl?.role}} :&lt;/div&gt;
+        &lt;div class&#x3D;&quot;fmedium ml-5 font-w-bold text-center&quot;&gt;
+          {{userRole | titlecase}}&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div *ngIf&#x3D;&quot;guestUser?.subrole&quot; class&#x3D;&quot;mb-0 d-flex flex-jc-center m-responsive-flex-dc m-responsive-mt-15&quot;&gt;
+        &lt;div class&#x3D;&quot;fmedium text-center&quot;&gt;{{resourceService?.frmelmnts?.lbl?.subRole}} :&lt;/div&gt;
+        &lt;div class&#x3D;&quot;fmedium ml-5 font-w-bold text-center&quot;&gt;
+          {{guestUser?.subrole}}&lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div *ngIf&#x3D;&quot;guestUser?.school&quot; class&#x3D;&quot;mb-0 d-flex flex-jc-center m-responsive-flex-dc m-responsive-mt-15&quot;&gt;
+        &lt;div class&#x3D;&quot;fmedium text-center&quot;&gt;{{resourceService?.frmelmnts?.lbl?.school}} :&lt;/div&gt;
+        &lt;div class&#x3D;&quot;fmedium ml-5 font-w-bold text-center&quot;&gt;
+          {{guestUser?.school}} &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div *ngIf&#x3D;&quot;guestUser?.cluster&quot; class&#x3D;&quot;mb-0 d-flex flex-jc-center m-responsive-flex-dc m-responsive-mt-15&quot;&gt;
+        &lt;div class&#x3D;&quot;fmedium text-center&quot;&gt;{{resourceService?.frmelmnts?.lbl?.cluster}} :&lt;/div&gt;
+        &lt;div class&#x3D;&quot;fmedium ml-5 font-w-bold text-center&quot;&gt;
+          {{guestUser?.cluster}} &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div *ngIf&#x3D;&quot;guestUser?.block&quot; class&#x3D;&quot;mb-0 d-flex flex-jc-center m-responsive-flex-dc m-responsive-mt-15&quot;&gt;
+        &lt;div class&#x3D;&quot;fmedium text-center&quot;&gt;{{resourceService?.frmelmnts?.lbl?.block}} :&lt;/div&gt;
+        &lt;div class&#x3D;&quot;fmedium ml-5 font-w-bold text-center&quot;&gt;
+          {{guestUser?.block}}&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div *ngIf&#x3D;&quot;deviceProfile?.userDeclaredLocation?.district&quot;
+        class&#x3D;&quot;mb-0 d-flex flex-jc-center m-responsive-flex-dc m-responsive-mt-15&quot;&gt;
+        &lt;div class&#x3D;&quot;fmedium text-center&quot;&gt;{{resourceService?.frmelmnts?.lbl?.district}} :&lt;/div&gt;
+        &lt;div class&#x3D;&quot;fmedium ml-5 font-w-bold text-center&quot;&gt;
+          {{deviceProfile?.userDeclaredLocation?.district}} &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div *ngIf&#x3D;&quot;deviceProfile?.userDeclaredLocation?.state&quot;
+        class&#x3D;&quot;d-flex mb-5 flex-jc-center m-responsive-flex-dc m-responsive-mt-15&quot;&gt;
+        &lt;div class&#x3D;&quot;fmedium text-center&quot;&gt;{{resourceService?.frmelmnts?.lbl?.state}} :&lt;/div&gt;
+        &lt;div class&#x3D;&quot;fmedium ml-5 font-w-bold text-center&quot;&gt;
+          {{deviceProfile?.userDeclaredLocation?.state}}&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;d-flex flex-dc flex-jcc-center flex-ai-center&quot;&gt;
+        &lt;button appTelemetryInteract appOnlineOnly [telemetryInteractEdata]&#x3D;&quot;editProfileInteractEdata&quot;
+          class&#x3D;&quot;sb-btn sb-btn-primary sb-btn-normal sb-btn-border my-16&quot; aria-label&#x3D;&quot;&quot; tabindex&#x3D;&quot;0&quot;
+          (click)&#x3D;&quot;showEditUserDetailsPopup&#x3D;true&quot;&gt;{{resourceService?.frmelmnts?.lbl?.edit}}&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class&#x3D;&quot;d-flex flex-ai-center flex-dc pt-30 pb-30 profile-bg-c-4 content-preference&quot;&gt;
+    &lt;!-- User info computer view starts--&gt;
+    &lt;div class&#x3D;&quot;ui container&quot;&gt;
+      &lt;div class&#x3D;&quot;d-flex flex-jc-center flex-ai-center flex-dc&quot;&gt;
+        &lt;div class&#x3D;&quot;max-w-400 computer only&quot;&gt;
+          &lt;div class&#x3D;&quot;mb-15 d-flex flex-jc-center&quot;&gt;
+            &lt;span class&#x3D;&quot;fmedium white-space-nowrap&quot;&gt;{{resourceService?.frmelmnts?.lbl?.boards}} :&lt;/span&gt;
+            &lt;span class&#x3D;&quot;fmedium font-w-bold pl-4&quot;&gt;{{convertToString(guestUser?.framework?.board) | interpolate: &#x27;CBSE&#x27;:
+              &#x27;CBSE/NCERT&#x27;}}&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;mb-15 d-flex flex-jc-center&quot;&gt;
+            &lt;span class&#x3D;&quot;fmedium white-space-nowrap&quot;&gt;{{resourceService?.frmelmnts?.lbl?.medium}} :&lt;/span&gt;
+            &lt;span class&#x3D;&quot;fmedium font-w-bold pl-4&quot;&gt;{{convertToString(guestUser?.framework?.medium)}}&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;mb-15 d-flex flex-jc-center&quot;&gt;
+            &lt;span class&#x3D;&quot;fmedium white-space-nowrap&quot;&gt;{{resourceService?.frmelmnts?.lbl?.classes}} :&lt;/span&gt;
+            &lt;span class&#x3D;&quot;fmedium font-w-bold pl-4&quot;&gt;{{convertToString(guestUser?.framework?.gradeLevel)}}&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;d-flex flex-jc-center&quot; *ngIf&#x3D;&quot;guestUser?.framework?.subject?.length&quot;&gt;
+            &lt;span class&#x3D;&quot;fmedium white-space-nowrap&quot;&gt;{{resourceService?.frmelmnts?.lbl?.subjects}} :&lt;/span&gt;
+            &lt;span class&#x3D;&quot;fmedium font-w-bold pl-4&quot;&gt;{{convertToString(guestUser?.framework?.subject)}}&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button class&#x3D;&quot;sb-btn sb-btn-primary sb-btn-normal my-16 sb-btn-border computer only&quot; appTelemetryInteract
+          appOnlineOnly [telemetryInteractEdata]&#x3D;&quot;editProfileInteractEdata&quot;
+          tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;showEdit &#x3D; !showEdit&quot;&gt;{{resourceService?.frmelmnts?.lbl?.edit}}&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- User info computer view ends--&gt;
+
+    &lt;!-- User info mobile view starts--&gt;
+    &lt;div class&#x3D;&quot;max-w-300 mobile only&quot;&gt;
+      &lt;div class&#x3D;&quot;mb-15 d-flex flex-ai-center flex-dc&quot;&gt;
+        &lt;span class&#x3D;&quot;fmedium white-space-nowrap&quot;&gt;{{resourceService?.frmelmnts?.lbl?.boards}}:&lt;/span&gt;
+        &lt;span class&#x3D;&quot;fmedium font-w-bold text-center&quot;&gt;{{convertToString(guestUser?.framework?.board) |
+          interpolate:&#x27;CBSE&#x27;:&#x27;CBSE/NCERT&#x27;}}&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;mb-15 d-flex flex-ai-center flex-dc&quot;&gt;
+        &lt;span class&#x3D;&quot;fmedium white-space-nowrap&quot;&gt;{{resourceService?.frmelmnts?.lbl?.medium}} :&lt;/span&gt;
+        &lt;span class&#x3D;&quot;fmedium font-w-bold text-center&quot;&gt;{{convertToString(guestUser?.framework?.medium)}}&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;mb-15 d-flex flex-ai-center flex-dc&quot;&gt;
+        &lt;span class&#x3D;&quot;fmedium white-space-nowrap&quot;&gt;{{resourceService?.frmelmnts?.lbl?.classes}} :&lt;/span&gt;
+        &lt;span class&#x3D;&quot;fmedium font-w-bold text-center&quot;&gt;{{convertToString(guestUser?.framework?.gradeLevel)}}&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;mb-15 d-flex flex-ai-center flex-dc&quot;&gt;
+        &lt;span class&#x3D;&quot;fmedium white-space-nowrap&quot;&gt;{{resourceService?.frmelmnts?.lbl?.subjects}} :&lt;/span&gt;
+        &lt;span class&#x3D;&quot;fmedium font-w-bold text-center&quot;&gt;{{convertToString(guestUser?.framework?.subject)}}&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;d-flex flex-ai-center flex-jc-center&quot; appTelemetryInteract
+        [telemetryInteractEdata]&#x3D;&quot;editFrameworkInteractEData&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;showEdit &#x3D; !showEdit&quot;&gt;
+        &lt;button appOnlineOnly attr.aria-label&#x3D;&quot;{{resourceService?.frmelmnts?.lbl?.edit}} {{resourceService?.frmelmnts?.lbl?.boards}},{{resourceService?.frmelmnts?.lbl?.medium}},{{resourceService?.frmelmnts?.lbl?.classes}},{{resourceService?.frmelmnts?.lbl?.subjects}}&quot;
+          class&#x3D;&quot;sb-btn sb-btn-primary sb-btn-xs mt-30&quot;&gt;{{resourceService?.frmelmnts?.lbl?.edit}}&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- User info mobile view ends--&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;app-modal-wrapper *ngIf&#x3D;&quot;showEdit&quot; [config]&#x3D;&quot;{disableClose: false, panelClass: [&#x27;overflow-visible&#x27;, &#x27;material-modal&#x27;]}&quot;&gt;
+  &lt;ng-template sbModalContent let-data&gt;
+    &lt;app-popup [dialogProps]&#x3D;&quot;data&quot; [formInput]&#x3D;&quot;guestUser?.framework&quot; [showCloseIcon]&#x3D;&quot;true&quot;
+      [buttonLabel]&#x3D;&quot;resourceService?.frmelmnts?.btn?.submit&quot; [isGuestUser]&#x3D;&quot;true&quot; (submit)&#x3D;&quot;updateProfile($event)&quot; (close)&#x3D;&quot;showEdit &#x3D; !showEdit&quot;&gt;
+    &lt;/app-popup&gt;
+  &lt;/ng-template&gt;
+&lt;/app-modal-wrapper&gt;
+
+&lt;app-location-selection (close)&#x3D;&quot;closeEditDetailsPopup()&quot; *ngIf&#x3D;&quot;showEditUserDetailsPopup&quot;&gt;
+  &lt;div slot&#x3D;&quot;popup-sub-header&quot;&gt;
+    &lt;p class&#x3D;&quot;subtitle&quot;&gt;{{resourceService?.frmelmnts?.lbl?.editPersonalDetails}}&amp;lrm;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/app-location-selection&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./guest-profile.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;variables&quot;;
+@import &quot;../../../../../../../assets/styles/mixins/mixins&quot;;
+
+.content-header__title {
+  color: var(--primary-400);
+  font-size: 1.125rem;
+}
+.avatar-container {
+  width: calculateRem(98px);
+  height: calculateRem(98px);
+  margin: 0 auto;
+}
+.profile-user-label {
+  font-size: calculateRem(32px);
+}
+.font-w-bold {
+  font-weight: bold !important;
+}
+/* profile page color palate */
+.profile-bg-c-3 {
+  background: var(--sbt-page-header-bg) !important;
+}
+
+.profile-bg-c-4 {
+  background: var(--sb-profile-bg-c-4) !important;
+  color:var(--black)
+}
+
+/* width */
+.max-w-300 {
+  max-width: calculateRem(300px) !important;
+}
+
+.max-w-400 {
+  max-width: calculateRem(400px) !important;
+}
+
+.content-preference {
+  @include respond-below(md) {
+    padding: 0 2%;
+    &amp;__info {
+      background: var(--sb-profile-bg-c-4);
+      padding: calculateRem(16px) 0;
+      border-radius: calculateRem(24px);
+      width: 100%;
+      color: var(--black);
+    }
+  }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-landing-section [textToDisplay]="" [layoutConfiguration]="{}" [noTitle]="true"></app-landing-section><!--profile Content Header -->  <div [ngClass]="layoutConfiguration ? \'sb-back-actionbar\' : \'sb-bg-white cc-player__btn-back\'" class="relative position mt-0" [ngClass]="{\'header-block\': isFullScreenView}">    <div class="ui container py-0 px-0 d-flex flex-ai-center">      <button type="button" (click)="goBack()" [ngClass]="layoutConfiguration ? \'sb-btn-round\' : \'\'" class="sb-btn sb-btn-normal sb-btn-link sb-btn-link-primary sb-left-icon-btn px-0"      tabindex="0">      <i class="icon-svg icon-svg--xxs icon-back mr-4"><svg class="icon icon-svg--primary">          <use xlink:href="assets/images/sprite.svg#arrow-long-left"></use>        </svg></i>     <span>{{resourceService?.frmelmnts?.btn?.back}}</span>    </button>      <div class="content-header__content w-100 ml-16">        <div class="d-flex flex-dc flex-basis-1 mr-32 min-w-0 content-header__content__title">          <div class="content-header__title font-weight-bold ellipsis text-left"  tabindex="0" role="heading" aria-level="2">{{resourceService.frmelmnts?.lnk?.profile}}</div>        </div>      </div>    </div>  </div><div [ngClass]="layoutConfiguration ? \'sbt-inside-page-container\' : \'\'"><div [ngClass]="layoutConfiguration ? \'relative9\' : \'\'" [appTelemetryImpression]="telemetryImpression">  <section class="py-24 d-flex flex-ai-center flex-dc">    <div class="ui container">      <div class="mb-15 d-flex flex-jc-center relative avatar-container" aria-label="Profile">        <ngx-avatar class="my-avatar" [style]="avatarStyle" size="98" initialsSize="1" textSizeRatio="2"          [name]="guestUser?.formatedName">        </ngx-avatar>      </div>    </div>    <div class="profile-user-label font-w-bold d-flex text-center relative position">{{guestUser?.formatedName |      titlecase}}    </div>  </section>  <section class="d-flex flex-ai-center flex-dc pb-24 content-preference">    <h3 class="content-header-info font-weight-bold mb-16 d-flex flex-jc-center">      {{resourceService?.frmelemnts?.lbl?.profiledetails}}</h3>    <div class="ui container content-preference__info pt-16">      <div *ngIf="userRole" class="mb-0 d-flex flex-jc-center m-responsive-flex-dc m-responsive-mt-15">        <div class="fmedium text-center">{{resourceService?.frmelmnts?.lbl?.role}} :</div>        <div class="fmedium ml-5 font-w-bold text-center">          {{userRole | titlecase}}</div>      </div>      <div *ngIf="guestUser?.subrole" class="mb-0 d-flex flex-jc-center m-responsive-flex-dc m-responsive-mt-15">        <div class="fmedium text-center">{{resourceService?.frmelmnts?.lbl?.subRole}} :</div>        <div class="fmedium ml-5 font-w-bold text-center">          {{guestUser?.subrole}}</div>      </div>      <div *ngIf="guestUser?.school" class="mb-0 d-flex flex-jc-center m-responsive-flex-dc m-responsive-mt-15">        <div class="fmedium text-center">{{resourceService?.frmelmnts?.lbl?.school}} :</div>        <div class="fmedium ml-5 font-w-bold text-center">          {{guestUser?.school}} </div>      </div>      <div *ngIf="guestUser?.cluster" class="mb-0 d-flex flex-jc-center m-responsive-flex-dc m-responsive-mt-15">        <div class="fmedium text-center">{{resourceService?.frmelmnts?.lbl?.cluster}} :</div>        <div class="fmedium ml-5 font-w-bold text-center">          {{guestUser?.cluster}} </div>      </div>      <div *ngIf="guestUser?.block" class="mb-0 d-flex flex-jc-center m-responsive-flex-dc m-responsive-mt-15">        <div class="fmedium text-center">{{resourceService?.frmelmnts?.lbl?.block}} :</div>        <div class="fmedium ml-5 font-w-bold text-center">          {{guestUser?.block}}</div>      </div>      <div *ngIf="deviceProfile?.userDeclaredLocation?.district"        class="mb-0 d-flex flex-jc-center m-responsive-flex-dc m-responsive-mt-15">        <div class="fmedium text-center">{{resourceService?.frmelmnts?.lbl?.district}} :</div>        <div class="fmedium ml-5 font-w-bold text-center">          {{deviceProfile?.userDeclaredLocation?.district}} </div>      </div>      <div *ngIf="deviceProfile?.userDeclaredLocation?.state"        class="d-flex mb-5 flex-jc-center m-responsive-flex-dc m-responsive-mt-15">        <div class="fmedium text-center">{{resourceService?.frmelmnts?.lbl?.state}} :</div>        <div class="fmedium ml-5 font-w-bold text-center">          {{deviceProfile?.userDeclaredLocation?.state}}</div>      </div>      <div class="d-flex flex-dc flex-jcc-center flex-ai-center">        <button appTelemetryInteract appOnlineOnly [telemetryInteractEdata]="editProfileInteractEdata"          class="sb-btn sb-btn-primary sb-btn-normal sb-btn-border my-16" aria-label="" tabindex="0"          (click)="showEditUserDetailsPopup=true">{{resourceService?.frmelmnts?.lbl?.edit}}</button>      </div>    </div>  </section>  <section class="d-flex flex-ai-center flex-dc pt-30 pb-30 profile-bg-c-4 content-preference">    <!-- User info computer view starts-->    <div class="ui container">      <div class="d-flex flex-jc-center flex-ai-center flex-dc">        <div class="max-w-400 computer only">          <div class="mb-15 d-flex flex-jc-center">            <span class="fmedium white-space-nowrap">{{resourceService?.frmelmnts?.lbl?.boards}} :</span>            <span class="fmedium font-w-bold pl-4">{{convertToString(guestUser?.framework?.board) | interpolate: \'CBSE\':              \'CBSE/NCERT\'}}</span>          </div>          <div class="mb-15 d-flex flex-jc-center">            <span class="fmedium white-space-nowrap">{{resourceService?.frmelmnts?.lbl?.medium}} :</span>            <span class="fmedium font-w-bold pl-4">{{convertToString(guestUser?.framework?.medium)}}</span>          </div>          <div class="mb-15 d-flex flex-jc-center">            <span class="fmedium white-space-nowrap">{{resourceService?.frmelmnts?.lbl?.classes}} :</span>            <span class="fmedium font-w-bold pl-4">{{convertToString(guestUser?.framework?.gradeLevel)}}</span>          </div>          <div class="d-flex flex-jc-center" *ngIf="guestUser?.framework?.subject?.length">            <span class="fmedium white-space-nowrap">{{resourceService?.frmelmnts?.lbl?.subjects}} :</span>            <span class="fmedium font-w-bold pl-4">{{convertToString(guestUser?.framework?.subject)}}</span>          </div>        </div>        <button class="sb-btn sb-btn-primary sb-btn-normal my-16 sb-btn-border computer only" appTelemetryInteract          appOnlineOnly [telemetryInteractEdata]="editProfileInteractEdata"          tabindex="0" (click)="showEdit = !showEdit">{{resourceService?.frmelmnts?.lbl?.edit}}</button>      </div>    </div>    <!-- User info computer view ends-->    <!-- User info mobile view starts-->    <div class="max-w-300 mobile only">      <div class="mb-15 d-flex flex-ai-center flex-dc">        <span class="fmedium white-space-nowrap">{{resourceService?.frmelmnts?.lbl?.boards}}:</span>        <span class="fmedium font-w-bold text-center">{{convertToString(guestUser?.framework?.board) |          interpolate:\'CBSE\':\'CBSE/NCERT\'}}</span>      </div>      <div class="mb-15 d-flex flex-ai-center flex-dc">        <span class="fmedium white-space-nowrap">{{resourceService?.frmelmnts?.lbl?.medium}} :</span>        <span class="fmedium font-w-bold text-center">{{convertToString(guestUser?.framework?.medium)}}</span>      </div>      <div class="mb-15 d-flex flex-ai-center flex-dc">        <span class="fmedium white-space-nowrap">{{resourceService?.frmelmnts?.lbl?.classes}} :</span>        <span class="fmedium font-w-bold text-center">{{convertToString(guestUser?.framework?.gradeLevel)}}</span>      </div>      <div class="mb-15 d-flex flex-ai-center flex-dc">        <span class="fmedium white-space-nowrap">{{resourceService?.frmelmnts?.lbl?.subjects}} :</span>        <span class="fmedium font-w-bold text-center">{{convertToString(guestUser?.framework?.subject)}}</span>      </div>      <div class="d-flex flex-ai-center flex-jc-center" appTelemetryInteract        [telemetryInteractEdata]="editFrameworkInteractEData" tabindex="0" (click)="showEdit = !showEdit">        <button appOnlineOnly attr.aria-label="{{resourceService?.frmelmnts?.lbl?.edit}} {{resourceService?.frmelmnts?.lbl?.boards}},{{resourceService?.frmelmnts?.lbl?.medium}},{{resourceService?.frmelmnts?.lbl?.classes}},{{resourceService?.frmelmnts?.lbl?.subjects}}"          class="sb-btn sb-btn-primary sb-btn-xs mt-30">{{resourceService?.frmelmnts?.lbl?.edit}}</button>      </div>    </div>    <!-- User info mobile view ends-->  </section></div></div><app-modal-wrapper *ngIf="showEdit" [config]="{disableClose: false, panelClass: [\'overflow-visible\', \'material-modal\']}">  <ng-template sbModalContent let-data>    <app-popup [dialogProps]="data" [formInput]="guestUser?.framework" [showCloseIcon]="true"      [buttonLabel]="resourceService?.frmelmnts?.btn?.submit" [isGuestUser]="true" (submit)="updateProfile($event)" (close)="showEdit = !showEdit">    </app-popup>  </ng-template></app-modal-wrapper><app-location-selection (close)="closeEditDetailsPopup()" *ngIf="showEditUserDetailsPopup">  <div slot="popup-sub-header">    <p class="subtitle">{{resourceService?.frmelmnts?.lbl?.editPersonalDetails}}&lrm;</p>  </div></app-location-selection></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'app-access-discussion'},{'name': 'AccountMergeModalComponent', 'selector': 'app-account-merge-modal'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-info'},{'name': 'ActivityDashboardComponent', 'selector': 'app-activity-dashboard'},{'name': 'ActivityDetailsComponent', 'selector': 'app-activity-details'},{'name': 'ActivityFormComponent', 'selector': 'app-activity-form'},{'name': 'ActivityListComponent', 'selector': 'app-activity-list'},{'name': 'ActivitySearchComponent', 'selector': 'app-activity-search'},{'name': 'AddActivityComponent', 'selector': 'app-add-activity'},{'name': 'AddActivityContentTypesComponent', 'selector': 'app-add-activity-content-types'},{'name': 'AddEntityComponent', 'selector': 'add-entity'},{'name': 'AddMemberComponent', 'selector': 'app-add-member'},{'name': 'AddSummaryModalComponent', 'selector': 'app-add-summary-modal'},{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AllContentComponent', 'selector': 'app-all-content'},{'name': 'AllEvidenceComponent', 'selector': 'app-all-evidence'},{'name': 'AllTextbooksComponent', 'selector': 'app-all-textbooks'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppLandingSectionComponent', 'selector': 'app-landing-section'},{'name': 'AppLoaderComponent', 'selector': 'app-loader'},{'name': 'AssessmentPlayerComponent', 'selector': 'app-assessment-player'},{'name': 'AssignBadgesContentComponent', 'selector': 'app-assign-badges-content'},{'name': 'AuthFailedComponent', 'selector': 'app-auth-failed'},{'name': 'BackButtonComponent', 'selector': 'app-back-button'},{'name': 'BatchCardComponent', 'selector': 'app-batch-card'},{'name': 'BatchDetailsComponent', 'selector': 'app-batch-details'},{'name': 'BatchInfoComponent', 'selector': 'app-batch-info'},{'name': 'BatchListComponent', 'selector': 'app-batch-list'},{'name': 'BatchPageSectionComponent', 'selector': 'app-batch-page-section'},{'name': 'BrowseImagePopupComponent', 'selector': 'browse-image-popup'},{'name': 'BrowserCompatibilityComponent', 'selector': 'app-browser-compatibility'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardCreationComponent', 'selector': 'app-card-creation'},{'name': 'CertificateConfigurationComponent', 'selector': 'app-certificate-configuration'},{'name': 'CertificateDetailsComponent', 'selector': 'app-certificate-details'},{'name': 'CertificateNameUpdatePopupComponent', 'selector': 'app-certificate-name-update-popup'},{'name': 'CertPreviewPopupComponent', 'selector': 'app-cert-preview-popup'},{'name': 'ChooseUserComponent', 'selector': 'app-choose-user'},{'name': 'CollaboratingOnComponent', 'selector': 'app-collaborating-on'},{'name': 'CollaborationContentFilterComponent', 'selector': 'app-collaboration-content-filter'},{'name': 'CollectionEditorComponent', 'selector': 'app-collection-editor'},{'name': 'CollectionPlayerComponent', 'selector': 'app-collection-player'},{'name': 'CollectionPlayerMetadataComponent', 'selector': 'app-collection-player-metadata'},{'name': 'CommingSoonComponent', 'selector': 'app-comming-soon'},{'name': 'ConfirmationPopupComponent', 'selector': 'app-confirmation-popup'},{'name': 'ConfirmPopupComponent', 'selector': 'app-confirm-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentBadgeComponent', 'selector': 'app-content-badge'},{'name': 'ContentChapterlistComponent', 'selector': 'app-content-chapterlist'},{'name': 'ContentCreditsComponent', 'selector': 'app-content-credits'},{'name': 'ContentEditorComponent', 'selector': 'app-content-editor'},{'name': 'ContentLicenceComponent', 'selector': 'app-content-licence'},{'name': 'ContentManagerComponent', 'selector': 'app-content-manager'},{'name': 'ContentManagerInfoPopUpComponent', 'selector': 'app-content-manager-info-pop-up'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerMetadataComponent', 'selector': 'app-content-player-metadata'},{'name': 'ContentPlayerPageComponent', 'selector': 'app-contentplayer-page'},{'name': 'ContentRatingComponent', 'selector': 'app-content-rating'},{'name': 'ContentTypeComponent', 'selector': 'app-content-type'},{'name': 'CourseCompletionComponent', 'selector': 'app-course-completion'},{'name': 'CourseConsumptionComponent', 'selector': 'app-course-consumption'},{'name': 'CourseConsumptionHeaderComponent', 'selector': 'app-course-consumption-header'},{'name': 'CourseConsumptionPageComponent', 'selector': ''},{'name': 'CourseDashboardComponent', 'selector': 'app-course-dashboard'},{'name': 'CourseDetailsComponent', 'selector': 'app-course-details'},{'name': 'CourseInfoComponent', 'selector': 'app-course-info'},{'name': 'CoursePageComponent', 'selector': ''},{'name': 'CoursePlayerComponent', 'selector': 'app-course-player'},{'name': 'CourseProgressComponent', 'selector': 'app-course-progress'},{'name': 'CreateBatchComponent', 'selector': 'app-create-batch'},{'name': 'CreateContentComponent', 'selector': 'app-create-content'},{'name': 'CreateEditGroupComponent', 'selector': 'app-create-edit-group'},{'name': 'CreateOrgTypeComponent', 'selector': 'app-create-org-type'},{'name': 'CreateTemplateComponent', 'selector': 'app-create-template'},{'name': 'CreateUserComponent', 'selector': 'app-create-user'},{'name': 'CreditsAndLicenceComponent', 'selector': 'app-credits-and-licence'},{'name': 'CurriculumCardComponent', 'selector': 'app-curriculum-card'},{'name': 'CurriculumCoursesComponent', 'selector': 'app-curriculum-courses'},{'name': 'CurriculumInfoComponent', 'selector': 'app-curriculum-info'},{'name': 'CustomMultiSelectComponent', 'selector': 'app-custom-multi-select'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardSidebarComponent', 'selector': 'app-dashboard-sidebar'},{'name': 'DataChartComponent', 'selector': 'app-data-chart'},{'name': 'DataDrivenComponent', 'selector': 'app-data-driven'},{'name': 'DataDrivenFilterComponent', 'selector': 'app-data-driven-filter'},{'name': 'DatasetComponent', 'selector': 'app-dataset'},{'name': 'DatasetsComponent', 'selector': 'app-datasets'},{'name': 'DataTableComponent', 'selector': 'app-data-table'},{'name': 'DefaultTemplateComponent', 'selector': 'app-content-creation-default-template'},{'name': 'DesktopAppUpdateComponent', 'selector': 'app-desktop-app-update'},{'name': 'DialCodeCardComponent', 'selector': 'app-dial-code-card'},{'name': 'DialCodeComponent', 'selector': 'app-dial-code'},{'name': 'DraftComponent', 'selector': 'app-draft'},{'name': 'EditSubmissionComponent', 'selector': 'app-edit-submission'},{'name': 'EnrollBatchComponent', 'selector': 'app-enroll-batch'},{'name': 'EntityListComponent', 'selector': 'entity-list'},{'name': 'EntityListComponent', 'selector': 'app-entity-list'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'ExploreContentComponent', 'selector': ''},{'name': 'ExploreCourseComponent', 'selector': ''},{'name': 'ExploreCurriculumCoursesComponent', 'selector': 'app-explore-curriculum-courses'},{'name': 'ExploreFtuPopupComponent', 'selector': 'app-explore-ftu-popup'},{'name': 'ExploreGroupComponent', 'selector': 'app-explore-group'},{'name': 'ExplorePageComponent', 'selector': 'app-explore-page-component'},{'name': 'FancyTreeComponent', 'selector': 'app-fancy-tree'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FaqReportComponent', 'selector': 'app-faq-report'},{'name': 'FilterComponent', 'selector': 'app-filter'},{'name': 'FlagConentplayerComponent', 'selector': 'app-flag-conentplayer'},{'name': 'FlaggedComponent', 'selector': 'app-flagged'},{'name': 'FlagReviewerComponent', 'selector': 'app-flag-reviewer'},{'name': 'ForumComponent', 'selector': 'app-forum'},{'name': 'FtuPopupComponent', 'selector': 'app-ftu-popup'},{'name': 'FullPageLoaderComponent', 'selector': 'app-full-page-loader'},{'name': 'FullPageModalComponent', 'selector': 'app-full-page-modal'},{'name': 'GenericEditorComponent', 'selector': 'app-generic-editor'},{'name': 'GetComponent', 'selector': 'app-get'},{'name': 'GlobalConsentPiiComponent', 'selector': 'app-global-consent-pii'},{'name': 'GlobalSearchFilterComponent', 'selector': 'app-global-search-filter'},{'name': 'GlobalSearchSelectedFilterComponent', 'selector': 'app-global-search-selected-filter'},{'name': 'GroupDetailsComponent', 'selector': 'app-group-details'},{'name': 'GroupHeaderComponent', 'selector': 'app-group-header'},{'name': 'GroupMembersComponent', 'selector': 'app-group-members'},{'name': 'GuestProfileComponent', 'selector': 'app-guest-profile'},{'name': 'HomeSearchComponent', 'selector': ''},{'name': 'IdentifyAccountComponent', 'selector': ''},{'name': 'InAppNotificationComponent', 'selector': 'app-in-app-notification'},{'name': 'InfoCardComponent', 'selector': 'app-info-card'},{'name': 'InstallAppComponent', 'selector': 'app-install-app'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'LanguageDropdownComponent', 'selector': 'app-language-dropdown'},{'name': 'LibraryComponent', 'selector': 'app-library'},{'name': 'LimitedPublishedComponent', 'selector': 'app-limited-published'},{'name': 'ListAllReportsComponent', 'selector': 'app-list-all-reports'},{'name': 'LoadContentComponent', 'selector': 'app-load-content'},{'name': 'LoadOfflineContentComponent', 'selector': 'app-load-offline-content'},{'name': 'LocationSelectionComponent', 'selector': 'app-location-selection'},{'name': 'LockInfoPopupComponent', 'selector': 'app-contentlock-info-popup'},{'name': 'MainFooterComponent', 'selector': 'app-footer'},{'name': 'MainHeaderComponent', 'selector': 'app-header'},{'name': 'MainMenuComponent', 'selector': 'app-main-menu'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialAutoCompleteComponent', 'selector': 'app-material-auto-complete'},{'name': 'MemberActionsComponent', 'selector': 'app-member-actions'},{'name': 'MergeAccountStatusComponent', 'selector': 'app-merge-account-status'},{'name': 'ModalWrapperComponent', 'selector': 'app-modal-wrapper'},{'name': 'MyGroupsComponent', 'selector': 'app-my-groups'},{'name': 'NetworkStatusComponent', 'selector': 'app-network-status'},{'name': 'NewCollectionEditorComponent', 'selector': 'app-new-collection-editor'},{'name': 'NoGroupResultComponent', 'selector': 'app-no-group-result'},{'name': 'NoResultComponent', 'selector': 'app-no-result-found'},{'name': 'NoResultComponent', 'selector': 'app-no-result'},{'name': 'ObservationDetailsComponent', 'selector': 'app-observation-details'},{'name': 'ObservationListingComponent', 'selector': 'app-observation-listing'},{'name': 'OfflineApplicationDownloadComponent', 'selector': 'app-offline-application-download'},{'name': 'OfflineBannerComponent', 'selector': 'app-offline-banner'},{'name': 'OfflineHelpVideosComponent', 'selector': 'app-offline-help-videos'},{'name': 'OnboardingUserSelectionComponent', 'selector': 'app-onboarding-user-selection'},{'name': 'OnDemandReportsComponent', 'selector': 'app-on-demand-reports'},{'name': 'OrganisationComponent', 'selector': 'app-organization'},{'name': 'OrganizationUploadComponent', 'selector': 'app-organization'},{'name': 'OtpComponent', 'selector': 'app-otp'},{'name': 'OtpPopupComponent', 'selector': 'app-otp-popup'},{'name': 'PageSectionComponent', 'selector': 'app-page-section'},{'name': 'PlayerComponent', 'selector': 'app-player'},{'name': 'PopupComponent', 'selector': 'app-modal'},{'name': 'ProfileBadgeComponent', 'selector': 'app-profile-badge'},{'name': 'ProfileFrameworkPopupComponent', 'selector': 'app-popup'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'PublicBatchDetailsComponent', 'selector': 'app-public-batch-details'},{'name': 'PublicCourseConsumptionPageComponent', 'selector': ''},{'name': 'PublicCoursePlayerComponent', 'selector': 'app-public-course-player'},{'name': 'PublishedComponent', 'selector': 'app-published'},{'name': 'PublishedPopupComponent', 'selector': 'app-published-popup'},{'name': 'QrCodeModalComponent', 'selector': 'app-qr-code-modal'},{'name': 'QuestionnaireComponent', 'selector': 'app-questionnaire'},{'name': 'RecoverAccountComponent', 'selector': ''},{'name': 'RedirectComponent', 'selector': 'app-redirect'},{'name': 'ReIssueCertificateComponent', 'selector': 'app-re-issue-certificate'},{'name': 'ReportComponent', 'selector': 'app-report'},{'name': 'ReportSummaryComponent', 'selector': 'app-report-summary'},{'name': 'ReportViewComponent', 'selector': 'app-report-view'},{'name': 'RequestChangesPopupComponent', 'selector': 'app-request-changes-popup'},{'name': 'ReviewCommentsComponent', 'selector': 'app-review-comments'},{'name': 'ReviewSubmissionsComponent', 'selector': 'app-review-submissions'},{'name': 'ReviewsubmissionsContentplayerComponent', 'selector': 'app-reviewsubmissions-contentplayer'},{'name': 'SbDatatableComponent', 'selector': 'sb-datatable'},{'name': 'SbTableComponent', 'selector': 'app-sb-table'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SearchFilterComponent', 'selector': 'app-search-filter'},{'name': 'SelectAccountIdentifierComponent', 'selector': ''},{'name': 'SelectOptionGroupComponent', 'selector': 'app-select-option-group'},{'name': 'SelectOrgComponent', 'selector': ''},{'name': 'ShareLinkComponent', 'selector': 'app-share-link'},{'name': 'SignupBasicInfoComponent', 'selector': 'app-signup-basic-info'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupEmailPasswordComponent', 'selector': 'app-signup-email-password'},{'name': 'SignupOnboardingInfoComponent', 'selector': 'app-signup-onboarding-info'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'SsoMergeConfirmationComponent', 'selector': 'app-sso-merge-confirmation'},{'name': 'StatusComponent', 'selector': 'app-status'},{'name': 'SubmissionsComponent', 'selector': 'submission'},{'name': 'SubmitTeacherDetailsComponent', 'selector': 'app-submit-teacher-details'},{'name': 'SvgEditorComponent', 'selector': 'app-svg-editor'},{'name': 'SystemWarningComponent', 'selector': 'app-system-warning'},{'name': 'TelemetryComponent', 'selector': 'app-telemetry'},{'name': 'TelemetryErrorModalComponent', 'selector': 'app-telemetry-error-modal'},{'name': 'TelemetryImportComponent', 'selector': 'app-telemetry-import'},{'name': 'TermsAndConditionsPopupComponent', 'selector': 'app-tnc-popup'},{'name': 'TopicPickerComponent', 'selector': 'app-topic-picker'},{'name': 'UciComponent', 'selector': 'app-uci'},{'name': 'UnEnrollBatchComponent', 'selector': 'app-unenroll-batch'},{'name': 'UpdateBatchComponent', 'selector': 'app-update-batch'},{'name': 'UpdateContactComponent', 'selector': ''},{'name': 'UpdateContactDetailsComponent', 'selector': 'app-update-contact-details'},{'name': 'UpdateCourseBatchComponent', 'selector': 'app-update-course-batch'},{'name': 'UpForReviewComponent', 'selector': 'app-up-for-review'},{'name': 'UpforreviewContentplayerComponent', 'selector': 'app-upforreview-contentplayer'},{'name': 'UpforReviewFilterComponent', 'selector': 'app-up-for-review-filter'},{'name': 'UploadedComponent', 'selector': 'app-uploaded'},{'name': 'UsageReportsComponent', 'selector': 'app-usage-reports'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserFilterComponent', 'selector': 'app-user-filter'},{'name': 'UserLocationComponent', 'selector': 'app-user-location'},{'name': 'UserOnboardingComponent', 'selector': 'app-user-onboarding'},{'name': 'UserOrgManagementComponent', 'selector': 'app-user-org-management'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRoleAssignComponent', 'selector': 'app-user-role-assign'},{'name': 'UserSearchComponent', 'selector': 'app-user-search'},{'name': 'ValidateTeacherIdentifierPopupComponent', 'selector': 'app-validate-teacher-identifier-popup'},{'name': 'VerifyAccountIdentifierComponent', 'selector': ''},{'name': 'ViewAllComponent', 'selector': 'app-view-all'},{'name': 'ViewOrgTypeComponent', 'selector': 'app-view-org-type'},{'name': 'WorkspaceComponent', 'selector': 'app-workspace'},{'name': 'WorkspaceContentFilterComponent', 'selector': 'app-workspace-content-filter'},{'name': 'WorkspacesidebarComponent', 'selector': 'app-workspacesidebar'},{'name': 'YearOfBirthComponent', 'selector': 'app-year-of-birth'}];
+    var DIRECTIVES = [{'name': 'ActivityDashboardDirective', 'selector': '[appActivityDashboard]'},{'name': 'AddToGroupDirective', 'selector': '[appAddToGroup]'},{'name': 'BodyScrollDirective', 'selector': '[appBodyScroll]'},{'name': 'ComponentDeactivate', 'selector': ''},{'name': 'ContentDirectionDirective', 'selector': '[appContentDirection]'},{'name': 'DesktopOnlyDirective', 'selector': '[appDesktopOnly]'},{'name': 'HighlightTextDirective', 'selector': '[appHighlightText]'},{'name': 'MarkdownDirective', 'selector': '[appMarkdown]'},{'name': 'ModalContentDirective', 'selector': '[sbModalContent]'},{'name': 'OnlineOnlyDirective', 'selector': '[appOnlineOnly]'},{'name': 'PermissionDirective', 'selector': '[appPermission]'},{'name': 'TelemetryEndDirective', 'selector': '[appTelemetryEnd]'},{'name': 'TelemetryErrorDirective', 'selector': '[appTelemetryError]'},{'name': 'TelemetryEventsDirective', 'selector': '[telemetryEventsButton]'},{'name': 'TelemetryImpressionDirective', 'selector': '[appTelemetryImpression]'},{'name': 'TelemetryInteractDirective', 'selector': '[appTelemetryInteract]'},{'name': 'TelemetryShareDirective', 'selector': '[appTelemetryShare]'},{'name': 'TelemetryStartDirective', 'selector': '[appTelemetryStart]'}];
+    var ACTUAL_COMPONENT = {'name': 'GuestProfileComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'GuestProfileComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

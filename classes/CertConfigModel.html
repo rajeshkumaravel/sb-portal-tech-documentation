@@ -1,0 +1,766 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li >CertConfigModel</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/certificate/models/cert-config-model/cert-config-model.ts</code>
+        </p>
+
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#dropDownFields" >dropDownFields</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getDropDownValues" >getDropDownValues</a>
+                            </li>
+                            <li>
+                                <a href="#prepareCreateAssetRequest" >prepareCreateAssetRequest</a>
+                            </li>
+                            <li>
+                                <a href="#processCriteria" >processCriteria</a>
+                            </li>
+                            <li>
+                                <a href="#processDropDownValues" >processDropDownValues</a>
+                            </li>
+                            <li>
+                                <a href="#splitName" >splitName</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/app/modules/certificate/models/cert-config-model/cert-config-model.ts:7</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dropDownFields"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>dropDownFields</b></span>
+                        <a href="#dropDownFields"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+        COMPLETION_CERTIFICATE: &#x27;Completion certificate&#x27;,
+        MY_STATE_TEACHER : &#x27;My state teacher&#x27;,
+        ALL: &#x27;All&#x27;
+    }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="3" class="link-to-prism">src/app/modules/certificate/models/cert-config-model/cert-config-model.ts:3</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDropDownValues"></a>
+                    <span class="name">
+                        <span ><b>getDropDownValues</b></span>
+                        <a href="#getDropDownValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDropDownValues(certTypeData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/modules/certificate/models/cert-config-model/cert-config-model.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>certTypeData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="prepareCreateAssetRequest"></a>
+                    <span class="name">
+                        <span ><b>prepareCreateAssetRequest</b></span>
+                        <a href="#prepareCreateAssetRequest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>prepareCreateAssetRequest(rawFormValues, channel, certificate, images)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/app/modules/certificate/models/cert-config-model/cert-config-model.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>rawFormValues</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>channel</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>certificate</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>images</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/variables.html#L" target="_self" >{ request: { asset: { name: any; code: any; mimeType: string; license: string; primaryCategory: string; mediaType: string; certType: string; channel: any; issuer: any; signatoryList: {}; }; }; }</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="processCriteria"></a>
+                    <span class="name">
+                        <span ><b>processCriteria</b></span>
+                        <a href="#processCriteria"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>processCriteria(criteria)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="35"
+                            class="link-to-prism">src/app/modules/certificate/models/cert-config-model/cert-config-model.ts:35</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>criteria</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="processDropDownValues"></a>
+                    <span class="name">
+                        <span ><b>processDropDownValues</b></span>
+                        <a href="#processDropDownValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>processDropDownValues(rawValues, rootOrgId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="17"
+                            class="link-to-prism">src/app/modules/certificate/models/cert-config-model/cert-config-model.ts:17</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>rawValues</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>rootOrgId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="splitName"></a>
+                    <span class="name">
+                        <span ><b>splitName</b></span>
+                        <a href="#splitName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>splitName(imageUrl, sign, key)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="99"
+                            class="link-to-prism">src/app/modules/certificate/models/cert-config-model/cert-config-model.ts:99</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>imageUrl</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>sign</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>key</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/variables.html#image" target="_self" >{ name: any; image: any; designation: any; id: string; }</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import * as _ from &#x27;lodash-es&#x27;;
+export class CertConfigModel {
+    private dropDownFields &#x3D; {
+        COMPLETION_CERTIFICATE: &#x27;Completion certificate&#x27;,
+        MY_STATE_TEACHER : &#x27;My state teacher&#x27;,
+        ALL: &#x27;All&#x27;
+    };
+    constructor() {
+    }
+
+    /**
+     * @since - release-3.2.10
+     * @param  { object } rawValues
+     * @param  { string }rootOrgId
+     * @description - It returns the criteria extracted from the given drop-down raw values.
+     */
+    processDropDownValues(rawValues, rootOrgId) {
+        const criteria &#x3D; {};
+        if (_.get(rawValues, &#x27;issueTo&#x27;) !&#x3D;&#x3D; this.dropDownFields.ALL) {
+            criteria[&#x27;user&#x27;] &#x3D;  { rootOrgId: rootOrgId };
+        }
+        criteria[&#x27;enrollment&#x27;] &#x3D;  { status: 2 };
+        if (_.get(rawValues, &#x27;scoreRange&#x27;)) {
+            const scoreRange &#x3D; (_.get(rawValues, &#x27;scoreRange&#x27;)).substr(0, (_.get(rawValues, &#x27;scoreRange&#x27;)).indexOf(&#x27;%&#x27;));
+            criteria[&#x27;assessment&#x27;] &#x3D; { score: {&#x27;&gt;&#x3D;&#x27;: parseInt(scoreRange)}};
+        }
+        return criteria;
+    }
+
+    /**
+     * @since - release-3.2.10
+     * @param  { object } criteria
+     * @description - It returns the drop-down values extracted from the given criteria.
+     */
+    processCriteria(criteria) {
+        const dropDowns &#x3D; {};
+        dropDowns[&#x27;issueTo&#x27;] &#x3D; _.get(criteria, &#x27;user.rootOrgId&#x27;) ?
+        [{ name: this.dropDownFields.MY_STATE_TEACHER }] : [{ name: this.dropDownFields.ALL }];
+        dropDowns[&#x27;certTypes&#x27;] &#x3D; _.get(criteria, &#x27;enrollment.status&#x27;) &#x3D;&#x3D;&#x3D; 2 ? [{ name: this.dropDownFields.COMPLETION_CERTIFICATE }] : [{}];
+        dropDowns [&#x27;scoreRange&#x27;] &#x3D; _.get(criteria, &#x27;assessment.score&#x27;) ? criteria.assessment.score[&#x27;&gt;&#x3D;&#x27;] + &#x27;%&#x27; : &#x27;&#x27;;
+        return dropDowns;
+    }
+
+    /**
+     * @since - release-3.2.10
+     * @param  { object } certTypeData
+     * @description - It will take preference read api response and give back the drop-downs for cert rules page
+     */
+    getDropDownValues(certTypeData) {
+        const processedDropdownValues &#x3D; {};
+        const certTypes &#x3D; certTypeData.filter(val &#x3D;&gt; {
+            return val.code &#x3D;&#x3D;&#x3D; &#x27;certTypes&#x27;;
+        });
+        processedDropdownValues[&#x27;certTypes&#x27;] &#x3D; _.get(certTypes[0], &#x27;range&#x27;);
+
+        const issueTo &#x3D; certTypeData.filter(data &#x3D;&gt; {
+            return data.code &#x3D;&#x3D;&#x3D; &#x27;issueTo&#x27;;
+        });
+        processedDropdownValues[&#x27;issueTo&#x27;] &#x3D; _.get(issueTo[0], &#x27;range&#x27;);
+
+        return processedDropdownValues;
+
+    }
+
+    prepareCreateAssetRequest(rawFormValues, channel, certificate, images) {
+        const sign_1 &#x3D; this.splitName(_.get(images, &#x27;SIGN1.url&#x27;), rawFormValues, &#x27;authoritySignature_0&#x27;);
+        const signatoryList &#x3D; [];
+        signatoryList.push(sign_1);
+
+        if (!_.isEmpty(images[&#x27;SIGN2&#x27;]) &amp;&amp; _.get(images, &#x27;SIGN2.name&#x27;)) {
+            const sign_2 &#x3D; this.splitName(_.get(images, &#x27;SIGN2.url&#x27;), rawFormValues, &#x27;authoritySignature_1&#x27;);
+            signatoryList.push(sign_2);
+        }
+
+        let issuer &#x3D; _.get(certificate, &#x27;issuer&#x27;);
+        if (typeof issuer &#x3D;&#x3D;&#x3D; &#x27;string&#x27;) {
+            issuer &#x3D; JSON.parse(issuer);
+        }
+        const requestBody &#x3D; {
+            &#x27;request&#x27;: {
+                &#x27;asset&#x27;: {
+                    &#x27;name&#x27;: _.get(rawFormValues, &#x27;certificateTitle&#x27;),
+                    &#x27;code&#x27;: _.get(rawFormValues, &#x27;certificateTitle&#x27;),
+                    &#x27;mimeType&#x27;: &#x27;image/svg+xml&#x27;,
+                    &#x27;license&#x27;: &#x27;CC BY 4.0&#x27;,
+                    &#x27;primaryCategory&#x27;: &#x27;Certificate Template&#x27;,
+                    // &#x27;contentType&#x27;: &#x27;Asset&#x27;,
+                    &#x27;mediaType&#x27;: &#x27;image&#x27;,
+                    &#x27;certType&#x27;: &#x27;cert template&#x27;,
+                    &#x27;channel&#x27;: channel,
+                    &#x27;issuer&#x27;: issuer,
+                    &#x27;signatoryList&#x27;: signatoryList
+                }
+            }
+        };
+        return requestBody;
+    }
+
+    splitName(imageUrl, sign, key) {
+        const name &#x3D; _.get(sign , key);
+        const signValues &#x3D; name.split(&#x27;,&#x27;);
+        const designation &#x3D; signValues[1] || &#x27;CEO&#x27;;
+        const signatoryList &#x3D; {
+            name: name,
+            image: imageUrl,
+            designation: designation,
+            id: &#x60;${designation}/CEO&#x60;
+        };
+        return signatoryList;
+    }
+
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'CertConfigModel.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

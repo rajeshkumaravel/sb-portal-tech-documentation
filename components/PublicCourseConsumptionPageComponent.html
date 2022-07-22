@@ -1,0 +1,3057 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  PublicCourseConsumptionPageComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./public-course-consumption-page.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./public-course-consumption-page.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#batchList" >batchList</a>
+                            </li>
+                            <li>
+                                <a href="#contentDownloadStatus" >contentDownloadStatus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#contentUtilsServiceService" >contentUtilsServiceService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#courseBatchService" >courseBatchService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#courseHierarchy" >courseHierarchy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#courseId" >courseId</a>
+                            </li>
+                            <li>
+                                <a href="#disableDelete" >disableDelete</a>
+                            </li>
+                            <li>
+                                <a href="#enrollmentEndDate" >enrollmentEndDate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#generaliseLabelService" >generaliseLabelService</a>
+                            </li>
+                            <li>
+                                <a href="#isAvailableLocally" >isAvailableLocally</a>
+                            </li>
+                            <li>
+                                <a href="#isConnected" >isConnected</a>
+                            </li>
+                            <li>
+                                <a href="#isDesktopApp" >isDesktopApp</a>
+                            </li>
+                            <li>
+                                <a href="#layoutConfiguration" >layoutConfiguration</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#layoutService" >layoutService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#navigationHelperService" >navigationHelperService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#resourceService" >resourceService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#router" >router</a>
+                            </li>
+                            <li>
+                                <a href="#shareLink" >shareLink</a>
+                            </li>
+                            <li>
+                                <a href="#sharelinkModal" >sharelinkModal</a>
+                            </li>
+                            <li>
+                                <a href="#showDeleteModal" >showDeleteModal</a>
+                            </li>
+                            <li>
+                                <a href="#showDownloadLoader" >showDownloadLoader</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#showError" >showError</a>
+                            </li>
+                            <li>
+                                <a href="#showExportLoader" >showExportLoader</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#showLoader" >showLoader</a>
+                            </li>
+                            <li>
+                                <a href="#showModal" >showModal</a>
+                            </li>
+                            <li>
+                                <a href="#showUpdate" >showUpdate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#telemetryCourseImpression" >telemetryCourseImpression</a>
+                            </li>
+                            <li>
+                                <a href="#telemetryShareData" >telemetryShareData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toasterService" >toasterService</a>
+                            </li>
+                            <li>
+                                <a href="#todayDate" >todayDate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#unsubscribe" >unsubscribe</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkDownloadStatus" >checkDownloadStatus</a>
+                            </li>
+                            <li>
+                                <a href="#checkStatus" >checkStatus</a>
+                            </li>
+                            <li>
+                                <a href="#closeSharePopup" >closeSharePopup</a>
+                            </li>
+                            <li>
+                                <a href="#deleteCollection" >deleteCollection</a>
+                            </li>
+                            <li>
+                                <a href="#downloadCollection" >downloadCollection</a>
+                            </li>
+                            <li>
+                                <a href="#exportCollection" >exportCollection</a>
+                            </li>
+                            <li>
+                                <a href="#getAllBatchDetails" >getAllBatchDetails</a>
+                            </li>
+                            <li>
+                                <a href="#isEnrollmentAllowed" >isEnrollmentAllowed</a>
+                            </li>
+                            <li>
+                                <a href="#isValidEnrollmentEndDate" >isValidEnrollmentEndDate</a>
+                            </li>
+                            <li>
+                                <a href="#isYoutubeContentPresent" >isYoutubeContentPresent</a>
+                            </li>
+                            <li>
+                                <a href="#logTelemetry" >logTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onShareLink" >onShareLink</a>
+                            </li>
+                            <li>
+                                <a href="#redirectToExplore" >redirectToExplore</a>
+                            </li>
+                            <li>
+                                <a href="#setTelemetryShareData" >setTelemetryShareData</a>
+                            </li>
+                            <li>
+                                <a href="#showJoinModal" >showJoinModal</a>
+                            </li>
+                            <li>
+                                <a href="#updateCollection" >updateCollection</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(navigationHelperService: <a href="../injectables/NavigationHelperService.html" target="_self">NavigationHelperService</a>, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, courseConsumptionService: <a href="../injectables/CourseConsumptionService.html" target="_self">CourseConsumptionService</a>, toasterService: <a href="../injectables/ToasterService.html" target="_self">ToasterService</a>, resourceService: <a href="../injectables/ResourceService.html" target="_self">ResourceService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, contentUtilsServiceService: <a href="../injectables/ContentUtilsServiceService.html" target="_self">ContentUtilsServiceService</a>, configService: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, telemetryService: <a href="../injectables/TelemetryService.html" target="_self">TelemetryService</a>, generaliseLabelService: <a href="../injectables/GeneraliseLabelService.html" target="_self">GeneraliseLabelService</a>, layoutService: <a href="../injectables/LayoutService.html" target="_self">LayoutService</a>, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, connectionService: <a href="../injectables/ConnectionService.html" target="_self">ConnectionService</a>, contentManagerService: <a href="../injectables/ContentManagerService.html" target="_self">ContentManagerService</a>, offlineCardService: <a href="../injectables/OfflineCardService.html" target="_self">OfflineCardService</a>, courseBatchService: <a href="../injectables/CourseBatchService.html" target="_self">CourseBatchService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>navigationHelperService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationHelperService.html" target="_self" >NavigationHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>activatedRoute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>courseConsumptionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CourseConsumptionService.html" target="_self" >CourseConsumptionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toasterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>resourceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>contentUtilsServiceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ContentUtilsServiceService.html" target="_self" >ContentUtilsServiceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>configService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryService.html" target="_self" >TelemetryService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>generaliseLabelService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GeneraliseLabelService.html" target="_self" >GeneraliseLabelService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>layoutService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LayoutService.html" target="_self" >LayoutService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>connectionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConnectionService.html" target="_self" >ConnectionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>contentManagerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ContentManagerService.html" target="_self" >ContentManagerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>offlineCardService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/OfflineCardService.html" target="_self" >OfflineCardService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>courseBatchService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CourseBatchService.html" target="_self" >CourseBatchService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkDownloadStatus"></a>
+                    <span class="name">
+                        <span ><b>checkDownloadStatus</b></span>
+                        <a href="#checkDownloadStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkDownloadStatus()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="210"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:210</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkStatus"></a>
+                    <span class="name">
+                        <span ><b>checkStatus</b></span>
+                        <a href="#checkStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkStatus(status)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="205"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:205</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>status</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeSharePopup"></a>
+                    <span class="name">
+                        <span ><b>closeSharePopup</b></span>
+                        <a href="#closeSharePopup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeSharePopup(id)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="158"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:158</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteCollection"></a>
+                    <span class="name">
+                        <span ><b>deleteCollection</b></span>
+                        <a href="#deleteCollection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteCollection(collectionData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="285"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:285</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>collectionData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="downloadCollection"></a>
+                    <span class="name">
+                        <span ><b>downloadCollection</b></span>
+                        <a href="#downloadCollection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>downloadCollection(collection)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="259"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:259</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>collection</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="exportCollection"></a>
+                    <span class="name">
+                        <span ><b>exportCollection</b></span>
+                        <a href="#exportCollection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>exportCollection(collection)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="235"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:235</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>collection</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllBatchDetails"></a>
+                    <span class="name">
+                        <span ><b>getAllBatchDetails</b></span>
+                        <a href="#getAllBatchDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllBatchDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="108"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:108</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isEnrollmentAllowed"></a>
+                    <span class="name">
+                        <span ><b>isEnrollmentAllowed</b></span>
+                        <a href="#isEnrollmentAllowed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isEnrollmentAllowed(enrollmentEndDate)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="133"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>enrollmentEndDate</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isValidEnrollmentEndDate"></a>
+                    <span class="name">
+                        <span ><b>isValidEnrollmentEndDate</b></span>
+                        <a href="#isValidEnrollmentEndDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isValidEnrollmentEndDate(enrollmentEndDate)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="137"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:137</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>enrollmentEndDate</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isYoutubeContentPresent"></a>
+                    <span class="name">
+                        <span ><b>isYoutubeContentPresent</b></span>
+                        <a href="#isYoutubeContentPresent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isYoutubeContentPresent(collection)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="251"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:251</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>collection</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logTelemetry"></a>
+                    <span class="name">
+                        <span ><b>logTelemetry</b></span>
+                        <a href="#logTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>logTelemetry(id, content?: <a href="../strings/type.html" target="_self">literal type</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="180"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:180</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>content</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#type" target="_self" >literal type</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="299"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:299</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onShareLink"></a>
+                    <span class="name">
+                        <span ><b>onShareLink</b></span>
+                        <a href="#onShareLink"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onShareLink()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="141"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:141</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="redirectToExplore"></a>
+                    <span class="name">
+                        <span ><b>redirectToExplore</b></span>
+                        <a href="#redirectToExplore"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>redirectToExplore()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setTelemetryShareData"></a>
+                    <span class="name">
+                        <span ><b>setTelemetryShareData</b></span>
+                        <a href="#setTelemetryShareData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setTelemetryShareData(param)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="146"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:146</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>param</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showJoinModal"></a>
+                    <span class="name">
+                        <span ><b>showJoinModal</b></span>
+                        <a href="#showJoinModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showJoinModal(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateCollection"></a>
+                    <span class="name">
+                        <span ><b>updateCollection</b></span>
+                        <a href="#updateCollection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateCollection(collection)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="218"
+                            class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:218</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>collection</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="batchList"></a>
+                    <span class="name">
+                        <span ><b>batchList</b></span>
+                        <a href="#batchList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentDownloadStatus"></a>
+                    <span class="name">
+                        <span ><b>contentDownloadStatus</b></span>
+                        <a href="#contentDownloadStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentUtilsServiceService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>contentUtilsServiceService</b></span>
+                        <a href="#contentUtilsServiceService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ContentUtilsServiceService.html" target="_self" >ContentUtilsServiceService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="courseBatchService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>courseBatchService</b></span>
+                        <a href="#courseBatchService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/CourseBatchService.html" target="_self" >CourseBatchService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:59</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="courseHierarchy"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>courseHierarchy</b></span>
+                        <a href="#courseHierarchy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="courseId"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>courseId</b></span>
+                        <a href="#courseId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="disableDelete"></a>
+                    <span class="name">
+                        <span ><b>disableDelete</b></span>
+                        <a href="#disableDelete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="enrollmentEndDate"></a>
+                    <span class="name">
+                        <span ><b>enrollmentEndDate</b></span>
+                        <a href="#enrollmentEndDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generaliseLabelService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>generaliseLabelService</b></span>
+                        <a href="#generaliseLabelService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/GeneraliseLabelService.html" target="_self" >GeneraliseLabelService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isAvailableLocally"></a>
+                    <span class="name">
+                        <span ><b>isAvailableLocally</b></span>
+                        <a href="#isAvailableLocally"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isConnected"></a>
+                    <span class="name">
+                        <span ><b>isConnected</b></span>
+                        <a href="#isConnected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isDesktopApp"></a>
+                    <span class="name">
+                        <span ><b>isDesktopApp</b></span>
+                        <a href="#isDesktopApp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="layoutConfiguration"></a>
+                    <span class="name">
+                        <span ><b>layoutConfiguration</b></span>
+                        <a href="#layoutConfiguration"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="layoutService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>layoutService</b></span>
+                        <a href="#layoutService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/LayoutService.html" target="_self" >LayoutService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigationHelperService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>navigationHelperService</b></span>
+                        <a href="#navigationHelperService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/NavigationHelperService.html" target="_self" >NavigationHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resourceService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>resourceService</b></span>
+                        <a href="#resourceService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="router"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>router</b></span>
+                        <a href="#router"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shareLink"></a>
+                    <span class="name">
+                        <span ><b>shareLink</b></span>
+                        <a href="#shareLink"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sharelinkModal"></a>
+                    <span class="name">
+                        <span ><b>sharelinkModal</b></span>
+                        <a href="#sharelinkModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showDeleteModal"></a>
+                    <span class="name">
+                        <span ><b>showDeleteModal</b></span>
+                        <a href="#showDeleteModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showDownloadLoader"></a>
+                    <span class="name">
+                        <span ><b>showDownloadLoader</b></span>
+                        <a href="#showDownloadLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showError"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>showError</b></span>
+                        <a href="#showError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showExportLoader"></a>
+                    <span class="name">
+                        <span ><b>showExportLoader</b></span>
+                        <a href="#showExportLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showLoader"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>showLoader</b></span>
+                        <a href="#showLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showModal"></a>
+                    <span class="name">
+                        <span ><b>showModal</b></span>
+                        <a href="#showModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showUpdate"></a>
+                    <span class="name">
+                        <span ><b>showUpdate</b></span>
+                        <a href="#showUpdate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryCourseImpression"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>telemetryCourseImpression</b></span>
+                        <a href="#telemetryCourseImpression"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IImpressionEventInput.html" target="_self" >IImpressionEventInput</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryShareData"></a>
+                    <span class="name">
+                        <span ><b>telemetryShareData</b></span>
+                        <a href="#telemetryShareData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;ITelemetryShare&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:47</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>telemetryShareData</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toasterService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>toasterService</b></span>
+                        <a href="#toasterService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="todayDate"></a>
+                    <span class="name">
+                        <span ><b>todayDate</b></span>
+                        <a href="#todayDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>dayjs(new Date()).format(&#x27;YYYY-MM-DD&#x27;)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unsubscribe"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>unsubscribe</b></span>
+                        <a href="#unsubscribe"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/modules/public/module/course/components/course-consumption/public-course-consumption-page/public-course-consumption-page.component.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Subject } from &#x27;rxjs&#x27;;
+import { takeUntil } from &#x27;rxjs/operators&#x27;;
+import { ResourceService, ToasterService, ConfigService, ContentUtilsServiceService, ITelemetryShare,
+  LayoutService, UtilService } from &#x27;@sunbird/shared&#x27;;
+import { CourseBatchService, CourseConsumptionService } from &#x27;@sunbird/learn&#x27;;
+import { Component, OnInit, OnDestroy } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import { IImpressionEventInput, TelemetryService } from &#x27;@sunbird/telemetry&#x27;;
+import { NavigationHelperService, ConnectionService, OfflineCardService, ServerResponse } from &#x27;@sunbird/shared&#x27;;
+import { GeneraliseLabelService } from &#x27;@sunbird/core&#x27;;
+import { ContentManagerService } from &#x27;../../../../offline/services/content-manager/content-manager.service&#x27;;
+import dayjs from &#x27;dayjs&#x27;;
+
+@Component({
+  templateUrl: &#x27;./public-course-consumption-page.component.html&#x27;,
+  styleUrls: [&#x27;./public-course-consumption-page.component.scss&#x27;]
+})
+export class PublicCourseConsumptionPageComponent implements OnInit, OnDestroy {
+  public courseId: string;
+  public showLoader &#x3D; true;
+  public showError &#x3D; false;
+  public courseHierarchy: any;
+  layoutConfiguration: any;
+  sharelinkModal: boolean;
+  shareLink: string;
+  public telemetryCourseImpression: IImpressionEventInput;
+  batchList &#x3D; [];
+  enrollmentEndDate: string;
+  todayDate &#x3D; dayjs(new Date()).format(&#x27;YYYY-MM-DD&#x27;);
+
+  // Desktop App
+  isDesktopApp &#x3D; false;
+  isConnected &#x3D; false;
+  contentDownloadStatus &#x3D; {};
+  showUpdate &#x3D; false;
+  showExportLoader &#x3D; false;
+  showModal &#x3D; false;
+  showDownloadLoader &#x3D; false;
+  disableDelete &#x3D; false;
+  isAvailableLocally &#x3D; false;
+  showDeleteModal &#x3D; false;
+
+  /**
+   * telemetryShareData
+  */
+  telemetryShareData: Array&lt;ITelemetryShare&gt;;
+
+  public unsubscribe &#x3D; new Subject&lt;void&gt;();
+  constructor(public navigationHelperService: NavigationHelperService, private activatedRoute: ActivatedRoute,
+    private courseConsumptionService: CourseConsumptionService, public toasterService: ToasterService,
+    public resourceService: ResourceService, public router: Router, public contentUtilsServiceService: ContentUtilsServiceService,
+    private configService: ConfigService, private telemetryService: TelemetryService,
+    public generaliseLabelService: GeneraliseLabelService, public layoutService: LayoutService,
+    private utilService: UtilService,
+    private connectionService: ConnectionService,
+    private contentManagerService: ContentManagerService,
+    private offlineCardService: OfflineCardService,
+    public courseBatchService: CourseBatchService
+    ) {
+  }
+
+  showJoinModal(event) {
+    this.courseConsumptionService.showJoinCourseModal.emit(event);
+  }
+
+  ngOnInit() {
+    this.layoutConfiguration &#x3D; this.layoutService.initlayoutConfig();
+    this.layoutService.switchableLayout().
+      pipe(takeUntil(this.unsubscribe)).subscribe(layoutConfig &#x3D;&gt; {
+        if (layoutConfig !&#x3D; null) {
+          this.layoutConfiguration &#x3D; layoutConfig.layout;
+        }
+      });
+    this.isDesktopApp &#x3D; this.utilService.isDesktopApp;
+    if (this.isDesktopApp) {
+      this.connectionService.monitor().pipe(takeUntil(this.unsubscribe)).subscribe(isConnected &#x3D;&gt; {
+        this.isConnected &#x3D; isConnected;
+      });
+      this.contentManagerService.contentDownloadStatus$.pipe(takeUntil(this.unsubscribe)).subscribe( contentDownloadStatus &#x3D;&gt; {
+        this.contentDownloadStatus &#x3D; contentDownloadStatus;
+        this.checkDownloadStatus();
+      });
+    }
+    this.showLoader &#x3D; true;
+    const routeParams: any &#x3D; {...this.activatedRoute.snapshot.firstChild.params };
+    this.courseId &#x3D; routeParams.courseId;
+    this.getAllBatchDetails();
+    if (!this.courseId) {
+      return this.redirectToExplore();
+    }
+    const inputParams &#x3D; {params: this.configService.appConfig.CourseConsumption.contentApiQueryParams};
+    this.courseConsumptionService.getCourseHierarchy(this.courseId, inputParams).pipe(takeUntil(this.unsubscribe))
+    .subscribe((courseHierarchy: any) &#x3D;&gt; {
+      this.courseHierarchy &#x3D; courseHierarchy;
+      this.layoutService.updateSelectedContentType.emit(this.courseHierarchy.contentType);
+      this.showLoader &#x3D; false;
+    }, (error) &#x3D;&gt; {
+      if (_.isEqual(_.get(error, &#x27;error.responseCode&#x27;), &#x27;RESOURCE_NOT_FOUND&#x27;)) {
+        this.toasterService.error(this.generaliseLabelService.messages.emsg.m0002);
+      } else {
+        this.toasterService.error(this.resourceService.messages.emsg.m0005);
+      }
+      this.redirectToExplore();
+    });
+  }
+
+  getAllBatchDetails() {
+    this.batchList &#x3D; [];
+    const searchParams: any &#x3D; {
+      filters: {
+        status: &#x27;1&#x27;,
+        courseId: this.courseId
+      },
+      offset: 0,
+      sort_by: { createdDate: &#x27;desc&#x27; }
+    };
+    searchParams.filters.enrollmentType &#x3D; &#x27;open&#x27;;
+    this.courseBatchService.getAllBatchDetails(searchParams).pipe(
+      takeUntil(this.unsubscribe))
+      .subscribe((data: ServerResponse) &#x3D;&gt; {
+        if (data.result.response.content &amp;&amp; data.result.response.content.length &gt; 0) {
+          this.batchList &#x3D; data.result.response.content;
+          this.enrollmentEndDate &#x3D; _.get(this.batchList[0], &#x27;enrollmentEndDate&#x27;);
+        }
+      },
+      (err: ServerResponse) &#x3D;&gt; {
+        this.showError &#x3D; true;
+        this.toasterService.error(this.resourceService.messages.fmsg.m0004);
+      });
+  }
+
+  isEnrollmentAllowed(enrollmentEndDate) {
+    return dayjs(enrollmentEndDate).isBefore(this.todayDate);
+  }
+
+  isValidEnrollmentEndDate(enrollmentEndDate) {
+    return !!enrollmentEndDate;
+  }
+
+  onShareLink() {
+    this.sharelinkModal &#x3D; true;
+    this.shareLink &#x3D; this.contentUtilsServiceService.getCoursePublicShareUrl(this.courseHierarchy.identifier);
+    this.setTelemetryShareData(this.courseHierarchy);
+  }
+  setTelemetryShareData(param) {
+    this.telemetryShareData &#x3D; [{
+      id: param.identifier,
+      type: param.contentType,
+      ver: param.pkgVersion ? param.pkgVersion.toString() : &#x27;1.0&#x27;
+    }];
+  }
+
+  redirectToExplore() {
+    this.navigationHelperService.navigateToResource(&#x27;explore?selectedTab&#x3D;course&#x27;);
+  }
+
+  closeSharePopup(id) {
+    this.sharelinkModal &#x3D; false;
+    const interactData &#x3D; {
+      context: {
+        env: _.get(this.activatedRoute.snapshot.data.telemetry, &#x27;env&#x27;) || &#x27;explore&#x27;,
+        cdata: []
+      },
+      edata: {
+        id: id,
+        type: &#x27;click&#x27;,
+        pageid: _.get(this.activatedRoute.snapshot.data.telemetry, &#x27;pageid&#x27;) || &#x27;explore-course-toc&#x27;,
+      },
+      object: {
+        id: _.get(this.courseHierarchy, &#x27;identifier&#x27;),
+        type: _.get(this.courseHierarchy, &#x27;contentType&#x27;) || &#x27;Course&#x27;,
+        ver: &#x60;${_.get(this.courseHierarchy, &#x27;pkgVersion&#x27;)}&#x60; || &#x60;1.0&#x60;,
+        rollup: { l1: this.courseId }
+      }
+    };
+    this.telemetryService.interact(interactData);
+  }
+
+  logTelemetry(id, content?: {}) {
+    let objectRollUp;
+    if (content) {
+      objectRollUp &#x3D; this.courseConsumptionService.getContentRollUp(this.courseHierarchy, _.get(content, &#x27;identifier&#x27;));
+    }
+    const interactData &#x3D; {
+      context: {
+        env: _.get(this.activatedRoute.snapshot.data.telemetry, &#x27;env&#x27;) || &#x27;content&#x27;,
+        cdata: []
+      },
+      edata: {
+        id: id,
+        type: &#x27;click&#x27;,
+        pageid: _.get(this.activatedRoute.snapshot.data.telemetry, &#x27;pageid&#x27;) || &#x27;explore-course&#x27;,
+      },
+      object: {
+        id: content ? _.get(content, &#x27;identifier&#x27;) : this.activatedRoute.snapshot.params.courseId,
+        type: content ? _.get(content, &#x27;contentType&#x27;) : &#x27;Course&#x27;,
+        ver: content ? &#x60;${_.get(content, &#x27;pkgVersion&#x27;)}&#x60; : &#x60;1.0&#x60;,
+        rollup: objectRollUp ? this.courseConsumptionService.getRollUp(objectRollUp) : {}
+      }
+    };
+    this.telemetryService.interact(interactData);
+  }
+
+  checkStatus(status) {
+    this.checkDownloadStatus();
+    return this.utilService.getPlayerDownloadStatus(status, this.courseHierarchy);
+  }
+
+  checkDownloadStatus() {
+    if (this.courseHierarchy) {
+      const downloadStatus &#x3D; [&#x27;CANCELED&#x27;, &#x27;CANCEL&#x27;, &#x27;FAILED&#x27;, &#x27;DOWNLOAD&#x27;];
+      const status &#x3D; this.contentDownloadStatus[this.courseHierarchy.identifier];
+      this.courseHierarchy[&#x27;downloadStatus&#x27;] &#x3D; _.isEqual(downloadStatus, status) ? &#x27;DOWNLOAD&#x27; :
+      (_.includes([&#x27;INPROGRESS&#x27;, &#x27;RESUME&#x27;, &#x27;INQUEUE&#x27;], status) ? &#x27;DOWNLOADING&#x27; : _.isEqual(status, &#x27;COMPLETED&#x27;) ? &#x27;DOWNLOADED&#x27; : status);
+    }
+  }
+  updateCollection(collection) {
+    collection[&#x27;downloadStatus&#x27;] &#x3D; this.resourceService.messages.stmsg.m0140;
+    this.logTelemetry(&#x27;update-collection&#x27;);
+    const request &#x3D; {
+      contentId: collection.identifier
+    };
+    this.contentManagerService.updateContent(request).pipe(takeUntil(this.unsubscribe)).subscribe(data &#x3D;&gt; {
+      collection[&#x27;downloadStatus&#x27;] &#x3D; this.resourceService.messages.stmsg.m0140;
+      this.showUpdate &#x3D; false;
+    }, (err) &#x3D;&gt; {
+      this.showUpdate &#x3D; true;
+      const errorMessage &#x3D; !this.isConnected ? _.replace(this.resourceService.messages.smsg.m0056, &#x27;{contentName}&#x27;, collection.name) :
+        this.resourceService.messages.fmsg.m0096;
+      this.toasterService.error(errorMessage);
+    });
+  }
+
+  exportCollection(collection) {
+    this.logTelemetry(&#x27;export-collection&#x27;);
+    this.showExportLoader &#x3D; true;
+    this.contentManagerService.exportContent(collection.identifier)
+      .pipe(takeUntil(this.unsubscribe))
+      .subscribe(data &#x3D;&gt; {
+        this.showExportLoader &#x3D; false;
+        this.toasterService.success(this.resourceService.messages.smsg.m0059);
+      }, error &#x3D;&gt; {
+        this.showExportLoader &#x3D; false;
+        if (_.get(error, &#x27;error.responseCode&#x27;) !&#x3D;&#x3D; &#x27;NO_DEST_FOLDER&#x27;) {
+          this.toasterService.error(this.resourceService.messages.fmsg.m0091);
+        }
+      });
+  }
+
+  isYoutubeContentPresent(collection) {
+    this.logTelemetry(&#x27;is-youtube-in-collection&#x27;);
+    this.showModal &#x3D; this.offlineCardService.isYoutubeContent(collection);
+    if (!this.showModal) {
+      this.downloadCollection(collection);
+    }
+  }
+
+  downloadCollection(collection) {
+    this.showDownloadLoader &#x3D; true;
+    this.disableDelete &#x3D; false;
+    collection[&#x27;downloadStatus&#x27;] &#x3D; this.resourceService.messages.stmsg.m0140;
+    this.logTelemetry(&#x27;download-collection&#x27;);
+    this.contentManagerService.downloadContentId &#x3D; collection.identifier;
+    this.contentManagerService.downloadContentData &#x3D; collection;
+    this.contentManagerService.failedContentName &#x3D; collection.name;
+    this.contentManagerService.startDownload({}).pipe(takeUntil(this.unsubscribe)).subscribe(data &#x3D;&gt; {
+      this.contentManagerService.downloadContentId &#x3D; &#x27;&#x27;;
+      this.contentManagerService.downloadContentData &#x3D; {};
+      this.showDownloadLoader &#x3D; false;
+      collection[&#x27;downloadStatus&#x27;] &#x3D; this.resourceService.messages.stmsg.m0140;
+    }, error &#x3D;&gt; {
+      this.disableDelete &#x3D; true;
+      this.showDownloadLoader &#x3D; false;
+      this.contentManagerService.downloadContentId &#x3D; &#x27;&#x27;;
+      this.contentManagerService.downloadContentData &#x3D; {};
+      this.contentManagerService.failedContentName &#x3D; &#x27;&#x27;;
+      collection[&#x27;downloadStatus&#x27;] &#x3D; this.resourceService.messages.stmsg.m0138;
+      if (!(error.error.params.err &#x3D;&#x3D;&#x3D; &#x27;LOW_DISK_SPACE&#x27;)) {
+        this.toasterService.error(this.resourceService.messages.fmsg.m0090);
+          }
+    });
+  }
+
+  deleteCollection(collectionData) {
+    this.disableDelete &#x3D; true;
+    this.logTelemetry(&#x27;delete-collection&#x27;);
+    const request &#x3D; {request: {contents: [collectionData.identifier]}};
+    this.contentManagerService.deleteContent(request).pipe(takeUntil(this.unsubscribe)).subscribe(data &#x3D;&gt; {
+      this.toasterService.success(this.resourceService.messages.stmsg.desktop.deleteCourseSuccessMessage);
+      collectionData[&#x27;downloadStatus&#x27;] &#x3D; &#x27;DOWNLOAD&#x27;;
+      collectionData[&#x27;desktopAppMetadata.isAvailable&#x27;] &#x3D; false;
+      this.redirectToExplore();
+    }, err &#x3D;&gt; {
+      this.disableDelete &#x3D; false;
+      this.toasterService.error(this.resourceService.messages.etmsg.desktop.deleteCourseErrorMessage);
+    });
+  }
+  ngOnDestroy() {
+    this.unsubscribe.next();
+    this.unsubscribe.complete();
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- Back Button Previous Module &amp; Next Module button --&gt;
+&lt;div
+  [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;sb-back-actionbar&#x27; : &#x27;sb-bg-color-white back-btn-container cc-player__btn-back relative9&#x27;&quot;
+  class&#x3D;&quot;relative position mt-0&quot;&gt;
+  &lt;div class&#x3D;&quot;ui container py-0 px-0 d-flex flex-ai-center&quot;&gt;
+    &lt;div class&#x3D;&quot;py-0 d-flex flex-ai-center w-100&quot;&gt;
+      &lt;!-- /* Back button */ --&gt;
+      &lt;button type&#x3D;&quot;button&quot; [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;sb-btn-round&#x27; : &#x27;&#x27;&quot;
+        class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-link sb-btn-link-primary sb-left-icon-btn px-0&quot; tabindex&#x3D;&quot;0&quot;
+        (click)&#x3D;&quot;redirectToExplore()&quot;&gt;
+        &lt;i class&#x3D;&quot;icon-svg icon-svg--xxs icon-back mr-4&quot;&gt;&lt;svg class&#x3D;&quot;icon icon-svg--primary&quot;&gt;
+            &lt;use xlink:href&#x3D;&quot;assets/images/sprite.svg#arrow-long-left&quot;&gt;&lt;/use&gt;
+          &lt;/svg&gt;&lt;/i&gt;
+        &lt;span&gt;{{resourceService?.frmelmnts?.btn?.back}}&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;!-- Textbook details with continue playing and join course button --&gt;
+      &lt;div class&#x3D;&quot;textbook d-flex flex-ai-center w-100 ml-16&quot; *ngIf&#x3D;&quot;!showLoader &amp;&amp; !showError&quot;&gt;
+        &lt;!-- Textbook details --&gt;
+        &lt;div class&#x3D;&quot;textbook__details d-flex flex-ai-center&quot;&gt;
+          &lt;!-- Textbook image --&gt;
+          &lt;div class&#x3D;&quot;textbook__bookimg&quot;&gt;
+            &lt;img src&#x3D;&quot;{{courseHierarchy?.appIcon || &#x27;assets/images/book.png&#x27;}}&quot; alt&#x3D;&quot;{{courseHierarchy?.name}}&quot;&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;ml-8 textbook__heading&quot;&gt;
+            &lt;!-- Textbook title --&gt;
+            &lt;h5 class&#x3D;&quot;textbook__title sb-color-primary font-weight-bold mb-0&quot; tabindex&#x3D;&quot;0&quot;&gt;{{courseHierarchy?.name}}
+            &lt;/h5&gt;
+            &lt;!-- Textbook Rating with share icon --&gt;
+            &lt;div class&#x3D;&quot;textbook__rating d-flex flex-ai-center&quot;&gt;
+              &lt;sui-rating class&#x3D;&quot;ui star rating&quot; [isReadonly]&#x3D;&quot;true&quot; [ngModel]&#x3D;&quot;courseHierarchy.me_averageRating || 0&quot;
+                [maximum]&#x3D;&quot;5&quot;&gt;&lt;/sui-rating&gt;
+
+              &lt;button tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;onShareLink()&quot;
+                class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-link sb-btn-link-primary sb-left-icon-btn ml-8 sb-btn-icon-fix&quot;&gt;
+                &lt;i class&#x3D;&quot;icon-svg icon-svg--xs icon-share mr-8&quot;&gt;&lt;svg class&#x3D;&quot;icon icon-svg--primary&quot;&gt;
+                    &lt;use xlink:href&#x3D;&quot;assets/images/sprite.svg#share&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/i&gt;
+                {{resourceService?.frmelmnts?.lbl?.share}}
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;batch-details__created mt-8 fsmall mx-8&quot; *ngIf&#x3D;&quot;isValidEnrollmentEndDate(enrollmentEndDate)&quot;&gt;
+          &lt;span class&#x3D;&quot;sb-label-12size&quot;
+            *ngIf&#x3D;&quot;!isEnrollmentAllowed(enrollmentEndDate)&quot;&gt;{{resourceService?.messages?.stmsg?.m0136}}
+            {{enrollmentEndDate | dateFormat}}&lt;/span&gt;
+          &lt;span class&#x3D;&quot;sb-label-status-error&quot;
+            *ngIf&#x3D;&quot;isEnrollmentAllowed(enrollmentEndDate)&quot;&gt;{{resourceService?.messages?.emsg?.m008 | interpolate:&#x27;{endDate}&#x27;:enrollmentEndDate}}&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;certified-course mx-8&quot; [ngClass]&#x3D;&quot;{&#x27;d-flex&#x27;: isDesktopApp}&quot;&gt;
+          &lt;div class&#x3D;&quot;certified-course__btn&quot; *ngIf&#x3D;&quot;!enrolledCourse &amp;&amp; !courseMentor&quot;&gt;
+            &lt;button class&#x3D;&quot;sb-btn sb-btn-secondary sb-btn-normal ml-auto textbook__addbtn&quot; tabindex&#x3D;&quot;0&quot;
+              (click)&#x3D;&quot;showJoinModal(true); logTelemetry(courseHierarchy?.primaryCategory.toLowerCase() &#x3D;&#x3D;&#x3D; &#x27;course&#x27; ? &#x27;join-course&#x27; : &#x27;join&#x27;, courseHierarchy);&quot;&gt;{{generaliseLabelService?.frmelmnts?.btn?.enroll}}&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div *ngIf&#x3D;&quot;isDesktopApp &amp;&amp; !enrolledCourse &amp;&amp; !courseMentor&quot; class&#x3D;&quot;d-flex&quot;&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;sb-btn sb-btn-outline-primary sb-btn-normal mr-8&quot;
+              *ngIf&#x3D;&quot;isConnected &amp;&amp; (checkStatus(&#x27;DOWNLOADED&#x27;)) &amp;&amp; showUpdate&quot; tabindex&#x3D;&quot;0&quot;
+              (click)&#x3D;&quot;updateCollection(courseHierarchy)&quot;&gt;{{resourceService?.frmelmnts?.btn?.update}}&lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;sb-btn sb-btn-outline-primary sb-btn-normal mr-8&quot;
+              *ngIf&#x3D;&quot;checkStatus(&#x27;DOWNLOADED&#x27;)&quot; [disabled]&#x3D;&quot;disableDelete&quot; tabindex&#x3D;&quot;0&quot;
+              (click)&#x3D;&quot;logTelemetry(&#x27;confirm-delete-collection&#x27;); showDeleteModal &#x3D; !showDeleteModal;&quot;&gt;{{resourceService?.frmelmnts?.btn?.delete}}&lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;sb-btn sb-btn-outline-primary sb-btn-normal mr-8&quot;
+              *ngIf&#x3D;&quot;checkStatus(&#x27;DOWNLOADED&#x27;)&quot; tabindex&#x3D;&quot;0&quot;
+              (click)&#x3D;&quot;exportCollection(courseHierarchy)&quot;&gt;{{resourceService?.frmelmnts?.lbl?.saveToPenDrive}}&lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;sb-btn sb-btn-outline-primary sb-btn-normal mr-8&quot;
+              *ngIf&#x3D;&quot;checkStatus(&#x27;DOWNLOAD&#x27;)&quot; appOnlineOnly tabindex&#x3D;&quot;0&quot;
+              (click)&#x3D;&quot;isYoutubeContentPresent(courseHierarchy)&quot;&gt;{{resourceService?.frmelmnts?.btn?.download}}&lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;sb-btn sb-btn-outline-primary sb-btn-normal mr-8&quot;
+              *ngIf&#x3D;&quot;checkStatus(&#x27;DOWNLOADING&#x27;)&quot;&gt;{{resourceService?.frmelmnts?.lbl?.downloading}}&lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;sb-btn sb-btn-outline-primary sb-btn-normal mr-8&quot;
+              *ngIf&#x3D;&quot;checkStatus(&#x27;PAUSED&#x27;)&quot;&gt;{{resourceService.frmelmnts?.lbl?.downloadingPaused}}&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;sbt-inside-page-container&#x27; : &#x27;pt-16&#x27;&quot;&gt;
+
+  &lt;router-outlet *ngIf&#x3D;&quot;!showLoader &amp;&amp; !showError&quot;&gt;&lt;/router-outlet&gt;
+  &lt;div *ngIf&#x3D;&quot;showLoader&quot; class&#x3D;&quot;ui container&quot;&gt;
+    &lt;app-loader&gt;&lt;/app-loader&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;app-modal-wrapper *ngIf&#x3D;&quot;sharelinkModal&quot; [config]&#x3D;&quot;{disableClose: false, panelClass: &#x27;material-modal&#x27;}&quot;
+  (dismiss)&#x3D;&quot;closeSharePopup(&#x27;close-share-link-popup&#x27;)&quot;&gt;
+  &lt;ng-template sbModalContent&gt;
+    &lt;app-share-link [shareLink]&#x3D;&quot;shareLink&quot; [telemetryShareData]&#x3D;&quot;telemetryShareData&quot;&gt;
+    &lt;/app-share-link&gt;
+  &lt;/ng-template&gt;
+&lt;/app-modal-wrapper&gt;
+
+&lt;div *ngIf&#x3D;&quot;isDesktopApp&quot;&gt;
+  
+    &lt;app-modal-wrapper *ngIf&#x3D;&quot;showModal&quot; [config]&#x3D;&quot;{disableClose: true, size: &#x27;normal&#x27;}&quot; (dismiss)&#x3D;&quot;showModal &#x3D; !showModal;&quot;
+      #modal&gt;
+      &lt;ng-template sbModalContent&gt;
+        &lt;div class&#x3D;&quot;sb-modal&quot;&gt;
+          &lt;div class&#x3D;&quot;transition ui dimmer page modals active visible&quot;&gt;
+            &lt;div class&#x3D;&quot;ui modal transition active visible normal&quot;&gt;
+              &lt;div class&#x3D;&quot;sb-modal-header&quot;&gt;
+                {{resourceService.frmelmnts?.btn?.download}}
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;sb-modal-content&quot;&gt;
+                &lt;p&gt;{{resourceService?.messages?.stmsg?.m0137}}&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;sb-modal-actions&quot;&gt;
+                &lt;button class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-primary&quot; tabindex&#x3D;&quot;0&quot;
+                  (click)&#x3D;&quot;downloadCollection(courseHierarchy); showModal &#x3D; !showModal;&quot;&gt;
+                  {{resourceService.frmelmnts?.btn?.download}}
+                &lt;/button&gt;
+                &lt;button class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-outline-primary&quot; tabindex&#x3D;&quot;0&quot;
+                  (click)&#x3D;&quot;logTelemetry(&#x27;cancel-download-collection&#x27;); showModal &#x3D; !showModal;&quot;&gt;
+                  {{resourceService.frmelmnts?.btn?.cancel}}
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/ng-template&gt;
+    &lt;/app-modal-wrapper&gt;
+    
+    
+    &lt;app-modal-wrapper *ngIf&#x3D;&quot;showDeleteModal&quot; [config]&#x3D;&quot;{disableClose: true, size: &#x27;normal&#x27;}&quot;
+      (dismiss)&#x3D;&quot;showDeleteModal &#x3D; !showDeleteModal;&quot; #modal&gt;
+      &lt;ng-template sbModalContent&gt;
+        &lt;div class&#x3D;&quot;sb-modal&quot;&gt;
+          &lt;div class&#x3D;&quot;transition ui dimmer page modals active visible&quot;&gt;
+            &lt;div class&#x3D;&quot;ui modal transition active visible normal&quot;&gt;
+              &lt;div class&#x3D;&quot;sb-modal-header&quot;&gt;
+                {{resourceService?.frmelmnts?.lbl?.delete}}
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;sb-modal-content&quot;&gt;
+                &lt;p&gt;{{resourceService?.frmelmnts?.lbl?.desktop?.deleteCourse | interpolate:&#x27;{name}&#x27;: courseHierarchy?.name}}
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;sb-modal-actions&quot;&gt;
+                &lt;button class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-primary&quot; tabindex&#x3D;&quot;0&quot;
+                  (click)&#x3D;&quot;deleteCollection(courseHierarchy); showDeleteModal &#x3D; !showDeleteModal;&quot;&gt;
+                  {{resourceService?.frmelmnts?.lbl?.delete}}
+                &lt;/button&gt;
+                &lt;button class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-outline-primary&quot; tabindex&#x3D;&quot;0&quot;
+                  (click)&#x3D;&quot;logTelemetry(&#x27;cancel-delete-collection&#x27;); showDeleteModal &#x3D; !showDeleteModal;&quot;&gt;
+                  {{resourceService.frmelmnts?.btn?.cancel}}
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/ng-template&gt;
+    &lt;/app-modal-wrapper&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./public-course-consumption-page.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;./mixins/mixins&quot;;
+
+::ng-deep {
+    .ui.tiny.progress .bar {
+        min-width: 0
+    }
+
+}
+
+.back-btn-container {
+    z-index: 1;
+
+    .modulebtn-divider {
+        width: calculateRem(1px);
+        height: calculateRem(24px);
+        background: var(--gray-200);
+        display: inline-block;
+        margin: 0 calculateRem(8px);
+    }
+}
+
+.certified-course {
+    justify-self: end;
+    align-self: center;
+}
+
+.textbook {
+    &amp;-container {
+        box-shadow: 0 0 calculateRem(10px) 0 rgba(0, 0, 0, 0.25);
+        position: relative;
+        background-color: var(--rc-FAFAFA);
+    }
+
+    &amp;__details {
+        flex: 1;
+        min-width: 0;
+    }
+
+    &amp;__bookimg {
+        width: calculateRem(48px);
+        height: calculateRem(48px);
+        img {
+            width: calculateRem(48px);
+            height: calculateRem(48px);
+        }
+    }
+
+    &amp;__heading {
+        min-width: 0;
+
+        .textbook__title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    &amp;__addbtn {
+        white-space: nowrap;
+    }
+}
+
+@include respond-below(sm) {
+    .certified-course {
+        justify-self: start;
+    }
+
+    .certified-course__btn {
+        margin-top: calculateRem(8px);
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- Back Button Previous Module & Next Module button --><div  [ngClass]="layoutConfiguration ? \'sb-back-actionbar\' : \'sb-bg-color-white back-btn-container cc-player__btn-back relative9\'"  class="relative position mt-0">  <div class="ui container py-0 px-0 d-flex flex-ai-center">    <div class="py-0 d-flex flex-ai-center w-100">      <!-- /* Back button */ -->      <button type="button" [ngClass]="layoutConfiguration ? \'sb-btn-round\' : \'\'"        class="sb-btn sb-btn-normal sb-btn-link sb-btn-link-primary sb-left-icon-btn px-0" tabindex="0"        (click)="redirectToExplore()">        <i class="icon-svg icon-svg--xxs icon-back mr-4"><svg class="icon icon-svg--primary">            <use xlink:href="assets/images/sprite.svg#arrow-long-left"></use>          </svg></i>        <span>{{resourceService?.frmelmnts?.btn?.back}}</span>      </button>      <!-- Textbook details with continue playing and join course button -->      <div class="textbook d-flex flex-ai-center w-100 ml-16" *ngIf="!showLoader && !showError">        <!-- Textbook details -->        <div class="textbook__details d-flex flex-ai-center">          <!-- Textbook image -->          <div class="textbook__bookimg">            <img src="{{courseHierarchy?.appIcon || \'assets/images/book.png\'}}" alt="{{courseHierarchy?.name}}">          </div>          <div class="ml-8 textbook__heading">            <!-- Textbook title -->            <h5 class="textbook__title sb-color-primary font-weight-bold mb-0" tabindex="0">{{courseHierarchy?.name}}            </h5>            <!-- Textbook Rating with share icon -->            <div class="textbook__rating d-flex flex-ai-center">              <sui-rating class="ui star rating" [isReadonly]="true" [ngModel]="courseHierarchy.me_averageRating || 0"                [maximum]="5"></sui-rating>              <button tabindex="0" (click)="onShareLink()"                class="sb-btn sb-btn-normal sb-btn-link sb-btn-link-primary sb-left-icon-btn ml-8 sb-btn-icon-fix">                <i class="icon-svg icon-svg--xs icon-share mr-8"><svg class="icon icon-svg--primary">                    <use xlink:href="assets/images/sprite.svg#share"></use>                  </svg></i>                {{resourceService?.frmelmnts?.lbl?.share}}              </button>            </div>          </div>        </div>        <div class="batch-details__created mt-8 fsmall mx-8" *ngIf="isValidEnrollmentEndDate(enrollmentEndDate)">          <span class="sb-label-12size"            *ngIf="!isEnrollmentAllowed(enrollmentEndDate)">{{resourceService?.messages?.stmsg?.m0136}}            {{enrollmentEndDate | dateFormat}}</span>          <span class="sb-label-status-error"            *ngIf="isEnrollmentAllowed(enrollmentEndDate)">{{resourceService?.messages?.emsg?.m008 | interpolate:\'{endDate}\':enrollmentEndDate}}</span>        </div>        <div class="certified-course mx-8" [ngClass]="{\'d-flex\': isDesktopApp}">          <div class="certified-course__btn" *ngIf="!enrolledCourse && !courseMentor">            <button class="sb-btn sb-btn-secondary sb-btn-normal ml-auto textbook__addbtn" tabindex="0"              (click)="showJoinModal(true); logTelemetry(courseHierarchy?.primaryCategory.toLowerCase() === \'course\' ? \'join-course\' : \'join\', courseHierarchy);">{{generaliseLabelService?.frmelmnts?.btn?.enroll}}</button>          </div>          <div *ngIf="isDesktopApp && !enrolledCourse && !courseMentor" class="d-flex">            <button type="button" class="sb-btn sb-btn-outline-primary sb-btn-normal mr-8"              *ngIf="isConnected && (checkStatus(\'DOWNLOADED\')) && showUpdate" tabindex="0"              (click)="updateCollection(courseHierarchy)">{{resourceService?.frmelmnts?.btn?.update}}</button>            <button type="button" class="sb-btn sb-btn-outline-primary sb-btn-normal mr-8"              *ngIf="checkStatus(\'DOWNLOADED\')" [disabled]="disableDelete" tabindex="0"              (click)="logTelemetry(\'confirm-delete-collection\'); showDeleteModal = !showDeleteModal;">{{resourceService?.frmelmnts?.btn?.delete}}</button>            <button type="button" class="sb-btn sb-btn-outline-primary sb-btn-normal mr-8"              *ngIf="checkStatus(\'DOWNLOADED\')" tabindex="0"              (click)="exportCollection(courseHierarchy)">{{resourceService?.frmelmnts?.lbl?.saveToPenDrive}}</button>            <button type="button" class="sb-btn sb-btn-outline-primary sb-btn-normal mr-8"              *ngIf="checkStatus(\'DOWNLOAD\')" appOnlineOnly tabindex="0"              (click)="isYoutubeContentPresent(courseHierarchy)">{{resourceService?.frmelmnts?.btn?.download}}</button>            <button type="button" class="sb-btn sb-btn-outline-primary sb-btn-normal mr-8"              *ngIf="checkStatus(\'DOWNLOADING\')">{{resourceService?.frmelmnts?.lbl?.downloading}}</button>            <button type="button" class="sb-btn sb-btn-outline-primary sb-btn-normal mr-8"              *ngIf="checkStatus(\'PAUSED\')">{{resourceService.frmelmnts?.lbl?.downloadingPaused}}</button>          </div>        </div>      </div>    </div>  </div></div><div [ngClass]="layoutConfiguration ? \'sbt-inside-page-container\' : \'pt-16\'">  <router-outlet *ngIf="!showLoader && !showError"></router-outlet>  <div *ngIf="showLoader" class="ui container">    <app-loader></app-loader>  </div></div><app-modal-wrapper *ngIf="sharelinkModal" [config]="{disableClose: false, panelClass: \'material-modal\'}"  (dismiss)="closeSharePopup(\'close-share-link-popup\')">  <ng-template sbModalContent>    <app-share-link [shareLink]="shareLink" [telemetryShareData]="telemetryShareData">    </app-share-link>  </ng-template></app-modal-wrapper><div *ngIf="isDesktopApp">      <app-modal-wrapper *ngIf="showModal" [config]="{disableClose: true, size: \'normal\'}" (dismiss)="showModal = !showModal;"      #modal>      <ng-template sbModalContent>        <div class="sb-modal">          <div class="transition ui dimmer page modals active visible">            <div class="ui modal transition active visible normal">              <div class="sb-modal-header">                {{resourceService.frmelmnts?.btn?.download}}              </div>              <div class="sb-modal-content">                <p>{{resourceService?.messages?.stmsg?.m0137}}</p>              </div>              <div class="sb-modal-actions">                <button class="sb-btn sb-btn-normal sb-btn-primary" tabindex="0"                  (click)="downloadCollection(courseHierarchy); showModal = !showModal;">                  {{resourceService.frmelmnts?.btn?.download}}                </button>                <button class="sb-btn sb-btn-normal sb-btn-outline-primary" tabindex="0"                  (click)="logTelemetry(\'cancel-download-collection\'); showModal = !showModal;">                  {{resourceService.frmelmnts?.btn?.cancel}}                </button>              </div>            </div>          </div>        </div>      </ng-template>    </app-modal-wrapper>            <app-modal-wrapper *ngIf="showDeleteModal" [config]="{disableClose: true, size: \'normal\'}"      (dismiss)="showDeleteModal = !showDeleteModal;" #modal>      <ng-template sbModalContent>        <div class="sb-modal">          <div class="transition ui dimmer page modals active visible">            <div class="ui modal transition active visible normal">              <div class="sb-modal-header">                {{resourceService?.frmelmnts?.lbl?.delete}}              </div>              <div class="sb-modal-content">                <p>{{resourceService?.frmelmnts?.lbl?.desktop?.deleteCourse | interpolate:\'{name}\': courseHierarchy?.name}}                </p>              </div>              <div class="sb-modal-actions">                <button class="sb-btn sb-btn-normal sb-btn-primary" tabindex="0"                  (click)="deleteCollection(courseHierarchy); showDeleteModal = !showDeleteModal;">                  {{resourceService?.frmelmnts?.lbl?.delete}}                </button>                <button class="sb-btn sb-btn-normal sb-btn-outline-primary" tabindex="0"                  (click)="logTelemetry(\'cancel-delete-collection\'); showDeleteModal = !showDeleteModal;">                  {{resourceService.frmelmnts?.btn?.cancel}}                </button>              </div>            </div>          </div>        </div>      </ng-template>    </app-modal-wrapper></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'app-access-discussion'},{'name': 'AccountMergeModalComponent', 'selector': 'app-account-merge-modal'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-info'},{'name': 'ActivityDashboardComponent', 'selector': 'app-activity-dashboard'},{'name': 'ActivityDetailsComponent', 'selector': 'app-activity-details'},{'name': 'ActivityFormComponent', 'selector': 'app-activity-form'},{'name': 'ActivityListComponent', 'selector': 'app-activity-list'},{'name': 'ActivitySearchComponent', 'selector': 'app-activity-search'},{'name': 'AddActivityComponent', 'selector': 'app-add-activity'},{'name': 'AddActivityContentTypesComponent', 'selector': 'app-add-activity-content-types'},{'name': 'AddEntityComponent', 'selector': 'add-entity'},{'name': 'AddMemberComponent', 'selector': 'app-add-member'},{'name': 'AddSummaryModalComponent', 'selector': 'app-add-summary-modal'},{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AllContentComponent', 'selector': 'app-all-content'},{'name': 'AllEvidenceComponent', 'selector': 'app-all-evidence'},{'name': 'AllTextbooksComponent', 'selector': 'app-all-textbooks'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppLandingSectionComponent', 'selector': 'app-landing-section'},{'name': 'AppLoaderComponent', 'selector': 'app-loader'},{'name': 'AssessmentPlayerComponent', 'selector': 'app-assessment-player'},{'name': 'AssignBadgesContentComponent', 'selector': 'app-assign-badges-content'},{'name': 'AuthFailedComponent', 'selector': 'app-auth-failed'},{'name': 'BackButtonComponent', 'selector': 'app-back-button'},{'name': 'BatchCardComponent', 'selector': 'app-batch-card'},{'name': 'BatchDetailsComponent', 'selector': 'app-batch-details'},{'name': 'BatchInfoComponent', 'selector': 'app-batch-info'},{'name': 'BatchListComponent', 'selector': 'app-batch-list'},{'name': 'BatchPageSectionComponent', 'selector': 'app-batch-page-section'},{'name': 'BrowseImagePopupComponent', 'selector': 'browse-image-popup'},{'name': 'BrowserCompatibilityComponent', 'selector': 'app-browser-compatibility'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardCreationComponent', 'selector': 'app-card-creation'},{'name': 'CertificateConfigurationComponent', 'selector': 'app-certificate-configuration'},{'name': 'CertificateDetailsComponent', 'selector': 'app-certificate-details'},{'name': 'CertificateNameUpdatePopupComponent', 'selector': 'app-certificate-name-update-popup'},{'name': 'CertPreviewPopupComponent', 'selector': 'app-cert-preview-popup'},{'name': 'ChooseUserComponent', 'selector': 'app-choose-user'},{'name': 'CollaboratingOnComponent', 'selector': 'app-collaborating-on'},{'name': 'CollaborationContentFilterComponent', 'selector': 'app-collaboration-content-filter'},{'name': 'CollectionEditorComponent', 'selector': 'app-collection-editor'},{'name': 'CollectionPlayerComponent', 'selector': 'app-collection-player'},{'name': 'CollectionPlayerMetadataComponent', 'selector': 'app-collection-player-metadata'},{'name': 'CommingSoonComponent', 'selector': 'app-comming-soon'},{'name': 'ConfirmationPopupComponent', 'selector': 'app-confirmation-popup'},{'name': 'ConfirmPopupComponent', 'selector': 'app-confirm-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentBadgeComponent', 'selector': 'app-content-badge'},{'name': 'ContentChapterlistComponent', 'selector': 'app-content-chapterlist'},{'name': 'ContentCreditsComponent', 'selector': 'app-content-credits'},{'name': 'ContentEditorComponent', 'selector': 'app-content-editor'},{'name': 'ContentLicenceComponent', 'selector': 'app-content-licence'},{'name': 'ContentManagerComponent', 'selector': 'app-content-manager'},{'name': 'ContentManagerInfoPopUpComponent', 'selector': 'app-content-manager-info-pop-up'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerMetadataComponent', 'selector': 'app-content-player-metadata'},{'name': 'ContentPlayerPageComponent', 'selector': 'app-contentplayer-page'},{'name': 'ContentRatingComponent', 'selector': 'app-content-rating'},{'name': 'ContentTypeComponent', 'selector': 'app-content-type'},{'name': 'CourseCompletionComponent', 'selector': 'app-course-completion'},{'name': 'CourseConsumptionComponent', 'selector': 'app-course-consumption'},{'name': 'CourseConsumptionHeaderComponent', 'selector': 'app-course-consumption-header'},{'name': 'CourseConsumptionPageComponent', 'selector': ''},{'name': 'CourseDashboardComponent', 'selector': 'app-course-dashboard'},{'name': 'CourseDetailsComponent', 'selector': 'app-course-details'},{'name': 'CourseInfoComponent', 'selector': 'app-course-info'},{'name': 'CoursePageComponent', 'selector': ''},{'name': 'CoursePlayerComponent', 'selector': 'app-course-player'},{'name': 'CourseProgressComponent', 'selector': 'app-course-progress'},{'name': 'CreateBatchComponent', 'selector': 'app-create-batch'},{'name': 'CreateContentComponent', 'selector': 'app-create-content'},{'name': 'CreateEditGroupComponent', 'selector': 'app-create-edit-group'},{'name': 'CreateOrgTypeComponent', 'selector': 'app-create-org-type'},{'name': 'CreateTemplateComponent', 'selector': 'app-create-template'},{'name': 'CreateUserComponent', 'selector': 'app-create-user'},{'name': 'CreditsAndLicenceComponent', 'selector': 'app-credits-and-licence'},{'name': 'CurriculumCardComponent', 'selector': 'app-curriculum-card'},{'name': 'CurriculumCoursesComponent', 'selector': 'app-curriculum-courses'},{'name': 'CurriculumInfoComponent', 'selector': 'app-curriculum-info'},{'name': 'CustomMultiSelectComponent', 'selector': 'app-custom-multi-select'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardSidebarComponent', 'selector': 'app-dashboard-sidebar'},{'name': 'DataChartComponent', 'selector': 'app-data-chart'},{'name': 'DataDrivenComponent', 'selector': 'app-data-driven'},{'name': 'DataDrivenFilterComponent', 'selector': 'app-data-driven-filter'},{'name': 'DatasetComponent', 'selector': 'app-dataset'},{'name': 'DatasetsComponent', 'selector': 'app-datasets'},{'name': 'DataTableComponent', 'selector': 'app-data-table'},{'name': 'DefaultTemplateComponent', 'selector': 'app-content-creation-default-template'},{'name': 'DesktopAppUpdateComponent', 'selector': 'app-desktop-app-update'},{'name': 'DialCodeCardComponent', 'selector': 'app-dial-code-card'},{'name': 'DialCodeComponent', 'selector': 'app-dial-code'},{'name': 'DraftComponent', 'selector': 'app-draft'},{'name': 'EditSubmissionComponent', 'selector': 'app-edit-submission'},{'name': 'EnrollBatchComponent', 'selector': 'app-enroll-batch'},{'name': 'EntityListComponent', 'selector': 'entity-list'},{'name': 'EntityListComponent', 'selector': 'app-entity-list'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'ExploreContentComponent', 'selector': ''},{'name': 'ExploreCourseComponent', 'selector': ''},{'name': 'ExploreCurriculumCoursesComponent', 'selector': 'app-explore-curriculum-courses'},{'name': 'ExploreFtuPopupComponent', 'selector': 'app-explore-ftu-popup'},{'name': 'ExploreGroupComponent', 'selector': 'app-explore-group'},{'name': 'ExplorePageComponent', 'selector': 'app-explore-page-component'},{'name': 'FancyTreeComponent', 'selector': 'app-fancy-tree'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FaqReportComponent', 'selector': 'app-faq-report'},{'name': 'FilterComponent', 'selector': 'app-filter'},{'name': 'FlagConentplayerComponent', 'selector': 'app-flag-conentplayer'},{'name': 'FlaggedComponent', 'selector': 'app-flagged'},{'name': 'FlagReviewerComponent', 'selector': 'app-flag-reviewer'},{'name': 'ForumComponent', 'selector': 'app-forum'},{'name': 'FtuPopupComponent', 'selector': 'app-ftu-popup'},{'name': 'FullPageLoaderComponent', 'selector': 'app-full-page-loader'},{'name': 'FullPageModalComponent', 'selector': 'app-full-page-modal'},{'name': 'GenericEditorComponent', 'selector': 'app-generic-editor'},{'name': 'GetComponent', 'selector': 'app-get'},{'name': 'GlobalConsentPiiComponent', 'selector': 'app-global-consent-pii'},{'name': 'GlobalSearchFilterComponent', 'selector': 'app-global-search-filter'},{'name': 'GlobalSearchSelectedFilterComponent', 'selector': 'app-global-search-selected-filter'},{'name': 'GroupDetailsComponent', 'selector': 'app-group-details'},{'name': 'GroupHeaderComponent', 'selector': 'app-group-header'},{'name': 'GroupMembersComponent', 'selector': 'app-group-members'},{'name': 'GuestProfileComponent', 'selector': 'app-guest-profile'},{'name': 'HomeSearchComponent', 'selector': ''},{'name': 'IdentifyAccountComponent', 'selector': ''},{'name': 'InAppNotificationComponent', 'selector': 'app-in-app-notification'},{'name': 'InfoCardComponent', 'selector': 'app-info-card'},{'name': 'InstallAppComponent', 'selector': 'app-install-app'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'LanguageDropdownComponent', 'selector': 'app-language-dropdown'},{'name': 'LibraryComponent', 'selector': 'app-library'},{'name': 'LimitedPublishedComponent', 'selector': 'app-limited-published'},{'name': 'ListAllReportsComponent', 'selector': 'app-list-all-reports'},{'name': 'LoadContentComponent', 'selector': 'app-load-content'},{'name': 'LoadOfflineContentComponent', 'selector': 'app-load-offline-content'},{'name': 'LocationSelectionComponent', 'selector': 'app-location-selection'},{'name': 'LockInfoPopupComponent', 'selector': 'app-contentlock-info-popup'},{'name': 'MainFooterComponent', 'selector': 'app-footer'},{'name': 'MainHeaderComponent', 'selector': 'app-header'},{'name': 'MainMenuComponent', 'selector': 'app-main-menu'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialAutoCompleteComponent', 'selector': 'app-material-auto-complete'},{'name': 'MemberActionsComponent', 'selector': 'app-member-actions'},{'name': 'MergeAccountStatusComponent', 'selector': 'app-merge-account-status'},{'name': 'ModalWrapperComponent', 'selector': 'app-modal-wrapper'},{'name': 'MyGroupsComponent', 'selector': 'app-my-groups'},{'name': 'NetworkStatusComponent', 'selector': 'app-network-status'},{'name': 'NewCollectionEditorComponent', 'selector': 'app-new-collection-editor'},{'name': 'NoGroupResultComponent', 'selector': 'app-no-group-result'},{'name': 'NoResultComponent', 'selector': 'app-no-result-found'},{'name': 'NoResultComponent', 'selector': 'app-no-result'},{'name': 'ObservationDetailsComponent', 'selector': 'app-observation-details'},{'name': 'ObservationListingComponent', 'selector': 'app-observation-listing'},{'name': 'OfflineApplicationDownloadComponent', 'selector': 'app-offline-application-download'},{'name': 'OfflineBannerComponent', 'selector': 'app-offline-banner'},{'name': 'OfflineHelpVideosComponent', 'selector': 'app-offline-help-videos'},{'name': 'OnboardingUserSelectionComponent', 'selector': 'app-onboarding-user-selection'},{'name': 'OnDemandReportsComponent', 'selector': 'app-on-demand-reports'},{'name': 'OrganisationComponent', 'selector': 'app-organization'},{'name': 'OrganizationUploadComponent', 'selector': 'app-organization'},{'name': 'OtpComponent', 'selector': 'app-otp'},{'name': 'OtpPopupComponent', 'selector': 'app-otp-popup'},{'name': 'PageSectionComponent', 'selector': 'app-page-section'},{'name': 'PlayerComponent', 'selector': 'app-player'},{'name': 'PopupComponent', 'selector': 'app-modal'},{'name': 'ProfileBadgeComponent', 'selector': 'app-profile-badge'},{'name': 'ProfileFrameworkPopupComponent', 'selector': 'app-popup'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'PublicBatchDetailsComponent', 'selector': 'app-public-batch-details'},{'name': 'PublicCourseConsumptionPageComponent', 'selector': ''},{'name': 'PublicCoursePlayerComponent', 'selector': 'app-public-course-player'},{'name': 'PublishedComponent', 'selector': 'app-published'},{'name': 'PublishedPopupComponent', 'selector': 'app-published-popup'},{'name': 'QrCodeModalComponent', 'selector': 'app-qr-code-modal'},{'name': 'QuestionnaireComponent', 'selector': 'app-questionnaire'},{'name': 'RecoverAccountComponent', 'selector': ''},{'name': 'RedirectComponent', 'selector': 'app-redirect'},{'name': 'ReIssueCertificateComponent', 'selector': 'app-re-issue-certificate'},{'name': 'ReportComponent', 'selector': 'app-report'},{'name': 'ReportSummaryComponent', 'selector': 'app-report-summary'},{'name': 'ReportViewComponent', 'selector': 'app-report-view'},{'name': 'RequestChangesPopupComponent', 'selector': 'app-request-changes-popup'},{'name': 'ReviewCommentsComponent', 'selector': 'app-review-comments'},{'name': 'ReviewSubmissionsComponent', 'selector': 'app-review-submissions'},{'name': 'ReviewsubmissionsContentplayerComponent', 'selector': 'app-reviewsubmissions-contentplayer'},{'name': 'SbDatatableComponent', 'selector': 'sb-datatable'},{'name': 'SbTableComponent', 'selector': 'app-sb-table'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SearchFilterComponent', 'selector': 'app-search-filter'},{'name': 'SelectAccountIdentifierComponent', 'selector': ''},{'name': 'SelectOptionGroupComponent', 'selector': 'app-select-option-group'},{'name': 'SelectOrgComponent', 'selector': ''},{'name': 'ShareLinkComponent', 'selector': 'app-share-link'},{'name': 'SignupBasicInfoComponent', 'selector': 'app-signup-basic-info'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupEmailPasswordComponent', 'selector': 'app-signup-email-password'},{'name': 'SignupOnboardingInfoComponent', 'selector': 'app-signup-onboarding-info'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'SsoMergeConfirmationComponent', 'selector': 'app-sso-merge-confirmation'},{'name': 'StatusComponent', 'selector': 'app-status'},{'name': 'SubmissionsComponent', 'selector': 'submission'},{'name': 'SubmitTeacherDetailsComponent', 'selector': 'app-submit-teacher-details'},{'name': 'SvgEditorComponent', 'selector': 'app-svg-editor'},{'name': 'SystemWarningComponent', 'selector': 'app-system-warning'},{'name': 'TelemetryComponent', 'selector': 'app-telemetry'},{'name': 'TelemetryErrorModalComponent', 'selector': 'app-telemetry-error-modal'},{'name': 'TelemetryImportComponent', 'selector': 'app-telemetry-import'},{'name': 'TermsAndConditionsPopupComponent', 'selector': 'app-tnc-popup'},{'name': 'TopicPickerComponent', 'selector': 'app-topic-picker'},{'name': 'UciComponent', 'selector': 'app-uci'},{'name': 'UnEnrollBatchComponent', 'selector': 'app-unenroll-batch'},{'name': 'UpdateBatchComponent', 'selector': 'app-update-batch'},{'name': 'UpdateContactComponent', 'selector': ''},{'name': 'UpdateContactDetailsComponent', 'selector': 'app-update-contact-details'},{'name': 'UpdateCourseBatchComponent', 'selector': 'app-update-course-batch'},{'name': 'UpForReviewComponent', 'selector': 'app-up-for-review'},{'name': 'UpforreviewContentplayerComponent', 'selector': 'app-upforreview-contentplayer'},{'name': 'UpforReviewFilterComponent', 'selector': 'app-up-for-review-filter'},{'name': 'UploadedComponent', 'selector': 'app-uploaded'},{'name': 'UsageReportsComponent', 'selector': 'app-usage-reports'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserFilterComponent', 'selector': 'app-user-filter'},{'name': 'UserLocationComponent', 'selector': 'app-user-location'},{'name': 'UserOnboardingComponent', 'selector': 'app-user-onboarding'},{'name': 'UserOrgManagementComponent', 'selector': 'app-user-org-management'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRoleAssignComponent', 'selector': 'app-user-role-assign'},{'name': 'UserSearchComponent', 'selector': 'app-user-search'},{'name': 'ValidateTeacherIdentifierPopupComponent', 'selector': 'app-validate-teacher-identifier-popup'},{'name': 'VerifyAccountIdentifierComponent', 'selector': ''},{'name': 'ViewAllComponent', 'selector': 'app-view-all'},{'name': 'ViewOrgTypeComponent', 'selector': 'app-view-org-type'},{'name': 'WorkspaceComponent', 'selector': 'app-workspace'},{'name': 'WorkspaceContentFilterComponent', 'selector': 'app-workspace-content-filter'},{'name': 'WorkspacesidebarComponent', 'selector': 'app-workspacesidebar'},{'name': 'YearOfBirthComponent', 'selector': 'app-year-of-birth'}];
+    var DIRECTIVES = [{'name': 'ActivityDashboardDirective', 'selector': '[appActivityDashboard]'},{'name': 'AddToGroupDirective', 'selector': '[appAddToGroup]'},{'name': 'BodyScrollDirective', 'selector': '[appBodyScroll]'},{'name': 'ComponentDeactivate', 'selector': ''},{'name': 'ContentDirectionDirective', 'selector': '[appContentDirection]'},{'name': 'DesktopOnlyDirective', 'selector': '[appDesktopOnly]'},{'name': 'HighlightTextDirective', 'selector': '[appHighlightText]'},{'name': 'MarkdownDirective', 'selector': '[appMarkdown]'},{'name': 'ModalContentDirective', 'selector': '[sbModalContent]'},{'name': 'OnlineOnlyDirective', 'selector': '[appOnlineOnly]'},{'name': 'PermissionDirective', 'selector': '[appPermission]'},{'name': 'TelemetryEndDirective', 'selector': '[appTelemetryEnd]'},{'name': 'TelemetryErrorDirective', 'selector': '[appTelemetryError]'},{'name': 'TelemetryEventsDirective', 'selector': '[telemetryEventsButton]'},{'name': 'TelemetryImpressionDirective', 'selector': '[appTelemetryImpression]'},{'name': 'TelemetryInteractDirective', 'selector': '[appTelemetryInteract]'},{'name': 'TelemetryShareDirective', 'selector': '[appTelemetryShare]'},{'name': 'TelemetryStartDirective', 'selector': '[appTelemetryStart]'}];
+    var ACTUAL_COMPONENT = {'name': 'PublicCourseConsumptionPageComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PublicCourseConsumptionPageComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

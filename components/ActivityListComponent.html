@@ -1,0 +1,2080 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  ActivityListComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/groups/components/activity/activity-list/activity-list.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-activity-list</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./activity-list.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./activity-list.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#activityDashboardService" >activityDashboardService</a>
+                            </li>
+                            <li>
+                                <a href="#config" >config</a>
+                            </li>
+                            <li>
+                                <a href="#disableViewAllMode" >disableViewAllMode</a>
+                            </li>
+                            <li>
+                                <a href="#layoutConfiguration" >layoutConfiguration</a>
+                            </li>
+                            <li>
+                                <a href="#modal" >modal</a>
+                            </li>
+                            <li>
+                                <a href="#numberOfSections" >numberOfSections</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#resourceService" >resourceService</a>
+                            </li>
+                            <li>
+                                <a href="#selectedActivity" >selectedActivity</a>
+                            </li>
+                            <li>
+                                <a href="#selectedTypeContents" >selectedTypeContents</a>
+                            </li>
+                            <li>
+                                <a href="#showLoader" >showLoader</a>
+                            </li>
+                            <li>
+                                <a href="#showMenu" >showMenu</a>
+                            </li>
+                            <li>
+                                <a href="#showModal" >showModal</a>
+                            </li>
+                            <li>
+                                <a href="#unsubscribe$" >unsubscribe$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addTelemetry" >addTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#getMenuData" >getMenuData</a>
+                            </li>
+                            <li>
+                                <a href="#getTitle" >getTitle</a>
+                            </li>
+                            <li>
+                                <a href="#initLayout" >initLayout</a>
+                            </li>
+                            <li>
+                                <a href="#isCourse" >isCourse</a>
+                            </li>
+                            <li>
+                                <a href="#isSelectedType" >isSelectedType</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openActivity" >openActivity</a>
+                            </li>
+                            <li>
+                                <a href="#removeActivity" >removeActivity</a>
+                            </li>
+                            <li>
+                                <a href="#toggleModal" >toggleModal</a>
+                            </li>
+                            <li>
+                                <a href="#toggleViewAll" >toggleViewAll</a>
+                            </li>
+                            <li>
+                                <a href="#viewSelectedTypeContents" >viewSelectedTypeContents</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#activityList" >activityList</a>
+                            </li>
+                            <li>
+                                <a href="#currentMember" >currentMember</a>
+                            </li>
+                            <li>
+                                <a href="#groupData" >groupData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(configService: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, activateRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, resourceService: <a href="../injectables/ResourceService.html" target="_self">ResourceService</a>, groupService: <a href="../injectables/GroupsService.html" target="_self">GroupsService</a>, toasterService: <a href="../injectables/ToasterService.html" target="_self">ToasterService</a>, playerService: <a href="../injectables/PlayerService.html" target="_self">PlayerService</a>, layoutService: <a href="../injectables/LayoutService.html" target="_self">LayoutService</a>, activityDashboardService: <a href="../injectables/ActivityDashboardService.html" target="_self">ActivityDashboardService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>configService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>activateRoute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>resourceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>groupService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GroupsService.html" target="_self" >GroupsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toasterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>playerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PlayerService.html" target="_self" >PlayerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>layoutService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LayoutService.html" target="_self" >LayoutService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>activityDashboardService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ActivityDashboardService.html" target="_self" >ActivityDashboardService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="activityList"></a>
+                        <b>activityList</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:30</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentMember"></a>
+                        <b>currentMember</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:27</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="groupData"></a>
+                        <b>groupData</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:26</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addTelemetry"></a>
+                    <span class="name">
+                        <span ><b>addTelemetry</b></span>
+                        <a href="#addTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addTelemetry(id, cdata?, extra?, obj?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:148</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>cdata</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>extra</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>obj</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMenuData"></a>
+                    <span class="name">
+                        <span ><b>getMenuData</b></span>
+                        <a href="#getMenuData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getMenuData(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTitle"></a>
+                    <span class="name">
+                        <span ><b>getTitle</b></span>
+                        <a href="#getTitle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTitle(title)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="112"
+                            class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:112</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>title</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initLayout"></a>
+                    <span class="name">
+                        <span ><b>initLayout</b></span>
+                        <a href="#initLayout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initLayout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="80"
+                            class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:80</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>used to archive the both theme</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isCourse"></a>
+                    <span class="name">
+                        <span ><b>isCourse</b></span>
+                        <a href="#isCourse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isCourse(type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="157"
+                            class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:157</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isSelectedType"></a>
+                    <span class="name">
+                        <span ><b>isSelectedType</b></span>
+                        <a href="#isSelectedType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isSelectedType(type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="167"
+                            class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:167</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="171"
+                            class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:171</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openActivity"></a>
+                    <span class="name">
+                        <span ><b>openActivity</b></span>
+                        <a href="#openActivity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openActivity(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, activityType)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:90</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>activityType</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeActivity"></a>
+                    <span class="name">
+                        <span ><b>removeActivity</b></span>
+                        <a href="#removeActivity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeActivity()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="125"
+                            class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:125</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleModal"></a>
+                    <span class="name">
+                        <span ><b>toggleModal</b></span>
+                        <a href="#toggleModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleModal(show)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="117"
+                            class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:117</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>show</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleViewAll"></a>
+                    <span class="name">
+                        <span ><b>toggleViewAll</b></span>
+                        <a href="#toggleViewAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleViewAll(visibility: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, type?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>visibility</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="viewSelectedTypeContents"></a>
+                    <span class="name">
+                        <span ><b>viewSelectedTypeContents</b></span>
+                        <a href="#viewSelectedTypeContents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>viewSelectedTypeContents(type, list, index)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="162"
+                            class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:162</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>list</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="activityDashboardService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>activityDashboardService</b></span>
+                        <a href="#activityDashboardService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ActivityDashboardService.html" target="_self" >ActivityDashboardService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="config"></a>
+                    <span class="name">
+                        <span ><b>config</b></span>
+                        <a href="#config"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="disableViewAllMode"></a>
+                    <span class="name">
+                        <span ><b>disableViewAllMode</b></span>
+                        <a href="#disableViewAllMode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="layoutConfiguration"></a>
+                    <span class="name">
+                        <span ><b>layoutConfiguration</b></span>
+                        <a href="#layoutConfiguration"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="modal"></a>
+                    <span class="name">
+                        <span ><b>modal</b></span>
+                        <a href="#modal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;modal&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="numberOfSections"></a>
+                    <span class="name">
+                        <span ><b>numberOfSections</b></span>
+                        <a href="#numberOfSections"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Array(this.configService.appConfig.SEARCH.PAGE_LIMIT)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resourceService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>resourceService</b></span>
+                        <a href="#resourceService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedActivity"></a>
+                    <span class="name">
+                        <span ><b>selectedActivity</b></span>
+                        <a href="#selectedActivity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IActivity.html" target="_self" >IActivity</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedTypeContents"></a>
+                    <span class="name">
+                        <span ><b>selectedTypeContents</b></span>
+                        <a href="#selectedTypeContents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showLoader"></a>
+                    <span class="name">
+                        <span ><b>showLoader</b></span>
+                        <a href="#showLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showMenu"></a>
+                    <span class="name">
+                        <span ><b>showMenu</b></span>
+                        <a href="#showMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showModal"></a>
+                    <span class="name">
+                        <span ><b>showModal</b></span>
+                        <a href="#showModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unsubscribe$"></a>
+                    <span class="name">
+                        <span ><b>unsubscribe$</b></span>
+                        <a href="#unsubscribe$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/groups/components/activity/activity-list/activity-list.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { PlayerService } from &#x27;@sunbird/core&#x27;;
+import { Component, Input, ViewChild, OnInit, OnDestroy } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import { fromEvent, Subject } from &#x27;rxjs&#x27;;
+import { takeUntil, delay } from &#x27;rxjs/operators&#x27;;
+import { GroupsService } from &#x27;../../../services/groups/groups.service&#x27;;
+import { ToasterService, ConfigService, ResourceService, LayoutService, ActivityDashboardService } from &#x27;../../../../shared/services&#x27;;
+export interface IActivity {
+  name: string;
+  identifier: string;
+  appIcon: string;
+  organisation: string[];
+  subject: string;
+  type: string;
+  contentType?: string;
+  trackable?: { enabled: string };
+}
+@Component({
+  selector: &#x27;app-activity-list&#x27;,
+  templateUrl: &#x27;./activity-list.component.html&#x27;,
+  styleUrls: [&#x27;./activity-list.component.scss&#x27;]
+})
+export class ActivityListComponent implements OnInit, OnDestroy {
+  @ViewChild(&#x27;modal&#x27;) modal;
+  @Input() groupData;
+  @Input() currentMember;
+  numberOfSections &#x3D; new Array(this.configService.appConfig.SEARCH.PAGE_LIMIT);
+  showLoader &#x3D; false;
+  @Input() activityList: any;
+  showMenu &#x3D; false;
+  selectedActivity: IActivity;
+  showModal &#x3D; false;
+  unsubscribe$ &#x3D; new Subject&lt;void&gt;();
+  disableViewAllMode &#x3D; false;
+  selectedTypeContents &#x3D; {};
+  config: any;
+  layoutConfiguration: any;
+
+
+  constructor(
+    private configService: ConfigService,
+    private router: Router,
+    private activateRoute: ActivatedRoute,
+    public resourceService: ResourceService,
+    private groupService: GroupsService,
+    private toasterService: ToasterService,
+    private playerService: PlayerService,
+    private layoutService: LayoutService,
+    public activityDashboardService: ActivityDashboardService,
+  ) {
+    this.config &#x3D; this.configService.appConfig;
+  }
+
+  ngOnInit() {
+    this.showLoader &#x3D; false;
+    this.initLayout();
+    fromEvent(document, &#x27;click&#x27;)
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe(item &#x3D;&gt; {
+        if (this.showMenu) {
+          this.showMenu &#x3D; false;
+          this.addTelemetry(&#x27;activity-kebab-menu-close&#x27;);
+        }
+      });
+    this.groupService.showMenu.subscribe(data &#x3D;&gt; {
+      this.showMenu &#x3D; data &#x3D;&#x3D;&#x3D; &#x27;activity&#x27;;
+    });
+
+    this.resourceService.languageSelected$.pipe(delay(600), takeUntil(this.unsubscribe$)).subscribe(item &#x3D;&gt; {
+      this.showLoader &#x3D; false;
+      const response &#x3D; this.groupService.groupContentsByActivityType(false, this.groupData);
+      this.activityList &#x3D; response.activities;
+    });
+
+  }
+  /**
+   * used to archive the both theme
+   */
+  initLayout() {
+    this.layoutConfiguration &#x3D; this.layoutService.initlayoutConfig();
+    this.layoutService.switchableLayout().
+    pipe(takeUntil(this.unsubscribe$)).subscribe(layoutConfig &#x3D;&gt; {
+    if (layoutConfig !&#x3D; null) {
+      this.layoutConfiguration &#x3D; layoutConfig.layout;
+    }
+   });
+  }
+
+  openActivity(event: any, activityType) {
+      if (!this.groupData.active) {
+        this.addTelemetry(&#x27;activity-suspend-card&#x27;, [], {},
+      {id: _.get(event, &#x27;data.identifier&#x27;), type: _.get(event, &#x27;data.primaryCategory&#x27;),
+      ver: _.get(event, &#x27;data.pkgVersion&#x27;) ? &#x60;${_.get(event, &#x27;data.pkgVersion&#x27;)}&#x60; : &#x27;1.0&#x27;});
+        return;
+      }
+      this.addTelemetry(&#x27;activity-card&#x27;, [{id: _.get(event, &#x27;data.identifier&#x27;), type: _.get(event, &#x27;data.resourceType&#x27;)}]);
+      const options &#x3D; { relativeTo: this.activateRoute, queryParams: { primaryCategory: _.get(event, &#x27;data.primaryCategory&#x27;),
+      title: activityType, mimeType: _.get(event, &#x27;data.mimeType&#x27;), groupId: _.get(this.groupData, &#x27;id&#x27;)}};
+      this.activityDashboardService.isActivityAdded &#x3D; true; // setting this value to enable or disable the activity dashboard button in activity-dashboard directive
+      this.playerService.playContent(_.get(event, &#x27;data&#x27;), {groupId: _.get(this.groupData, &#x27;id&#x27;)});
+  }
+
+  getMenuData(event) {
+      this.showMenu &#x3D; !this.showMenu;
+      this.groupService.emitMenuVisibility(&#x27;activity&#x27;);
+      this.selectedActivity &#x3D; _.get(event, &#x27;data&#x27;);
+      this.addTelemetry(&#x27;activity-kebab-menu-open&#x27;, [], {}, {id: _.get(event, &#x27;data.identifier&#x27;), type: _.get(event, &#x27;data.primaryCategory&#x27;),
+      ver: _.get(event, &#x27;data.pkgVersion&#x27;) ? &#x60;${_.get(event, &#x27;data.pkgVersion&#x27;)}&#x60; : &#x27;1.0&#x27;});
+  }
+
+  getTitle(title) {
+    const name &#x3D;  this.resourceService.frmelmnts.lbl[title];
+    return name ? name : title;
+  }
+
+  toggleModal(show &#x3D; false) {
+    const activity &#x3D; {id: _.get(this.selectedActivity, &#x27;identifier&#x27;), type: _.get(this.selectedActivity, &#x27;primaryCategory&#x27;),
+    ver: _.get(this.selectedActivity, &#x27;pkgVersion&#x27;) ? &#x60;${_.get(this.selectedActivity, &#x27;pkgVersion&#x27;)}&#x60; : &#x27;1.0&#x27;};
+    show ? this.addTelemetry(&#x27;remove-activity-kebab-menu-btn&#x27;, [], {}, activity) :
+    this.addTelemetry(&#x27;close-remove-activity-popup&#x27;, [], {}, activity);
+    this.showModal &#x3D; show;
+  }
+
+  removeActivity() {
+    this.addTelemetry(&#x27;confirm-remove-activity-button&#x27;, [], {},
+    {id: _.get(this.selectedActivity, &#x27;identifier&#x27;), type: _.get(this.selectedActivity, &#x27;primaryCategory&#x27;),
+    ver: _.get(this.selectedActivity, &#x27;pkgVersion&#x27;) ? &#x60;${_.get(this.selectedActivity, &#x27;pkgVersion&#x27;)}&#x60; : &#x27;1.0&#x27;});
+    const activityIds &#x3D; [this.selectedActivity.identifier];
+    this.showLoader &#x3D; true;
+    this.groupService.removeActivities(this.groupData.id, { activityIds })
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe(response &#x3D;&gt; {
+        Object.keys(this.activityList).forEach(key &#x3D;&gt; {
+          this.activityList[key] &#x3D; this.activityList[key].filter(activity &#x3D;&gt; _.get(activity, &#x27;identifier&#x27;) !&#x3D;&#x3D; _.get(this.selectedActivity, &#x27;identifier&#x27;));
+        });
+        this.toasterService.success(this.resourceService.messages.smsg.activityRemove);
+        this.showLoader &#x3D; false;
+      }, error &#x3D;&gt; {
+        this.showLoader &#x3D; false;
+        this.toasterService.error(this.resourceService.messages.emsg.activityRemove);
+      });
+    this.toggleModal();
+
+    // TODO: add telemetry here
+  }
+
+  addTelemetry (id, cdata?, extra?, obj?) {
+    this.groupService.addTelemetry({id, extra}, this.activateRoute.snapshot, cdata || [], _.get(this.groupData, &#x27;id&#x27;), obj);
+  }
+
+  toggleViewAll(visibility: boolean, type?) {
+    this.disableViewAllMode &#x3D; visibility;
+    this.selectedTypeContents &#x3D; _.pick(this.activityList, type) || {};
+  }
+
+  isCourse(type) {
+    return (_.lowerCase(this.resourceService.frmelmnts.lbl[type]) &#x3D;&#x3D;&#x3D; _.lowerCase(this.configService.appConfig.contentType.Course) ||
+    (_.lowerCase(this.resourceService.frmelmnts.lbl[type]) &#x3D;&#x3D;&#x3D; _.lowerCase(this.configService.appConfig.contentType.Courses)));
+  }
+
+  viewSelectedTypeContents(type, list, index) {
+    return (_.isEmpty(this.selectedTypeContents) ? (list.length &gt; 3 ?  index &lt;&#x3D; 2 : true) :
+    !_.isEmpty(_.get(this.selectedTypeContents, type)));
+  }
+
+  isSelectedType (type) {
+   return _.isEmpty(this.selectedTypeContents) ? true : !_.isEmpty(_.get(this.selectedTypeContents, type));
+  }
+
+  ngOnDestroy() {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
+
+    if (this.showModal &amp;&amp; this.modal.deny) {
+      this.modal.deny();
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div *ngFor&#x3D;&quot;let list of groupData?.activitiesGrouped&quot;&gt;
+  &lt;div class&#x3D;&quot;header&quot; *ngIf&#x3D;&quot;activityList[list?.title]?.length &amp;&amp; isSelectedType(list?.title)&quot;&gt;
+      &lt;div class&#x3D;&quot;title&quot;&gt;
+        {{getTitle(list?.title)}}
+      &lt;/div&gt;
+  &lt;button *ngIf&#x3D;&quot;activityList[list?.title]?.length &gt; 3 &amp;&amp; disableViewAllMode &amp;&amp; isSelectedType(list?.title)&quot; class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-error ml-auto sb-cls-btn&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;toggleViewAll(false); addTelemetry(&#x27;close-view-all&#x27;, [], {type: list?.title})&quot;&gt;{{resourceService?.frmelmnts?.btn?.close}} &lt;i class&#x3D;&quot;close icon&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button *ngIf&#x3D;&quot;activityList[list?.title]?.length &gt; 3 &amp;&amp; !disableViewAllMode &amp;&amp; isSelectedType(list?.title)&quot; class&#x3D;&quot;sb-btn sb-btn-xs sb-btn-secondary ml-auto&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;toggleViewAll(true, list?.title);addTelemetry(&#x27;open-view-all&#x27;, [], {type: list?.title})&quot;&gt;{{resourceService?.frmelmnts?.lnk?.viewall}}&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;!--Show loader--&gt;
+  &lt;div class&#x3D;&quot;sb-card-grid&quot; *ngIf&#x3D;&quot;showLoader &amp;&amp; activityList[list?.title]?.length&quot;&gt;
+      &lt;div class&#x3D;&quot;sb-grid--item&quot; *ngFor&#x3D;&quot;let i of (activityList[list?.title] || numberOfSections)&quot;&gt;
+          &lt;sb-course-card [isLoading]&#x3D;&quot;true&quot;&gt;&lt;/sb-course-card&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!--Show Activity List--&gt;
+  &lt;div  *ngIf&#x3D;&quot;activityList[list?.title]?.length &amp;&amp; !showLoader&quot; class&#x3D;&quot;sb-card-grid&quot; [ngClass]&#x3D;&quot;{&#x27;hideActivityType&#x27;: !isSelectedType(list?.title)}&quot;&gt; 
+       &lt;div class&#x3D;&quot;sb-card-grid--item relative&quot; *ngFor&#x3D;&quot;let activity of activityList[list?.title]; let i&#x3D;index;&quot;&gt;
+          &lt;sb-course-card *ngIf&#x3D;&quot;isCourse(activity?.type) &amp;&amp; viewSelectedTypeContents(list?.title, activityList[list?.title], i)&quot;(cardClick)&#x3D;&quot;openActivity($event, list?.title)&quot; [course]&#x3D;&quot;activity&quot; [section]&#x3D;&quot;null&quot; [isMenu]&#x3D;&quot;groupData?.isAdmin&quot; [cardImg]&#x3D;&quot;activity?.appIcon
+      || config?.assetsPath?.book&quot; (menuClick)&#x3D;&quot;getMenuData($event, activity)&quot;&gt;
+          &lt;/sb-course-card&gt;
+
+          &lt;sb-library-card *ngIf&#x3D;&quot;!isCourse(activity?.type) &amp;&amp; viewSelectedTypeContents(list?.title, activityList[list?.title], i)&quot;(cardClick)&#x3D;&quot;openActivity($event, list?.title)&quot; [content]&#x3D;&quot;activity&quot; [section]&#x3D;&quot;null&quot; [isMenu]&#x3D;&quot;groupData?.isAdmin&quot; [cardImg]&#x3D;&quot;activity?.appIcon
+          || config?.assetsPath?.book&quot; (menuClick)&#x3D;&quot;getMenuData($event, activity)&quot;&gt;
+          &lt;/sb-library-card&gt;
+          &lt;div class&#x3D;&quot;kabab-menu-dropdown-content&quot; *ngIf&#x3D;&quot;showMenu &amp;&amp;
+      selectedActivity?.identifier &#x3D;&#x3D;&#x3D; activity?.identifier&quot;&gt;
+              &lt;div class&#x3D;&quot;list sb-color-error&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;toggleModal(true)&quot;&gt;
+                  &lt;span&gt;{{resourceService?.frmelmnts?.lbl?.removeActivity}}&lt;/span&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt; 
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- No Activity[cardType]&#x3D;&quot;getType(selectedContentType?.type)&quot; --&gt;
+&lt;app-add-activity *ngIf&#x3D;&quot;!showLoader &amp;&amp; ((activityList | json) &#x3D;&#x3D;&#x3D; &#x27;{}&#x27;)&quot;&gt;&lt;/app-add-activity&gt;
+
+&lt;!-- Remove Activity from the group --&gt;
+&lt;app-modal-wrapper *ngIf&#x3D;&quot;showModal&quot; #modal [config]&#x3D;&quot;{disableClose: true, size: &#x27;small&#x27;, panelClass: &#x27;material-modal&#x27;}&quot;&gt;
+  &lt;ng-template sbModalContent let-data&gt;
+    &lt;div class&#x3D;&quot;sb-mat__modal&quot;&gt;
+      &lt;div mat-dialog-title&gt;
+        &lt;div class&#x3D;&quot;title&quot; tabindex&#x3D;&quot;0&quot;&gt;{{resourceService?.frmelmnts?.lbl?.removeActivity}}&lt;/div&gt;
+        &lt;button type&#x3D;&quot;button&quot; aria-label&#x3D;&quot;close dialog&quot; class&#x3D;&quot;close-btn&quot; (click)&#x3D;&quot;toggleModal()&quot; mat-dialog-close
+          tabindex&#x3D;&quot;0&quot;&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;mat-dialog-content&gt;
+        &lt;div class&#x3D;&quot;sb-mat__modal__content&quot;&gt;
+          &lt;p tabindex&#x3D;&quot;0&quot;&gt; {{resourceService?.messages?.imsg?.removeActivityWarning}}&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/mat-dialog-content&gt;
+      &lt;mat-dialog-actions class&#x3D;&quot;sb-mat__modal__actions&quot;&gt;
+        &lt;button class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-error mb-16&quot; tabindex&#x3D;&quot;0&quot;
+        (click)&#x3D;&quot;removeActivity()&quot;&gt;{{resourceService?.frmelmnts?.btn?.remove}}&lt;/button&gt;
+      &lt;/mat-dialog-actions&gt;
+    &lt;/div&gt;
+  &lt;/ng-template&gt;
+&lt;/app-modal-wrapper&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./activity-list.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;mixins/mixins&quot;;
+
+.kabab-menu {
+  color: var(--primary-400);
+  width: calculateRem(30px);
+  height: calculateRem(30px);
+  line-height: calculateRem(28px);
+  text-align: center;
+  border-radius: 50%;
+  padding-left: calculateRem(6px);
+  &amp;:hover {
+    background: var(--gray-0);
+    cursor: pointer;
+  }
+}
+.kabab-menu::after {
+  content: &quot;\2807&quot;;
+  font-size: calculateRem(24px);
+}
+.kabab-menu-dropdown-content {
+  position: absolute;
+  border-radius: calculateRem(2px);
+  background-color: var(--kabab-menu-dropdown-bg);
+  box-shadow: 0 calculateRem(3px) calculateRem(5px) calculateRem(4px) rgba(0, 0, 0, 0.05);
+  padding: calculateRem(8px);
+  z-index: 1;
+  text-align: left;
+  right: 0;
+  top: 0;
+  min-width: calculateRem(170px);
+
+  .list {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: calculateRem(14px);
+    padding: calculateRem(8px);
+    &amp;:hover,&amp;:active{
+      background-color: var(--kabab-menu-dropdown-item-active);
+    }
+  }
+}
+
+:host {
+  .header {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+    [dir&#x3D;ltr] &amp;,
+    [dir&#x3D;rtl] &amp; {
+      margin: 1.5rem 0 1rem;
+    }
+    .title {
+      font-family: inherit;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      flex: 1;
+      height: 1.5rem;
+      color: var(--primary-color);
+      font-size: 1.125rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      line-height: 1.625rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.hideActivityType {
+  display: none;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div *ngFor="let list of groupData?.activitiesGrouped">  <div class="header" *ngIf="activityList[list?.title]?.length && isSelectedType(list?.title)">      <div class="title">        {{getTitle(list?.title)}}      </div>  <button *ngIf="activityList[list?.title]?.length > 3 && disableViewAllMode && isSelectedType(list?.title)" class="sb-btn sb-btn-normal sb-btn-error ml-auto sb-cls-btn" tabindex="0" (click)="toggleViewAll(false); addTelemetry(\'close-view-all\', [], {type: list?.title})">{{resourceService?.frmelmnts?.btn?.close}} <i class="close icon"></i></button>  <button *ngIf="activityList[list?.title]?.length > 3 && !disableViewAllMode && isSelectedType(list?.title)" class="sb-btn sb-btn-xs sb-btn-secondary ml-auto" tabindex="0" (click)="toggleViewAll(true, list?.title);addTelemetry(\'open-view-all\', [], {type: list?.title})">{{resourceService?.frmelmnts?.lnk?.viewall}}</button>  </div>  <!--Show loader-->  <div class="sb-card-grid" *ngIf="showLoader && activityList[list?.title]?.length">      <div class="sb-grid--item" *ngFor="let i of (activityList[list?.title] || numberOfSections)">          <sb-course-card [isLoading]="true"></sb-course-card>      </div>  </div>  <!--Show Activity List-->  <div  *ngIf="activityList[list?.title]?.length && !showLoader" class="sb-card-grid" [ngClass]="{\'hideActivityType\': !isSelectedType(list?.title)}">        <div class="sb-card-grid--item relative" *ngFor="let activity of activityList[list?.title]; let i=index;">          <sb-course-card *ngIf="isCourse(activity?.type) && viewSelectedTypeContents(list?.title, activityList[list?.title], i)"(cardClick)="openActivity($event, list?.title)" [course]="activity" [section]="null" [isMenu]="groupData?.isAdmin" [cardImg]="activity?.appIcon      || config?.assetsPath?.book" (menuClick)="getMenuData($event, activity)">          </sb-course-card>          <sb-library-card *ngIf="!isCourse(activity?.type) && viewSelectedTypeContents(list?.title, activityList[list?.title], i)"(cardClick)="openActivity($event, list?.title)" [content]="activity" [section]="null" [isMenu]="groupData?.isAdmin" [cardImg]="activity?.appIcon          || config?.assetsPath?.book" (menuClick)="getMenuData($event, activity)">          </sb-library-card>          <div class="kabab-menu-dropdown-content" *ngIf="showMenu &&      selectedActivity?.identifier === activity?.identifier">              <div class="list sb-color-error" tabindex="0" (click)="toggleModal(true)">                  <span>{{resourceService?.frmelmnts?.lbl?.removeActivity}}</span>              </div>          </div>      </div>   </div></div><!-- No Activity[cardType]="getType(selectedContentType?.type)" --><app-add-activity *ngIf="!showLoader && ((activityList | json) === \'{}\')"></app-add-activity><!-- Remove Activity from the group --><app-modal-wrapper *ngIf="showModal" #modal [config]="{disableClose: true, size: \'small\', panelClass: \'material-modal\'}">  <ng-template sbModalContent let-data>    <div class="sb-mat__modal">      <div mat-dialog-title>        <div class="title" tabindex="0">{{resourceService?.frmelmnts?.lbl?.removeActivity}}</div>        <button type="button" aria-label="close dialog" class="close-btn" (click)="toggleModal()" mat-dialog-close          tabindex="0"></button>      </div>      <mat-dialog-content>        <div class="sb-mat__modal__content">          <p tabindex="0"> {{resourceService?.messages?.imsg?.removeActivityWarning}}</p>        </div>      </mat-dialog-content>      <mat-dialog-actions class="sb-mat__modal__actions">        <button class="sb-btn sb-btn-normal sb-btn-error mb-16" tabindex="0"        (click)="removeActivity()">{{resourceService?.frmelmnts?.btn?.remove}}</button>      </mat-dialog-actions>    </div>  </ng-template></app-modal-wrapper></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'app-access-discussion'},{'name': 'AccountMergeModalComponent', 'selector': 'app-account-merge-modal'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-info'},{'name': 'ActivityDashboardComponent', 'selector': 'app-activity-dashboard'},{'name': 'ActivityDetailsComponent', 'selector': 'app-activity-details'},{'name': 'ActivityFormComponent', 'selector': 'app-activity-form'},{'name': 'ActivityListComponent', 'selector': 'app-activity-list'},{'name': 'ActivitySearchComponent', 'selector': 'app-activity-search'},{'name': 'AddActivityComponent', 'selector': 'app-add-activity'},{'name': 'AddActivityContentTypesComponent', 'selector': 'app-add-activity-content-types'},{'name': 'AddEntityComponent', 'selector': 'add-entity'},{'name': 'AddMemberComponent', 'selector': 'app-add-member'},{'name': 'AddSummaryModalComponent', 'selector': 'app-add-summary-modal'},{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AllContentComponent', 'selector': 'app-all-content'},{'name': 'AllEvidenceComponent', 'selector': 'app-all-evidence'},{'name': 'AllTextbooksComponent', 'selector': 'app-all-textbooks'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppLandingSectionComponent', 'selector': 'app-landing-section'},{'name': 'AppLoaderComponent', 'selector': 'app-loader'},{'name': 'AssessmentPlayerComponent', 'selector': 'app-assessment-player'},{'name': 'AssignBadgesContentComponent', 'selector': 'app-assign-badges-content'},{'name': 'AuthFailedComponent', 'selector': 'app-auth-failed'},{'name': 'BackButtonComponent', 'selector': 'app-back-button'},{'name': 'BatchCardComponent', 'selector': 'app-batch-card'},{'name': 'BatchDetailsComponent', 'selector': 'app-batch-details'},{'name': 'BatchInfoComponent', 'selector': 'app-batch-info'},{'name': 'BatchListComponent', 'selector': 'app-batch-list'},{'name': 'BatchPageSectionComponent', 'selector': 'app-batch-page-section'},{'name': 'BrowseImagePopupComponent', 'selector': 'browse-image-popup'},{'name': 'BrowserCompatibilityComponent', 'selector': 'app-browser-compatibility'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardCreationComponent', 'selector': 'app-card-creation'},{'name': 'CertificateConfigurationComponent', 'selector': 'app-certificate-configuration'},{'name': 'CertificateDetailsComponent', 'selector': 'app-certificate-details'},{'name': 'CertificateNameUpdatePopupComponent', 'selector': 'app-certificate-name-update-popup'},{'name': 'CertPreviewPopupComponent', 'selector': 'app-cert-preview-popup'},{'name': 'ChooseUserComponent', 'selector': 'app-choose-user'},{'name': 'CollaboratingOnComponent', 'selector': 'app-collaborating-on'},{'name': 'CollaborationContentFilterComponent', 'selector': 'app-collaboration-content-filter'},{'name': 'CollectionEditorComponent', 'selector': 'app-collection-editor'},{'name': 'CollectionPlayerComponent', 'selector': 'app-collection-player'},{'name': 'CollectionPlayerMetadataComponent', 'selector': 'app-collection-player-metadata'},{'name': 'CommingSoonComponent', 'selector': 'app-comming-soon'},{'name': 'ConfirmationPopupComponent', 'selector': 'app-confirmation-popup'},{'name': 'ConfirmPopupComponent', 'selector': 'app-confirm-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentBadgeComponent', 'selector': 'app-content-badge'},{'name': 'ContentChapterlistComponent', 'selector': 'app-content-chapterlist'},{'name': 'ContentCreditsComponent', 'selector': 'app-content-credits'},{'name': 'ContentEditorComponent', 'selector': 'app-content-editor'},{'name': 'ContentLicenceComponent', 'selector': 'app-content-licence'},{'name': 'ContentManagerComponent', 'selector': 'app-content-manager'},{'name': 'ContentManagerInfoPopUpComponent', 'selector': 'app-content-manager-info-pop-up'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerMetadataComponent', 'selector': 'app-content-player-metadata'},{'name': 'ContentPlayerPageComponent', 'selector': 'app-contentplayer-page'},{'name': 'ContentRatingComponent', 'selector': 'app-content-rating'},{'name': 'ContentTypeComponent', 'selector': 'app-content-type'},{'name': 'CourseCompletionComponent', 'selector': 'app-course-completion'},{'name': 'CourseConsumptionComponent', 'selector': 'app-course-consumption'},{'name': 'CourseConsumptionHeaderComponent', 'selector': 'app-course-consumption-header'},{'name': 'CourseConsumptionPageComponent', 'selector': ''},{'name': 'CourseDashboardComponent', 'selector': 'app-course-dashboard'},{'name': 'CourseDetailsComponent', 'selector': 'app-course-details'},{'name': 'CourseInfoComponent', 'selector': 'app-course-info'},{'name': 'CoursePageComponent', 'selector': ''},{'name': 'CoursePlayerComponent', 'selector': 'app-course-player'},{'name': 'CourseProgressComponent', 'selector': 'app-course-progress'},{'name': 'CreateBatchComponent', 'selector': 'app-create-batch'},{'name': 'CreateContentComponent', 'selector': 'app-create-content'},{'name': 'CreateEditGroupComponent', 'selector': 'app-create-edit-group'},{'name': 'CreateOrgTypeComponent', 'selector': 'app-create-org-type'},{'name': 'CreateTemplateComponent', 'selector': 'app-create-template'},{'name': 'CreateUserComponent', 'selector': 'app-create-user'},{'name': 'CreditsAndLicenceComponent', 'selector': 'app-credits-and-licence'},{'name': 'CurriculumCardComponent', 'selector': 'app-curriculum-card'},{'name': 'CurriculumCoursesComponent', 'selector': 'app-curriculum-courses'},{'name': 'CurriculumInfoComponent', 'selector': 'app-curriculum-info'},{'name': 'CustomMultiSelectComponent', 'selector': 'app-custom-multi-select'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardSidebarComponent', 'selector': 'app-dashboard-sidebar'},{'name': 'DataChartComponent', 'selector': 'app-data-chart'},{'name': 'DataDrivenComponent', 'selector': 'app-data-driven'},{'name': 'DataDrivenFilterComponent', 'selector': 'app-data-driven-filter'},{'name': 'DatasetComponent', 'selector': 'app-dataset'},{'name': 'DatasetsComponent', 'selector': 'app-datasets'},{'name': 'DataTableComponent', 'selector': 'app-data-table'},{'name': 'DefaultTemplateComponent', 'selector': 'app-content-creation-default-template'},{'name': 'DesktopAppUpdateComponent', 'selector': 'app-desktop-app-update'},{'name': 'DialCodeCardComponent', 'selector': 'app-dial-code-card'},{'name': 'DialCodeComponent', 'selector': 'app-dial-code'},{'name': 'DraftComponent', 'selector': 'app-draft'},{'name': 'EditSubmissionComponent', 'selector': 'app-edit-submission'},{'name': 'EnrollBatchComponent', 'selector': 'app-enroll-batch'},{'name': 'EntityListComponent', 'selector': 'entity-list'},{'name': 'EntityListComponent', 'selector': 'app-entity-list'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'ExploreContentComponent', 'selector': ''},{'name': 'ExploreCourseComponent', 'selector': ''},{'name': 'ExploreCurriculumCoursesComponent', 'selector': 'app-explore-curriculum-courses'},{'name': 'ExploreFtuPopupComponent', 'selector': 'app-explore-ftu-popup'},{'name': 'ExploreGroupComponent', 'selector': 'app-explore-group'},{'name': 'ExplorePageComponent', 'selector': 'app-explore-page-component'},{'name': 'FancyTreeComponent', 'selector': 'app-fancy-tree'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FaqReportComponent', 'selector': 'app-faq-report'},{'name': 'FilterComponent', 'selector': 'app-filter'},{'name': 'FlagConentplayerComponent', 'selector': 'app-flag-conentplayer'},{'name': 'FlaggedComponent', 'selector': 'app-flagged'},{'name': 'FlagReviewerComponent', 'selector': 'app-flag-reviewer'},{'name': 'ForumComponent', 'selector': 'app-forum'},{'name': 'FtuPopupComponent', 'selector': 'app-ftu-popup'},{'name': 'FullPageLoaderComponent', 'selector': 'app-full-page-loader'},{'name': 'FullPageModalComponent', 'selector': 'app-full-page-modal'},{'name': 'GenericEditorComponent', 'selector': 'app-generic-editor'},{'name': 'GetComponent', 'selector': 'app-get'},{'name': 'GlobalConsentPiiComponent', 'selector': 'app-global-consent-pii'},{'name': 'GlobalSearchFilterComponent', 'selector': 'app-global-search-filter'},{'name': 'GlobalSearchSelectedFilterComponent', 'selector': 'app-global-search-selected-filter'},{'name': 'GroupDetailsComponent', 'selector': 'app-group-details'},{'name': 'GroupHeaderComponent', 'selector': 'app-group-header'},{'name': 'GroupMembersComponent', 'selector': 'app-group-members'},{'name': 'GuestProfileComponent', 'selector': 'app-guest-profile'},{'name': 'HomeSearchComponent', 'selector': ''},{'name': 'IdentifyAccountComponent', 'selector': ''},{'name': 'InAppNotificationComponent', 'selector': 'app-in-app-notification'},{'name': 'InfoCardComponent', 'selector': 'app-info-card'},{'name': 'InstallAppComponent', 'selector': 'app-install-app'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'LanguageDropdownComponent', 'selector': 'app-language-dropdown'},{'name': 'LibraryComponent', 'selector': 'app-library'},{'name': 'LimitedPublishedComponent', 'selector': 'app-limited-published'},{'name': 'ListAllReportsComponent', 'selector': 'app-list-all-reports'},{'name': 'LoadContentComponent', 'selector': 'app-load-content'},{'name': 'LoadOfflineContentComponent', 'selector': 'app-load-offline-content'},{'name': 'LocationSelectionComponent', 'selector': 'app-location-selection'},{'name': 'LockInfoPopupComponent', 'selector': 'app-contentlock-info-popup'},{'name': 'MainFooterComponent', 'selector': 'app-footer'},{'name': 'MainHeaderComponent', 'selector': 'app-header'},{'name': 'MainMenuComponent', 'selector': 'app-main-menu'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialAutoCompleteComponent', 'selector': 'app-material-auto-complete'},{'name': 'MemberActionsComponent', 'selector': 'app-member-actions'},{'name': 'MergeAccountStatusComponent', 'selector': 'app-merge-account-status'},{'name': 'ModalWrapperComponent', 'selector': 'app-modal-wrapper'},{'name': 'MyGroupsComponent', 'selector': 'app-my-groups'},{'name': 'NetworkStatusComponent', 'selector': 'app-network-status'},{'name': 'NewCollectionEditorComponent', 'selector': 'app-new-collection-editor'},{'name': 'NoGroupResultComponent', 'selector': 'app-no-group-result'},{'name': 'NoResultComponent', 'selector': 'app-no-result-found'},{'name': 'NoResultComponent', 'selector': 'app-no-result'},{'name': 'ObservationDetailsComponent', 'selector': 'app-observation-details'},{'name': 'ObservationListingComponent', 'selector': 'app-observation-listing'},{'name': 'OfflineApplicationDownloadComponent', 'selector': 'app-offline-application-download'},{'name': 'OfflineBannerComponent', 'selector': 'app-offline-banner'},{'name': 'OfflineHelpVideosComponent', 'selector': 'app-offline-help-videos'},{'name': 'OnboardingUserSelectionComponent', 'selector': 'app-onboarding-user-selection'},{'name': 'OnDemandReportsComponent', 'selector': 'app-on-demand-reports'},{'name': 'OrganisationComponent', 'selector': 'app-organization'},{'name': 'OrganizationUploadComponent', 'selector': 'app-organization'},{'name': 'OtpComponent', 'selector': 'app-otp'},{'name': 'OtpPopupComponent', 'selector': 'app-otp-popup'},{'name': 'PageSectionComponent', 'selector': 'app-page-section'},{'name': 'PlayerComponent', 'selector': 'app-player'},{'name': 'PopupComponent', 'selector': 'app-modal'},{'name': 'ProfileBadgeComponent', 'selector': 'app-profile-badge'},{'name': 'ProfileFrameworkPopupComponent', 'selector': 'app-popup'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'PublicBatchDetailsComponent', 'selector': 'app-public-batch-details'},{'name': 'PublicCourseConsumptionPageComponent', 'selector': ''},{'name': 'PublicCoursePlayerComponent', 'selector': 'app-public-course-player'},{'name': 'PublishedComponent', 'selector': 'app-published'},{'name': 'PublishedPopupComponent', 'selector': 'app-published-popup'},{'name': 'QrCodeModalComponent', 'selector': 'app-qr-code-modal'},{'name': 'QuestionnaireComponent', 'selector': 'app-questionnaire'},{'name': 'RecoverAccountComponent', 'selector': ''},{'name': 'RedirectComponent', 'selector': 'app-redirect'},{'name': 'ReIssueCertificateComponent', 'selector': 'app-re-issue-certificate'},{'name': 'ReportComponent', 'selector': 'app-report'},{'name': 'ReportSummaryComponent', 'selector': 'app-report-summary'},{'name': 'ReportViewComponent', 'selector': 'app-report-view'},{'name': 'RequestChangesPopupComponent', 'selector': 'app-request-changes-popup'},{'name': 'ReviewCommentsComponent', 'selector': 'app-review-comments'},{'name': 'ReviewSubmissionsComponent', 'selector': 'app-review-submissions'},{'name': 'ReviewsubmissionsContentplayerComponent', 'selector': 'app-reviewsubmissions-contentplayer'},{'name': 'SbDatatableComponent', 'selector': 'sb-datatable'},{'name': 'SbTableComponent', 'selector': 'app-sb-table'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SearchFilterComponent', 'selector': 'app-search-filter'},{'name': 'SelectAccountIdentifierComponent', 'selector': ''},{'name': 'SelectOptionGroupComponent', 'selector': 'app-select-option-group'},{'name': 'SelectOrgComponent', 'selector': ''},{'name': 'ShareLinkComponent', 'selector': 'app-share-link'},{'name': 'SignupBasicInfoComponent', 'selector': 'app-signup-basic-info'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupEmailPasswordComponent', 'selector': 'app-signup-email-password'},{'name': 'SignupOnboardingInfoComponent', 'selector': 'app-signup-onboarding-info'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'SsoMergeConfirmationComponent', 'selector': 'app-sso-merge-confirmation'},{'name': 'StatusComponent', 'selector': 'app-status'},{'name': 'SubmissionsComponent', 'selector': 'submission'},{'name': 'SubmitTeacherDetailsComponent', 'selector': 'app-submit-teacher-details'},{'name': 'SvgEditorComponent', 'selector': 'app-svg-editor'},{'name': 'SystemWarningComponent', 'selector': 'app-system-warning'},{'name': 'TelemetryComponent', 'selector': 'app-telemetry'},{'name': 'TelemetryErrorModalComponent', 'selector': 'app-telemetry-error-modal'},{'name': 'TelemetryImportComponent', 'selector': 'app-telemetry-import'},{'name': 'TermsAndConditionsPopupComponent', 'selector': 'app-tnc-popup'},{'name': 'TopicPickerComponent', 'selector': 'app-topic-picker'},{'name': 'UciComponent', 'selector': 'app-uci'},{'name': 'UnEnrollBatchComponent', 'selector': 'app-unenroll-batch'},{'name': 'UpdateBatchComponent', 'selector': 'app-update-batch'},{'name': 'UpdateContactComponent', 'selector': ''},{'name': 'UpdateContactDetailsComponent', 'selector': 'app-update-contact-details'},{'name': 'UpdateCourseBatchComponent', 'selector': 'app-update-course-batch'},{'name': 'UpForReviewComponent', 'selector': 'app-up-for-review'},{'name': 'UpforreviewContentplayerComponent', 'selector': 'app-upforreview-contentplayer'},{'name': 'UpforReviewFilterComponent', 'selector': 'app-up-for-review-filter'},{'name': 'UploadedComponent', 'selector': 'app-uploaded'},{'name': 'UsageReportsComponent', 'selector': 'app-usage-reports'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserFilterComponent', 'selector': 'app-user-filter'},{'name': 'UserLocationComponent', 'selector': 'app-user-location'},{'name': 'UserOnboardingComponent', 'selector': 'app-user-onboarding'},{'name': 'UserOrgManagementComponent', 'selector': 'app-user-org-management'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRoleAssignComponent', 'selector': 'app-user-role-assign'},{'name': 'UserSearchComponent', 'selector': 'app-user-search'},{'name': 'ValidateTeacherIdentifierPopupComponent', 'selector': 'app-validate-teacher-identifier-popup'},{'name': 'VerifyAccountIdentifierComponent', 'selector': ''},{'name': 'ViewAllComponent', 'selector': 'app-view-all'},{'name': 'ViewOrgTypeComponent', 'selector': 'app-view-org-type'},{'name': 'WorkspaceComponent', 'selector': 'app-workspace'},{'name': 'WorkspaceContentFilterComponent', 'selector': 'app-workspace-content-filter'},{'name': 'WorkspacesidebarComponent', 'selector': 'app-workspacesidebar'},{'name': 'YearOfBirthComponent', 'selector': 'app-year-of-birth'}];
+    var DIRECTIVES = [{'name': 'ActivityDashboardDirective', 'selector': '[appActivityDashboard]'},{'name': 'AddToGroupDirective', 'selector': '[appAddToGroup]'},{'name': 'BodyScrollDirective', 'selector': '[appBodyScroll]'},{'name': 'ComponentDeactivate', 'selector': ''},{'name': 'ContentDirectionDirective', 'selector': '[appContentDirection]'},{'name': 'DesktopOnlyDirective', 'selector': '[appDesktopOnly]'},{'name': 'HighlightTextDirective', 'selector': '[appHighlightText]'},{'name': 'MarkdownDirective', 'selector': '[appMarkdown]'},{'name': 'ModalContentDirective', 'selector': '[sbModalContent]'},{'name': 'OnlineOnlyDirective', 'selector': '[appOnlineOnly]'},{'name': 'PermissionDirective', 'selector': '[appPermission]'},{'name': 'TelemetryEndDirective', 'selector': '[appTelemetryEnd]'},{'name': 'TelemetryErrorDirective', 'selector': '[appTelemetryError]'},{'name': 'TelemetryEventsDirective', 'selector': '[telemetryEventsButton]'},{'name': 'TelemetryImpressionDirective', 'selector': '[appTelemetryImpression]'},{'name': 'TelemetryInteractDirective', 'selector': '[appTelemetryInteract]'},{'name': 'TelemetryShareDirective', 'selector': '[appTelemetryShare]'},{'name': 'TelemetryStartDirective', 'selector': '[appTelemetryStart]'}];
+    var ACTUAL_COMPONENT = {'name': 'ActivityListComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ActivityListComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

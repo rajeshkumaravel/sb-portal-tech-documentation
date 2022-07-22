@@ -1,0 +1,4186 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >GroupsService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/groups/services/groups/groups.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_groupData" >_groupData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#_groupListCount" >_groupListCount</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_groupsTnc" >_groupsTnc</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_userData" >_userData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#closeForm" >closeForm</a>
+                            </li>
+                            <li>
+                                <a href="#groupCservice" >groupCservice</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isCurrentUserAdmin" >isCurrentUserAdmin</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isCurrentUserCreator" >isCurrentUserCreator</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#membersList" >membersList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#showActivateModal" >showActivateModal</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#showLoader" >showLoader</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#showMenu" >showMenu</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#updateEvent" >updateEvent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#userCservice" >userCservice</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#activateGroupById" >activateGroupById</a>
+                            </li>
+                            <li>
+                                <a href="#addActivities" >addActivities</a>
+                            </li>
+                            <li>
+                                <a href="#addFields" >addFields</a>
+                            </li>
+                            <li>
+                                <a href="#addFieldsToMember" >addFieldsToMember</a>
+                            </li>
+                            <li>
+                                <a href="#addGroupFields" >addGroupFields</a>
+                            </li>
+                            <li>
+                                <a href="#addGroupPaletteList" >addGroupPaletteList</a>
+                            </li>
+                            <li>
+                                <a href="#addMemberById" >addMemberById</a>
+                            </li>
+                            <li>
+                                <a href="#addTelemetry" >addTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#createGroup" >createGroup</a>
+                            </li>
+                            <li>
+                                <a href="#deActivateGroupById" >deActivateGroupById</a>
+                            </li>
+                            <li>
+                                <a href="#deleteGroupById" >deleteGroupById</a>
+                            </li>
+                            <li>
+                                <a href="#emitActivateEvent" >emitActivateEvent</a>
+                            </li>
+                            <li>
+                                <a href="#emitCloseForm" >emitCloseForm</a>
+                            </li>
+                            <li>
+                                <a href="#emitMembers" >emitMembers</a>
+                            </li>
+                            <li>
+                                <a href="#emitMenuVisibility" >emitMenuVisibility</a>
+                            </li>
+                            <li>
+                                <a href="#emitShowLoader" >emitShowLoader</a>
+                            </li>
+                            <li>
+                                <a href="#emitUpdateEvent" >emitUpdateEvent</a>
+                            </li>
+                            <li>
+                                <a href="#getActivity" >getActivity</a>
+                            </li>
+                            <li>
+                                <a href="#getDashletData" >getDashletData</a>
+                            </li>
+                            <li>
+                                <a href="#getGroupById" >getGroupById</a>
+                            </li>
+                            <li>
+                                <a href="#getImpressionObject" >getImpressionObject</a>
+                            </li>
+                            <li>
+                                <a href="#getRecaptchaSettings" >getRecaptchaSettings</a>
+                            </li>
+                            <li>
+                                <a href="#getSelectedLanguageStrings" >getSelectedLanguageStrings</a>
+                            </li>
+                            <li>
+                                <a href="#getSupportedActivityList" >getSupportedActivityList</a>
+                            </li>
+                            <li>
+                                <a href="#getUserData" >getUserData</a>
+                            </li>
+                            <li>
+                                <a href="#goBack" >goBack</a>
+                            </li>
+                            <li>
+                                <a href="#groupContentsByActivityType" >groupContentsByActivityType</a>
+                            </li>
+                            <li>
+                                <a href="#isTncUpdated" >isTncUpdated</a>
+                            </li>
+                            <li>
+                                <a href="#isUserAcceptedTnc" >isUserAcceptedTnc</a>
+                            </li>
+                            <li>
+                                <a href="#removeActivities" >removeActivities</a>
+                            </li>
+                            <li>
+                                <a href="#removeMembers" >removeMembers</a>
+                            </li>
+                            <li>
+                                <a href="#searchUserGroups" >searchUserGroups</a>
+                            </li>
+                            <li>
+                                <a href="#setCurrentUserRole" >setCurrentUserRole</a>
+                            </li>
+                            <li>
+                                <a href="#updateActivities" >updateActivities</a>
+                            </li>
+                            <li>
+                                <a href="#updateGroup" >updateGroup</a>
+                            </li>
+                            <li>
+                                <a href="#updateGroupGuidelines" >updateGroupGuidelines</a>
+                            </li>
+                            <li>
+                                <a href="#updateGroupStatus" >updateGroupStatus</a>
+                            </li>
+                            <li>
+                                <a href="#updateMembers" >updateMembers</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#groupData" >groupData</a>
+                                </li>
+                                <li>
+                                    <a href="#groupListCount" >groupListCount</a>
+                                </li>
+                                <li>
+                                    <a href="#groupsTncDetails" >groupsTncDetails</a>
+                                </li>
+                                <li>
+                                    <a href="#latestTnc" >latestTnc</a>
+                                </li>
+                                <li>
+                                    <a href="#userData" >userData</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(csLibInitializerService: <a href="../injectables/CsLibInitializerService.html" target="_self">CsLibInitializerService</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, resourceService: <a href="../injectables/ResourceService.html" target="_self">ResourceService</a>, telemetryService: <a href="../injectables/TelemetryService.html" target="_self">TelemetryService</a>, navigationhelperService: <a href="../injectables/NavigationHelperService.html" target="_self">NavigationHelperService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, configService: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, learnerService: <a href="../injectables/LearnerService.html" target="_self">LearnerService</a>, tncService: <a href="../injectables/TncService.html" target="_self">TncService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:35</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>csLibInitializerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CsLibInitializerService.html" target="_self" >CsLibInitializerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>resourceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryService.html" target="_self" >TelemetryService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>navigationhelperService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationHelperService.html" target="_self" >NavigationHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>configService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>learnerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LearnerService.html" target="_self" >LearnerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>tncService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TncService.html" target="_self" >TncService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="activateGroupById"></a>
+                    <span class="name">
+                        <span ><b>activateGroupById</b></span>
+                        <a href="#activateGroupById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>activateGroupById(groupId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="331"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:331</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>groupId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addActivities"></a>
+                    <span class="name">
+                        <span ><b>addActivities</b></span>
+                        <a href="#addActivities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addActivities(groupId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, addActivitiesRequest: CsGroupAddActivitiesRequest)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="136"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:136</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>groupId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>addActivitiesRequest</td>
+                                    <td>
+                                            <code>CsGroupAddActivitiesRequest</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addFields"></a>
+                    <span class="name">
+                        <span ><b>addFields</b></span>
+                        <a href="#addFields"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addFields(member)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>member</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/IGroupMember.html" target="_self" >IGroupMember</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addFieldsToMember"></a>
+                    <span class="name">
+                        <span ><b>addFieldsToMember</b></span>
+                        <a href="#addFieldsToMember"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addFieldsToMember(members)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="56"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:56</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>members</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/IGroupMember.html" target="_self" >IGroupMember[]</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addGroupFields"></a>
+                    <span class="name">
+                        <span ><b>addGroupFields</b></span>
+                        <a href="#addGroupFields"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addGroupFields(group)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>group</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addGroupPaletteList"></a>
+                    <span class="name">
+                        <span ><b>addGroupPaletteList</b></span>
+                        <a href="#addGroupPaletteList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addGroupPaletteList(groupList: [])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="184"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:184</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>groupList</td>
+                                    <td>
+                                            <code>[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>[]</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addMemberById"></a>
+                    <span class="name">
+                        <span ><b>addMemberById</b></span>
+                        <a href="#addMemberById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addMemberById(groupId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, members: <a href="../interfaces/IMember.html" target="_self">IMember</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:124</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>groupId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>members</td>
+                                    <td>
+                                                <code><a href="../interfaces/IMember.html" target="_self" >IMember</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addTelemetry"></a>
+                    <span class="name">
+                        <span ><b>addTelemetry</b></span>
+                        <a href="#addTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addTelemetry(eid: <a href="../strings/type.html" target="_self">literal type</a>, routeData, cdata, groupId?, obj?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="200"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:200</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>eid</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#type" target="_self" >literal type</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>routeData</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>cdata</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>groupId</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createGroup"></a>
+                    <span class="name">
+                        <span ><b>createGroup</b></span>
+                        <a href="#createGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createGroup(groupData: <a href="../interfaces/IGroupCard.html" target="_self">IGroupCard</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>groupData</td>
+                                    <td>
+                                                <code><a href="../interfaces/IGroupCard.html" target="_self" >IGroupCard</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deActivateGroupById"></a>
+                    <span class="name">
+                        <span ><b>deActivateGroupById</b></span>
+                        <a href="#deActivateGroupById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deActivateGroupById(groupId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="327"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:327</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>groupId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteGroupById"></a>
+                    <span class="name">
+                        <span ><b>deleteGroupById</b></span>
+                        <a href="#deleteGroupById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteGroupById(groupId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="120"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:120</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>groupId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="emitActivateEvent"></a>
+                    <span class="name">
+                        <span ><b>emitActivateEvent</b></span>
+                        <a href="#emitActivateEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>emitActivateEvent(name, eventName)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="323"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:323</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>eventName</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="emitCloseForm"></a>
+                    <span class="name">
+                        <span ><b>emitCloseForm</b></span>
+                        <a href="#emitCloseForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>emitCloseForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="164"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:164</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="emitMembers"></a>
+                    <span class="name">
+                        <span ><b>emitMembers</b></span>
+                        <a href="#emitMembers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>emitMembers(members: <a href="../interfaces/IGroupMember.html" target="_self">IGroupMember[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="168"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:168</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>members</td>
+                                    <td>
+                                                <code><a href="../interfaces/IGroupMember.html" target="_self" >IGroupMember[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="emitMenuVisibility"></a>
+                    <span class="name">
+                        <span ><b>emitMenuVisibility</b></span>
+                        <a href="#emitMenuVisibility"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>emitMenuVisibility(visibility)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="267"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:267</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>visibility</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="emitShowLoader"></a>
+                    <span class="name">
+                        <span ><b>emitShowLoader</b></span>
+                        <a href="#emitShowLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>emitShowLoader(value)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="172"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:172</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="emitUpdateEvent"></a>
+                    <span class="name">
+                        <span ><b>emitUpdateEvent</b></span>
+                        <a href="#emitUpdateEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>emitUpdateEvent(value)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="335"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:335</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getActivity"></a>
+                    <span class="name">
+                        <span ><b>getActivity</b></span>
+                        <a href="#getActivity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getActivity(groupId, activity, mergeGroup, leafNodesCount?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>groupId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>activity</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>mergeGroup</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>leafNodesCount</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDashletData"></a>
+                    <span class="name">
+                        <span ><b>getDashletData</b></span>
+                        <a href="#getDashletData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDashletData(courseHeirarchyData, aggData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="371"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:371</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>courseHeirarchyData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>aggData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getGroupById"></a>
+                    <span class="name">
+                        <span ><b>getGroupById</b></span>
+                        <a href="#getGroupById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getGroupById(groupId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, includeMembers?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, includeActivities?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, groupActivities?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:115</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>groupId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>includeMembers</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>includeActivities</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>groupActivities</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getImpressionObject"></a>
+                    <span class="name">
+                        <span ><b>getImpressionObject</b></span>
+                        <a href="#getImpressionObject"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getImpressionObject(routeData, url, edata?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="233"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:233</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>routeData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>url</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>edata</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/IImpressionEventInput.html" target="_self" >IImpressionEventInput</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRecaptchaSettings"></a>
+                    <span class="name">
+                        <span ><b>getRecaptchaSettings</b></span>
+                        <a href="#getRecaptchaSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getRecaptchaSettings()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="260"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:260</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSelectedLanguageStrings"></a>
+                    <span class="name">
+                        <span ><b>getSelectedLanguageStrings</b></span>
+                        <a href="#getSelectedLanguageStrings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSelectedLanguageStrings(activity: CsGroupSupportedActivitiesFormField)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="283"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:283</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>activity</td>
+                                    <td>
+                                            <code>CsGroupSupportedActivitiesFormField</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>CsGroupSupportedActivitiesFormField</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSupportedActivityList"></a>
+                    <span class="name">
+                        <span ><b>getSupportedActivityList</b></span>
+                        <a href="#getSupportedActivityList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSupportedActivityList()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="271"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:271</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserData"></a>
+                    <span class="name">
+                        <span ><b>getUserData</b></span>
+                        <a href="#getUserData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getUserData(memberId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, captchaToken: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank">object</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:148</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>memberId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>captchaToken</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>{}</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goBack"></a>
+                    <span class="name">
+                        <span ><b>goBack</b></span>
+                        <a href="#goBack"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goBack()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="176"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:176</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="groupContentsByActivityType"></a>
+                    <span class="name">
+                        <span ><b>groupContentsByActivityType</b></span>
+                        <a href="#groupContentsByActivityType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>groupContentsByActivityType(showList, groupData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="298"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:298</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>showList</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>groupData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/variables.html#L" target="_self" >{ showList: any; activities: any; }</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isTncUpdated"></a>
+                    <span class="name">
+                        <span ><b>isTncUpdated</b></span>
+                        <a href="#isTncUpdated"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isTncUpdated()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="363"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:363</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isUserAcceptedTnc"></a>
+                    <span class="name">
+                        <span ><b>isUserAcceptedTnc</b></span>
+                        <a href="#isUserAcceptedTnc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isUserAcceptedTnc()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="344"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:344</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeActivities"></a>
+                    <span class="name">
+                        <span ><b>removeActivities</b></span>
+                        <a href="#removeActivities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeActivities(groupId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, removeActivitiesRequest: CsGroupRemoveActivitiesRequest)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="144"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:144</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>groupId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>removeActivitiesRequest</td>
+                                    <td>
+                                            <code>CsGroupRemoveActivitiesRequest</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeMembers"></a>
+                    <span class="name">
+                        <span ><b>removeMembers</b></span>
+                        <a href="#removeMembers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeMembers(groupId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, userIds: string[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="132"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:132</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>groupId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>userIds</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchUserGroups"></a>
+                    <span class="name">
+                        <span ><b>searchUserGroups</b></span>
+                        <a href="#searchUserGroups"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>searchUserGroups(request: CsGroupSearchCriteria)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="110"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:110</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>request</td>
+                                    <td>
+                                            <code>CsGroupSearchCriteria</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setCurrentUserRole"></a>
+                    <span class="name">
+                        <span ><b>setCurrentUserRole</b></span>
+                        <a href="#setCurrentUserRole"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setCurrentUserRole(members)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>members</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateActivities"></a>
+                    <span class="name">
+                        <span ><b>updateActivities</b></span>
+                        <a href="#updateActivities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateActivities(groupId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, updateActivitiesRequest: CsGroupUpdateActivitiesRequest)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="140"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:140</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>groupId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>updateActivitiesRequest</td>
+                                    <td>
+                                            <code>CsGroupUpdateActivitiesRequest</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateGroup"></a>
+                    <span class="name">
+                        <span ><b>updateGroup</b></span>
+                        <a href="#updateGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateGroup(groupId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, updateRequest: <a href="../interfaces/IGroupUpdate.html" target="_self">IGroupUpdate</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="106"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:106</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>groupId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>updateRequest</td>
+                                    <td>
+                                                <code><a href="../interfaces/IGroupUpdate.html" target="_self" >IGroupUpdate</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateGroupGuidelines"></a>
+                    <span class="name">
+                        <span ><b>updateGroupGuidelines</b></span>
+                        <a href="#updateGroupGuidelines"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateGroupGuidelines(request: CsGroupUpdateGroupGuidelinesRequest)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="367"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:367</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>request</td>
+                                    <td>
+                                            <code>CsGroupUpdateGroupGuidelinesRequest</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateGroupStatus"></a>
+                    <span class="name">
+                        <span ><b>updateGroupStatus</b></span>
+                        <a href="#updateGroupStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateGroupStatus(group: CsGroup, status: GroupEntityStatus)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="339"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:339</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>group</td>
+                                    <td>
+                                            <code>CsGroup</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>status</td>
+                                    <td>
+                                            <code>GroupEntityStatus</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateMembers"></a>
+                    <span class="name">
+                        <span ><b>updateMembers</b></span>
+                        <a href="#updateMembers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateMembers(groupId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, updateMembersRequest: CsGroupUpdateMembersRequest)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="128"
+                            class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:128</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>groupId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>updateMembersRequest</td>
+                                    <td>
+                                            <code>CsGroupUpdateMembersRequest</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_groupData"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_groupData</b></span>
+                        <a href="#_groupData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IGroupCard.html" target="_self" >IGroupCard</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_groupListCount"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>_groupListCount</b></span>
+                        <a href="#_groupListCount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_groupsTnc"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_groupsTnc</b></span>
+                        <a href="#_groupsTnc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_userData"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_userData</b></span>
+                        <a href="#_userData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeForm"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>closeForm</b></span>
+                        <a href="#closeForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new EventEmitter()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="groupCservice"></a>
+                    <span class="name">
+                        <span ><b>groupCservice</b></span>
+                        <a href="#groupCservice"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isCurrentUserAdmin"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isCurrentUserAdmin</b></span>
+                        <a href="#isCurrentUserAdmin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isCurrentUserCreator"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isCurrentUserCreator</b></span>
+                        <a href="#isCurrentUserCreator"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="membersList"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>membersList</b></span>
+                        <a href="#membersList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new EventEmitter()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showActivateModal"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>showActivateModal</b></span>
+                        <a href="#showActivateModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new EventEmitter()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showLoader"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>showLoader</b></span>
+                        <a href="#showLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new EventEmitter()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showMenu"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>showMenu</b></span>
+                        <a href="#showMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new EventEmitter()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateEvent"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>updateEvent</b></span>
+                        <a href="#updateEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new EventEmitter()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userCservice"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>userCservice</b></span>
+                        <a href="#userCservice"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="groupData"></a>
+                        <span class="name"><b>groupData</b><a href="#groupData"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>groupData()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="160" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:160</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>groupData(group: <a href="../interfaces/IGroupCard.html" target="_self">IGroupCard</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="156" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:156</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>group</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="../interfaces/IGroupCard.html" target="_self" >IGroupCard</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="groupListCount"></a>
+                        <span class="name"><b>groupListCount</b><a href="#groupListCount"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>groupListCount()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="279" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:279</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>groupListCount(count)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="275" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:275</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>count</td>
+                                                    
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="groupsTncDetails"></a>
+                        <span class="name"><b>groupsTncDetails</b><a href="#groupsTncDetails"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>groupsTncDetails(groupsTnc)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="349" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:349</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>groupsTnc</td>
+                                                    
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="latestTnc"></a>
+                        <span class="name"><b>latestTnc</b><a href="#latestTnc"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>latestTnc()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="355" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:355</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userData"></a>
+                        <span class="name"><b>userData</b><a href="#userData"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>userData(user)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="359" class="link-to-prism">src/app/modules/groups/services/groups/groups.service.ts:359</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>user</td>
+                                                    
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+</section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { delay } from &#x27;rxjs/operators&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { EventEmitter, Injectable } from &#x27;@angular/core&#x27;;
+import { CsModule } from &#x27;@project-sunbird/client-services&#x27;;
+import { CsGroupAddActivitiesRequest, CsGroupRemoveActivitiesRequest,
+CsGroupSearchCriteria, CsGroupUpdateActivitiesRequest, CsGroupUpdateMembersRequest,
+  CsGroupUpdateGroupGuidelinesRequest,
+  CsGroupSupportedActivitiesFormField
+} from &#x27;@project-sunbird/client-services/services/group/interface&#x27;;
+import { UserService, LearnerService, TncService } from &#x27;@sunbird/core&#x27;;
+import { NavigationHelperService, ResourceService, ConfigService } from &#x27;@sunbird/shared&#x27;;
+import { IImpressionEventInput, TelemetryService, IInteractEventInput } from &#x27;@sunbird/telemetry&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import { IGroupCard, IGroupMember, IGroupUpdate, IMember, MY_GROUPS } from &#x27;../../interfaces&#x27;;
+import { CsLibInitializerService } from &#x27;./../../../../service/CsLibInitializer/cs-lib-initializer.service&#x27;;
+import { CsGroup, GroupEntityStatus } from &#x27;@project-sunbird/client-services/models&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class GroupsService {
+  groupCservice: any;
+  private userCservice: any;
+  private _groupData: IGroupCard;
+  public isCurrentUserAdmin &#x3D; false;
+  public isCurrentUserCreator &#x3D; false;
+  public membersList &#x3D; new EventEmitter();
+  public closeForm &#x3D; new EventEmitter();
+  public showLoader &#x3D; new EventEmitter();
+  public showMenu &#x3D; new EventEmitter();
+  public showActivateModal &#x3D; new EventEmitter();
+  public updateEvent &#x3D; new EventEmitter();
+    public _groupListCount: number;
+  private _groupsTnc;
+  private _userData;
+
+  constructor(
+    private csLibInitializerService: CsLibInitializerService,
+    private userService: UserService,
+    private resourceService: ResourceService,
+    private telemetryService: TelemetryService,
+    private navigationhelperService: NavigationHelperService,
+    private router: Router,
+    private configService: ConfigService,
+    private learnerService: LearnerService,
+    private tncService: TncService
+  ) {
+    if (!CsModule.instance.isInitialised) {
+      this.csLibInitializerService.initializeCs();
+    }
+    this.groupCservice &#x3D; CsModule.instance.groupService;
+    this.userCservice &#x3D; CsModule.instance.userService;
+    this._userData &#x3D; this.userService.userProfile;
+  }
+
+  addFieldsToMember(members): IGroupMember[] {
+    if (members) {
+      this.setCurrentUserRole(members);
+      const membersList &#x3D; members.map((item, index) &#x3D;&gt; _.extend(this.addFields(item), { indexOfMember: index }));
+     return _.orderBy(membersList, [&#x27;isSelf&#x27;, &#x27;isAdmin&#x27;, item &#x3D;&gt; _.toLower(item.title)], [&#x27;desc&#x27;, &#x27;desc&#x27;, &#x27;asc&#x27;]);
+    }
+    return [];
+  }
+
+  setCurrentUserRole(members) {
+    const currentUser &#x3D; members.find(item &#x3D;&gt; item.userId &#x3D;&#x3D;&#x3D; this.userService.userid);
+    this.isCurrentUserAdmin &#x3D; _.get(currentUser, &#x27;role&#x27;) &#x3D;&#x3D;&#x3D; &#x27;admin&#x27;;
+    this.isCurrentUserCreator &#x3D; _.get(this.userService, &#x27;userid&#x27;) &#x3D;&#x3D;&#x3D; _.get(this.groupData, &#x27;createdBy&#x27;);
+  }
+
+  addFields(member): IGroupMember {
+    member.title &#x3D; _.capitalize(member.name || member.userName);
+    member.initial &#x3D; _.get(member, &#x27;title[0]&#x27;);
+    member.identifier &#x3D; _.get(member, &#x27;userId&#x27;) || _.get(member, &#x27;identifier&#x27;);
+    member.isAdmin &#x3D; _.get(member, &#x27;role&#x27;) &#x3D;&#x3D;&#x3D; &#x27;admin&#x27;;
+    member.isCreator &#x3D; _.get(this.groupData, &#x27;createdBy&#x27;) &#x3D;&#x3D;&#x3D; _.get(member, &#x27;userId&#x27;);
+    member.isSelf &#x3D; (this.userService.userid &#x3D;&#x3D;&#x3D; _.get(member, &#x27;userId&#x27;)) || (this.userService.userid &#x3D;&#x3D;&#x3D; _.get(member, &#x27;identifier&#x27;));
+    member.title &#x3D; member.isSelf ? &#x60;${member.title} (${this.resourceService.frmelmnts.lbl.you})&#x60; : member.title;
+    member.isMenu &#x3D; member.isAdmin &amp;&amp; !(member.isSelf || member.isCreator);
+
+    if (this.isCurrentUserCreator) {
+      member.isMenu &#x3D; !member.isSelf;
+    } else if (this.isCurrentUserAdmin) {
+      member.isMenu &#x3D; (member.isSelf || member.isCreator) ? false : true;
+    } else {
+      member.isMenu &#x3D; false;
+    }
+
+    return member;
+  }
+
+  addGroupFields(group) {
+    const currentUser &#x3D; _.find(_.get(group, &#x27;members&#x27;), (m) &#x3D;&gt; _.get(m, &#x27;userId&#x27;) &#x3D;&#x3D;&#x3D; this.userService.userid);
+    group.isCreator &#x3D; _.get(group, &#x27;createdBy&#x27;) &#x3D;&#x3D;&#x3D; this.userService.userid;
+    group.isAdmin &#x3D; group.isCreator ? true :
+    (currentUser ? _.isEqual(_.get(currentUser, &#x27;role&#x27;), &#x27;admin&#x27;) :
+    _.isEqual(_.get(group, &#x27;memberRole&#x27;), &#x27;admin&#x27;));
+    group.initial &#x3D; _.get(group, &#x27;name[0]&#x27;);
+    return group;
+  }
+
+  createGroup(groupData: IGroupCard) {
+    return this.groupCservice.create(groupData);
+  }
+
+  updateGroup(groupId: string, updateRequest: IGroupUpdate) {
+    return this.groupCservice.updateById(groupId, updateRequest);
+  }
+
+  searchUserGroups(request: CsGroupSearchCriteria) {
+    return this.groupCservice.search(request);
+  }
+
+  // To get groupData from csService
+  getGroupById(groupId: string, includeMembers?: boolean, includeActivities?: boolean, groupActivities?: boolean) {
+    const groupData &#x3D; this.groupCservice.getById(groupId, { includeMembers, includeActivities, groupActivities });
+    return groupData;
+  }
+
+  deleteGroupById(groupId: string) {
+    return this.groupCservice.deleteById(groupId);
+  }
+
+  addMemberById(groupId: string, members: IMember) {
+    return this.groupCservice.addMembers(groupId, members);
+  }
+
+  updateMembers(groupId: string, updateMembersRequest: CsGroupUpdateMembersRequest) {
+    return this.groupCservice.updateMembers(groupId, updateMembersRequest);
+  }
+
+  removeMembers(groupId: string, userIds: string[]) {
+    return this.groupCservice.removeMembers(groupId, { userIds });
+  }
+
+  addActivities(groupId: string, addActivitiesRequest: CsGroupAddActivitiesRequest) {
+    return this.groupCservice.addActivities(groupId, addActivitiesRequest);
+  }
+
+  updateActivities(groupId: string, updateActivitiesRequest: CsGroupUpdateActivitiesRequest) {
+    return this.groupCservice.updateActivities(groupId, updateActivitiesRequest);
+  }
+
+  removeActivities(groupId: string, removeActivitiesRequest: CsGroupRemoveActivitiesRequest) {
+    return this.groupCservice.removeActivities(groupId, removeActivitiesRequest);
+  }
+
+  getUserData(memberId: string, captchaToken: object &#x3D; {}) {
+    return this.userCservice.checkUserExists({key: &#x27;userName&#x27;, value: memberId}, captchaToken);
+  }
+
+getActivity(groupId, activity, mergeGroup, leafNodesCount?) {
+    return this.groupCservice.activityService.getDataAggregation(groupId, activity, mergeGroup, leafNodesCount);
+  }
+
+  set groupData(group: IGroupCard) {
+    this._groupData &#x3D; this.addGroupFields(group);
+  }
+
+  get groupData() {
+    return this._groupData;
+  }
+
+  emitCloseForm() {
+    this.closeForm.emit();
+  }
+
+  emitMembers(members: IGroupMember[]) {
+    this.membersList.emit(members);
+  }
+
+  emitShowLoader(value) {
+    this.showLoader.emit(value);
+  }
+
+  goBack() {
+    if (this.navigationhelperService[&#x27;_history&#x27;].length &lt;&#x3D; 1) {
+      this.router.navigate([MY_GROUPS]);
+    } else {
+      this.navigationhelperService.goBack();
+    }
+  }
+
+  addGroupPaletteList(groupList: []) {
+
+    const bgColors &#x3D; [&#x27;#FFDFD9&#x27;, &#x27;#FFD6EB&#x27;, &#x27;#DAD4FF&#x27;, &#x27;#DAFFD8&#x27;, &#x27;#C2E2E9&#x27;, &#x27;#FFE59B&#x27;, &#x27;#C2ECE6&#x27;, &#x27;#FFDFC7&#x27;, &#x27;#D4F386&#x27;, &#x27;#E1E1E1&#x27;];
+    const titleColors &#x3D; [&#x27;#870D24&#x27;, &#x27;#920251&#x27;, &#x27;#2F27B9&#x27;, &#x27;#218432&#x27;, &#x27;#07718A&#x27;, &#x27;#5C4500&#x27;, &#x27;#0C554A&#x27;, &#x27;#6D3E1C&#x27;, &#x27;#374809&#x27;, &#x27;#666666&#x27;];
+
+    _.forEach(groupList, group &#x3D;&gt; {
+      group.cardBgColor &#x3D; bgColors[Math.floor(
+        Math.random() * bgColors.length)];
+      group.cardTitleColor &#x3D; titleColors[Math.floor(
+        Math.random() * titleColors.length)];
+    });
+
+    return groupList || [];
+    }
+
+
+  addTelemetry(eid: {id: string, extra?: {}, edata?: {type: string, subtype?: string}}, routeData, cdata, groupId?, obj?) {
+    const id &#x3D; _.get(routeData, &#x27;params.groupId&#x27;) || groupId;
+    // Overridding the default edata properties if user is passing
+    const  type &#x3D; (_.defaults({}, eid.edata, {type: &#x27;click&#x27;})).type;
+    const interactData: IInteractEventInput &#x3D; {
+      context: {
+        env: _.get(routeData, &#x27;data.telemetry.env&#x27;),
+        cdata: cdata
+      },
+      edata: {
+        id: eid.id,
+        type: type,
+        pageid: _.get(routeData, &#x27;data.telemetry.pageid&#x27;),
+      }
+    };
+
+    if (eid.edata) {
+      interactData.edata.subtype &#x3D; eid.edata.subtype;
+    }
+    if (!_.isEmpty(eid.extra)) {
+      interactData.edata.extra &#x3D; eid.extra;
+    }
+
+    if (id) {
+      interactData.context.cdata.push({id: id, type: &#x27;Group&#x27;});
+    }
+
+    if (obj) {
+      interactData[&#x27;object&#x27;] &#x3D; obj;
+    }
+    this.telemetryService.interact(interactData);
+  }
+
+  getImpressionObject(routeData, url, edata?): IImpressionEventInput {
+    // Overridding the default edata properties if user is passing
+    const type &#x3D; (_.defaults({},  edata, { type: _.get(routeData, &#x27;data.telemetry.type&#x27;)})).type;
+    const subtype &#x3D; (_.defaults({},  edata, { subtype: _.get(routeData, &#x27;data.telemetry.subtype&#x27;)})).subtype;
+    const impressionObj &#x3D; {
+      context: {
+        env: _.get(routeData, &#x27;data.telemetry.env&#x27;)
+      },
+      edata: {
+        type: type,
+        pageid: _.get(routeData, &#x27;data.telemetry.pageid&#x27;),
+        subtype: subtype,
+        uri: url,
+        duration: this.navigationhelperService.getPageLoadTime()
+      },
+    };
+
+    if (_.get(routeData, &#x27;params.groupId&#x27;)) {
+      impressionObj[&#x27;object&#x27;] &#x3D; {
+        id: _.get(routeData, &#x27;params.groupId&#x27;),
+        type: &#x27;Group&#x27;,
+        ver: &#x27;1.0&#x27;,
+      };
+    }
+    return impressionObj;
+  }
+
+  getRecaptchaSettings() {
+    const systemSetting &#x3D; {
+      url: this.configService.urlConFig.URLS.SYSTEM_SETTING.GOOGLE_RECAPTCHA
+    };
+    return this.learnerService.get(systemSetting);
+  }
+
+  emitMenuVisibility(visibility) {
+    this.showMenu.emit(visibility);
+  }
+
+  getSupportedActivityList() {
+    return this.groupCservice.getSupportedActivities();
+  }
+
+  set groupListCount (count) {
+    this._groupListCount &#x3D; count;
+  }
+
+  get groupListCount () {
+    return this._groupListCount;
+  }
+
+  getSelectedLanguageStrings(activity: CsGroupSupportedActivitiesFormField) {
+    this.resourceService.languageSelected$.pipe(delay(600)).subscribe(item &#x3D;&gt; {
+      if (!_.isEmpty(activity) ) {
+            if (activity.translations) {
+              _.find(JSON.parse(activity.translations), (value, key) &#x3D;&gt; {
+                if (item.value &#x3D;&#x3D;&#x3D; key) {
+                  activity.title &#x3D; value;
+                }
+            });
+          }
+      }
+    });
+    return activity;
+  }
+
+  groupContentsByActivityType (showList, groupData) {
+    const activitiesGrouped &#x3D; _.get(groupData, &#x27;activitiesGrouped&#x27;);
+    if (activitiesGrouped) {
+
+        const activityList &#x3D; activitiesGrouped.reduce((acc, activityGroup) &#x3D;&gt; {
+          activityGroup &#x3D; this.getSelectedLanguageStrings(activityGroup);
+
+              acc[activityGroup.title] &#x3D; activityGroup.items.map((i) &#x3D;&gt; {
+                const activity &#x3D; {
+                  ...i.activityInfo,
+                  type: i.type,
+                  cardImg: _.get(i, &#x27;activityInfo.appIcon&#x27;) || this.configService.appConfig.assetsPath.book,
+                };
+                return activity;
+              });
+              showList &#x3D; !showList ? Object.values(acc).length &gt; 0 : showList;
+              return acc;
+
+        }, {});
+        Object.keys(activityList).forEach(key &#x3D;&gt; activityList[key].length &lt;&#x3D; 0 &amp;&amp; delete activityList[key]);
+        return { showList, activities: activityList };
+    }
+    return { showList, activities: activitiesGrouped || {} };
+}
+
+  emitActivateEvent(name, eventName) {
+    this.showActivateModal.emit({name, eventName});
+  }
+
+  deActivateGroupById(groupId: string) {
+    return this.groupCservice.suspendById(groupId);
+  }
+
+  activateGroupById(groupId: string) {
+    return this.groupCservice.reactivateById(groupId);
+  }
+
+  emitUpdateEvent(value) {
+    this.updateEvent.emit(value);
+  }
+
+  updateGroupStatus(group: CsGroup, status: GroupEntityStatus) {
+    group.status &#x3D; status;
+    return group.isActive();
+  }
+
+  isUserAcceptedTnc() {
+      const userTncAccepted &#x3D; _.get(this._userData, &#x27;allTncAccepted&#x27;);
+      return this._userData ? (!_.isEmpty(userTncAccepted) &amp;&amp; !_.isEmpty(_.get(userTncAccepted, &#x27;groupsTnc&#x27;))) : true;
+  }
+
+  set groupsTncDetails (groupsTnc) {
+    groupsTnc.value &#x3D; (typeof groupsTnc.value &#x3D;&#x3D;&#x3D; &#x27;string&#x27;) ? JSON.parse(groupsTnc.value) : groupsTnc.value;
+
+    this._groupsTnc &#x3D; groupsTnc;
+  }
+
+  get latestTnc() {
+    return this._groupsTnc;
+  }
+
+  set userData(user) {
+    this._userData &#x3D; user;
+  }
+
+  isTncUpdated() {
+    return _.get(this._userData, &#x27;allTncAccepted.groupsTnc.version&#x27;) &lt; _.get(this._groupsTnc, &#x27;value.latestVersion&#x27;);
+  }
+
+  updateGroupGuidelines(request: CsGroupUpdateGroupGuidelinesRequest) {
+  return this.groupCservice.updateGroupGuidelines(request);
+  }
+
+  getDashletData(courseHeirarchyData, aggData) {
+    return this.groupCservice.activityService.getDataForDashlets(courseHeirarchyData, aggData);
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'GroupsService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

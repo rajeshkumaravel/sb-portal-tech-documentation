@@ -1,0 +1,1882 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >OrgDetailsService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/core/services/org-details/org-details.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#_custodianOrg$" >_custodianOrg$</a>
+                            </li>
+                            <li>
+                                <a href="#_orgDetails$" >_orgDetails$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#_rootOrgId" >_rootOrgId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#configService" >configService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#contentService" >contentService</a>
+                            </li>
+                            <li>
+                                <a href="#custodianOrgDetails" >custodianOrgDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#learnerService" >learnerService</a>
+                            </li>
+                            <li>
+                                <a href="#orgDetails" >orgDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#orgDetails$" >orgDetails$</a>
+                            </li>
+                            <li>
+                                <a href="#orgInfo" >orgInfo</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#publicDataService" >publicDataService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#resourceService" >resourceService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#router" >router</a>
+                            </li>
+                            <li>
+                                <a href="#timeDiff" >timeDiff</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toasterService" >toasterService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#fetchOrgs" >fetchOrgs</a>
+                            </li>
+                            <li>
+                                <a href="#getCommingSoonMessage" >getCommingSoonMessage</a>
+                            </li>
+                            <li>
+                                <a href="#getCommingSoonMessageObj" >getCommingSoonMessageObj</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getCustodianOrg" >getCustodianOrg</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getCustodianOrgDetails" >getCustodianOrgDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getOrg" >getOrg</a>
+                            </li>
+                            <li>
+                                <a href="#getOrgDetails" >getOrgDetails</a>
+                            </li>
+                            <li>
+                                <a href="#processOrgData" >processOrgData</a>
+                            </li>
+                            <li>
+                                <a href="#searchOrg" >searchOrg</a>
+                            </li>
+                            <li>
+                                <a href="#searchOrgDetails" >searchOrgDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#setOrg" >setOrg</a>
+                            </li>
+                            <li>
+                                <a href="#setOrgDetails" >setOrgDetails</a>
+                            </li>
+                            <li>
+                                <a href="#setOrgDetailsToRequestHeaders" >setOrgDetailsToRequestHeaders</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#getServerTimeDiff" >getServerTimeDiff</a>
+                                </li>
+                                <li>
+                                    <a href="#getRootOrgId" >getRootOrgId</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(configService: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, cacheService: CacheService, browserCacheTtlService: <a href="../injectables/BrowserCacheTtlService.html" target="_self">BrowserCacheTtlService</a>, contentService: <a href="../injectables/ContentService.html" target="_self">ContentService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, toasterService: <a href="../injectables/ToasterService.html" target="_self">ToasterService</a>, resourceService: <a href="../injectables/ResourceService.html" target="_self">ResourceService</a>, learnerService: <a href="../injectables/LearnerService.html" target="_self">LearnerService</a>, publicDataService: <a href="../injectables/PublicDataService.html" target="_self">PublicDataService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:31</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>configService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cacheService</td>
+                                                  
+                                                        <td>
+                                                                    <code>CacheService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>browserCacheTtlService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BrowserCacheTtlService.html" target="_self" >BrowserCacheTtlService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>contentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ContentService.html" target="_self" >ContentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toasterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>resourceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>learnerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LearnerService.html" target="_self" >LearnerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>publicDataService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PublicDataService.html" target="_self" >PublicDataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchOrgs"></a>
+                    <span class="name">
+                        <span ><b>fetchOrgs</b></span>
+                        <a href="#fetchOrgs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetchOrgs(filters)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="212"
+                            class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:212</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>filters</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCommingSoonMessage"></a>
+                    <span class="name">
+                        <span ><b>getCommingSoonMessage</b></span>
+                        <a href="#getCommingSoonMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCommingSoonMessage(orgids)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="161"
+                            class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:161</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>orgids should be ordered by preference based on comming soon obj will be returned</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>orgids</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCommingSoonMessageObj"></a>
+                    <span class="name">
+                        <span ><b>getCommingSoonMessageObj</b></span>
+                        <a href="#getCommingSoonMessageObj"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCommingSoonMessageObj(data, orgids)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="191"
+                            class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:191</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>orgids</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCustodianOrg"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getCustodianOrg</b></span>
+                        <a href="#getCustodianOrg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCustodianOrg()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="151"
+                            class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:151</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCustodianOrgDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getCustodianOrgDetails</b></span>
+                        <a href="#getCustodianOrgDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCustodianOrgDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOrg"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getOrg</b></span>
+                        <a href="#getOrg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getOrg()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="143"
+                            class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:143</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOrgDetails"></a>
+                    <span class="name">
+                        <span ><b>getOrgDetails</b></span>
+                        <a href="#getOrgDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getOrgDetails(slug?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="39"
+                            class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:39</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>slug</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ServerResponse.html" target="_self" >Observable&lt;ServerResponse&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="processOrgData"></a>
+                    <span class="name">
+                        <span ><b>processOrgData</b></span>
+                        <a href="#processOrgData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>processOrgData(channels)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="222"
+                            class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:222</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>channels</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchOrg"></a>
+                    <span class="name">
+                        <span ><b>searchOrg</b></span>
+                        <a href="#searchOrg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>searchOrg()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="95"
+                            class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:95</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchOrgDetails"></a>
+                    <span class="name">
+                        <span ><b>searchOrgDetails</b></span>
+                        <a href="#searchOrgDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>searchOrgDetails(request)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="120"
+                            class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:120</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>request</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setOrg"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>setOrg</b></span>
+                        <a href="#setOrg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setOrg(orgdata)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="139"
+                            class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:139</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>orgdata</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setOrgDetails"></a>
+                    <span class="name">
+                        <span ><b>setOrgDetails</b></span>
+                        <a href="#setOrgDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setOrgDetails(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="134"
+                            class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:134</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setOrgDetailsToRequestHeaders"></a>
+                    <span class="name">
+                        <span ><b>setOrgDetailsToRequestHeaders</b></span>
+                        <a href="#setOrgDetailsToRequestHeaders"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setOrgDetailsToRequestHeaders()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="86"
+                            class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:86</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_custodianOrg$"></a>
+                    <span class="name">
+                        <span ><b>_custodianOrg$</b></span>
+                        <a href="#_custodianOrg$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.getCustodianOrg().pipe(shareReplay(1))</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_orgDetails$"></a>
+                    <span class="name">
+                        <span ><b>_orgDetails$</b></span>
+                        <a href="#_orgDetails$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject&lt;any&gt;(undefined)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_rootOrgId"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>_rootOrgId</b></span>
+                        <a href="#_rootOrgId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:26</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Contains root org id</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="configService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>configService</b></span>
+                        <a href="#configService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>contentService</b></span>
+                        <a href="#contentService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ContentService.html" target="_self" >ContentService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="custodianOrgDetails"></a>
+                    <span class="name">
+                        <span ><b>custodianOrgDetails</b></span>
+                        <a href="#custodianOrgDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="learnerService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>learnerService</b></span>
+                        <a href="#learnerService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/LearnerService.html" target="_self" >LearnerService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orgDetails"></a>
+                    <span class="name">
+                        <span ><b>orgDetails</b></span>
+                        <a href="#orgDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orgDetails$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>orgDetails$</b></span>
+                        <a href="#orgDetails$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this._orgDetails$.asObservable()
+  .pipe(skipWhile(data &#x3D;&gt; data &#x3D;&#x3D;&#x3D; undefined || data &#x3D;&#x3D;&#x3D; null))</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orgInfo"></a>
+                    <span class="name">
+                        <span ><b>orgInfo</b></span>
+                        <a href="#orgInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="publicDataService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>publicDataService</b></span>
+                        <a href="#publicDataService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/PublicDataService.html" target="_self" >PublicDataService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resourceService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>resourceService</b></span>
+                        <a href="#resourceService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="router"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>router</b></span>
+                        <a href="#router"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="timeDiff"></a>
+                    <span class="name">
+                        <span ><b>timeDiff</b></span>
+                        <a href="#timeDiff"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toasterService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>toasterService</b></span>
+                        <a href="#toasterService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getServerTimeDiff"></a>
+                        <span class="name"><b>getServerTimeDiff</b><a href="#getServerTimeDiff"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>getServerTimeDiff()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="204" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:204</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getRootOrgId"></a>
+                        <span class="name"><b>getRootOrgId</b><a href="#getRootOrgId"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>getRootOrgId()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="208" class="link-to-prism">src/app/modules/core/services/org-details/org-details.service.ts:208</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {throwError, of, Observable, BehaviorSubject } from &#x27;rxjs&#x27;;
+import { mergeMap, map, catchError, skipWhile, shareReplay } from &#x27;rxjs/operators&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import { ConfigService, ServerResponse, ToasterService, ResourceService, BrowserCacheTtlService } from &#x27;@sunbird/shared&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { ContentService } from &#x27;./../content/content.service&#x27;;
+import { PublicDataService } from &#x27;./../public-data/public-data.service&#x27;;
+import { CacheService } from &#x27;ng2-cache-service&#x27;;
+import { LearnerService } from &#x27;./../learner/learner.service&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class OrgDetailsService {
+
+  orgDetails: any;
+  orgInfo: any;
+  timeDiff: any;
+  custodianOrgDetails: any;
+
+  _orgDetails$ &#x3D; new BehaviorSubject&lt;any&gt;(undefined);
+  /**
+   * Contains root org id
+   */
+  public _rootOrgId: string;
+
+  public readonly orgDetails$: Observable&lt;any&gt; &#x3D; this._orgDetails$.asObservable()
+  .pipe(skipWhile(data &#x3D;&gt; data &#x3D;&#x3D;&#x3D; undefined || data &#x3D;&#x3D;&#x3D; null));
+
+  _custodianOrg$: Observable&lt;any&gt; &#x3D; this.getCustodianOrg().pipe(shareReplay(1));
+
+  constructor(public configService: ConfigService, private cacheService: CacheService,
+    private browserCacheTtlService: BrowserCacheTtlService,
+    public contentService: ContentService, public router: Router, public toasterService: ToasterService,
+    public resourceService: ResourceService, public learnerService: LearnerService, public publicDataService: PublicDataService) {
+  }
+
+  getOrgDetails(slug?: string): Observable&lt;ServerResponse&gt; {
+    const option &#x3D; {
+      url: this.configService.urlConFig.URLS.ADMIN.ORG_SEARCH, // commonly used search request, cached at proxy
+      data: {
+        request: {
+          filters: {
+            slug: slug || (&lt;HTMLInputElement&gt;document.getElementById(&#x27;defaultTenant&#x27;)).value,
+            isTenant: true
+          }
+        }
+      }
+    };
+    if (this.orgDetails) {
+      return of(this.orgDetails);
+    } else {
+      return this.publicDataService.postWithHeaders(option).pipe(mergeMap((data: ServerResponse) &#x3D;&gt; {
+        if (data.ts) {
+          // data.ts is taken from header and not from api response ts, and format in IST
+          this.timeDiff &#x3D; data.ts;
+        }
+        if (data.result.response.count &gt; 0) {
+          this.orgDetails &#x3D; data.result.response.content[0];
+          this._rootOrgId &#x3D; this.orgDetails.id;
+          this.setOrgDetailsToRequestHeaders();
+          this._orgDetails$.next({ err: null, orgDetails: this.orgDetails });
+          return of(data.result.response.content[0]);
+        } else {
+          option.data.request.filters.slug &#x3D; (&lt;HTMLInputElement&gt;document.getElementById(&#x27;defaultTenant&#x27;)).value;
+          return this.publicDataService.post(option).pipe(mergeMap((responseData: ServerResponse) &#x3D;&gt; {
+            if (responseData.result.response.count &gt; 0) {
+              this.orgDetails &#x3D; responseData.result.response.content[0];
+              this._rootOrgId &#x3D; this.orgDetails.id;
+              this.setOrgDetailsToRequestHeaders();
+              this._orgDetails$.next({ err: null, orgDetails: this.orgDetails });
+              return of(responseData.result.response.content[0]);
+            } else {
+              this._orgDetails$.next({ err: responseData, orgDetails: this.orgDetails });
+              throwError(responseData);
+            }
+          }), catchError((err) &#x3D;&gt; {
+            this._orgDetails$.next({ err: err, orgDetails: this.orgDetails });
+            return throwError(err);
+          }));
+        }
+      }));
+    }
+  }
+  setOrgDetailsToRequestHeaders() {
+    this.learnerService.rootOrgId &#x3D; this.orgDetails.id;
+    this.learnerService.channelId &#x3D; this.orgDetails.hashTagId;
+    this.contentService.rootOrgId &#x3D; this.orgDetails.id;
+    this.contentService.channelId &#x3D; this.orgDetails.hashTagId;
+    this.publicDataService.rootOrgId &#x3D; this.orgDetails.id;
+    this.publicDataService.channelId &#x3D; this.orgDetails.hashTagId;
+  }
+
+  searchOrg() {
+    const option &#x3D; {
+      url: this.configService.urlConFig.URLS.ADMIN.ORG_SEARCH, // commonly used search request, cached at proxy
+      data: {
+        request: {
+          filters: {
+            isTenant: true
+          }
+        }
+      }
+    };
+    const orgDetails: any &#x3D; this.cacheService.get(&#x27;orgDetails&#x27;);
+    if (orgDetails) {
+      return of(orgDetails);
+    } else {
+      return this.publicDataService.post(option).pipe(mergeMap((data: ServerResponse) &#x3D;&gt; {
+        if (data.result.response.count &gt; 0) {
+          this.setOrgDetails(data.result.response);
+          return of(data.result.response);
+        }
+      }));
+    }
+  }
+
+
+  searchOrgDetails(request) {
+    const option &#x3D; {
+      url: this.configService.urlConFig.URLS.ADMIN.ORG_SEARCH,
+      data: {
+        request: request
+      }
+    };
+    return this.publicDataService.post(option).pipe(mergeMap((data: ServerResponse) &#x3D;&gt; {
+      if (_.get(data, &#x27;result.response.count&#x27;) &gt; 0) {
+        return of(_.get(data, &#x27;result.response&#x27;));
+      }
+    }));
+  }
+
+  setOrgDetails(data) {
+    this.cacheService.set(&#x27;orgDetails&#x27;, data, {
+      maxAge: this.browserCacheTtlService.browserCacheTtl
+    });
+  }
+  public setOrg(orgdata) {
+    this.orgInfo &#x3D; orgdata;
+  }
+
+  public getOrg(): void {
+    return this.orgInfo;
+  }
+
+  public getCustodianOrgDetails() {
+    return this._custodianOrg$;
+  }
+
+  private getCustodianOrg() {
+    const systemSetting &#x3D; {
+      url: this.configService.urlConFig.URLS.SYSTEM_SETTING.CUSTODIAN_ORG,
+    };
+    return this.learnerService.get(systemSetting);
+  }
+
+  /**
+   * orgids should be ordered by preference based on comming soon obj will be returned
+   */
+  getCommingSoonMessage(orgids) {
+    if (!orgids) {
+      return of({});
+    }
+    const contentComingSoon: any &#x3D; this.cacheService.get(&#x27;contentComingSoon&#x27;);
+    if (contentComingSoon) {
+      return of(this.getCommingSoonMessageObj(contentComingSoon, orgids));
+    } else {
+      const systemSetting &#x3D; {
+        url: this.configService.urlConFig.URLS.SYSTEM_SETTING.COMMING_SOON_MESSAGE,
+      };
+      return this.learnerService.get(systemSetting).pipe(map((data: ServerResponse) &#x3D;&gt; {
+        if (_.has(data, &#x27;result.response&#x27;)) {
+          let commingSoonData &#x3D; {};
+          try {
+            commingSoonData &#x3D; JSON.parse(data.result.response.value);
+          } catch (e) {}
+          this.cacheService.set(&#x27;contentComingSoon&#x27;, commingSoonData, {
+            maxAge: this.browserCacheTtlService.browserCacheTtl
+          });
+          return this.getCommingSoonMessageObj(commingSoonData, orgids);
+        } else {
+          return {};
+        }
+      }), catchError((err) &#x3D;&gt; {
+        return of({});
+      }));
+    }
+  }
+
+  getCommingSoonMessageObj (data, orgids) {
+    let commingSoonMessageObj &#x3D; {};
+    if (data &amp;&amp; data.length) {
+      _.forEach(orgids, (eachrootorg) &#x3D;&gt; {
+        commingSoonMessageObj &#x3D; _.find(data, {rootOrgId: eachrootorg});
+        if (commingSoonMessageObj) {
+          return false;
+        }
+      });
+    }
+    return commingSoonMessageObj;
+  }
+
+  get getServerTimeDiff() {
+    return this.timeDiff;
+  }
+
+  get getRootOrgId() {
+    return this._rootOrgId;
+  }
+
+  fetchOrgs(filters) {
+    const option &#x3D; {
+      url: this.configService.urlConFig.URLS.ADMIN.ORG_EXT_SEARCH,
+      data: {
+        request: filters
+      }
+    };
+
+    return this.publicDataService.post(option);
+  }
+  processOrgData(channels) {
+    const rootOrgIds &#x3D; [];
+    _.forEach(channels, (channelData) &#x3D;&gt; {
+      if (channelData.name) {
+        rootOrgIds.push(channelData.name);
+      }
+    });
+    return rootOrgIds;
+  }
+}
+
+
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'OrgDetailsService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

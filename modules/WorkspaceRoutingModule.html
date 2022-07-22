@@ -1,0 +1,502 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content module">
+                   <div class="content-data">
+
+
+
+<ol class="breadcrumb">
+    <li>Modules</li>
+    <li >WorkspaceRoutingModule</li>
+</ol>
+
+
+<ul class="nav nav-tabs" role="tablist">
+    <li  class="active" >
+        <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+    <li >
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/workspace/workspace-routing.module.ts</code>
+        </p>
+
+
+
+
+
+        <div class="container-fluid module">
+            <div class="row">
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
+import { Routes, RouterModule } from &#x27;@angular/router&#x27;;
+import {
+  WorkspaceComponent, CreateContentComponent, DraftComponent,
+  ReviewSubmissionsComponent, PublishedComponent, CollectionEditorComponent, ContentEditorComponent,
+  GenericEditorComponent, UploadedComponent, DataDrivenComponent, FlaggedComponent, UpForReviewComponent,
+  BatchListComponent, BatchPageSectionComponent, UpdateBatchComponent,
+  UpforreviewContentplayerComponent, ReviewsubmissionsContentplayerComponent,
+  FlagConentplayerComponent, PublishedPopupComponent, RequestChangesPopupComponent, LimitedPublishedComponent,
+  AllContentComponent, FlagReviewerComponent, CollaboratingOnComponent, AllTextbooksComponent, NewCollectionEditorComponent } from &#x27;./components&#x27;;
+import { AuthGuard } from &#x27;../core/guard/auth-gard.service&#x27;;
+const telemetryEnv &#x3D; &#x27;workspace&#x27;;
+const objectType &#x3D; &#x27;workspace&#x27;;
+const routes: Routes &#x3D; [
+  {
+    path: &#x27;content&#x27;, component: WorkspaceComponent, canActivate: [AuthGuard], data: { roles: &#x27;workspace&#x27; },
+    children: [
+      {
+        path: &#x27;create&#x27;, component: CreateContentComponent, canActivate: [AuthGuard],
+        data: {
+          telemetry: {
+            env: telemetryEnv, pageid: &#x27;workspace-content-create&#x27;, uri: &#x27;/workspace/content/create&#x27;,
+            type: &#x27;view&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+          }, roles: &#x27;createRole&#x27;,
+          breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+        },
+        children: [
+          {
+            path: &#x27;textbook&#x27;, component: DataDrivenComponent,
+            data: {
+              telemetry: {
+                env: telemetryEnv, pageid: &#x27;workspace-create-textbook&#x27;, uri: &#x27;/workspace/content/create/textbook&#x27;,
+                type: &#x27;view&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+              }, breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; },
+              { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+            }
+          },
+          {
+            path: &#x27;uploadcontent&#x27;, component: DataDrivenComponent,
+            data: {
+              telemetry: {
+                env: telemetryEnv, pageid: &#x27;workspace-content-create&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;/workspace/content/create&#x27;,
+                type: &#x27;view&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+              }, breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; },
+              { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+            }
+          },
+          {
+            path: &#x27;course&#x27;, component: DataDrivenComponent,
+            data: {
+              telemetry: {
+                env: telemetryEnv, pageid: &#x27;workspace-create-course&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;/workspace/content/create/course&#x27;,
+                type: &#x27;view&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+              }, breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; },
+              { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+            }
+          },
+          {
+            path: &#x27;studymaterial&#x27;, component: DataDrivenComponent,
+            data: {
+              telemetry: {
+                env: telemetryEnv, pageid: &#x27;workspace-create-lesson&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;/workspace/content/create/studymaterial&#x27;,
+                type: &#x27;view&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+              }, breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; },
+              { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+            }
+          },
+          {
+            path: &#x27;collection&#x27;, component: DataDrivenComponent,
+            data: {
+              telemetry: {
+                env: telemetryEnv, pageid: &#x27;workspace-create-collection&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;/workspace/content/create/collection&#x27;,
+                type: &#x27;view&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+              }, breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; },
+              { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+            }
+          },
+          {
+            path: &#x27;lessonplan&#x27;, component: DataDrivenComponent,
+            data: {
+              telemetry: {
+                env: telemetryEnv, pageid: &#x27;workspase-create-lessonplan&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;/workspace/content/create/lessonplan&#x27;,
+                type: &#x27;view&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+              }, breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; },
+              { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+            }
+          },
+          {
+            path: &#x27;assessment&#x27;, component: DataDrivenComponent,
+            data: {
+              telemetry: {
+                env: telemetryEnv, pageid: &#x27;workspace-create-assessment&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;/workspace/content/create/assessment&#x27;,
+                type: &#x27;view&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+              }, breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; },
+              { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+            }
+          },
+          {
+            path: &#x27;questionset&#x27;, component: DataDrivenComponent,
+            data: {
+              telemetry: {
+                env: telemetryEnv, pageid: &#x27;workspace-create-questionset&#x27;, uri: &#x27;/workspace/content/create/questionset&#x27;,
+                type: &#x27;view&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+              }, breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; },
+              { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+            }
+          }
+        ]
+      },
+      {
+        path: &#x27;edit/collection/:contentId/:type/:state/:framework/:contentStatus&#x27;,
+          component: CollectionEditorComponent, canActivate: [AuthGuard],
+        data: { roles: &#x27;workspace&#x27; }
+      },
+      {
+        path: &#x27;edit/content/:contentId/:state/:framework/:contentStatus&#x27;, component: ContentEditorComponent,
+        canActivate: [AuthGuard], data: { roles: &#x27;workspace&#x27; }
+      },
+      {
+        path: &#x27;edit/generic&#x27;, component: GenericEditorComponent,
+        canActivate: [AuthGuard], data: { roles: &#x27;workspace&#x27; }
+      },
+      {
+        path: &#x27;edit/generic/:contentId/:state/:framework/:contentStatus&#x27;, component: GenericEditorComponent,
+        canActivate: [AuthGuard], data: { roles: &#x27;workspace&#x27; }
+      },
+      {
+        path: &#x27;edit/editorforlargecontent&#x27;, component: GenericEditorComponent,
+        canActivate: [AuthGuard], data: { roles: &#x27;workspace&#x27; , isLargeFileUpload: true }
+      },
+      {
+        path: &#x27;edit/collection/:contentId/:type/:state/:framework&#x27;,
+          component: CollectionEditorComponent, canActivate: [AuthGuard],
+        data: { roles: &#x27;workspace&#x27; }
+      },
+      {
+        path: &#x27;edit/content/:contentId/:state/:framework&#x27;, component: ContentEditorComponent,
+        canActivate: [AuthGuard], data: { roles: &#x27;workspace&#x27; }
+      },
+      {
+        path: &#x27;edit/generic/:contentId/:state/:framework&#x27;, component: GenericEditorComponent,
+        canActivate: [AuthGuard], data: { roles: &#x27;workspace&#x27; }
+      },
+      {
+        path: &#x27;draft/:pageNumber&#x27;, component: DraftComponent, canActivate: [AuthGuard],
+        data: {
+          telemetry: {
+            env: telemetryEnv, pageid: &#x27;workspace-content-draft&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;/workspace/content/draft&#x27;,
+            type: &#x27;list&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+          }, roles: &#x27;draftRole&#x27;,
+          breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+        }
+      },
+      {
+        path: &#x27;review/:pageNumber&#x27;, component: ReviewSubmissionsComponent, canActivate: [AuthGuard],
+        data: {
+          telemetry: {
+            env: telemetryEnv, pageid: &#x27;workspace-content-inreview&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;/workspace/content/review&#x27;,
+            type: &#x27;list&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+          }, roles: &#x27;inreviewRole&#x27;,
+          breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+        }
+      },
+      {
+        path: &#x27;published/:pageNumber&#x27;, component: PublishedComponent, canActivate: [AuthGuard],
+        data: {
+          telemetry: {
+            env: telemetryEnv, pageid: &#x27;workspace-content-published&#x27;, uri: &#x27;/workspace/content/published&#x27;,
+            type: &#x27;list&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+          }, roles: &#x27;publishedRole&#x27;,
+          breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+        }
+      },
+      {
+        path: &#x27;uploaded/:pageNumber&#x27;, component: UploadedComponent, canActivate: [AuthGuard],
+        data: {
+          telemetry: {
+            env: telemetryEnv, pageid: &#x27;workspace-content-uploaded&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;/workspace/content/uploaded&#x27;,
+            type: &#x27;list&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+          }, roles: &#x27;alluploadsRole&#x27;,
+          breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+        }
+      },
+      {
+        path: &#x27;flagged/:pageNumber&#x27;, component: FlaggedComponent, canActivate: [AuthGuard],
+        data: {
+          telemetry: {
+            env: telemetryEnv, pageid: &#x27;workspace-content-flagged&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;workspace/content/flagged&#x27;,
+            type: &#x27;list&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+          }, roles: &#x27;flaggedRole&#x27;,
+          breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+        }
+      },
+      {
+        path: &#x27;upForReview/:pageNumber&#x27;, component: UpForReviewComponent, canActivate: [AuthGuard],
+        data: {
+          telemetry: {
+            env: telemetryEnv, pageid: &#x27;workspace-content-upforreview&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;workspace/content/upForReview&#x27;,
+            type: &#x27;list&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+          }, roles: &#x27;upForReviewRole&#x27;,
+          breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+        }
+      },
+      {
+        path: &#x27;limited-publish/:pageNumber&#x27;, component: LimitedPublishedComponent, canActivate: [AuthGuard],
+        data: {
+          telemetry: {
+            env: telemetryEnv, pageid: &#x27;workspace-content-unlisted&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;/workspace/content/limited-publish&#x27;,
+            type: &#x27;list&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+          }, roles: &#x27;limitedPublishingRole&#x27;,
+          breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+        }
+      },
+      {
+        path: &#x27;batches/:category&#x27;, component: BatchPageSectionComponent, canActivate: [AuthGuard],
+        data: {
+          telemetry: {
+            env: telemetryEnv, pageid: &#x27;workspace-course-batch&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;/workspace/batches&#x27;,
+            type: &#x27;list&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+          }, roles: &#x27;courseBatchRoles&#x27;,
+          breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+        },
+        children: [{
+          path: &#x27;update/batch/:batchId&#x27;, component: UpdateBatchComponent, canActivate: [AuthGuard],
+          data: {
+            telemetry: {
+              env: telemetryEnv, pageid: &#x27;batch-edit&#x27;, uri: &#x27;/update/batch/&#x27;,
+              type: &#x27;detail&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+            }, roles: &#x27;courseBatchRoles&#x27;,
+            breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+          }
+        }]
+      },
+      {
+        path: &#x27;allcontent/:pageNumber&#x27;, component: AllContentComponent, canActivate: [AuthGuard],
+        data: {
+          telemetry: {
+            env: telemetryEnv, pageid: &#x27;workspace-content-allcontent&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;workspace/content/allcontent&#x27;,
+            type: &#x27;list&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+          }, roles: &#x27;allContentRole&#x27;,
+          breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+        }
+      },
+      {
+        path: &#x27;alltextbooks/:pageNumber&#x27;, component: AllTextbooksComponent, canActivate: [AuthGuard],
+        data: {
+          telemetry: {
+            env: telemetryEnv, pageid: &#x27;workspace-content-alltextbooks&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;workspace/content/alltextbooks&#x27;,
+            type: &#x27;list&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+          }, roles: &#x27;alltextbookRole&#x27;,
+          breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+        }
+      },
+      {
+        path: &#x27;flagreviewer/:pageNumber&#x27;, component: FlagReviewerComponent, canActivate: [AuthGuard],
+        data: {
+          telemetry: {
+            env: telemetryEnv, pageid: &#x27;workspace-content-flagreviewer&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;workspace/content/flagreviewer&#x27;,
+            type: &#x27;list&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+          }, roles: &#x27;flagReviewerRole&#x27;,
+          breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+        }
+      },
+      {
+        path: &#x27;collaborating-on/:pageNumber&#x27;, component: CollaboratingOnComponent, canActivate: [AuthGuard],
+        data: {
+          telemetry: {
+            env: telemetryEnv, pageid: &#x27;workspace-content-collaborating-on&#x27;,
+      subtype: &#x27;paginate&#x27;, uri: &#x27;workspace/content/collaborating-on&#x27;,
+            type: &#x27;list&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+          }, roles: &#x27;collaboratingRole&#x27;,
+          breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+        }
+      }
+    ]
+  },
+  {
+    path: &#x27;edit/:type/:contentId/:state/:contentStatus&#x27;, component: NewCollectionEditorComponent, canActivate: [AuthGuard],
+    data: {
+      roles: &#x27;workspace&#x27;,
+      breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }],
+      hideHeaderNFooter: true
+    }
+  },
+  {
+    path: &#x27;content/upForReview/content/:contentId&#x27;, component: UpforreviewContentplayerComponent, canActivate: [AuthGuard],
+    data: {
+      roles: &#x27;workspace&#x27;,
+      breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+    },
+    children: [
+      { path: &#x27;publish&#x27;, component: PublishedPopupComponent },
+      { path: &#x27;requestchanges&#x27;, component: RequestChangesPopupComponent }
+    ]
+  },
+  {
+    path: &#x27;content/flagreviewer/content/:contentId&#x27;, component: UpforreviewContentplayerComponent, canActivate: [AuthGuard],
+    data: {
+      roles: &#x27;workspace&#x27;,
+      breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+    },
+    children: [
+      { path: &#x27;publish&#x27;, component: PublishedPopupComponent },
+      { path: &#x27;requestchanges&#x27;, component: RequestChangesPopupComponent }
+    ]
+  },
+  {
+    path: &#x27;content/flag/content/:contentId&#x27;, component: FlagConentplayerComponent, canActivate: [AuthGuard],
+    data: {
+      roles: &#x27;workspace&#x27;,
+      breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+    }
+  },
+  {
+    path: &#x27;content/review/content/:contentId&#x27;, component: ReviewsubmissionsContentplayerComponent, canActivate: [AuthGuard],
+    data: {
+      roles: &#x27;workspace&#x27;,
+      breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+    }
+  },
+  {
+    path: &#x27;batches/view-all/:section/:pageNumber&#x27;, component: BatchListComponent, canActivate: [AuthGuard],
+    data: {
+      telemetry: {
+        env: telemetryEnv, pageid: &#x27;view-all&#x27;, subtype: &#x27;paginate&#x27;, uri: &#x27;/workspace/content/batches/view-all&#x27;,
+        type: &#x27;list&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+      }, roles: &#x27;courseBatchRoles&#x27;,
+      breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+    },
+    children: [{
+      path: &#x27;update/batch/:batchId&#x27;, component: UpdateBatchComponent, canActivate: [AuthGuard],
+      data: {
+        telemetry: {
+          env: telemetryEnv, pageid: &#x27;batch-edit&#x27;, uri: &#x27;/update/batch/&#x27;,
+          type: &#x27;detail&#x27;, mode: &#x27;create&#x27;, object: { type: objectType, ver: &#x27;1.0&#x27; }
+        }, roles: &#x27;courseBatchRoles&#x27;,
+        breadcrumbs: [{ label: &#x27;Home&#x27;, url: &#x27;/home&#x27; }, { label: &#x27;Profile&#x27;, url: &#x27;/profile&#x27; }, { label: &#x27;My Workspace&#x27;, url: &#x27;&#x27; }]
+      }
+    }]
+  }
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class WorkspaceRoutingModule { }
+
+
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'module';
+            var COMPODOC_CURRENT_PAGE_URL = 'WorkspaceRoutingModule.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

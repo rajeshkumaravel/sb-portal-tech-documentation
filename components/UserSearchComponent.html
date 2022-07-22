@@ -1,0 +1,2814 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  UserSearchComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/search/components/user-search/user-search.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-user-search</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./user-search.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./user-search.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#activatedRoute" >activatedRoute</a>
+                            </li>
+                            <li>
+                                <a href="#closeIntractEdata" >closeIntractEdata</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#config" >config</a>
+                            </li>
+                            <li>
+                                <a href="#csvOptions" >csvOptions</a>
+                            </li>
+                            <li>
+                                <a href="#customStyle" >customStyle</a>
+                            </li>
+                            <li>
+                                <a href="#filterIntractEdata" >filterIntractEdata</a>
+                            </li>
+                            <li>
+                                <a href="#inviewLogs" >inviewLogs</a>
+                            </li>
+                            <li>
+                                <a href="#layoutConfiguration" >layoutConfiguration</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#layoutService" >layoutService</a>
+                            </li>
+                            <li>
+                                <a href="#loaderMessage" >loaderMessage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#navigationhelperService" >navigationhelperService</a>
+                            </li>
+                            <li>
+                                <a href="#noResult" >noResult</a>
+                            </li>
+                            <li>
+                                <a href="#noResultMessage" >noResultMessage</a>
+                            </li>
+                            <li>
+                                <a href="#pageLimit" >pageLimit</a>
+                            </li>
+                            <li>
+                                <a href="#pageNumber" >pageNumber</a>
+                            </li>
+                            <li>
+                                <a href="#pager" >pager</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#paginationService" >paginationService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#permissionService" >permissionService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#profileService" >profileService</a>
+                            </li>
+                            <li>
+                                <a href="#queryParams" >queryParams</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#resourceService" >resourceService</a>
+                            </li>
+                            <li>
+                                <a href="#rootOrgId" >rootOrgId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#route" >route</a>
+                            </li>
+                            <li>
+                                <a href="#searchList" >searchList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#searchService" >searchService</a>
+                            </li>
+                            <li>
+                                <a href="#selectedRoles" >selectedRoles</a>
+                            </li>
+                            <li>
+                                <a href="#showLoader" >showLoader</a>
+                            </li>
+                            <li>
+                                <a href="#telemetryImpression" >telemetryImpression</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#toasterService" >toasterService</a>
+                            </li>
+                            <li>
+                                <a href="#totalCount" >totalCount</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#unsubscribe$" >unsubscribe$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#user" >user</a>
+                            </li>
+                            <li>
+                                <a href="#userDeleteIntractEdata" >userDeleteIntractEdata</a>
+                            </li>
+                            <li>
+                                <a href="#userEditIntractEdata" >userEditIntractEdata</a>
+                            </li>
+                            <li>
+                                <a href="#userProfile" >userProfile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#userSearchService" >userSearchService</a>
+                            </li>
+                            <li>
+                                <a href="#userViewIntractEdata" >userViewIntractEdata</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#downloadUser" >downloadUser</a>
+                            </li>
+                            <li>
+                                <a href="#initLayout" >initLayout</a>
+                            </li>
+                            <li>
+                                <a href="#inview" >inview</a>
+                            </li>
+                            <li>
+                                <a href="#navigateToPage" >navigateToPage</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterViewInit" >ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#populateLocationDetailsAndSetRoles" >populateLocationDetailsAndSetRoles</a>
+                            </li>
+                            <li>
+                                <a href="#populateUserSearch" >populateUserSearch</a>
+                            </li>
+                            <li>
+                                <a href="#setInteractEventData" >setInteractEventData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(searchService: <a href="../injectables/SearchService.html" target="_self">SearchService</a>, route: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, ngZone: <a href="https://angular.io/api/core/NgZone" target="_blank">NgZone</a>, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, paginationService: <a href="../injectables/PaginationService.html" target="_self">PaginationService</a>, resourceService: <a href="../injectables/ResourceService.html" target="_self">ResourceService</a>, toasterService: <a href="../injectables/ToasterService.html" target="_self">ToasterService</a>, config: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, user: <a href="../injectables/UserService.html" target="_self">UserService</a>, userSearchService: <a href="../injectables/UserSearchService.html" target="_self">UserSearchService</a>, permissionService: <a href="../injectables/PermissionService.html" target="_self">PermissionService</a>, profileService: <a href="../injectables/ProfileService.html" target="_self">ProfileService</a>, navigationhelperService: <a href="../injectables/NavigationHelperService.html" target="_self">NavigationHelperService</a>, layoutService: <a href="../injectables/LayoutService.html" target="_self">LayoutService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="128" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:128</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor to create injected service(s) object
+Default method of Draft Component class</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>searchService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SearchService.html" target="_self" >SearchService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Reference of SearchService</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Reference of Router</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>ngZone</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/NgZone" target="_blank" >NgZone</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>activatedRoute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Reference of ActivatedRoute</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>paginationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PaginationService.html" target="_self" >PaginationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Reference of PaginationService</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>resourceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>toasterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>config</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Reference of ConfigService</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>user</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>userSearchService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserSearchService.html" target="_self" >UserSearchService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>permissionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PermissionService.html" target="_self" >PermissionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>profileService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProfileService.html" target="_self" >ProfileService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>navigationhelperService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationHelperService.html" target="_self" >NavigationHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>layoutService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LayoutService.html" target="_self" >LayoutService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="downloadUser"></a>
+                    <span class="name">
+                        <span ><b>downloadUser</b></span>
+                        <a href="#downloadUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>downloadUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="254"
+                            class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:254</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initLayout"></a>
+                    <span class="name">
+                        <span ><b>initLayout</b></span>
+                        <a href="#initLayout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initLayout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="300"
+                            class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:300</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="inview"></a>
+                    <span class="name">
+                        <span ><b>inview</b></span>
+                        <a href="#inview"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>inview(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="393"
+                            class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:393</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToPage"></a>
+                    <span class="name">
+                        <span ><b>navigateToPage</b></span>
+                        <a href="#navigateToPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>navigateToPage(page: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="290"
+                            class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:290</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This method helps to navigate to different pages.
+If page number is less than 1 or page number is greater than total number
+of pages is less which is not possible, then it returns.</p>
+<div><pre class="line-numbers"><code class="language-html"></code></pre></div></div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>page</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Variable to know which page has been clicked</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <b>Example :</b>
+                        <div>
+                            <pre class="line-numbers"><code class="language-html">navigateToPage(1)</code></pre>
+                        </div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>undefined | void</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <span ><b>ngAfterViewInit</b></span>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="377"
+                            class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:377</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="411"
+                            class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:411</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="309"
+                            class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:309</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="populateLocationDetailsAndSetRoles"></a>
+                    <span class="name">
+                        <span ><b>populateLocationDetailsAndSetRoles</b></span>
+                        <a href="#populateLocationDetailsAndSetRoles"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>populateLocationDetailsAndSetRoles()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="225"
+                            class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:225</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="populateUserSearch"></a>
+                    <span class="name">
+                        <span ><b>populateUserSearch</b></span>
+                        <a href="#populateUserSearch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>populateUserSearch()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="158"
+                            class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:158</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This method sets the make an api call to get all search data with page No and offset</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setInteractEventData"></a>
+                    <span class="name">
+                        <span ><b>setInteractEventData</b></span>
+                        <a href="#setInteractEventData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setInteractEventData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="350"
+                            class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:350</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="activatedRoute"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>activatedRoute</b></span>
+                        <a href="#activatedRoute"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:54</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To send activatedRoute.snapshot to router navigation
+service for redirection to parent component</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeIntractEdata"></a>
+                    <span class="name">
+                        <span ><b>closeIntractEdata</b></span>
+                        <a href="#closeIntractEdata"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IInteractEventEdata.html" target="_self" >IInteractEventEdata</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="config"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>config</b></span>
+                        <a href="#config"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To get url, app configs</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="csvOptions"></a>
+                    <span class="name">
+                        <span ><b>csvOptions</b></span>
+                        <a href="#csvOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    fieldSeparator: &#x27;,&#x27;,
+    quoteStrings: &#x27;&quot;&#x27;,
+    decimalseparator: &#x27;.&#x27;,
+    showLabels: true,
+    headers: []
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="120" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:120</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="customStyle"></a>
+                    <span class="name">
+                        <span ><b>customStyle</b></span>
+                        <a href="#customStyle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    backgroundColor: &#x27;#ffffff&#x27;,
+    border: &#x27;1px solid #fff&#x27;,
+    boxShadow: &#x27;0 0 6px 0 rgba(0,0,0,0.38)&#x27;,
+    borderRadius: &#x27;50%&#x27;,
+    color: &#x27;#024F9D&#x27;,
+    fontWeight: &#x27;bold&#x27;,
+    fontFamily: &#x27;inherit&#x27;,
+    fontSize: &#x27;48px&#x27;
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="110" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:110</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterIntractEdata"></a>
+                    <span class="name">
+                        <span ><b>filterIntractEdata</b></span>
+                        <a href="#filterIntractEdata"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IInteractEventEdata.html" target="_self" >IInteractEventEdata</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="inviewLogs"></a>
+                    <span class="name">
+                        <span ><b>inviewLogs</b></span>
+                        <a href="#inviewLogs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="107" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:107</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="layoutConfiguration"></a>
+                    <span class="name">
+                        <span ><b>layoutConfiguration</b></span>
+                        <a href="#layoutConfiguration"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:127</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="layoutService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>layoutService</b></span>
+                        <a href="#layoutService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/LayoutService.html" target="_self" >LayoutService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="144" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:144</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loaderMessage"></a>
+                    <span class="name">
+                        <span ><b>loaderMessage</b></span>
+                        <a href="#loaderMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:94</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>loader message</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigationhelperService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>navigationhelperService</b></span>
+                        <a href="#navigationhelperService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/NavigationHelperService.html" target="_self" >NavigationHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="144" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:144</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="noResult"></a>
+                    <span class="name">
+                        <span ><b>noResult</b></span>
+                        <a href="#noResult"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:67</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To show / hide no result message when no result found</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="noResultMessage"></a>
+                    <span class="name">
+                        <span ><b>noResultMessage</b></span>
+                        <a href="#noResultMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/INoResultMessage.html" target="_self" >INoResultMessage</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:71</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>no result  message</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pageLimit"></a>
+                    <span class="name">
+                        <span ><b>pageLimit</b></span>
+                        <a href="#pageLimit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:83</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Contains page limit of outbox list</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pageNumber"></a>
+                    <span class="name">
+                        <span ><b>pageNumber</b></span>
+                        <a href="#pageNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>1</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:79</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Current page number of inbox list</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pager"></a>
+                    <span class="name">
+                        <span ><b>pager</b></span>
+                        <a href="#pager"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IPagination.html" target="_self" >IPagination</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:99</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Contains returned object of the pagination service
+which is needed to show the pagination on inbox view</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paginationService"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>paginationService</b></span>
+                        <a href="#paginationService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/PaginationService.html" target="_self" >PaginationService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:58</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>For showing pagination on inbox list</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="permissionService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>permissionService</b></span>
+                        <a href="#permissionService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/PermissionService.html" target="_self" >PermissionService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="143" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:143</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="profileService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>profileService</b></span>
+                        <a href="#profileService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ProfileService.html" target="_self" >ProfileService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="143" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:143</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="queryParams"></a>
+                    <span class="name">
+                        <span ><b>queryParams</b></span>
+                        <a href="#queryParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="103" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:103</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>url value</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resourceService"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>resourceService</b></span>
+                        <a href="#resourceService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rootOrgId"></a>
+                    <span class="name">
+                        <span ><b>rootOrgId</b></span>
+                        <a href="#rootOrgId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="105" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:105</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="route"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>route</b></span>
+                        <a href="#route"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:49</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To navigate to other pages</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchList"></a>
+                    <span class="name">
+                        <span ><b>searchList</b></span>
+                        <a href="#searchList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Contains list of published course(s) of logged-in user</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchService"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>searchService</b></span>
+                        <a href="#searchService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/SearchService.html" target="_self" >SearchService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedRoles"></a>
+                    <span class="name">
+                        <span ><b>selectedRoles</b></span>
+                        <a href="#selectedRoles"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;string&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:108</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showLoader"></a>
+                    <span class="name">
+                        <span ><b>showLoader</b></span>
+                        <a href="#showLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:90</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This variable hepls to show and hide page loader.
+It is kept true by default as at first when we comes
+to a page the loader should be displayed before showing
+any data</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryImpression"></a>
+                    <span class="name">
+                        <span ><b>telemetryImpression</b></span>
+                        <a href="#telemetryImpression"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IImpressionEventInput.html" target="_self" >IImpressionEventInput</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>telemetryImpression</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toasterService"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>toasterService</b></span>
+                        <a href="#toasterService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To show toaster(error, success etc) after any API calls</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="totalCount"></a>
+                    <span class="name">
+                        <span ><b>totalCount</b></span>
+                        <a href="#totalCount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank" >Number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:75</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>totalCount of the list</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unsubscribe$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>unsubscribe$</b></span>
+                        <a href="#unsubscribe$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="128" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:128</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="user"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>user</b></span>
+                        <a href="#user"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:62</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To get user profile of logged-in user</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userDeleteIntractEdata"></a>
+                    <span class="name">
+                        <span ><b>userDeleteIntractEdata</b></span>
+                        <a href="#userDeleteIntractEdata"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IInteractEventEdata.html" target="_self" >IInteractEventEdata</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userEditIntractEdata"></a>
+                    <span class="name">
+                        <span ><b>userEditIntractEdata</b></span>
+                        <a href="#userEditIntractEdata"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IInteractEventEdata.html" target="_self" >IInteractEventEdata</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userProfile"></a>
+                    <span class="name">
+                        <span ><b>userProfile</b></span>
+                        <a href="#userProfile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="106" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:106</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userSearchService"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>userSearchService</b></span>
+                        <a href="#userSearchService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/UserSearchService.html" target="_self" >UserSearchService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userViewIntractEdata"></a>
+                    <span class="name">
+                        <span ><b>userViewIntractEdata</b></span>
+                        <a href="#userViewIntractEdata"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IInteractEventEdata.html" target="_self" >IInteractEventEdata</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/modules/search/components/user-search/user-search.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {combineLatest as observableCombineLatest, Subject} from &#x27;rxjs&#x27;;
+import {
+  ServerResponse, PaginationService, ResourceService, ConfigService, ToasterService, INoResultMessage,
+  NavigationHelperService, IPagination, LayoutService
+} from &#x27;@sunbird/shared&#x27;;
+import { SearchService, UserService, PermissionService } from &#x27;@sunbird/core&#x27;;
+import {Component, OnInit, NgZone, AfterViewInit, OnDestroy} from &#x27;@angular/core&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import { UserSearchService } from &#x27;./../../services&#x27;;
+import { IInteractEventEdata, IImpressionEventInput } from &#x27;@sunbird/telemetry&#x27;;
+import { ProfileService } from &#x27;@sunbird/profile&#x27;;
+import {takeUntil} from &#x27;rxjs/operators&#x27;;
+
+@Component({
+  selector: &#x27;app-user-search&#x27;,
+  templateUrl: &#x27;./user-search.component.html&#x27;,
+  styleUrls: [&#x27;./user-search.component.scss&#x27;]
+})
+export class UserSearchComponent implements OnInit, AfterViewInit, OnDestroy {
+  private searchService: SearchService;
+  private resourceService: ResourceService;
+  /**
+	 * telemetryImpression
+	*/
+  telemetryImpression: IImpressionEventInput;
+  closeIntractEdata: IInteractEventEdata;
+  userViewIntractEdata: IInteractEventEdata;
+  userDeleteIntractEdata: IInteractEventEdata;
+  userEditIntractEdata: IInteractEventEdata;
+  filterIntractEdata: IInteractEventEdata;
+  /**
+   * To get url, app configs
+   */
+  public config: ConfigService;
+  /**
+  * To show toaster(error, success etc) after any API calls
+  */
+  private toasterService: ToasterService;
+  private userSearchService: UserSearchService;
+  /**
+   * Contains list of published course(s) of logged-in user
+   */
+  searchList: Array&lt;any&gt; &#x3D; [];
+  /**
+   * To navigate to other pages
+   */
+  private route: Router;
+  /**
+  * To send activatedRoute.snapshot to router navigation
+  * service for redirection to parent component
+  */
+  private activatedRoute: ActivatedRoute;
+  /**
+   * For showing pagination on inbox list
+   */
+  private paginationService: PaginationService;
+  /**
+ * To get user profile of logged-in user
+ */
+  public user: UserService;
+
+  /**
+    * To show / hide no result message when no result found
+   */
+  noResult &#x3D; false;
+  /**
+   * no result  message
+  */
+  noResultMessage: INoResultMessage;
+  /**
+    * totalCount of the list
+  */
+  totalCount: Number;
+  /**
+   * Current page number of inbox list
+   */
+  pageNumber &#x3D; 1;
+  /**
+	 * Contains page limit of outbox list
+	 */
+  pageLimit: number;
+  /**
+   * This variable hepls to show and hide page loader.
+   * It is kept true by default as at first when we comes
+   * to a page the loader should be displayed before showing
+   * any data
+   */
+  showLoader &#x3D; true;
+  /**
+     * loader message
+    */
+  loaderMessage: any;
+  /**
+   * Contains returned object of the pagination service
+   * which is needed to show the pagination on inbox view
+   */
+  pager: IPagination;
+  /**
+   *url value
+   */
+  queryParams: any;
+
+  rootOrgId: string;
+  userProfile: any;
+  inviewLogs: any &#x3D; [];
+  selectedRoles: Array&lt;string&gt;;
+
+  customStyle &#x3D; {
+    backgroundColor: &#x27;#ffffff&#x27;,
+    border: &#x27;1px solid #fff&#x27;,
+    boxShadow: &#x27;0 0 6px 0 rgba(0,0,0,0.38)&#x27;,
+    borderRadius: &#x27;50%&#x27;,
+    color: &#x27;#024F9D&#x27;,
+    fontWeight: &#x27;bold&#x27;,
+    fontFamily: &#x27;inherit&#x27;,
+    fontSize: &#x27;48px&#x27;
+  };
+  csvOptions &#x3D; {
+    fieldSeparator: &#x27;,&#x27;,
+    quoteStrings: &#x27;&quot;&#x27;,
+    decimalseparator: &#x27;.&#x27;,
+    showLabels: true,
+    headers: []
+  };
+  layoutConfiguration: any;
+  public unsubscribe$ &#x3D; new Subject&lt;void&gt;();
+
+  /**
+     * Constructor to create injected service(s) object
+     * Default method of Draft Component class
+     * @param {SearchService} searchService Reference of SearchService
+     * @param {Router} route Reference of Router
+     * @param {PaginationService} paginationService Reference of PaginationService
+     * @param {ActivatedRoute} activatedRoute Reference of ActivatedRoute
+     * @param {ConfigService} config Reference of ConfigService
+   */
+  constructor(searchService: SearchService, route: Router, private ngZone: NgZone,
+    activatedRoute: ActivatedRoute, paginationService: PaginationService,
+    resourceService: ResourceService, toasterService: ToasterService,
+    config: ConfigService, user: UserService, userSearchService: UserSearchService,
+    public permissionService: PermissionService, public profileService: ProfileService,
+    public navigationhelperService: NavigationHelperService, public layoutService: LayoutService) {
+    this.searchService &#x3D; searchService;
+    this.route &#x3D; route;
+    this.activatedRoute &#x3D; activatedRoute;
+    this.paginationService &#x3D; paginationService;
+    this.resourceService &#x3D; resourceService;
+    this.toasterService &#x3D; toasterService;
+    this.userSearchService &#x3D; userSearchService;
+    this.config &#x3D; config;
+    this.user &#x3D; user;
+  }
+  /**
+   * This method sets the make an api call to get all search data with page No and offset
+   */
+  populateUserSearch() {
+    this.showLoader &#x3D; true;
+    this.pageLimit &#x3D; this.config.appConfig.SEARCH.PAGE_LIMIT;
+    const searchParams &#x3D; {
+      filters: {
+        &#x27;rootOrgId&#x27;: this.rootOrgId,
+        &#x27;profileUserType.type&#x27;: this.queryParams.Usertype,
+        &#x27;framework.medium&#x27;: this.queryParams.medium,
+        &#x27;framework.gradeLevel&#x27;: this.queryParams.gradeLevel,
+        &#x27;framework.subject&#x27;: this.queryParams.subject
+      },
+      limit: this.pageLimit,
+      pageNumber: this.pageNumber,
+      query: this.queryParams.key
+    };
+    if (_.get(searchParams, &#x27;filters[&quot;profileUserType.type&quot;]&#x27;)) {
+      const index &#x3D; _.indexOf(searchParams.filters[&#x27;profileUserType.type&#x27;], &#x27;School head or officials&#x27;);
+      if (index &gt;&#x3D; 0) {
+        searchParams.filters[&#x27;profileUserType.type&#x27;][index] &#x3D; &#x27;administrator&#x27;;
+      } else if (searchParams.filters[&#x27;profileUserType.type&#x27;] &#x3D;&#x3D;&#x3D; &#x27;School head or officials&#x27;) {
+        searchParams.filters[&#x27;profileUserType.type&#x27;] &#x3D; [&#x27;administrator&#x27;];
+      }
+    }
+    if (!_.isEmpty(this.selectedRoles)) { searchParams.filters[&#x27;roles.role&#x27;] &#x3D; this.selectedRoles; }
+    if (this.queryParams.School) {
+      searchParams.filters[&#x27;organisations.organisationId&#x27;] &#x3D; this.queryParams.School;
+    } else {
+      const locationArray &#x3D; [];
+      if (this.queryParams.District) {
+        locationArray.push(typeof this.queryParams.District &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? this.queryParams.District : this.queryParams.District[0]);
+      }
+      if (this.queryParams.Block) {
+        locationArray.push(typeof this.queryParams.Block &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? this.queryParams.Block : this.queryParams.Block[0]);
+      }
+      if (!_.isEmpty(locationArray)) {
+        searchParams.filters[&#x27;profileLocation.id&#x27;] &#x3D; locationArray;
+       }
+    }
+    this.searchService.userSearch(searchParams).subscribe(
+      (apiResponse: ServerResponse) &#x3D;&gt; {
+        if (apiResponse.result.response.count &amp;&amp; apiResponse.result.response.content.length &gt; 0) {
+          this.showLoader &#x3D; false;
+          this.noResult &#x3D; false;
+          this.searchList &#x3D; apiResponse.result.response.content;
+          this.totalCount &#x3D; apiResponse.result.response.count;
+          this.populateLocationDetailsAndSetRoles();
+          this.pager &#x3D; this.paginationService.getPager(apiResponse.result.response.count, this.pageNumber, this.pageLimit);
+        } else {
+          this.noResult &#x3D; true;
+          this.showLoader &#x3D; false;
+          this.noResultMessage &#x3D; {
+            &#x27;message&#x27;: &#x27;messages.stmsg.m0008&#x27;,
+            &#x27;messageText&#x27;: &#x27;messages.stmsg.m0007&#x27;
+          };
+        }
+      },
+      err &#x3D;&gt; {
+        this.showLoader &#x3D; false;
+        this.noResult &#x3D; true;
+        this.noResultMessage &#x3D; {
+          &#x27;messageText&#x27;: &#x27;messages.fmsg.m0077&#x27;
+        };
+        this.toasterService.error(this.resourceService.messages.emsg.m0005);
+      }
+    );
+  }
+
+  populateLocationDetailsAndSetRoles() {
+    // Getting all location Ids
+    let locationArray &#x3D; [];
+    _.each(this.searchList, (user) &#x3D;&gt; {
+      if (_.get(this.userProfile, &#x27;rootOrgAdmin&#x27;) &amp;&amp; this.userProfile.rootOrgAdmin &#x3D;&#x3D;&#x3D; true) {
+        user.isEditableProfile &#x3D; true;
+      }
+      _.each(user.locationIds, (location) &#x3D;&gt; {
+        locationArray.push(location);
+      });
+    });
+
+    // Calling location search and setting location details to search list
+    if (!_.isEmpty(locationArray)) {
+      locationArray &#x3D; _.uniq(locationArray);
+      const requestData &#x3D; { &#x27;filters&#x27;: { id: locationArray } };
+      this.profileService.getUserLocation(requestData).subscribe(res &#x3D;&gt; {
+        _.each(this.searchList, (user) &#x3D;&gt; {
+          _.each(user.locationIds, (location) &#x3D;&gt; {
+            const locations &#x3D; _.find(res.result.response, (loc) &#x3D;&gt; {
+              return loc.id &#x3D;&#x3D;&#x3D; location;
+            });
+            if (locations) { user[locations.type] &#x3D; locations; }
+          });
+        });
+      });
+    }
+  }
+
+  downloadUser() {
+
+    const downloadArray &#x3D; [{
+      &#x27;firstName&#x27;: &#x27;First Name&#x27;,
+      &#x27;lastName&#x27;: &#x27;Last Name&#x27;,
+      &#x27;organisations&#x27;: &#x27;Organizations&#x27;,
+      &#x27;location&#x27;: &#x27;Location&#x27;,
+      &#x27;grades&#x27;: &#x27;Grades&#x27;,
+      &#x27;language&#x27;: &#x27;Language&#x27;,
+      &#x27;subject&#x27;: &#x27;Subject&#x27;
+    }];
+
+    _.each(this.searchList, (key, index) &#x3D;&gt; {
+      downloadArray.push({
+        &#x27;firstName&#x27;: key.firstName,
+        &#x27;lastName&#x27;: key.lastName,
+        &#x27;organisations&#x27;: &#x27;test&#x27;,
+        &#x27;location&#x27;: key.location !&#x3D;&#x3D; null ? key.location : &#x27;&#x27;,
+        &#x27;grades&#x27;: _.join(key.grade, &#x27;,&#x27;),
+        &#x27;language&#x27;: _.join(key.language, &#x27;,&#x27;),
+        &#x27;subject&#x27;: _.join(key.subject, &#x27;,&#x27;)
+      });
+    });
+    return  downloadArray;
+  }
+
+
+  /**
+  * This method helps to navigate to different pages.
+  * If page number is less than 1 or page number is greater than total number
+  * of pages is less which is not possible, then it returns.
+  *
+  * @param {number} page Variable to know which page has been clicked
+  *
+  * @example navigateToPage(1)
+  */
+  navigateToPage(page: number): undefined | void {
+    if (page &lt; 1 || page &gt; this.pager.totalPages) {
+      return;
+    }
+    this.pageNumber &#x3D; page;
+    this.route.navigate([&#x27;search/Users&#x27;, this.pageNumber], {
+      queryParams: this.queryParams
+    });
+  }
+
+  initLayout() {
+    this.layoutConfiguration &#x3D; this.layoutService.initlayoutConfig();
+    this.layoutService.switchableLayout().pipe(takeUntil(this.unsubscribe$)).subscribe(layoutConfig &#x3D;&gt; {
+      if (layoutConfig !&#x3D; null) {
+        this.layoutConfiguration &#x3D; layoutConfig.layout;
+      }
+    });
+  }
+
+  ngOnInit() {
+    this.initLayout();
+    this.user.userData$.subscribe(userdata &#x3D;&gt; {
+      if (userdata &amp;&amp; !userdata.err) {
+        this.userProfile &#x3D; userdata.userProfile;
+        this.rootOrgId &#x3D; this.userProfile.rootOrgId;
+        observableCombineLatest(this.activatedRoute.params, this.activatedRoute.queryParams,
+          (params: any, queryParams: any) &#x3D;&gt; {
+            return {
+              params: params,
+              queryParams: queryParams
+            };
+          })
+          .subscribe(bothParams &#x3D;&gt; {
+            if (bothParams.params.pageNumber) {
+              this.pageNumber &#x3D; Number(bothParams.params.pageNumber);
+            }
+            this.queryParams &#x3D; { ...bothParams.queryParams };
+            this.selectedRoles &#x3D; [];
+            if (this.queryParams.Roles) {
+              this.permissionService.availableRoles$.subscribe(params &#x3D;&gt; {
+                _.forEach(this.permissionService.allRoles, (role) &#x3D;&gt; {
+                  if (this.queryParams.Roles.includes(role.roleName)) { this.selectedRoles.push(role.role); }
+                });
+                this.populateUserSearch();
+              });
+            } else {
+              this.populateUserSearch();
+            }
+          });
+      }
+    });
+    this.setInteractEventData();
+    this.userSearchService.userDeleteEvent.subscribe(data &#x3D;&gt; {
+      _.each(this.searchList, (key, index) &#x3D;&gt; {
+        if (data &amp;&amp; data &#x3D;&#x3D;&#x3D; key.id) {
+          this.searchList[index].status &#x3D; 0;
+        }
+      });
+    });
+  }
+  setInteractEventData() {
+    this.closeIntractEdata &#x3D; {
+      id: &#x27;user-search-close&#x27;,
+      type: &#x27;click&#x27;,
+      pageid: &#x27;user-search&#x27;
+    };
+    this.userViewIntractEdata &#x3D; {
+      id: &#x27;user-profile-view&#x27;,
+      type: &#x27;click&#x27;,
+      pageid: &#x27;user-search&#x27;
+    };
+    this.userEditIntractEdata &#x3D; {
+      id: &#x27;user-profile-edit&#x27;,
+      type: &#x27;click&#x27;,
+      pageid: &#x27;user-search&#x27;
+    };
+    this.userDeleteIntractEdata &#x3D; {
+      id: &#x27;user-profile-delete&#x27;,
+      type: &#x27;click&#x27;,
+      pageid: &#x27;user-search&#x27;
+    };
+    this.filterIntractEdata &#x3D; {
+      id: &#x27;filter&#x27;,
+      type: &#x27;click&#x27;,
+      pageid: &#x27;user-search&#x27;
+    };
+  }
+  ngAfterViewInit () {
+    setTimeout(() &#x3D;&gt; {
+      this.telemetryImpression &#x3D; {
+        context: {
+          env: this.activatedRoute.snapshot.data.telemetry.env
+        },
+        edata: {
+          type: this.activatedRoute.snapshot.data.telemetry.type,
+          pageid: this.activatedRoute.snapshot.data.telemetry.pageid,
+          uri: this.route.url,
+          subtype: this.activatedRoute.snapshot.data.telemetry.subtype,
+          duration: this.navigationhelperService.getPageLoadTime()
+        }
+      };
+    });
+  }
+  inview(event) {
+    _.forEach(event.inview, (inview, key) &#x3D;&gt; {
+      const obj &#x3D; _.find(this.inviewLogs, (o) &#x3D;&gt; {
+        return o.objid &#x3D;&#x3D;&#x3D; inview.data.identifier;
+      });
+      if (obj &#x3D;&#x3D;&#x3D; undefined) {
+        this.inviewLogs.push({
+          objid: inview.data.identifier,
+          objtype: &#x27;user&#x27;,
+          index: inview.id
+        });
+      }
+    });
+    this.telemetryImpression.edata.visits &#x3D; this.inviewLogs;
+    this.telemetryImpression.edata.subtype &#x3D; &#x27;pageexit&#x27;;
+    this.telemetryImpression &#x3D; Object.assign({}, this.telemetryImpression);
+  }
+
+  ngOnDestroy() {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-landing-section [noTitle]&#x3D;&quot;true&quot; [layoutConfiguration]&#x3D;&quot;layoutConfiguration&quot;&gt;
+
+&lt;/app-landing-section&gt;
+
+
+&lt;div [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;sbt-center-container sbt-user-profile relative9 sbt-fluid-content-bg pt-16&#x27;:&#x27;&#x27;&quot; &gt;
+&lt;app-user-filter&gt;&lt;/app-user-filter&gt;
+&lt;div class&#x3D;&quot;ui container mt-16&quot;&gt;
+  &lt;div [appTelemetryImpression]&#x3D;&quot;telemetryImpression&quot; class&#x3D;&quot;ui grid mt-0&quot;&gt;
+    &lt;div class&#x3D;&quot;twelve wide column&quot;&gt;
+      &lt;div&gt;
+        &lt;div class&#x3D;&quot; ui clearing segment content-player-header search-content-header&quot; *ngIf&#x3D;&quot;!showLoader &amp;&amp; !noResult&quot;&gt;
+          &lt;div class&#x3D;&quot;ui left floated header  &quot;&gt;
+            &lt;p class&#x3D;&quot;serch-allresult&quot;&gt;{{resourceService.frmelmnts?.lbl?.showingResults | translate}} 
+              &lt;span class&#x3D;&quot;text-lowercase&quot; *ngIf&#x3D;&quot;this.queryParams.key&quot; appHighlightText [config]&#x3D;&quot;{&#x27;resourcePath&#x27;: &#x27;frmelmnts.lbl.forSearch&#x27;, &#x27;key&#x27;: &#x27;{searchString}&#x27;, &#x27;value&#x27;: queryParams?.key}&quot;&gt;&lt;/span&gt;
+              {{resourceService.frmelmnts?.lbl?.inUsers | translate}}
+            &lt;/p&gt;
+          &lt;/div&gt;
+          &lt;!-- &lt;h5 appTelemetryInteract [telemetryInteractEdata]&#x3D;&quot;closeIntractEdata&quot; class&#x3D;&quot;ui right floated basic icon circular button &quot; [routerLink]&#x3D;&quot;[&#x27;/profile&#x27;]&quot;&gt;
+            &lt;i class&#x3D;&quot;ui remove icon &quot;&gt;&lt;/i&gt;
+          &lt;/h5&gt; --&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot; ui clearing segment&quot; *ngIf&#x3D;&quot;!showLoader &amp;&amp; !noResult &amp;&amp; config.appConfig.SEARCH.USER.DOWNLOAD_BUTTON_VISIBILITY &#x3D;&#x3D;&#x3D; &#x27;TRUE&#x27;&quot;&gt;
+          &lt;!-- &lt;angular2csv class&#x3D;&quot;ui right floated primary button&quot; [data]&#x3D;&quot;downloadUser()&quot; filename&#x3D;&quot;Users&quot; [options]&#x3D;&quot;csvOptions&quot;&gt;
+            {{resourceService.frmelmnts?.btn?.download | translate}} TODO: use Blob object to generate csv file
+          &lt;/angular2csv&gt; --&gt;
+        &lt;/div&gt;
+
+        &lt;div&gt;
+          &lt;div *ngIf&#x3D;&quot;!showLoader &amp;&amp; !noResult&quot; in-view-container (inview)&#x3D;&quot;inview($event)&quot; [throttle]&#x3D;&quot;[1000]&quot; [trigger]&#x3D;&quot;searchList&quot;&gt;
+            &lt;div in-view-item [id]&#x3D;&quot;i&quot; [data]&#x3D;&quot;user&quot; class&#x3D;&quot;ui segment mb-20&quot; *ngFor&#x3D;&quot;let user of searchList;let i &#x3D; index;&quot;&gt;
+              &lt;div class&#x3D;&quot;ui items&quot;&gt;
+                &lt;div class&#x3D;&quot;item&quot;&gt;
+                  &lt;div class&#x3D;&quot;ui tiny image userSearchImage&quot;&gt;
+                    &lt;ngx-avatar class&#x3D;&quot;my-avatar&quot; [style]&#x3D;&quot;customStyle&quot; [size]&#x3D;&quot;80&quot; initialsSize&#x3D;&quot;1&quot; [textSizeRatio]&#x3D;&quot;2&quot; name&#x3D;&quot;{{user.firstName}} &quot;&gt;
+                    &lt;/ngx-avatar&gt;
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;content userSearchContent&quot;&gt;
+                    &lt;!--&lt;a appTelemetryInteract [telemetryInteractEdata]&#x3D;&quot;userViewIntractEdata&quot; 
+                        [telemetryInteractObject]&#x3D;&quot;{id:user.id,type:&#x27;user&#x27;,ver:&#x27;1.0&#x27;}&quot; 
+                        class&#x3D;&quot;header &quot; *ngIf&#x3D;&quot;user.status&#x3D;&#x3D;&#x3D;1&quot; [queryParams]&#x3D;&quot;queryParams&quot; [routerLink]&#x3D;&quot;[&#x27;view/&#x27; + user.id]&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;user.status&#x3D;&#x3D;&#x3D;1 &amp;&amp; userSearchService.userDetailsObject&#x3D;user&quot;&gt;{{user.firstName}} &amp;nbsp;{{user.lastName}}&lt;/a&gt;--&gt;
+                    &lt;div class&#x3D;&quot;header mb-5&quot; *ngIf&#x3D;&quot;user.status&#x3D;&#x3D;&#x3D;1&quot;&gt;{{user.firstName}} &amp;nbsp;{{user.lastName}}&lt;/div&gt;
+                    &lt;div class&#x3D;&quot;header mb-5&quot; *ngIf&#x3D;&quot;user.status!&#x3D;&#x3D;1&quot;&gt;{{user.firstName}} &amp;nbsp;{{user.lastName}}&lt;/div&gt;
+
+                    &lt;a *ngIf&#x3D;&quot;user.status&#x3D;&#x3D;&#x3D;1 &amp;&amp; user.isEditableProfile&quot; class&#x3D;&quot;right-float&quot;&gt;
+                      &lt;!-- update user roles --&gt;
+                      &lt;span appTelemetryInteract [telemetryInteractEdata]&#x3D;&quot;userEditIntractEdata&quot; [telemetryInteractObject]&#x3D;&quot;{id:user.id,type:&#x27;user&#x27;,ver:&#x27;1.0&#x27;}&quot;
+                        class&#x3D;&quot;remove-outline&quot; [queryParams]&#x3D;&quot;queryParams&quot; [routerLink]&#x3D;&quot;[&#x27;edit/&#x27; + user.id]&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;user.status&#x3D;&#x3D;&#x3D;1 &amp;&amp; userSearchService.userDetailsObject&#x3D;user&quot;&gt;
+                        &lt;i class&#x3D;&quot;edit large icon&quot;&gt;&lt;/i&gt;
+                      &lt;/span&gt;
+                      &lt;!-- delete user --&gt;
+                      &lt;!-- &lt;span appTelemetryInteract [telemetryInteractEdata]&#x3D;&quot;userDeleteIntractEdata&quot; [telemetryInteractObject]&#x3D;&quot;{id:user.id,type:&#x27;user&#x27;,ver:&#x27;1.0&#x27;}&quot;
+                        class&#x3D;&quot;remove-outline mx-5&quot;&gt;
+                        &lt;i class&#x3D;&quot;trash outline large icon remove-outline&quot; [queryParams]&#x3D;&quot;queryParams&quot; [routerLink]&#x3D;&quot;[&#x27;delete/&#x27; + user.id]&quot; (click)&#x3D;&quot;userSearchService.userDetailsObject&#x3D;user&quot;&gt;&lt;/i&gt;
+                      &lt;/span&gt; --&gt;
+                    &lt;/a&gt;
+
+                    &lt;!-- organization Name --&gt;
+                    &lt;div class&#x3D;&quot;meta&quot;&gt;
+                      &lt;span class&#x3D;&quot;cinema &quot;&gt;
+                        &lt;span *ngFor&#x3D;&quot;let org of user.organisations; let last &#x3D; last;&quot;&gt;
+                          &lt;span *ngIf&#x3D;&quot;org.orgName&quot;&gt;{{org.orgName | titlecase}}&lt;/span&gt;
+                          &lt;span *ngIf&#x3D;&quot;!last &amp;&amp; org.orgName&quot;&gt;,&lt;/span&gt;
+                        &lt;/span&gt;
+                      &lt;/span&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class&#x3D;&quot;extra &quot;&gt;
+                      &lt;!-- &lt;div class&#x3D;&quot;ui label &quot; *ngIf&#x3D;&quot;user.status&#x3D;&#x3D;&#x3D;0&quot;&gt;{{resourceService?.frmelmnts?.lbl?.inactive | translate}}&lt;/div&gt;
+                          &lt;div class&#x3D;&quot;ui label &quot; *ngIf&#x3D;&quot;user.status&#x3D;&#x3D;&#x3D;1&quot;&gt;{{resourceService?.frmelmnts?.lbl?.active | translate}}&lt;/div&gt;
+                          &lt;div class&#x3D;&quot;ui label &quot; *ngIf&#x3D;&quot;user.status&#x3D;&#x3D;&#x3D;2&quot;&gt;{{resourceService?.frmelmnts?.lbl?.blocked | translate}}&lt;/div&gt;
+                          &lt;div class&#x3D;&quot;ui label &quot; *ngIf&#x3D;&quot;user.status&#x3D;&#x3D;&#x3D;3&quot;&gt;{{resourceService?.frmelmnts?.lbl?.retired | translate}}&lt;/div&gt; --&gt;
+
+                      &lt;!-- updated code as per new design --&gt;
+
+                      &lt;div class&#x3D;&quot;ui horizontal bulleted list&quot;&gt;
+                        &lt;span class&#x3D;&quot;item&quot; *ngIf&#x3D;&quot;user.block&quot;&gt;&lt;span class&#x3D;&quot;sunbird-portal-icon location-outline-icon&quot;&gt;&lt;/span&gt;&amp;nbsp;{{user.block.name | titlecase}}&lt;/span&gt;
+                        &lt;span class&#x3D;&quot;item&quot; *ngIf&#x3D;&quot;user.district&quot;&gt;{{user.district.name | titlecase}}&lt;/span&gt;
+
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!-- Badging (Certifications and Awards) --&gt;
+                &lt;div class&#x3D;&quot;ui middle aligned list&quot; *ngIf&#x3D;&quot;user.badgeAssertions &amp;&amp; user.badgeAssertions.length &gt; 0&quot;&gt;
+                  &lt;div class&#x3D;&quot;item&quot; *ngFor&#x3D;&quot;let badge of user.badgeAssertions&quot;&gt;
+                    &lt;img class&#x3D;&quot;ui avatar image&quot; [src]&#x3D;&quot;badge.badgeClassImage&quot;&gt;
+                    &lt;div class&#x3D;&quot;content&quot;&gt;
+                      &lt;div class&#x3D;&quot;header secondary-text-color-sunbird&quot;&gt;{{badge.badgeClassName}}&lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div *ngIf&#x3D;&quot;noResult &amp;&amp; !showLoader&quot;&gt;
+            &lt;app-no-result [data]&#x3D;&quot;noResultMessage&quot;&gt;&lt;/app-no-result&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;ui grid mt-20&quot;&gt;
+        &lt;div class&#x3D;&quot;twelve wide column pt-0&quot;&gt;
+          &lt;div class&#x3D;&quot;pb-10&quot; *ngIf&#x3D;&quot;searchList &amp;&amp; totalCount &gt; config.appConfig.SEARCH.PAGE_LIMIT &amp;&amp; !showLoader &amp;&amp; !noResult&quot;&gt;
+            &lt;div class&#x3D;&quot;ui pagination menu mt-10 right-floated pt-0&quot; *ngIf&#x3D;&quot;pager.pages.length&quot;&gt;
+              &lt;a [ngClass]&#x3D;&quot;{disabled:pager.currentPage&#x3D;&#x3D;&#x3D;1 }&quot; class&#x3D;&quot;item &quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;navigateToPage(1) &quot;&gt;First&lt;/a&gt;
+              &lt;a [ngClass]&#x3D;&quot;{disabled:pager.currentPage&#x3D;&#x3D;&#x3D;1 }&quot; class&#x3D;&quot;item &quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;navigateToPage(pager.currentPage - 1)&quot;&gt;Previous&lt;/a&gt;
+              &lt;a *ngFor&#x3D;&quot;let page of pager.pages&quot; [ngClass]&#x3D;&quot;{active:pager.currentPage&#x3D;&#x3D;&#x3D;page}&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;navigateToPage(page)&quot; class&#x3D;&quot;item&quot;&gt;{{page}}&lt;/a&gt;
+              &lt;a [ngClass]&#x3D;&quot;{disabled:pager.currentPage&#x3D;&#x3D;&#x3D; pager.totalPages}&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;navigateToPage(pager.currentPage + 1)&quot; class&#x3D;&quot;item&quot;&gt;Next&lt;/a&gt;
+              &lt;a [ngClass]&#x3D;&quot;{disabled:pager.currentPage&#x3D;&#x3D;&#x3D; pager.totalPages}&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;navigateToPage(pager.totalPages)&quot; class&#x3D;&quot;item &quot;&gt;Last&lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;twelve wide column&quot; *ngIf&#x3D;&quot;showLoader&quot;&gt;
+        &lt;app-loader [data]&#x3D;&#x27;loaderMessage&#x27;&gt;&lt;/app-loader&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;router-outlet&gt;&lt;/router-outlet&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./user-search.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">::ng-deep {
+  app-user-filter .sb-prominent-filter .sb-prominent-filter-container .sb-prominent-filter-field .sb-mat__dropdown label {
+    margin-top: -0.5em;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-landing-section [noTitle]="true" [layoutConfiguration]="layoutConfiguration"></app-landing-section><div [ngClass]="layoutConfiguration ? \'sbt-center-container sbt-user-profile relative9 sbt-fluid-content-bg pt-16\':\'\'" ><app-user-filter></app-user-filter><div class="ui container mt-16">  <div [appTelemetryImpression]="telemetryImpression" class="ui grid mt-0">    <div class="twelve wide column">      <div>        <div class=" ui clearing segment content-player-header search-content-header" *ngIf="!showLoader && !noResult">          <div class="ui left floated header  ">            <p class="serch-allresult">{{resourceService.frmelmnts?.lbl?.showingResults | translate}}               <span class="text-lowercase" *ngIf="this.queryParams.key" appHighlightText [config]="{\'resourcePath\': \'frmelmnts.lbl.forSearch\', \'key\': \'{searchString}\', \'value\': queryParams?.key}"></span>              {{resourceService.frmelmnts?.lbl?.inUsers | translate}}            </p>          </div>          <!-- <h5 appTelemetryInteract [telemetryInteractEdata]="closeIntractEdata" class="ui right floated basic icon circular button " [routerLink]="[\'/profile\']">            <i class="ui remove icon "></i>          </h5> -->        </div>        <div class=" ui clearing segment" *ngIf="!showLoader && !noResult && config.appConfig.SEARCH.USER.DOWNLOAD_BUTTON_VISIBILITY === \'TRUE\'">          <!-- <angular2csv class="ui right floated primary button" [data]="downloadUser()" filename="Users" [options]="csvOptions">            {{resourceService.frmelmnts?.btn?.download | translate}} TODO: use Blob object to generate csv file          </angular2csv> -->        </div>        <div>          <div *ngIf="!showLoader && !noResult" in-view-container (inview)="inview($event)" [throttle]="[1000]" [trigger]="searchList">            <div in-view-item [id]="i" [data]="user" class="ui segment mb-20" *ngFor="let user of searchList;let i = index;">              <div class="ui items">                <div class="item">                  <div class="ui tiny image userSearchImage">                    <ngx-avatar class="my-avatar" [style]="customStyle" [size]="80" initialsSize="1" [textSizeRatio]="2" name="{{user.firstName}} ">                    </ngx-avatar>                  </div>                  <div class="content userSearchContent">                    <!--<a appTelemetryInteract [telemetryInteractEdata]="userViewIntractEdata"                         [telemetryInteractObject]="{id:user.id,type:\'user\',ver:\'1.0\'}"                         class="header " *ngIf="user.status===1" [queryParams]="queryParams" [routerLink]="[\'view/\' + user.id]" tabindex="0" (click)="user.status===1 && userSearchService.userDetailsObject=user">{{user.firstName}} &nbsp;{{user.lastName}}</a>-->                    <div class="header mb-5" *ngIf="user.status===1">{{user.firstName}} &nbsp;{{user.lastName}}</div>                    <div class="header mb-5" *ngIf="user.status!==1">{{user.firstName}} &nbsp;{{user.lastName}}</div>                    <a *ngIf="user.status===1 && user.isEditableProfile" class="right-float">                      <!-- update user roles -->                      <span appTelemetryInteract [telemetryInteractEdata]="userEditIntractEdata" [telemetryInteractObject]="{id:user.id,type:\'user\',ver:\'1.0\'}"                        class="remove-outline" [queryParams]="queryParams" [routerLink]="[\'edit/\' + user.id]" tabindex="0" (click)="user.status===1 && userSearchService.userDetailsObject=user">                        <i class="edit large icon"></i>                      </span>                      <!-- delete user -->                      <!-- <span appTelemetryInteract [telemetryInteractEdata]="userDeleteIntractEdata" [telemetryInteractObject]="{id:user.id,type:\'user\',ver:\'1.0\'}"                        class="remove-outline mx-5">                        <i class="trash outline large icon remove-outline" [queryParams]="queryParams" [routerLink]="[\'delete/\' + user.id]" (click)="userSearchService.userDetailsObject=user"></i>                      </span> -->                    </a>                    <!-- organization Name -->                    <div class="meta">                      <span class="cinema ">                        <span *ngFor="let org of user.organisations; let last = last;">                          <span *ngIf="org.orgName">{{org.orgName | titlecase}}</span>                          <span *ngIf="!last && org.orgName">,</span>                        </span>                      </span>                    </div>                    <div class="extra ">                      <!-- <div class="ui label " *ngIf="user.status===0">{{resourceService?.frmelmnts?.lbl?.inactive | translate}}</div>                          <div class="ui label " *ngIf="user.status===1">{{resourceService?.frmelmnts?.lbl?.active | translate}}</div>                          <div class="ui label " *ngIf="user.status===2">{{resourceService?.frmelmnts?.lbl?.blocked | translate}}</div>                          <div class="ui label " *ngIf="user.status===3">{{resourceService?.frmelmnts?.lbl?.retired | translate}}</div> -->                      <!-- updated code as per new design -->                      <div class="ui horizontal bulleted list">                        <span class="item" *ngIf="user.block"><span class="sunbird-portal-icon location-outline-icon"></span>&nbsp;{{user.block.name | titlecase}}</span>                        <span class="item" *ngIf="user.district">{{user.district.name | titlecase}}</span>                      </div>                    </div>                  </div>                </div>                <!-- Badging (Certifications and Awards) -->                <div class="ui middle aligned list" *ngIf="user.badgeAssertions && user.badgeAssertions.length > 0">                  <div class="item" *ngFor="let badge of user.badgeAssertions">                    <img class="ui avatar image" [src]="badge.badgeClassImage">                    <div class="content">                      <div class="header secondary-text-color-sunbird">{{badge.badgeClassName}}</div>                    </div>                  </div>                </div>              </div>            </div>          </div>          <div *ngIf="noResult && !showLoader">            <app-no-result [data]="noResultMessage"></app-no-result>          </div>        </div>      </div>      <div class="ui grid mt-20">        <div class="twelve wide column pt-0">          <div class="pb-10" *ngIf="searchList && totalCount > config.appConfig.SEARCH.PAGE_LIMIT && !showLoader && !noResult">            <div class="ui pagination menu mt-10 right-floated pt-0" *ngIf="pager.pages.length">              <a [ngClass]="{disabled:pager.currentPage===1 }" class="item " tabindex="0" (click)="navigateToPage(1) ">First</a>              <a [ngClass]="{disabled:pager.currentPage===1 }" class="item " tabindex="0" (click)="navigateToPage(pager.currentPage - 1)">Previous</a>              <a *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage===page}" tabindex="0" (click)="navigateToPage(page)" class="item">{{page}}</a>              <a [ngClass]="{disabled:pager.currentPage=== pager.totalPages}" tabindex="0" (click)="navigateToPage(pager.currentPage + 1)" class="item">Next</a>              <a [ngClass]="{disabled:pager.currentPage=== pager.totalPages}" tabindex="0" (click)="navigateToPage(pager.totalPages)" class="item ">Last</a>            </div>          </div>        </div>      </div>      <div class="twelve wide column" *ngIf="showLoader">        <app-loader [data]=\'loaderMessage\'></app-loader>      </div>    </div>  </div></div><router-outlet></router-outlet></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'app-access-discussion'},{'name': 'AccountMergeModalComponent', 'selector': 'app-account-merge-modal'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-info'},{'name': 'ActivityDashboardComponent', 'selector': 'app-activity-dashboard'},{'name': 'ActivityDetailsComponent', 'selector': 'app-activity-details'},{'name': 'ActivityFormComponent', 'selector': 'app-activity-form'},{'name': 'ActivityListComponent', 'selector': 'app-activity-list'},{'name': 'ActivitySearchComponent', 'selector': 'app-activity-search'},{'name': 'AddActivityComponent', 'selector': 'app-add-activity'},{'name': 'AddActivityContentTypesComponent', 'selector': 'app-add-activity-content-types'},{'name': 'AddEntityComponent', 'selector': 'add-entity'},{'name': 'AddMemberComponent', 'selector': 'app-add-member'},{'name': 'AddSummaryModalComponent', 'selector': 'app-add-summary-modal'},{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AllContentComponent', 'selector': 'app-all-content'},{'name': 'AllEvidenceComponent', 'selector': 'app-all-evidence'},{'name': 'AllTextbooksComponent', 'selector': 'app-all-textbooks'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppLandingSectionComponent', 'selector': 'app-landing-section'},{'name': 'AppLoaderComponent', 'selector': 'app-loader'},{'name': 'AssessmentPlayerComponent', 'selector': 'app-assessment-player'},{'name': 'AssignBadgesContentComponent', 'selector': 'app-assign-badges-content'},{'name': 'AuthFailedComponent', 'selector': 'app-auth-failed'},{'name': 'BackButtonComponent', 'selector': 'app-back-button'},{'name': 'BatchCardComponent', 'selector': 'app-batch-card'},{'name': 'BatchDetailsComponent', 'selector': 'app-batch-details'},{'name': 'BatchInfoComponent', 'selector': 'app-batch-info'},{'name': 'BatchListComponent', 'selector': 'app-batch-list'},{'name': 'BatchPageSectionComponent', 'selector': 'app-batch-page-section'},{'name': 'BrowseImagePopupComponent', 'selector': 'browse-image-popup'},{'name': 'BrowserCompatibilityComponent', 'selector': 'app-browser-compatibility'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardCreationComponent', 'selector': 'app-card-creation'},{'name': 'CertificateConfigurationComponent', 'selector': 'app-certificate-configuration'},{'name': 'CertificateDetailsComponent', 'selector': 'app-certificate-details'},{'name': 'CertificateNameUpdatePopupComponent', 'selector': 'app-certificate-name-update-popup'},{'name': 'CertPreviewPopupComponent', 'selector': 'app-cert-preview-popup'},{'name': 'ChooseUserComponent', 'selector': 'app-choose-user'},{'name': 'CollaboratingOnComponent', 'selector': 'app-collaborating-on'},{'name': 'CollaborationContentFilterComponent', 'selector': 'app-collaboration-content-filter'},{'name': 'CollectionEditorComponent', 'selector': 'app-collection-editor'},{'name': 'CollectionPlayerComponent', 'selector': 'app-collection-player'},{'name': 'CollectionPlayerMetadataComponent', 'selector': 'app-collection-player-metadata'},{'name': 'CommingSoonComponent', 'selector': 'app-comming-soon'},{'name': 'ConfirmationPopupComponent', 'selector': 'app-confirmation-popup'},{'name': 'ConfirmPopupComponent', 'selector': 'app-confirm-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentBadgeComponent', 'selector': 'app-content-badge'},{'name': 'ContentChapterlistComponent', 'selector': 'app-content-chapterlist'},{'name': 'ContentCreditsComponent', 'selector': 'app-content-credits'},{'name': 'ContentEditorComponent', 'selector': 'app-content-editor'},{'name': 'ContentLicenceComponent', 'selector': 'app-content-licence'},{'name': 'ContentManagerComponent', 'selector': 'app-content-manager'},{'name': 'ContentManagerInfoPopUpComponent', 'selector': 'app-content-manager-info-pop-up'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerMetadataComponent', 'selector': 'app-content-player-metadata'},{'name': 'ContentPlayerPageComponent', 'selector': 'app-contentplayer-page'},{'name': 'ContentRatingComponent', 'selector': 'app-content-rating'},{'name': 'ContentTypeComponent', 'selector': 'app-content-type'},{'name': 'CourseCompletionComponent', 'selector': 'app-course-completion'},{'name': 'CourseConsumptionComponent', 'selector': 'app-course-consumption'},{'name': 'CourseConsumptionHeaderComponent', 'selector': 'app-course-consumption-header'},{'name': 'CourseConsumptionPageComponent', 'selector': ''},{'name': 'CourseDashboardComponent', 'selector': 'app-course-dashboard'},{'name': 'CourseDetailsComponent', 'selector': 'app-course-details'},{'name': 'CourseInfoComponent', 'selector': 'app-course-info'},{'name': 'CoursePageComponent', 'selector': ''},{'name': 'CoursePlayerComponent', 'selector': 'app-course-player'},{'name': 'CourseProgressComponent', 'selector': 'app-course-progress'},{'name': 'CreateBatchComponent', 'selector': 'app-create-batch'},{'name': 'CreateContentComponent', 'selector': 'app-create-content'},{'name': 'CreateEditGroupComponent', 'selector': 'app-create-edit-group'},{'name': 'CreateOrgTypeComponent', 'selector': 'app-create-org-type'},{'name': 'CreateTemplateComponent', 'selector': 'app-create-template'},{'name': 'CreateUserComponent', 'selector': 'app-create-user'},{'name': 'CreditsAndLicenceComponent', 'selector': 'app-credits-and-licence'},{'name': 'CurriculumCardComponent', 'selector': 'app-curriculum-card'},{'name': 'CurriculumCoursesComponent', 'selector': 'app-curriculum-courses'},{'name': 'CurriculumInfoComponent', 'selector': 'app-curriculum-info'},{'name': 'CustomMultiSelectComponent', 'selector': 'app-custom-multi-select'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardSidebarComponent', 'selector': 'app-dashboard-sidebar'},{'name': 'DataChartComponent', 'selector': 'app-data-chart'},{'name': 'DataDrivenComponent', 'selector': 'app-data-driven'},{'name': 'DataDrivenFilterComponent', 'selector': 'app-data-driven-filter'},{'name': 'DatasetComponent', 'selector': 'app-dataset'},{'name': 'DatasetsComponent', 'selector': 'app-datasets'},{'name': 'DataTableComponent', 'selector': 'app-data-table'},{'name': 'DefaultTemplateComponent', 'selector': 'app-content-creation-default-template'},{'name': 'DesktopAppUpdateComponent', 'selector': 'app-desktop-app-update'},{'name': 'DialCodeCardComponent', 'selector': 'app-dial-code-card'},{'name': 'DialCodeComponent', 'selector': 'app-dial-code'},{'name': 'DraftComponent', 'selector': 'app-draft'},{'name': 'EditSubmissionComponent', 'selector': 'app-edit-submission'},{'name': 'EnrollBatchComponent', 'selector': 'app-enroll-batch'},{'name': 'EntityListComponent', 'selector': 'entity-list'},{'name': 'EntityListComponent', 'selector': 'app-entity-list'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'ExploreContentComponent', 'selector': ''},{'name': 'ExploreCourseComponent', 'selector': ''},{'name': 'ExploreCurriculumCoursesComponent', 'selector': 'app-explore-curriculum-courses'},{'name': 'ExploreFtuPopupComponent', 'selector': 'app-explore-ftu-popup'},{'name': 'ExploreGroupComponent', 'selector': 'app-explore-group'},{'name': 'ExplorePageComponent', 'selector': 'app-explore-page-component'},{'name': 'FancyTreeComponent', 'selector': 'app-fancy-tree'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FaqReportComponent', 'selector': 'app-faq-report'},{'name': 'FilterComponent', 'selector': 'app-filter'},{'name': 'FlagConentplayerComponent', 'selector': 'app-flag-conentplayer'},{'name': 'FlaggedComponent', 'selector': 'app-flagged'},{'name': 'FlagReviewerComponent', 'selector': 'app-flag-reviewer'},{'name': 'ForumComponent', 'selector': 'app-forum'},{'name': 'FtuPopupComponent', 'selector': 'app-ftu-popup'},{'name': 'FullPageLoaderComponent', 'selector': 'app-full-page-loader'},{'name': 'FullPageModalComponent', 'selector': 'app-full-page-modal'},{'name': 'GenericEditorComponent', 'selector': 'app-generic-editor'},{'name': 'GetComponent', 'selector': 'app-get'},{'name': 'GlobalConsentPiiComponent', 'selector': 'app-global-consent-pii'},{'name': 'GlobalSearchFilterComponent', 'selector': 'app-global-search-filter'},{'name': 'GlobalSearchSelectedFilterComponent', 'selector': 'app-global-search-selected-filter'},{'name': 'GroupDetailsComponent', 'selector': 'app-group-details'},{'name': 'GroupHeaderComponent', 'selector': 'app-group-header'},{'name': 'GroupMembersComponent', 'selector': 'app-group-members'},{'name': 'GuestProfileComponent', 'selector': 'app-guest-profile'},{'name': 'HomeSearchComponent', 'selector': ''},{'name': 'IdentifyAccountComponent', 'selector': ''},{'name': 'InAppNotificationComponent', 'selector': 'app-in-app-notification'},{'name': 'InfoCardComponent', 'selector': 'app-info-card'},{'name': 'InstallAppComponent', 'selector': 'app-install-app'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'LanguageDropdownComponent', 'selector': 'app-language-dropdown'},{'name': 'LibraryComponent', 'selector': 'app-library'},{'name': 'LimitedPublishedComponent', 'selector': 'app-limited-published'},{'name': 'ListAllReportsComponent', 'selector': 'app-list-all-reports'},{'name': 'LoadContentComponent', 'selector': 'app-load-content'},{'name': 'LoadOfflineContentComponent', 'selector': 'app-load-offline-content'},{'name': 'LocationSelectionComponent', 'selector': 'app-location-selection'},{'name': 'LockInfoPopupComponent', 'selector': 'app-contentlock-info-popup'},{'name': 'MainFooterComponent', 'selector': 'app-footer'},{'name': 'MainHeaderComponent', 'selector': 'app-header'},{'name': 'MainMenuComponent', 'selector': 'app-main-menu'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialAutoCompleteComponent', 'selector': 'app-material-auto-complete'},{'name': 'MemberActionsComponent', 'selector': 'app-member-actions'},{'name': 'MergeAccountStatusComponent', 'selector': 'app-merge-account-status'},{'name': 'ModalWrapperComponent', 'selector': 'app-modal-wrapper'},{'name': 'MyGroupsComponent', 'selector': 'app-my-groups'},{'name': 'NetworkStatusComponent', 'selector': 'app-network-status'},{'name': 'NewCollectionEditorComponent', 'selector': 'app-new-collection-editor'},{'name': 'NoGroupResultComponent', 'selector': 'app-no-group-result'},{'name': 'NoResultComponent', 'selector': 'app-no-result-found'},{'name': 'NoResultComponent', 'selector': 'app-no-result'},{'name': 'ObservationDetailsComponent', 'selector': 'app-observation-details'},{'name': 'ObservationListingComponent', 'selector': 'app-observation-listing'},{'name': 'OfflineApplicationDownloadComponent', 'selector': 'app-offline-application-download'},{'name': 'OfflineBannerComponent', 'selector': 'app-offline-banner'},{'name': 'OfflineHelpVideosComponent', 'selector': 'app-offline-help-videos'},{'name': 'OnboardingUserSelectionComponent', 'selector': 'app-onboarding-user-selection'},{'name': 'OnDemandReportsComponent', 'selector': 'app-on-demand-reports'},{'name': 'OrganisationComponent', 'selector': 'app-organization'},{'name': 'OrganizationUploadComponent', 'selector': 'app-organization'},{'name': 'OtpComponent', 'selector': 'app-otp'},{'name': 'OtpPopupComponent', 'selector': 'app-otp-popup'},{'name': 'PageSectionComponent', 'selector': 'app-page-section'},{'name': 'PlayerComponent', 'selector': 'app-player'},{'name': 'PopupComponent', 'selector': 'app-modal'},{'name': 'ProfileBadgeComponent', 'selector': 'app-profile-badge'},{'name': 'ProfileFrameworkPopupComponent', 'selector': 'app-popup'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'PublicBatchDetailsComponent', 'selector': 'app-public-batch-details'},{'name': 'PublicCourseConsumptionPageComponent', 'selector': ''},{'name': 'PublicCoursePlayerComponent', 'selector': 'app-public-course-player'},{'name': 'PublishedComponent', 'selector': 'app-published'},{'name': 'PublishedPopupComponent', 'selector': 'app-published-popup'},{'name': 'QrCodeModalComponent', 'selector': 'app-qr-code-modal'},{'name': 'QuestionnaireComponent', 'selector': 'app-questionnaire'},{'name': 'RecoverAccountComponent', 'selector': ''},{'name': 'RedirectComponent', 'selector': 'app-redirect'},{'name': 'ReIssueCertificateComponent', 'selector': 'app-re-issue-certificate'},{'name': 'ReportComponent', 'selector': 'app-report'},{'name': 'ReportSummaryComponent', 'selector': 'app-report-summary'},{'name': 'ReportViewComponent', 'selector': 'app-report-view'},{'name': 'RequestChangesPopupComponent', 'selector': 'app-request-changes-popup'},{'name': 'ReviewCommentsComponent', 'selector': 'app-review-comments'},{'name': 'ReviewSubmissionsComponent', 'selector': 'app-review-submissions'},{'name': 'ReviewsubmissionsContentplayerComponent', 'selector': 'app-reviewsubmissions-contentplayer'},{'name': 'SbDatatableComponent', 'selector': 'sb-datatable'},{'name': 'SbTableComponent', 'selector': 'app-sb-table'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SearchFilterComponent', 'selector': 'app-search-filter'},{'name': 'SelectAccountIdentifierComponent', 'selector': ''},{'name': 'SelectOptionGroupComponent', 'selector': 'app-select-option-group'},{'name': 'SelectOrgComponent', 'selector': ''},{'name': 'ShareLinkComponent', 'selector': 'app-share-link'},{'name': 'SignupBasicInfoComponent', 'selector': 'app-signup-basic-info'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupEmailPasswordComponent', 'selector': 'app-signup-email-password'},{'name': 'SignupOnboardingInfoComponent', 'selector': 'app-signup-onboarding-info'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'SsoMergeConfirmationComponent', 'selector': 'app-sso-merge-confirmation'},{'name': 'StatusComponent', 'selector': 'app-status'},{'name': 'SubmissionsComponent', 'selector': 'submission'},{'name': 'SubmitTeacherDetailsComponent', 'selector': 'app-submit-teacher-details'},{'name': 'SvgEditorComponent', 'selector': 'app-svg-editor'},{'name': 'SystemWarningComponent', 'selector': 'app-system-warning'},{'name': 'TelemetryComponent', 'selector': 'app-telemetry'},{'name': 'TelemetryErrorModalComponent', 'selector': 'app-telemetry-error-modal'},{'name': 'TelemetryImportComponent', 'selector': 'app-telemetry-import'},{'name': 'TermsAndConditionsPopupComponent', 'selector': 'app-tnc-popup'},{'name': 'TopicPickerComponent', 'selector': 'app-topic-picker'},{'name': 'UciComponent', 'selector': 'app-uci'},{'name': 'UnEnrollBatchComponent', 'selector': 'app-unenroll-batch'},{'name': 'UpdateBatchComponent', 'selector': 'app-update-batch'},{'name': 'UpdateContactComponent', 'selector': ''},{'name': 'UpdateContactDetailsComponent', 'selector': 'app-update-contact-details'},{'name': 'UpdateCourseBatchComponent', 'selector': 'app-update-course-batch'},{'name': 'UpForReviewComponent', 'selector': 'app-up-for-review'},{'name': 'UpforreviewContentplayerComponent', 'selector': 'app-upforreview-contentplayer'},{'name': 'UpforReviewFilterComponent', 'selector': 'app-up-for-review-filter'},{'name': 'UploadedComponent', 'selector': 'app-uploaded'},{'name': 'UsageReportsComponent', 'selector': 'app-usage-reports'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserFilterComponent', 'selector': 'app-user-filter'},{'name': 'UserLocationComponent', 'selector': 'app-user-location'},{'name': 'UserOnboardingComponent', 'selector': 'app-user-onboarding'},{'name': 'UserOrgManagementComponent', 'selector': 'app-user-org-management'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRoleAssignComponent', 'selector': 'app-user-role-assign'},{'name': 'UserSearchComponent', 'selector': 'app-user-search'},{'name': 'ValidateTeacherIdentifierPopupComponent', 'selector': 'app-validate-teacher-identifier-popup'},{'name': 'VerifyAccountIdentifierComponent', 'selector': ''},{'name': 'ViewAllComponent', 'selector': 'app-view-all'},{'name': 'ViewOrgTypeComponent', 'selector': 'app-view-org-type'},{'name': 'WorkspaceComponent', 'selector': 'app-workspace'},{'name': 'WorkspaceContentFilterComponent', 'selector': 'app-workspace-content-filter'},{'name': 'WorkspacesidebarComponent', 'selector': 'app-workspacesidebar'},{'name': 'YearOfBirthComponent', 'selector': 'app-year-of-birth'}];
+    var DIRECTIVES = [{'name': 'ActivityDashboardDirective', 'selector': '[appActivityDashboard]'},{'name': 'AddToGroupDirective', 'selector': '[appAddToGroup]'},{'name': 'BodyScrollDirective', 'selector': '[appBodyScroll]'},{'name': 'ComponentDeactivate', 'selector': ''},{'name': 'ContentDirectionDirective', 'selector': '[appContentDirection]'},{'name': 'DesktopOnlyDirective', 'selector': '[appDesktopOnly]'},{'name': 'HighlightTextDirective', 'selector': '[appHighlightText]'},{'name': 'MarkdownDirective', 'selector': '[appMarkdown]'},{'name': 'ModalContentDirective', 'selector': '[sbModalContent]'},{'name': 'OnlineOnlyDirective', 'selector': '[appOnlineOnly]'},{'name': 'PermissionDirective', 'selector': '[appPermission]'},{'name': 'TelemetryEndDirective', 'selector': '[appTelemetryEnd]'},{'name': 'TelemetryErrorDirective', 'selector': '[appTelemetryError]'},{'name': 'TelemetryEventsDirective', 'selector': '[telemetryEventsButton]'},{'name': 'TelemetryImpressionDirective', 'selector': '[appTelemetryImpression]'},{'name': 'TelemetryInteractDirective', 'selector': '[appTelemetryInteract]'},{'name': 'TelemetryShareDirective', 'selector': '[appTelemetryShare]'},{'name': 'TelemetryStartDirective', 'selector': '[appTelemetryStart]'}];
+    var ACTUAL_COMPONENT = {'name': 'UserSearchComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'UserSearchComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

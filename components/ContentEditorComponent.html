@@ -1,0 +1,1868 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  ContentEditorComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Component Launches the Content Editor in a IFrame Modal</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-content-editor</code></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./content-editor.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#browserBackEventSub" >browserBackEventSub</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#buildNumber" >buildNumber</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#contentDetails" >contentDetails</a>
+                            </li>
+                            <li>
+                                <a href="#contentEditorURL" >contentEditorURL</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#deviceId" >deviceId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#logo" >logo</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ownershipType" >ownershipType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#portalVersion" >portalVersion</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#queryParams" >queryParams</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#routeParams" >routeParams</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#showLoader" >showLoader</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#userProfile" >userProfile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#videoMaxSize" >videoMaxSize</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#closeModal" >closeModal</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#disableBrowserBackButton" >disableBrowserBackButton</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#generateInteractEvent" >generateInteractEvent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getContentDetails" >getContentDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getDetails" >getDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initEditor" >initEditor</a>
+                            </li>
+                            <li>
+                                <a href="#lockContent" >lockContent</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#redirectToWorkSpace" >redirectToWorkSpace</a>
+                            </li>
+                            <li>
+                                <a href="#retireLock" >retireLock</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setRenderer" >setRenderer</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setWindowConfig" >setWindowConfig</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setWindowContext" >setWindowContext</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#validateRequest" >validateRequest</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(resourceService: <a href="../injectables/ResourceService.html" target="_self">ResourceService</a>, toasterService: <a href="../injectables/ToasterService.html" target="_self">ToasterService</a>, editorService: <a href="../injectables/EditorService.html" target="_self">EditorService</a>, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, configService: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, _zone: <a href="https://angular.io/api/core/NgZone" target="_blank">NgZone</a>, renderer: <a href="https://angular.io/api/core/Renderer2" target="_blank">Renderer2</a>, tenantService: <a href="../injectables/TenantService.html" target="_self">TenantService</a>, telemetryService: <a href="../injectables/TelemetryService.html" target="_self">TelemetryService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, navigationHelperService: <a href="../injectables/NavigationHelperService.html" target="_self">NavigationHelperService</a>, workspaceService: <a href="../injectables/WorkSpaceService.html" target="_self">WorkSpaceService</a>, frameworkService: <a href="../injectables/FrameworkService.html" target="_self">FrameworkService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Default method of class ContentEditorComponent</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>resourceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toasterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>editorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/EditorService.html" target="_self" >EditorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>activatedRoute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>configService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_zone</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/NgZone" target="_blank" >NgZone</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>renderer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/Renderer2" target="_blank" >Renderer2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>tenantService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TenantService.html" target="_self" >TenantService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryService.html" target="_self" >TelemetryService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>navigationHelperService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationHelperService.html" target="_self" >NavigationHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>workspaceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/WorkSpaceService.html" target="_self" >WorkSpaceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>frameworkService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FrameworkService.html" target="_self" >FrameworkService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeModal"></a>
+                    <span class="name">
+                        <span ><b>closeModal</b></span>
+                        <a href="#closeModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeModal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="256"
+                            class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:256</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Re directed to the draft on close of modal</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="disableBrowserBackButton"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>disableBrowserBackButton</b></span>
+                        <a href="#disableBrowserBackButton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>disableBrowserBackButton()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="136"
+                            class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:136</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateInteractEvent"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>generateInteractEvent</b></span>
+                        <a href="#generateInteractEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generateInteractEvent(intractEdata)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="235"
+                            class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:235</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>intractEdata</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getContentDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getContentDetails</b></span>
+                        <a href="#getContentDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getContentDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:124</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getDetails</b></span>
+                        <a href="#getDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initEditor"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>initEditor</b></span>
+                        <a href="#initEditor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initEditor()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:160</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="lockContent"></a>
+                    <span class="name">
+                        <span ><b>lockContent</b></span>
+                        <a href="#lockContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>lockContent()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="105"
+                            class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:105</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="288"
+                            class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:288</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="redirectToWorkSpace"></a>
+                    <span class="name">
+                        <span ><b>redirectToWorkSpace</b></span>
+                        <a href="#redirectToWorkSpace"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>redirectToWorkSpace()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="280"
+                            class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:280</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="retireLock"></a>
+                    <span class="name">
+                        <span ><b>retireLock</b></span>
+                        <a href="#retireLock"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>retireLock()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="268"
+                            class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:268</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setRenderer"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>setRenderer</b></span>
+                        <a href="#setRenderer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setRenderer()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="149"
+                            class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:149</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setWindowConfig"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>setWindowConfig</b></span>
+                        <a href="#setWindowConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setWindowConfig()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="206"
+                            class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:206</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setWindowContext"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>setWindowContext</b></span>
+                        <a href="#setWindowContext"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setWindowContext()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="180"
+                            class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:180</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validateRequest"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>validateRequest</b></span>
+                        <a href="#validateRequest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>validateRequest()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="218"
+                            class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:218</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>checks the permission using state, status and userId</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="browserBackEventSub"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>browserBackEventSub</b></span>
+                        <a href="#browserBackEventSub"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="buildNumber"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>buildNumber</b></span>
+                        <a href="#buildNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentDetails"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>contentDetails</b></span>
+                        <a href="#contentDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentEditorURL"></a>
+                    <span class="name">
+                        <span ><b>contentEditorURL</b></span>
+                        <a href="#contentEditorURL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>(&lt;HTMLInputElement&gt;document.getElementById(&#x27;contentEditorURL&#x27;)) ?
+  (&lt;HTMLInputElement&gt;document.getElementById(&#x27;contentEditorURL&#x27;)).value : &#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deviceId"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>deviceId</b></span>
+                        <a href="#deviceId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logo"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>logo</b></span>
+                        <a href="#logo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ownershipType"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>ownershipType</b></span>
+                        <a href="#ownershipType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;string&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="portalVersion"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>portalVersion</b></span>
+                        <a href="#portalVersion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="queryParams"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>queryParams</b></span>
+                        <a href="#queryParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="routeParams"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>routeParams</b></span>
+                        <a href="#routeParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showLoader"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>showLoader</b></span>
+                        <a href="#showLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userProfile"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>userProfile</b></span>
+                        <a href="#userProfile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IUserProfile.html" target="_self" >IUserProfile</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="videoMaxSize"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>videoMaxSize</b></span>
+                        <a href="#videoMaxSize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/workspace/components/content-editors/content-editor/content-editor.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, NgZone, Renderer2, OnDestroy } from &#x27;@angular/core&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import * as iziModal from &#x27;izimodal/js/iziModal&#x27;;
+import { NavigationHelperService, ResourceService, ConfigService, ToasterService, IUserProfile, ServerResponse } from &#x27;@sunbird/shared&#x27;;
+import { UserService, TenantService, FrameworkService } from &#x27;@sunbird/core&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { EditorService } from &#x27;./../../../services/editors/editor.service&#x27;;
+import { environment } from &#x27;@sunbird/environment&#x27;;
+import { WorkSpaceService } from &#x27;../../../services&#x27;;
+import { TelemetryService, IInteractEventEdata } from &#x27;@sunbird/telemetry&#x27;;
+import { combineLatest, of, throwError } from &#x27;rxjs&#x27;;
+import { map, mergeMap, tap, delay, first } from &#x27;rxjs/operators&#x27;;
+jQuery.fn.iziModal &#x3D; iziModal;
+
+/**
+ * Component Launches the Content Editor in a IFrame Modal
+ */
+@Component({
+  selector: &#x27;app-content-editor&#x27;,
+  templateUrl: &#x27;./content-editor.component.html&#x27;
+})
+export class ContentEditorComponent implements OnInit, OnDestroy {
+
+  private userProfile: IUserProfile;
+  private routeParams: any;
+  private buildNumber: string;
+  private deviceId: string;
+  private portalVersion: string;
+  public logo: string;
+  public showLoader &#x3D; true;
+  private browserBackEventSub;
+  public contentDetails: any;
+  public ownershipType: Array&lt;string&gt;;
+  public queryParams: object;
+  public videoMaxSize: any;
+  contentEditorURL: string &#x3D; (&lt;HTMLInputElement&gt;document.getElementById(&#x27;contentEditorURL&#x27;)) ?
+  (&lt;HTMLInputElement&gt;document.getElementById(&#x27;contentEditorURL&#x27;)).value : &#x27;&#x27;;
+
+  /**
+  * Default method of class ContentEditorComponent
+  */
+  constructor(private resourceService: ResourceService, private toasterService: ToasterService,
+    private editorService: EditorService, private activatedRoute: ActivatedRoute, private configService: ConfigService,
+    private userService: UserService, private _zone: NgZone, private renderer: Renderer2,
+    private tenantService: TenantService, private telemetryService: TelemetryService, private router: Router,
+    private navigationHelperService: NavigationHelperService, private workspaceService: WorkSpaceService,
+    private frameworkService: FrameworkService
+  ) {
+    const buildNumber &#x3D; (&lt;HTMLInputElement&gt;document.getElementById(&#x27;buildNumber&#x27;));
+    this.buildNumber &#x3D; buildNumber ? buildNumber.value : &#x27;1.0&#x27;;
+    const deviceId &#x3D; (&lt;HTMLInputElement&gt;document.getElementById(&#x27;deviceId&#x27;));
+    this.deviceId &#x3D; deviceId ? deviceId.value : &#x27;&#x27;;
+    this.portalVersion &#x3D; buildNumber &amp;&amp; buildNumber.value ? buildNumber.value.slice(0, buildNumber.value.lastIndexOf(&#x27;.&#x27;)) : &#x27;1.0&#x27;;
+    this.videoMaxSize &#x3D; (&lt;HTMLInputElement&gt;document.getElementById(&#x27;videoMaxSize&#x27;)) ?
+      (&lt;HTMLInputElement&gt;document.getElementById(&#x27;videoMaxSize&#x27;)).value : &#x27;100&#x27;;
+  }
+  ngOnInit() {
+    this.userProfile &#x3D; this.userService.userProfile;
+    this.routeParams &#x3D; this.activatedRoute.snapshot.params;
+    this.queryParams &#x3D; this.activatedRoute.snapshot.queryParams;
+    this.disableBrowserBackButton();
+    this.getDetails().pipe( first(),
+      tap(data &#x3D;&gt; {
+        if (data.tenantDetails) {
+          this.logo &#x3D; data.tenantDetails.logo;
+        }
+        this.ownershipType &#x3D; data.ownershipType;
+        this.showLoader &#x3D; false;
+        this.initEditor();
+        this.setWindowContext();
+        this.setWindowConfig();
+      }),
+      delay(10)) // wait for iziModal lo load
+      .subscribe((data) &#x3D;&gt; {
+        jQuery(&#x27;#contentEditor&#x27;).iziModal(&#x27;open&#x27;);
+        this.setRenderer();
+      },
+        (error) &#x3D;&gt; {
+          if (error &#x3D;&#x3D;&#x3D; &#x27;NO_PERMISSION&#x27;) {
+            this.toasterService.error(this.resourceService.messages.emsg.m0013);
+          } else if ([&#x27;RESOURCE_SELF_LOCKED&#x27;, &#x27;RESOURCE_LOCKED&#x27;].includes(_.get(error, &#x27;error.params.err&#x27;))) {
+            this.toasterService.error(_.replace(error.error.params.errmsg, &#x27;resource&#x27;, &#x27;content&#x27;));
+          } else {
+            this.toasterService.error(this.resourceService.messages.emsg.m0004);
+          }
+          this.closeModal();
+        });
+  }
+  private getDetails() {
+    const lockInfo &#x3D; _.pick(this.queryParams, &#x27;lockKey&#x27;, &#x27;expiresAt&#x27;, &#x27;expiresIn&#x27;);
+    const allowedEditState &#x3D; [&#x27;draft&#x27;, &#x27;allcontent&#x27;, &#x27;collaborating-on&#x27;, &#x27;uploaded&#x27;].includes(this.routeParams.state);
+    const allowedEditStatus &#x3D; this.routeParams.contentStatus ? [&#x27;draft&#x27;].includes(this.routeParams.contentStatus.toLowerCase()) : false;
+    if (_.isEmpty(lockInfo) &amp;&amp; allowedEditState &amp;&amp; allowedEditStatus) {
+      return combineLatest(this.tenantService.tenantData$, this.getContentDetails(),
+      this.editorService.getOwnershipType(), this.lockContent(), this.userService.userOrgDetails$).
+      pipe(map(data &#x3D;&gt; ({ tenantDetails: data[0].tenantData,
+        collectionDetails: data[1], ownershipType: data[2] })));
+    } else {
+      return combineLatest(this.tenantService.tenantData$, this.getContentDetails(),
+      this.editorService.getOwnershipType(), this.userService.userOrgDetails$).
+      pipe(map(data &#x3D;&gt; ({ tenantDetails: data[0].tenantData,
+        collectionDetails: data[1], ownershipType: data[2] })));
+    }
+  }
+  lockContent () {
+    const contentInfo &#x3D; {
+      contentType: this.routeParams.type,
+      framework: this.routeParams.framework,
+      identifier: this.routeParams.contentId,
+      mimeType: &#x27;application/vnd.ekstep.ecml-archive&#x27;
+    };
+    const input &#x3D; {
+      resourceId : contentInfo.identifier,
+      resourceType : &#x27;Content&#x27;,
+      resourceInfo : JSON.stringify(contentInfo),
+      creatorInfo : JSON.stringify({&#x27;name&#x27;: this.userService.userProfile.firstName, &#x27;id&#x27;: this.userService.userProfile.id}),
+      createdBy : this.userService.userProfile.id
+    };
+    return this.workspaceService.lockContent(input).pipe(tap((data) &#x3D;&gt; {
+      this.queryParams &#x3D; data.result;
+      this.router.navigate([], {relativeTo: this.activatedRoute, queryParams: data.result});
+    }));
+  }
+  private getContentDetails() {
+    const options: any &#x3D; { params: { mode: &#x27;edit&#x27; } };
+    return this.editorService.getContent(this.routeParams.contentId, options).
+      pipe(mergeMap((data) &#x3D;&gt; {
+        this.contentDetails &#x3D; data.result.content;
+        if (this.validateRequest()) {
+          return of(data);
+        } else {
+          return throwError(&#x27;NO_PERMISSION&#x27;);
+        }
+      }));
+  }
+  private disableBrowserBackButton() {
+    sessionStorage.setItem(&#x27;inEditor&#x27;, &#x27;true&#x27;);
+    window.location.hash &#x3D; &#x27;no&#x27;;
+    this.workspaceService.toggleWarning(this.routeParams.type);
+    this.browserBackEventSub &#x3D; this.workspaceService.browserBackEvent.subscribe(() &#x3D;&gt; {
+      const closeEditorIntractEdata: IInteractEventEdata &#x3D; {
+        id: &#x27;browser-back-button&#x27;,
+        type: &#x27;click&#x27;,
+        pageid: &#x27;content-editor&#x27;
+      };
+      this.generateInteractEvent(closeEditorIntractEdata);
+    });
+  }
+  private setRenderer() {
+    this.renderer.listen(&#x27;window&#x27;, &#x27;editor:metadata:edit&#x27;, () &#x3D;&gt; {
+      this.closeModal();
+    });
+    this.renderer.listen(&#x27;window&#x27;, &#x27;editor:window:close&#x27;, () &#x3D;&gt; {
+      this.closeModal();
+    });
+    this.renderer.listen(&#x27;window&#x27;, &#x27;editor:content:review&#x27;, () &#x3D;&gt; {
+      this.closeModal();
+    });
+  }
+  private initEditor() {
+    jQuery(&#x27;#contentEditor&#x27;).iziModal({
+      title: &#x27;&#x27;,
+      iframe: true,
+      iframeURL: this.contentEditorURL + &#x27;?&#x27; + this.buildNumber,
+      navigateArrows: false,
+      fullscreen: true,
+      openFullscreen: true,
+      closeOnEscape: false,
+      overlayClose: false,
+      overlay: false,
+      overlayColor: &#x27;&#x27;,
+      history: false,
+      onClosing: () &#x3D;&gt; {
+        this._zone.run(() &#x3D;&gt; {
+          this.closeModal();
+        });
+      }
+    });
+  }
+  private setWindowContext() {
+    window.context &#x3D; {
+      user: {
+        id: this.userService.userid,
+        name : !_.isEmpty(this.userProfile.lastName) ? this.userProfile.firstName + &#x27; &#x27; + this.userProfile.lastName :
+        this.userProfile.firstName,
+        orgIds: this.userProfile.organisationIds,
+        organisations: this.userService.orgIdNameMap
+      },
+      did: this.deviceId,
+      sid: this.userService.sessionId,
+      contentId: this.routeParams.contentId,
+      pdata: {
+        id: this.userService.appId,
+        ver: this.portalVersion,
+        pid: &#x27;sunbird-portal&#x27;
+      },
+      contextRollUp: this.telemetryService.getRollUpData(this.userProfile.organisationIds),
+      tags: this.userService.dims,
+      channel: this.userService.channel,
+      defaultLicense: this.frameworkService.getDefaultLicense(),
+      framework: this.routeParams.framework,
+      ownershipType: this.ownershipType,
+      timeDiff: this.userService.getServerTimeDiff
+    };
+  }
+  private setWindowConfig() {
+    window.config &#x3D; _.cloneDeep(this.configService.editorConfig.CONTENT_EDITOR.WINDOW_CONFIG); // cloneDeep to preserve default config
+    window.config.build_number &#x3D; this.buildNumber;
+    window.config.headerLogo &#x3D; this.logo;
+    window.config.aws_s3_urls &#x3D; this.userService.cloudStorageUrls || [];
+    window.config.enableTelemetryValidation &#x3D; environment.enableTelemetryValidation; // telemetry validation
+    window.config.lock &#x3D; _.pick(this.queryParams, &#x27;lockKey&#x27;, &#x27;expiresAt&#x27;, &#x27;expiresIn&#x27;);
+    window.config.videoMaxSize &#x3D; this.videoMaxSize;
+  }
+  /**
+   * checks the permission using state, status and userId
+   */
+  private validateRequest() {
+    const validStatus &#x3D; _.indexOf(this.configService.editorConfig.CONTENT_EDITOR.contentStatus, this.contentDetails.status) &gt; -1;
+    const validState &#x3D; _.indexOf(this.configService.editorConfig.CONTENT_EDITOR.contentState, this.routeParams.state) &gt; -1;
+    if (this.contentDetails.mimeType &#x3D;&#x3D;&#x3D; this.configService.appConfig.CONTENT_CONST.CREATE_LESSON &amp;&amp; validStatus) {
+      if (validState &amp;&amp; this.contentDetails.createdBy !&#x3D;&#x3D; this.userService.userid) {
+        return true; // we need to remove this case or validState should be changed
+      } else if (validState &amp;&amp; this.contentDetails.createdBy &#x3D;&#x3D;&#x3D; this.userService.userid) {
+        return true;
+      } else if (validState &amp;&amp; _.includes(this.contentDetails.collaborators, this.userService.userid)) {
+        return true;
+      } else if (this.contentDetails.createdBy &#x3D;&#x3D;&#x3D; this.userService.userid) {
+        return true;
+      }
+      return false;
+    }
+    return false;
+  }
+  private generateInteractEvent(intractEdata) {
+    if (intractEdata) {
+      const appTelemetryInteractData: any &#x3D; {
+        context: {
+          env: &#x27;content-editor&#x27;
+        },
+        edata: intractEdata
+      };
+      if (this.contentDetails) {
+        appTelemetryInteractData.object &#x3D; {
+          id: this.contentDetails.identifier,
+          type: this.contentDetails.contentType || this.contentDetails.resourceType || &#x27;content&#x27;,
+          ver: this.contentDetails.pkgVersion ? this.contentDetails.pkgVersion.toString() : &#x27;1.0&#x27;,
+        };
+      }
+      this.telemetryService.interact(appTelemetryInteractData);
+    }
+  }
+  /**
+   * Re directed to the draft on close of modal
+   */
+  closeModal() {
+    this.showLoader &#x3D; true;
+    if (document.getElementById(&#x27;contentEditor&#x27;)) {
+      document.getElementById(&#x27;contentEditor&#x27;).remove();
+    }
+    if (this.routeParams.contentStatus.toLowerCase() &#x3D;&#x3D;&#x3D; &#x27;draft&#x27;) {
+      this.retireLock();
+    } else {
+      this.redirectToWorkSpace();
+    }
+  }
+
+  retireLock () {
+    const inputData &#x3D; {&#x27;resourceId&#x27;: this.routeParams.contentId, &#x27;resourceType&#x27;: &#x27;Content&#x27;};
+    this.workspaceService.retireLock(inputData).subscribe(
+      (data: ServerResponse) &#x3D;&gt; {
+        this.redirectToWorkSpace();
+      },
+      (err: ServerResponse) &#x3D;&gt; {
+        this.redirectToWorkSpace();
+      }
+    );
+  }
+
+  redirectToWorkSpace () {
+    if (this.routeParams.state &#x3D;&#x3D;&#x3D; &#x27;collaborating-on&#x27;) {
+      this.navigationHelperService.navigateToWorkSpace(&#x27;/workspace/content/collaborating-on/1&#x27;);
+    } else {
+      this.navigationHelperService.navigateToWorkSpace(&#x27;/workspace/content/draft/1&#x27;);
+    }
+  }
+
+  ngOnDestroy() {
+    if (document.getElementById(&#x27;contentEditor&#x27;)) {
+      document.getElementById(&#x27;contentEditor&#x27;).remove();
+    }
+    if (this.browserBackEventSub) {
+      this.browserBackEventSub.unsubscribe();
+    }
+    sessionStorage.setItem(&#x27;inEditor&#x27;, &#x27;false&#x27;);
+    this.workspaceService.toggleWarning();
+    const removeIzi &#x3D; document.querySelector(&#x27;.iziModal-isAttached&#x27;);
+    if (removeIzi) {
+      removeIzi.classList.remove(&#x27;iziModal-isAttached&#x27;);
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div id&#x3D;&quot;contentEditor&quot;&gt;&lt;/div&gt;
+&lt;sui-dimmer class&#x3D;&quot;page&quot; *ngIf&#x3D;&quot;showLoader&quot; [isDimmed]&#x3D;&quot;showLoader&quot;&gt;
+  &lt;div class&#x3D;&quot;ui text loader&quot;&gt;&lt;h2&gt;Loading...&lt;/h2&gt;&lt;/div&gt;
+&lt;/sui-dimmer&gt;
+</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div id="contentEditor"></div><sui-dimmer class="page" *ngIf="showLoader" [isDimmed]="showLoader">  <div class="ui text loader"><h2>Loading...</h2></div></sui-dimmer></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'app-access-discussion'},{'name': 'AccountMergeModalComponent', 'selector': 'app-account-merge-modal'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-info'},{'name': 'ActivityDashboardComponent', 'selector': 'app-activity-dashboard'},{'name': 'ActivityDetailsComponent', 'selector': 'app-activity-details'},{'name': 'ActivityFormComponent', 'selector': 'app-activity-form'},{'name': 'ActivityListComponent', 'selector': 'app-activity-list'},{'name': 'ActivitySearchComponent', 'selector': 'app-activity-search'},{'name': 'AddActivityComponent', 'selector': 'app-add-activity'},{'name': 'AddActivityContentTypesComponent', 'selector': 'app-add-activity-content-types'},{'name': 'AddEntityComponent', 'selector': 'add-entity'},{'name': 'AddMemberComponent', 'selector': 'app-add-member'},{'name': 'AddSummaryModalComponent', 'selector': 'app-add-summary-modal'},{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AllContentComponent', 'selector': 'app-all-content'},{'name': 'AllEvidenceComponent', 'selector': 'app-all-evidence'},{'name': 'AllTextbooksComponent', 'selector': 'app-all-textbooks'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppLandingSectionComponent', 'selector': 'app-landing-section'},{'name': 'AppLoaderComponent', 'selector': 'app-loader'},{'name': 'AssessmentPlayerComponent', 'selector': 'app-assessment-player'},{'name': 'AssignBadgesContentComponent', 'selector': 'app-assign-badges-content'},{'name': 'AuthFailedComponent', 'selector': 'app-auth-failed'},{'name': 'BackButtonComponent', 'selector': 'app-back-button'},{'name': 'BatchCardComponent', 'selector': 'app-batch-card'},{'name': 'BatchDetailsComponent', 'selector': 'app-batch-details'},{'name': 'BatchInfoComponent', 'selector': 'app-batch-info'},{'name': 'BatchListComponent', 'selector': 'app-batch-list'},{'name': 'BatchPageSectionComponent', 'selector': 'app-batch-page-section'},{'name': 'BrowseImagePopupComponent', 'selector': 'browse-image-popup'},{'name': 'BrowserCompatibilityComponent', 'selector': 'app-browser-compatibility'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardCreationComponent', 'selector': 'app-card-creation'},{'name': 'CertificateConfigurationComponent', 'selector': 'app-certificate-configuration'},{'name': 'CertificateDetailsComponent', 'selector': 'app-certificate-details'},{'name': 'CertificateNameUpdatePopupComponent', 'selector': 'app-certificate-name-update-popup'},{'name': 'CertPreviewPopupComponent', 'selector': 'app-cert-preview-popup'},{'name': 'ChooseUserComponent', 'selector': 'app-choose-user'},{'name': 'CollaboratingOnComponent', 'selector': 'app-collaborating-on'},{'name': 'CollaborationContentFilterComponent', 'selector': 'app-collaboration-content-filter'},{'name': 'CollectionEditorComponent', 'selector': 'app-collection-editor'},{'name': 'CollectionPlayerComponent', 'selector': 'app-collection-player'},{'name': 'CollectionPlayerMetadataComponent', 'selector': 'app-collection-player-metadata'},{'name': 'CommingSoonComponent', 'selector': 'app-comming-soon'},{'name': 'ConfirmationPopupComponent', 'selector': 'app-confirmation-popup'},{'name': 'ConfirmPopupComponent', 'selector': 'app-confirm-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentBadgeComponent', 'selector': 'app-content-badge'},{'name': 'ContentChapterlistComponent', 'selector': 'app-content-chapterlist'},{'name': 'ContentCreditsComponent', 'selector': 'app-content-credits'},{'name': 'ContentEditorComponent', 'selector': 'app-content-editor'},{'name': 'ContentLicenceComponent', 'selector': 'app-content-licence'},{'name': 'ContentManagerComponent', 'selector': 'app-content-manager'},{'name': 'ContentManagerInfoPopUpComponent', 'selector': 'app-content-manager-info-pop-up'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerMetadataComponent', 'selector': 'app-content-player-metadata'},{'name': 'ContentPlayerPageComponent', 'selector': 'app-contentplayer-page'},{'name': 'ContentRatingComponent', 'selector': 'app-content-rating'},{'name': 'ContentTypeComponent', 'selector': 'app-content-type'},{'name': 'CourseCompletionComponent', 'selector': 'app-course-completion'},{'name': 'CourseConsumptionComponent', 'selector': 'app-course-consumption'},{'name': 'CourseConsumptionHeaderComponent', 'selector': 'app-course-consumption-header'},{'name': 'CourseConsumptionPageComponent', 'selector': ''},{'name': 'CourseDashboardComponent', 'selector': 'app-course-dashboard'},{'name': 'CourseDetailsComponent', 'selector': 'app-course-details'},{'name': 'CourseInfoComponent', 'selector': 'app-course-info'},{'name': 'CoursePageComponent', 'selector': ''},{'name': 'CoursePlayerComponent', 'selector': 'app-course-player'},{'name': 'CourseProgressComponent', 'selector': 'app-course-progress'},{'name': 'CreateBatchComponent', 'selector': 'app-create-batch'},{'name': 'CreateContentComponent', 'selector': 'app-create-content'},{'name': 'CreateEditGroupComponent', 'selector': 'app-create-edit-group'},{'name': 'CreateOrgTypeComponent', 'selector': 'app-create-org-type'},{'name': 'CreateTemplateComponent', 'selector': 'app-create-template'},{'name': 'CreateUserComponent', 'selector': 'app-create-user'},{'name': 'CreditsAndLicenceComponent', 'selector': 'app-credits-and-licence'},{'name': 'CurriculumCardComponent', 'selector': 'app-curriculum-card'},{'name': 'CurriculumCoursesComponent', 'selector': 'app-curriculum-courses'},{'name': 'CurriculumInfoComponent', 'selector': 'app-curriculum-info'},{'name': 'CustomMultiSelectComponent', 'selector': 'app-custom-multi-select'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardSidebarComponent', 'selector': 'app-dashboard-sidebar'},{'name': 'DataChartComponent', 'selector': 'app-data-chart'},{'name': 'DataDrivenComponent', 'selector': 'app-data-driven'},{'name': 'DataDrivenFilterComponent', 'selector': 'app-data-driven-filter'},{'name': 'DatasetComponent', 'selector': 'app-dataset'},{'name': 'DatasetsComponent', 'selector': 'app-datasets'},{'name': 'DataTableComponent', 'selector': 'app-data-table'},{'name': 'DefaultTemplateComponent', 'selector': 'app-content-creation-default-template'},{'name': 'DesktopAppUpdateComponent', 'selector': 'app-desktop-app-update'},{'name': 'DialCodeCardComponent', 'selector': 'app-dial-code-card'},{'name': 'DialCodeComponent', 'selector': 'app-dial-code'},{'name': 'DraftComponent', 'selector': 'app-draft'},{'name': 'EditSubmissionComponent', 'selector': 'app-edit-submission'},{'name': 'EnrollBatchComponent', 'selector': 'app-enroll-batch'},{'name': 'EntityListComponent', 'selector': 'entity-list'},{'name': 'EntityListComponent', 'selector': 'app-entity-list'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'ExploreContentComponent', 'selector': ''},{'name': 'ExploreCourseComponent', 'selector': ''},{'name': 'ExploreCurriculumCoursesComponent', 'selector': 'app-explore-curriculum-courses'},{'name': 'ExploreFtuPopupComponent', 'selector': 'app-explore-ftu-popup'},{'name': 'ExploreGroupComponent', 'selector': 'app-explore-group'},{'name': 'ExplorePageComponent', 'selector': 'app-explore-page-component'},{'name': 'FancyTreeComponent', 'selector': 'app-fancy-tree'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FaqReportComponent', 'selector': 'app-faq-report'},{'name': 'FilterComponent', 'selector': 'app-filter'},{'name': 'FlagConentplayerComponent', 'selector': 'app-flag-conentplayer'},{'name': 'FlaggedComponent', 'selector': 'app-flagged'},{'name': 'FlagReviewerComponent', 'selector': 'app-flag-reviewer'},{'name': 'ForumComponent', 'selector': 'app-forum'},{'name': 'FtuPopupComponent', 'selector': 'app-ftu-popup'},{'name': 'FullPageLoaderComponent', 'selector': 'app-full-page-loader'},{'name': 'FullPageModalComponent', 'selector': 'app-full-page-modal'},{'name': 'GenericEditorComponent', 'selector': 'app-generic-editor'},{'name': 'GetComponent', 'selector': 'app-get'},{'name': 'GlobalConsentPiiComponent', 'selector': 'app-global-consent-pii'},{'name': 'GlobalSearchFilterComponent', 'selector': 'app-global-search-filter'},{'name': 'GlobalSearchSelectedFilterComponent', 'selector': 'app-global-search-selected-filter'},{'name': 'GroupDetailsComponent', 'selector': 'app-group-details'},{'name': 'GroupHeaderComponent', 'selector': 'app-group-header'},{'name': 'GroupMembersComponent', 'selector': 'app-group-members'},{'name': 'GuestProfileComponent', 'selector': 'app-guest-profile'},{'name': 'HomeSearchComponent', 'selector': ''},{'name': 'IdentifyAccountComponent', 'selector': ''},{'name': 'InAppNotificationComponent', 'selector': 'app-in-app-notification'},{'name': 'InfoCardComponent', 'selector': 'app-info-card'},{'name': 'InstallAppComponent', 'selector': 'app-install-app'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'LanguageDropdownComponent', 'selector': 'app-language-dropdown'},{'name': 'LibraryComponent', 'selector': 'app-library'},{'name': 'LimitedPublishedComponent', 'selector': 'app-limited-published'},{'name': 'ListAllReportsComponent', 'selector': 'app-list-all-reports'},{'name': 'LoadContentComponent', 'selector': 'app-load-content'},{'name': 'LoadOfflineContentComponent', 'selector': 'app-load-offline-content'},{'name': 'LocationSelectionComponent', 'selector': 'app-location-selection'},{'name': 'LockInfoPopupComponent', 'selector': 'app-contentlock-info-popup'},{'name': 'MainFooterComponent', 'selector': 'app-footer'},{'name': 'MainHeaderComponent', 'selector': 'app-header'},{'name': 'MainMenuComponent', 'selector': 'app-main-menu'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialAutoCompleteComponent', 'selector': 'app-material-auto-complete'},{'name': 'MemberActionsComponent', 'selector': 'app-member-actions'},{'name': 'MergeAccountStatusComponent', 'selector': 'app-merge-account-status'},{'name': 'ModalWrapperComponent', 'selector': 'app-modal-wrapper'},{'name': 'MyGroupsComponent', 'selector': 'app-my-groups'},{'name': 'NetworkStatusComponent', 'selector': 'app-network-status'},{'name': 'NewCollectionEditorComponent', 'selector': 'app-new-collection-editor'},{'name': 'NoGroupResultComponent', 'selector': 'app-no-group-result'},{'name': 'NoResultComponent', 'selector': 'app-no-result-found'},{'name': 'NoResultComponent', 'selector': 'app-no-result'},{'name': 'ObservationDetailsComponent', 'selector': 'app-observation-details'},{'name': 'ObservationListingComponent', 'selector': 'app-observation-listing'},{'name': 'OfflineApplicationDownloadComponent', 'selector': 'app-offline-application-download'},{'name': 'OfflineBannerComponent', 'selector': 'app-offline-banner'},{'name': 'OfflineHelpVideosComponent', 'selector': 'app-offline-help-videos'},{'name': 'OnboardingUserSelectionComponent', 'selector': 'app-onboarding-user-selection'},{'name': 'OnDemandReportsComponent', 'selector': 'app-on-demand-reports'},{'name': 'OrganisationComponent', 'selector': 'app-organization'},{'name': 'OrganizationUploadComponent', 'selector': 'app-organization'},{'name': 'OtpComponent', 'selector': 'app-otp'},{'name': 'OtpPopupComponent', 'selector': 'app-otp-popup'},{'name': 'PageSectionComponent', 'selector': 'app-page-section'},{'name': 'PlayerComponent', 'selector': 'app-player'},{'name': 'PopupComponent', 'selector': 'app-modal'},{'name': 'ProfileBadgeComponent', 'selector': 'app-profile-badge'},{'name': 'ProfileFrameworkPopupComponent', 'selector': 'app-popup'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'PublicBatchDetailsComponent', 'selector': 'app-public-batch-details'},{'name': 'PublicCourseConsumptionPageComponent', 'selector': ''},{'name': 'PublicCoursePlayerComponent', 'selector': 'app-public-course-player'},{'name': 'PublishedComponent', 'selector': 'app-published'},{'name': 'PublishedPopupComponent', 'selector': 'app-published-popup'},{'name': 'QrCodeModalComponent', 'selector': 'app-qr-code-modal'},{'name': 'QuestionnaireComponent', 'selector': 'app-questionnaire'},{'name': 'RecoverAccountComponent', 'selector': ''},{'name': 'RedirectComponent', 'selector': 'app-redirect'},{'name': 'ReIssueCertificateComponent', 'selector': 'app-re-issue-certificate'},{'name': 'ReportComponent', 'selector': 'app-report'},{'name': 'ReportSummaryComponent', 'selector': 'app-report-summary'},{'name': 'ReportViewComponent', 'selector': 'app-report-view'},{'name': 'RequestChangesPopupComponent', 'selector': 'app-request-changes-popup'},{'name': 'ReviewCommentsComponent', 'selector': 'app-review-comments'},{'name': 'ReviewSubmissionsComponent', 'selector': 'app-review-submissions'},{'name': 'ReviewsubmissionsContentplayerComponent', 'selector': 'app-reviewsubmissions-contentplayer'},{'name': 'SbDatatableComponent', 'selector': 'sb-datatable'},{'name': 'SbTableComponent', 'selector': 'app-sb-table'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SearchFilterComponent', 'selector': 'app-search-filter'},{'name': 'SelectAccountIdentifierComponent', 'selector': ''},{'name': 'SelectOptionGroupComponent', 'selector': 'app-select-option-group'},{'name': 'SelectOrgComponent', 'selector': ''},{'name': 'ShareLinkComponent', 'selector': 'app-share-link'},{'name': 'SignupBasicInfoComponent', 'selector': 'app-signup-basic-info'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupEmailPasswordComponent', 'selector': 'app-signup-email-password'},{'name': 'SignupOnboardingInfoComponent', 'selector': 'app-signup-onboarding-info'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'SsoMergeConfirmationComponent', 'selector': 'app-sso-merge-confirmation'},{'name': 'StatusComponent', 'selector': 'app-status'},{'name': 'SubmissionsComponent', 'selector': 'submission'},{'name': 'SubmitTeacherDetailsComponent', 'selector': 'app-submit-teacher-details'},{'name': 'SvgEditorComponent', 'selector': 'app-svg-editor'},{'name': 'SystemWarningComponent', 'selector': 'app-system-warning'},{'name': 'TelemetryComponent', 'selector': 'app-telemetry'},{'name': 'TelemetryErrorModalComponent', 'selector': 'app-telemetry-error-modal'},{'name': 'TelemetryImportComponent', 'selector': 'app-telemetry-import'},{'name': 'TermsAndConditionsPopupComponent', 'selector': 'app-tnc-popup'},{'name': 'TopicPickerComponent', 'selector': 'app-topic-picker'},{'name': 'UciComponent', 'selector': 'app-uci'},{'name': 'UnEnrollBatchComponent', 'selector': 'app-unenroll-batch'},{'name': 'UpdateBatchComponent', 'selector': 'app-update-batch'},{'name': 'UpdateContactComponent', 'selector': ''},{'name': 'UpdateContactDetailsComponent', 'selector': 'app-update-contact-details'},{'name': 'UpdateCourseBatchComponent', 'selector': 'app-update-course-batch'},{'name': 'UpForReviewComponent', 'selector': 'app-up-for-review'},{'name': 'UpforreviewContentplayerComponent', 'selector': 'app-upforreview-contentplayer'},{'name': 'UpforReviewFilterComponent', 'selector': 'app-up-for-review-filter'},{'name': 'UploadedComponent', 'selector': 'app-uploaded'},{'name': 'UsageReportsComponent', 'selector': 'app-usage-reports'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserFilterComponent', 'selector': 'app-user-filter'},{'name': 'UserLocationComponent', 'selector': 'app-user-location'},{'name': 'UserOnboardingComponent', 'selector': 'app-user-onboarding'},{'name': 'UserOrgManagementComponent', 'selector': 'app-user-org-management'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRoleAssignComponent', 'selector': 'app-user-role-assign'},{'name': 'UserSearchComponent', 'selector': 'app-user-search'},{'name': 'ValidateTeacherIdentifierPopupComponent', 'selector': 'app-validate-teacher-identifier-popup'},{'name': 'VerifyAccountIdentifierComponent', 'selector': ''},{'name': 'ViewAllComponent', 'selector': 'app-view-all'},{'name': 'ViewOrgTypeComponent', 'selector': 'app-view-org-type'},{'name': 'WorkspaceComponent', 'selector': 'app-workspace'},{'name': 'WorkspaceContentFilterComponent', 'selector': 'app-workspace-content-filter'},{'name': 'WorkspacesidebarComponent', 'selector': 'app-workspacesidebar'},{'name': 'YearOfBirthComponent', 'selector': 'app-year-of-birth'}];
+    var DIRECTIVES = [{'name': 'ActivityDashboardDirective', 'selector': '[appActivityDashboard]'},{'name': 'AddToGroupDirective', 'selector': '[appAddToGroup]'},{'name': 'BodyScrollDirective', 'selector': '[appBodyScroll]'},{'name': 'ComponentDeactivate', 'selector': ''},{'name': 'ContentDirectionDirective', 'selector': '[appContentDirection]'},{'name': 'DesktopOnlyDirective', 'selector': '[appDesktopOnly]'},{'name': 'HighlightTextDirective', 'selector': '[appHighlightText]'},{'name': 'MarkdownDirective', 'selector': '[appMarkdown]'},{'name': 'ModalContentDirective', 'selector': '[sbModalContent]'},{'name': 'OnlineOnlyDirective', 'selector': '[appOnlineOnly]'},{'name': 'PermissionDirective', 'selector': '[appPermission]'},{'name': 'TelemetryEndDirective', 'selector': '[appTelemetryEnd]'},{'name': 'TelemetryErrorDirective', 'selector': '[appTelemetryError]'},{'name': 'TelemetryEventsDirective', 'selector': '[telemetryEventsButton]'},{'name': 'TelemetryImpressionDirective', 'selector': '[appTelemetryImpression]'},{'name': 'TelemetryInteractDirective', 'selector': '[appTelemetryInteract]'},{'name': 'TelemetryShareDirective', 'selector': '[appTelemetryShare]'},{'name': 'TelemetryStartDirective', 'selector': '[appTelemetryStart]'}];
+    var ACTUAL_COMPONENT = {'name': 'ContentEditorComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ContentEditorComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

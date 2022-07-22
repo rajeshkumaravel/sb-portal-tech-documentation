@@ -1,0 +1,2802 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  ContentPlayerComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/shared-feature/components/content-player/content-player.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+                    <code><a href="../interfaces/ComponentCanDeactivate.html" target="_self" >ComponentCanDeactivate</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-content-player</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./content-player.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./content-player.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#activatedRoute" >activatedRoute</a>
+                            </li>
+                            <li>
+                                <a href="#contentData" >contentData</a>
+                            </li>
+                            <li>
+                                <a href="#contentId" >contentId</a>
+                            </li>
+                            <li>
+                                <a href="#contentStatus" >contentStatus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#contentUtilsServiceService" >contentUtilsServiceService</a>
+                            </li>
+                            <li>
+                                <a href="#copyContentInteractEdata" >copyContentInteractEdata</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#copyContentService" >copyContentService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialCode" >dialCode</a>
+                            </li>
+                            <li>
+                                <a href="#errorMessage" >errorMessage</a>
+                            </li>
+                            <li>
+                                <a href="#groupId" >groupId</a>
+                            </li>
+                            <li>
+                                <a href="#isDesktopApp" >isDesktopApp</a>
+                            </li>
+                            <li>
+                                <a href="#isFullScreenView" >isFullScreenView</a>
+                            </li>
+                            <li>
+                                <a href="#isGroupAdmin" >isGroupAdmin</a>
+                            </li>
+                            <li>
+                                <a href="#isQuestionSet" >isQuestionSet</a>
+                            </li>
+                            <li>
+                                <a href="#layoutConfiguration" >layoutConfiguration</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#layoutService" >layoutService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#navigationHelperService" >navigationHelperService</a>
+                            </li>
+                            <li>
+                                <a href="#objectInteract" >objectInteract</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#objectRollup" >objectRollup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#pageLoadDuration" >pageLoadDuration</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#permissionService" >permissionService</a>
+                            </li>
+                            <li>
+                                <a href="#playerConfig" >playerConfig</a>
+                            </li>
+                            <li>
+                                <a href="#playerOption" >playerOption</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#playerService" >playerService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#popupControlService" >popupControlService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#publicPlayerService" >publicPlayerService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#resourceService" >resourceService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#router" >router</a>
+                            </li>
+                            <li>
+                                <a href="#shareLink" >shareLink</a>
+                            </li>
+                            <li>
+                                <a href="#sharelinkModal" >sharelinkModal</a>
+                            </li>
+                            <li>
+                                <a href="#showError" >showError</a>
+                            </li>
+                            <li>
+                                <a href="#showLoader" >showLoader</a>
+                            </li>
+                            <li>
+                                <a href="#showPlayer" >showPlayer</a>
+                            </li>
+                            <li>
+                                <a href="#telemetryImpression" >telemetryImpression</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#telemetryService" >telemetryService</a>
+                            </li>
+                            <li>
+                                <a href="#telemetryShareData" >telemetryShareData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toasterService" >toasterService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#unsubscribe" >unsubscribe</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#unsubscribe$" >unsubscribe$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#userService" >userService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#windowScrollService" >windowScrollService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#canDeactivate" >canDeactivate</a>
+                            </li>
+                            <li>
+                                <a href="#copyContent" >copyContent</a>
+                            </li>
+                            <li>
+                                <a href="#getContent" >getContent</a>
+                            </li>
+                            <li>
+                                <a href="#getPublicContent" >getPublicContent</a>
+                            </li>
+                            <li>
+                                <a href="#getQuestionSetHierarchy" >getQuestionSetHierarchy</a>
+                            </li>
+                            <li>
+                                <a href="#goBack" >goBack</a>
+                            </li>
+                            <li>
+                                <a href="#initLayout" >initLayout</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterViewInit" >ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onShareLink" >onShareLink</a>
+                            </li>
+                            <li>
+                                <a href="#setTelemetryData" >setTelemetryData</a>
+                            </li>
+                            <li>
+                                <a href="#setTelemetryShareData" >setTelemetryShareData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>HostListeners</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#window:beforeunload" >window:beforeunload</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, navigationHelperService: <a href="../injectables/NavigationHelperService.html" target="_self">NavigationHelperService</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, resourceService: <a href="../injectables/ResourceService.html" target="_self">ResourceService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, toasterService: <a href="../injectables/ToasterService.html" target="_self">ToasterService</a>, windowScrollService: <a href="../injectables/WindowScrollService.html" target="_self">WindowScrollService</a>, playerService: <a href="../injectables/PlayerService.html" target="_self">PlayerService</a>, publicPlayerService: <a href="../injectables/PublicPlayerService.html" target="_self">PublicPlayerService</a>, copyContentService: <a href="../injectables/CopyContentService.html" target="_self">CopyContentService</a>, permissionService: <a href="../injectables/PermissionService.html" target="_self">PermissionService</a>, contentUtilsServiceService: <a href="../injectables/ContentUtilsServiceService.html" target="_self">ContentUtilsServiceService</a>, popupControlService: <a href="../injectables/PopupControlService.html" target="_self">PopupControlService</a>, configService: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, layoutService: <a href="../injectables/LayoutService.html" target="_self">LayoutService</a>, telemetryService: <a href="../injectables/TelemetryService.html" target="_self">TelemetryService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>activatedRoute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>navigationHelperService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationHelperService.html" target="_self" >NavigationHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>resourceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toasterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>windowScrollService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/WindowScrollService.html" target="_self" >WindowScrollService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>playerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PlayerService.html" target="_self" >PlayerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>publicPlayerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PublicPlayerService.html" target="_self" >PublicPlayerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>copyContentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CopyContentService.html" target="_self" >CopyContentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>permissionService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PermissionService.html" target="_self" >PermissionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>contentUtilsServiceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ContentUtilsServiceService.html" target="_self" >ContentUtilsServiceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>popupControlService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PopupControlService.html" target="_self" >PopupControlService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>configService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>layoutService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LayoutService.html" target="_self" >LayoutService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryService.html" target="_self" >TelemetryService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+    <section>
+    <h3>HostListeners</h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="window:beforeunload"></a>
+                    <span class="name">
+                        <span ><b>window:beforeunload</b></span>
+                        <a href="#window:beforeunload"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>window:beforeunload()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="canDeactivate"></a>
+                    <span class="name">
+                        <span ><b>canDeactivate</b></span>
+                        <a href="#canDeactivate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>canDeactivate()</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <b>Decorators : </b>
+                    <br />
+                    <code>@HostListener(&#x27;window:beforeunload&#x27;)<br /></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="copyContent"></a>
+                    <span class="name">
+                        <span ><b>copyContent</b></span>
+                        <a href="#copyContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>copyContent(contentData: <a href="../interfaces/ContentData.html" target="_self">ContentData</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="233"
+                            class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:233</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>contentData</td>
+                                    <td>
+                                                <code><a href="../interfaces/ContentData.html" target="_self" >ContentData</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getContent"></a>
+                    <span class="name">
+                        <span ><b>getContent</b></span>
+                        <a href="#getContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getContent()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPublicContent"></a>
+                    <span class="name">
+                        <span ><b>getPublicContent</b></span>
+                        <a href="#getPublicContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPublicContent()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="203"
+                            class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:203</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getQuestionSetHierarchy"></a>
+                    <span class="name">
+                        <span ><b>getQuestionSetHierarchy</b></span>
+                        <a href="#getQuestionSetHierarchy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getQuestionSetHierarchy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="182"
+                            class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:182</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goBack"></a>
+                    <span class="name">
+                        <span ><b>goBack</b></span>
+                        <a href="#goBack"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goBack()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="143"
+                            class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:143</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initLayout"></a>
+                    <span class="name">
+                        <span ><b>initLayout</b></span>
+                        <a href="#initLayout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initLayout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <span ><b>ngAfterViewInit</b></span>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="248"
+                            class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:248</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="259"
+                            class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:259</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onShareLink"></a>
+                    <span class="name">
+                        <span ><b>onShareLink</b></span>
+                        <a href="#onShareLink"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onShareLink()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="243"
+                            class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:243</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setTelemetryData"></a>
+                    <span class="name">
+                        <span ><b>setTelemetryData</b></span>
+                        <a href="#setTelemetryData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setTelemetryData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="112"
+                            class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:112</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setTelemetryShareData"></a>
+                    <span class="name">
+                        <span ><b>setTelemetryShareData</b></span>
+                        <a href="#setTelemetryShareData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setTelemetryShareData(param)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="252"
+                            class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:252</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>param</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="activatedRoute"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>activatedRoute</b></span>
+                        <a href="#activatedRoute"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:59</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentData"></a>
+                    <span class="name">
+                        <span ><b>contentData</b></span>
+                        <a href="#contentData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ContentData.html" target="_self" >ContentData</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentId"></a>
+                    <span class="name">
+                        <span ><b>contentId</b></span>
+                        <a href="#contentId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentStatus"></a>
+                    <span class="name">
+                        <span ><b>contentStatus</b></span>
+                        <a href="#contentStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentUtilsServiceService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>contentUtilsServiceService</b></span>
+                        <a href="#contentUtilsServiceService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ContentUtilsServiceService.html" target="_self" >ContentUtilsServiceService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:64</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="copyContentInteractEdata"></a>
+                    <span class="name">
+                        <span ><b>copyContentInteractEdata</b></span>
+                        <a href="#copyContentInteractEdata"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IInteractEventEdata.html" target="_self" >IInteractEventEdata</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="copyContentService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>copyContentService</b></span>
+                        <a href="#copyContentService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/CopyContentService.html" target="_self" >CopyContentService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:63</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dialCode"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dialCode</b></span>
+                        <a href="#dialCode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="errorMessage"></a>
+                    <span class="name">
+                        <span ><b>errorMessage</b></span>
+                        <a href="#errorMessage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="groupId"></a>
+                    <span class="name">
+                        <span ><b>groupId</b></span>
+                        <a href="#groupId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isDesktopApp"></a>
+                    <span class="name">
+                        <span ><b>isDesktopApp</b></span>
+                        <a href="#isDesktopApp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isFullScreenView"></a>
+                    <span class="name">
+                        <span ><b>isFullScreenView</b></span>
+                        <a href="#isFullScreenView"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isGroupAdmin"></a>
+                    <span class="name">
+                        <span ><b>isGroupAdmin</b></span>
+                        <a href="#isGroupAdmin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isQuestionSet"></a>
+                    <span class="name">
+                        <span ><b>isQuestionSet</b></span>
+                        <a href="#isQuestionSet"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="layoutConfiguration"></a>
+                    <span class="name">
+                        <span ><b>layoutConfiguration</b></span>
+                        <a href="#layoutConfiguration"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="layoutService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>layoutService</b></span>
+                        <a href="#layoutService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/LayoutService.html" target="_self" >LayoutService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:66</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigationHelperService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>navigationHelperService</b></span>
+                        <a href="#navigationHelperService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/NavigationHelperService.html" target="_self" >NavigationHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:59</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="objectInteract"></a>
+                    <span class="name">
+                        <span ><b>objectInteract</b></span>
+                        <a href="#objectInteract"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IInteractEventObject.html" target="_self" >IInteractEventObject</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="objectRollup"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>objectRollup</b></span>
+                        <a href="#objectRollup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pageLoadDuration"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>pageLoadDuration</b></span>
+                        <a href="#pageLoadDuration"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank" >Number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="permissionService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>permissionService</b></span>
+                        <a href="#permissionService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/PermissionService.html" target="_self" >PermissionService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:63</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playerConfig"></a>
+                    <span class="name">
+                        <span ><b>playerConfig</b></span>
+                        <a href="#playerConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/PlayerConfig.html" target="_self" >PlayerConfig</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playerOption"></a>
+                    <span class="name">
+                        <span ><b>playerOption</b></span>
+                        <a href="#playerOption"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playerService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>playerService</b></span>
+                        <a href="#playerService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/PlayerService.html" target="_self" >PlayerService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:62</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="popupControlService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>popupControlService</b></span>
+                        <a href="#popupControlService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/PopupControlService.html" target="_self" >PopupControlService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:64</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="publicPlayerService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>publicPlayerService</b></span>
+                        <a href="#publicPlayerService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/PublicPlayerService.html" target="_self" >PublicPlayerService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:62</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resourceService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>resourceService</b></span>
+                        <a href="#resourceService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:60</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="router"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>router</b></span>
+                        <a href="#router"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:60</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shareLink"></a>
+                    <span class="name">
+                        <span ><b>shareLink</b></span>
+                        <a href="#shareLink"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sharelinkModal"></a>
+                    <span class="name">
+                        <span ><b>sharelinkModal</b></span>
+                        <a href="#sharelinkModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showError"></a>
+                    <span class="name">
+                        <span ><b>showError</b></span>
+                        <a href="#showError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showLoader"></a>
+                    <span class="name">
+                        <span ><b>showLoader</b></span>
+                        <a href="#showLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showPlayer"></a>
+                    <span class="name">
+                        <span ><b>showPlayer</b></span>
+                        <a href="#showPlayer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryImpression"></a>
+                    <span class="name">
+                        <span ><b>telemetryImpression</b></span>
+                        <a href="#telemetryImpression"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IImpressionEventInput.html" target="_self" >IImpressionEventInput</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>telemetryService</b></span>
+                        <a href="#telemetryService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/TelemetryService.html" target="_self" >TelemetryService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:66</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryShareData"></a>
+                    <span class="name">
+                        <span ><b>telemetryShareData</b></span>
+                        <a href="#telemetryShareData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;ITelemetryShare&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toasterService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>toasterService</b></span>
+                        <a href="#toasterService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:61</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unsubscribe"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>unsubscribe</b></span>
+                        <a href="#unsubscribe"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unsubscribe$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>unsubscribe$</b></span>
+                        <a href="#unsubscribe$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>userService</b></span>
+                        <a href="#userService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:60</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="windowScrollService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>windowScrollService</b></span>
+                        <a href="#windowScrollService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/WindowScrollService.html" target="_self" >WindowScrollService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/modules/shared-feature/components/content-player/content-player.component.ts:61</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { Component, OnInit, AfterViewInit, OnDestroy, HostListener } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { UserService, PlayerService, CopyContentService, PermissionService } from &#x27;@sunbird/core&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import {
+  ConfigService, ResourceService, ToasterService, WindowScrollService, NavigationHelperService,
+  PlayerConfig, ContentData, ContentUtilsServiceService, ITelemetryShare, LayoutService
+} from &#x27;@sunbird/shared&#x27;;
+import { IInteractEventObject, IInteractEventEdata, IImpressionEventInput, TelemetryService } from &#x27;@sunbird/telemetry&#x27;;
+import { PopupControlService } from &#x27;../../../../service/popup-control.service&#x27;;
+import { takeUntil, mergeMap } from &#x27;rxjs/operators&#x27;;
+import { Subject, of, throwError } from &#x27;rxjs&#x27;;
+import { PublicPlayerService, ComponentCanDeactivate } from &#x27;@sunbird/public&#x27;;
+import { CsGroupAddableBloc } from &#x27;@project-sunbird/client-services/blocs&#x27;;
+
+@Component({
+  selector: &#x27;app-content-player&#x27;,
+  templateUrl: &#x27;./content-player.component.html&#x27;,
+  styleUrls: [&#x27;./content-player.component.scss&#x27;]
+})
+
+export class ContentPlayerComponent implements OnInit, AfterViewInit, OnDestroy, ComponentCanDeactivate {
+  telemetryImpression: IImpressionEventInput;
+  objectInteract: IInteractEventObject;
+  copyContentInteractEdata: IInteractEventEdata;
+  sharelinkModal: boolean;
+  shareLink: string;
+  contentId: string;
+  contentStatus: string;
+  playerConfig: PlayerConfig;
+  showPlayer &#x3D; false;
+  showError &#x3D; false;
+  errorMessage: string;
+  contentData: ContentData;
+  telemetryShareData: Array&lt;ITelemetryShare&gt;;
+  public pageLoadDuration: Number;
+  playerOption: any;
+  showLoader &#x3D; true;
+  isFullScreenView &#x3D; false;
+  layoutConfiguration;
+  public unsubscribe &#x3D; new Subject&lt;void&gt;();
+  public dialCode: string;
+  public unsubscribe$ &#x3D; new Subject&lt;void&gt;();
+  public objectRollup &#x3D; {};
+  isGroupAdmin: boolean;
+  groupId: string;
+  isQuestionSet &#x3D; false;
+  isDesktopApp &#x3D; false;
+
+  @HostListener(&#x27;window:beforeunload&#x27;)
+    canDeactivate() {
+      // returning true will navigate without confirmation
+      // returning false will show a confirm dialog before navigating away
+      const deviceType &#x3D; this.telemetryService.getDeviceType();
+      return deviceType &#x3D;&#x3D;&#x3D; &#x27;Desktop&#x27; &amp;&amp; this.isQuestionSet ? false : true;
+    }
+
+  constructor(public activatedRoute: ActivatedRoute, public navigationHelperService: NavigationHelperService,
+    public userService: UserService, public resourceService: ResourceService, public router: Router,
+    public toasterService: ToasterService, public windowScrollService: WindowScrollService,
+    public playerService: PlayerService, public publicPlayerService: PublicPlayerService,
+    public copyContentService: CopyContentService, public permissionService: PermissionService,
+    public contentUtilsServiceService: ContentUtilsServiceService, public popupControlService: PopupControlService,
+    private configService: ConfigService,
+    public layoutService: LayoutService, public telemetryService: TelemetryService) {
+    this.playerOption &#x3D; {
+      showContentRating: true
+    };
+  }
+
+  ngOnInit() {
+    this.isQuestionSet &#x3D; _.includes(this.router.url, &#x27;questionset&#x27;);
+    this.isDesktopApp &#x3D; this.userService.isDesktopApp;
+    this.initLayout();
+    this.activatedRoute.params.subscribe((params) &#x3D;&gt; {
+      this.showPlayer &#x3D; false;
+      this.contentId &#x3D; params.contentId;
+      this.contentStatus &#x3D; params.contentStatus;
+      this.dialCode &#x3D; _.get(this.activatedRoute, &#x27;snapshot.queryParams.dialCode&#x27;);
+      if (_.get(this.activatedRoute, &#x27;snapshot.queryParams.l1Parent&#x27;)) {
+        this.objectRollup &#x3D; {
+          l1: _.get(this.activatedRoute, &#x27;snapshot.queryParams.l1Parent&#x27;)
+        };
+      }
+      CsGroupAddableBloc.instance.state$.pipe(takeUntil(this.unsubscribe$)).subscribe(data &#x3D;&gt; {
+        this.groupId &#x3D; _.get(data, &#x27;groupId&#x27;) || _.get(this.activatedRoute.snapshot, &#x27;queryParams.groupId&#x27;);
+      });
+      this.getContent();
+      CsGroupAddableBloc.instance.state$.pipe(takeUntil(this.unsubscribe$)).subscribe(data &#x3D;&gt; {
+        this.isGroupAdmin &#x3D; !_.isEmpty(_.get(this.activatedRoute.snapshot, &#x27;queryParams.groupId&#x27;))
+        &amp;&amp; _.get(data.params, &#x27;groupData.isAdmin&#x27;);
+      });
+    });
+
+    this.navigationHelperService.contentFullScreenEvent.
+      pipe(takeUntil(this.unsubscribe)).subscribe(isFullScreen &#x3D;&gt; {
+        this.isFullScreenView &#x3D; isFullScreen;
+      });
+  }
+
+  initLayout() {
+    this.layoutConfiguration &#x3D; this.layoutService.initlayoutConfig();
+    this.layoutService.switchableLayout().
+      pipe(takeUntil(this.unsubscribe)).subscribe(layoutConfig &#x3D;&gt; {
+        if (layoutConfig !&#x3D; null) {
+          this.layoutConfiguration &#x3D; layoutConfig.layout;
+        }
+      });
+  }
+
+  setTelemetryData() {
+    this.telemetryImpression &#x3D; {
+      context: {
+        env: this.activatedRoute.snapshot.data.telemetry.env,
+        cdata: this.groupId ? [{id: this.groupId, type: &#x27;Group&#x27;}] : [],
+      },
+      object: {
+        id: this.contentId,
+        type: this.contentData.contentType,
+        ver: this.contentData.pkgVersion ? this.contentData.pkgVersion.toString() : &#x27;1.0&#x27;
+      },
+      edata: {
+        type: this.activatedRoute.snapshot.data.telemetry.type,
+        pageid: this.activatedRoute.snapshot.data.telemetry.pageid,
+        uri: this.router.url,
+        subtype: this.activatedRoute.snapshot.data.telemetry.subtype,
+        duration: this.pageLoadDuration
+      }
+    };
+    this.objectInteract &#x3D; {
+      id: this.contentId,
+      type: this.contentData.contentType,
+      ver: this.contentData.pkgVersion ? this.contentData.pkgVersion.toString() : &#x27;1.0&#x27;
+    };
+    this.copyContentInteractEdata &#x3D; {
+      id: &#x27;copy-content-button&#x27;,
+      type: &#x27;click&#x27;,
+      pageid: this.activatedRoute.snapshot.data.telemetry.pageid
+    };
+  }
+
+  goBack() {
+    this.navigationHelperService.goBack();
+  }
+
+  getContent() {
+    if (this.isQuestionSet) {
+      this.getQuestionSetHierarchy();
+    } else if (this.userService.loggedIn) {
+      const option &#x3D; { params: this.configService.appConfig.ContentPlayer.contentApiQueryParams };
+      if (this.contentStatus &amp;&amp; this.contentStatus &#x3D;&#x3D;&#x3D; &#x27;Unlisted&#x27;) {
+        option.params &#x3D; { mode: &#x27;edit&#x27; };
+      }
+      this.playerService.getContent(this.contentId, option).subscribe(
+        (response) &#x3D;&gt; {
+          this.showLoader &#x3D; false;
+          if (response.result.content.status &#x3D;&#x3D;&#x3D; &#x27;Live&#x27; || response.result.content.status &#x3D;&#x3D;&#x3D; &#x27;Unlisted&#x27;) {
+            this.showPlayer &#x3D; true;
+            const contentDetails &#x3D; {
+              contentId: this.contentId,
+              contentData: response.result.content
+            };
+            this.playerConfig &#x3D; this.playerService.getConfig(contentDetails);
+            this.contentData &#x3D; response.result.content;
+            this.setTelemetryData();
+            this.windowScrollService.smoothScroll(&#x27;content-player&#x27;);
+          } else {
+            this.toasterService.warning(this.resourceService.messages.imsg.m0027);
+          }
+        },
+        (err) &#x3D;&gt; {
+          this.showLoader &#x3D; false;
+          this.showError &#x3D; true;
+          this.errorMessage &#x3D; this.resourceService.messages.stmsg.m0009;
+        });
+    } else {
+      this.getPublicContent();
+    }
+  }
+
+  getQuestionSetHierarchy() {
+    const serveiceRef &#x3D;  this.userService.loggedIn ? this.playerService : this.publicPlayerService;
+    this.publicPlayerService.getQuestionSetHierarchy(this.contentId).pipe(
+      takeUntil(this.unsubscribe$))
+      .subscribe((response) &#x3D;&gt; {
+        this.showLoader &#x3D; false;
+        const contentDetails &#x3D; {
+          contentId: this.contentId,
+          contentData: response.questionSet
+        };
+        this.playerConfig &#x3D; serveiceRef.getConfig(contentDetails);
+        this.playerConfig.context.objectRollup &#x3D; this.objectRollup;
+        this.contentData &#x3D; response.questionSet;
+        this.showPlayer &#x3D; true;
+      }, (err) &#x3D;&gt; {
+        this.showLoader &#x3D; false;
+        this.showError &#x3D; true;
+        this.errorMessage &#x3D; this.resourceService.messages.stmsg.m0009;
+      });
+  }
+
+  getPublicContent() {
+    const options: any &#x3D; { dialCode: this.dialCode };
+    const params &#x3D; { params: this.configService.appConfig.PublicPlayer.contentApiQueryParams };
+    this.publicPlayerService.getContent(this.contentId, params).pipe(
+      mergeMap((response) &#x3D;&gt; {
+        if (_.get(response, &#x27;result.content.status&#x27;) &#x3D;&#x3D;&#x3D; &#x27;Unlisted&#x27;) {
+          return throwError({
+            code: &#x27;UNLISTED_CONTENT&#x27;
+          });
+        }
+        return of(response);
+      }),
+      takeUntil(this.unsubscribe$))
+      .subscribe((response) &#x3D;&gt; {
+        this.showLoader &#x3D; false;
+        const contentDetails &#x3D; {
+          contentId: this.contentId,
+          contentData: response.result.content
+        };
+        this.playerConfig &#x3D; this.publicPlayerService.getConfig(contentDetails, options);
+        this.playerConfig.context.objectRollup &#x3D; this.objectRollup;
+        this.contentData &#x3D; response.result.content;
+        this.showPlayer &#x3D; true;
+      }, (err) &#x3D;&gt; {
+        this.showLoader &#x3D; false;
+        this.showError &#x3D; true;
+        this.errorMessage &#x3D; this.resourceService.messages.stmsg.m0009;
+      });
+  }
+
+  copyContent(contentData: ContentData) {
+    this.copyContentService.copyContent(contentData).subscribe(
+      (response) &#x3D;&gt; {
+        this.toasterService.success(this.resourceService.messages.smsg.m0042);
+      },
+      (err) &#x3D;&gt; {
+        this.toasterService.error(this.resourceService.messages.emsg.m0008);
+      });
+  }
+
+  onShareLink() {
+    this.shareLink &#x3D; this.contentUtilsServiceService.getPublicShareUrl(this.contentId, this.contentData.mimeType);
+    this.setTelemetryShareData(this.contentData);
+  }
+
+  ngAfterViewInit() {
+    this.pageLoadDuration &#x3D; this.navigationHelperService.getPageLoadTime();
+  }
+
+  setTelemetryShareData(param) {
+    this.telemetryShareData &#x3D; [{
+      id: param.identifier,
+      type: param.contentType,
+      ver: param.pkgVersion ? param.pkgVersion.toString() : &#x27;1.0&#x27;
+    }];
+  }
+  ngOnDestroy() {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-landing-section [textToDisplay]&#x3D;&quot;&quot; 
+[layoutConfiguration]&#x3D;&quot;layoutConfiguration&quot; [noTitle]&#x3D;&quot;true&quot;&gt;&lt;/app-landing-section&gt;
+&lt;!--CC-Player Content Header --&gt;
+  &lt;div [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;sb-back-actionbar&#x27; : &#x27;sb-bg-white cc-player__btn-back&#x27;&quot; class&#x3D;&quot;relative position mt-0&quot; [ngClass]&#x3D;&quot;{&#x27;header-block&#x27;: isFullScreenView}&quot;&gt;
+    &lt;div class&#x3D;&quot;ui container py-0 px-0 d-flex flex-ai-center&quot;&gt;
+
+      &lt;button type&#x3D;&quot;button&quot; (click)&#x3D;&quot;goBack()&quot; [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;sb-btn-round&#x27; : &#x27;&#x27;&quot; class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-link sb-btn-link-primary sb-left-icon-btn px-0&quot;
+      tabindex&#x3D;&quot;0&quot;&gt;
+      &lt;i class&#x3D;&quot;icon-svg icon-svg--xxs icon-back mr-4&quot;&gt;&lt;svg class&#x3D;&quot;icon icon-svg--primary&quot;&gt;
+          &lt;use xlink:href&#x3D;&quot;assets/images/sprite.svg#arrow-long-left&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;&lt;/i&gt;
+     &lt;span&gt;{{resourceService?.frmelmnts?.btn?.back}}&lt;/span&gt;
+    &lt;/button&gt;
+
+      &lt;div class&#x3D;&quot;content-header__content w-100 ml-16&quot; *ngIf&#x3D;&quot;contentData&quot;&gt;
+        &lt;div class&#x3D;&quot;d-flex flex-dc flex-basis-1 mr-32 min-w-0 content-header__content__title&quot;&gt;
+          &lt;div class&#x3D;&quot;content-header__title font-weight-bold ellipsis text-left&quot;  tabindex&#x3D;&quot;0&quot; role&#x3D;&quot;heading&quot; aria-level&#x3D;&quot;2&quot;&gt;{{contentData.name}}&lt;/div&gt;
+          &lt;div class&#x3D;&quot;content-header__info mt-4&quot;&gt;
+            &lt;span class&#x3D;&quot;fnormal&quot; *ngIf&#x3D;&quot;contentData?.subject&quot;&gt;{{contentData?.subject}}&lt;/span&gt;
+            &lt;span class&#x3D;&quot;dot-divider&quot; *ngIf&#x3D;&quot;contentData.gradeLevel&quot;&gt;&lt;/span&gt;
+            &lt;span class&#x3D;&quot;fnormal&quot; *ngIf&#x3D;&quot;contentData?.gradeLevel&quot;&gt;{{contentData?.gradeLevel}}&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;d-flex flex-ai-end flex-w-wrap content-header__buttons&quot;&gt;
+            &lt;a href&#x3D;&quot;javascript:void(0)&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;onShareLink();sharelinkModal&#x3D;true;&quot; class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-outline-primary mr-8&quot;&gt;
+                &lt;i class&#x3D;&quot;blue share alternate icon&quot;&gt;&lt;/i&gt;
+                {{resourceService?.frmelmnts?.lbl?.share}}
+            &lt;/a&gt;
+
+            &lt;button type&#x3D;&quot;button&quot; *ngIf&#x3D;&#x27;!isDesktopApp &amp;&amp; permissionService?.permissionAvailable &#x27; appPermission [permission]&#x3D;&quot;[&#x27;CONTENT_CREATOR&#x27;, &#x27;CONTENT_REVIEWER&#x27;]&quot;
+            tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;copyContent(contentData)&quot; appTelemetryInteract [telemetryInteractEdata]&#x3D;&quot;copyContentInteractEdata&quot; [telemetryInteractObject]&#x3D;&quot;objectInteract&quot;
+           class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-outline-primary mr-8&quot;&gt;
+            &lt;i class&#x3D;&quot;blue clone outline icon&quot;&gt;&lt;/i&gt; {{resourceService?.frmelmnts?.lbl?.copy}}
+            &lt;/button&gt;
+
+
+            &lt;div class&#x3D;&quot;certified-course__btn&quot; *ngIf&#x3D;&quot;isGroupAdmin&quot;&gt;
+                &lt;button class&#x3D;&quot;sb-btn sb-btn-secondary sb-btn-normal ml-auto textbook__addbtn&quot; 
+                appAddToGroup [identifier]&#x3D;&quot;contentData?.identifier&quot; [pageId]&#x3D;&quot;contentData?.primaryCategory.toLowerCase()&quot;&gt;
+                {{resourceService?.frmelmnts?.lbl?.AddtoGroup}}&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;div [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;sbt-inside-page-container&#x27; : &#x27;&#x27;&quot;&gt;
+&lt;div  class&#x3D;&quot;relative9&quot; [style.display]&#x3D;&quot;!showLoader ? &#x27;block&#x27; : &#x27;none&#x27;&quot; *ngIf&#x3D;&quot;contentData&quot;&gt;
+    &lt;!-- CC-Player Video --&gt;
+    &lt;div class&#x3D;&quot;sb-single-resource&quot;&gt;
+    &lt;div class&#x3D;&quot;ui container&quot;&gt;
+        &lt;div class&#x3D;&quot;cc-player sb-g&quot;&gt;
+            &lt;section class&#x3D;&quot;sb-g-col-xs-12 sb-g-col-md-12 sb-g-col-lg-12 sb-g-col-xxxl-16 cc-player__video&quot;
+                [appTelemetryImpression]&#x3D;&quot;telemetryImpression&quot;&gt;
+                &lt;app-contentplayer-page [playerConfig]&#x3D;&quot;playerConfig&quot; [tocPage]&#x3D;&quot;true&quot; [contentDetails]&#x3D;&quot;contentData&quot;
+                    [isContentPresent]&#x3D;&quot;isContentPresent&quot; [objectRollUp]&#x3D;&quot;objectRollup&quot;&gt;
+                &lt;/app-contentplayer-page&gt;
+            &lt;/section&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+    &lt;div class&#x3D;&quot;twelve wide column&quot; *ngIf&#x3D;&quot;showLoader&quot;&gt;
+        &lt;app-loader [data]&#x3D;&#x27;loaderMessage&#x27;&gt;&lt;/app-loader&gt;
+    &lt;/div&gt;
+
+    &lt;app-modal-wrapper *ngIf&#x3D;&quot;sharelinkModal&quot; [config]&#x3D;&quot;{disableClose: false, panelClass: &#x27;material-modal&#x27;}&quot; (dismiss)&#x3D;&quot;sharelinkModal &#x3D; false&quot;&gt;
+      &lt;ng-template sbModalContent&gt;
+        &lt;app-share-link [shareLink]&#x3D;&quot;shareLink&quot; [telemetryShareData]&#x3D;&quot;telemetryShareData&quot;&gt;
+        &lt;/app-share-link&gt;
+      &lt;/ng-template&gt;
+    &lt;/app-modal-wrapper&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./content-player.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;variables&quot;;
+@import &quot;mixins/mixins&quot;;
+
+.sb-single-resource {
+	width: 100%;
+	height: 100%;
+	max-width: calculateRem(896px);
+	margin: 0 auto;
+  @include respond-above(lg) {
+    max-width: calculateRem(960px);
+  }
+  @include respond-above(xl) {
+    max-width: calculateRem(1024px);
+  }
+  @include respond-above(xxxl) {
+    max-width: calculateRem(1088px);
+  }
+  }
+
+.cc-player {
+	&amp;__btn-back {
+		z-index: 100;
+	}
+}
+
+.content-header {
+  // background: var(--rc-FAFAFA);
+  min-height: calculateRem(80px);
+  background-color: var(--rc-FAFAFA);
+  box-shadow: 0 0 calculateRem(10px) 0 rgba(var(--rc-rgba-black), 0.25);
+  z-index: 99;
+
+    &amp;__content{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        @include respond-below(sm) {
+          display: block;
+        }
+    }
+    &amp;__title {
+        color: var(--primary-400);
+        font-size: calculateRem(18px);
+    }
+    
+    &amp;__info {
+      color: var(--gray-800);
+      font-size: 0.875rem;
+      max-height: 48px;
+      overflow-y: auto;
+    }
+    
+    .dot-divider {
+        width: 0.25rem;
+        height: 0.25rem;
+        border-radius: 100%;
+        background-color: var(--gray-800);
+        display: inline-block;
+        margin: 0px 0.5rem;
+        vertical-align: middle;
+    }
+  
+  @include respond-below(sm) {
+    &amp;__buttons {
+      margin-top: calculateRem(8px);
+    }
+  }
+}
+
+@include respond-below(sm) {
+	.ui.container.sb-toc-view-container {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+}
+
+.content-player-landscape {
+  position: absolute;
+}
+
+.header-block {
+	display: none !important;
+  }</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-landing-section [textToDisplay]="" [layoutConfiguration]="layoutConfiguration" [noTitle]="true"></app-landing-section><!--CC-Player Content Header -->  <div [ngClass]="layoutConfiguration ? \'sb-back-actionbar\' : \'sb-bg-white cc-player__btn-back\'" class="relative position mt-0" [ngClass]="{\'header-block\': isFullScreenView}">    <div class="ui container py-0 px-0 d-flex flex-ai-center">      <button type="button" (click)="goBack()" [ngClass]="layoutConfiguration ? \'sb-btn-round\' : \'\'" class="sb-btn sb-btn-normal sb-btn-link sb-btn-link-primary sb-left-icon-btn px-0"      tabindex="0">      <i class="icon-svg icon-svg--xxs icon-back mr-4"><svg class="icon icon-svg--primary">          <use xlink:href="assets/images/sprite.svg#arrow-long-left"></use>        </svg></i>     <span>{{resourceService?.frmelmnts?.btn?.back}}</span>    </button>      <div class="content-header__content w-100 ml-16" *ngIf="contentData">        <div class="d-flex flex-dc flex-basis-1 mr-32 min-w-0 content-header__content__title">          <div class="content-header__title font-weight-bold ellipsis text-left"  tabindex="0" role="heading" aria-level="2">{{contentData.name}}</div>          <div class="content-header__info mt-4">            <span class="fnormal" *ngIf="contentData?.subject">{{contentData?.subject}}</span>            <span class="dot-divider" *ngIf="contentData.gradeLevel"></span>            <span class="fnormal" *ngIf="contentData?.gradeLevel">{{contentData?.gradeLevel}}</span>          </div>        </div>        <div class="d-flex flex-ai-end flex-w-wrap content-header__buttons">            <a href="javascript:void(0)" tabindex="0" (click)="onShareLink();sharelinkModal=true;" class="sb-btn sb-btn-normal sb-btn-outline-primary mr-8">                <i class="blue share alternate icon"></i>                {{resourceService?.frmelmnts?.lbl?.share}}            </a>            <button type="button" *ngIf=\'!isDesktopApp && permissionService?.permissionAvailable \' appPermission [permission]="[\'CONTENT_CREATOR\', \'CONTENT_REVIEWER\']"            tabindex="0" (click)="copyContent(contentData)" appTelemetryInteract [telemetryInteractEdata]="copyContentInteractEdata" [telemetryInteractObject]="objectInteract"           class="sb-btn sb-btn-normal sb-btn-outline-primary mr-8">            <i class="blue clone outline icon"></i> {{resourceService?.frmelmnts?.lbl?.copy}}            </button>            <div class="certified-course__btn" *ngIf="isGroupAdmin">                <button class="sb-btn sb-btn-secondary sb-btn-normal ml-auto textbook__addbtn"                 appAddToGroup [identifier]="contentData?.identifier" [pageId]="contentData?.primaryCategory.toLowerCase()">                {{resourceService?.frmelmnts?.lbl?.AddtoGroup}}</button>            </div>        </div>      </div>    </div>  </div><div [ngClass]="layoutConfiguration ? \'sbt-inside-page-container\' : \'\'"><div  class="relative9" [style.display]="!showLoader ? \'block\' : \'none\'" *ngIf="contentData">    <!-- CC-Player Video -->    <div class="sb-single-resource">    <div class="ui container">        <div class="cc-player sb-g">            <section class="sb-g-col-xs-12 sb-g-col-md-12 sb-g-col-lg-12 sb-g-col-xxxl-16 cc-player__video"                [appTelemetryImpression]="telemetryImpression">                <app-contentplayer-page [playerConfig]="playerConfig" [tocPage]="true" [contentDetails]="contentData"                    [isContentPresent]="isContentPresent" [objectRollUp]="objectRollup">                </app-contentplayer-page>            </section>        </div>    </div></div>    <div class="twelve wide column" *ngIf="showLoader">        <app-loader [data]=\'loaderMessage\'></app-loader>    </div>    <app-modal-wrapper *ngIf="sharelinkModal" [config]="{disableClose: false, panelClass: \'material-modal\'}" (dismiss)="sharelinkModal = false">      <ng-template sbModalContent>        <app-share-link [shareLink]="shareLink" [telemetryShareData]="telemetryShareData">        </app-share-link>      </ng-template>    </app-modal-wrapper></div></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'app-access-discussion'},{'name': 'AccountMergeModalComponent', 'selector': 'app-account-merge-modal'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-info'},{'name': 'ActivityDashboardComponent', 'selector': 'app-activity-dashboard'},{'name': 'ActivityDetailsComponent', 'selector': 'app-activity-details'},{'name': 'ActivityFormComponent', 'selector': 'app-activity-form'},{'name': 'ActivityListComponent', 'selector': 'app-activity-list'},{'name': 'ActivitySearchComponent', 'selector': 'app-activity-search'},{'name': 'AddActivityComponent', 'selector': 'app-add-activity'},{'name': 'AddActivityContentTypesComponent', 'selector': 'app-add-activity-content-types'},{'name': 'AddEntityComponent', 'selector': 'add-entity'},{'name': 'AddMemberComponent', 'selector': 'app-add-member'},{'name': 'AddSummaryModalComponent', 'selector': 'app-add-summary-modal'},{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AllContentComponent', 'selector': 'app-all-content'},{'name': 'AllEvidenceComponent', 'selector': 'app-all-evidence'},{'name': 'AllTextbooksComponent', 'selector': 'app-all-textbooks'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppLandingSectionComponent', 'selector': 'app-landing-section'},{'name': 'AppLoaderComponent', 'selector': 'app-loader'},{'name': 'AssessmentPlayerComponent', 'selector': 'app-assessment-player'},{'name': 'AssignBadgesContentComponent', 'selector': 'app-assign-badges-content'},{'name': 'AuthFailedComponent', 'selector': 'app-auth-failed'},{'name': 'BackButtonComponent', 'selector': 'app-back-button'},{'name': 'BatchCardComponent', 'selector': 'app-batch-card'},{'name': 'BatchDetailsComponent', 'selector': 'app-batch-details'},{'name': 'BatchInfoComponent', 'selector': 'app-batch-info'},{'name': 'BatchListComponent', 'selector': 'app-batch-list'},{'name': 'BatchPageSectionComponent', 'selector': 'app-batch-page-section'},{'name': 'BrowseImagePopupComponent', 'selector': 'browse-image-popup'},{'name': 'BrowserCompatibilityComponent', 'selector': 'app-browser-compatibility'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardCreationComponent', 'selector': 'app-card-creation'},{'name': 'CertificateConfigurationComponent', 'selector': 'app-certificate-configuration'},{'name': 'CertificateDetailsComponent', 'selector': 'app-certificate-details'},{'name': 'CertificateNameUpdatePopupComponent', 'selector': 'app-certificate-name-update-popup'},{'name': 'CertPreviewPopupComponent', 'selector': 'app-cert-preview-popup'},{'name': 'ChooseUserComponent', 'selector': 'app-choose-user'},{'name': 'CollaboratingOnComponent', 'selector': 'app-collaborating-on'},{'name': 'CollaborationContentFilterComponent', 'selector': 'app-collaboration-content-filter'},{'name': 'CollectionEditorComponent', 'selector': 'app-collection-editor'},{'name': 'CollectionPlayerComponent', 'selector': 'app-collection-player'},{'name': 'CollectionPlayerMetadataComponent', 'selector': 'app-collection-player-metadata'},{'name': 'CommingSoonComponent', 'selector': 'app-comming-soon'},{'name': 'ConfirmationPopupComponent', 'selector': 'app-confirmation-popup'},{'name': 'ConfirmPopupComponent', 'selector': 'app-confirm-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentBadgeComponent', 'selector': 'app-content-badge'},{'name': 'ContentChapterlistComponent', 'selector': 'app-content-chapterlist'},{'name': 'ContentCreditsComponent', 'selector': 'app-content-credits'},{'name': 'ContentEditorComponent', 'selector': 'app-content-editor'},{'name': 'ContentLicenceComponent', 'selector': 'app-content-licence'},{'name': 'ContentManagerComponent', 'selector': 'app-content-manager'},{'name': 'ContentManagerInfoPopUpComponent', 'selector': 'app-content-manager-info-pop-up'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerMetadataComponent', 'selector': 'app-content-player-metadata'},{'name': 'ContentPlayerPageComponent', 'selector': 'app-contentplayer-page'},{'name': 'ContentRatingComponent', 'selector': 'app-content-rating'},{'name': 'ContentTypeComponent', 'selector': 'app-content-type'},{'name': 'CourseCompletionComponent', 'selector': 'app-course-completion'},{'name': 'CourseConsumptionComponent', 'selector': 'app-course-consumption'},{'name': 'CourseConsumptionHeaderComponent', 'selector': 'app-course-consumption-header'},{'name': 'CourseConsumptionPageComponent', 'selector': ''},{'name': 'CourseDashboardComponent', 'selector': 'app-course-dashboard'},{'name': 'CourseDetailsComponent', 'selector': 'app-course-details'},{'name': 'CourseInfoComponent', 'selector': 'app-course-info'},{'name': 'CoursePageComponent', 'selector': ''},{'name': 'CoursePlayerComponent', 'selector': 'app-course-player'},{'name': 'CourseProgressComponent', 'selector': 'app-course-progress'},{'name': 'CreateBatchComponent', 'selector': 'app-create-batch'},{'name': 'CreateContentComponent', 'selector': 'app-create-content'},{'name': 'CreateEditGroupComponent', 'selector': 'app-create-edit-group'},{'name': 'CreateOrgTypeComponent', 'selector': 'app-create-org-type'},{'name': 'CreateTemplateComponent', 'selector': 'app-create-template'},{'name': 'CreateUserComponent', 'selector': 'app-create-user'},{'name': 'CreditsAndLicenceComponent', 'selector': 'app-credits-and-licence'},{'name': 'CurriculumCardComponent', 'selector': 'app-curriculum-card'},{'name': 'CurriculumCoursesComponent', 'selector': 'app-curriculum-courses'},{'name': 'CurriculumInfoComponent', 'selector': 'app-curriculum-info'},{'name': 'CustomMultiSelectComponent', 'selector': 'app-custom-multi-select'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardSidebarComponent', 'selector': 'app-dashboard-sidebar'},{'name': 'DataChartComponent', 'selector': 'app-data-chart'},{'name': 'DataDrivenComponent', 'selector': 'app-data-driven'},{'name': 'DataDrivenFilterComponent', 'selector': 'app-data-driven-filter'},{'name': 'DatasetComponent', 'selector': 'app-dataset'},{'name': 'DatasetsComponent', 'selector': 'app-datasets'},{'name': 'DataTableComponent', 'selector': 'app-data-table'},{'name': 'DefaultTemplateComponent', 'selector': 'app-content-creation-default-template'},{'name': 'DesktopAppUpdateComponent', 'selector': 'app-desktop-app-update'},{'name': 'DialCodeCardComponent', 'selector': 'app-dial-code-card'},{'name': 'DialCodeComponent', 'selector': 'app-dial-code'},{'name': 'DraftComponent', 'selector': 'app-draft'},{'name': 'EditSubmissionComponent', 'selector': 'app-edit-submission'},{'name': 'EnrollBatchComponent', 'selector': 'app-enroll-batch'},{'name': 'EntityListComponent', 'selector': 'entity-list'},{'name': 'EntityListComponent', 'selector': 'app-entity-list'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'ExploreContentComponent', 'selector': ''},{'name': 'ExploreCourseComponent', 'selector': ''},{'name': 'ExploreCurriculumCoursesComponent', 'selector': 'app-explore-curriculum-courses'},{'name': 'ExploreFtuPopupComponent', 'selector': 'app-explore-ftu-popup'},{'name': 'ExploreGroupComponent', 'selector': 'app-explore-group'},{'name': 'ExplorePageComponent', 'selector': 'app-explore-page-component'},{'name': 'FancyTreeComponent', 'selector': 'app-fancy-tree'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FaqReportComponent', 'selector': 'app-faq-report'},{'name': 'FilterComponent', 'selector': 'app-filter'},{'name': 'FlagConentplayerComponent', 'selector': 'app-flag-conentplayer'},{'name': 'FlaggedComponent', 'selector': 'app-flagged'},{'name': 'FlagReviewerComponent', 'selector': 'app-flag-reviewer'},{'name': 'ForumComponent', 'selector': 'app-forum'},{'name': 'FtuPopupComponent', 'selector': 'app-ftu-popup'},{'name': 'FullPageLoaderComponent', 'selector': 'app-full-page-loader'},{'name': 'FullPageModalComponent', 'selector': 'app-full-page-modal'},{'name': 'GenericEditorComponent', 'selector': 'app-generic-editor'},{'name': 'GetComponent', 'selector': 'app-get'},{'name': 'GlobalConsentPiiComponent', 'selector': 'app-global-consent-pii'},{'name': 'GlobalSearchFilterComponent', 'selector': 'app-global-search-filter'},{'name': 'GlobalSearchSelectedFilterComponent', 'selector': 'app-global-search-selected-filter'},{'name': 'GroupDetailsComponent', 'selector': 'app-group-details'},{'name': 'GroupHeaderComponent', 'selector': 'app-group-header'},{'name': 'GroupMembersComponent', 'selector': 'app-group-members'},{'name': 'GuestProfileComponent', 'selector': 'app-guest-profile'},{'name': 'HomeSearchComponent', 'selector': ''},{'name': 'IdentifyAccountComponent', 'selector': ''},{'name': 'InAppNotificationComponent', 'selector': 'app-in-app-notification'},{'name': 'InfoCardComponent', 'selector': 'app-info-card'},{'name': 'InstallAppComponent', 'selector': 'app-install-app'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'LanguageDropdownComponent', 'selector': 'app-language-dropdown'},{'name': 'LibraryComponent', 'selector': 'app-library'},{'name': 'LimitedPublishedComponent', 'selector': 'app-limited-published'},{'name': 'ListAllReportsComponent', 'selector': 'app-list-all-reports'},{'name': 'LoadContentComponent', 'selector': 'app-load-content'},{'name': 'LoadOfflineContentComponent', 'selector': 'app-load-offline-content'},{'name': 'LocationSelectionComponent', 'selector': 'app-location-selection'},{'name': 'LockInfoPopupComponent', 'selector': 'app-contentlock-info-popup'},{'name': 'MainFooterComponent', 'selector': 'app-footer'},{'name': 'MainHeaderComponent', 'selector': 'app-header'},{'name': 'MainMenuComponent', 'selector': 'app-main-menu'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialAutoCompleteComponent', 'selector': 'app-material-auto-complete'},{'name': 'MemberActionsComponent', 'selector': 'app-member-actions'},{'name': 'MergeAccountStatusComponent', 'selector': 'app-merge-account-status'},{'name': 'ModalWrapperComponent', 'selector': 'app-modal-wrapper'},{'name': 'MyGroupsComponent', 'selector': 'app-my-groups'},{'name': 'NetworkStatusComponent', 'selector': 'app-network-status'},{'name': 'NewCollectionEditorComponent', 'selector': 'app-new-collection-editor'},{'name': 'NoGroupResultComponent', 'selector': 'app-no-group-result'},{'name': 'NoResultComponent', 'selector': 'app-no-result-found'},{'name': 'NoResultComponent', 'selector': 'app-no-result'},{'name': 'ObservationDetailsComponent', 'selector': 'app-observation-details'},{'name': 'ObservationListingComponent', 'selector': 'app-observation-listing'},{'name': 'OfflineApplicationDownloadComponent', 'selector': 'app-offline-application-download'},{'name': 'OfflineBannerComponent', 'selector': 'app-offline-banner'},{'name': 'OfflineHelpVideosComponent', 'selector': 'app-offline-help-videos'},{'name': 'OnboardingUserSelectionComponent', 'selector': 'app-onboarding-user-selection'},{'name': 'OnDemandReportsComponent', 'selector': 'app-on-demand-reports'},{'name': 'OrganisationComponent', 'selector': 'app-organization'},{'name': 'OrganizationUploadComponent', 'selector': 'app-organization'},{'name': 'OtpComponent', 'selector': 'app-otp'},{'name': 'OtpPopupComponent', 'selector': 'app-otp-popup'},{'name': 'PageSectionComponent', 'selector': 'app-page-section'},{'name': 'PlayerComponent', 'selector': 'app-player'},{'name': 'PopupComponent', 'selector': 'app-modal'},{'name': 'ProfileBadgeComponent', 'selector': 'app-profile-badge'},{'name': 'ProfileFrameworkPopupComponent', 'selector': 'app-popup'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'PublicBatchDetailsComponent', 'selector': 'app-public-batch-details'},{'name': 'PublicCourseConsumptionPageComponent', 'selector': ''},{'name': 'PublicCoursePlayerComponent', 'selector': 'app-public-course-player'},{'name': 'PublishedComponent', 'selector': 'app-published'},{'name': 'PublishedPopupComponent', 'selector': 'app-published-popup'},{'name': 'QrCodeModalComponent', 'selector': 'app-qr-code-modal'},{'name': 'QuestionnaireComponent', 'selector': 'app-questionnaire'},{'name': 'RecoverAccountComponent', 'selector': ''},{'name': 'RedirectComponent', 'selector': 'app-redirect'},{'name': 'ReIssueCertificateComponent', 'selector': 'app-re-issue-certificate'},{'name': 'ReportComponent', 'selector': 'app-report'},{'name': 'ReportSummaryComponent', 'selector': 'app-report-summary'},{'name': 'ReportViewComponent', 'selector': 'app-report-view'},{'name': 'RequestChangesPopupComponent', 'selector': 'app-request-changes-popup'},{'name': 'ReviewCommentsComponent', 'selector': 'app-review-comments'},{'name': 'ReviewSubmissionsComponent', 'selector': 'app-review-submissions'},{'name': 'ReviewsubmissionsContentplayerComponent', 'selector': 'app-reviewsubmissions-contentplayer'},{'name': 'SbDatatableComponent', 'selector': 'sb-datatable'},{'name': 'SbTableComponent', 'selector': 'app-sb-table'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SearchFilterComponent', 'selector': 'app-search-filter'},{'name': 'SelectAccountIdentifierComponent', 'selector': ''},{'name': 'SelectOptionGroupComponent', 'selector': 'app-select-option-group'},{'name': 'SelectOrgComponent', 'selector': ''},{'name': 'ShareLinkComponent', 'selector': 'app-share-link'},{'name': 'SignupBasicInfoComponent', 'selector': 'app-signup-basic-info'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupEmailPasswordComponent', 'selector': 'app-signup-email-password'},{'name': 'SignupOnboardingInfoComponent', 'selector': 'app-signup-onboarding-info'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'SsoMergeConfirmationComponent', 'selector': 'app-sso-merge-confirmation'},{'name': 'StatusComponent', 'selector': 'app-status'},{'name': 'SubmissionsComponent', 'selector': 'submission'},{'name': 'SubmitTeacherDetailsComponent', 'selector': 'app-submit-teacher-details'},{'name': 'SvgEditorComponent', 'selector': 'app-svg-editor'},{'name': 'SystemWarningComponent', 'selector': 'app-system-warning'},{'name': 'TelemetryComponent', 'selector': 'app-telemetry'},{'name': 'TelemetryErrorModalComponent', 'selector': 'app-telemetry-error-modal'},{'name': 'TelemetryImportComponent', 'selector': 'app-telemetry-import'},{'name': 'TermsAndConditionsPopupComponent', 'selector': 'app-tnc-popup'},{'name': 'TopicPickerComponent', 'selector': 'app-topic-picker'},{'name': 'UciComponent', 'selector': 'app-uci'},{'name': 'UnEnrollBatchComponent', 'selector': 'app-unenroll-batch'},{'name': 'UpdateBatchComponent', 'selector': 'app-update-batch'},{'name': 'UpdateContactComponent', 'selector': ''},{'name': 'UpdateContactDetailsComponent', 'selector': 'app-update-contact-details'},{'name': 'UpdateCourseBatchComponent', 'selector': 'app-update-course-batch'},{'name': 'UpForReviewComponent', 'selector': 'app-up-for-review'},{'name': 'UpforreviewContentplayerComponent', 'selector': 'app-upforreview-contentplayer'},{'name': 'UpforReviewFilterComponent', 'selector': 'app-up-for-review-filter'},{'name': 'UploadedComponent', 'selector': 'app-uploaded'},{'name': 'UsageReportsComponent', 'selector': 'app-usage-reports'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserFilterComponent', 'selector': 'app-user-filter'},{'name': 'UserLocationComponent', 'selector': 'app-user-location'},{'name': 'UserOnboardingComponent', 'selector': 'app-user-onboarding'},{'name': 'UserOrgManagementComponent', 'selector': 'app-user-org-management'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRoleAssignComponent', 'selector': 'app-user-role-assign'},{'name': 'UserSearchComponent', 'selector': 'app-user-search'},{'name': 'ValidateTeacherIdentifierPopupComponent', 'selector': 'app-validate-teacher-identifier-popup'},{'name': 'VerifyAccountIdentifierComponent', 'selector': ''},{'name': 'ViewAllComponent', 'selector': 'app-view-all'},{'name': 'ViewOrgTypeComponent', 'selector': 'app-view-org-type'},{'name': 'WorkspaceComponent', 'selector': 'app-workspace'},{'name': 'WorkspaceContentFilterComponent', 'selector': 'app-workspace-content-filter'},{'name': 'WorkspacesidebarComponent', 'selector': 'app-workspacesidebar'},{'name': 'YearOfBirthComponent', 'selector': 'app-year-of-birth'}];
+    var DIRECTIVES = [{'name': 'ActivityDashboardDirective', 'selector': '[appActivityDashboard]'},{'name': 'AddToGroupDirective', 'selector': '[appAddToGroup]'},{'name': 'BodyScrollDirective', 'selector': '[appBodyScroll]'},{'name': 'ComponentDeactivate', 'selector': ''},{'name': 'ContentDirectionDirective', 'selector': '[appContentDirection]'},{'name': 'DesktopOnlyDirective', 'selector': '[appDesktopOnly]'},{'name': 'HighlightTextDirective', 'selector': '[appHighlightText]'},{'name': 'MarkdownDirective', 'selector': '[appMarkdown]'},{'name': 'ModalContentDirective', 'selector': '[sbModalContent]'},{'name': 'OnlineOnlyDirective', 'selector': '[appOnlineOnly]'},{'name': 'PermissionDirective', 'selector': '[appPermission]'},{'name': 'TelemetryEndDirective', 'selector': '[appTelemetryEnd]'},{'name': 'TelemetryErrorDirective', 'selector': '[appTelemetryError]'},{'name': 'TelemetryEventsDirective', 'selector': '[telemetryEventsButton]'},{'name': 'TelemetryImpressionDirective', 'selector': '[appTelemetryImpression]'},{'name': 'TelemetryInteractDirective', 'selector': '[appTelemetryInteract]'},{'name': 'TelemetryShareDirective', 'selector': '[appTelemetryShare]'},{'name': 'TelemetryStartDirective', 'selector': '[appTelemetryStart]'}];
+    var ACTUAL_COMPONENT = {'name': 'ContentPlayerComponent-1'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ContentPlayerComponent-1.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

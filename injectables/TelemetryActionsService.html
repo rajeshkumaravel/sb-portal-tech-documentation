@@ -1,0 +1,848 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >TelemetryActionsService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/public/module/offline/services/telemetry-actions/telemetry-actions.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#configService" >configService</a>
+                            </li>
+                            <li>
+                                <a href="#handledTelemetryList" >handledTelemetryList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#publicDataService" >publicDataService</a>
+                            </li>
+                            <li>
+                                <a href="#telemetryImportEvent" >telemetryImportEvent</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#exportTelemetry" >exportTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#getSyncTelemetryStatus" >getSyncTelemetryStatus</a>
+                            </li>
+                            <li>
+                                <a href="#getTelemetryInfo" >getTelemetryInfo</a>
+                            </li>
+                            <li>
+                                <a href="#reTryTelemetryImport" >reTryTelemetryImport</a>
+                            </li>
+                            <li>
+                                <a href="#syncTelemtry" >syncTelemtry</a>
+                            </li>
+                            <li>
+                                <a href="#telemetryImportList" >telemetryImportList</a>
+                            </li>
+                            <li>
+                                <a href="#updateSyncStatus" >updateSyncStatus</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(configService: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, publicDataService: <a href="../injectables/PublicDataService.html" target="_self">PublicDataService</a>, electronDialogService: <a href="../injectables/ElectronDialogService.html" target="_self">ElectronDialogService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/modules/public/module/offline/services/telemetry-actions/telemetry-actions.service.ts:15</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>configService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>publicDataService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PublicDataService.html" target="_self" >PublicDataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>electronDialogService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ElectronDialogService.html" target="_self" >ElectronDialogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="exportTelemetry"></a>
+                    <span class="name">
+                        <span ><b>exportTelemetry</b></span>
+                        <a href="#exportTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>exportTelemetry()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/modules/public/module/offline/services/telemetry-actions/telemetry-actions.service.ts:29</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ServerResponse.html" target="_self" >Observable&lt;ServerResponse&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSyncTelemetryStatus"></a>
+                    <span class="name">
+                        <span ><b>getSyncTelemetryStatus</b></span>
+                        <a href="#getSyncTelemetryStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSyncTelemetryStatus()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/modules/public/module/offline/services/telemetry-actions/telemetry-actions.service.ts:24</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ServerResponse.html" target="_self" >Observable&lt;ServerResponse&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTelemetryInfo"></a>
+                    <span class="name">
+                        <span ><b>getTelemetryInfo</b></span>
+                        <a href="#getTelemetryInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTelemetryInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/modules/public/module/offline/services/telemetry-actions/telemetry-actions.service.ts:19</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ServerResponse.html" target="_self" >Observable&lt;ServerResponse&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reTryTelemetryImport"></a>
+                    <span class="name">
+                        <span ><b>reTryTelemetryImport</b></span>
+                        <a href="#reTryTelemetryImport"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>reTryTelemetryImport(importId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">src/app/modules/public/module/offline/services/telemetry-actions/telemetry-actions.service.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>importId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="syncTelemtry"></a>
+                    <span class="name">
+                        <span ><b>syncTelemtry</b></span>
+                        <a href="#syncTelemtry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>syncTelemtry(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/modules/public/module/offline/services/telemetry-actions/telemetry-actions.service.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ServerResponse.html" target="_self" >Observable&lt;ServerResponse&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryImportList"></a>
+                    <span class="name">
+                        <span ><b>telemetryImportList</b></span>
+                        <a href="#telemetryImportList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>telemetryImportList()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/modules/public/module/offline/services/telemetry-actions/telemetry-actions.service.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ServerResponse.html" target="_self" >Observable&lt;ServerResponse&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateSyncStatus"></a>
+                    <span class="name">
+                        <span ><b>updateSyncStatus</b></span>
+                        <a href="#updateSyncStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateSyncStatus(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/modules/public/module/offline/services/telemetry-actions/telemetry-actions.service.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ServerResponse.html" target="_self" >Observable&lt;ServerResponse&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="configService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>configService</b></span>
+                        <a href="#configService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/public/module/offline/services/telemetry-actions/telemetry-actions.service.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handledTelemetryList"></a>
+                    <span class="name">
+                        <span ><b>handledTelemetryList</b></span>
+                        <a href="#handledTelemetryList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/modules/public/module/offline/services/telemetry-actions/telemetry-actions.service.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="publicDataService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>publicDataService</b></span>
+                        <a href="#publicDataService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/PublicDataService.html" target="_self" >PublicDataService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/modules/public/module/offline/services/telemetry-actions/telemetry-actions.service.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryImportEvent"></a>
+                    <span class="name">
+                        <span ><b>telemetryImportEvent</b></span>
+                        <a href="#telemetryImportEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new EventEmitter&lt;any&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/modules/public/module/offline/services/telemetry-actions/telemetry-actions.service.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { mergeMap } from &#x27;rxjs/operators&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { PublicDataService } from &#x27;@sunbird/core&#x27;;
+import { ConfigService, ServerResponse } from &#x27;@sunbird/shared&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import { ElectronDialogService } from &#x27;../electron-dialog/electron-dialog.service&#x27;;
+import { map } from &#x27;rxjs/operators&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import {EventEmitter} from &#x27;@angular/core&#x27;;
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class TelemetryActionsService {
+  handledTelemetryList &#x3D; 0;
+  telemetryImportEvent &#x3D; new EventEmitter&lt;any&gt;();
+  constructor(public configService: ConfigService, public publicDataService: PublicDataService,
+    private electronDialogService: ElectronDialogService) { }
+
+  getTelemetryInfo(): Observable&lt;ServerResponse&gt; {
+    return this.publicDataService.get({
+      url: this.configService.urlConFig.URLS.OFFLINE.TELEMTRY_INFO,
+    });
+  }
+  getSyncTelemetryStatus(): Observable&lt;ServerResponse&gt; {
+    return this.publicDataService.get({
+      url: this.configService.urlConFig.URLS.OFFLINE.TELEMTRY_INFO + &#x27;?syncConfig&#x3D;true&#x27;,
+    });
+  }
+  exportTelemetry(): Observable&lt;ServerResponse&gt; {
+    const exportOptions: any &#x3D; {
+      url: &#x60;${this.configService.urlConFig.URLS.OFFLINE.EXPORT_TELEMETRY}&#x60;
+    };
+    return this.electronDialogService.showTelemetryExportDialog().pipe(mergeMap((response: any) &#x3D;&gt; {
+      if (response.destFolder) {
+        exportOptions.param &#x3D; {
+          destFolder: response.destFolder
+        };
+      }
+      return this.publicDataService.post(exportOptions);
+    }));
+  }
+  telemetryImportList(): Observable&lt;ServerResponse&gt; {
+    const requestParams &#x3D; {
+      url: this.configService.urlConFig.URLS.OFFLINE.IMPORT_TELEMETRY_LIST,
+      data: {}
+    };
+    return this.publicDataService.post(requestParams).pipe(map((response: ServerResponse) &#x3D;&gt; {
+      let telemetryImportList &#x3D; 0;
+      _.forEach(response.result.response.items, data &#x3D;&gt; {
+        if (data.status &#x3D;&#x3D;&#x3D; &#x27;completed&#x27;) {
+          telemetryImportList ++;
+        }
+      });
+      if (telemetryImportList &gt; this.handledTelemetryList) {
+       this.telemetryImportEvent.emit(); // emit this event when import new file and status is completed
+      }
+      this.handledTelemetryList &#x3D; telemetryImportList;
+
+      return response;
+    }));
+  }
+
+  reTryTelemetryImport(importId) {
+    const requestParams &#x3D; {
+      url: &#x60;${this.configService.urlConFig.URLS.OFFLINE.TELEMETRY_IMPORT_RETRY}/${importId}&#x60;,
+      data: {}
+    };
+    return this.publicDataService.post(requestParams).pipe(map((response: ServerResponse) &#x3D;&gt; {
+      return response;
+    }));
+  }
+    syncTelemtry(data): Observable&lt;ServerResponse&gt; {
+    const requestParams &#x3D; {
+      url: this.configService.urlConFig.URLS.OFFLINE.TELEMETRY_SYNC,
+      data: data
+    };
+    return this.publicDataService.post(requestParams).pipe(map((response: ServerResponse) &#x3D;&gt; {
+      return response;
+    }));
+  }
+  updateSyncStatus(data): Observable&lt;ServerResponse&gt; {
+    const requestParams &#x3D; {
+      url: this.configService.urlConFig.URLS.OFFLINE.TELEMTRY_CONFIG,
+      data: data
+    };
+    return this.publicDataService.post(requestParams).pipe(map((response: ServerResponse) &#x3D;&gt; {
+      return response;
+    }));
+  }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'TelemetryActionsService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

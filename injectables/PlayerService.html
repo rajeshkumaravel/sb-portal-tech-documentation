@@ -1,0 +1,1518 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >PlayerService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/core/services/player/player.service.ts</code>
+        </p>
+
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>helper services to fetch content details and preparing content player config</p>
+
+            </p>
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#collectionData" >collectionData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#configService" >configService</a>
+                            </li>
+                            <li>
+                                <a href="#contentData" >contentData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#contentService" >contentService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#navigationHelperService" >navigationHelperService</a>
+                            </li>
+                            <li>
+                                <a href="#previewCdnUrl" >previewCdnUrl</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#publicDataService" >publicDataService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#router" >router</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#userService" >userService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getCollectionHierarchy" >getCollectionHierarchy</a>
+                            </li>
+                            <li>
+                                <a href="#getConfig" >getConfig</a>
+                            </li>
+                            <li>
+                                <a href="#getConfigByContent" >getConfigByContent</a>
+                            </li>
+                            <li>
+                                <a href="#getContent" >getContent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getRollUpData" >getRollUpData</a>
+                            </li>
+                            <li>
+                                <a href="#handleNavigation" >handleNavigation</a>
+                            </li>
+                            <li>
+                                <a href="#playContent" >playContent</a>
+                            </li>
+                            <li>
+                                <a href="#updateContentBodyForReviewer" >updateContentBodyForReviewer</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, contentService: <a href="../injectables/ContentService.html" target="_self">ContentService</a>, configService: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, navigationHelperService: <a href="../injectables/NavigationHelperService.html" target="_self">NavigationHelperService</a>, publicDataService: <a href="../injectables/PublicDataService.html" target="_self">PublicDataService</a>, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/core/services/player/player.service.ts:31</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>contentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ContentService.html" target="_self" >ContentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>configService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>navigationHelperService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationHelperService.html" target="_self" >NavigationHelperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>publicDataService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PublicDataService.html" target="_self" >PublicDataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilService.html" target="_self" >UtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>activatedRoute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCollectionHierarchy"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getCollectionHierarchy</b></span>
+                        <a href="#getCollectionHierarchy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCollectionHierarchy(identifier: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, option: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/app/modules/core/services/player/player.service.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>identifier</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>option</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>{ params: {} }</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;CollectionHierarchyAPI.Get&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getConfig"></a>
+                    <span class="name">
+                        <span ><b>getConfig</b></span>
+                        <a href="#getConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getConfig(contentDetails: <a href="../interfaces/ContentDetails.html" target="_self">ContentDetails</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/app/modules/core/services/player/player.service.ts:90</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>returns player config details.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>contentDetails</td>
+                                    <td>
+                                                <code><a href="../interfaces/ContentDetails.html" target="_self" >ContentDetails</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/PlayerConfig.html" target="_self" >PlayerConfig</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getConfigByContent"></a>
+                    <span class="name">
+                        <span ><b>getConfigByContent</b></span>
+                        <a href="#getConfigByContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getConfigByContent(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, option: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/modules/core/services/player/player.service.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>option</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>{ params: {} }</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/PlayerConfig.html" target="_self" >Observable&lt;PlayerConfig&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getContent"></a>
+                    <span class="name">
+                        <span ><b>getContent</b></span>
+                        <a href="#getContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getContent(contentId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, option: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/modules/core/services/player/player.service.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Return content details</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>contentId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>option</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>{ params: {} }</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ServerResponse.html" target="_self" >Observable&lt;ServerResponse&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRollUpData"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getRollUpData</b></span>
+                        <a href="#getRollUpData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getRollUpData(data: Array<string>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">src/app/modules/core/services/player/player.service.ts:148</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                            <code>Array&lt;string&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>[]</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleNavigation"></a>
+                    <span class="name">
+                        <span ><b>handleNavigation</b></span>
+                        <a href="#handleNavigation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleNavigation(content, isTrackable, queryParams?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="228"
+                            class="link-to-prism">src/app/modules/core/services/player/player.service.ts:228</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>content</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>isTrackable</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>queryParams</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playContent"></a>
+                    <span class="name">
+                        <span ><b>playContent</b></span>
+                        <a href="#playContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playContent(content, queryParams?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="207"
+                            class="link-to-prism">src/app/modules/core/services/player/player.service.ts:207</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>content</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>queryParams</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateContentBodyForReviewer"></a>
+                    <span class="name">
+                        <span ><b>updateContentBodyForReviewer</b></span>
+                        <a href="#updateContentBodyForReviewer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateContentBodyForReviewer(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="169"
+                            class="link-to-prism">src/app/modules/core/services/player/player.service.ts:169</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="collectionData"></a>
+                    <span class="name">
+                        <span ><b>collectionData</b></span>
+                        <a href="#collectionData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ContentData.html" target="_self" >ContentData</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/core/services/player/player.service.ts:30</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>stores collection/course details</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="configService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>configService</b></span>
+                        <a href="#configService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/core/services/player/player.service.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentData"></a>
+                    <span class="name">
+                        <span ><b>contentData</b></span>
+                        <a href="#contentData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ContentData.html" target="_self" >ContentData</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/core/services/player/player.service.ts:26</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>stores content details</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>contentService</b></span>
+                        <a href="#contentService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ContentService.html" target="_self" >ContentService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/core/services/player/player.service.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigationHelperService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>navigationHelperService</b></span>
+                        <a href="#navigationHelperService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/NavigationHelperService.html" target="_self" >NavigationHelperService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/core/services/player/player.service.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="previewCdnUrl"></a>
+                    <span class="name">
+                        <span ><b>previewCdnUrl</b></span>
+                        <a href="#previewCdnUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/core/services/player/player.service.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="publicDataService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>publicDataService</b></span>
+                        <a href="#publicDataService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/PublicDataService.html" target="_self" >PublicDataService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/core/services/player/player.service.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="router"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>router</b></span>
+                        <a href="#router"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/core/services/player/player.service.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>userService</b></span>
+                        <a href="#userService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/core/services/player/player.service.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { of as observableOf, Observable } from &#x27;rxjs&#x27;;
+import { mergeMap, map } from &#x27;rxjs/operators&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { ContentService } from &#x27;./../content/content.service&#x27;;
+import { UserService } from &#x27;./../user/user.service&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import {
+  ConfigService, ServerResponse, UtilService,
+  ContentDetails, PlayerConfig, ContentData, NavigationHelperService
+} from &#x27;@sunbird/shared&#x27;;
+import { CollectionHierarchyAPI } from &#x27;../../interfaces&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import { environment } from &#x27;@sunbird/environment&#x27;;
+import { PublicDataService } from &#x27;./../public-data/public-data.service&#x27;;
+/**
+ * helper services to fetch content details and preparing content player config
+ */
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class PlayerService {
+  /**
+   * stores content details
+   */
+  contentData: ContentData;
+  /**
+   * stores collection/course details
+   */
+  collectionData: ContentData;
+  previewCdnUrl: string;
+  constructor(public userService: UserService, public contentService: ContentService,
+    public configService: ConfigService, public router: Router, public navigationHelperService: NavigationHelperService,
+    public publicDataService: PublicDataService, private utilService: UtilService, private activatedRoute: ActivatedRoute) {
+      this.previewCdnUrl &#x3D; (&lt;HTMLInputElement&gt;document.getElementById(&#x27;previewCdnUrl&#x27;))
+      ? (&lt;HTMLInputElement&gt;document.getElementById(&#x27;previewCdnUrl&#x27;)).value : undefined;
+  }
+
+  /**
+   *
+   *
+   * @param {string} id
+   * @returns {Observable&lt;{contentId: string, contentData: ContentData }&gt;}
+   */
+  getConfigByContent(id: string, option: any &#x3D; { params: {} }): Observable&lt;PlayerConfig&gt; {
+    return this.getContent(id, option).pipe(
+      mergeMap((content) &#x3D;&gt; {
+        const contentDetails: ContentDetails &#x3D; {
+          contentId: content.result.content.identifier,
+          contentData: content.result.content
+        };
+        if (option.courseId) {
+          contentDetails.courseId &#x3D; option.courseId;
+        }
+        if (option.courseId &amp;&amp; option.batchId) {
+          contentDetails.batchId &#x3D; option.batchId;
+        }
+        return observableOf(this.getConfig(contentDetails));
+      }));
+  }
+
+  /**
+   * Return content details
+   * @param {string} contentId
+   * @returns {Observable&lt;ServerResponse&gt;}
+   */
+  getContent(contentId: string, option: any &#x3D; { params: {} }): Observable&lt;ServerResponse&gt; {
+    const licenseParam &#x3D; {
+      licenseDetails: &#x27;name,description,url&#x27;
+    };
+    let param &#x3D; { fields: this.configService.urlConFig.params.contentGet };
+    if (this.userService.isDesktopApp) {
+      param.fields &#x3D; &#x60;${param.fields},downloadUrl&#x60;;
+    }
+    param &#x3D; { ...param, ...option.params, ...licenseParam};
+    const req &#x3D; {
+      url: &#x60;${this.configService.urlConFig.URLS.CONTENT.GET}/${contentId}&#x60;,
+      param: { ...param, ...option.params }
+    };
+    return this.publicDataService.get(req).pipe(map((response: ServerResponse) &#x3D;&gt; {
+      this.contentData &#x3D; response.result.content;
+      return response;
+    }));
+  }
+  /**
+   * returns player config details.
+   * @param {ContentDetails} contentDetails
+   * @memberof PlayerService
+   */
+  getConfig(contentDetails: ContentDetails): PlayerConfig {
+    const configuration: any &#x3D; _.cloneDeep(this.configService.appConfig.PLAYER_CONFIG.playerConfig);
+    configuration.context.contentId &#x3D; contentDetails.contentId;
+    configuration.context.sid &#x3D; this.userService.sessionId;
+    configuration.context.uid &#x3D; this.userService.userid;
+    configuration.context.timeDiff &#x3D; this.userService.getServerTimeDiff;
+    configuration.context.contextRollup &#x3D; this.getRollUpData(_.get(this.userService, &#x27;userProfile.hashTagIds&#x27;));
+    configuration.context.channel &#x3D; this.userService.channel;
+    const deviceId &#x3D; (&lt;HTMLInputElement&gt;document.getElementById(&#x27;deviceId&#x27;));
+    configuration.context.did &#x3D; deviceId ? deviceId.value : &#x27;&#x27;;
+    const buildNumber &#x3D; (&lt;HTMLInputElement&gt;document.getElementById(&#x27;buildNumber&#x27;));
+    configuration.context.pdata.ver &#x3D; buildNumber &amp;&amp; buildNumber.value ?
+    buildNumber.value.slice(0, buildNumber.value.lastIndexOf(&#x27;.&#x27;)) : &#x27;1.0&#x27;;
+    if (_.isUndefined(contentDetails.courseId)) {
+      configuration.context.dims &#x3D; this.userService.dims;
+    } else {
+      const cloneDims &#x3D; _.cloneDeep(this.userService.dims) || [];
+      cloneDims.push(contentDetails.courseId);
+      if (contentDetails.batchId) {
+        cloneDims.push(contentDetails.batchId);
+      }
+      configuration.context.dims &#x3D; cloneDims;
+    }
+    const tags &#x3D; [];
+    _.forEach(_.get(this.userService, &#x27;userProfile.organisations&#x27;), (org) &#x3D;&gt; {
+      if (org.hashTagId) {
+        tags.push(org.hashTagId);
+      }
+    });
+    configuration.context.tags &#x3D; tags;
+    configuration.context.app &#x3D; [this.userService.channel];
+    if (contentDetails.courseId) {
+      configuration.context.cdata &#x3D; [{
+        id: contentDetails.courseId,
+        type: &#x27;course&#x27;
+      }];
+      if (contentDetails.batchId) {
+        configuration.context.cdata.push({ type: &#x27;batch&#x27;,
+        id: contentDetails.batchId} );
+      }
+    }
+    configuration.context.pdata.id &#x3D; this.userService.appId;
+    configuration.metadata &#x3D; contentDetails.contentData;
+    configuration.data &#x3D; contentDetails.contentData.mimeType !&#x3D;&#x3D; this.configService.appConfig.PLAYER_CONFIG.MIME_TYPE.ecmlContent ?
+      {} : contentDetails.contentData.body;
+    configuration.config.enableTelemetryValidation &#x3D; environment.enableTelemetryValidation; // telemetry validation
+    configuration.config.previewCdnUrl &#x3D; this.previewCdnUrl;
+    return configuration;
+  }
+
+  /**
+   *
+   *
+   * @private
+   * @param {Array&lt;string&gt;} [data&#x3D;[]]
+   * @returns
+   * @memberof TelemetryService
+   */
+  private getRollUpData(data: Array&lt;string&gt; &#x3D; []) {
+    const rollUp &#x3D; {};
+    data.forEach((element, index) &#x3D;&gt; rollUp[&#x27;l&#x27; + (index + 1)] &#x3D; element);
+    return rollUp;
+  }
+
+  public getCollectionHierarchy(identifier: string, option: any &#x3D; { params: {} }): Observable&lt;CollectionHierarchyAPI.Get&gt; {
+    const req &#x3D; {
+      url: &#x60;${this.configService.urlConFig.URLS.COURSE.HIERARCHY}/${identifier}&#x60;,
+      param: option.params
+    };
+    // add the content id to the tag array here
+    // window[&#x27;TagManger&#x27;].SBTagService.pushTag(identifier, &#x27;CONTENT_&#x27;, false);
+    return this.publicDataService.get(req).pipe(map((response: ServerResponse) &#x3D;&gt; {
+      if (response.result.content) {
+        response.result.content &#x3D; this.utilService.sortChildrenWithIndex(response.result.content);
+      }
+      this.collectionData &#x3D; response.result.content;
+      return response;
+    }));
+  }
+  updateContentBodyForReviewer(data) {
+    // data object is body of the content after JSON.parse()
+    let parsedData;
+    try {
+      parsedData &#x3D; JSON.parse(data);
+    } catch {
+      parsedData &#x3D; null;
+    }
+    if (!parsedData) {
+      return data;
+    }
+    const questionSetPluginId &#x3D; &#x27;org.ekstep.questionset&#x27;;
+    const questionPluginId &#x3D; &#x27;org.ekstep.question&#x27;;
+    // checking content has questionset plugin dependency
+    const isQuestionSetPluginExist &#x3D; parsedData.theme[&#x27;plugin-manifest&#x27;][&#x27;plugin&#x27;].filter((plugin) &#x3D;&gt; {
+        return plugin.id !&#x3D;&#x3D; questionSetPluginId;
+    });
+
+    if (isQuestionSetPluginExist) {
+        // checking each stage for questionset plugin
+        parsedData.theme[&#x27;stage&#x27;].forEach((stage) &#x3D;&gt;  {
+            if (stage[questionSetPluginId]) {
+                // checking each questionset plugin inside a stage
+                stage[questionSetPluginId].forEach( (questionSetData) &#x3D;&gt; {
+                    const questionSetConfigData &#x3D; JSON.parse(questionSetData.config.__cdata);
+                    const actualNumberOfQuestions &#x3D; questionSetData[questionPluginId].length;
+                    // ensuring total items (display items ) always equval to number of questions inside question set
+                    questionSetConfigData.total_items &#x3D; actualNumberOfQuestions;
+                    // ensuring shuffle is always off for the reviewer
+                    questionSetConfigData.shuffle_questions &#x3D; false;
+                    questionSetData.config.__cdata &#x3D; JSON.stringify(questionSetConfigData);
+                });
+            }
+        });
+    }
+    return JSON.stringify(parsedData);
+  }
+
+  playContent(content, queryParams?) {
+    this.navigationHelperService.storeResourceCloseUrl();
+    setTimeout(() &#x3D;&gt; { // setTimeOut is used to trigger telemetry interact event as changeDetectorRef.detectChanges() not working.
+      if (content.mimeType &#x3D;&#x3D;&#x3D; this.configService.appConfig.PLAYER_CONFIG.MIME_TYPE.collection ||
+        _.get(content, &#x27;metaData.mimeType&#x27;) &#x3D;&#x3D;&#x3D; this.configService.appConfig.PLAYER_CONFIG.MIME_TYPE.collection) {
+          if (!content.trackable &amp;&amp; content.primaryCategory !&#x3D;&#x3D; &#x27;Course&#x27;) {
+            this.handleNavigation(content, false, queryParams);
+          } else {
+            const isTrackable &#x3D; content.trackable &amp;&amp; content.trackable.enabled &#x3D;&#x3D;&#x3D; &#x27;No&#x27; ? false : true;
+            this.handleNavigation(content, isTrackable, queryParams);
+          }
+      } else if (content.mimeType &#x3D;&#x3D;&#x3D; this.configService.appConfig.PLAYER_CONFIG.MIME_TYPE.ecmlContent) {
+        this.router.navigate([&#x27;/resources/play/content&#x27;, content.identifier]);
+      } else if (content.mimeType &#x3D;&#x3D;&#x3D; this.configService.appConfig.PLAYER_CONFIG.MIME_TYPE.questionset) {
+        this.router.navigate([&#x27;/resources/play/questionset&#x27;, content.identifier]);
+      } else {
+        this.router.navigate([&#x27;/resources/play/content&#x27;, content.identifier]);
+      }
+    }, 0);
+  }
+
+  handleNavigation(content, isTrackable, queryParams?) {
+    if (!isTrackable) {
+      this.router.navigate([&#x27;/resources/play/collection&#x27;, content.courseId || content.identifier],
+      {queryParams: {contentType: content.contentType}});
+    } else if (content.batchId) {
+      this.router.navigate([&#x27;/learn/course&#x27;, content.courseId || content.identifier, &#x27;batch&#x27;, content.batchId],
+        { queryParams });
+    } else {
+      this.router.navigate([&#x27;/learn/course&#x27;, content.identifier], { queryParams });
+    }
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'PlayerService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

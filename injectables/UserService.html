@@ -1,0 +1,3933 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >UserService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/core/services/user/user.service.ts</code>
+        </p>
+
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Service to fetch user details from server</p>
+
+            </p>
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#_anonymousSid" >_anonymousSid</a>
+                            </li>
+                            <li>
+                                <a href="#_appId" >_appId</a>
+                            </li>
+                            <li>
+                                <a href="#_authenticated" >_authenticated</a>
+                            </li>
+                            <li>
+                                <a href="#_channel" >_channel</a>
+                            </li>
+                            <li>
+                                <a href="#_cloudStorageUrls" >_cloudStorageUrls</a>
+                            </li>
+                            <li>
+                                <a href="#_dims" >_dims</a>
+                            </li>
+                            <li>
+                                <a href="#_guestData$" >_guestData$</a>
+                            </li>
+                            <li>
+                                <a href="#_hashTagId" >_hashTagId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#_isCustodianUser" >_isCustodianUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#_rootOrgId" >_rootOrgId</a>
+                            </li>
+                            <li>
+                                <a href="#_sessionId" >_sessionId</a>
+                            </li>
+                            <li>
+                                <a href="#_slug" >_slug</a>
+                            </li>
+                            <li>
+                                <a href="#_userData$" >_userData$</a>
+                            </li>
+                            <li>
+                                <a href="#_userid" >_userid</a>
+                            </li>
+                            <li>
+                                <a href="#_userProfile" >_userProfile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#anonymousUserPreference" >anonymousUserPreference</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#config" >config</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#contentService" >contentService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#createManagedUser" >createManagedUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#guestData$" >guestData$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#guestUserProfile" >guestUserProfile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isDesktopApp" >isDesktopApp</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#learnerService" >learnerService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#organizationsDetails" >organizationsDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#orgNames" >orgNames</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#publicDataService" >publicDataService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#rootOrgName" >rootOrgName</a>
+                            </li>
+                            <li>
+                                <a href="#timeDiff" >timeDiff</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#userData$" >userData$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#userOrgDetails$" >userOrgDetails$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#acceptTermsAndConditions" >acceptTermsAndConditions</a>
+                            </li>
+                            <li>
+                                <a href="#createAnonymousUser" >createAnonymousUser</a>
+                            </li>
+                            <li>
+                                <a href="#createGuestUser" >createGuestUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#endSession" >endSession</a>
+                            </li>
+                            <li>
+                                <a href="#getAnonymousUserPreference" >getAnonymousUserPreference</a>
+                            </li>
+                            <li>
+                                <a href="#getFeedData" >getFeedData</a>
+                            </li>
+                            <li>
+                                <a href="#getGuestUser" >getGuestUser</a>
+                            </li>
+                            <li>
+                                <a href="#getIsUserExistsUserByKey" >getIsUserExistsUserByKey</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getOrganizationDetails" >getOrganizationDetails</a>
+                            </li>
+                            <li>
+                                <a href="#getUserByKey" >getUserByKey</a>
+                            </li>
+                            <li>
+                                <a href="#getUserData" >getUserData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getUserProfile" >getUserProfile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#initialize" >initialize</a>
+                            </li>
+                            <li>
+                                <a href="#registerUser" >registerUser</a>
+                            </li>
+                            <li>
+                                <a href="#setIsCustodianUser" >setIsCustodianUser</a>
+                            </li>
+                            <li>
+                                <a href="#setOrgDetailsToRequestHeaders" >setOrgDetailsToRequestHeaders</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setRoleOrgMap" >setRoleOrgMap</a>
+                            </li>
+                            <li>
+                                <a href="#setUserFramework" >setUserFramework</a>
+                            </li>
+                            <li>
+                                <a href="#setUserId" >setUserId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setUserProfile" >setUserProfile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#startSession" >startSession</a>
+                            </li>
+                            <li>
+                                <a href="#updateAnonymousUserDetails" >updateAnonymousUserDetails</a>
+                            </li>
+                            <li>
+                                <a href="#updateGuestUser" >updateGuestUser</a>
+                            </li>
+                            <li>
+                                <a href="#userMigrate" >userMigrate</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#slug" >slug</a>
+                                </li>
+                                <li>
+                                    <a href="#anonymousSid" >anonymousSid</a>
+                                </li>
+                                <li>
+                                    <a href="#loggedIn" >loggedIn</a>
+                                </li>
+                                <li>
+                                    <a href="#userid" >userid</a>
+                                </li>
+                                <li>
+                                    <a href="#sessionId" >sessionId</a>
+                                </li>
+                                <li>
+                                    <a href="#isCustodianUser" >isCustodianUser</a>
+                                </li>
+                                <li>
+                                    <a href="#appId" >appId</a>
+                                </li>
+                                <li>
+                                    <a href="#cloudStorageUrls" >cloudStorageUrls</a>
+                                </li>
+                                <li>
+                                    <a href="#orgIdNameMap" >orgIdNameMap</a>
+                                </li>
+                                <li>
+                                    <a href="#userProfile" >userProfile</a>
+                                </li>
+                                <li>
+                                    <a href="#rootOrgId" >rootOrgId</a>
+                                </li>
+                                <li>
+                                    <a href="#hashTagId" >hashTagId</a>
+                                </li>
+                                <li>
+                                    <a href="#getServerTimeDiff" >getServerTimeDiff</a>
+                                </li>
+                                <li>
+                                    <a href="#channel" >channel</a>
+                                </li>
+                                <li>
+                                    <a href="#dims" >dims</a>
+                                </li>
+                                <li>
+                                    <a href="#UserOrgDetails" >UserOrgDetails</a>
+                                </li>
+                                <li>
+                                    <a href="#RoleOrgMap" >RoleOrgMap</a>
+                                </li>
+                                <li>
+                                    <a href="#defaultFrameworkFilters" >defaultFrameworkFilters</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(config: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, learner: <a href="../injectables/LearnerService.html" target="_self">LearnerService</a>, cacheService: CacheService, http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, contentService: <a href="../injectables/ContentService.html" target="_self">ContentService</a>, publicDataService: <a href="../injectables/PublicDataService.html" target="_self">PublicDataService</a>, baseHref: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, dataService: <a href="../injectables/DataService.html" target="_self">DataService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="113" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:113</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>constructor</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>config</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>ConfigService reference</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>learner</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LearnerService.html" target="_self" >LearnerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>LearnerService reference</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>cacheService</td>
+                                                  
+                                                        <td>
+                                                                    <code>CacheService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>contentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ContentService.html" target="_self" >ContentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>publicDataService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PublicDataService.html" target="_self" >PublicDataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>baseHref</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>dataService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DataService.html" target="_self" >DataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="acceptTermsAndConditions"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>acceptTermsAndConditions</b></span>
+                        <a href="#acceptTermsAndConditions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>acceptTermsAndConditions(requestBody)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="318"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:318</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This method invokes learner service to update tnc accept</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requestBody</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createAnonymousUser"></a>
+                    <span class="name">
+                        <span ><b>createAnonymousUser</b></span>
+                        <a href="#createAnonymousUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createAnonymousUser(request)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="472"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:472</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>request</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ServerResponse.html" target="_self" >Observable&lt;ServerResponse&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createGuestUser"></a>
+                    <span class="name">
+                        <span ><b>createGuestUser</b></span>
+                        <a href="#createGuestUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createGuestUser(userDetails)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="527"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:527</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userDetails</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="endSession"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>endSession</b></span>
+                        <a href="#endSession"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>endSession()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="401"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:401</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAnonymousUserPreference"></a>
+                    <span class="name">
+                        <span ><b>getAnonymousUserPreference</b></span>
+                        <a href="#getAnonymousUserPreference"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAnonymousUserPreference()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="450"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:450</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ServerResponse.html" target="_self" >Observable&lt;ServerResponse&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getFeedData"></a>
+                    <span class="name">
+                        <span ><b>getFeedData</b></span>
+                        <a href="#getFeedData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getFeedData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="414"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:414</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getGuestUser"></a>
+                    <span class="name">
+                        <span ><b>getGuestUser</b></span>
+                        <a href="#getGuestUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getGuestUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="483"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:483</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getIsUserExistsUserByKey"></a>
+                    <span class="name">
+                        <span ><b>getIsUserExistsUserByKey</b></span>
+                        <a href="#getIsUserExistsUserByKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getIsUserExistsUserByKey(key)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="410"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:410</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>key</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOrganizationDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getOrganizationDetails</b></span>
+                        <a href="#getOrganizationDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getOrganizationDetails(organisationIds)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="297"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:297</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get organization details.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>organisationIds</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserByKey"></a>
+                    <span class="name">
+                        <span ><b>getUserByKey</b></span>
+                        <a href="#getUserByKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getUserByKey(key)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="406"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:406</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>key</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserData"></a>
+                    <span class="name">
+                        <span ><b>getUserData</b></span>
+                        <a href="#getUserData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getUserData(userId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="442"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:442</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserProfile"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getUserProfile</b></span>
+                        <a href="#getUserProfile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserProfile()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="184"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:184</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>method to fetch user profile from server.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initialize"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>initialize</b></span>
+                        <a href="#initialize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initialize(loggedIn)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="215"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:215</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loggedIn</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="registerUser"></a>
+                    <span class="name">
+                        <span ><b>registerUser</b></span>
+                        <a href="#registerUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>registerUser(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="418"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:418</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setIsCustodianUser"></a>
+                    <span class="name">
+                        <span ><b>setIsCustodianUser</b></span>
+                        <a href="#setIsCustodianUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setIsCustodianUser(isCustodianUser)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="175"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:175</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>isCustodianUser</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setOrgDetailsToRequestHeaders"></a>
+                    <span class="name">
+                        <span ><b>setOrgDetailsToRequestHeaders</b></span>
+                        <a href="#setOrgDetailsToRequestHeaders"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setOrgDetailsToRequestHeaders()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="283"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:283</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setRoleOrgMap"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>setRoleOrgMap</b></span>
+                        <a href="#setRoleOrgMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setRoleOrgMap(profile)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="362"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:362</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>profile</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setUserFramework"></a>
+                    <span class="name">
+                        <span ><b>setUserFramework</b></span>
+                        <a href="#setUserFramework"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setUserFramework(framework)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="438"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:438</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>framework</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setUserId"></a>
+                    <span class="name">
+                        <span ><b>setUserId</b></span>
+                        <a href="#setUserId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setUserId(userId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="166"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:166</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setUserProfile"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>setUserProfile</b></span>
+                        <a href="#setUserProfile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setUserProfile(res: <a href="../interfaces/ServerResponse.html" target="_self">ServerResponse</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="223"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:223</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>method to set user profile to behavior subject.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>res</td>
+                                    <td>
+                                                <code><a href="../interfaces/ServerResponse.html" target="_self" >ServerResponse</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startSession"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>startSession</b></span>
+                        <a href="#startSession"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>startSession()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="394"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:394</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>method to log session start</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateAnonymousUserDetails"></a>
+                    <span class="name">
+                        <span ><b>updateAnonymousUserDetails</b></span>
+                        <a href="#updateAnonymousUserDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateAnonymousUserDetails(request)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="460"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:460</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>request</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ServerResponse.html" target="_self" >Observable&lt;ServerResponse&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateGuestUser"></a>
+                    <span class="name">
+                        <span ><b>updateGuestUser</b></span>
+                        <a href="#updateGuestUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateGuestUser(userDetails, formValue?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="506"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:506</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userDetails</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>formValue</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userMigrate"></a>
+                    <span class="name">
+                        <span ><b>userMigrate</b></span>
+                        <a href="#userMigrate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>userMigrate(requestBody)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="430"
+                            class="link-to-prism">src/app/modules/core/services/user/user.service.ts:430</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>requestBody</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_anonymousSid"></a>
+                    <span class="name">
+                        <span ><b>_anonymousSid</b></span>
+                        <a href="#_anonymousSid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:84</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_appId"></a>
+                    <span class="name">
+                        <span ><b>_appId</b></span>
+                        <a href="#_appId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:70</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Reference of appId</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_authenticated"></a>
+                    <span class="name">
+                        <span ><b>_authenticated</b></span>
+                        <a href="#_authenticated"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:83</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_channel"></a>
+                    <span class="name">
+                        <span ><b>_channel</b></span>
+                        <a href="#_channel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:74</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Reference of channel</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_cloudStorageUrls"></a>
+                    <span class="name">
+                        <span ><b>_cloudStorageUrls</b></span>
+                        <a href="#_cloudStorageUrls"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:82</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Reference of cloud Storage Urls</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_dims"></a>
+                    <span class="name">
+                        <span ><b>_dims</b></span>
+                        <a href="#_dims"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;string&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:78</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Reference of dims</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_guestData$"></a>
+                    <span class="name">
+                        <span ><b>_guestData$</b></span>
+                        <a href="#_guestData$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject&lt;any&gt;(undefined)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:99</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_hashTagId"></a>
+                    <span class="name">
+                        <span ><b>_hashTagId</b></span>
+                        <a href="#_hashTagId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:66</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Contains hashTag id</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_isCustodianUser"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>_isCustodianUser</b></span>
+                        <a href="#_isCustodianUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:108</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_rootOrgId"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>_rootOrgId</b></span>
+                        <a href="#_rootOrgId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:41</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Contains root org id</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_sessionId"></a>
+                    <span class="name">
+                        <span ><b>_sessionId</b></span>
+                        <a href="#_sessionId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:34</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Contains session id</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_slug"></a>
+                    <span class="name">
+                        <span ><b>_slug</b></span>
+                        <a href="#_slug"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="107" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:107</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_userData$"></a>
+                    <span class="name">
+                        <span ><b>_userData$</b></span>
+                        <a href="#_userData$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject&lt;Partial&lt;IUserData&gt;&gt;(undefined)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:49</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>BehaviorSubject Containing user profile.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_userid"></a>
+                    <span class="name">
+                        <span ><b>_userid</b></span>
+                        <a href="#_userid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:30</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Contains user id</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_userProfile"></a>
+                    <span class="name">
+                        <span ><b>_userProfile</b></span>
+                        <a href="#_userProfile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IUserProfile.html" target="_self" >Partial&lt;IUserProfile&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:45</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Contains user profile.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="anonymousUserPreference"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>anonymousUserPreference</b></span>
+                        <a href="#anonymousUserPreference"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="109" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:109</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="config"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>config</b></span>
+                        <a href="#config"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:58</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>reference of config service.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>contentService</b></span>
+                        <a href="#contentService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ContentService.html" target="_self" >ContentService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:88</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Reference of content service.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createManagedUser"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>createManagedUser</b></span>
+                        <a href="#createManagedUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new EventEmitter()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:97</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="guestData$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>guestData$</b></span>
+                        <a href="#guestData$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this._guestData$.asObservable()
+    .pipe(skipWhile(data &#x3D;&gt; data &#x3D;&#x3D;&#x3D; undefined || data &#x3D;&#x3D;&#x3D; null))</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="101" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:101</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="guestUserProfile"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>guestUserProfile</b></span>
+                        <a href="#guestUserProfile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:100</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isDesktopApp"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isDesktopApp</b></span>
+                        <a href="#isDesktopApp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="98" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:98</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="learnerService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>learnerService</b></span>
+                        <a href="#learnerService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/LearnerService.html" target="_self" >LearnerService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:62</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>reference of lerner service.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="organizationsDetails"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>organizationsDetails</b></span>
+                        <a href="#organizationsDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IOrganization.html" target="_self" >Array&lt;IOrganization&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:96</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orgNames"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>orgNames</b></span>
+                        <a href="#orgNames"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;string&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="92" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:92</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Reference of orgNames</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="publicDataService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>publicDataService</b></span>
+                        <a href="#publicDataService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/PublicDataService.html" target="_self" >PublicDataService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="106" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:106</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Reference of public data service.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rootOrgName"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>rootOrgName</b></span>
+                        <a href="#rootOrgName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:94</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="timeDiff"></a>
+                    <span class="name">
+                        <span ><b>timeDiff</b></span>
+                        <a href="#timeDiff"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userData$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>userData$</b></span>
+                        <a href="#userData$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IUserData.html" target="_self" >Observable&lt;Partial&lt;IUserData&gt;&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this._userData$.asObservable()
+    .pipe(skipWhile(data &#x3D;&gt; data &#x3D;&#x3D;&#x3D; undefined || data &#x3D;&#x3D;&#x3D; null))</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:53</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Read only observable Containing user profile.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userOrgDetails$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>userOrgDetails$</b></span>
+                        <a href="#userOrgDetails$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.userData$.pipe(
+    mergeMap(data &#x3D;&gt; iif(() &#x3D;&gt;
+      !this._userProfile.organisationIds, of([]), this.getOrganizationDetails(this._userProfile.organisationIds))),
+    shareReplay(1))</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="110" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:110</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="slug"></a>
+                        <span class="name"><b>slug</b><a href="#slug"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>slug()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="146" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:146</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="anonymousSid"></a>
+                        <span class="name"><b>anonymousSid</b><a href="#anonymousSid"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>anonymousSid()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="149" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:149</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loggedIn"></a>
+                        <span class="name"><b>loggedIn</b><a href="#loggedIn"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>loggedIn()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="155" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:155</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>returns login status.</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userid"></a>
+                        <span class="name"><b>userid</b><a href="#userid"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>userid()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="162" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:162</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>get method to fetch userid.</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sessionId"></a>
+                        <span class="name"><b>sessionId</b><a href="#sessionId"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>sessionId()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="172" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:172</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>get method to fetch sessionId.</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isCustodianUser"></a>
+                        <span class="name"><b>isCustodianUser</b><a href="#isCustodianUser"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>isCustodianUser()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="178" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:178</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="appId"></a>
+                        <span class="name"><b>appId</b><a href="#appId"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>appId()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="205" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:205</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>get method to fetch appId.</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cloudStorageUrls"></a>
+                        <span class="name"><b>cloudStorageUrls</b><a href="#cloudStorageUrls"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>cloudStorageUrls()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="211" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:211</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>get method to fetch cloudStorageUrls.</p>
+</div>
+
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>string[]</code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="orgIdNameMap"></a>
+                        <span class="name"><b>orgIdNameMap</b><a href="#orgIdNameMap"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>orgIdNameMap()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="331" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:331</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userProfile"></a>
+                        <span class="name"><b>userProfile</b><a href="#userProfile"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>userProfile()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="339" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:339</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rootOrgId"></a>
+                        <span class="name"><b>rootOrgId</b><a href="#rootOrgId"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>rootOrgId()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="343" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:343</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hashTagId"></a>
+                        <span class="name"><b>hashTagId</b><a href="#hashTagId"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>hashTagId()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="347" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:347</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getServerTimeDiff"></a>
+                        <span class="name"><b>getServerTimeDiff</b><a href="#getServerTimeDiff"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>getServerTimeDiff()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="351" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:351</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="channel"></a>
+                        <span class="name"><b>channel</b><a href="#channel"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>channel()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="355" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:355</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dims"></a>
+                        <span class="name"><b>dims</b><a href="#dims"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>dims()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="359" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:359</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="UserOrgDetails"></a>
+                        <span class="name"><b>UserOrgDetails</b><a href="#UserOrgDetails"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>UserOrgDetails()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="384" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:384</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="RoleOrgMap"></a>
+                        <span class="name"><b>RoleOrgMap</b><a href="#RoleOrgMap"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>RoleOrgMap()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="387" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:387</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="defaultFrameworkFilters"></a>
+                        <span class="name"><b>defaultFrameworkFilters</b><a href="#defaultFrameworkFilters"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>defaultFrameworkFilters()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="538" class="link-to-prism">src/app/modules/core/services/user/user.service.ts:538</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ConfigService, ServerResponse, IUserProfile, IUserData, IOrganization } from &#x27;@sunbird/shared&#x27;;
+import { LearnerService } from &#x27;./../learner/learner.service&#x27;;
+import { ContentService } from &#x27;./../content/content.service&#x27;;
+import { Injectable, Inject, EventEmitter } from &#x27;@angular/core&#x27;;
+import { Observable, BehaviorSubject, iif, of, throwError } from &#x27;rxjs&#x27;;
+import { map, mergeMap, shareReplay } from &#x27;rxjs/operators&#x27;;
+import { UUID } from &#x27;angular2-uuid&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { PublicDataService } from &#x27;./../public-data/public-data.service&#x27;;
+import { skipWhile, tap } from &#x27;rxjs/operators&#x27;;
+import { APP_BASE_HREF } from &#x27;@angular/common&#x27;;
+import { CacheService } from &#x27;ng2-cache-service&#x27;;
+import { DataService } from &#x27;./../data/data.service&#x27;;
+import { environment } from &#x27;@sunbird/environment&#x27;;
+
+
+/**
+ * Service to fetch user details from server
+ *
+ */
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class UserService {
+  /**
+   * Contains user id
+   */
+  _userid: string;
+  /**
+    * Contains session id
+    */
+  _sessionId: string;
+
+  timeDiff: any;
+
+  /**
+   * Contains root org id
+   */
+  public _rootOrgId: string;
+  /**
+   * Contains user profile.
+   */
+  _userProfile: Partial&lt;IUserProfile&gt;;
+  /**
+   * BehaviorSubject Containing user profile.
+   */
+  _userData$ &#x3D; new BehaviorSubject&lt;Partial&lt;IUserData&gt;&gt;(undefined);
+  /**
+   * Read only observable Containing user profile.
+   */
+  public readonly userData$: Observable&lt;Partial&lt;IUserData&gt;&gt; &#x3D; this._userData$.asObservable()
+    .pipe(skipWhile(data &#x3D;&gt; data &#x3D;&#x3D;&#x3D; undefined || data &#x3D;&#x3D;&#x3D; null));
+  /**
+   * reference of config service.
+   */
+  public config: ConfigService;
+  /**
+   * reference of lerner service.
+   */
+  public learnerService: LearnerService;
+  /**
+ * Contains hashTag id
+ */
+  _hashTagId: string;
+  /**
+ * Reference of appId
+ */
+  _appId: string;
+  /**
+   * Reference of channel
+   */
+  _channel: string;
+  /**
+   * Reference of dims
+   */
+  _dims: Array&lt;string&gt; &#x3D; [];
+  /**
+   * Reference of cloud Storage Urls
+   */
+  _cloudStorageUrls: string[];
+  _authenticated: boolean;
+  _anonymousSid: string;
+  /**
+   * Reference of content service.
+   */
+  public contentService: ContentService;
+  /**
+   * Reference of orgNames
+   */
+  public orgNames: Array&lt;string&gt; &#x3D; [];
+
+  public rootOrgName: string;
+
+  public organizationsDetails: Array&lt;IOrganization&gt;;
+  public createManagedUser &#x3D; new EventEmitter();
+  public isDesktopApp &#x3D; false;
+  _guestData$ &#x3D; new BehaviorSubject&lt;any&gt;(undefined);
+  public guestUserProfile;
+  public readonly guestData$: Observable&lt;any&gt; &#x3D; this._guestData$.asObservable()
+    .pipe(skipWhile(data &#x3D;&gt; data &#x3D;&#x3D;&#x3D; undefined || data &#x3D;&#x3D;&#x3D; null));
+  /**
+   * Reference of public data service.
+   */
+  public publicDataService: PublicDataService;
+  _slug &#x3D; &#x27;&#x27;;
+  public _isCustodianUser: boolean;
+  public anonymousUserPreference;
+  public readonly userOrgDetails$ &#x3D; this.userData$.pipe(
+    mergeMap(data &#x3D;&gt; iif(() &#x3D;&gt;
+      !this._userProfile.organisationIds, of([]), this.getOrganizationDetails(this._userProfile.organisationIds))),
+    shareReplay(1));
+
+  /**
+  * constructor
+  * @param {ConfigService} config ConfigService reference
+  * @param {LearnerService} learner LearnerService reference
+  */
+  constructor(config: ConfigService, learner: LearnerService, private cacheService: CacheService,
+    private http: HttpClient, contentService: ContentService, publicDataService: PublicDataService,
+    @Inject(APP_BASE_HREF) baseHref: string, private dataService: DataService) {
+    this.config &#x3D; config;
+    this.learnerService &#x3D; learner;
+    this.contentService &#x3D; contentService;
+    this.publicDataService &#x3D; publicDataService;
+    this.isDesktopApp &#x3D; environment.isDesktopApp;
+    try {
+      this._userid &#x3D; (&lt;HTMLInputElement&gt;document.getElementById(&#x27;userId&#x27;)).value;
+      DataService.userId &#x3D; this._userid;
+      this._sessionId &#x3D; (&lt;HTMLInputElement&gt;document.getElementById(&#x27;sessionId&#x27;)).value;
+      DataService.sessionId &#x3D; this._sessionId;
+      this._authenticated &#x3D; true;
+    } catch (error) {
+      this._authenticated &#x3D; false;
+      this._anonymousSid &#x3D; UUID.UUID();
+      DataService.sessionId &#x3D; this._anonymousSid;
+    }
+    try {
+      this._appId &#x3D; document.getElementById(&#x27;appId&#x27;)?(&lt;HTMLInputElement&gt;document.getElementById(&#x27;appId&#x27;)).value: undefined;
+      this._cloudStorageUrls &#x3D; document.getElementById(&#x27;cloudStorageUrls&#x27;)?(&lt;HTMLInputElement&gt;document.getElementById(&#x27;cloudStorageUrls&#x27;)).value.split(&#x27;,&#x27;):[];
+    } catch (error) {
+    }
+    this._slug &#x3D; baseHref &amp;&amp; baseHref.split(&#x27;/&#x27;)[1] ? baseHref.split(&#x27;/&#x27;)[1] : &#x27;&#x27;;
+  }
+  get slug() {
+    return this._slug;
+  }
+  get anonymousSid() {
+    return this._anonymousSid;
+  }
+  /**
+ * returns login status.
+ */
+  get loggedIn(): boolean {
+    return this._authenticated;
+  }
+
+  /**
+   * get method to fetch userid.
+   */
+  get userid(): string {
+    return this._userid;
+  }
+
+  setUserId(userId: string) {
+    this._userid &#x3D; userId;
+  }
+  /**
+  * get method to fetch sessionId.
+  */
+  get sessionId(): string {
+    return this._sessionId;
+  }
+  setIsCustodianUser(isCustodianUser) {
+    this._isCustodianUser &#x3D; isCustodianUser;
+  }
+  get isCustodianUser(): boolean {
+    return this._isCustodianUser;
+  }
+  /**
+   * method to fetch user profile from server.
+   */
+  public getUserProfile(): void {
+    const option &#x3D; {
+      url: &#x60;${this.config.urlConFig.URLS.USER.GET_PROFILE}${this.userid}&#x60;,
+      param: this.config.urlConFig.params.userReadParam
+    };
+    this.learnerService.getWithHeaders(option).subscribe(
+      (data: ServerResponse) &#x3D;&gt; {
+        if (data.ts) {
+          // data.ts is taken from header and not from api response ts, and format in IST
+          this.timeDiff &#x3D; data.ts;
+        }
+        this.setUserProfile(data);
+      },
+      (err: ServerResponse) &#x3D;&gt; {
+        this._userData$.next({ err: err, userProfile: this._userProfile as any });
+      }
+    );
+  }
+  /**
+   * get method to fetch appId.
+   */
+  get appId(): string {
+    return this._appId;
+  }
+  /**
+   * get method to fetch cloudStorageUrls.
+   */
+  get cloudStorageUrls(): string[] {
+    return this._cloudStorageUrls;
+  }
+
+  public initialize(loggedIn) {
+    if (loggedIn) {
+      this.getUserProfile();
+    }
+  }
+  /**
+   * method to set user profile to behavior subject.
+   */
+  private setUserProfile(res: ServerResponse) {
+    const profileData &#x3D; res.result.response;
+    const orgRoleMap &#x3D; {};
+    const hashTagIds &#x3D; [];
+    this._channel &#x3D; _.get(profileData, &#x27;rootOrg.hashTagId&#x27;);
+    this._slug &#x3D; _.get(profileData, &#x27;rootOrg.slug&#x27;);
+    profileData.skills &#x3D; _.get(profileData, &#x27;skills&#x27;) || [];
+    hashTagIds.push(this._channel);
+    let organisationIds &#x3D; [];
+    if (profileData.rootOrgId) {
+      organisationIds.push(profileData.rootOrgId);
+    }
+    profileData.rootOrgAdmin &#x3D; false;
+    let userRoles &#x3D; [&#x27;PUBLIC&#x27;];
+    userRoles &#x3D; _.union(userRoles, _.map(profileData.roles, &#x27;role&#x27;));
+    if (profileData.organisations) {
+      _.forEach(profileData.organisations, (org) &#x3D;&gt; {
+        if (userRoles &amp;&amp; _.isArray(userRoles)) {
+          if (org.organisationId &#x3D;&#x3D;&#x3D; profileData.rootOrgId &amp;&amp;
+            (_.indexOf(userRoles, &#x27;ORG_ADMIN&#x27;) &gt; -1 ||
+              _.indexOf(userRoles, &#x27;SYSTEM_ADMINISTRATION&#x27;) &gt; -1)) {
+            profileData.rootOrgAdmin &#x3D; true;
+          }
+          orgRoleMap[org.organisationId] &#x3D; org.roles;
+        }
+        if (org.organisationId) {
+          organisationIds.push(org.organisationId);
+        }
+        if (org.hashTagId) {
+          hashTagIds.push(org.hashTagId);
+        } else if (org.organisationId) {
+          hashTagIds.push(org.organisationId);
+        }
+      });
+    }
+    organisationIds &#x3D; _.uniq(organisationIds);
+    this._dims &#x3D; _.concat(organisationIds, this.channel);
+    this._userProfile &#x3D; profileData;
+    this._userProfile.userRoles &#x3D; _.uniq(userRoles);
+    this._userProfile.orgRoleMap &#x3D; orgRoleMap;
+    this._userProfile.organisationIds &#x3D; organisationIds;
+    this._userProfile.hashTagIds &#x3D; _.uniq(hashTagIds);
+    this._userProfile.userId &#x3D; this.userid; // this line is added to handle userId not returned from user service
+    this._rootOrgId &#x3D; this._userProfile.rootOrgId;
+    this._hashTagId &#x3D; _.get(this._userProfile, &#x27;rootOrg.hashTagId&#x27;);
+    this.setRoleOrgMap(profileData);
+    this.setOrgDetailsToRequestHeaders();
+    this._userData$.next({ err: null, userProfile: this._userProfile as any });
+    this.rootOrgName &#x3D; _.get(this._userProfile, &#x27;rootOrg.orgName&#x27;);
+
+    // Storing profile details of stroger credentials user in cache
+    if (!this._userProfile.managedBy) {
+      this.cacheService.set(&#x27;userProfile&#x27;, this._userProfile);
+    }
+
+    if (window[&#x27;TagManager&#x27;]) {
+      window[&#x27;TagManager&#x27;].SBTagService.pushTag({ userLoocation: profileData.userLocations, userTyep: profileData.profileUserType }, &#x27;USERLOCATION_&#x27;, true);
+      window[&#x27;TagManager&#x27;].SBTagService.pushTag(profileData.framework, &#x27;USERFRAMEWORK_&#x27;, true);
+    }
+  }
+  setOrgDetailsToRequestHeaders() {
+    this.learnerService.rootOrgId &#x3D; this._rootOrgId;
+    this.learnerService.channelId &#x3D; this._channel;
+    this.contentService.rootOrgId &#x3D; this._rootOrgId;
+    this.contentService.channelId &#x3D; this._channel;
+    this.publicDataService.rootOrgId &#x3D; this._rootOrgId;
+    this.publicDataService.channelId &#x3D; this._channel;
+  }
+
+  /**
+   * Get organization details.
+   *
+   * @param {requestParam} requestParam api request data
+   */
+  private getOrganizationDetails(organisationIds) {
+    const option &#x3D; {
+      url: this.config.urlConFig.URLS.ADMIN.ORG_EXT_SEARCH,
+      data: {
+        request: {
+          filters: {
+            id: organisationIds,
+          }
+        }
+      }
+    };
+    return this.publicDataService.post(option)
+      .pipe(tap((data: ServerResponse) &#x3D;&gt; {
+        this.organizationsDetails &#x3D; _.get(data, &#x27;result.response.content&#x27;);
+        this.orgNames &#x3D; _.map(this.organizationsDetails, org &#x3D;&gt; org.orgName);
+      }));
+  }
+
+  /**
+   * This method invokes learner service to update tnc accept
+   */
+  public acceptTermsAndConditions(requestBody) {
+    const options &#x3D; {
+      url: this.config.urlConFig.URLS.USER.TNC_ACCEPT,
+      data: requestBody
+    };
+    return this.learnerService.post(options).pipe(map(
+      (res: ServerResponse) &#x3D;&gt; {
+        this._userProfile.promptTnC &#x3D; false;
+        this.getUserProfile();
+      }
+    ));
+  }
+
+  get orgIdNameMap() {
+    const mapOrgIdNameData &#x3D; {};
+    _.forEach(this.organizationsDetails, (orgDetails) &#x3D;&gt; {
+      mapOrgIdNameData[orgDetails.identifier] &#x3D; orgDetails.orgName;
+    });
+    return mapOrgIdNameData;
+  }
+
+  get userProfile() {
+    return _.cloneDeep(this._userProfile);
+  }
+
+  get rootOrgId() {
+    return this._rootOrgId;
+  }
+
+  get hashTagId() {
+    return this._hashTagId;
+  }
+
+  get getServerTimeDiff() {
+    return this.timeDiff;
+  }
+
+  get channel() {
+    return this._channel;
+  }
+
+  get dims() {
+    return this._dims;
+  }
+  private setRoleOrgMap(profile) {
+    let roles &#x3D; [];
+    const roleOrgMap &#x3D; {};
+    const roleOrgDetails &#x3D; {};
+    roles &#x3D; _.map(profile.roles, &#x27;role&#x27;);
+    roles &#x3D; _.uniq(roles);
+    const orgList &#x3D; profile.organisations;
+    _.forEach(this._userProfile.roles, (roleObj, index) &#x3D;&gt; {
+      roleOrgMap[roleObj.role] &#x3D; _.map(roleObj.scope, &#x27;organisationId&#x27;);
+      const roleObjScope &#x3D; roleObj.scope &amp;&amp; roleObj.scope[0];
+      roleOrgDetails[roleObj.role] &#x3D; {
+        orgId: _.get(roleObjScope, &#x27;organisationId&#x27;)
+      };
+      _.forEach(orgList, (org, index) &#x3D;&gt; {
+        if (org.organisationId &#x3D;&#x3D;&#x3D; _.get(roleObjScope, &#x27;organisationId&#x27;)) {
+          roleOrgDetails[roleObj.role][&#x27;orgName&#x27;] &#x3D; org.orgName;
+        }
+      });
+    });
+    this._userProfile.userOrgDetails &#x3D; roleOrgDetails;
+    this._userProfile.roleOrgMap &#x3D; roleOrgMap;
+  }
+  get UserOrgDetails() {
+    return _.cloneDeep(this._userProfile.userOrgDetails);
+  }
+  get RoleOrgMap() {
+    return _.cloneDeep(this._userProfile.roleOrgMap);
+  }
+
+  /**
+   * method to log session start
+   */
+  public startSession(): void {
+    const deviceId &#x3D; (&lt;HTMLInputElement&gt;document.getElementById(&#x27;deviceId&#x27;))
+      ? (&lt;HTMLInputElement&gt;document.getElementById(&#x27;deviceId&#x27;)).value : &#x27;&#x27;;
+    const url &#x3D; &#x60;/v1/user/session/start/${deviceId}&#x60;;
+    this.http.get(url).subscribe();
+  }
+
+  public endSession() {
+    const url &#x3D; this.config.urlConFig.URLS.USER.END_SESSION;
+    return this.http.get(url);
+  }
+
+  getUserByKey(key) {
+    return this.learnerService.get({ url: this.config.urlConFig.URLS.USER.GET_USER_BY_KEY + &#x27;/&#x27; + key });
+  }
+
+  getIsUserExistsUserByKey(key) {
+    return this.learnerService.get({ url: this.config.urlConFig.URLS.USER.USER_EXISTS_GET_USER_BY_KEY + &#x27;/&#x27; + key });
+  }
+
+  getFeedData() {
+    return this.learnerService.get({ url: this.config.urlConFig.URLS.USER.GET_USER_FEED + &#x27;/&#x27; + this.userid });
+  }
+
+  registerUser(data) {
+    const options &#x3D; {
+      url: this.config.urlConFig.URLS.USER.SIGN_UP_MANAGED_USER,
+      data: data
+    };
+    return this.learnerService.post(options).pipe(
+      map((resp) &#x3D;&gt; {
+        this.createManagedUser.emit(_.get(resp, &#x27;result.userId&#x27;));
+        return resp;
+      }));
+  }
+
+  userMigrate(requestBody) {
+    const option &#x3D; {
+      url: this.config.urlConFig.URLS.USER.USER_MIGRATE,
+      data: requestBody
+    };
+    return this.learnerService.post(option);
+  }
+
+  setUserFramework(framework) {
+    this._userProfile.framework &#x3D; framework;
+  }
+
+  getUserData(userId) {
+    const option &#x3D; {
+      url: &#x60;${this.config.urlConFig.URLS.USER.GET_PROFILE}${userId}&#x60;,
+      param: this.config.urlConFig.params.userReadParam
+    };
+    return this.learnerService.getWithHeaders(option);
+  }
+
+  getAnonymousUserPreference(): Observable&lt;ServerResponse&gt; {
+    const options &#x3D; {
+      url: this.config.urlConFig.URLS.OFFLINE.READ_USER
+    };
+    return this.publicDataService.get(options).pipe(map((response: ServerResponse) &#x3D;&gt; {
+      this.anonymousUserPreference &#x3D; _.get(response, &#x27;result&#x27;);
+      return response;
+    }));
+  }
+
+  updateAnonymousUserDetails(request): Observable&lt;ServerResponse&gt; {
+    const options &#x3D; {
+      url: this.config.urlConFig.URLS.OFFLINE.UPDATE_USER,
+      data: request
+    };
+    return this.publicDataService.post(options).pipe(map((response: ServerResponse) &#x3D;&gt; {
+      localStorage.setItem(&#x27;guestUserDetails&#x27;, JSON.stringify(request.request));
+      this.getGuestUser().subscribe();
+      return response;
+    }));
+  }
+
+  createAnonymousUser(request): Observable&lt;ServerResponse&gt; {
+    const options &#x3D; {
+      url: this.config.urlConFig.URLS.OFFLINE.CREATE_USER,
+      data: request
+    };
+    return this.publicDataService.post(options).pipe(map((response: ServerResponse) &#x3D;&gt; {
+      this.getGuestUser().subscribe();
+      return response;
+    }));
+  }
+
+  getGuestUser(): Observable&lt;any&gt; {
+    if (this.isDesktopApp) {
+      return this.getAnonymousUserPreference().pipe(map((response: ServerResponse) &#x3D;&gt; {
+        this.guestUserProfile &#x3D; _.get(response, &#x27;result&#x27;);
+        if(!localStorage.getItem(&#x27;guestUserDetails&#x27;)) {
+          localStorage.setItem(&#x27;guestUserDetails&#x27;, JSON.stringify(this.guestUserProfile));
+        }
+        this._guestData$.next({ userProfile: this.guestUserProfile });
+        return this.guestUserProfile;
+      }));
+    } else {
+      const guestUserDetails &#x3D; localStorage.getItem(&#x27;guestUserDetails&#x27;);
+
+      if (guestUserDetails) {
+        this.guestUserProfile &#x3D; JSON.parse(guestUserDetails);
+        this._guestData$.next({ userProfile: this.guestUserProfile });
+        return of(this.guestUserProfile);
+      } else {
+        return throwError(undefined);
+      }
+    }
+  }
+
+  updateGuestUser(userDetails, formValue?): Observable&lt;any&gt; {
+    if (window[&#x27;TagManager&#x27;]) {
+      window[&#x27;TagManager&#x27;].SBTagService.pushTag(formValue, &#x27;USERLOCATION_&#x27;, true);
+      window[&#x27;TagManager&#x27;].SBTagService.pushTag(userDetails, &#x27;USERFRAMEWORK_&#x27;, true);
+    }
+    if (this.isDesktopApp) {
+      userDetails.identifier &#x3D; userDetails._id;
+      const userType &#x3D; localStorage.getItem(&#x27;userType&#x27;);
+
+      if (userType) {
+        userDetails.role &#x3D; userType;
+      }
+      const req &#x3D; { request: userDetails };
+      return this.updateAnonymousUserDetails(req);
+    } else {
+      localStorage.setItem(&#x27;guestUserDetails&#x27;, JSON.stringify(userDetails));
+      this.getGuestUser().subscribe();
+      return of({});
+    }
+  }
+
+  createGuestUser(userDetails): Observable&lt;any&gt; {
+    if (this.isDesktopApp) {
+      const req &#x3D; { request: userDetails };
+      return this.createAnonymousUser(req);
+    } else {
+      localStorage.setItem(&#x27;guestUserDetails&#x27;, JSON.stringify(userDetails));
+      this.getGuestUser().subscribe();
+      return of({});
+    }
+  }
+
+  get defaultFrameworkFilters() {
+    const isUserLoggedIn &#x3D; this.loggedIn || false;
+    const { framework &#x3D; null } &#x3D; this.userProfile || {};
+    let userFramework &#x3D; {}
+    if (!isUserLoggedIn) {
+      let userDetails &#x3D; JSON.parse(localStorage.getItem(&#x27;guestUserDetails&#x27;));
+      userFramework &#x3D; _.get(userDetails, &#x27;framework&#x27;);
+    } else {
+      userFramework &#x3D; (isUserLoggedIn &amp;&amp; framework &amp;&amp; _.pick(framework, [&#x27;medium&#x27;, &#x27;gradeLevel&#x27;, &#x27;board&#x27;, &#x27;id&#x27;])) || {};
+    }
+    return { board: [&#x27;CBSE&#x27;], ...userFramework };
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'UserService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

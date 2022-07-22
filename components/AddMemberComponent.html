@@ -1,0 +1,2440 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  AddMemberComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/groups/components/add-member/add-member.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-add-member</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./add-member.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./add-member.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#captchaRef" >captchaRef</a>
+                            </li>
+                            <li>
+                                <a href="#captchaResponse" >captchaResponse</a>
+                            </li>
+                            <li>
+                                <a href="#config" >config</a>
+                            </li>
+                            <li>
+                                <a href="#disableBtn" >disableBtn</a>
+                            </li>
+                            <li>
+                                <a href="#googleCaptchaSiteKey" >googleCaptchaSiteKey</a>
+                            </li>
+                            <li>
+                                <a href="#groupData" >groupData</a>
+                            </li>
+                            <li>
+                                <a href="#instance" >instance</a>
+                            </li>
+                            <li>
+                                <a href="#isCaptchEnabled" >isCaptchEnabled</a>
+                            </li>
+                            <li>
+                                <a href="#isInvalidUser" >isInvalidUser</a>
+                            </li>
+                            <li>
+                                <a href="#isVerifiedUser" >isVerifiedUser</a>
+                            </li>
+                            <li>
+                                <a href="#layoutConfiguration" >layoutConfiguration</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#layoutService" >layoutService</a>
+                            </li>
+                            <li>
+                                <a href="#memberId" >memberId</a>
+                            </li>
+                            <li>
+                                <a href="#membersList" >membersList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#recaptchaService" >recaptchaService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#resourceService" >resourceService</a>
+                            </li>
+                            <li>
+                                <a href="#showLoader" >showLoader</a>
+                            </li>
+                            <li>
+                                <a href="#showModal" >showModal</a>
+                            </li>
+                            <li>
+                                <a href="#telemetryImpression" >telemetryImpression</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#telemetryService" >telemetryService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#unsubscribe$" >unsubscribe$</a>
+                            </li>
+                            <li>
+                                <a href="#verifiedMember" >verifiedMember</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#VERIFY_USER" >VERIFY_USER</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addMemberToGroup" >addMemberToGroup</a>
+                            </li>
+                            <li>
+                                <a href="#captchaResolved" >captchaResolved</a>
+                            </li>
+                            <li>
+                                <a href="#getUpdatedGroupData" >getUpdatedGroupData</a>
+                            </li>
+                            <li>
+                                <a href="#initLayout" >initLayout</a>
+                            </li>
+                            <li>
+                                <a href="#initRecaptcha" >initRecaptcha</a>
+                            </li>
+                            <li>
+                                <a href="#isExistingMember" >isExistingMember</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onVerifyMember" >onVerifyMember</a>
+                            </li>
+                            <li>
+                                <a href="#reset" >reset</a>
+                            </li>
+                            <li>
+                                <a href="#resetValue" >resetValue</a>
+                            </li>
+                            <li>
+                                <a href="#setInteractData" >setInteractData</a>
+                            </li>
+                            <li>
+                                <a href="#showErrorMsg" >showErrorMsg</a>
+                            </li>
+                            <li>
+                                <a href="#showInvalidUser" >showInvalidUser</a>
+                            </li>
+                            <li>
+                                <a href="#toggleModal" >toggleModal</a>
+                            </li>
+                            <li>
+                                <a href="#verifyMember" >verifyMember</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#members" >members</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(resourceService: <a href="../injectables/ResourceService.html" target="_self">ResourceService</a>, groupsService: <a href="../injectables/GroupsService.html" target="_self">GroupsService</a>, toasterService: <a href="../injectables/ToasterService.html" target="_self">ToasterService</a>, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, groupService: <a href="../injectables/GroupsService.html" target="_self">GroupsService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, location: <a href="../s/L.html" target="_self">Location</a>, recaptchaService: <a href="../injectables/RecaptchaService.html" target="_self">RecaptchaService</a>, telemetryService: <a href="../injectables/TelemetryService.html" target="_self">TelemetryService</a>, layoutService: <a href="../injectables/LayoutService.html" target="_self">LayoutService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>resourceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>groupsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GroupsService.html" target="_self" >GroupsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toasterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToasterService.html" target="_self" >ToasterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>activatedRoute</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>groupService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GroupsService.html" target="_self" >GroupsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>location</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../miscellaneous/variables.html#L" target="_self" >Location</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>recaptchaService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RecaptchaService.html" target="_self" >RecaptchaService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryService.html" target="_self" >TelemetryService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>layoutService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LayoutService.html" target="_self" >LayoutService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="members"></a>
+                        <b>members</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:35</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addMemberToGroup"></a>
+                    <span class="name">
+                        <span ><b>addMemberToGroup</b></span>
+                        <a href="#addMemberToGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addMemberToGroup()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="150"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:150</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="captchaResolved"></a>
+                    <span class="name">
+                        <span ><b>captchaResolved</b></span>
+                        <a href="#captchaResolved"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>captchaResolved(captchaResponse: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="101"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:101</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>captchaResponse</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUpdatedGroupData"></a>
+                    <span class="name">
+                        <span ><b>getUpdatedGroupData</b></span>
+                        <a href="#getUpdatedGroupData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getUpdatedGroupData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="186"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:186</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initLayout"></a>
+                    <span class="name">
+                        <span ><b>initLayout</b></span>
+                        <a href="#initLayout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initLayout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initRecaptcha"></a>
+                    <span class="name">
+                        <span ><b>initRecaptcha</b></span>
+                        <a href="#initRecaptcha"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initRecaptcha()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isExistingMember"></a>
+                    <span class="name">
+                        <span ><b>isExistingMember</b></span>
+                        <a href="#isExistingMember"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isExistingMember()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="140"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:140</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="236"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:236</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onVerifyMember"></a>
+                    <span class="name">
+                        <span ><b>onVerifyMember</b></span>
+                        <a href="#onVerifyMember"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onVerifyMember()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="106"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:106</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reset"></a>
+                    <span class="name">
+                        <span ><b>reset</b></span>
+                        <a href="#reset"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>reset()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="88"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:88</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetValue"></a>
+                    <span class="name">
+                        <span ><b>resetValue</b></span>
+                        <a href="#resetValue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetValue(memberId?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="94"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:94</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>memberId</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setInteractData"></a>
+                    <span class="name">
+                        <span ><b>setInteractData</b></span>
+                        <a href="#setInteractData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setInteractData(id, extra?, Cdata?, edata?, obj?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="204"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:204</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>extra</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>Cdata</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>edata</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>obj</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showErrorMsg"></a>
+                    <span class="name">
+                        <span ><b>showErrorMsg</b></span>
+                        <a href="#showErrorMsg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showErrorMsg(response?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="174"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:174</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>response</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showInvalidUser"></a>
+                    <span class="name">
+                        <span ><b>showInvalidUser</b></span>
+                        <a href="#showInvalidUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showInvalidUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="134"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:134</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleModal"></a>
+                    <span class="name">
+                        <span ><b>toggleModal</b></span>
+                        <a href="#toggleModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleModal(visibility: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="200"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:200</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>visibility</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="verifyMember"></a>
+                    <span class="name">
+                        <span ><b>verifyMember</b></span>
+                        <a href="#verifyMember"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>verifyMember()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="116"
+                            class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:116</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="captchaRef"></a>
+                    <span class="name">
+                        <span ><b>captchaRef</b></span>
+                        <a href="#captchaRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>RecaptchaComponent</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;captchaRef&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="captchaResponse"></a>
+                    <span class="name">
+                        <span ><b>captchaResponse</b></span>
+                        <a href="#captchaResponse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="config"></a>
+                    <span class="name">
+                        <span ><b>config</b></span>
+                        <a href="#config"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{ size: &#x27;medium&#x27;, isBold: true, isSelectable: false, view: &#x27;horizontal&#x27; }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="disableBtn"></a>
+                    <span class="name">
+                        <span ><b>disableBtn</b></span>
+                        <a href="#disableBtn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="googleCaptchaSiteKey"></a>
+                    <span class="name">
+                        <span ><b>googleCaptchaSiteKey</b></span>
+                        <a href="#googleCaptchaSiteKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="groupData"></a>
+                    <span class="name">
+                        <span ><b>groupData</b></span>
+                        <a href="#groupData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IGroupCard.html" target="_self" >IGroupCard</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="instance"></a>
+                    <span class="name">
+                        <span ><b>instance</b></span>
+                        <a href="#instance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isCaptchEnabled"></a>
+                    <span class="name">
+                        <span ><b>isCaptchEnabled</b></span>
+                        <a href="#isCaptchEnabled"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isInvalidUser"></a>
+                    <span class="name">
+                        <span ><b>isInvalidUser</b></span>
+                        <a href="#isInvalidUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isVerifiedUser"></a>
+                    <span class="name">
+                        <span ><b>isVerifiedUser</b></span>
+                        <a href="#isVerifiedUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="layoutConfiguration"></a>
+                    <span class="name">
+                        <span ><b>layoutConfiguration</b></span>
+                        <a href="#layoutConfiguration"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="layoutService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>layoutService</b></span>
+                        <a href="#layoutService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/LayoutService.html" target="_self" >LayoutService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="memberId"></a>
+                    <span class="name">
+                        <span ><b>memberId</b></span>
+                        <a href="#memberId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="membersList"></a>
+                    <span class="name">
+                        <span ><b>membersList</b></span>
+                        <a href="#membersList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IGroupMember.html" target="_self" >IGroupMember[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="recaptchaService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>recaptchaService</b></span>
+                        <a href="#recaptchaService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/RecaptchaService.html" target="_self" >RecaptchaService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resourceService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>resourceService</b></span>
+                        <a href="#resourceService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showLoader"></a>
+                    <span class="name">
+                        <span ><b>showLoader</b></span>
+                        <a href="#showLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showModal"></a>
+                    <span class="name">
+                        <span ><b>showModal</b></span>
+                        <a href="#showModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryImpression"></a>
+                    <span class="name">
+                        <span ><b>telemetryImpression</b></span>
+                        <a href="#telemetryImpression"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IImpressionEventInput.html" target="_self" >IImpressionEventInput</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="telemetryService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>telemetryService</b></span>
+                        <a href="#telemetryService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/TelemetryService.html" target="_self" >TelemetryService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unsubscribe$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>unsubscribe$</b></span>
+                        <a href="#unsubscribe$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="verifiedMember"></a>
+                    <span class="name">
+                        <span ><b>verifiedMember</b></span>
+                        <a href="#verifiedMember"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IGroupMember.html" target="_self" >IGroupMember</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="VERIFY_USER"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>VERIFY_USER</b></span>
+                        <a href="#VERIFY_USER"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>VERIFY_USER</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/modules/groups/components/add-member/add-member.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Location } from &#x27;@angular/common&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { takeUntil } from &#x27;rxjs/operators&#x27;;
+import {ResourceService, ToasterService, RecaptchaService, LayoutService} from &#x27;@sunbird/shared&#x27;;
+import { Component, OnInit, Output, EventEmitter, OnDestroy, ViewChild } from &#x27;@angular/core&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import { IGroupMember, IGroupCard, IMember } from &#x27;../../interfaces&#x27;;
+import { GroupsService } from &#x27;../../services&#x27;;
+import { Subject } from &#x27;rxjs&#x27;;
+import { IImpressionEventInput } from &#x27;@sunbird/telemetry&#x27;;
+import { RecaptchaComponent } from &#x27;ng-recaptcha&#x27;;
+import { TelemetryService } from &#x27;@sunbird/telemetry&#x27;;
+import { VERIFY_USER, USER_SEARCH } from &#x27;../../interfaces/telemetryConstants&#x27;;
+import { sessionKeys } from &#x27;../../../../modules/groups&#x27;;
+@Component({
+  selector: &#x27;app-add-member&#x27;,
+  templateUrl: &#x27;./add-member.component.html&#x27;,
+  styleUrls: [&#x27;./add-member.component.scss&#x27;]
+})
+export class AddMemberComponent implements OnInit, OnDestroy {
+  showModal &#x3D; false;
+  instance: string;
+  membersList: IGroupMember[] ;
+  groupData: IGroupCard;
+  showLoader &#x3D; false;
+  isVerifiedUser &#x3D; false;
+  memberId: string;
+  config &#x3D; { size: &#x27;medium&#x27;, isBold: true, isSelectable: false, view: &#x27;horizontal&#x27; };
+  isInvalidUser &#x3D; false;
+  disableBtn &#x3D; false;
+  verifiedMember: IGroupMember;
+  telemetryImpression: IImpressionEventInput;
+  public unsubscribe$ &#x3D; new Subject&lt;void&gt;();
+  @Output() members &#x3D; new EventEmitter&lt;any&gt;();
+  @ViewChild(&#x27;captchaRef&#x27;) captchaRef: RecaptchaComponent;
+  captchaResponse &#x3D; &#x27;&#x27;;
+  googleCaptchaSiteKey &#x3D; &#x27;&#x27;;
+  isCaptchEnabled &#x3D; false;
+  layoutConfiguration: any;
+  public VERIFY_USER &#x3D; VERIFY_USER;
+
+  constructor(public resourceService: ResourceService, private groupsService: GroupsService,
+    private toasterService: ToasterService,
+    private activatedRoute: ActivatedRoute,
+    private groupService: GroupsService,
+    private router: Router,
+    private location: Location,
+    public recaptchaService: RecaptchaService,
+    public telemetryService: TelemetryService,
+    public layoutService: LayoutService
+    ) {
+  }
+
+  ngOnInit() {
+    this.initLayout();
+    this.showModal &#x3D; !localStorage.getItem(&#x27;login_members_ftu&#x27;);
+    this.groupData &#x3D; this.groupsService.groupData || JSON.parse(sessionStorage.getItem(sessionKeys.GROUPDATA));
+    this.initRecaptcha();
+    this.instance &#x3D; _.upperCase(this.resourceService.instance);
+    this.membersList &#x3D; this.groupsService.addFieldsToMember(_.get(this.groupData, &#x27;members&#x27;));
+    this.telemetryImpression &#x3D; this.groupService.getImpressionObject(this.activatedRoute.snapshot, this.router.url, {type: USER_SEARCH});
+  }
+
+   initLayout() {
+    this.layoutConfiguration &#x3D; this.layoutService.initlayoutConfig();
+    this.layoutService.switchableLayout().pipe(takeUntil(this.unsubscribe$)).subscribe(layoutConfig &#x3D;&gt; {
+      if (layoutConfig !&#x3D; null) {
+        this.layoutConfiguration &#x3D; layoutConfig.layout;
+      }
+    });
+  }
+
+  initRecaptcha() {
+    this.groupService.getRecaptchaSettings().subscribe((res: any) &#x3D;&gt; {
+      if (res.result.response) {
+        try {
+          const captchaConfig &#x3D; _.get(res, &#x27;result.response.value&#x27;) ? JSON.parse(_.get(res, &#x27;result.response.value&#x27;)) : {};
+          this.googleCaptchaSiteKey &#x3D; captchaConfig.key || &#x27;&#x27;;
+          this.isCaptchEnabled &#x3D; captchaConfig.isEnabled || false;
+        } catch (e) {
+          console.log(_.get(res, &#x27;result.response&#x27;));
+        }
+      }
+    });
+  }
+
+  reset() {
+    this.showLoader &#x3D; false;
+    this.isInvalidUser &#x3D; false;
+    this.isVerifiedUser &#x3D; false;
+  }
+
+  resetValue(memberId?) {
+    this.setInteractData(&#x27;reset-userId&#x27;, {searchQuery: memberId});
+    this.memberId &#x3D; &#x27;&#x27;;
+    this.groupsService.emitShowLoader(false);
+    this.reset();
+  }
+
+  captchaResolved(captchaResponse: string) {
+    this.captchaResponse &#x3D; captchaResponse;
+    this.verifyMember();
+  }
+
+  onVerifyMember() {
+    this.reset();
+    if (this.isCaptchEnabled) {
+      this.showLoader &#x3D; true;
+      this.captchaRef.execute();
+    } else {
+      this.verifyMember();
+    }
+  }
+
+  verifyMember() {
+    this.showLoader &#x3D; true;
+    this.memberId &#x3D; (this.memberId.replace(/([^\w\s]|_)+(?&#x3D;\s|$)/g, &#x27;&#x27;));
+      this.groupsService.getUserData((this.memberId), {token: this.captchaResponse})
+      .pipe(takeUntil(this.unsubscribe$)).subscribe(member &#x3D;&gt; {
+        this.verifiedMember &#x3D; this.groupsService.addFields(member);
+        if (member.exists) {
+          this.showLoader &#x3D; false;
+          this.isVerifiedUser &#x3D; !this.isExistingMember();
+          this.captchaRef.reset();
+        } else {
+          this.showInvalidUser();
+        }
+      }, (err) &#x3D;&gt; {
+        this.showInvalidUser();
+      });
+  }
+
+  showInvalidUser () {
+    this.isInvalidUser &#x3D; true;
+    this.showLoader &#x3D; false;
+    this.captchaRef.reset();
+  }
+
+  isExistingMember() {
+    const isExisting &#x3D; _.find(this.membersList, { userId: _.get(this.verifiedMember, &#x27;id&#x27;) });
+    if (isExisting) {
+      this.resetValue();
+      this.toasterService.error(this.resourceService.messages.emsg.m007);
+      return true;
+    }
+    return false;
+  }
+
+  addMemberToGroup() {
+    this.setInteractData(&#x27;add-user-to-group&#x27;, {}, {id: _.get(this.verifiedMember, &#x27;id&#x27;),  type: &#x27;Member&#x27;});
+    this.groupsService.emitShowLoader(true);
+    this.disableBtn &#x3D; true;
+    if (!this.isExistingMember()) {
+      const member: IMember &#x3D; {members: [{ userId: _.get(this.verifiedMember, &#x27;id&#x27;), role: &#x27;member&#x27; }]};
+      const groupId &#x3D; _.get(this.groupData, &#x27;id&#x27;) || _.get(this.activatedRoute.snapshot, &#x27;params.groupId&#x27;);
+      this.groupsService.addMemberById(groupId, member).pipe(takeUntil(this.unsubscribe$)).subscribe(response &#x3D;&gt; {
+        this.getUpdatedGroupData();
+        this.disableBtn &#x3D; false;
+        const value &#x3D; _.isEmpty(response.error) ? this.toasterService.success((this.resourceService.messages.smsg.m004).replace(&#x27;{memberName}&#x27;,
+          this.verifiedMember[&#x27;title&#x27;])) : this.showErrorMsg(response);
+          this.memberId &#x3D; &#x27;&#x27;;
+          this.reset();
+      }, err &#x3D;&gt; {
+        this.groupsService.emitShowLoader(false);
+        this.disableBtn &#x3D; false;
+        this.memberId &#x3D; &#x27;&#x27;;
+        this.reset();
+        this.showErrorMsg();
+      });
+    }
+  }
+
+  showErrorMsg(response?) {
+
+    if (_.get(response, &#x27;error.members[0].errorCode&#x27;) &#x3D;&#x3D;&#x3D; &#x27;EXCEEDED_MEMBER_MAX_LIMIT&#x27;) {
+      this.toasterService.error(this.resourceService.messages.groups.emsg.m002);
+      this.setInteractData(&#x27;exceeded-member-max-limit&#x27;, {searchQuery: this.memberId,
+        member_count: this.membersList.length});
+    } else {
+      this.toasterService.error((this.resourceService.messages.emsg.m006).replace(&#x27;{name}&#x27;, _.get(response, &#x27;errors&#x27;)
+      || _.get(this.verifiedMember, &#x27;title&#x27;)));
+    }
+  }
+
+  getUpdatedGroupData() {
+    const groupId &#x3D; _.get(this.groupData, &#x27;id&#x27;) || _.get(this.activatedRoute.snapshot, &#x27;params.groupId&#x27;);
+    this.groupsService.getGroupById(groupId, true).pipe(takeUntil(this.unsubscribe$)).subscribe(groupData &#x3D;&gt; {
+      this.groupsService.groupData &#x3D; groupData || JSON.parse(sessionStorage.getItem(sessionKeys.GROUPDATA));
+      this.groupData &#x3D; groupData;
+      this.membersList &#x3D; this.groupsService.addFieldsToMember(_.get(groupData, &#x27;members&#x27;));
+      this.groupsService.emitMembers(this.membersList);
+      this.groupsService.emitShowLoader(false);
+    }, err &#x3D;&gt; {
+      this.groupsService.emitShowLoader(false);
+      this.membersList.push(this.verifiedMember);
+    });
+  }
+
+  toggleModal(visibility: boolean &#x3D; false) {
+    this.showModal &#x3D; visibility;
+  }
+
+  setInteractData (id, extra?, Cdata?, edata?, obj?) {
+    const interactData &#x3D; {
+      context: {
+        env: _.get(this.activatedRoute, &#x27;snapshot.data.telemetry.env&#x27;),
+        cdata: [
+          {
+            id: _.get(this.groupData, &#x27;id&#x27;),
+            type: &#x27;Group&#x27;
+          }
+        ]
+      },
+      edata: {
+        id: id,
+        type: &#x27;CLICK&#x27;,
+        pageid:  _.get(this.activatedRoute, &#x27;snapshot.data.telemetry.pageid&#x27;)
+      }
+    };
+    if (edata) {
+      interactData.edata.type &#x3D; edata.type;
+    }
+    if (extra) {
+      interactData.edata[&#x27;extra&#x27;] &#x3D; extra;
+    }
+    if (Cdata) {
+      interactData.context.cdata.push(Cdata);
+    }
+    if (obj) {
+      interactData[&#x27;object&#x27;] &#x3D; obj;
+    }
+    this.telemetryService.interact(interactData);
+  }
+
+  ngOnDestroy() {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-landing-section [layoutConfiguration]&#x3D;&quot;layoutConfiguration&quot; [noTitle]&#x3D;&quot;true&quot;&gt;
+
+&lt;/app-landing-section&gt;
+&lt;div [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;sb-back-actionbar mt-0&#x27; : &#x27;sb-bg-white cc-player__btn-back&#x27;&quot; class&#x3D;&quot;relative position mt-0&quot; [appTelemetryImpression]&#x3D;&quot;telemetryImpression&quot;&gt;
+  &lt;div class&#x3D;&quot;ui container d-flex flex-ai-center&quot;&gt;
+    &lt;app-back-button&gt;&lt;/app-back-button&gt;
+    &lt;div class&#x3D;&quot;d-flex flex-ai-center flex-jc-space-between flex-w-wrap ml-16 w-100&quot;&gt;
+      &lt;div class&#x3D;&quot;d-flex flex-dc&quot;&gt;
+        &lt;h4 class&#x3D;&quot;mb-4 font-weight-bold sb__ellipsis sb__ellipsis--one d-flex&quot;&gt;{{resourceService?.frmelmnts?.lbl?.addNewMember}}&lt;/h4&gt;
+        &lt;div class&#x3D;&quot;fsmall&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;d-flex flex-ai-end flex-w-wrap content-header__buttons&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div [ngClass]&#x3D;&quot;layoutConfiguration ? &#x27;sbt-center-container sbt-add-member relative9&#x27; : &#x27;&#x27;&quot;&gt;
+&lt;div class&#x3D;&quot;ui container&quot; [appTelemetryImpression]&#x3D;&quot;telemetryImpression&quot;&gt;
+  &lt;div class&#x3D;&quot;sb-g mt-24&quot;&gt;
+    &lt;div class&#x3D;&quot;sb-g-col-xs-12 sb-g-col-md-9 sb-g-col-lg-9 sb-g-col-xxxl-12&quot;&gt;
+      &lt;div class&#x3D;&quot;sb-bg-color-white p-24&quot;&gt;
+        &lt;div class&#x3D;&quot;sb-field instance-id-verify&quot;&gt;
+          &lt;div class&#x3D;&quot;d-flex flex-jc-space-between flex-ai-center&quot;&gt;
+            &lt;div class&#x3D;&quot;w-100&quot;&gt;
+              &lt;div class&#x3D;&quot;d-inline-flex flex-ai-center flex-jc-space-between w-100&quot;&gt;&lt;span&gt; {{resourceService?.frmelmnts?.lbl?.instanceId | interpolate:&#x27;{instance}&#x27;: instance}}*&lt;/span&gt;
+                  &lt;span class&#x3D;&quot;cursor-pointer&quot;&gt;&lt;i class&#x3D;&quot;icon-svg icon-svg--xs icon-info ml-4&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;toggleModal(true);setInteractData(&#x27;member-ftu-popup&#x27;)&quot;&gt;&lt;svg class&#x3D;&quot;icon icon-svg--primary&quot;&gt;
+                    &lt;use xlink:href&#x3D;&quot;./assets/images/sprite.svg#info&quot;&gt;&lt;/use&gt;
+                  &lt;/svg&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;div class&#x3D;&quot;d-flex flex-jc-space-between flex-dc&quot;&gt;
+                &lt;div class&#x3D;&quot;w-100 relative&quot;&gt;
+                  &lt;input type&#x3D;&quot;id&quot; name&#x3D;&quot;id&quot; aria-label&#x3D;&quot;search user id&quot; class&#x3D;&quot;sb-form-control&quot; [ngClass]&#x3D;&quot;{&#x27;is-invalid&#x27;: isInvalidUser}&quot; placeholder&#x3D;&quot;{{resourceService?.frmelmnts?.lbl?.enterInstanceId | interpolate:&#x27;{instance}&#x27;: instance}}&quot; [(ngModel)]&#x3D;&quot;memberId&quot; (ngModelChange)&#x3D;&quot;reset()&quot;&gt;
+                  &lt;i class&#x3D;&quot;icon close icon-input-close&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;resetValue(memberId);&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;small class&#x3D;&quot;message sb-color-error font-weight-bold mt-8&quot; *ngIf&#x3D;&quot;isInvalidUser&quot;&gt;{{resourceService?.messages?.emsg?.m004  | interpolate:&#x27;{instance}&#x27;: instance}}&lt;/small&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;re-captcha class&#x3D;&quot;recaptcha&quot; *ngIf&#x3D;&quot;isCaptchEnabled&quot; #captchaRef&#x3D;&quot;reCaptcha&quot; (resolved)&#x3D;&quot;$event &amp;&amp; captchaResolved($event)&quot; siteKey&#x3D;&quot;{{googleCaptchaSiteKey}}&quot; size&#x3D;&quot;invisible&quot;&gt;&lt;/re-captcha&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-nolayer&quot; tabindex&#x3D;&quot;0&quot; [ngClass]&#x3D;&quot;{&#x27;sb-btn-primary&#x27;: memberId?.trim(), &#x27;sb-btn-disabled&#x27;: !memberId?.trim()}&quot; [disabled]&#x3D;&quot;!memberId?.trim()&quot; (click)&#x3D;&quot;onVerifyMember();setInteractData(&#x27;verify-member&#x27;, {searchQuery: memberId}, &#x27;&#x27;, {type: VERIFY_USER})&quot;&gt;{{resourceService?.frmelmnts?.btn?.verify}}&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Add to group button content --&gt;
+        &lt;div class&#x3D;&quot;text-left fnormal mt-16 mb-8&quot; *ngIf&#x3D;&quot;isVerifiedUser&quot;&gt;{{resourceService?.frmelmnts?.lbl?.memberVerificationMsg  | interpolate:&#x27;{instance}&#x27;: instance}}&lt;/div&gt;
+        &lt;div class&#x3D;&quot;flex-ai-jc-center add-member-content p-24&quot; *ngIf&#x3D;&quot;showLoader&quot;&gt;
+          &lt;div class&#x3D;&quot;flex-ai-jc-center&quot;&gt;&lt;img class&#x3D;&quot;mr-8&quot; src&#x3D;&quot;./assets/images/loader.gif&quot; width&#x3D;&quot;32&quot; /&gt;&lt;span&gt;{{resourceService?.frmelmnts?.lbl?.verifying}}&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;d-flex flex-ai-center flex-jc-space-between add-member-content p-16&quot; *ngIf&#x3D;&quot;isVerifiedUser&quot;&gt;
+          &lt;div class&#x3D;&quot;add-member-text flex-basis-1&quot;&gt;
+              &lt;sb-member-card [title]&#x3D;&quot;verifiedMember?.title&quot; [identifier]&#x3D;&quot;verifiedMember?.identifier&quot; [config]&#x3D;&quot;config&quot;
+                [indexOfMember]&#x3D;&quot;verifiedMember?.indexOfMember&quot; [initial]&#x3D;&quot;verifiedMember?.initial&quot;&gt;
+              &lt;/sb-member-card&gt;
+          &lt;/div&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;sb-btn sb-btn-primary sb-btn-normal sb-btn-nolayer&quot; tabindex&#x3D;&quot;0&quot; [disabled]&#x3D; &quot;disableBtn&quot; tabindex&#x3D;&quot;0&quot; (click)&#x3D;&quot;addMemberToGroup();&quot;
+          [ngClass]&#x3D;&quot;{&#x27;sb-btn-disabled&#x27;: disableBtn}&quot;&gt;
+            &lt;img src&#x3D;&quot;./assets/images/ic_person_add.svg&quot; width&#x3D;&quot;16px&quot; class&#x3D;&quot;mr-4&quot;&gt; {{resourceService?.frmelmnts?.lbl?.AddtoGroup}}
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;sb-g-col-xs-12 sb-g-col-md-3 sb-g-col-lg-3 sb-g-col-xxxl-4 sb-members-column&quot;&gt;
+      &lt;app-group-members [members]&#x3D;&quot;membersList&quot; [groupData]&#x3D;&quot;groupData&quot;&gt;&lt;/app-group-members&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;app-ftu-popup *ngIf&#x3D;&quot;showModal&quot; [showMemberPopup]&#x3D;&quot;showModal&quot; (close)&#x3D;&quot;toggleModal(false)&quot;&gt;&lt;/app-ftu-popup&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./add-member.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;./mixins/mixins&#x27;;
+
+.title {
+	color: var(--gray-800);
+}
+
+.icon-input-close {
+	position: absolute;
+	top: calculateRem(4px);
+	right: calculateRem(4px);
+	cursor: pointer;
+	width: calculateRem(24px);
+	height: calculateRem(24px);
+
+	html[dir&#x3D;&quot;rtl&quot;] &amp; {
+		left: calculateRem(8px);
+		right: inherit;
+	}
+}
+
+.add-member-content {
+	width: 100%;
+	background: var(--rc-E5EDF5);
+	flex-direction: row;
+	@include respond-below(sm) {
+		flex-direction: column;
+		button {
+			margin-top: calculateRem(16px);
+		}
+	}
+
+	.add-member-text {
+		margin: calculateRem(8px) calculateRem(8px) calculateRem(8px) 0px;
+		html[dir&#x3D;&quot;rtl&quot;] &amp; {
+			margin: calculateRem(8px) 0px calculateRem(8px) calculateRem(8px);
+		}
+		@include respond-below(sm) {
+			align-self: self-start;
+			margin: 0px;
+			width: 100%;
+		}
+	}
+}
+
+.textbook-container {
+	box-shadow: 0 0 calculateRem(10px) 0 rgba(var(--rc-rgba-black), 0.25);
+	position: relative;
+}
+
+.textbook {
+	&amp;__details {
+		flex: 1;
+		min-width: 0;
+	}
+
+	&amp;__bookimg {
+		width: calculateRem(48px);
+		height: calculateRem(48px);
+	}
+
+	&amp;__heading {
+		min-width: 0;
+
+		.textbook__title {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+
+	&amp;__addbtn {
+		white-space: nowrap;
+	}
+}
+
+.sb-field {
+	.message {
+		font-size: calculateRem(10px);
+		display: flex;
+
+		@include respond-below(sm) {
+			margin: 0.5rem 0;
+		}
+	}
+}
+
+.instance-id-verify {
+	button {
+		margin-top: calculateRem(24px);
+		margin-left: calculateRem(8px);
+		align-self: normal;
+		@include respond-below(sm) {
+			margin-top: calculateRem(8px);
+			margin-left: 0px;
+		}
+	}
+
+	&amp; &gt; div {
+      @include respond-below(sm) {
+			flex-direction: column;
+			margin-bottom: calculateRem(24px);
+		}
+	}
+}
+
+.recaptcha {
+	z-index: 1;
+}
+
+.sb-members-column {
+	@include respond-below(sm) {
+		margin-top: calculateRem(16px);
+	}
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-landing-section [layoutConfiguration]="layoutConfiguration" [noTitle]="true"></app-landing-section><div [ngClass]="layoutConfiguration ? \'sb-back-actionbar mt-0\' : \'sb-bg-white cc-player__btn-back\'" class="relative position mt-0" [appTelemetryImpression]="telemetryImpression">  <div class="ui container d-flex flex-ai-center">    <app-back-button></app-back-button>    <div class="d-flex flex-ai-center flex-jc-space-between flex-w-wrap ml-16 w-100">      <div class="d-flex flex-dc">        <h4 class="mb-4 font-weight-bold sb__ellipsis sb__ellipsis--one d-flex">{{resourceService?.frmelmnts?.lbl?.addNewMember}}</h4>        <div class="fsmall"></div>      </div>      <div class="d-flex flex-ai-end flex-w-wrap content-header__buttons">      </div>    </div>  </div></div><div [ngClass]="layoutConfiguration ? \'sbt-center-container sbt-add-member relative9\' : \'\'"><div class="ui container" [appTelemetryImpression]="telemetryImpression">  <div class="sb-g mt-24">    <div class="sb-g-col-xs-12 sb-g-col-md-9 sb-g-col-lg-9 sb-g-col-xxxl-12">      <div class="sb-bg-color-white p-24">        <div class="sb-field instance-id-verify">          <div class="d-flex flex-jc-space-between flex-ai-center">            <div class="w-100">              <div class="d-inline-flex flex-ai-center flex-jc-space-between w-100"><span> {{resourceService?.frmelmnts?.lbl?.instanceId | interpolate:\'{instance}\': instance}}*</span>                  <span class="cursor-pointer"><i class="icon-svg icon-svg--xs icon-info ml-4" tabindex="0" (click)="toggleModal(true);setInteractData(\'member-ftu-popup\')"><svg class="icon icon-svg--primary">                    <use xlink:href="./assets/images/sprite.svg#info"></use>                  </svg></i></span>                </div>              <div class="d-flex flex-jc-space-between flex-dc">                <div class="w-100 relative">                  <input type="id" name="id" aria-label="search user id" class="sb-form-control" [ngClass]="{\'is-invalid\': isInvalidUser}" placeholder="{{resourceService?.frmelmnts?.lbl?.enterInstanceId | interpolate:\'{instance}\': instance}}" [(ngModel)]="memberId" (ngModelChange)="reset()">                  <i class="icon close icon-input-close" tabindex="0" (click)="resetValue(memberId);"></i>                </div>                <small class="message sb-color-error font-weight-bold mt-8" *ngIf="isInvalidUser">{{resourceService?.messages?.emsg?.m004  | interpolate:\'{instance}\': instance}}</small>              </div>            </div>            <re-captcha class="recaptcha" *ngIf="isCaptchEnabled" #captchaRef="reCaptcha" (resolved)="$event && captchaResolved($event)" siteKey="{{googleCaptchaSiteKey}}" size="invisible"></re-captcha>            <button type="button" class="sb-btn sb-btn-normal sb-btn-nolayer" tabindex="0" [ngClass]="{\'sb-btn-primary\': memberId?.trim(), \'sb-btn-disabled\': !memberId?.trim()}" [disabled]="!memberId?.trim()" (click)="onVerifyMember();setInteractData(\'verify-member\', {searchQuery: memberId}, \'\', {type: VERIFY_USER})">{{resourceService?.frmelmnts?.btn?.verify}}</button>          </div>        </div>        <!-- Add to group button content -->        <div class="text-left fnormal mt-16 mb-8" *ngIf="isVerifiedUser">{{resourceService?.frmelmnts?.lbl?.memberVerificationMsg  | interpolate:\'{instance}\': instance}}</div>        <div class="flex-ai-jc-center add-member-content p-24" *ngIf="showLoader">          <div class="flex-ai-jc-center"><img class="mr-8" src="./assets/images/loader.gif" width="32" /><span>{{resourceService?.frmelmnts?.lbl?.verifying}}</span></div>        </div>        <div class="d-flex flex-ai-center flex-jc-space-between add-member-content p-16" *ngIf="isVerifiedUser">          <div class="add-member-text flex-basis-1">              <sb-member-card [title]="verifiedMember?.title" [identifier]="verifiedMember?.identifier" [config]="config"                [indexOfMember]="verifiedMember?.indexOfMember" [initial]="verifiedMember?.initial">              </sb-member-card>          </div>          <button type="button" class="sb-btn sb-btn-primary sb-btn-normal sb-btn-nolayer" tabindex="0" [disabled]= "disableBtn" tabindex="0" (click)="addMemberToGroup();"          [ngClass]="{\'sb-btn-disabled\': disableBtn}">            <img src="./assets/images/ic_person_add.svg" width="16px" class="mr-4"> {{resourceService?.frmelmnts?.lbl?.AddtoGroup}}          </button>        </div>      </div>    </div>    <div class="sb-g-col-xs-12 sb-g-col-md-3 sb-g-col-lg-3 sb-g-col-xxxl-4 sb-members-column">      <app-group-members [members]="membersList" [groupData]="groupData"></app-group-members>    </div>  </div></div></div><app-ftu-popup *ngIf="showModal" [showMemberPopup]="showModal" (close)="toggleModal(false)"></app-ftu-popup></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'app-access-discussion'},{'name': 'AccountMergeModalComponent', 'selector': 'app-account-merge-modal'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-info'},{'name': 'ActivityDashboardComponent', 'selector': 'app-activity-dashboard'},{'name': 'ActivityDetailsComponent', 'selector': 'app-activity-details'},{'name': 'ActivityFormComponent', 'selector': 'app-activity-form'},{'name': 'ActivityListComponent', 'selector': 'app-activity-list'},{'name': 'ActivitySearchComponent', 'selector': 'app-activity-search'},{'name': 'AddActivityComponent', 'selector': 'app-add-activity'},{'name': 'AddActivityContentTypesComponent', 'selector': 'app-add-activity-content-types'},{'name': 'AddEntityComponent', 'selector': 'add-entity'},{'name': 'AddMemberComponent', 'selector': 'app-add-member'},{'name': 'AddSummaryModalComponent', 'selector': 'app-add-summary-modal'},{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AllContentComponent', 'selector': 'app-all-content'},{'name': 'AllEvidenceComponent', 'selector': 'app-all-evidence'},{'name': 'AllTextbooksComponent', 'selector': 'app-all-textbooks'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppLandingSectionComponent', 'selector': 'app-landing-section'},{'name': 'AppLoaderComponent', 'selector': 'app-loader'},{'name': 'AssessmentPlayerComponent', 'selector': 'app-assessment-player'},{'name': 'AssignBadgesContentComponent', 'selector': 'app-assign-badges-content'},{'name': 'AuthFailedComponent', 'selector': 'app-auth-failed'},{'name': 'BackButtonComponent', 'selector': 'app-back-button'},{'name': 'BatchCardComponent', 'selector': 'app-batch-card'},{'name': 'BatchDetailsComponent', 'selector': 'app-batch-details'},{'name': 'BatchInfoComponent', 'selector': 'app-batch-info'},{'name': 'BatchListComponent', 'selector': 'app-batch-list'},{'name': 'BatchPageSectionComponent', 'selector': 'app-batch-page-section'},{'name': 'BrowseImagePopupComponent', 'selector': 'browse-image-popup'},{'name': 'BrowserCompatibilityComponent', 'selector': 'app-browser-compatibility'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardCreationComponent', 'selector': 'app-card-creation'},{'name': 'CertificateConfigurationComponent', 'selector': 'app-certificate-configuration'},{'name': 'CertificateDetailsComponent', 'selector': 'app-certificate-details'},{'name': 'CertificateNameUpdatePopupComponent', 'selector': 'app-certificate-name-update-popup'},{'name': 'CertPreviewPopupComponent', 'selector': 'app-cert-preview-popup'},{'name': 'ChooseUserComponent', 'selector': 'app-choose-user'},{'name': 'CollaboratingOnComponent', 'selector': 'app-collaborating-on'},{'name': 'CollaborationContentFilterComponent', 'selector': 'app-collaboration-content-filter'},{'name': 'CollectionEditorComponent', 'selector': 'app-collection-editor'},{'name': 'CollectionPlayerComponent', 'selector': 'app-collection-player'},{'name': 'CollectionPlayerMetadataComponent', 'selector': 'app-collection-player-metadata'},{'name': 'CommingSoonComponent', 'selector': 'app-comming-soon'},{'name': 'ConfirmationPopupComponent', 'selector': 'app-confirmation-popup'},{'name': 'ConfirmPopupComponent', 'selector': 'app-confirm-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentBadgeComponent', 'selector': 'app-content-badge'},{'name': 'ContentChapterlistComponent', 'selector': 'app-content-chapterlist'},{'name': 'ContentCreditsComponent', 'selector': 'app-content-credits'},{'name': 'ContentEditorComponent', 'selector': 'app-content-editor'},{'name': 'ContentLicenceComponent', 'selector': 'app-content-licence'},{'name': 'ContentManagerComponent', 'selector': 'app-content-manager'},{'name': 'ContentManagerInfoPopUpComponent', 'selector': 'app-content-manager-info-pop-up'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerMetadataComponent', 'selector': 'app-content-player-metadata'},{'name': 'ContentPlayerPageComponent', 'selector': 'app-contentplayer-page'},{'name': 'ContentRatingComponent', 'selector': 'app-content-rating'},{'name': 'ContentTypeComponent', 'selector': 'app-content-type'},{'name': 'CourseCompletionComponent', 'selector': 'app-course-completion'},{'name': 'CourseConsumptionComponent', 'selector': 'app-course-consumption'},{'name': 'CourseConsumptionHeaderComponent', 'selector': 'app-course-consumption-header'},{'name': 'CourseConsumptionPageComponent', 'selector': ''},{'name': 'CourseDashboardComponent', 'selector': 'app-course-dashboard'},{'name': 'CourseDetailsComponent', 'selector': 'app-course-details'},{'name': 'CourseInfoComponent', 'selector': 'app-course-info'},{'name': 'CoursePageComponent', 'selector': ''},{'name': 'CoursePlayerComponent', 'selector': 'app-course-player'},{'name': 'CourseProgressComponent', 'selector': 'app-course-progress'},{'name': 'CreateBatchComponent', 'selector': 'app-create-batch'},{'name': 'CreateContentComponent', 'selector': 'app-create-content'},{'name': 'CreateEditGroupComponent', 'selector': 'app-create-edit-group'},{'name': 'CreateOrgTypeComponent', 'selector': 'app-create-org-type'},{'name': 'CreateTemplateComponent', 'selector': 'app-create-template'},{'name': 'CreateUserComponent', 'selector': 'app-create-user'},{'name': 'CreditsAndLicenceComponent', 'selector': 'app-credits-and-licence'},{'name': 'CurriculumCardComponent', 'selector': 'app-curriculum-card'},{'name': 'CurriculumCoursesComponent', 'selector': 'app-curriculum-courses'},{'name': 'CurriculumInfoComponent', 'selector': 'app-curriculum-info'},{'name': 'CustomMultiSelectComponent', 'selector': 'app-custom-multi-select'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardSidebarComponent', 'selector': 'app-dashboard-sidebar'},{'name': 'DataChartComponent', 'selector': 'app-data-chart'},{'name': 'DataDrivenComponent', 'selector': 'app-data-driven'},{'name': 'DataDrivenFilterComponent', 'selector': 'app-data-driven-filter'},{'name': 'DatasetComponent', 'selector': 'app-dataset'},{'name': 'DatasetsComponent', 'selector': 'app-datasets'},{'name': 'DataTableComponent', 'selector': 'app-data-table'},{'name': 'DefaultTemplateComponent', 'selector': 'app-content-creation-default-template'},{'name': 'DesktopAppUpdateComponent', 'selector': 'app-desktop-app-update'},{'name': 'DialCodeCardComponent', 'selector': 'app-dial-code-card'},{'name': 'DialCodeComponent', 'selector': 'app-dial-code'},{'name': 'DraftComponent', 'selector': 'app-draft'},{'name': 'EditSubmissionComponent', 'selector': 'app-edit-submission'},{'name': 'EnrollBatchComponent', 'selector': 'app-enroll-batch'},{'name': 'EntityListComponent', 'selector': 'entity-list'},{'name': 'EntityListComponent', 'selector': 'app-entity-list'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'ExploreContentComponent', 'selector': ''},{'name': 'ExploreCourseComponent', 'selector': ''},{'name': 'ExploreCurriculumCoursesComponent', 'selector': 'app-explore-curriculum-courses'},{'name': 'ExploreFtuPopupComponent', 'selector': 'app-explore-ftu-popup'},{'name': 'ExploreGroupComponent', 'selector': 'app-explore-group'},{'name': 'ExplorePageComponent', 'selector': 'app-explore-page-component'},{'name': 'FancyTreeComponent', 'selector': 'app-fancy-tree'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FaqReportComponent', 'selector': 'app-faq-report'},{'name': 'FilterComponent', 'selector': 'app-filter'},{'name': 'FlagConentplayerComponent', 'selector': 'app-flag-conentplayer'},{'name': 'FlaggedComponent', 'selector': 'app-flagged'},{'name': 'FlagReviewerComponent', 'selector': 'app-flag-reviewer'},{'name': 'ForumComponent', 'selector': 'app-forum'},{'name': 'FtuPopupComponent', 'selector': 'app-ftu-popup'},{'name': 'FullPageLoaderComponent', 'selector': 'app-full-page-loader'},{'name': 'FullPageModalComponent', 'selector': 'app-full-page-modal'},{'name': 'GenericEditorComponent', 'selector': 'app-generic-editor'},{'name': 'GetComponent', 'selector': 'app-get'},{'name': 'GlobalConsentPiiComponent', 'selector': 'app-global-consent-pii'},{'name': 'GlobalSearchFilterComponent', 'selector': 'app-global-search-filter'},{'name': 'GlobalSearchSelectedFilterComponent', 'selector': 'app-global-search-selected-filter'},{'name': 'GroupDetailsComponent', 'selector': 'app-group-details'},{'name': 'GroupHeaderComponent', 'selector': 'app-group-header'},{'name': 'GroupMembersComponent', 'selector': 'app-group-members'},{'name': 'GuestProfileComponent', 'selector': 'app-guest-profile'},{'name': 'HomeSearchComponent', 'selector': ''},{'name': 'IdentifyAccountComponent', 'selector': ''},{'name': 'InAppNotificationComponent', 'selector': 'app-in-app-notification'},{'name': 'InfoCardComponent', 'selector': 'app-info-card'},{'name': 'InstallAppComponent', 'selector': 'app-install-app'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'LanguageDropdownComponent', 'selector': 'app-language-dropdown'},{'name': 'LibraryComponent', 'selector': 'app-library'},{'name': 'LimitedPublishedComponent', 'selector': 'app-limited-published'},{'name': 'ListAllReportsComponent', 'selector': 'app-list-all-reports'},{'name': 'LoadContentComponent', 'selector': 'app-load-content'},{'name': 'LoadOfflineContentComponent', 'selector': 'app-load-offline-content'},{'name': 'LocationSelectionComponent', 'selector': 'app-location-selection'},{'name': 'LockInfoPopupComponent', 'selector': 'app-contentlock-info-popup'},{'name': 'MainFooterComponent', 'selector': 'app-footer'},{'name': 'MainHeaderComponent', 'selector': 'app-header'},{'name': 'MainMenuComponent', 'selector': 'app-main-menu'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialAutoCompleteComponent', 'selector': 'app-material-auto-complete'},{'name': 'MemberActionsComponent', 'selector': 'app-member-actions'},{'name': 'MergeAccountStatusComponent', 'selector': 'app-merge-account-status'},{'name': 'ModalWrapperComponent', 'selector': 'app-modal-wrapper'},{'name': 'MyGroupsComponent', 'selector': 'app-my-groups'},{'name': 'NetworkStatusComponent', 'selector': 'app-network-status'},{'name': 'NewCollectionEditorComponent', 'selector': 'app-new-collection-editor'},{'name': 'NoGroupResultComponent', 'selector': 'app-no-group-result'},{'name': 'NoResultComponent', 'selector': 'app-no-result-found'},{'name': 'NoResultComponent', 'selector': 'app-no-result'},{'name': 'ObservationDetailsComponent', 'selector': 'app-observation-details'},{'name': 'ObservationListingComponent', 'selector': 'app-observation-listing'},{'name': 'OfflineApplicationDownloadComponent', 'selector': 'app-offline-application-download'},{'name': 'OfflineBannerComponent', 'selector': 'app-offline-banner'},{'name': 'OfflineHelpVideosComponent', 'selector': 'app-offline-help-videos'},{'name': 'OnboardingUserSelectionComponent', 'selector': 'app-onboarding-user-selection'},{'name': 'OnDemandReportsComponent', 'selector': 'app-on-demand-reports'},{'name': 'OrganisationComponent', 'selector': 'app-organization'},{'name': 'OrganizationUploadComponent', 'selector': 'app-organization'},{'name': 'OtpComponent', 'selector': 'app-otp'},{'name': 'OtpPopupComponent', 'selector': 'app-otp-popup'},{'name': 'PageSectionComponent', 'selector': 'app-page-section'},{'name': 'PlayerComponent', 'selector': 'app-player'},{'name': 'PopupComponent', 'selector': 'app-modal'},{'name': 'ProfileBadgeComponent', 'selector': 'app-profile-badge'},{'name': 'ProfileFrameworkPopupComponent', 'selector': 'app-popup'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'PublicBatchDetailsComponent', 'selector': 'app-public-batch-details'},{'name': 'PublicCourseConsumptionPageComponent', 'selector': ''},{'name': 'PublicCoursePlayerComponent', 'selector': 'app-public-course-player'},{'name': 'PublishedComponent', 'selector': 'app-published'},{'name': 'PublishedPopupComponent', 'selector': 'app-published-popup'},{'name': 'QrCodeModalComponent', 'selector': 'app-qr-code-modal'},{'name': 'QuestionnaireComponent', 'selector': 'app-questionnaire'},{'name': 'RecoverAccountComponent', 'selector': ''},{'name': 'RedirectComponent', 'selector': 'app-redirect'},{'name': 'ReIssueCertificateComponent', 'selector': 'app-re-issue-certificate'},{'name': 'ReportComponent', 'selector': 'app-report'},{'name': 'ReportSummaryComponent', 'selector': 'app-report-summary'},{'name': 'ReportViewComponent', 'selector': 'app-report-view'},{'name': 'RequestChangesPopupComponent', 'selector': 'app-request-changes-popup'},{'name': 'ReviewCommentsComponent', 'selector': 'app-review-comments'},{'name': 'ReviewSubmissionsComponent', 'selector': 'app-review-submissions'},{'name': 'ReviewsubmissionsContentplayerComponent', 'selector': 'app-reviewsubmissions-contentplayer'},{'name': 'SbDatatableComponent', 'selector': 'sb-datatable'},{'name': 'SbTableComponent', 'selector': 'app-sb-table'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SearchFilterComponent', 'selector': 'app-search-filter'},{'name': 'SelectAccountIdentifierComponent', 'selector': ''},{'name': 'SelectOptionGroupComponent', 'selector': 'app-select-option-group'},{'name': 'SelectOrgComponent', 'selector': ''},{'name': 'ShareLinkComponent', 'selector': 'app-share-link'},{'name': 'SignupBasicInfoComponent', 'selector': 'app-signup-basic-info'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupEmailPasswordComponent', 'selector': 'app-signup-email-password'},{'name': 'SignupOnboardingInfoComponent', 'selector': 'app-signup-onboarding-info'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'SsoMergeConfirmationComponent', 'selector': 'app-sso-merge-confirmation'},{'name': 'StatusComponent', 'selector': 'app-status'},{'name': 'SubmissionsComponent', 'selector': 'submission'},{'name': 'SubmitTeacherDetailsComponent', 'selector': 'app-submit-teacher-details'},{'name': 'SvgEditorComponent', 'selector': 'app-svg-editor'},{'name': 'SystemWarningComponent', 'selector': 'app-system-warning'},{'name': 'TelemetryComponent', 'selector': 'app-telemetry'},{'name': 'TelemetryErrorModalComponent', 'selector': 'app-telemetry-error-modal'},{'name': 'TelemetryImportComponent', 'selector': 'app-telemetry-import'},{'name': 'TermsAndConditionsPopupComponent', 'selector': 'app-tnc-popup'},{'name': 'TopicPickerComponent', 'selector': 'app-topic-picker'},{'name': 'UciComponent', 'selector': 'app-uci'},{'name': 'UnEnrollBatchComponent', 'selector': 'app-unenroll-batch'},{'name': 'UpdateBatchComponent', 'selector': 'app-update-batch'},{'name': 'UpdateContactComponent', 'selector': ''},{'name': 'UpdateContactDetailsComponent', 'selector': 'app-update-contact-details'},{'name': 'UpdateCourseBatchComponent', 'selector': 'app-update-course-batch'},{'name': 'UpForReviewComponent', 'selector': 'app-up-for-review'},{'name': 'UpforreviewContentplayerComponent', 'selector': 'app-upforreview-contentplayer'},{'name': 'UpforReviewFilterComponent', 'selector': 'app-up-for-review-filter'},{'name': 'UploadedComponent', 'selector': 'app-uploaded'},{'name': 'UsageReportsComponent', 'selector': 'app-usage-reports'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserFilterComponent', 'selector': 'app-user-filter'},{'name': 'UserLocationComponent', 'selector': 'app-user-location'},{'name': 'UserOnboardingComponent', 'selector': 'app-user-onboarding'},{'name': 'UserOrgManagementComponent', 'selector': 'app-user-org-management'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRoleAssignComponent', 'selector': 'app-user-role-assign'},{'name': 'UserSearchComponent', 'selector': 'app-user-search'},{'name': 'ValidateTeacherIdentifierPopupComponent', 'selector': 'app-validate-teacher-identifier-popup'},{'name': 'VerifyAccountIdentifierComponent', 'selector': ''},{'name': 'ViewAllComponent', 'selector': 'app-view-all'},{'name': 'ViewOrgTypeComponent', 'selector': 'app-view-org-type'},{'name': 'WorkspaceComponent', 'selector': 'app-workspace'},{'name': 'WorkspaceContentFilterComponent', 'selector': 'app-workspace-content-filter'},{'name': 'WorkspacesidebarComponent', 'selector': 'app-workspacesidebar'},{'name': 'YearOfBirthComponent', 'selector': 'app-year-of-birth'}];
+    var DIRECTIVES = [{'name': 'ActivityDashboardDirective', 'selector': '[appActivityDashboard]'},{'name': 'AddToGroupDirective', 'selector': '[appAddToGroup]'},{'name': 'BodyScrollDirective', 'selector': '[appBodyScroll]'},{'name': 'ComponentDeactivate', 'selector': ''},{'name': 'ContentDirectionDirective', 'selector': '[appContentDirection]'},{'name': 'DesktopOnlyDirective', 'selector': '[appDesktopOnly]'},{'name': 'HighlightTextDirective', 'selector': '[appHighlightText]'},{'name': 'MarkdownDirective', 'selector': '[appMarkdown]'},{'name': 'ModalContentDirective', 'selector': '[sbModalContent]'},{'name': 'OnlineOnlyDirective', 'selector': '[appOnlineOnly]'},{'name': 'PermissionDirective', 'selector': '[appPermission]'},{'name': 'TelemetryEndDirective', 'selector': '[appTelemetryEnd]'},{'name': 'TelemetryErrorDirective', 'selector': '[appTelemetryError]'},{'name': 'TelemetryEventsDirective', 'selector': '[telemetryEventsButton]'},{'name': 'TelemetryImpressionDirective', 'selector': '[appTelemetryImpression]'},{'name': 'TelemetryInteractDirective', 'selector': '[appTelemetryInteract]'},{'name': 'TelemetryShareDirective', 'selector': '[appTelemetryShare]'},{'name': 'TelemetryStartDirective', 'selector': '[appTelemetryStart]'}];
+    var ACTUAL_COMPONENT = {'name': 'AddMemberComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AddMemberComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

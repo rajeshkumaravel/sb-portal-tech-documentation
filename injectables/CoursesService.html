@@ -1,0 +1,1235 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li >CoursesService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/core/services/course/course.service.ts</code>
+        </p>
+
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p> Service for course API calls.</p>
+
+            </p>
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#_enrolledCourseData$" >_enrolledCourseData$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#config" >config</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#enrolledCourseData$" >enrolledCourseData$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#enrolledCourses" >enrolledCourses</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#learnerService" >learnerService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#revokeConsent" >revokeConsent</a>
+                            </li>
+                            <li>
+                                <a href="#sectionId" >sectionId</a>
+                            </li>
+                            <li>
+                                <a href="#showExtContentMsg" >showExtContentMsg</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#userService" >userService</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#findEnrolledCourses" >findEnrolledCourses</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getCourseSection" >getCourseSection</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getCourseSectionDetails" >getCourseSectionDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getEnrolledCourses" >getEnrolledCourses</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getQRCodeFile" >getQRCodeFile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#initialize" >initialize</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#setExtContentMsg" >setExtContentMsg</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#updateCourseProgress" >updateCourseProgress</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, learnerService: <a href="../injectables/LearnerService.html" target="_self">LearnerService</a>, config: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, contentService: <a href="../injectables/ContentService.html" target="_self">ContentService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/modules/core/services/course/course.service.ts:46</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>the &quot;constructor&quot;</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Reference of UserService.</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>learnerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LearnerService.html" target="_self" >LearnerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Reference of LearnerService.</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>config</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Reference of ConfigService</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>contentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ContentService.html" target="_self" >ContentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findEnrolledCourses"></a>
+                    <span class="name">
+                        <span ><b>findEnrolledCourses</b></span>
+                        <a href="#findEnrolledCourses"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findEnrolledCourses(courseId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="136"
+                            class="link-to-prism">src/app/modules/core/services/course/course.service.ts:136</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>courseId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCourseSection"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getCourseSection</b></span>
+                        <a href="#getCourseSection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCourseSection()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="95"
+                            class="link-to-prism">src/app/modules/core/services/course/course.service.ts:95</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCourseSectionDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getCourseSectionDetails</b></span>
+                        <a href="#getCourseSectionDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCourseSectionDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="86"
+                            class="link-to-prism">src/app/modules/core/services/course/course.service.ts:86</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEnrolledCourses"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getEnrolledCourses</b></span>
+                        <a href="#getEnrolledCourses"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getEnrolledCourses()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">src/app/modules/core/services/course/course.service.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p> api call for enrolled courses.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getQRCodeFile"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getQRCodeFile</b></span>
+                        <a href="#getQRCodeFile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getQRCodeFile()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="105"
+                            class="link-to-prism">src/app/modules/core/services/course/course.service.ts:105</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p> api call for getting course QR code CSV file.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initialize"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>initialize</b></span>
+                        <a href="#initialize"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initialize()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/modules/core/services/course/course.service.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p> call enroll course api and subscribe. Behavior subject will emit enrolled course data</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setExtContentMsg"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>setExtContentMsg</b></span>
+                        <a href="#setExtContentMsg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setExtContentMsg(isExtContent: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="133"
+                            class="link-to-prism">src/app/modules/core/services/course/course.service.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>isExtContent</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateCourseProgress"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>updateCourseProgress</b></span>
+                        <a href="#updateCourseProgress"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateCourseProgress(courseId, batchId, Progress)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="126"
+                            class="link-to-prism">src/app/modules/core/services/course/course.service.ts:126</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>courseId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>batchId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>Progress</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_enrolledCourseData$"></a>
+                    <span class="name">
+                        <span ><b>_enrolledCourseData$</b></span>
+                        <a href="#_enrolledCourseData$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject&lt;IEnrolledCourses&gt;(undefined)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/core/services/course/course.service.ts:36</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>BehaviorSubject Containing enrolled courses.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="config"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>config</b></span>
+                        <a href="#config"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ConfigService.html" target="_self" >ConfigService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/core/services/course/course.service.ts:30</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p> To get url, app configs.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="enrolledCourseData$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>enrolledCourseData$</b></span>
+                        <a href="#enrolledCourseData$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IEnrolledCourses.html" target="_self" >Observable&lt;IEnrolledCourses&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this._enrolledCourseData$.asObservable()
+  .pipe(skipWhile(data &#x3D;&gt; data &#x3D;&#x3D;&#x3D; undefined || data &#x3D;&#x3D;&#x3D; null))</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/modules/core/services/course/course.service.ts:40</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Read only observable Containing enrolled courses.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="enrolledCourses"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>enrolledCourses</b></span>
+                        <a href="#enrolledCourses"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ICourses.html" target="_self" >Array&lt;ICourses&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/modules/core/services/course/course.service.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="learnerService"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>learnerService</b></span>
+                        <a href="#learnerService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/LearnerService.html" target="_self" >LearnerService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/core/services/course/course.service.ts:26</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p> To do learner service api call.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="revokeConsent"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>revokeConsent</b></span>
+                        <a href="#revokeConsent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new EventEmitter&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/modules/core/services/course/course.service.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sectionId"></a>
+                    <span class="name">
+                        <span ><b>sectionId</b></span>
+                        <a href="#sectionId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/core/services/course/course.service.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showExtContentMsg"></a>
+                    <span class="name">
+                        <span ><b>showExtContentMsg</b></span>
+                        <a href="#showExtContentMsg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/modules/core/services/course/course.service.ts:45</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Notification message for external content onclick of Resume course button</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userService"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>userService</b></span>
+                        <a href="#userService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/modules/core/services/course/course.service.ts:22</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To get details about user profile.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { catchError, map, skipWhile } from &#x27;rxjs/operators&#x27;;
+import { Injectable, EventEmitter } from &#x27;@angular/core&#x27;;
+import { Observable, BehaviorSubject } from &#x27;rxjs&#x27;;
+import { LearnerService } from &#x27;./../learner/learner.service&#x27;;
+import { UserService } from &#x27;./../user/user.service&#x27;;
+import { ConfigService, ServerResponse } from &#x27;@sunbird/shared&#x27;;
+import { IEnrolledCourses, ICourses } from &#x27;./../../interfaces&#x27;;
+import { ContentService } from &#x27;../content/content.service&#x27;;
+import {throwError as observableThrowError, of } from &#x27;rxjs&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+/**
+ *  Service for course API calls.
+ */
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class CoursesService {
+  private enrolledCourses: Array&lt;ICourses&gt;;
+  /**
+   * To get details about user profile.
+   */
+  private userService: UserService;
+  /**
+   *  To do learner service api call.
+   */
+  private learnerService: LearnerService;
+  /**
+   *  To get url, app configs.
+   */
+  private config: ConfigService;
+
+  sectionId: any;
+  /**
+   * BehaviorSubject Containing enrolled courses.
+   */
+  _enrolledCourseData$ &#x3D; new BehaviorSubject&lt;IEnrolledCourses&gt;(undefined);
+  /**
+   * Read only observable Containing enrolled courses.
+   */
+  public readonly enrolledCourseData$: Observable&lt;IEnrolledCourses&gt; &#x3D; this._enrolledCourseData$.asObservable()
+  .pipe(skipWhile(data &#x3D;&gt; data &#x3D;&#x3D;&#x3D; undefined || data &#x3D;&#x3D;&#x3D; null));
+  /**
+   * Notification message for external content onclick of Resume course button
+   */
+  showExtContentMsg &#x3D; false;
+  public revokeConsent &#x3D; new EventEmitter&lt;void&gt;();
+  /**
+  * the &quot;constructor&quot;
+  *
+  * @param {LearnerService} learnerService Reference of LearnerService.
+  * @param {UserService} userService Reference of UserService.
+  * @param {ConfigService} config Reference of ConfigService
+  */
+  constructor(userService: UserService, learnerService: LearnerService,
+    config: ConfigService, contentService: ContentService) {
+    this.config &#x3D; config;
+    this.userService &#x3D; userService;
+    this.learnerService &#x3D; learnerService;
+  }
+  /**
+   *  api call for enrolled courses.
+   */
+  public getEnrolledCourses() {
+    const option &#x3D; {
+      url: this.config.urlConFig.URLS.COURSE.GET_ENROLLED_COURSES + &#x27;/&#x27; + this.userService.userid,
+      param: { ...this.config.appConfig.Course.contentApiQueryParams, ...this.config.urlConFig.params.enrolledCourses }
+    };
+    return this.learnerService.get(option).pipe(
+      map((apiResponse: ServerResponse) &#x3D;&gt; {
+        this.enrolledCourses &#x3D; apiResponse.result.courses;
+        this._enrolledCourseData$.next({ err: null, enrolledCourses: this.enrolledCourses });
+        return apiResponse;
+      }),
+      catchError((err) &#x3D;&gt; {
+        this._enrolledCourseData$.next({ err: err, enrolledCourses: undefined });
+        return err;
+      }));
+  }
+  /**
+   *  call enroll course api and subscribe. Behavior subject will emit enrolled course data
+  */
+  public initialize() {
+    this.getEnrolledCourses().subscribe((date) &#x3D;&gt; {
+    });
+  }
+  public getCourseSectionDetails() {
+    if (this.sectionId) {
+      return of(this.sectionId);
+    }
+    return this.getCourseSection().pipe(map(sectionId &#x3D;&gt; {
+      this.sectionId &#x3D; sectionId;
+      return sectionId;
+    }));
+  }
+  public getCourseSection() {
+    const systemSetting &#x3D; {
+      url: this.config.urlConFig.URLS.SYSTEM_SETTING.SSO_COURSE_SECTION,
+    };
+    return this.learnerService.get(systemSetting);
+  }
+
+   /**
+   *  api call for getting course QR code CSV file.
+   */
+  public getQRCodeFile() {
+    const userId &#x3D; [this.userService.userid] ;
+    const option &#x3D; {
+      url: this.config.urlConFig.URLS.COURSE.GET_QR_CODE_FILE,
+      data: {
+        &#x27;request&#x27;: {
+          &#x27;filter&#x27;: {
+            &#x27;userIds&#x27;: userId
+          }
+        }
+      }
+    };
+    return this.learnerService.post(option).pipe(
+      map((apiResponse: ServerResponse) &#x3D;&gt; {
+        return apiResponse;
+      }),
+      catchError((err) &#x3D;&gt; {
+        return observableThrowError(err);
+      }));
+  }
+
+  public updateCourseProgress(courseId, batchId, Progress) {
+    const index &#x3D; _.findIndex(this.enrolledCourses, {courseId: courseId, batchId: batchId });
+    if (this.enrolledCourses[index]) {
+      this.enrolledCourses[index].progress &#x3D; Progress;
+      this._enrolledCourseData$.next({ err: null, enrolledCourses: this.enrolledCourses });
+    }
+  }
+  public setExtContentMsg(isExtContent: boolean) {
+    this.showExtContentMsg &#x3D; isExtContent ? isExtContent : false;
+  }
+  findEnrolledCourses(courseId) {
+    const enrInfo &#x3D; _.reduce(this.enrolledCourses, (acc, cur) &#x3D;&gt; {
+      if (cur.courseId !&#x3D;&#x3D; courseId) { // course donst match return
+        return acc;
+      }
+      if (_.get(cur, &#x27;batch.enrollmentType&#x27;) &#x3D;&#x3D;&#x3D; &#x27;invite-only&#x27;) { // invite-only batch
+        if (_.get(cur, &#x27;batch.status&#x27;) &#x3D;&#x3D;&#x3D; 2) { // &amp;&amp; (!acc.invite.ended || latestCourse(acc.invite.ended.enrolledDate, cur.enrolledDate))
+          acc.inviteOnlyBatch.expired.push(cur);
+          acc.expiredBatchCount &#x3D; acc.expiredBatchCount + 1;
+        } else {
+          acc.onGoingBatchCount &#x3D; acc.onGoingBatchCount + 1;
+          acc.inviteOnlyBatch.ongoing.push(cur);
+        }
+      } else {
+        if (_.get(cur, &#x27;batch.status&#x27;) &#x3D;&#x3D;&#x3D; 2) {
+          acc.expiredBatchCount &#x3D; acc.expiredBatchCount + 1;
+          acc.openBatch.expired.push(cur);
+        } else {
+          acc.onGoingBatchCount &#x3D; acc.onGoingBatchCount + 1;
+          acc.openBatch.ongoing.push(cur);
+        }
+      }
+      return acc;
+    }, { onGoingBatchCount: 0, expiredBatchCount: 0,
+      openBatch: { ongoing: [], expired: []}, inviteOnlyBatch: { ongoing: [], expired: [] }});
+    return enrInfo;
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'CoursesService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
