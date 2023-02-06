@@ -935,7 +935,7 @@ export class LayoutService {
   initiateSwitchLayout() {
     if (this.layoutConfig) {
       this.layoutConfig &#x3D; null;
-      document.documentElement.setAttribute(&#x27;layout&#x27;, &#x27;&#x27;);
+      document.documentElement.setAttribute(&#x27;layout&#x27;, &#x27;base&#x27;);
       this.acessibleLayoutEnabled &#x3D; false;
       localStorage.setItem(&#x27;layoutType&#x27;, &#x27;default&#x27;);
 

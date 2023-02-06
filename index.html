@@ -31,6 +31,7 @@
                <div class="content getting-started">
                    <div class="content-data">
 
+<h1 id="sunbird-portal">sunbird-portal</h1>
 <p><a href="https://circleci.com/gh/Sunbird-Ed/SunbirdEd-portal/tree/master.svg?style=svg"><img src="https://circleci.com/gh/Sunbird-Ed/SunbirdEd-portal/tree/master.svg?style=svg" alt="Circle CI - master branch" class="img-responsive"></a>
 <a href="(https://circleci.com/gh/Sunbird-Ed/SunbirdEd-portal.svg?style=shield)"><img src="https://circleci.com/gh/Sunbird-Ed/SunbirdEd-portal.svg?style=shield" alt="Circle CI Badge" class="img-responsive"></a>
 <a href="https://sonarcloud.io/summary/new_code?id=Sunbird-Ed_SunbirdEd-portal"><img src="https://sonarcloud.io/api/project_badges/measure?project=Sunbird-Ed_SunbirdEd-portal&metric=alert_status" alt="Quality Gate Status" class="img-responsive"></a>
@@ -38,7 +39,17 @@
 <a href="https://sonarcloud.io/summary/new_code?id=Sunbird-Ed_SunbirdEd-portal"><img src="https://sonarcloud.io/api/project_badges/measure?project=Sunbird-Ed_SunbirdEd-portal&metric=ncloc" alt="Lines of Code" class="img-responsive"></a>
 <a href="https://sonarcloud.io/summary/new_code?id=Sunbird-Ed_SunbirdEd-portal"><img src="https://sonarcloud.io/api/project_badges/measure?project=Sunbird-Ed_SunbirdEd-portal&metric=sqale_rating" alt="Maintainability Rating" class="img-responsive"></a></p>
 <hr>
-<h1 id="installing-sunbird-portal">Installing Sunbird Portal</h1>
+<h2 id="what-is-sunbird">What is Sunbird?</h2>
+<p><a href="http://sunbird.org">Sunbird</a> is a next-generation scalable open-source learning solution for teachers and tutors. Built for the 21st century with <a href="http://www.sunbird.org/architecture/views/physical/">state-of-the-art technology</a>, Sunbird runs natively in <a href="http://www.sunbird.org/features/">cloud/mobile environments</a>. The <a href="LICENSE">open-source governance</a> of Sunbird allows a massive community of nation-builders to co-create and extend the solution in novel ways.</p>
+<h2 id="what-is-the-project-mission">What is the project mission?</h2>
+<p>Project Sunbird has a mission to improve learning outcomes for 200 million children across India. This is a multi-dimensional problem unique to the multi-lingual offline population of India (and other developing countries). It&#39;s not a problem of any single organization or stakeholder and it cannot be realistically addressed by individual effort. </p>
+<p>Project Sunbird is an <a href="http://www.sunbird.org/participate/">open, iterative and collaborative</a> approach to bring together the best minds in pursuit of this audacious goal.</p>
+<h2 id="what-is-the-sunbird-portal">What is the Sunbird portal?</h2>
+<p>The Sunbird portal is the browser-based interface for the Sunbird application stack. It provides a web-app through which all functionality of Sunbird can be accessed.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>To get started with the Sunbird portal, please try out our cloud-based demo site at: <a href="https://staging.open-sunbird.org/">https://staging.open-sunbird.org/</a></p>
+<hr>
+<h2 id="installing-sunbird-portal">Installing Sunbird Portal</h2>
 <p>Installing Sunbird requires two primary software components:</p>
 <ul>
 <li>Sunbird portal or web application</li>
@@ -87,7 +98,7 @@
 </tr>
 <tr>
 <td align="left"><strong><a href="https://angular.io/cli#installing-angular-cli">Angular CLI</a></strong></td>
-<td>&gt; 10.x.x (Install the latest Angular CLI version)</td>
+<td>&gt; 11.x.x (Install the latest Angular CLI version)</td>
 </tr>
 <tr>
 <td align="left"><strong><a href="https://classic.yarnpkg.com/en/">yarn</a></strong></td>
@@ -116,7 +127,6 @@
 </li>
 <li><p>Sunbird services stack or the backend API interface</p>
 <ol>
-<li>$ gulp download:editors</li>
 <li>$ cd {PROJECT-FOLDER}/src/app</li>
 <li>$ yarn install</li>
 </ol>
@@ -138,6 +148,18 @@
 </li>
 <li><p>Edit the Application Configuration</p>
 <blockquote>
+<p>These are the mandatory keys required to run the application in Local environment. Please update them with appropriatte values in <code>&lt;PROJECT-FOLDER&gt;/src/app/helpers/environmentVariablesHelper.js</code></p>
+</blockquote>
+<div><pre class="line-numbers"><code class="language-none"> |           Environment Variable        |  Data Type |             Description                |
+ | :-------------------------------------| ---------- | -------------------------------------  |
+ |        sunbird_azure_account_name     |   string   |          Azure account Name            |
+ |        sunbird_azure_account_key      |   string   |          Azure Account Key             |
+ |          sunbird_aws_region           |   string   |        Region for AWS account          |
+ |  KONG_DEVICE_REGISTER_ANONYMOUS_TOKEN |   boolean  |   Flag value to allow anonymous user   |
+ |  sunbird_anonymous_device_register_api|   string   |The API for registering anonymous device|
+ |  sunbird_anonymous_register_token     |   string   |    Token to register anonymous device  |
+ |               SB_DOMAIN               |   string   |    The host for Sunbird Environment    |
+ |         PORTAL_API_AUTH_TOKEN         |   string   |     User generated API auth token      |</code></pre></div><blockquote>
 <p>Open <code>&lt;PROJECT-FOLDER&gt;/src/app/helpers/environmentVariablesHelper.js</code> in any available text editor and update the contents of the file so that it contains exactly the following values</p>
 </blockquote>
 <div><pre class="line-numbers"><code class="language-console">    module.exports = {
@@ -157,11 +179,7 @@
         ...
         PORTAL_PORT: env.sunbird_port || 3000,
           
-        // 5. PORTAL_API_AUTH_TOKEN
-        PORTAL_API_AUTH_TOKEN: env.sunbird_api_auth_token || User generated API auth token
-        ...
-        
-        // 6. PORTAL_ECHO_API_URL
+        // 5. PORTAL_ECHO_API_URL
         PORTAL_ECHO_API_URL: env.sunbird_echo_api_url || &#39;&#39;,
         ...
     }</code></pre></div><blockquote>

@@ -144,6 +144,9 @@
                                 <a href="#deleteContent" >deleteContent</a>
                             </li>
                             <li>
+                                <a href="#getAllContent" >getAllContent</a>
+                            </li>
+                            <li>
                                 <a href="#getCategoryDefinition" >getCategoryDefinition</a>
                             </li>
                             <li>
@@ -526,6 +529,97 @@ delete  content based on contentId</p>
                     </div>
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="../interfaces/ServerResponse.html" target="_self" >Observable&lt;ServerResponse&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllContent"></a>
+                    <span class="name">
+                        <span ><b>getAllContent</b></span>
+                        <a href="#getAllContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllContent(contentData: <a href="../interfaces/ServerResponse.html" target="_self">ServerResponse</a>, isQuestionSetEnabled: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="398"
+                            class="link-to-prism">src/app/modules/workspace/services/work-space/workspace.service.ts:398</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>To get contents of all objectTypes (content, questionsert etc)
+ @param {boolean} contentData response data from search api call</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>contentData</td>
+                                    <td>
+                                                <code><a href="../interfaces/ServerResponse.html" target="_self" >ServerResponse</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>response data from search api call</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>isQuestionSetEnabled</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
 
                     </div>
                     <div class="io-description">
@@ -2626,6 +2720,26 @@ export class WorkSpaceService {
     }
   }
 
+  /**
+   * To get contents of all objectTypes (content, questionsert etc)
+   * @param {ServerResponse} contentData response data from search api call
+   *  @param {boolean} contentData response data from search api call
+   */
+  getAllContent(contentData: ServerResponse, isQuestionSetEnabled: boolean) {
+    let contentList&#x3D; [];
+    if(contentData?.result?.count) {
+      if(isQuestionSetEnabled) {
+        let objectTypes &#x3D; _.keys(contentData.result);
+        objectTypes&#x3D; _.filter(objectTypes, function(objectType) { return objectType !&#x3D;&#x3D; &#x27;count&#x27;; });
+        _.forEach(objectTypes, function(objectType){
+          contentList &#x3D; _.concat(contentList, contentData.result[objectType]);
+        });
+      } else {
+        contentList&#x3D; contentData.result.content;
+      }
+    }
+    return contentList;
+  }
 }
 </code></pre>
     </div>

@@ -14,179 +14,179 @@
 <title>cluster_SearchModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-32.8 8,-157.8 2026,-157.8 2026,-32.8 8,-32.8"/>
 </g>
+<g id="clust12" class="cluster">
+<title>cluster_SearchModule_providers</title>
+<polygon fill="none" stroke="black" points="1832,-40.8 1832,-92.8 2018,-92.8 2018,-40.8 1832,-40.8"/>
+</g>
 <g id="clust2" class="cluster">
 <title>cluster_SearchModule_declarations</title>
-<polygon fill="none" stroke="black" points="1052,-40.8 1052,-92.8 2018,-92.8 2018,-40.8 1052,-40.8"/>
+<polygon fill="none" stroke="black" points="858,-40.8 858,-92.8 1824,-92.8 1824,-40.8 858,-40.8"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_SearchModule_imports</title>
-<polygon fill="none" stroke="black" points="210,-40.8 210,-92.8 1044,-92.8 1044,-40.8 210,-40.8"/>
-</g>
-<g id="clust12" class="cluster">
-<title>cluster_SearchModule_providers</title>
-<polygon fill="none" stroke="black" points="16,-40.8 16,-92.8 202,-92.8 202,-40.8 16,-40.8"/>
+<polygon fill="none" stroke="black" points="16,-40.8 16,-92.8 850,-92.8 850,-40.8 16,-40.8"/>
 </g>
 <!-- HomeSearchComponent -->
 <g id="node1" class="node">
 <title>HomeSearchComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="2009.64,-84.8 1856.36,-84.8 1856.36,-48.8 2009.64,-48.8 2009.64,-84.8"/>
-<text text-anchor="middle" x="1933" y="-62.6" font-family="Times,serif" font-size="14.00">HomeSearchComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1815.64,-84.8 1662.36,-84.8 1662.36,-48.8 1815.64,-48.8 1815.64,-84.8"/>
+<text text-anchor="middle" x="1739" y="-62.6" font-family="Times,serif" font-size="14.00">HomeSearchComponent</text>
 </g>
 <!-- SearchModule -->
 <g id="node7" class="node">
 <title>SearchModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="1013.64,-149.8 1010.64,-153.8 989.64,-153.8 986.64,-149.8 916.36,-149.8 916.36,-113.8 1013.64,-113.8 1013.64,-149.8"/>
-<text text-anchor="middle" x="965" y="-127.6" font-family="Times,serif" font-size="14.00">SearchModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="987.64,-149.8 984.64,-153.8 963.64,-153.8 960.64,-149.8 890.36,-149.8 890.36,-113.8 987.64,-113.8 987.64,-149.8"/>
+<text text-anchor="middle" x="939" y="-127.6" font-family="Times,serif" font-size="14.00">SearchModule</text>
 </g>
 <!-- HomeSearchComponent&#45;&gt;SearchModule -->
 <g id="edge1" class="edge">
 <title>HomeSearchComponent&#45;&gt;SearchModule</title>
-<path fill="none" stroke="black" d="M1933,-84.89C1933,-107.93 1933,-144.8 1933,-144.8 1933,-144.8 1023.67,-144.8 1023.67,-144.8"/>
-<polygon fill="black" stroke="black" points="1023.67,-141.3 1013.67,-144.8 1023.67,-148.3 1023.67,-141.3"/>
+<path fill="none" stroke="black" d="M1739,-84.84C1739,-106.46 1739,-139.8 1739,-139.8 1739,-139.8 997.84,-139.8 997.84,-139.8"/>
+<polygon fill="black" stroke="black" points="997.84,-136.3 987.84,-139.8 997.84,-143.3 997.84,-136.3"/>
 </g>
 <!-- UserDeleteComponent -->
 <g id="node2" class="node">
 <title>UserDeleteComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1838.3,-84.8 1693.7,-84.8 1693.7,-48.8 1838.3,-48.8 1838.3,-84.8"/>
-<text text-anchor="middle" x="1766" y="-62.6" font-family="Times,serif" font-size="14.00">UserDeleteComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1644.3,-84.8 1499.7,-84.8 1499.7,-48.8 1644.3,-48.8 1644.3,-84.8"/>
+<text text-anchor="middle" x="1572" y="-62.6" font-family="Times,serif" font-size="14.00">UserDeleteComponent</text>
 </g>
 <!-- UserDeleteComponent&#45;&gt;SearchModule -->
 <g id="edge2" class="edge">
 <title>UserDeleteComponent&#45;&gt;SearchModule</title>
-<path fill="none" stroke="black" d="M1766,-84.84C1766,-106.46 1766,-139.8 1766,-139.8 1766,-139.8 1023.9,-139.8 1023.9,-139.8"/>
-<polygon fill="black" stroke="black" points="1023.9,-136.3 1013.9,-139.8 1023.9,-143.3 1023.9,-136.3"/>
+<path fill="none" stroke="black" d="M1572,-85.02C1572,-105.17 1572,-134.8 1572,-134.8 1572,-134.8 997.88,-134.8 997.88,-134.8"/>
+<polygon fill="black" stroke="black" points="997.88,-131.3 987.88,-134.8 997.88,-138.3 997.88,-131.3"/>
 </g>
 <!-- UserEditComponent -->
 <g id="node3" class="node">
 <title>UserEditComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1675.6,-84.8 1544.4,-84.8 1544.4,-48.8 1675.6,-48.8 1675.6,-84.8"/>
-<text text-anchor="middle" x="1610" y="-62.6" font-family="Times,serif" font-size="14.00">UserEditComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1481.6,-84.8 1350.4,-84.8 1350.4,-48.8 1481.6,-48.8 1481.6,-84.8"/>
+<text text-anchor="middle" x="1416" y="-62.6" font-family="Times,serif" font-size="14.00">UserEditComponent</text>
 </g>
 <!-- UserEditComponent&#45;&gt;SearchModule -->
 <g id="edge3" class="edge">
 <title>UserEditComponent&#45;&gt;SearchModule</title>
-<path fill="none" stroke="black" d="M1610,-85.02C1610,-105.17 1610,-134.8 1610,-134.8 1610,-134.8 1023.74,-134.8 1023.74,-134.8"/>
-<polygon fill="black" stroke="black" points="1023.74,-131.3 1013.74,-134.8 1023.74,-138.3 1023.74,-131.3"/>
+<path fill="none" stroke="black" d="M1416,-85.02C1416,-103.63 1416,-129.8 1416,-129.8 1416,-129.8 997.81,-129.8 997.81,-129.8"/>
+<polygon fill="black" stroke="black" points="997.81,-126.3 987.81,-129.8 997.81,-133.3 997.81,-126.3"/>
 </g>
 <!-- UserFilterComponent -->
 <g id="node4" class="node">
 <title>UserFilterComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1526.1,-84.8 1387.9,-84.8 1387.9,-48.8 1526.1,-48.8 1526.1,-84.8"/>
-<text text-anchor="middle" x="1457" y="-62.6" font-family="Times,serif" font-size="14.00">UserFilterComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1332.1,-84.8 1193.9,-84.8 1193.9,-48.8 1332.1,-48.8 1332.1,-84.8"/>
+<text text-anchor="middle" x="1263" y="-62.6" font-family="Times,serif" font-size="14.00">UserFilterComponent</text>
 </g>
 <!-- UserFilterComponent&#45;&gt;SearchModule -->
 <g id="edge4" class="edge">
 <title>UserFilterComponent&#45;&gt;SearchModule</title>
-<path fill="none" stroke="black" d="M1457,-85.02C1457,-103.63 1457,-129.8 1457,-129.8 1457,-129.8 1023.97,-129.8 1023.97,-129.8"/>
-<polygon fill="black" stroke="black" points="1023.97,-126.3 1013.97,-129.8 1023.97,-133.3 1023.97,-126.3"/>
+<path fill="none" stroke="black" d="M1263,-84.83C1263,-101.86 1263,-124.8 1263,-124.8 1263,-124.8 997.86,-124.8 997.86,-124.8"/>
+<polygon fill="black" stroke="black" points="997.86,-121.3 987.86,-124.8 997.86,-128.3 997.86,-121.3"/>
 </g>
 <!-- UserProfileComponent -->
 <g id="node5" class="node">
 <title>UserProfileComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1369.87,-84.8 1224.13,-84.8 1224.13,-48.8 1369.87,-48.8 1369.87,-84.8"/>
-<text text-anchor="middle" x="1297" y="-62.6" font-family="Times,serif" font-size="14.00">UserProfileComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1175.87,-84.8 1030.13,-84.8 1030.13,-48.8 1175.87,-48.8 1175.87,-84.8"/>
+<text text-anchor="middle" x="1103" y="-62.6" font-family="Times,serif" font-size="14.00">UserProfileComponent</text>
 </g>
 <!-- UserProfileComponent&#45;&gt;SearchModule -->
 <g id="edge5" class="edge">
 <title>UserProfileComponent&#45;&gt;SearchModule</title>
-<path fill="none" stroke="black" d="M1297,-84.83C1297,-101.86 1297,-124.8 1297,-124.8 1297,-124.8 1023.99,-124.8 1023.99,-124.8"/>
-<polygon fill="black" stroke="black" points="1023.99,-121.3 1013.99,-124.8 1023.99,-128.3 1023.99,-121.3"/>
+<path fill="none" stroke="black" d="M1103,-85.04C1103,-100.37 1103,-119.8 1103,-119.8 1103,-119.8 997.76,-119.8 997.76,-119.8"/>
+<polygon fill="black" stroke="black" points="997.76,-116.3 987.76,-119.8 997.76,-123.3 997.76,-116.3"/>
 </g>
 <!-- UserSearchComponent -->
 <g id="node6" class="node">
 <title>UserSearchComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1205.86,-84.8 1060.14,-84.8 1060.14,-48.8 1205.86,-48.8 1205.86,-84.8"/>
-<text text-anchor="middle" x="1133" y="-62.6" font-family="Times,serif" font-size="14.00">UserSearchComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="1011.86,-84.8 866.14,-84.8 866.14,-48.8 1011.86,-48.8 1011.86,-84.8"/>
+<text text-anchor="middle" x="939" y="-62.6" font-family="Times,serif" font-size="14.00">UserSearchComponent</text>
 </g>
 <!-- UserSearchComponent&#45;&gt;SearchModule -->
 <g id="edge6" class="edge">
 <title>UserSearchComponent&#45;&gt;SearchModule</title>
-<path fill="none" stroke="black" d="M1133,-85.04C1133,-100.37 1133,-119.8 1133,-119.8 1133,-119.8 1024.04,-119.8 1024.04,-119.8"/>
-<polygon fill="black" stroke="black" points="1024.04,-116.3 1014.04,-119.8 1024.04,-123.3 1024.04,-116.3"/>
+<path fill="none" stroke="black" d="M939,-84.91C939,-84.91 939,-103.79 939,-103.79"/>
+<polygon fill="black" stroke="black" points="935.5,-103.79 939,-113.79 942.5,-103.79 935.5,-103.79"/>
 </g>
 <!-- ContentSearchModule -->
 <g id="node8" class="node">
 <title>ContentSearchModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="1035.97,-84.8 1032.97,-88.8 1011.97,-88.8 1008.97,-84.8 894.03,-84.8 894.03,-48.8 1035.97,-48.8 1035.97,-84.8"/>
-<text text-anchor="middle" x="965" y="-62.6" font-family="Times,serif" font-size="14.00">ContentSearchModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="841.97,-84.8 838.97,-88.8 817.97,-88.8 814.97,-84.8 700.03,-84.8 700.03,-48.8 841.97,-48.8 841.97,-84.8"/>
+<text text-anchor="middle" x="771" y="-62.6" font-family="Times,serif" font-size="14.00">ContentSearchModule</text>
 </g>
 <!-- ContentSearchModule&#45;&gt;SearchModule -->
 <g id="edge7" class="edge">
 <title>ContentSearchModule&#45;&gt;SearchModule</title>
-<path fill="none" stroke="black" d="M965,-84.91C965,-84.91 965,-103.79 965,-103.79"/>
-<polygon fill="black" stroke="black" points="961.5,-103.79 965,-113.79 968.5,-103.79 961.5,-103.79"/>
+<path fill="none" stroke="black" d="M771,-85.04C771,-100.37 771,-119.8 771,-119.8 771,-119.8 879.96,-119.8 879.96,-119.8"/>
+<polygon fill="black" stroke="black" points="879.96,-123.3 889.96,-119.8 879.96,-116.3 879.96,-123.3"/>
 </g>
 <!-- CoreModule -->
 <g id="node9" class="node">
 <title>CoreModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="876.27,-84.8 873.27,-88.8 852.27,-88.8 849.27,-84.8 789.73,-84.8 789.73,-48.8 876.27,-48.8 876.27,-84.8"/>
-<text text-anchor="middle" x="833" y="-62.6" font-family="Times,serif" font-size="14.00">CoreModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="682.27,-84.8 679.27,-88.8 658.27,-88.8 655.27,-84.8 595.73,-84.8 595.73,-48.8 682.27,-48.8 682.27,-84.8"/>
+<text text-anchor="middle" x="639" y="-62.6" font-family="Times,serif" font-size="14.00">CoreModule</text>
 </g>
 <!-- CoreModule&#45;&gt;SearchModule -->
 <g id="edge8" class="edge">
 <title>CoreModule&#45;&gt;SearchModule</title>
-<path fill="none" stroke="black" d="M833,-85.04C833,-100.37 833,-119.8 833,-119.8 833,-119.8 906.22,-119.8 906.22,-119.8"/>
-<polygon fill="black" stroke="black" points="906.22,-123.3 916.22,-119.8 906.22,-116.3 906.22,-123.3"/>
+<path fill="none" stroke="black" d="M639,-84.83C639,-101.86 639,-124.8 639,-124.8 639,-124.8 880.13,-124.8 880.13,-124.8"/>
+<polygon fill="black" stroke="black" points="880.13,-128.3 890.13,-124.8 880.13,-121.3 880.13,-128.3"/>
 </g>
 <!-- SearchRoutingModule -->
 <g id="node10" class="node">
 <title>SearchRoutingModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="771.26,-84.8 768.26,-88.8 747.26,-88.8 744.26,-84.8 628.74,-84.8 628.74,-48.8 771.26,-48.8 771.26,-84.8"/>
-<text text-anchor="middle" x="700" y="-62.6" font-family="Times,serif" font-size="14.00">SearchRoutingModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="577.26,-84.8 574.26,-88.8 553.26,-88.8 550.26,-84.8 434.74,-84.8 434.74,-48.8 577.26,-48.8 577.26,-84.8"/>
+<text text-anchor="middle" x="506" y="-62.6" font-family="Times,serif" font-size="14.00">SearchRoutingModule</text>
 </g>
 <!-- SearchRoutingModule&#45;&gt;SearchModule -->
 <g id="edge9" class="edge">
 <title>SearchRoutingModule&#45;&gt;SearchModule</title>
-<path fill="none" stroke="black" d="M700,-84.83C700,-101.86 700,-124.8 700,-124.8 700,-124.8 906.09,-124.8 906.09,-124.8"/>
-<polygon fill="black" stroke="black" points="906.09,-128.3 916.09,-124.8 906.09,-121.3 906.09,-128.3"/>
+<path fill="none" stroke="black" d="M506,-85.02C506,-103.63 506,-129.8 506,-129.8 506,-129.8 880.17,-129.8 880.17,-129.8"/>
+<polygon fill="black" stroke="black" points="880.17,-133.3 890.17,-129.8 880.17,-126.3 880.17,-133.3"/>
 </g>
 <!-- SharedFeatureModule -->
 <g id="node11" class="node">
 <title>SharedFeatureModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="610.41,-84.8 607.41,-88.8 586.41,-88.8 583.41,-84.8 469.59,-84.8 469.59,-48.8 610.41,-48.8 610.41,-84.8"/>
-<text text-anchor="middle" x="540" y="-62.6" font-family="Times,serif" font-size="14.00">SharedFeatureModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="416.41,-84.8 413.41,-88.8 392.41,-88.8 389.41,-84.8 275.59,-84.8 275.59,-48.8 416.41,-48.8 416.41,-84.8"/>
+<text text-anchor="middle" x="346" y="-62.6" font-family="Times,serif" font-size="14.00">SharedFeatureModule</text>
 </g>
 <!-- SharedFeatureModule&#45;&gt;SearchModule -->
 <g id="edge10" class="edge">
 <title>SharedFeatureModule&#45;&gt;SearchModule</title>
-<path fill="none" stroke="black" d="M540,-85.02C540,-103.63 540,-129.8 540,-129.8 540,-129.8 906.25,-129.8 906.25,-129.8"/>
-<polygon fill="black" stroke="black" points="906.25,-133.3 916.25,-129.8 906.25,-126.3 906.25,-133.3"/>
+<path fill="none" stroke="black" d="M346,-85.02C346,-105.17 346,-134.8 346,-134.8 346,-134.8 880.22,-134.8 880.22,-134.8"/>
+<polygon fill="black" stroke="black" points="880.22,-138.3 890.22,-134.8 880.22,-131.3 880.22,-138.3"/>
 </g>
 <!-- SharedModule -->
 <g id="node12" class="node">
 <title>SharedModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="452.43,-84.8 449.43,-88.8 428.43,-88.8 425.43,-84.8 353.57,-84.8 353.57,-48.8 452.43,-48.8 452.43,-84.8"/>
-<text text-anchor="middle" x="403" y="-62.6" font-family="Times,serif" font-size="14.00">SharedModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="258.43,-84.8 255.43,-88.8 234.43,-88.8 231.43,-84.8 159.57,-84.8 159.57,-48.8 258.43,-48.8 258.43,-84.8"/>
+<text text-anchor="middle" x="209" y="-62.6" font-family="Times,serif" font-size="14.00">SharedModule</text>
 </g>
 <!-- SharedModule&#45;&gt;SearchModule -->
 <g id="edge11" class="edge">
 <title>SharedModule&#45;&gt;SearchModule</title>
-<path fill="none" stroke="black" d="M403,-85.02C403,-105.17 403,-134.8 403,-134.8 403,-134.8 906.11,-134.8 906.11,-134.8"/>
-<polygon fill="black" stroke="black" points="906.11,-138.3 916.11,-134.8 906.11,-131.3 906.11,-138.3"/>
+<path fill="none" stroke="black" d="M209,-84.84C209,-106.46 209,-139.8 209,-139.8 209,-139.8 880.25,-139.8 880.25,-139.8"/>
+<polygon fill="black" stroke="black" points="880.25,-143.3 890.25,-139.8 880.25,-136.3 880.25,-143.3"/>
 </g>
 <!-- TelemetryModule -->
 <g id="node13" class="node">
 <title>TelemetryModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="335.58,-84.8 332.58,-88.8 311.58,-88.8 308.58,-84.8 218.42,-84.8 218.42,-48.8 335.58,-48.8 335.58,-84.8"/>
-<text text-anchor="middle" x="277" y="-62.6" font-family="Times,serif" font-size="14.00">TelemetryModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="141.58,-84.8 138.58,-88.8 117.58,-88.8 114.58,-84.8 24.42,-84.8 24.42,-48.8 141.58,-48.8 141.58,-84.8"/>
+<text text-anchor="middle" x="83" y="-62.6" font-family="Times,serif" font-size="14.00">TelemetryModule</text>
 </g>
 <!-- TelemetryModule&#45;&gt;SearchModule -->
 <g id="edge12" class="edge">
 <title>TelemetryModule&#45;&gt;SearchModule</title>
-<path fill="none" stroke="black" d="M277,-84.84C277,-106.46 277,-139.8 277,-139.8 277,-139.8 906.35,-139.8 906.35,-139.8"/>
-<polygon fill="black" stroke="black" points="906.35,-143.3 916.35,-139.8 906.35,-136.3 906.35,-143.3"/>
+<path fill="none" stroke="black" d="M83,-84.89C83,-107.93 83,-144.8 83,-144.8 83,-144.8 880.21,-144.8 880.21,-144.8"/>
+<polygon fill="black" stroke="black" points="880.21,-148.3 890.21,-144.8 880.21,-141.3 880.21,-148.3"/>
 </g>
 <!-- UserSearchService -->
 <g id="node14" class="node">
 <title>UserSearchService</title>
-<ellipse fill="#fdb462" stroke="black" cx="109" cy="-66.8" rx="84.5" ry="18"/>
-<text text-anchor="middle" x="109" y="-62.6" font-family="Times,serif" font-size="14.00">UserSearchService</text>
+<ellipse fill="#fdb462" stroke="black" cx="1925" cy="-66.8" rx="84.5" ry="18"/>
+<text text-anchor="middle" x="1925" y="-62.6" font-family="Times,serif" font-size="14.00">UserSearchService</text>
 </g>
 <!-- UserSearchService&#45;&gt;SearchModule -->
 <g id="edge13" class="edge">
 <title>UserSearchService&#45;&gt;SearchModule</title>
-<path fill="none" stroke="black" d="M109,-84.89C109,-107.93 109,-144.8 109,-144.8 109,-144.8 906.21,-144.8 906.21,-144.8"/>
-<polygon fill="black" stroke="black" points="906.21,-148.3 916.21,-144.8 906.21,-141.3 906.21,-148.3"/>
+<path fill="none" stroke="black" d="M1925,-84.89C1925,-107.93 1925,-144.8 1925,-144.8 1925,-144.8 997.9,-144.8 997.9,-144.8"/>
+<polygon fill="black" stroke="black" points="997.9,-141.3 987.9,-144.8 997.9,-148.3 997.9,-141.3"/>
 </g>
 </g>
 </svg>

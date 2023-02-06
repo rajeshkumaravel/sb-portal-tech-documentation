@@ -224,6 +224,9 @@
                                 <a href="#fetchContents$" >fetchContents$</a>
                             </li>
                             <li>
+                                <a href="#filterResponseData" >filterResponseData</a>
+                            </li>
+                            <li>
                                 <a href="#FIRST_PANEL_LAYOUT" >FIRST_PANEL_LAYOUT</a>
                             </li>
                             <li>
@@ -288,6 +291,9 @@
                             </li>
                             <li>
                                 <a href="#queryParams" >queryParams</a>
+                            </li>
+                            <li>
+                                <a href="#refreshFilter" >refreshFilter</a>
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
@@ -554,6 +560,10 @@
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
+                                <a href="#setFilterConfig" >setFilterConfig</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
                                 <a href="#setNoResultMessage" >setNoResultMessage</a>
                             </li>
                             <li>
@@ -625,12 +635,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(searchService: <a href="../injectables/SearchService.html" target="_self">SearchService</a>, toasterService: <a href="../injectables/ToasterService.html" target="_self">ToasterService</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, resourceService: <a href="../injectables/ResourceService.html" target="_self">ResourceService</a>, configService: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, orgDetailsService: <a href="../injectables/OrgDetailsService.html" target="_self">OrgDetailsService</a>, publicPlayerService: <a href="../injectables/PublicPlayerService.html" target="_self">PublicPlayerService</a>, contentSearchService: <a href="../injectables/ContentSearchService.html" target="_self">ContentSearchService</a>, navigationhelperService: <a href="../injectables/NavigationHelperService.html" target="_self">NavigationHelperService</a>, telemetryService: <a href="../injectables/TelemetryService.html" target="_self">TelemetryService</a>, layoutService: <a href="../injectables/LayoutService.html" target="_self">LayoutService</a>, formService: <a href="../injectables/FormService.html" target="_self">FormService</a>, playerService: <a href="../injectables/PlayerService.html" target="_self">PlayerService</a>, coursesService: <a href="../injectables/CoursesService.html" target="_self">CoursesService</a>, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, offlineCardService: <a href="../injectables/OfflineCardService.html" target="_self">OfflineCardService</a>, contentManagerService: <a href="../injectables/ContentManagerService.html" target="_self">ContentManagerService</a>, cacheService: CacheService, browserCacheTtlService: <a href="../injectables/BrowserCacheTtlService.html" target="_self">BrowserCacheTtlService</a>, profileService: <a href="../injectables/ProfileService.html" target="_self">ProfileService</a>, segmentationTagService: <a href="../injectables/SegmentationTagService.html" target="_self">SegmentationTagService</a>, observationUtil: <a href="../injectables/ObservationUtilService.html" target="_self">ObservationUtilService</a>, genericResourceService: <a href="../injectables/GenericResourceService.html" target="_self">GenericResourceService</a>)</code>
+<code>constructor(searchService: <a href="../injectables/SearchService.html" target="_self">SearchService</a>, toasterService: <a href="../injectables/ToasterService.html" target="_self">ToasterService</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>, resourceService: <a href="../injectables/ResourceService.html" target="_self">ResourceService</a>, configService: <a href="../injectables/ConfigService.html" target="_self">ConfigService</a>, activatedRoute: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, orgDetailsService: <a href="../injectables/OrgDetailsService.html" target="_self">OrgDetailsService</a>, publicPlayerService: <a href="../injectables/PublicPlayerService.html" target="_self">PublicPlayerService</a>, contentSearchService: <a href="../injectables/ContentSearchService.html" target="_self">ContentSearchService</a>, navigationhelperService: <a href="../injectables/NavigationHelperService.html" target="_self">NavigationHelperService</a>, telemetryService: <a href="../injectables/TelemetryService.html" target="_self">TelemetryService</a>, layoutService: <a href="../injectables/LayoutService.html" target="_self">LayoutService</a>, formService: <a href="../injectables/FormService.html" target="_self">FormService</a>, playerService: <a href="../injectables/PlayerService.html" target="_self">PlayerService</a>, coursesService: <a href="../injectables/CoursesService.html" target="_self">CoursesService</a>, utilService: <a href="../injectables/UtilService.html" target="_self">UtilService</a>, offlineCardService: <a href="../injectables/OfflineCardService.html" target="_self">OfflineCardService</a>, contentManagerService: <a href="../injectables/ContentManagerService.html" target="_self">ContentManagerService</a>, cacheService: CacheService, browserCacheTtlService: <a href="../injectables/BrowserCacheTtlService.html" target="_self">BrowserCacheTtlService</a>, profileService: <a href="../injectables/ProfileService.html" target="_self">ProfileService</a>, segmentationTagService: <a href="../injectables/SegmentationTagService.html" target="_self">SegmentationTagService</a>, observationUtil: <a href="../injectables/ObservationUtilService.html" target="_self">ObservationUtilService</a>, genericResourceService: <a href="../injectables/GenericResourceService.html" target="_self">GenericResourceService</a>, cdr: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="109" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:109</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="111" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:111</a></div>
                             </td>
                         </tr>
 
@@ -947,6 +957,18 @@
                                                     </td>
                                                     
                                                 </tr>
+                                                <tr>
+                                                        <td>cdr</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
                                         </tbody>
                                     </table>
                             </div>
@@ -980,8 +1002,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="103"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:103</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="105"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:105</a></div>
                 </td>
             </tr>
 
@@ -1016,8 +1038,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="151"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:151</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="153"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:153</a></div>
                 </td>
             </tr>
 
@@ -1089,8 +1111,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="642"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:642</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="653"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:653</a></div>
                 </td>
             </tr>
 
@@ -1126,8 +1148,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="843"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:843</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="854"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:854</a></div>
                 </td>
             </tr>
 
@@ -1163,8 +1185,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1078"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1078</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1089"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1089</a></div>
                 </td>
             </tr>
 
@@ -1228,8 +1250,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="848"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:848</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="859"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:859</a></div>
                 </td>
             </tr>
 
@@ -1295,8 +1317,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="158"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:158</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:160</a></div>
                 </td>
             </tr>
 
@@ -1334,8 +1356,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="411"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:411</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="413"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:413</a></div>
                 </td>
             </tr>
 
@@ -1373,8 +1395,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="251"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:251</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="253"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:253</a></div>
                 </td>
             </tr>
 
@@ -1410,8 +1432,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1144"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1144</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1159"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1159</a></div>
                 </td>
             </tr>
 
@@ -1477,8 +1499,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="321"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:321</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="323"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:323</a></div>
                 </td>
             </tr>
 
@@ -1516,8 +1538,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="627"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:627</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="638"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:638</a></div>
                 </td>
             </tr>
 
@@ -1592,8 +1614,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="349"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:349</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="351"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:351</a></div>
                 </td>
             </tr>
 
@@ -1629,8 +1651,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1184"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1184</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1199"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1199</a></div>
                 </td>
             </tr>
 
@@ -1668,8 +1690,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="353"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:353</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="355"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:355</a></div>
                 </td>
             </tr>
 
@@ -1734,8 +1756,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="147"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:147</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="149"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:149</a></div>
                 </td>
             </tr>
 
@@ -1807,8 +1829,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="582"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:582</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="593"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:593</a></div>
                 </td>
             </tr>
 
@@ -1844,8 +1866,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="803"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:803</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="814"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:814</a></div>
                 </td>
             </tr>
 
@@ -1911,8 +1933,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="343"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:343</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="345"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:345</a></div>
                 </td>
             </tr>
 
@@ -1976,8 +1998,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1304"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1304</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1319"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1319</a></div>
                 </td>
             </tr>
 
@@ -2041,8 +2063,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1140"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1140</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1155"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1155</a></div>
                 </td>
             </tr>
 
@@ -2108,8 +2130,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1013"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1013</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1024"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1024</a></div>
                 </td>
             </tr>
 
@@ -2173,8 +2195,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1136"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1136</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1149"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1149</a></div>
                 </td>
             </tr>
 
@@ -2238,8 +2260,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1148"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1148</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1163"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1163</a></div>
                 </td>
             </tr>
 
@@ -2275,8 +2297,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1286"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1286</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1301"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1301</a></div>
                 </td>
             </tr>
 
@@ -2340,8 +2362,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1082"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1082</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1093"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1093</a></div>
                 </td>
             </tr>
 
@@ -2414,8 +2436,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1120"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1120</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1131"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1131</a></div>
                 </td>
             </tr>
 
@@ -2479,8 +2501,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="819"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:819</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="830"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:830</a></div>
                 </td>
             </tr>
 
@@ -2546,8 +2568,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="133"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:133</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="135"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:135</a></div>
                 </td>
             </tr>
 
@@ -2583,8 +2605,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="293"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:293</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="295"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:295</a></div>
                 </td>
             </tr>
 
@@ -2622,8 +2644,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="143"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:143</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="145"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:145</a></div>
                 </td>
             </tr>
 
@@ -2661,8 +2683,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="709"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:709</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="720"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:720</a></div>
                 </td>
             </tr>
 
@@ -2698,8 +2720,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="877"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:877</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="888"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:888</a></div>
                 </td>
             </tr>
 
@@ -2772,8 +2794,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="962"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:962</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="973"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:973</a></div>
                 </td>
             </tr>
 
@@ -2839,8 +2861,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1279"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1279</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1294"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1294</a></div>
                 </td>
             </tr>
 
@@ -2876,8 +2898,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="760"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:760</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="771"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:771</a></div>
                 </td>
             </tr>
 
@@ -2943,8 +2965,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="747"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:747</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="758"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:758</a></div>
                 </td>
             </tr>
 
@@ -2980,8 +3002,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1235"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1235</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1250"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1250</a></div>
                 </td>
             </tr>
 
@@ -3045,8 +3067,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="677"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:677</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="688"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:688</a></div>
                 </td>
             </tr>
 
@@ -3082,8 +3104,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="683"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:683</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="694"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:694</a></div>
                 </td>
             </tr>
 
@@ -3119,8 +3141,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="210"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:210</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="212"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:212</a></div>
                 </td>
             </tr>
 
@@ -3163,8 +3185,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="103"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:103</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="105"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:105</a></div>
                 </td>
             </tr>
 
@@ -3202,8 +3224,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="653"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:653</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="664"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:664</a></div>
                 </td>
             </tr>
 
@@ -3278,8 +3300,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="923"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:923</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="934"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:934</a></div>
                 </td>
             </tr>
 
@@ -3354,8 +3376,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="907"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:907</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="918"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:918</a></div>
                 </td>
             </tr>
 
@@ -3419,8 +3441,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="305"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:305</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="307"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:307</a></div>
                 </td>
             </tr>
 
@@ -3456,8 +3478,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1035"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1035</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1046"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1046</a></div>
                 </td>
             </tr>
 
@@ -3493,8 +3515,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1220"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1220</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1235"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1235</a></div>
                 </td>
             </tr>
 
@@ -3530,8 +3552,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="394"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:394</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="396"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:396</a></div>
                 </td>
             </tr>
 
@@ -3579,6 +3601,73 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="setFilterConfig"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>setFilterConfig</b></span>
+                        <a href="#setFilterConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setFilterConfig(currentPage)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="1335"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1335</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>currentPage</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="setNoResultMessage"></a>
                     <span class="name">
                         <span class="modifier">Private</span>
@@ -3597,8 +3686,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="718"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:718</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="729"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:729</a></div>
                 </td>
             </tr>
 
@@ -3636,8 +3725,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="688"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:688</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="699"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:699</a></div>
                 </td>
             </tr>
 
@@ -3673,8 +3762,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1064"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1064</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1075"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1075</a></div>
                 </td>
             </tr>
 
@@ -3710,8 +3799,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1203"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1203</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1218"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1218</a></div>
                 </td>
             </tr>
 
@@ -3747,8 +3836,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="1152"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1152</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="1167"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:1167</a></div>
                 </td>
             </tr>
 
@@ -3814,8 +3903,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="975"
-                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:975</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="986"
+                            class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:986</a></div>
                 </td>
             </tr>
 
@@ -3946,7 +4035,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="112" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:112</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="114" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:114</a></div>
                         </td>
                     </tr>
 
@@ -4194,7 +4283,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="118" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:118</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="120" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:120</a></div>
                         </td>
                     </tr>
 
@@ -4549,6 +4638,37 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="filterResponseData"></a>
+                    <span class="name">
+                        <span ><b>filterResponseData</b></span>
+                        <a href="#filterResponseData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:91</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="FIRST_PANEL_LAYOUT"></a>
                     <span class="name">
                         <span ><b>FIRST_PANEL_LAYOUT</b></span>
@@ -4610,7 +4730,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="196" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:196</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="198" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:198</a></div>
                         </td>
                     </tr>
 
@@ -4848,7 +4968,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="115" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:115</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="117" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:117</a></div>
                         </td>
                     </tr>
 
@@ -5038,6 +5158,37 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="refreshFilter"></a>
+                    <span class="name">
+                        <span ><b>refreshFilter</b></span>
+                        <a href="#refreshFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="92" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:92</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="resourceService"></a>
                     <span class="name">
                             <span class="modifier">Public</span>
@@ -5054,7 +5205,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="112" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:112</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="114" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:114</a></div>
                         </td>
                     </tr>
 
@@ -5577,7 +5728,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="115" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:115</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="117" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:117</a></div>
                         </td>
                     </tr>
 
@@ -5682,7 +5833,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="111" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:111</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="113" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:113</a></div>
                         </td>
                     </tr>
 
@@ -5737,7 +5888,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:91</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="93" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:93</a></div>
                                 </td>
                             </tr>
 
@@ -5759,7 +5910,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="95" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:95</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:97</a></div>
                                 </td>
                             </tr>
 
@@ -5781,7 +5932,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:99</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="101" class="link-to-prism">src/app/modules/explore-page/components/explore-page/explore-page.component.ts:101</a></div>
                                 </td>
                             </tr>
 
@@ -5795,7 +5946,7 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { forkJoin, Subject, Observable, BehaviorSubject, merge, of, concat, combineLatest } from &#x27;rxjs&#x27;;
 import { OrgDetailsService, UserService, SearchService, FormService, PlayerService, CoursesService, ObservationUtilService } from &#x27;@sunbird/core&#x27;;
 import { PublicPlayerService } from &#x27;@sunbird/public&#x27;;
-import { Component, OnInit, OnDestroy, HostListener, AfterViewInit } from &#x27;@angular/core&#x27;;
+import { Component, OnInit, OnDestroy, HostListener, AfterViewInit, ChangeDetectorRef } from &#x27;@angular/core&#x27;;
 import {
     ResourceService, ToasterService, ConfigService, NavigationHelperService, LayoutService, COLUMN_TYPE, UtilService,
     OfflineCardService, BrowserCacheTtlService, IUserData, GenericResourceService
@@ -5881,7 +6032,9 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
     selectedTab: any;
     primaryBanner &#x3D; [];
     secondaryBanner &#x3D; [];
-    Categorytheme:any;
+    Categorytheme: any;
+    filterResponseData &#x3D; {};
+    refreshFilter: boolean &#x3D; true;
     get slideConfig() {
         return cloneDeep(this.configService.appConfig.LibraryCourses.slideConfig);
     }
@@ -5912,16 +6065,16 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
         public contentManagerService: ContentManagerService, private cacheService: CacheService,
         private browserCacheTtlService: BrowserCacheTtlService, private profileService: ProfileService,
         private segmentationTagService: SegmentationTagService, private observationUtil: ObservationUtilService,
-        private genericResourceService: GenericResourceService) {
-            this.genericResourceService.initialize();
-            this.instance &#x3D; (&lt;HTMLInputElement&gt;document.getElementById(&#x27;instance&#x27;))
+        private genericResourceService: GenericResourceService, private cdr: ChangeDetectorRef) {
+        this.genericResourceService.initialize();
+        this.instance &#x3D; (&lt;HTMLInputElement&gt;document.getElementById(&#x27;instance&#x27;))
             ? (&lt;HTMLInputElement&gt;document.getElementById(&#x27;instance&#x27;)).value.toUpperCase() : &#x27;SUNBIRD&#x27;;
         this.subscription &#x3D; this.utilService.currentRole.subscribe(async (result) &#x3D;&gt; {
             if (result) {
                 this.userType &#x3D; result;
             }
         });
-        }
+    }
 
 
     private initConfiguration() {
@@ -5939,7 +6092,7 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
     }
 
     private getFormConfig(input &#x3D; { formType: &#x27;contentcategory&#x27;, formAction: &#x27;menubar&#x27;, contentType: &#x27;global&#x27; }): Observable&lt;object&gt; {
-       return this.formService.getFormConfig(input);
+        return this.formService.getFormConfig(input);
     }
 
     private _addFiltersInTheQueryParams(updatedFilters &#x3D; {}) {
@@ -5958,9 +6111,9 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
                     this.custodianOrg &#x3D; custodianOrg;
                     this.formData &#x3D; formConfig;
                     if (this.isUserLoggedIn()) {
-                       // this.defaultFilters &#x3D; this.cacheService.exists(&#x27;searchFilters&#x27;) ? this.getPersistFilters(true) : this.userService.defaultFrameworkFilters;
-                       this.defaultFilters &#x3D;  this.userService.defaultFrameworkFilters;
-                       this.userProfile &#x3D; this.userService.userProfile;
+                        // this.defaultFilters &#x3D; this.cacheService.exists(&#x27;searchFilters&#x27;) ? this.getPersistFilters(true) : this.userService.defaultFrameworkFilters;
+                        this.defaultFilters &#x3D; this.userService.defaultFrameworkFilters;
+                        this.userProfile &#x3D; this.userService.userProfile;
                     } else {
                         this.userService.getGuestUser().subscribe((response) &#x3D;&gt; {
                             const guestUserDetails: any &#x3D; response;
@@ -6005,24 +6158,24 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
         this.isDesktopApp &#x3D; this.utilService.isDesktopApp;
         this.setUserPreferences();
         this.subscription$ &#x3D; this.activatedRoute.queryParams.subscribe(queryParams &#x3D;&gt; {
-        this.selectedTab &#x3D; queryParams.selectedTab;
-        this.showTargetedCategory &#x3D; false;
-        this.getFormConfigs();
+            this.selectedTab &#x3D; queryParams.selectedTab;
+            this.showTargetedCategory &#x3D; false;
+            this.getFormConfigs();
         });
         this.initConfiguration();
-
         this.segmentationTagService.getSegmentCommand();
         const enrolledSection$ &#x3D; this.getQueryParams().pipe(
-                tap(() &#x3D;&gt; {
-                    const currentPage &#x3D; this._currentPageData &#x3D; this.getCurrentPageData();
-                    this.pageTitleSrc &#x3D; get(this.resourceService, &#x27;RESOURCE_CONSUMPTION_ROOT&#x27;) + get(currentPage, &#x27;title&#x27;);
-                    this.isFilterEnabled &#x3D; true;
-                    if (_.get(currentPage, &#x27;filter&#x27;)) {
-                        this.isFilterEnabled &#x3D; _.get(currentPage, &#x27;filter.isEnabled&#x27;);
-                    }
-                    if ((_.get(currentPage, &#x27;filter&#x27;) &amp;&amp; !_.get(currentPage, &#x27;filter.isEnabled&#x27;))) {
-                        this.fetchContents$.next(currentPage);
-                    }
+            tap(() &#x3D;&gt; {
+                const currentPage &#x3D; this._currentPageData &#x3D; this.getCurrentPageData();
+                this.pageTitleSrc &#x3D; get(this.resourceService, &#x27;RESOURCE_CONSUMPTION_ROOT&#x27;) + get(currentPage, &#x27;title&#x27;);
+                this.isFilterEnabled &#x3D; true;
+                if (_.get(currentPage, &#x27;filter&#x27;)) {
+                    this.isFilterEnabled &#x3D; _.get(currentPage, &#x27;filter.isEnabled&#x27;);
+                }
+                if ((_.get(currentPage, &#x27;filter&#x27;) &amp;&amp; !_.get(currentPage, &#x27;filter.isEnabled&#x27;))) {
+                    this.fetchContents$.next(currentPage);
+                }
+                this.setFilterConfig(currentPage);
             }),
             switchMap(this.fetchEnrolledCoursesSection.bind(this))
         );
@@ -6047,10 +6200,10 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
             .pipe(
                 tap(({ enrolledCourses, err }) &#x3D;&gt; {
                     this.enrolledCourses &#x3D; this.enrolledSection &#x3D; [];
-                    const sortingField &#x3D; (get(this.getCurrentPageData(), &#x27;sortingField&#x27;))?
-                    (get(this.getCurrentPageData(), &#x27;sortingField&#x27;)) : &#x27;enrolledDate&#x27;;
-                    const sortingOrder &#x3D; (get(this.getCurrentPageData(), &#x27;sortingOrder&#x27;))?
-                    (get(this.getCurrentPageData(), &#x27;sortingOrder&#x27;)) : &#x27;desc&#x27;;
+                    const sortingField &#x3D; (get(this.getCurrentPageData(), &#x27;sortingField&#x27;)) ?
+                        (get(this.getCurrentPageData(), &#x27;sortingField&#x27;)) : &#x27;enrolledDate&#x27;;
+                    const sortingOrder &#x3D; (get(this.getCurrentPageData(), &#x27;sortingOrder&#x27;)) ?
+                        (get(this.getCurrentPageData(), &#x27;sortingOrder&#x27;)) : &#x27;desc&#x27;;
                     const enrolledSection &#x3D; {
                         name: this.getSectionName(get(this.activatedRoute, &#x27;snapshot.queryParams.selectedTab&#x27;)),
                         length: 0,
@@ -6062,8 +6215,8 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
                     const enrolledContentPredicate &#x3D; course &#x3D;&gt; {
                         const { primaryCategory &#x3D; null, contentType &#x3D; null } &#x3D; _.get(course, &#x27;content&#x27;) || {};
                         return pagePrimaryCategories.some(category &#x3D;&gt;
-                             (_.toLower(category) &#x3D;&#x3D;&#x3D; _.toLower(primaryCategory)) || (_.toLower(category) &#x3D;&#x3D;&#x3D; _.toLower(contentType))) ||
-                              (_.toLower(contentType) &#x3D;&#x3D;&#x3D; _.toLower(pageContentType));
+                            (_.toLower(category) &#x3D;&#x3D;&#x3D; _.toLower(primaryCategory)) || (_.toLower(category) &#x3D;&#x3D;&#x3D; _.toLower(contentType))) ||
+                            (_.toLower(contentType) &#x3D;&#x3D;&#x3D; _.toLower(pageContentType));
                     };
                     let filteredCourses &#x3D; _.filter(enrolledCourses || [], enrolledContentPredicate);
                     filteredCourses &#x3D; _.orderBy(filteredCourses, [sortingField], [sortingOrder]);
@@ -6136,7 +6289,7 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
 
     public getPageData(input) {
         const contentTypes &#x3D; _.sortBy(this.formData, &#x27;index&#x27;);
-        this.defaultTab &#x3D; _.find(contentTypes, [&#x27;default&#x27;, true]);
+        this.defaultTab &#x3D; _.find(contentTypes, [&#x27;default&#x27;, true]);
         return find(this.formData, data &#x3D;&gt; data.contentType &#x3D;&#x3D;&#x3D; input);
     }
 
@@ -6166,10 +6319,10 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
         //     filters &#x3D; _cacheFilters;
         // }
         const currentPageData &#x3D; this.getCurrentPageData();
-       // const _cacheTimeout &#x3D; _.get(currentPageData, &#x27;metaData.cacheTimeout&#x27;) || 86400000;
+        // const _cacheTimeout &#x3D; _.get(currentPageData, &#x27;metaData.cacheTimeout&#x27;) || 86400000;
         //this.cacheService.set(&#x27;searchFilters&#x27;, filters, { expires: Date.now() + _cacheTimeout });
         this.showLoader &#x3D; true;
-        this.selectedFilters &#x3D; pick(filters, _.get(currentPageData , &#x27;metaData.filters&#x27;));
+        this.selectedFilters &#x3D; pick(filters, _.get(currentPageData, &#x27;metaData.filters&#x27;));
         if (this.selectedFilters &amp;&amp; this.selectedFilters[&#x27;board&#x27;] &amp;&amp; this.selectedFilters[&#x27;board&#x27;][0] &#x3D;&#x3D;&#x3D; &#x27;CBSE/NCERT&#x27;) {
             this.selectedFilters[&#x27;board&#x27;][0] &#x3D; &#x27;CBSE&#x27;;
         }
@@ -6187,19 +6340,19 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
 
     setDesktopFilters(isDefaultFilters) {
         const userPreferences: any &#x3D; this.userService.anonymousUserPreference;
-            if (userPreferences) {
-                _.forEach([&#x27;board&#x27;, &#x27;medium&#x27;, &#x27;gradeLevel&#x27;, &#x27;subject&#x27;], (item) &#x3D;&gt; {
-                    if (!_.has(this.selectedFilters, item) || !_.get(this.selectedFilters[item], &#x27;length&#x27;)) {
-                         const itemData &#x3D; _.isArray(userPreferences.framework[item]) ?
-                            userPreferences.framework[item] : _.split(userPreferences.framework[item], &#x27;, &#x27;);
-                        if (isDefaultFilters) {
-                            this.defaultFilters[item] &#x3D; itemData;
-                        } else {
-                            this.selectedFilters[item] &#x3D; itemData;
-                        }
+        if (userPreferences) {
+            _.forEach([&#x27;board&#x27;, &#x27;medium&#x27;, &#x27;gradeLevel&#x27;, &#x27;subject&#x27;], (item) &#x3D;&gt; {
+                if (!_.has(this.selectedFilters, item) || !_.get(this.selectedFilters[item], &#x27;length&#x27;)) {
+                    const itemData &#x3D; _.isArray(userPreferences.framework[item]) ?
+                        userPreferences.framework[item] : _.split(userPreferences.framework[item], &#x27;, &#x27;);
+                    if (isDefaultFilters) {
+                        this.defaultFilters[item] &#x3D; itemData;
+                    } else {
+                        this.selectedFilters[item] &#x3D; itemData;
                     }
-                });
-            }
+                }
+            });
+        }
     }
 
     private fetchContents() {
@@ -6223,160 +6376,169 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
                         return this.getExplorePageSections();
                     } else {
                         const { search: { fields &#x3D; [], filters &#x3D; {}, facets &#x3D; [&#x27;subject&#x27;] } &#x3D; {}, metaData: { groupByKey &#x3D; &#x27;subject&#x27; } &#x3D; {} } &#x3D; currentPageData || {};
-                    let _reqFilters;
-                    // If home or explore page; take filters from user preferences
-                    if (_.get(currentPageData, &#x27;contentType&#x27;) &#x3D;&#x3D;&#x3D; &#x27;home&#x27;) {
-                        _reqFilters &#x3D; this.contentSearchService.mapCategories({ filters: {..._.get(this.userPreference, &#x27;framework&#x27;)} });
-                        delete _reqFilters[&#x27;id&#x27;];
-                        this.segmentationTagService.getUpdatedCommands().then(() &#x3D;&gt; {
-                            this.showorHideBanners();
+                        let _reqFilters;
+                        // If home or explore page; take filters from user preferences
+                        if (_.get(currentPageData, &#x27;contentType&#x27;) &#x3D;&#x3D;&#x3D; &#x27;home&#x27;) {
+                            _reqFilters &#x3D; this.contentSearchService.mapCategories({ filters: { ..._.get(this.userPreference, &#x27;framework&#x27;) } });
+                            delete _reqFilters[&#x27;id&#x27;];
+                            this.segmentationTagService.getUpdatedCommands().then(() &#x3D;&gt; {
+                                this.showorHideBanners();
+                            });
+                        } else {
+                            _reqFilters &#x3D; this.contentSearchService.mapCategories({ filters: { ...this.selectedFilters, ...filters } });
+                        }
+                        const request &#x3D; {
+                            filters: _reqFilters,
+                            fields,
+                            isCustodianOrg: this.custodianOrg,
+                            channelId: this.channelId,
+                            frameworkId: this.contentSearchService.frameworkId,
+                            ...(this.isUserLoggedIn() &amp;&amp; { limit: get(currentPageData, &#x27;limit&#x27;) }),
+                            ...(get(facets, &#x27;length&#x27;) &amp;&amp; { facets })
+                        };
+                        if (!this.isUserLoggedIn() &amp;&amp; get(this.selectedFilters, &#x27;channel&#x27;) &amp;&amp; get(this.selectedFilters, &#x27;channel.length&#x27;) &gt; 0) {
+                            request.channelId &#x3D; this.selectedFilters[&#x27;channel&#x27;];
+                        }
+                        const option &#x3D; this.searchService.getSearchRequest(request, get(filters, &#x27;primaryCategory&#x27;));
+                        const params &#x3D; _.get(this.activatedRoute, &#x27;snapshot.queryParams&#x27;);
+                        _.filter(Object.keys(params),filterValue &#x3D;&gt; { 
+                            if (((_.get(currentPageData, &#x27;metaData.filters&#x27;).indexOf(filterValue) !&#x3D;&#x3D; -1))) {
+                                if (params[filterValue].length &#x3D;&#x3D;&#x3D; 1 &amp;&amp; params[filterValue][0] &#x3D;&#x3D;&#x3D; &#x27;CBSE/NCERT&#x27;) {
+                                    params[filterValue][0] &#x3D; &quot;CBSE&quot;;
+                                }
+                                option.filters[filterValue] &#x3D; (typeof (params[filterValue]) &#x3D;&#x3D;&#x3D; &quot;string&quot;) ? params[filterValue].split(&#x27;,&#x27;) : params[filterValue];
+                            }
                         });
-                    } else {
-                        _reqFilters &#x3D; this.contentSearchService.mapCategories({ filters: { ...this.selectedFilters, ...filters } });
-                    }
-                    const request &#x3D; {
-                      filters: _reqFilters,
-                        fields,
-                        isCustodianOrg: this.custodianOrg,
-                        channelId: this.channelId,
-                        frameworkId: this.contentSearchService.frameworkId,
-                        ...(this.isUserLoggedIn() &amp;&amp; { limit: get(currentPageData, &#x27;limit&#x27;) }),
-                        ...(get(facets, &#x27;length&#x27;) &amp;&amp; { facets })
-                    };
-                    if (!this.isUserLoggedIn() &amp;&amp; get(this.selectedFilters, &#x27;channel&#x27;) &amp;&amp; get(this.selectedFilters, &#x27;channel.length&#x27;) &gt; 0) {
-                        request.channelId &#x3D; this.selectedFilters[&#x27;channel&#x27;];
-                    }
-                    const option &#x3D; this.searchService.getSearchRequest(request, get(filters, &#x27;primaryCategory&#x27;));
-                    if (this.userService.loggedIn) {
-                        option.filters[&#x27;visibility&#x27;] &#x3D; option.filters[&#x27;channel&#x27;] &#x3D; [];
-                    }
-                    return this.searchService.contentSearch(option)
-                        .pipe(
-                            map((response) &#x3D;&gt; {
-                                const { subject: selectedSubjects &#x3D; [] } &#x3D; (this.selectedFilters || {}) as { subject: [] };
-                                this._facets$.next(request.facets ?
-                                    this.utilService.processCourseFacetData(_.get(response, &#x27;result&#x27;), _.get(request, &#x27;facets&#x27;)) : {});
-                                this.searchResponse &#x3D; get(response, &#x27;result.content&#x27;);
-                                if (_.has(response, &#x27;result.QuestionSet&#x27;)) {
-                                  this.searchResponse &#x3D; _.merge(this.searchResponse, _.get(response, &#x27;result.QuestionSet&#x27;));
-                                }
-                                const filteredContents &#x3D; omit(groupBy(this.searchResponse, content &#x3D;&gt; {
-                                    return content[groupByKey] || content[&#x27;subject&#x27;] || &#x27;Others&#x27;;
-                                }), [&#x27;undefined&#x27;]);
-                                for (const [key, value] of Object.entries(filteredContents)) {
-                                    const isMultipleSubjects &#x3D; key &amp;&amp; key.split(&#x27;,&#x27;).length &gt; 1;
-                                    if (isMultipleSubjects) {
-                                        const subjects &#x3D; key &amp;&amp; key.split(&#x27;,&#x27;);
-                                        subjects.forEach((subject) &#x3D;&gt; {
-                                            if (filteredContents[subject]) {
-                                                filteredContents[subject] &#x3D; uniqBy(filteredContents[subject].concat(value), &#x27;identifier&#x27;);
-                                            } else {
-                                                filteredContents[subject] &#x3D; value;
-                                            }
-                                        });
-                                        delete filteredContents[key];
+                        if (this.userService.loggedIn) {
+                            option.filters[&#x27;visibility&#x27;] &#x3D; option.filters[&#x27;channel&#x27;] &#x3D; [];
+                        }
+                        return this.searchService.contentSearch(option)
+                            .pipe(
+                                map((response) &#x3D;&gt; {
+                                    const { subject: selectedSubjects &#x3D; [] } &#x3D; (this.selectedFilters || {}) as { subject: [] };
+                                    this._facets$.next(request.facets ?
+                                        this.utilService.processCourseFacetData(_.get(response, &#x27;result&#x27;), _.get(request, &#x27;facets&#x27;)) : {});
+                                    this.searchResponse &#x3D; get(response, &#x27;result.content&#x27;);
+                                    if (_.has(response, &#x27;result.QuestionSet&#x27;)) {
+                                        this.searchResponse &#x3D; _.merge(this.searchResponse, _.get(response, &#x27;result.QuestionSet&#x27;));
                                     }
-                                }
-                                const sections &#x3D; [];
-                                for (const section in filteredContents) {
-                                    if (section) {
-                                        if (selectedSubjects.length &amp;&amp; !(find(selectedSubjects, selectedSub &#x3D;&gt; toLower(selectedSub) &#x3D;&#x3D;&#x3D; toLower(section)))) {
-                                            continue;
+                                    const filteredContents &#x3D; omit(groupBy(this.searchResponse, content &#x3D;&gt; {
+                                        return content[groupByKey] || content[&#x27;subject&#x27;] || &#x27;Others&#x27;;
+                                    }), [&#x27;undefined&#x27;]);
+                                    for (const [key, value] of Object.entries(filteredContents)) {
+                                        const isMultipleSubjects &#x3D; key &amp;&amp; key.split(&#x27;,&#x27;).length &gt; 1;
+                                        if (isMultipleSubjects) {
+                                            const subjects &#x3D; key &amp;&amp; key.split(&#x27;,&#x27;);
+                                            subjects.forEach((subject) &#x3D;&gt; {
+                                                if (filteredContents[subject]) {
+                                                    filteredContents[subject] &#x3D; uniqBy(filteredContents[subject].concat(value), &#x27;identifier&#x27;);
+                                                } else {
+                                                    filteredContents[subject] &#x3D; value;
+                                                }
+                                            });
+                                            delete filteredContents[key];
                                         }
-                                        sections.push({
-                                            name: section,
-                                            contents: filteredContents[section]
-                                        });
                                     }
-                                }
-                                // Construct data array for sections
-                                if (_.get(currentPageData, &#x27;sections&#x27;) &amp;&amp; _.get(currentPageData, &#x27;sections&#x27;).length &gt; 0) {
-                                    const facetKeys &#x3D; _.map(currentPageData.sections, (section) &#x3D;&gt; section.facetKey);
-                                    facetKeys.push(currentPageData.sections.find(section &#x3D;&gt; section.merge).merge.destination);
-                                    const facets &#x3D; this.utilService.processCourseFacetData(_.get(response, &#x27;result&#x27;), facetKeys);
-                                    forEach(currentPageData.sections, facet &#x3D;&gt; {
-                                        if (_.get(facets, facet.facetKey)) {
-                                            const _facetArray &#x3D; [];
-                                            forEach(facets[facet.facetKey], _facet &#x3D;&gt; {
-                                                if (facet.filter) {
-                                                    for (const key in facet.filter) {
-                                                       if (facet.filter[key].includes(_facet[&#x27;name&#x27;])) {
+                                    const sections &#x3D; [];
+                                    for (const section in filteredContents) {
+                                        if (section) {
+                                            if (selectedSubjects.length &amp;&amp; !(find(selectedSubjects, selectedSub &#x3D;&gt; toLower(selectedSub) &#x3D;&#x3D;&#x3D; toLower(section)))) {
+                                                continue;
+                                            }
+                                            sections.push({
+                                                name: section,
+                                                contents: filteredContents[section]
+                                            });
+                                        }
+                                    }
+                                    // Construct data array for sections
+                                    if (_.get(currentPageData, &#x27;sections&#x27;) &amp;&amp; _.get(currentPageData, &#x27;sections&#x27;).length &gt; 0) {
+                                        const facetKeys &#x3D; _.map(currentPageData.sections, (section) &#x3D;&gt; section.facetKey);
+                                        facetKeys.push(currentPageData.sections.find(section &#x3D;&gt; section.merge).merge.destination);
+                                        const facets &#x3D; this.utilService.processCourseFacetData(_.get(response, &#x27;result&#x27;), facetKeys);
+                                        forEach(currentPageData.sections, facet &#x3D;&gt; {
+                                            if (_.get(facets, facet.facetKey)) {
+                                                const _facetArray &#x3D; [];
+                                                forEach(facets[facet.facetKey], _facet &#x3D;&gt; {
+                                                    if (facet.filter) {
+                                                        for (const key in facet.filter) {
+                                                            if (facet.filter[key].includes(_facet[&#x27;name&#x27;])) {
+                                                                _facetArray.push({
+                                                                    name: _facet[&#x27;name&#x27;] &#x3D;&#x3D;&#x3D; &#x27;tv lesson&#x27; ? &#x27;tv classes&#x27; : _facet[&#x27;name&#x27;],
+                                                                    value: _facet[&#x27;name&#x27;],
+                                                                    theme: this.utilService.getRandomColor(facet.theme.colorMapping),
+                                                                    type: _facet.type ? _facet.type : &#x27;&#x27;,
+                                                                    landing: facet.landing ? facet.landing : &#x27;&#x27;,
+                                                                    search: facet.search
+                                                                });
+                                                            }
+                                                        }
+                                                    } else {
                                                         _facetArray.push({
-                                                            name: _facet[&#x27;name&#x27;] &#x3D;&#x3D;&#x3D; &#x27;tv lesson&#x27; ? &#x27;tv classes&#x27; : _facet[&#x27;name&#x27;],
+                                                            name: _facet[&#x27;name&#x27;],
                                                             value: _facet[&#x27;name&#x27;],
                                                             theme: this.utilService.getRandomColor(facet.theme.colorMapping),
                                                             type: _facet.type ? _facet.type : &#x27;&#x27;,
                                                             landing: facet.landing ? facet.landing : &#x27;&#x27;,
                                                             search: facet.search
                                                         });
-                                                       }
                                                     }
-                                                } else {
-                                                    _facetArray.push({
-                                                        name: _facet[&#x27;name&#x27;],
-                                                        value: _facet[&#x27;name&#x27;],
-                                                        theme: this.utilService.getRandomColor(facet.theme.colorMapping),
-                                                        type: _facet.type ? _facet.type : &#x27;&#x27;,
-                                                        landing: facet.landing ? facet.landing : &#x27;&#x27;,
-                                                        search: facet.search
-                                                    });
-                                                }
-                                            });
-                                            this.facetSections.push({
-                                                name: facet.facetKey,
-                                                data: _.sortBy(_facetArray, [&#x27;name&#x27;]),
-                                                section: facet,
-                                                isEnabled: facet.isEnabled,
-                                                index: facet.index
-                                            });
-                                        }
-                                    });
-                                    this.facetSections &#x3D; _.sortBy(this.facetSections, [&#x27;index&#x27;]);
-                                    if (facetKeys.indexOf(&#x27;search&#x27;) &gt; -1) {
-                                        this.contentSections &#x3D; [];
-                                        const searchSections &#x3D; currentPageData.sections.filter(sec &#x3D;&gt; sec.facetKey &#x3D;&#x3D;&#x3D; &#x27;search&#x27;);
-                                        searchSections.forEach((item) &#x3D;&gt; {
-                                            this.contentSections.push(this.getContentSection(item, option));
+                                                });
+                                                this.facetSections.push({
+                                                    name: facet.facetKey,
+                                                    data: _.sortBy(_facetArray, [&#x27;name&#x27;]),
+                                                    section: facet,
+                                                    isEnabled: facet.isEnabled,
+                                                    index: facet.index
+                                                });
+                                            }
                                         });
+                                        this.facetSections &#x3D; _.sortBy(this.facetSections, [&#x27;index&#x27;]);
+                                        if (facetKeys.indexOf(&#x27;search&#x27;) &gt; -1) {
+                                            this.contentSections &#x3D; [];
+                                            const searchSections &#x3D; currentPageData.sections.filter(sec &#x3D;&gt; sec.facetKey &#x3D;&#x3D;&#x3D; &#x27;search&#x27;);
+                                            searchSections.forEach((item) &#x3D;&gt; {
+                                                this.contentSections.push(this.getContentSection(item, option));
+                                            });
 
+                                        }
                                     }
-                                }
-                                return _map(sections, (section) &#x3D;&gt; {
-                                    forEach(section.contents, contents &#x3D;&gt; {
-                                        contents.cardImg &#x3D; contents.appIcon || &#x27;assets/images/book.png&#x27;;
+                                    return _map(sections, (section) &#x3D;&gt; {
+                                        forEach(section.contents, contents &#x3D;&gt; {
+                                            contents.cardImg &#x3D; contents.appIcon || &#x27;assets/images/book.png&#x27;;
+                                        });
+                                        return section;
                                     });
-                                    return section;
-                                });
-                            }), tap(data &#x3D;&gt; {
-                                // this.userPreference &#x3D; this.setUserPreferences();
-                                this.showLoader &#x3D; false;
-                                const userProfileSubjects &#x3D; _.get(this.userService, &#x27;userProfile.framework.subject&#x27;) || [];
-                                const [userSubjects, notUserSubjects] &#x3D; partition(sortBy(data, [&#x27;name&#x27;]), value &#x3D;&gt; {
-                                    const { name &#x3D; null } &#x3D; value || {};
-                                    if (!name) { return false; }
-                                    return find(userProfileSubjects, subject &#x3D;&gt; toLower(subject) &#x3D;&#x3D;&#x3D; toLower(name));
-                                });
-                                this.apiContentList &#x3D; [...userSubjects, ...notUserSubjects];
-                                if (this.apiContentList !&#x3D;&#x3D; undefined &amp;&amp; !this.apiContentList.length) {
-                                    return;
-                                }
-                                this.pageSections &#x3D; this.apiContentList.slice(0, 4);
-                                this.addHoverData();
-                            }, err &#x3D;&gt; {
-                                this.showLoader &#x3D; false;
-                                this.apiContentList &#x3D; [];
-                                this.pageSections &#x3D; [];
-                                this.toasterService.error(this.resourceService.messages.fmsg.m0004);
-                            }));
+                                }), tap(data &#x3D;&gt; {
+                                    // this.userPreference &#x3D; this.setUserPreferences();
+                                    this.showLoader &#x3D; false;
+                                    const userProfileSubjects &#x3D; _.get(this.userService, &#x27;userProfile.framework.subject&#x27;) || [];
+                                    const [userSubjects, notUserSubjects] &#x3D; partition(sortBy(data, [&#x27;name&#x27;]), value &#x3D;&gt; {
+                                        const { name &#x3D; null } &#x3D; value || {};
+                                        if (!name) { return false; }
+                                        return find(userProfileSubjects, subject &#x3D;&gt; toLower(subject) &#x3D;&#x3D;&#x3D; toLower(name));
+                                    });
+                                    this.apiContentList &#x3D; [...userSubjects, ...notUserSubjects];
+                                    if (this.apiContentList !&#x3D;&#x3D; undefined &amp;&amp; !this.apiContentList.length) {
+                                        return;
+                                    }
+                                    this.pageSections &#x3D; this.apiContentList.slice(0, 4);
+                                    this.addHoverData();
+                                }, err &#x3D;&gt; {
+                                    this.showLoader &#x3D; false;
+                                    this.apiContentList &#x3D; [];
+                                    this.pageSections &#x3D; [];
+                                    this.toasterService.error(this.resourceService.messages.fmsg.m0004);
+                                }));
                     }
                 })
             );
     }
 
     getFormConfigs() {
-            if (this.selectedTab &#x3D;&#x3D;&#x3D; &#x27;home&#x27;) {
-                if (!this.userType) {
-                    if (this.isUserLoggedIn()) {
+        if (this.selectedTab &#x3D;&#x3D;&#x3D; &#x27;home&#x27;) {
+            if (!this.userType) {
+                if (this.isUserLoggedIn()) {
                     this.userService.userData$.subscribe((profileData: IUserData) &#x3D;&gt; {
                         if (profileData
                             &amp;&amp; profileData.userProfile
@@ -6406,7 +6568,7 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
                             &quot;iconBgColor&quot;: &quot;rgba(255,255,255,1)&quot;,
                             &quot;pillBgColor&quot;: &quot;rgba(255,255,255,1)&quot;
                         }
-                        this.Categorytheme&#x3D;{
+                        this.Categorytheme &#x3D; {
                             &quot;iconBgColor&quot;: &quot;rgba(255,0,0,0)&quot;,
                             &quot;pillBgColor&quot;: &quot;rgba(255,0,0,0)&quot;
                         }
@@ -6415,7 +6577,7 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
                         this.showTargetedCategory &#x3D; false
                     }
                 });
-             }
+        }
     }
 
     private getContentSection(section, searchOptions) {
@@ -6518,13 +6680,13 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
             noContentfoundTitle,
             noContentfoundSubTitle,
             noContentfoundButtonText,
-            desktop: { yourSearch &#x3D; &#x27;&#x27;, notMatchContent &#x3D; &#x27;&#x27; } &#x3D; {} 
+            desktop: { yourSearch &#x3D; &#x27;&#x27;, notMatchContent &#x3D; &#x27;&#x27; } &#x3D; {}
         } &#x3D; get(this.resourceService, &#x27;frmelmnts.lbl&#x27;);
-            title &#x3D; this.utilService.transposeTerms(get(this.resourceService, &#x27;frmelmnts.lbl.noBookfoundTitle&#x27;), &#x27;frmelmnts.lbl.noBookfoundTitle&#x27;, this.resourceService.selectedLang);
-            subTitle &#x3D; this.utilService.transposeTerms(get(this.resourceService, &#x27;frmelmnts.lbl.noBookfoundTitle&#x27;), &#x27;frmelmnts.lbl.noBookfoundTitle&#x27;, this.resourceService.selectedLang);
-            buttonText &#x3D; this.utilService.transposeTerms(get(this.resourceService, &#x27;frmelmnts.lbl.noBookfoundTitle&#x27;), &#x27;frmelmnts.lbl.noBookfoundTitle&#x27;, this.resourceService.selectedLang);
-            noContentfoundSubTitle &#x3D; this.utilService.transposeTerms(get(this.resourceService, &#x27;frmelmnts.lbl.noContentfoundSubTitle&#x27;), &#x27;frmelmnts.lbl.noContentfoundSubTitle&#x27;, this.resourceService.selectedLang);
-            noContentfoundTitle &#x3D; this.utilService.transposeTerms(get(this.resourceService, &#x27;frmelmnts.lbl.noContentfoundTitle&#x27;), &#x27;frmelmnts.lbl.noContentfoundTitle&#x27;, this.resourceService.selectedLang);
+        title &#x3D; this.utilService.transposeTerms(get(this.resourceService, &#x27;frmelmnts.lbl.noBookfoundTitle&#x27;), &#x27;frmelmnts.lbl.noBookfoundTitle&#x27;, this.resourceService.selectedLang);
+        subTitle &#x3D; this.utilService.transposeTerms(get(this.resourceService, &#x27;frmelmnts.lbl.noBookfoundTitle&#x27;), &#x27;frmelmnts.lbl.noBookfoundTitle&#x27;, this.resourceService.selectedLang);
+        buttonText &#x3D; this.utilService.transposeTerms(get(this.resourceService, &#x27;frmelmnts.lbl.noBookfoundTitle&#x27;), &#x27;frmelmnts.lbl.noBookfoundTitle&#x27;, this.resourceService.selectedLang);
+        noContentfoundSubTitle &#x3D; this.utilService.transposeTerms(get(this.resourceService, &#x27;frmelmnts.lbl.noContentfoundSubTitle&#x27;), &#x27;frmelmnts.lbl.noContentfoundSubTitle&#x27;, this.resourceService.selectedLang);
+        noContentfoundTitle &#x3D; this.utilService.transposeTerms(get(this.resourceService, &#x27;frmelmnts.lbl.noContentfoundTitle&#x27;), &#x27;frmelmnts.lbl.noContentfoundTitle&#x27;, this.resourceService.selectedLang);
 
         if (key) {
             const title_part1 &#x3D; replace(yourSearch, &#x27;{key}&#x27;, key);
@@ -6738,7 +6900,7 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
                     enabled: &#x27;Yes&#x27;
                 };
                 return this.playerService.playContent(metaData);
-              }
+            }
 
             if (onGoingBatchCount &#x3D;&#x3D;&#x3D; 1) { // play course if only one open batch is present
                 metaData.batchId &#x3D; _.get(openBatch, &#x27;ongoing.length&#x27;) ? _.get(openBatch, &#x27;ongoing[0].batchId&#x27;) : _.get(inviteOnlyBatch, &#x27;ongoing[0].batchId&#x27;);
@@ -6799,32 +6961,32 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
         }
         this.cacheService.set(&#x27;pageSection&#x27;, event, { maxAge: this.browserCacheTtlService.browserCacheTtl });
         const queryParams &#x3D; contentSection ? { ...searchQueryParams, ...{ selectedTab: this.queryParams.selectedTab } } :
-        { ...searchQueryParams, ...this.queryParams };
+            { ...searchQueryParams, ...this.queryParams };
         const sectionUrl &#x3D; _.get(this.router, &#x27;url.split&#x27;) &amp;&amp; this.router.url.split(&#x27;?&#x27;)[0] + &#x27;/view-all/&#x27; + event.name.replace(/\s/g, &#x27;-&#x27;);
-        this.router.navigate([sectionUrl, 1], { queryParams: queryParams, state: { currentPageData: this.getCurrentPageData()} });
+        this.router.navigate([sectionUrl, 1], { queryParams: queryParams, state: { currentPageData: this.getCurrentPageData() } });
     }
 
-  private getSectionName(selectedTab) {
-    let sectionName;
-    switch (_.toLower(selectedTab)) {
-      case &#x27;textbook&#x27;: {
-        sectionName &#x3D; &#x27;tbk.trk.frmelmnts.lbl.mytrainings&#x27;;
-        break;
-      }
-      case &#x27;course&#x27;: {
-        sectionName &#x3D; &#x27;crs.trk.frmelmnts.lbl.mytrainings&#x27;;
-        break;
-      }
-      case &#x27;tvprogram&#x27;: {
-        sectionName &#x3D; &#x27;tvc.trk.frmelmnts.lbl.mytrainings&#x27;;
-        break;
-      }
-      default: {
-        sectionName &#x3D; &#x27;frmelmnts.lbl.myEnrolledCollections&#x27;;
-      }
+    private getSectionName(selectedTab) {
+        let sectionName;
+        switch (_.toLower(selectedTab)) {
+            case &#x27;textbook&#x27;: {
+                sectionName &#x3D; &#x27;tbk.trk.frmelmnts.lbl.mytrainings&#x27;;
+                break;
+            }
+            case &#x27;course&#x27;: {
+                sectionName &#x3D; &#x27;crs.trk.frmelmnts.lbl.mytrainings&#x27;;
+                break;
+            }
+            case &#x27;tvprogram&#x27;: {
+                sectionName &#x3D; &#x27;tvc.trk.frmelmnts.lbl.mytrainings&#x27;;
+                break;
+            }
+            default: {
+                sectionName &#x3D; &#x27;frmelmnts.lbl.myEnrolledCollections&#x27;;
+            }
+        }
+        return sectionName;
     }
-    return sectionName;
-  }
 
     sectionViewAll() {
         const searchQueryParams: any &#x3D; {};
@@ -6916,30 +7078,34 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
             return;
         }
         let pillData &#x3D; event.data[0].value;
-        if(_.isEmpty(pillData)){
+        if (_.isEmpty(pillData)) {
             return;
         }
-        if(this.isUserLoggedIn()) {
-            if(pillData.name &#x3D;&#x3D;&#x3D; &#x27;observation&#x27;){
+        if (this.isUserLoggedIn()) {
+            if (pillData.name &#x3D;&#x3D;&#x3D; &#x27;observation&#x27;) {
                 this.router.navigate([&#x27;observation&#x27;]);
             }
+        } else {
+            window.location.href &#x3D; pillData.name &#x3D;&#x3D;&#x3D; &#x27;observation&#x27; ? &#x27;/observation&#x27; : &#x27;/resources&#x27;
         }
     }
 
 
-    getSectionTitle (title) {
-        return get(this.resourceService, &#x27;frmelmnts.lbl.browseBy&#x27;) + &#x27; &#x27; + get(this.resourceService, title);
+    getSectionTitle(title) {
+        let _sectionTitle &#x3D; this.utilService.transposeTerms(get(this.resourceService, title), get(this.resourceService, title) || &#x27;&#x27;, this.resourceService.selectedLang);
+        return get(this.resourceService, &#x27;frmelmnts.lbl.browseBy&#x27;) + &#x27; &#x27; + _sectionTitle;
+
     }
 
-    getSectionCategoryTitle (title) {
+    getSectionCategoryTitle(title) {
         return get(this.resourceService, &#x27;frmelmnts.lbl.browseOther&#x27;) + &#x27; &#x27; + get(this.resourceService, title);
     }
 
-    getBannerTitle (title) {
+    getBannerTitle(title) {
         return get(this.resourceService, title);
     }
 
-    getSelectedTab () {
+    getSelectedTab() {
         return get(this.activatedRoute, &#x27;snapshot.queryParams.selectedTab&#x27;);
     }
 
@@ -6975,7 +7141,7 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
         // this.fetchContents$.next(this._currentPageData);
     }
 
-    getExplorePageSections () {
+    getExplorePageSections() {
         return of(forEach(this.getCurrentPageData().sections, facet &#x3D;&gt; {
             const _facetArray &#x3D; [];
             forEach(facet.data, _facet &#x3D;&gt; {
@@ -6996,7 +7162,7 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
 
     showorHideBanners() {
         this.bannerSegment &#x3D; [];
-         this.segmentationTagService.exeCommands.find((cmd) &#x3D;&gt; {
+        this.segmentationTagService.exeCommands.find((cmd) &#x3D;&gt; {
             if (cmd.controlFunction &#x3D;&#x3D;&#x3D; &#x27;BANNER_CONFIG&#x27;) {
                 const banners &#x3D; _.get(cmd, &#x27;controlFunctionPayload.values&#x27;);
                 forEach(banners, banner &#x3D;&gt; {
@@ -7020,9 +7186,9 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
         this.bannerList.forEach((banner) &#x3D;&gt; {
             if (banner.type &#x3D;&#x3D;&#x3D; &#x27;secondary&#x27;) {
                 this.secondaryBanner.push(banner);
-              } else {
+            } else {
                 this.primaryBanner.push(banner);
-              }
+            }
         });
     }
 
@@ -7079,18 +7245,18 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
     }
     handleBannerClick(data) {
         const telemetryData &#x3D; {
-          context: {
-            env:  this.activatedRoute.snapshot.data.telemetry.env,
-            cdata: [{
-              id: data.code,
-              type: (data.type &amp;&amp; data.type &#x3D;&#x3D;&#x3D; &#x27;secondary&#x27;) ? &#x27;AdditionalBanner&#x27; : &#x27;Banner&#x27;
-            }]
-          },
-          edata: {
-            id: data.code,
-            type: &#x27;click&#x27;,
-            pageid: this.activatedRoute.snapshot.data.telemetry.pageid
-          }
+            context: {
+                env: this.activatedRoute.snapshot.data.telemetry.env,
+                cdata: [{
+                    id: data.code,
+                    type: (data.type &amp;&amp; data.type &#x3D;&#x3D;&#x3D; &#x27;secondary&#x27;) ? &#x27;AdditionalBanner&#x27; : &#x27;Banner&#x27;
+                }]
+            },
+            edata: {
+                id: data.code,
+                type: &#x27;click&#x27;,
+                pageid: this.activatedRoute.snapshot.data.telemetry.pageid
+            }
         };
         this.telemetryService.interact(telemetryData);
     }
@@ -7108,8 +7274,21 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
             }
         }
     }
-}
-</code></pre>
+    /**
+     * @description - Method to get the filterconfig from current page metadata for search filter component and set the value
+     */
+    private setFilterConfig(currentPage) {
+        this.filterResponseData &#x3D; {};
+        const currentPageData &#x3D; currentPage ? currentPage : this.getCurrentPageData();
+        if (currentPageData) {
+            const filterResponseData &#x3D; _.get(currentPageData, &#x27;metaData.searchFilterConfig&#x27;);
+            this.filterResponseData &#x3D; filterResponseData;
+            this.refreshFilter &#x3D; false;
+            this.cdr.detectChanges();
+            this.refreshFilter &#x3D; true;
+        }
+    }
+}</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
@@ -7119,11 +7298,11 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
     [appTelemetryImpression]&#x3D;&quot;telemetryImpression&quot;&gt;
     &lt;!-- Filter for web version --&gt;
     &lt;!-- &#x60;isFilterEnabled&#x60; reference from current page data --&gt;
-    &lt;div *ngIf&#x3D;&quot;!isDesktopApp &amp;&amp; isFilterEnabled&quot; [ngClass]&#x3D;&quot;FIRST_PANEL_LAYOUT&quot;&gt;
+    &lt;div *ngIf&#x3D;&quot;!isDesktopApp &amp;&amp; isFilterEnabled &amp;&amp; refreshFilter &quot; [ngClass]&#x3D;&quot;FIRST_PANEL_LAYOUT&quot;&gt;
       &lt;app-search-filter [facets$]&#x3D;&quot;facets$&quot; [layoutConfiguration]&#x3D;&quot;layoutConfiguration&quot; [isOpen]&#x3D;&#x27;true&#x27;
         *ngIf&#x3D;&quot;initFilter&quot; (filterChange)&#x3D;&quot;getFilters($event)&quot; [defaultTab]&#x3D;&quot;defaultTab&quot;
         [pageData]&#x3D;&quot;getCurrentPageData()&quot; [pageId]&#x3D;&quot;isUserLoggedIn() ? &#x27;resource-page&#x27; : &#x27;explore-page&#x27;&quot;
-        [defaultFilters]&#x3D;&quot;defaultFilters&quot;&gt;
+        [defaultFilters]&#x3D;&quot;defaultFilters&quot; [filterResponseData]&#x3D;&quot;filterResponseData&quot;&gt;
       &lt;/app-search-filter&gt;
     &lt;/div&gt;
     &lt;!-- Filter for desktop version --&gt;
@@ -7138,7 +7317,7 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
       &lt;div class&#x3D;&quot;sb-desktop-filter-section&quot; *ngIf&#x3D;&quot;isFilterEnabled&quot;&gt;
         &lt;app-search-filter [facets$]&#x3D;&quot;facets$&quot; [layoutConfiguration]&#x3D;&quot;layoutConfiguration&quot; [isOpen]&#x3D;&#x27;true&#x27;
           *ngIf&#x3D;&quot;initFilter&quot; (filterChange)&#x3D;&quot;getFilters($event)&quot; [pageData]&#x3D;&quot;getCurrentPageData()&quot;
-          [pageId]&#x3D;&quot;isUserLoggedIn() ? &#x27;resource-page&#x27; : &#x27;explore-page&#x27;&quot; [defaultFilters]&#x3D;&quot;defaultFilters&quot;&gt;
+          [pageId]&#x3D;&quot;isUserLoggedIn() ? &#x27;resource-page&#x27; : &#x27;explore-page&#x27;&quot; [defaultFilters]&#x3D;&quot;defaultFilters&quot; [filterResponseData]&#x3D;&quot;filterResponseData&quot;&gt;
         &lt;/app-search-filter&gt;
       &lt;/div&gt;
     &lt;/div&gt;
@@ -7188,9 +7367,9 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
                   &lt;/span&gt;
 
                   &lt;span class&#x3D;&quot;mr-24&quot;&gt;
-                    &lt;span *ngIf&#x3D;&quot;userPreference?.framework?.medium?.length&quot;&gt;{{resourceService?.frmelmnts?.lbl?.medium}}:
+                    &lt;span *ngIf&#x3D;&quot;userPreference?.framework?.medium?.length&quot;&gt;{{resourceService?.frmelmnts?.lbl?.medium | transposeTerms: &#x27;frmelmnts.lbl.medium&#x27;: resourceService?.selectedLang}}:
                     &lt;/span&gt;
-                    &lt;span class&#x3D;&quot;font-weight-bold&quot;&gt;{{userPreference?.framework?.medium[0]}}&lt;/span&gt;
+                    &lt;span  *ngIf&#x3D;&quot;userPreference?.framework?.medium?.length&quot; class&#x3D;&quot;font-weight-bold&quot;&gt;{{userPreference?.framework?.medium[0]}}&lt;/span&gt;
                     &lt;span class&#x3D;&quot;font-weight-bold&quot; *ngIf&#x3D;&quot;userPreference?.framework?.medium?.length &gt; 1&quot;&gt;
                       ... + {{userPreference?.framework?.medium?.length-1}}
                     &lt;/span&gt;
@@ -7198,9 +7377,9 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
 
                   &lt;span class&#x3D;&quot;mr-24&quot;&gt;
                     &lt;span
-                      *ngIf&#x3D;&quot;userPreference?.framework?.gradeLevel?.length&quot;&gt;{{resourceService?.frmelmnts?.lbl?.classes}}:
+                      *ngIf&#x3D;&quot;userPreference?.framework?.gradeLevel?.length&quot;&gt;{{resourceService?.frmelmnts?.lbl?.classes | transposeTerms: &#x27;frmelmnts.lbl.classes&#x27;: resourceService?.selectedLang}}:
                     &lt;/span&gt;
-                    &lt;span class&#x3D;&quot;font-weight-bold&quot;&gt;{{userPreference?.framework?.gradeLevel[0]}}&lt;/span&gt;
+                    &lt;span *ngIf&#x3D;&quot;userPreference?.framework?.gradeLevel?.length&quot; class&#x3D;&quot;font-weight-bold&quot;&gt;{{userPreference?.framework?.gradeLevel[0]}}&lt;/span&gt;
                     &lt;span class&#x3D;&quot;font-weight-bold&quot; *ngIf&#x3D;&quot;userPreference?.framework?.gradeLevel?.length &gt; 1&quot;&gt;
                       ... + {{userPreference?.framework?.gradeLevel?.length-1}}
                     &lt;/span&gt;
@@ -7301,7 +7480,7 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
             &lt;sb-library-cards-grid *ngIf&#x3D;&quot;!isDesktopApp&quot; [layoutConfig]&#x3D;&quot;layoutConfiguration&quot;
               [type]&#x3D;&quot;&#x27;infinite_card_grid&#x27;&quot; [title]&#x3D;&quot;section.name&quot;
               [contentList]&#x3D;&quot;section.contents | sortBy:&#x27;name&#x27;:&#x27;asc&#x27;&quot; [maxCardCount]&#x3D;&quot;3&quot;
-              (viewMoreClick)&#x3D;&quot;viewAll(section)&quot; (cardClick)&#x3D;&quot;playContent($event, section.name)&quot;&gt;
+              (viewMoreClick)&#x3D;&quot;viewAll(section)&quot; (cardClick)&#x3D;&quot;playContent($event, section.name)&quot; (enterKey)&#x3D;&quot;playContent($event, section.name)&quot;&gt;
             &lt;/sb-library-cards-grid&gt;
             &lt;div class&#x3D;&quot;sb-desktop-library-card relative9&quot;&gt;
               &lt;sb-library-cards-grid *ngIf&#x3D;&quot;isDesktopApp&quot; [layoutConfig]&#x3D;&quot;layoutConfiguration&quot;
@@ -7381,9 +7560,7 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
                 <p class="comment">
                     <code>./explore-page.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss">@import &quot;variables&quot;;
-@import &quot;mixins/mixins&quot;;
-
+                <pre class="line-numbers"><code class="language-scss">@use &quot;~@project-sunbird/sb-styles/assets/mixins/mixins&quot; as *;
 .course-card-width {
   width: calculateRem(280px) !important;
 }
@@ -7393,13 +7570,12 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
   align-items: center;
   justify-content: space-between;
   background-color:var(--sb-profile-bg-c-4);
-  color: var(--black);
+  color: var(--sb-section-preference);
   padding: calculateRem(32px);
   border-radius: calculateRem(24px);
   position: relative;
   overflow: hidden;
   margin-top:calculateRem(32px);
-
   @include respond-below(sm) {
     flex-wrap: wrap;
   }
@@ -7426,18 +7602,11 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
         font-weight: bold;
         margin-right: calculateRem(32px);
         html[dir&#x3D;&quot;rtl&quot;] &amp; {
-          margin-left: calculateRem(32px); 
+          margin-left: calculateRem(32px);
         }
         @include respond-below(sm){
          margin-right:0px;
         }
-      }
-    }
-    .change-preference {
-      position: relative;
-      z-index: 1;
-      @include respond-below(sm) {
-        padding-top: calculateRem(8px);
       }
     }
     svg {
@@ -7454,18 +7623,9 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
       display: block !important;
     }
 }
-.section-hr {
-  border: calculateRem(0.5px) solid var(--rc-dad9cb);
-}
-.no-background {
-  background: none;
-}
-
 .home-container {
   padding:0;
-  // border-radius:2.5rem;
 }
-
 :host {
   .banner-image {
     overflow: hidden;
@@ -7486,7 +7646,7 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
     }
     .slick-dots li button:before {
       opacity: 1;
-      background: var(--gray-200);
+      background: var(--slick-dots-color);
       content: &quot;&quot;;
       border-radius: 50%;
       width: calculateRem(12px);
@@ -7496,29 +7656,18 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
       transform: translate(-50%, -50%);
     }
     .slick-dots li.slick-active button:before {
-      background: var(--gray-800);
+      background: var(--slick-dots-active-color);
     }
     .slick-track {
       margin: auto;
     }
   }
-  /*.banner-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(233deg, rgba(0,0,0,0) 0%, #191919 100%);
-  }*/
   .explore-text {
     color: var(--primary-color);
     font-size: calculateRem(20px);
     font-weight: bold;
     padding: calculateRem(24px) calculateRem(32px);
     z-index: 1;
-  }
-  .section-hr {
-    border: calculateRem(0.5px) solid var(--rc-dad9cb);
   }
 }</code></pre>
     </div>
@@ -7548,8 +7697,8 @@ export class ExplorePageComponent implements OnInit, OnDestroy, AfterViewInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div  [ngClass]="[layoutConfiguration ? \'sbt-fluid-content-bg\':\'\', (getSelectedTab() === \'home\' || getSelectedTab() === \'explore\') ? \'\': \'\']">  <div class="sb-g" [ngClass]="layoutConfiguration ? \'sb-g sbt-container sbt-page-content\' : \'sb-g\'"    [appTelemetryImpression]="telemetryImpression">    <!-- Filter for web version -->    <!-- `isFilterEnabled` reference from current page data -->    <div *ngIf="!isDesktopApp && isFilterEnabled" [ngClass]="FIRST_PANEL_LAYOUT">      <app-search-filter [facets$]="facets$" [layoutConfiguration]="layoutConfiguration" [isOpen]=\'true\'        *ngIf="initFilter" (filterChange)="getFilters($event)" [defaultTab]="defaultTab"        [pageData]="getCurrentPageData()" [pageId]="isUserLoggedIn() ? \'resource-page\' : \'explore-page\'"        [defaultFilters]="defaultFilters">      </app-search-filter>    </div>    <!-- Filter for desktop version -->    <div *ngIf="isDesktopApp" [ngClass]="FIRST_PANEL_LAYOUT">      <div *ngIf="layoutConfiguration">        <div>          <app-network-status></app-network-status>          <app-load-offline-content></app-load-offline-content>          <app-system-warning></app-system-warning>        </div>      </div>      <div class="sb-desktop-filter-section" *ngIf="isFilterEnabled">        <app-search-filter [facets$]="facets$" [layoutConfiguration]="layoutConfiguration" [isOpen]=\'true\'          *ngIf="initFilter" (filterChange)="getFilters($event)" [pageData]="getCurrentPageData()"          [pageId]="isUserLoggedIn() ? \'resource-page\' : \'explore-page\'" [defaultFilters]="defaultFilters">        </app-search-filter>      </div>    </div>    <div [ngClass]="SECOND_PANEL_LAYOUT" *ngIf="subscription$ | async">      <div [appTelemetryImpression]="telemetryImpression"        [ngClass]="[layoutConfiguration ? \'sbt-page-content-area relative9\' : \'ui container mt-24\', (getSelectedTab() === \'home\' || getSelectedTab() === \'explore\') ? \'home-container\': \'\']">        <div *ngIf="false" [ngClass]="{\'relative9\': isUserLoggedIn()}">          <div class="sb-bg-color-white py-16 mb-24">            <h4 class="sb-categories-title text-left">{{resourceService?.frmelmnts?.lbl?.courses}}</h4>            <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">              <div ngxSlickItem *ngFor="let content of cardData;let index=index" class="mr-16 course-card-width">                <sb-course-curiculum-card ngClass="{\'sb--card--seperator\': !isUserLoggedIn()}" [index]="index"                  [cardData]="content" (cardClick)="navigateToCourses($event)"></sb-course-curiculum-card>              </div>            </ngx-slick>          </div>        </div>        <div class="sb-library-cards relative9">          <div *ngIf="!layoutConfiguration && (getSelectedTab() !== \'home\' && getSelectedTab() !== \'explore\')">            <h4 class="sb-categories-title text-left mt-16" *ngIf="apiContentList.length">              {{resourceService?.frmelmnts?.lbl?.textbooks}}</h4>          </div>          <div class="twelve wide column relative9"            *ngIf="enrolledSection?.contents?.length && isUserLoggedIn() && !_currentPageData?.sections">            <app-page-section [hideProgress]="true" (visits)="prepareVisits($event)" [section]="enrolledSection"              (playEvent)="playEnrolledContent($event, \'My courses\')" (viewAll)="viewAll($event)"              [layoutConfiguration]="layoutConfiguration"></app-page-section>          </div>          <!-- Template for displaying sections based on form configuration -->          <div *ngIf="_currentPageData?.sections && _currentPageData?.isEnabled" aria-label="User Preferences">            <div *ngIf="getSelectedTab() === \'home\'" (click)="showEdit = !showEdit" class="sb-section-preference"              tabindex="0">              <div class="preference">                <p class="header font-weight-bold mb-8">{{resourceService?.frmelmnts?.lbl?.hi}} {{userProfile?.firstName                  | titlecase}} {{userProfile?.lastName |                  titlecase}}</p>                <p>{{resourceService?.frmelmnts?.lbl?.yourPreferences}}                  <span class="preference-icon ml-4"><img src="assets/images/icon-info.svg"></span>                </p>                <p>                  <span class="mr-24">                    <span *ngIf="userPreference?.framework?.board?.length">{{resourceService?.frmelmnts?.lbl?.boards | transposeTerms: \'frmelmnts.lbl.boards\': resourceService?.selectedLang}}:                    </span>                    <span *ngIf="userPreference?.framework?.board?.length"                      class="font-weight-bold">{{convertToString(userPreference?.framework?.board) | interpolate: \'CBSE\': \'CBSE/NCERT\'}}</span>                  </span>                  <span class="mr-24">                    <span *ngIf="userPreference?.framework?.medium?.length">{{resourceService?.frmelmnts?.lbl?.medium}}:                    </span>                    <span class="font-weight-bold">{{userPreference?.framework?.medium[0]}}</span>                    <span class="font-weight-bold" *ngIf="userPreference?.framework?.medium?.length > 1">                      ... + {{userPreference?.framework?.medium?.length-1}}                    </span>                  </span>                  <span class="mr-24">                    <span                      *ngIf="userPreference?.framework?.gradeLevel?.length">{{resourceService?.frmelmnts?.lbl?.classes}}:                    </span>                    <span class="font-weight-bold">{{userPreference?.framework?.gradeLevel[0]}}</span>                    <span class="font-weight-bold" *ngIf="userPreference?.framework?.gradeLevel?.length > 1">                      ... + {{userPreference?.framework?.gradeLevel?.length-1}}                    </span>                  </span>                </p>              </div>              <button                class="sb-btn sb-btn-primary sb-btn-normal sb-btn-border">{{resourceService?.frmelmnts?.lbl?.changePreferences}}</button>            </div>          </div>          <div *ngFor="let section of facetSections">            <div              *ngIf="getSelectedTab() === \'home\' && section?.section?.facetKey === \'ContinueLearning\' && enrolledSection?.contents?.length && isUserLoggedIn()"              class="sb-library-cards relative9">              <div class="twelve wide column relative9">                <app-page-section [hideProgress]="true" (visits)="prepareVisits($event)" [section]="enrolledSection"                  (playEvent)="playEnrolledContent($event, \'My courses\')" (viewAll)="viewAll($event)"                  [layoutConfiguration]="layoutConfiguration">                </app-page-section>              </div>              <hr class="section-hr my-32" />            </div>            <div              *ngIf="section?.section?.isEnabled && section?.section?.facetKey === \'banner\' && bannerList && bannerList.length > 0">              <div class="mt-16 font-weight-bold flarge pl-16 text-left">{{getBannerTitle(section?.section?.title)}}              </div>              <ngx-slick *ngIf="displayBanner " class="carousel banner-carousel relative9 mt-24"                #slickModal="slick-modal" [config]="bannerSlideConfig">                <div ngxSlickItem *ngFor="let banner of primaryBanner;" class="mr-16">                  <!-- <div class="sb--card sb--card--theme2 banner-image" role="link" tabindex="0" [ngStyle]="{\'background-image\': \'url(\' + banner?.ui?.background+ \')\'}" (click)="navigateToSpecificLocation(banner); handleBannerClick(banner)">                                    <div class="banner-overlay"></div>                                    <div *ngIf="banner?.ui?.text !== \'\'" class="explore-text">{{banner?.ui?.text}}</div>                                  </div> -->                  <img [src]="banner?.ui?.background" class="w-100 banner-image" alt="{{banner?.ui?.text}}"                    title="{{banner?.ui?.text}}" role="link" tabindex="0"                    (click)="navigateToSpecificLocation(banner); handleBannerClick(banner)">                </div>              </ngx-slick>              <ngx-slick class="carousel banner-carousel relative9 mt-24"                *ngIf="displayBanner && secondaryBanner.length>0" #slickModal="slick-modal"                [config]="secondaryBannerSlideConfig">                <div ngxSlickItem *ngFor="let banner of secondaryBanner" class="banner-image">                  <sb-banner-card-hlist [bannerList]="banner" [secondaryBanner]="true" [platform]="\'portal\'"                    (cardClick)="navigateToSpecificLocation(banner); handleBannerClick(banner)"></sb-banner-card-hlist>                </div>              </ngx-slick>              <hr                *ngIf="section?.section?.isEnabled && section?.section?.facetKey === \'banner\' && bannerList && bannerList.length > 0"                class="section-hr my-32" />              </div>              <sb-pills-grid *ngIf="section?.section?.isEnabled" [title]="getSectionTitle(section?.section?.title)"                [minDisplayCount]="section?.section?.theme?.limit || 4"                [viewMoreText]="resourceService?.frmelmnts?.lbl?.viewmore"                [viewLessText]="resourceService?.frmelmnts?.lbl?.viewless" [pillSize]="\'medium\'" [platform]="\'portal\'"                [pillBorder]="\'semi_round\'" [pillsMultiRow]="\'auto_responsive\'" [pillTextElipsis]="\'two_line\'"                (select)="handlePillSelect($event, section.name)">                <sb-pill-item *ngFor="let pillData of section.data" [name]="pillData?.name | titlecase"                  [icon]="utilService.getSectionPillIcon(section?.section?.theme?.icons, pillData?.value)"                  [value]="pillData" [theme]="pillData?.theme"></sb-pill-item>              </sb-pills-grid>              <hr *ngIf="section?.section?.isEnabled && section?.data?.length" class="section-hr my-32" />                      </div>          <div *ngIf="showTargetedCategory && targetedCategory.length">            <sb-pills-grid [title]="getSectionCategoryTitle(\'frmelmnts.lbl.targetCategory\')" [minDisplayCount]="4"              [pillSize]="\'medium\'" [platform]="\'portal\'" [pillBorder]="\'semi_round\'"              [pillsMultiRow]="\'auto_responsive\'" [pillTextElipsis]="\'two_line\'"              (select)="handleTargetedpillSelected($event)">              <sb-pill-item *ngFor="let pillData of targetedCategory" [name]="(pillData?.icon?.web ? pillData?.name : \'\') | titlecase"              [icon]="pillData?.icon?.web" [value]="(pillData?.icon?.web ? pillData : \'\')" [theme]="(pillData?.icon?.web ? targetedCategorytheme : Categorytheme)"></sb-pill-item>            </sb-pills-grid>            <hr class="section-hr my-32" />          </div>          <div *ngIf="getSelectedTab() === \'home\'">            <div *ngFor="let section of contentSections" class="pl-16">              <sb-content-section *ngIf="section?.isEnabled" (cardClick)="playContent($event, section?.title)"                [sortBy]="section?.apiConfig?.sortBy" [searchRequest]="section?.searchRequest" [title]="section?.title"                [layoutConfig]="layoutConfiguration" (viewMoreClick)="viewAll($event, section)"                [viewMoreButtonText]="resourceService?.frmelmnts?.lnk?.viewall">              </sb-content-section>            </div>          </div>          <div *ngIf="facetSections.length === 0 && !showLoader && getSelectedTab() === \'home\'">            <app-no-result-found (exploreMoreContent)="navigateToExploreContent()" [filters]="selectedFilters"              [title]="noResultMessage?.title" [subTitle]="noResultMessage?.subTitle"              [buttonText]="noResultMessage?.buttonText"              [showExploreContentButton]="noResultMessage?.showExploreContentButton"              [telemetryInteractEdataObject]="exploreMoreButtonEdata"></app-no-result-found>          </div>        </div>        <!-- Template for displaying page sections -->        <div *ngIf="!_currentPageData?.sections">          <div *ngFor="let section of pageSections; let last = last" [ngClass]="{\'last mb-0\':last}">            <sb-library-cards-grid *ngIf="!isDesktopApp" [layoutConfig]="layoutConfiguration"              [type]="\'infinite_card_grid\'" [title]="section.name"              [contentList]="section.contents | sortBy:\'name\':\'asc\'" [maxCardCount]="3"              (viewMoreClick)="viewAll(section)" (cardClick)="playContent($event, section.name)">            </sb-library-cards-grid>            <div class="sb-desktop-library-card relative9">              <sb-library-cards-grid *ngIf="isDesktopApp" [layoutConfig]="layoutConfiguration"                [type]="\'infinite_card_grid_with_hover\'" [title]="section?.name"                [contentList]="section.contents | sortBy:\'name\':\'asc\'" [maxCardCount]="3"                (hoverActionClick)="hoverActionClicked($event)" (viewMoreClick)="viewAll(section)">              </sb-library-cards-grid>            </div>          </div>        </div>        <div *ngIf="showLoader && getSelectedTab() !== \'explore\'">          <sb-library-cards-grid [layoutConfig]="layoutConfiguration" *ngFor="let i of numberOfSections"            [type]="\'infinite_card_grid\'" [isLoading]="true" [maxCardCount]="!isUserLoggedIn() ? 4: 3">          </sb-library-cards-grid>        </div>        <div          *ngIf="apiContentList.length === 0 && !showLoader && (getSelectedTab() !== \'home\' && getSelectedTab() !== \'explore\')">          <app-no-result-found (exploreMoreContent)="navigateToExploreContent()" [filters]="selectedFilters"            [title]="noResultMessage?.title" [subTitle]="noResultMessage?.subTitle"            [buttonText]="noResultMessage?.buttonText"            [showExploreContentButton]="noResultMessage?.showExploreContentButton"            [telemetryInteractEdataObject]="exploreMoreButtonEdata"></app-no-result-found>        </div>      </div>    </div>  </div></div><app-offline-banner *ngIf="!isUserLoggedIn()" [slug]="userService.slug"></app-offline-banner><!-- Show Modal if content has any YouTube data--><app-modal-wrapper *ngIf="showModal" [config]="{disableClose: false}" (dismiss)="showModal = !showModal">  <ng-template sbModalContent let-data>    <div class="sb-modal">      <div class="transition ui dimmer page modals active visible">        <div class="ui modal transition active visible normal">          <button aria-label="close dialog" mat-dialog-close class="mat-close-btn">            <span>&times;</span>          </button>          <div class="sb-modal-header">            {{resourceService.frmelmnts?.btn?.download}}          </div>          <div class="sb-modal-content">            <p>{{resourceService?.messages?.stmsg?.m0137 }}</p>          </div>          <div class="sb-modal-actions">            <button class="sb-btn sb-btn-normal sb-btn-primary" tabindex="0"              (click)="callDownload(); showModal = !showModal; logTelemetry(contentData, \'confirm-download-content\');">              {{resourceService.frmelmnts?.btn?.yes}}            </button>            <button class="sb-btn sb-btn-normal sb-btn-outline-primary" tabindex="0"              (click)="showModal = !showModal; logTelemetry(contentData, \'cancel-download-content\');">              {{resourceService.frmelmnts?.btn?.cancel}}            </button>          </div>        </div>      </div>    </div>  </ng-template></app-modal-wrapper><app-batch-info *ngIf="showBatchInfo && isUserLoggedIn()" [enrolledBatchInfo]="selectedCourseBatches"  (modelClose)="showBatchInfo = false"></app-batch-info><app-modal-wrapper *ngIf="showEdit" [config]="{disableClose: false, panelClass: [\'overflow-visible\', \'material-modal\']}">  <ng-template sbModalContent let-data>    <app-popup [dialogProps]="data" [formInput]="userPreference?.framework" [showCloseIcon]="true"      [buttonLabel]="resourceService?.frmelmnts?.btn?.submit" [isPreference]="true" [isGuestUser]="true"      (submit)="updateProfile($event)" (close)="showEdit = !showEdit">    </app-popup>  </ng-template></app-modal-wrapper></div>'
-    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'app-access-discussion'},{'name': 'AccountMergeModalComponent', 'selector': 'app-account-merge-modal'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-info'},{'name': 'ActivityDashboardComponent', 'selector': 'app-activity-dashboard'},{'name': 'ActivityDetailsComponent', 'selector': 'app-activity-details'},{'name': 'ActivityFormComponent', 'selector': 'app-activity-form'},{'name': 'ActivityListComponent', 'selector': 'app-activity-list'},{'name': 'ActivitySearchComponent', 'selector': 'app-activity-search'},{'name': 'AddActivityComponent', 'selector': 'app-add-activity'},{'name': 'AddActivityContentTypesComponent', 'selector': 'app-add-activity-content-types'},{'name': 'AddEntityComponent', 'selector': 'add-entity'},{'name': 'AddMemberComponent', 'selector': 'app-add-member'},{'name': 'AddSummaryModalComponent', 'selector': 'app-add-summary-modal'},{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AllContentComponent', 'selector': 'app-all-content'},{'name': 'AllEvidenceComponent', 'selector': 'app-all-evidence'},{'name': 'AllTextbooksComponent', 'selector': 'app-all-textbooks'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppLandingSectionComponent', 'selector': 'app-landing-section'},{'name': 'AppLoaderComponent', 'selector': 'app-loader'},{'name': 'AssessmentPlayerComponent', 'selector': 'app-assessment-player'},{'name': 'AssignBadgesContentComponent', 'selector': 'app-assign-badges-content'},{'name': 'AuthFailedComponent', 'selector': 'app-auth-failed'},{'name': 'BackButtonComponent', 'selector': 'app-back-button'},{'name': 'BatchCardComponent', 'selector': 'app-batch-card'},{'name': 'BatchDetailsComponent', 'selector': 'app-batch-details'},{'name': 'BatchInfoComponent', 'selector': 'app-batch-info'},{'name': 'BatchListComponent', 'selector': 'app-batch-list'},{'name': 'BatchPageSectionComponent', 'selector': 'app-batch-page-section'},{'name': 'BrowseImagePopupComponent', 'selector': 'browse-image-popup'},{'name': 'BrowserCompatibilityComponent', 'selector': 'app-browser-compatibility'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardCreationComponent', 'selector': 'app-card-creation'},{'name': 'CertificateConfigurationComponent', 'selector': 'app-certificate-configuration'},{'name': 'CertificateDetailsComponent', 'selector': 'app-certificate-details'},{'name': 'CertificateNameUpdatePopupComponent', 'selector': 'app-certificate-name-update-popup'},{'name': 'CertPreviewPopupComponent', 'selector': 'app-cert-preview-popup'},{'name': 'ChooseUserComponent', 'selector': 'app-choose-user'},{'name': 'CollaboratingOnComponent', 'selector': 'app-collaborating-on'},{'name': 'CollaborationContentFilterComponent', 'selector': 'app-collaboration-content-filter'},{'name': 'CollectionEditorComponent', 'selector': 'app-collection-editor'},{'name': 'CollectionPlayerComponent', 'selector': 'app-collection-player'},{'name': 'CollectionPlayerMetadataComponent', 'selector': 'app-collection-player-metadata'},{'name': 'CommingSoonComponent', 'selector': 'app-comming-soon'},{'name': 'ConfirmationPopupComponent', 'selector': 'app-confirmation-popup'},{'name': 'ConfirmPopupComponent', 'selector': 'app-confirm-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentBadgeComponent', 'selector': 'app-content-badge'},{'name': 'ContentChapterlistComponent', 'selector': 'app-content-chapterlist'},{'name': 'ContentCreditsComponent', 'selector': 'app-content-credits'},{'name': 'ContentEditorComponent', 'selector': 'app-content-editor'},{'name': 'ContentLicenceComponent', 'selector': 'app-content-licence'},{'name': 'ContentManagerComponent', 'selector': 'app-content-manager'},{'name': 'ContentManagerInfoPopUpComponent', 'selector': 'app-content-manager-info-pop-up'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerMetadataComponent', 'selector': 'app-content-player-metadata'},{'name': 'ContentPlayerPageComponent', 'selector': 'app-contentplayer-page'},{'name': 'ContentRatingComponent', 'selector': 'app-content-rating'},{'name': 'ContentTypeComponent', 'selector': 'app-content-type'},{'name': 'CourseCompletionComponent', 'selector': 'app-course-completion'},{'name': 'CourseConsumptionComponent', 'selector': 'app-course-consumption'},{'name': 'CourseConsumptionHeaderComponent', 'selector': 'app-course-consumption-header'},{'name': 'CourseConsumptionPageComponent', 'selector': ''},{'name': 'CourseDashboardComponent', 'selector': 'app-course-dashboard'},{'name': 'CourseDetailsComponent', 'selector': 'app-course-details'},{'name': 'CourseInfoComponent', 'selector': 'app-course-info'},{'name': 'CoursePageComponent', 'selector': ''},{'name': 'CoursePlayerComponent', 'selector': 'app-course-player'},{'name': 'CourseProgressComponent', 'selector': 'app-course-progress'},{'name': 'CreateBatchComponent', 'selector': 'app-create-batch'},{'name': 'CreateContentComponent', 'selector': 'app-create-content'},{'name': 'CreateEditGroupComponent', 'selector': 'app-create-edit-group'},{'name': 'CreateOrgTypeComponent', 'selector': 'app-create-org-type'},{'name': 'CreateTemplateComponent', 'selector': 'app-create-template'},{'name': 'CreateUserComponent', 'selector': 'app-create-user'},{'name': 'CreditsAndLicenceComponent', 'selector': 'app-credits-and-licence'},{'name': 'CurriculumCardComponent', 'selector': 'app-curriculum-card'},{'name': 'CurriculumCoursesComponent', 'selector': 'app-curriculum-courses'},{'name': 'CurriculumInfoComponent', 'selector': 'app-curriculum-info'},{'name': 'CustomMultiSelectComponent', 'selector': 'app-custom-multi-select'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardSidebarComponent', 'selector': 'app-dashboard-sidebar'},{'name': 'DataChartComponent', 'selector': 'app-data-chart'},{'name': 'DataDrivenComponent', 'selector': 'app-data-driven'},{'name': 'DataDrivenFilterComponent', 'selector': 'app-data-driven-filter'},{'name': 'DatasetComponent', 'selector': 'app-dataset'},{'name': 'DatasetsComponent', 'selector': 'app-datasets'},{'name': 'DataTableComponent', 'selector': 'app-data-table'},{'name': 'DefaultTemplateComponent', 'selector': 'app-content-creation-default-template'},{'name': 'DesktopAppUpdateComponent', 'selector': 'app-desktop-app-update'},{'name': 'DialCodeCardComponent', 'selector': 'app-dial-code-card'},{'name': 'DialCodeComponent', 'selector': 'app-dial-code'},{'name': 'DraftComponent', 'selector': 'app-draft'},{'name': 'EditSubmissionComponent', 'selector': 'app-edit-submission'},{'name': 'EnrollBatchComponent', 'selector': 'app-enroll-batch'},{'name': 'EntityListComponent', 'selector': 'entity-list'},{'name': 'EntityListComponent', 'selector': 'app-entity-list'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'ExploreContentComponent', 'selector': ''},{'name': 'ExploreCourseComponent', 'selector': ''},{'name': 'ExploreCurriculumCoursesComponent', 'selector': 'app-explore-curriculum-courses'},{'name': 'ExploreFtuPopupComponent', 'selector': 'app-explore-ftu-popup'},{'name': 'ExploreGroupComponent', 'selector': 'app-explore-group'},{'name': 'ExplorePageComponent', 'selector': 'app-explore-page-component'},{'name': 'FancyTreeComponent', 'selector': 'app-fancy-tree'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FaqReportComponent', 'selector': 'app-faq-report'},{'name': 'FilterComponent', 'selector': 'app-filter'},{'name': 'FlagConentplayerComponent', 'selector': 'app-flag-conentplayer'},{'name': 'FlaggedComponent', 'selector': 'app-flagged'},{'name': 'FlagReviewerComponent', 'selector': 'app-flag-reviewer'},{'name': 'ForumComponent', 'selector': 'app-forum'},{'name': 'FtuPopupComponent', 'selector': 'app-ftu-popup'},{'name': 'FullPageLoaderComponent', 'selector': 'app-full-page-loader'},{'name': 'FullPageModalComponent', 'selector': 'app-full-page-modal'},{'name': 'GenericEditorComponent', 'selector': 'app-generic-editor'},{'name': 'GetComponent', 'selector': 'app-get'},{'name': 'GlobalConsentPiiComponent', 'selector': 'app-global-consent-pii'},{'name': 'GlobalSearchFilterComponent', 'selector': 'app-global-search-filter'},{'name': 'GlobalSearchSelectedFilterComponent', 'selector': 'app-global-search-selected-filter'},{'name': 'GroupDetailsComponent', 'selector': 'app-group-details'},{'name': 'GroupHeaderComponent', 'selector': 'app-group-header'},{'name': 'GroupMembersComponent', 'selector': 'app-group-members'},{'name': 'GuestProfileComponent', 'selector': 'app-guest-profile'},{'name': 'HomeSearchComponent', 'selector': ''},{'name': 'IdentifyAccountComponent', 'selector': ''},{'name': 'InAppNotificationComponent', 'selector': 'app-in-app-notification'},{'name': 'InfoCardComponent', 'selector': 'app-info-card'},{'name': 'InstallAppComponent', 'selector': 'app-install-app'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'LanguageDropdownComponent', 'selector': 'app-language-dropdown'},{'name': 'LibraryComponent', 'selector': 'app-library'},{'name': 'LimitedPublishedComponent', 'selector': 'app-limited-published'},{'name': 'ListAllReportsComponent', 'selector': 'app-list-all-reports'},{'name': 'LoadContentComponent', 'selector': 'app-load-content'},{'name': 'LoadOfflineContentComponent', 'selector': 'app-load-offline-content'},{'name': 'LocationSelectionComponent', 'selector': 'app-location-selection'},{'name': 'LockInfoPopupComponent', 'selector': 'app-contentlock-info-popup'},{'name': 'MainFooterComponent', 'selector': 'app-footer'},{'name': 'MainHeaderComponent', 'selector': 'app-header'},{'name': 'MainMenuComponent', 'selector': 'app-main-menu'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialAutoCompleteComponent', 'selector': 'app-material-auto-complete'},{'name': 'MemberActionsComponent', 'selector': 'app-member-actions'},{'name': 'MergeAccountStatusComponent', 'selector': 'app-merge-account-status'},{'name': 'ModalWrapperComponent', 'selector': 'app-modal-wrapper'},{'name': 'MyGroupsComponent', 'selector': 'app-my-groups'},{'name': 'NetworkStatusComponent', 'selector': 'app-network-status'},{'name': 'NewCollectionEditorComponent', 'selector': 'app-new-collection-editor'},{'name': 'NoGroupResultComponent', 'selector': 'app-no-group-result'},{'name': 'NoResultComponent', 'selector': 'app-no-result-found'},{'name': 'NoResultComponent', 'selector': 'app-no-result'},{'name': 'ObservationDetailsComponent', 'selector': 'app-observation-details'},{'name': 'ObservationListingComponent', 'selector': 'app-observation-listing'},{'name': 'OfflineApplicationDownloadComponent', 'selector': 'app-offline-application-download'},{'name': 'OfflineBannerComponent', 'selector': 'app-offline-banner'},{'name': 'OfflineHelpVideosComponent', 'selector': 'app-offline-help-videos'},{'name': 'OnboardingUserSelectionComponent', 'selector': 'app-onboarding-user-selection'},{'name': 'OnDemandReportsComponent', 'selector': 'app-on-demand-reports'},{'name': 'OrganisationComponent', 'selector': 'app-organization'},{'name': 'OrganizationUploadComponent', 'selector': 'app-organization'},{'name': 'OtpComponent', 'selector': 'app-otp'},{'name': 'OtpPopupComponent', 'selector': 'app-otp-popup'},{'name': 'PageSectionComponent', 'selector': 'app-page-section'},{'name': 'PlayerComponent', 'selector': 'app-player'},{'name': 'PopupComponent', 'selector': 'app-modal'},{'name': 'ProfileBadgeComponent', 'selector': 'app-profile-badge'},{'name': 'ProfileFrameworkPopupComponent', 'selector': 'app-popup'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'PublicBatchDetailsComponent', 'selector': 'app-public-batch-details'},{'name': 'PublicCourseConsumptionPageComponent', 'selector': ''},{'name': 'PublicCoursePlayerComponent', 'selector': 'app-public-course-player'},{'name': 'PublishedComponent', 'selector': 'app-published'},{'name': 'PublishedPopupComponent', 'selector': 'app-published-popup'},{'name': 'QrCodeModalComponent', 'selector': 'app-qr-code-modal'},{'name': 'QuestionnaireComponent', 'selector': 'app-questionnaire'},{'name': 'RecoverAccountComponent', 'selector': ''},{'name': 'RedirectComponent', 'selector': 'app-redirect'},{'name': 'ReIssueCertificateComponent', 'selector': 'app-re-issue-certificate'},{'name': 'ReportComponent', 'selector': 'app-report'},{'name': 'ReportSummaryComponent', 'selector': 'app-report-summary'},{'name': 'ReportViewComponent', 'selector': 'app-report-view'},{'name': 'RequestChangesPopupComponent', 'selector': 'app-request-changes-popup'},{'name': 'ReviewCommentsComponent', 'selector': 'app-review-comments'},{'name': 'ReviewSubmissionsComponent', 'selector': 'app-review-submissions'},{'name': 'ReviewsubmissionsContentplayerComponent', 'selector': 'app-reviewsubmissions-contentplayer'},{'name': 'SbDatatableComponent', 'selector': 'sb-datatable'},{'name': 'SbTableComponent', 'selector': 'app-sb-table'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SearchFilterComponent', 'selector': 'app-search-filter'},{'name': 'SelectAccountIdentifierComponent', 'selector': ''},{'name': 'SelectOptionGroupComponent', 'selector': 'app-select-option-group'},{'name': 'SelectOrgComponent', 'selector': ''},{'name': 'ShareLinkComponent', 'selector': 'app-share-link'},{'name': 'SignupBasicInfoComponent', 'selector': 'app-signup-basic-info'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupEmailPasswordComponent', 'selector': 'app-signup-email-password'},{'name': 'SignupOnboardingInfoComponent', 'selector': 'app-signup-onboarding-info'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'SsoMergeConfirmationComponent', 'selector': 'app-sso-merge-confirmation'},{'name': 'StatusComponent', 'selector': 'app-status'},{'name': 'SubmissionsComponent', 'selector': 'submission'},{'name': 'SubmitTeacherDetailsComponent', 'selector': 'app-submit-teacher-details'},{'name': 'SvgEditorComponent', 'selector': 'app-svg-editor'},{'name': 'SystemWarningComponent', 'selector': 'app-system-warning'},{'name': 'TelemetryComponent', 'selector': 'app-telemetry'},{'name': 'TelemetryErrorModalComponent', 'selector': 'app-telemetry-error-modal'},{'name': 'TelemetryImportComponent', 'selector': 'app-telemetry-import'},{'name': 'TermsAndConditionsPopupComponent', 'selector': 'app-tnc-popup'},{'name': 'TopicPickerComponent', 'selector': 'app-topic-picker'},{'name': 'UciComponent', 'selector': 'app-uci'},{'name': 'UnEnrollBatchComponent', 'selector': 'app-unenroll-batch'},{'name': 'UpdateBatchComponent', 'selector': 'app-update-batch'},{'name': 'UpdateContactComponent', 'selector': ''},{'name': 'UpdateContactDetailsComponent', 'selector': 'app-update-contact-details'},{'name': 'UpdateCourseBatchComponent', 'selector': 'app-update-course-batch'},{'name': 'UpForReviewComponent', 'selector': 'app-up-for-review'},{'name': 'UpforreviewContentplayerComponent', 'selector': 'app-upforreview-contentplayer'},{'name': 'UpforReviewFilterComponent', 'selector': 'app-up-for-review-filter'},{'name': 'UploadedComponent', 'selector': 'app-uploaded'},{'name': 'UsageReportsComponent', 'selector': 'app-usage-reports'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserFilterComponent', 'selector': 'app-user-filter'},{'name': 'UserLocationComponent', 'selector': 'app-user-location'},{'name': 'UserOnboardingComponent', 'selector': 'app-user-onboarding'},{'name': 'UserOrgManagementComponent', 'selector': 'app-user-org-management'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRoleAssignComponent', 'selector': 'app-user-role-assign'},{'name': 'UserSearchComponent', 'selector': 'app-user-search'},{'name': 'ValidateTeacherIdentifierPopupComponent', 'selector': 'app-validate-teacher-identifier-popup'},{'name': 'VerifyAccountIdentifierComponent', 'selector': ''},{'name': 'ViewAllComponent', 'selector': 'app-view-all'},{'name': 'ViewOrgTypeComponent', 'selector': 'app-view-org-type'},{'name': 'WorkspaceComponent', 'selector': 'app-workspace'},{'name': 'WorkspaceContentFilterComponent', 'selector': 'app-workspace-content-filter'},{'name': 'WorkspacesidebarComponent', 'selector': 'app-workspacesidebar'},{'name': 'YearOfBirthComponent', 'selector': 'app-year-of-birth'}];
+        var COMPONENT_TEMPLATE = '<div><div  [ngClass]="[layoutConfiguration ? \'sbt-fluid-content-bg\':\'\', (getSelectedTab() === \'home\' || getSelectedTab() === \'explore\') ? \'\': \'\']">  <div class="sb-g" [ngClass]="layoutConfiguration ? \'sb-g sbt-container sbt-page-content\' : \'sb-g\'"    [appTelemetryImpression]="telemetryImpression">    <!-- Filter for web version -->    <!-- `isFilterEnabled` reference from current page data -->    <div *ngIf="!isDesktopApp && isFilterEnabled && refreshFilter " [ngClass]="FIRST_PANEL_LAYOUT">      <app-search-filter [facets$]="facets$" [layoutConfiguration]="layoutConfiguration" [isOpen]=\'true\'        *ngIf="initFilter" (filterChange)="getFilters($event)" [defaultTab]="defaultTab"        [pageData]="getCurrentPageData()" [pageId]="isUserLoggedIn() ? \'resource-page\' : \'explore-page\'"        [defaultFilters]="defaultFilters" [filterResponseData]="filterResponseData">      </app-search-filter>    </div>    <!-- Filter for desktop version -->    <div *ngIf="isDesktopApp" [ngClass]="FIRST_PANEL_LAYOUT">      <div *ngIf="layoutConfiguration">        <div>          <app-network-status></app-network-status>          <app-load-offline-content></app-load-offline-content>          <app-system-warning></app-system-warning>        </div>      </div>      <div class="sb-desktop-filter-section" *ngIf="isFilterEnabled">        <app-search-filter [facets$]="facets$" [layoutConfiguration]="layoutConfiguration" [isOpen]=\'true\'          *ngIf="initFilter" (filterChange)="getFilters($event)" [pageData]="getCurrentPageData()"          [pageId]="isUserLoggedIn() ? \'resource-page\' : \'explore-page\'" [defaultFilters]="defaultFilters" [filterResponseData]="filterResponseData">        </app-search-filter>      </div>    </div>    <div [ngClass]="SECOND_PANEL_LAYOUT" *ngIf="subscription$ | async">      <div [appTelemetryImpression]="telemetryImpression"        [ngClass]="[layoutConfiguration ? \'sbt-page-content-area relative9\' : \'ui container mt-24\', (getSelectedTab() === \'home\' || getSelectedTab() === \'explore\') ? \'home-container\': \'\']">        <div *ngIf="false" [ngClass]="{\'relative9\': isUserLoggedIn()}">          <div class="sb-bg-color-white py-16 mb-24">            <h4 class="sb-categories-title text-left">{{resourceService?.frmelmnts?.lbl?.courses}}</h4>            <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">              <div ngxSlickItem *ngFor="let content of cardData;let index=index" class="mr-16 course-card-width">                <sb-course-curiculum-card ngClass="{\'sb--card--seperator\': !isUserLoggedIn()}" [index]="index"                  [cardData]="content" (cardClick)="navigateToCourses($event)"></sb-course-curiculum-card>              </div>            </ngx-slick>          </div>        </div>        <div class="sb-library-cards relative9">          <div *ngIf="!layoutConfiguration && (getSelectedTab() !== \'home\' && getSelectedTab() !== \'explore\')">            <h4 class="sb-categories-title text-left mt-16" *ngIf="apiContentList.length">              {{resourceService?.frmelmnts?.lbl?.textbooks}}</h4>          </div>          <div class="twelve wide column relative9"            *ngIf="enrolledSection?.contents?.length && isUserLoggedIn() && !_currentPageData?.sections">            <app-page-section [hideProgress]="true" (visits)="prepareVisits($event)" [section]="enrolledSection"              (playEvent)="playEnrolledContent($event, \'My courses\')" (viewAll)="viewAll($event)"              [layoutConfiguration]="layoutConfiguration"></app-page-section>          </div>          <!-- Template for displaying sections based on form configuration -->          <div *ngIf="_currentPageData?.sections && _currentPageData?.isEnabled" aria-label="User Preferences">            <div *ngIf="getSelectedTab() === \'home\'" (click)="showEdit = !showEdit" class="sb-section-preference"              tabindex="0">              <div class="preference">                <p class="header font-weight-bold mb-8">{{resourceService?.frmelmnts?.lbl?.hi}} {{userProfile?.firstName                  | titlecase}} {{userProfile?.lastName |                  titlecase}}</p>                <p>{{resourceService?.frmelmnts?.lbl?.yourPreferences}}                  <span class="preference-icon ml-4"><img src="assets/images/icon-info.svg"></span>                </p>                <p>                  <span class="mr-24">                    <span *ngIf="userPreference?.framework?.board?.length">{{resourceService?.frmelmnts?.lbl?.boards | transposeTerms: \'frmelmnts.lbl.boards\': resourceService?.selectedLang}}:                    </span>                    <span *ngIf="userPreference?.framework?.board?.length"                      class="font-weight-bold">{{convertToString(userPreference?.framework?.board) | interpolate: \'CBSE\': \'CBSE/NCERT\'}}</span>                  </span>                  <span class="mr-24">                    <span *ngIf="userPreference?.framework?.medium?.length">{{resourceService?.frmelmnts?.lbl?.medium | transposeTerms: \'frmelmnts.lbl.medium\': resourceService?.selectedLang}}:                    </span>                    <span  *ngIf="userPreference?.framework?.medium?.length" class="font-weight-bold">{{userPreference?.framework?.medium[0]}}</span>                    <span class="font-weight-bold" *ngIf="userPreference?.framework?.medium?.length > 1">                      ... + {{userPreference?.framework?.medium?.length-1}}                    </span>                  </span>                  <span class="mr-24">                    <span                      *ngIf="userPreference?.framework?.gradeLevel?.length">{{resourceService?.frmelmnts?.lbl?.classes | transposeTerms: \'frmelmnts.lbl.classes\': resourceService?.selectedLang}}:                    </span>                    <span *ngIf="userPreference?.framework?.gradeLevel?.length" class="font-weight-bold">{{userPreference?.framework?.gradeLevel[0]}}</span>                    <span class="font-weight-bold" *ngIf="userPreference?.framework?.gradeLevel?.length > 1">                      ... + {{userPreference?.framework?.gradeLevel?.length-1}}                    </span>                  </span>                </p>              </div>              <button                class="sb-btn sb-btn-primary sb-btn-normal sb-btn-border">{{resourceService?.frmelmnts?.lbl?.changePreferences}}</button>            </div>          </div>          <div *ngFor="let section of facetSections">            <div              *ngIf="getSelectedTab() === \'home\' && section?.section?.facetKey === \'ContinueLearning\' && enrolledSection?.contents?.length && isUserLoggedIn()"              class="sb-library-cards relative9">              <div class="twelve wide column relative9">                <app-page-section [hideProgress]="true" (visits)="prepareVisits($event)" [section]="enrolledSection"                  (playEvent)="playEnrolledContent($event, \'My courses\')" (viewAll)="viewAll($event)"                  [layoutConfiguration]="layoutConfiguration">                </app-page-section>              </div>              <hr class="section-hr my-32" />            </div>            <div              *ngIf="section?.section?.isEnabled && section?.section?.facetKey === \'banner\' && bannerList && bannerList.length > 0">              <div class="mt-16 font-weight-bold flarge pl-16 text-left">{{getBannerTitle(section?.section?.title)}}              </div>              <ngx-slick *ngIf="displayBanner " class="carousel banner-carousel relative9 mt-24"                #slickModal="slick-modal" [config]="bannerSlideConfig">                <div ngxSlickItem *ngFor="let banner of primaryBanner;" class="mr-16">                  <!-- <div class="sb--card sb--card--theme2 banner-image" role="link" tabindex="0" [ngStyle]="{\'background-image\': \'url(\' + banner?.ui?.background+ \')\'}" (click)="navigateToSpecificLocation(banner); handleBannerClick(banner)">                                    <div class="banner-overlay"></div>                                    <div *ngIf="banner?.ui?.text !== \'\'" class="explore-text">{{banner?.ui?.text}}</div>                                  </div> -->                  <img [src]="banner?.ui?.background" class="w-100 banner-image" alt="{{banner?.ui?.text}}"                    title="{{banner?.ui?.text}}" role="link" tabindex="0"                    (click)="navigateToSpecificLocation(banner); handleBannerClick(banner)">                </div>              </ngx-slick>              <ngx-slick class="carousel banner-carousel relative9 mt-24"                *ngIf="displayBanner && secondaryBanner.length>0" #slickModal="slick-modal"                [config]="secondaryBannerSlideConfig">                <div ngxSlickItem *ngFor="let banner of secondaryBanner" class="banner-image">                  <sb-banner-card-hlist [bannerList]="banner" [secondaryBanner]="true" [platform]="\'portal\'"                    (cardClick)="navigateToSpecificLocation(banner); handleBannerClick(banner)"></sb-banner-card-hlist>                </div>              </ngx-slick>              <hr                *ngIf="section?.section?.isEnabled && section?.section?.facetKey === \'banner\' && bannerList && bannerList.length > 0"                class="section-hr my-32" />              </div>              <sb-pills-grid *ngIf="section?.section?.isEnabled" [title]="getSectionTitle(section?.section?.title)"                [minDisplayCount]="section?.section?.theme?.limit || 4"                [viewMoreText]="resourceService?.frmelmnts?.lbl?.viewmore"                [viewLessText]="resourceService?.frmelmnts?.lbl?.viewless" [pillSize]="\'medium\'" [platform]="\'portal\'"                [pillBorder]="\'semi_round\'" [pillsMultiRow]="\'auto_responsive\'" [pillTextElipsis]="\'two_line\'"                (select)="handlePillSelect($event, section.name)">                <sb-pill-item *ngFor="let pillData of section.data" [name]="pillData?.name | titlecase"                  [icon]="utilService.getSectionPillIcon(section?.section?.theme?.icons, pillData?.value)"                  [value]="pillData" [theme]="pillData?.theme"></sb-pill-item>              </sb-pills-grid>              <hr *ngIf="section?.section?.isEnabled && section?.data?.length" class="section-hr my-32" />                      </div>          <div *ngIf="showTargetedCategory && targetedCategory.length">            <sb-pills-grid [title]="getSectionCategoryTitle(\'frmelmnts.lbl.targetCategory\')" [minDisplayCount]="4"              [pillSize]="\'medium\'" [platform]="\'portal\'" [pillBorder]="\'semi_round\'"              [pillsMultiRow]="\'auto_responsive\'" [pillTextElipsis]="\'two_line\'"              (select)="handleTargetedpillSelected($event)">              <sb-pill-item *ngFor="let pillData of targetedCategory" [name]="(pillData?.icon?.web ? pillData?.name : \'\') | titlecase"              [icon]="pillData?.icon?.web" [value]="(pillData?.icon?.web ? pillData : \'\')" [theme]="(pillData?.icon?.web ? targetedCategorytheme : Categorytheme)"></sb-pill-item>            </sb-pills-grid>            <hr class="section-hr my-32" />          </div>          <div *ngIf="getSelectedTab() === \'home\'">            <div *ngFor="let section of contentSections" class="pl-16">              <sb-content-section *ngIf="section?.isEnabled" (cardClick)="playContent($event, section?.title)"                [sortBy]="section?.apiConfig?.sortBy" [searchRequest]="section?.searchRequest" [title]="section?.title"                [layoutConfig]="layoutConfiguration" (viewMoreClick)="viewAll($event, section)"                [viewMoreButtonText]="resourceService?.frmelmnts?.lnk?.viewall">              </sb-content-section>            </div>          </div>          <div *ngIf="facetSections.length === 0 && !showLoader && getSelectedTab() === \'home\'">            <app-no-result-found (exploreMoreContent)="navigateToExploreContent()" [filters]="selectedFilters"              [title]="noResultMessage?.title" [subTitle]="noResultMessage?.subTitle"              [buttonText]="noResultMessage?.buttonText"              [showExploreContentButton]="noResultMessage?.showExploreContentButton"              [telemetryInteractEdataObject]="exploreMoreButtonEdata"></app-no-result-found>          </div>        </div>        <!-- Template for displaying page sections -->        <div *ngIf="!_currentPageData?.sections">          <div *ngFor="let section of pageSections; let last = last" [ngClass]="{\'last mb-0\':last}">            <sb-library-cards-grid *ngIf="!isDesktopApp" [layoutConfig]="layoutConfiguration"              [type]="\'infinite_card_grid\'" [title]="section.name"              [contentList]="section.contents | sortBy:\'name\':\'asc\'" [maxCardCount]="3"              (viewMoreClick)="viewAll(section)" (cardClick)="playContent($event, section.name)" (enterKey)="playContent($event, section.name)">            </sb-library-cards-grid>            <div class="sb-desktop-library-card relative9">              <sb-library-cards-grid *ngIf="isDesktopApp" [layoutConfig]="layoutConfiguration"                [type]="\'infinite_card_grid_with_hover\'" [title]="section?.name"                [contentList]="section.contents | sortBy:\'name\':\'asc\'" [maxCardCount]="3"                (hoverActionClick)="hoverActionClicked($event)" (viewMoreClick)="viewAll(section)">              </sb-library-cards-grid>            </div>          </div>        </div>        <div *ngIf="showLoader && getSelectedTab() !== \'explore\'">          <sb-library-cards-grid [layoutConfig]="layoutConfiguration" *ngFor="let i of numberOfSections"            [type]="\'infinite_card_grid\'" [isLoading]="true" [maxCardCount]="!isUserLoggedIn() ? 4: 3">          </sb-library-cards-grid>        </div>        <div          *ngIf="apiContentList.length === 0 && !showLoader && (getSelectedTab() !== \'home\' && getSelectedTab() !== \'explore\')">          <app-no-result-found (exploreMoreContent)="navigateToExploreContent()" [filters]="selectedFilters"            [title]="noResultMessage?.title" [subTitle]="noResultMessage?.subTitle"            [buttonText]="noResultMessage?.buttonText"            [showExploreContentButton]="noResultMessage?.showExploreContentButton"            [telemetryInteractEdataObject]="exploreMoreButtonEdata"></app-no-result-found>        </div>      </div>    </div>  </div></div><app-offline-banner *ngIf="!isUserLoggedIn()" [slug]="userService.slug"></app-offline-banner><!-- Show Modal if content has any YouTube data--><app-modal-wrapper *ngIf="showModal" [config]="{disableClose: false}" (dismiss)="showModal = !showModal">  <ng-template sbModalContent let-data>    <div class="sb-modal">      <div class="transition ui dimmer page modals active visible">        <div class="ui modal transition active visible normal">          <button aria-label="close dialog" mat-dialog-close class="mat-close-btn">            <span>&times;</span>          </button>          <div class="sb-modal-header">            {{resourceService.frmelmnts?.btn?.download}}          </div>          <div class="sb-modal-content">            <p>{{resourceService?.messages?.stmsg?.m0137 }}</p>          </div>          <div class="sb-modal-actions">            <button class="sb-btn sb-btn-normal sb-btn-primary" tabindex="0"              (click)="callDownload(); showModal = !showModal; logTelemetry(contentData, \'confirm-download-content\');">              {{resourceService.frmelmnts?.btn?.yes}}            </button>            <button class="sb-btn sb-btn-normal sb-btn-outline-primary" tabindex="0"              (click)="showModal = !showModal; logTelemetry(contentData, \'cancel-download-content\');">              {{resourceService.frmelmnts?.btn?.cancel}}            </button>          </div>        </div>      </div>    </div>  </ng-template></app-modal-wrapper><app-batch-info *ngIf="showBatchInfo && isUserLoggedIn()" [enrolledBatchInfo]="selectedCourseBatches"  (modelClose)="showBatchInfo = false"></app-batch-info><app-modal-wrapper *ngIf="showEdit" [config]="{disableClose: false, panelClass: [\'overflow-visible\', \'material-modal\']}">  <ng-template sbModalContent let-data>    <app-popup [dialogProps]="data" [formInput]="userPreference?.framework" [showCloseIcon]="true"      [buttonLabel]="resourceService?.frmelmnts?.btn?.submit" [isPreference]="true" [isGuestUser]="true"      (submit)="updateProfile($event)" (close)="showEdit = !showEdit">    </app-popup>  </ng-template></app-modal-wrapper></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'app-access-discussion'},{'name': 'AccountMergeModalComponent', 'selector': 'app-account-merge-modal'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-info'},{'name': 'ActivityDashboardComponent', 'selector': 'app-activity-dashboard'},{'name': 'ActivityDetailsComponent', 'selector': 'app-activity-details'},{'name': 'ActivityFormComponent', 'selector': 'app-activity-form'},{'name': 'ActivityListComponent', 'selector': 'app-activity-list'},{'name': 'ActivitySearchComponent', 'selector': 'app-activity-search'},{'name': 'AddActivityComponent', 'selector': 'app-add-activity'},{'name': 'AddActivityContentTypesComponent', 'selector': 'app-add-activity-content-types'},{'name': 'AddEntityComponent', 'selector': 'add-entity'},{'name': 'AddMemberComponent', 'selector': 'app-add-member'},{'name': 'AddSummaryModalComponent', 'selector': 'app-add-summary-modal'},{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AllContentComponent', 'selector': 'app-all-content'},{'name': 'AllEvidenceComponent', 'selector': 'app-all-evidence'},{'name': 'AllTextbooksComponent', 'selector': 'app-all-textbooks'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppLandingSectionComponent', 'selector': 'app-landing-section'},{'name': 'AppLoaderComponent', 'selector': 'app-loader'},{'name': 'AssessmentPlayerComponent', 'selector': 'app-assessment-player'},{'name': 'AssignBadgesContentComponent', 'selector': 'app-assign-badges-content'},{'name': 'AuthFailedComponent', 'selector': 'app-auth-failed'},{'name': 'BackButtonComponent', 'selector': 'app-back-button'},{'name': 'BatchCardComponent', 'selector': 'app-batch-card'},{'name': 'BatchDetailsComponent', 'selector': 'app-batch-details'},{'name': 'BatchInfoComponent', 'selector': 'app-batch-info'},{'name': 'BatchListComponent', 'selector': 'app-batch-list'},{'name': 'BatchPageSectionComponent', 'selector': 'app-batch-page-section'},{'name': 'BrowseImagePopupComponent', 'selector': 'browse-image-popup'},{'name': 'BrowserCompatibilityComponent', 'selector': 'app-browser-compatibility'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardCreationComponent', 'selector': 'app-card-creation'},{'name': 'CertificateConfigurationComponent', 'selector': 'app-certificate-configuration'},{'name': 'CertificateDetailsComponent', 'selector': 'app-certificate-details'},{'name': 'CertificateNameUpdatePopupComponent', 'selector': 'app-certificate-name-update-popup'},{'name': 'CertPreviewPopupComponent', 'selector': 'app-cert-preview-popup'},{'name': 'ChooseUserComponent', 'selector': 'app-choose-user'},{'name': 'CollaboratingOnComponent', 'selector': 'app-collaborating-on'},{'name': 'CollaborationContentFilterComponent', 'selector': 'app-collaboration-content-filter'},{'name': 'CollectionEditorComponent', 'selector': 'app-collection-editor'},{'name': 'CollectionPlayerComponent', 'selector': 'app-collection-player'},{'name': 'CollectionPlayerMetadataComponent', 'selector': 'app-collection-player-metadata'},{'name': 'CommingSoonComponent', 'selector': 'app-comming-soon'},{'name': 'ConfirmationPopupComponent', 'selector': 'app-confirmation-popup'},{'name': 'ConfirmPopupComponent', 'selector': 'app-confirm-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentBadgeComponent', 'selector': 'app-content-badge'},{'name': 'ContentChapterlistComponent', 'selector': 'app-content-chapterlist'},{'name': 'ContentCreditsComponent', 'selector': 'app-content-credits'},{'name': 'ContentEditorComponent', 'selector': 'app-content-editor'},{'name': 'ContentLicenceComponent', 'selector': 'app-content-licence'},{'name': 'ContentManagerComponent', 'selector': 'app-content-manager'},{'name': 'ContentManagerInfoPopUpComponent', 'selector': 'app-content-manager-info-pop-up'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerMetadataComponent', 'selector': 'app-content-player-metadata'},{'name': 'ContentPlayerPageComponent', 'selector': 'app-contentplayer-page'},{'name': 'ContentRatingComponent', 'selector': 'app-content-rating'},{'name': 'ContentTypeComponent', 'selector': 'app-content-type'},{'name': 'CourseCompletionComponent', 'selector': 'app-course-completion'},{'name': 'CourseConsumptionComponent', 'selector': 'app-course-consumption'},{'name': 'CourseConsumptionHeaderComponent', 'selector': 'app-course-consumption-header'},{'name': 'CourseConsumptionPageComponent', 'selector': ''},{'name': 'CourseDashboardComponent', 'selector': 'app-course-dashboard'},{'name': 'CourseDetailsComponent', 'selector': 'app-course-details'},{'name': 'CourseInfoComponent', 'selector': 'app-course-info'},{'name': 'CoursePageComponent', 'selector': ''},{'name': 'CoursePlayerComponent', 'selector': 'app-course-player'},{'name': 'CourseProgressComponent', 'selector': 'app-course-progress'},{'name': 'CreateBatchComponent', 'selector': 'app-create-batch'},{'name': 'CreateContentComponent', 'selector': 'app-create-content'},{'name': 'CreateEditGroupComponent', 'selector': 'app-create-edit-group'},{'name': 'CreateOrgTypeComponent', 'selector': 'app-create-org-type'},{'name': 'CreateTemplateComponent', 'selector': 'app-create-template'},{'name': 'CreateUserComponent', 'selector': 'app-create-user'},{'name': 'CreditsAndLicenceComponent', 'selector': 'app-credits-and-licence'},{'name': 'CurriculumCardComponent', 'selector': 'app-curriculum-card'},{'name': 'CurriculumCoursesComponent', 'selector': 'app-curriculum-courses'},{'name': 'CurriculumInfoComponent', 'selector': 'app-curriculum-info'},{'name': 'CustomMultiSelectComponent', 'selector': 'app-custom-multi-select'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardSidebarComponent', 'selector': 'app-dashboard-sidebar'},{'name': 'DataChartComponent', 'selector': 'app-data-chart'},{'name': 'DataDrivenComponent', 'selector': 'app-data-driven'},{'name': 'DataDrivenFilterComponent', 'selector': 'app-data-driven-filter'},{'name': 'DatasetComponent', 'selector': 'app-dataset'},{'name': 'DatasetsComponent', 'selector': 'app-datasets'},{'name': 'DataTableComponent', 'selector': 'app-data-table'},{'name': 'DefaultTemplateComponent', 'selector': 'app-content-creation-default-template'},{'name': 'DesktopAppUpdateComponent', 'selector': 'app-desktop-app-update'},{'name': 'DialCodeCardComponent', 'selector': 'app-dial-code-card'},{'name': 'DialCodeComponent', 'selector': 'app-dial-code'},{'name': 'DraftComponent', 'selector': 'app-draft'},{'name': 'EditSubmissionComponent', 'selector': 'app-edit-submission'},{'name': 'EnrollBatchComponent', 'selector': 'app-enroll-batch'},{'name': 'EntityListComponent', 'selector': 'entity-list'},{'name': 'EntityListComponent', 'selector': 'app-entity-list'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'ExploreContentComponent', 'selector': ''},{'name': 'ExploreCourseComponent', 'selector': ''},{'name': 'ExploreCurriculumCoursesComponent', 'selector': 'app-explore-curriculum-courses'},{'name': 'ExploreFtuPopupComponent', 'selector': 'app-explore-ftu-popup'},{'name': 'ExploreGroupComponent', 'selector': 'app-explore-group'},{'name': 'ExplorePageComponent', 'selector': 'app-explore-page-component'},{'name': 'FancyTreeComponent', 'selector': 'app-fancy-tree'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FaqReportComponent', 'selector': 'app-faq-report'},{'name': 'FilterComponent', 'selector': 'app-filter'},{'name': 'FlagConentplayerComponent', 'selector': 'app-flag-conentplayer'},{'name': 'FlaggedComponent', 'selector': 'app-flagged'},{'name': 'FlagReviewerComponent', 'selector': 'app-flag-reviewer'},{'name': 'ForumComponent', 'selector': 'app-forum'},{'name': 'FtuPopupComponent', 'selector': 'app-ftu-popup'},{'name': 'FullPageLoaderComponent', 'selector': 'app-full-page-loader'},{'name': 'FullPageModalComponent', 'selector': 'app-full-page-modal'},{'name': 'GenericEditorComponent', 'selector': 'app-generic-editor'},{'name': 'GetComponent', 'selector': 'app-get'},{'name': 'GlobalConsentPiiComponent', 'selector': 'app-global-consent-pii'},{'name': 'GlobalSearchFilterComponent', 'selector': 'app-global-search-filter'},{'name': 'GlobalSearchSelectedFilterComponent', 'selector': 'app-global-search-selected-filter'},{'name': 'GroupDetailsComponent', 'selector': 'app-group-details'},{'name': 'GroupHeaderComponent', 'selector': 'app-group-header'},{'name': 'GroupMembersComponent', 'selector': 'app-group-members'},{'name': 'GuestProfileComponent', 'selector': 'app-guest-profile'},{'name': 'HomeSearchComponent', 'selector': ''},{'name': 'IdentifyAccountComponent', 'selector': ''},{'name': 'InAppNotificationComponent', 'selector': 'app-in-app-notification'},{'name': 'InfoCardComponent', 'selector': 'app-info-card'},{'name': 'InstallAppComponent', 'selector': 'app-install-app'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'LanguageDropdownComponent', 'selector': 'app-language-dropdown'},{'name': 'LibraryComponent', 'selector': 'app-library'},{'name': 'LimitedPublishedComponent', 'selector': 'app-limited-published'},{'name': 'ListAllReportsComponent', 'selector': 'app-list-all-reports'},{'name': 'LoadContentComponent', 'selector': 'app-load-content'},{'name': 'LoadOfflineContentComponent', 'selector': 'app-load-offline-content'},{'name': 'LocationSelectionComponent', 'selector': 'app-location-selection'},{'name': 'LockInfoPopupComponent', 'selector': 'app-contentlock-info-popup'},{'name': 'MainFooterComponent', 'selector': 'app-footer'},{'name': 'MainHeaderComponent', 'selector': 'app-header'},{'name': 'MainMenuComponent', 'selector': 'app-main-menu'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialAutoCompleteComponent', 'selector': 'app-material-auto-complete'},{'name': 'MemberActionsComponent', 'selector': 'app-member-actions'},{'name': 'MergeAccountStatusComponent', 'selector': 'app-merge-account-status'},{'name': 'ModalWrapperComponent', 'selector': 'app-modal-wrapper'},{'name': 'MyGroupsComponent', 'selector': 'app-my-groups'},{'name': 'NetworkStatusComponent', 'selector': 'app-network-status'},{'name': 'NewCollectionEditorComponent', 'selector': 'app-new-collection-editor'},{'name': 'NoGroupResultComponent', 'selector': 'app-no-group-result'},{'name': 'NoResultComponent', 'selector': 'app-no-result-found'},{'name': 'NoResultComponent', 'selector': 'app-no-result'},{'name': 'ObservationDetailsComponent', 'selector': 'app-observation-details'},{'name': 'ObservationListingComponent', 'selector': 'app-observation-listing'},{'name': 'OfflineApplicationDownloadComponent', 'selector': 'app-offline-application-download'},{'name': 'OfflineBannerComponent', 'selector': 'app-offline-banner'},{'name': 'OfflineHelpVideosComponent', 'selector': 'app-offline-help-videos'},{'name': 'OnboardingPopupComponent', 'selector': 'app-onboarding-popup'},{'name': 'OnboardingUserSelectionComponent', 'selector': 'app-onboarding-user-selection'},{'name': 'OnDemandReportsComponent', 'selector': 'app-on-demand-reports'},{'name': 'OrganisationComponent', 'selector': 'app-organization'},{'name': 'OrganizationUploadComponent', 'selector': 'app-organization'},{'name': 'OtpComponent', 'selector': 'app-otp'},{'name': 'OtpPopupComponent', 'selector': 'app-otp-popup'},{'name': 'PageSectionComponent', 'selector': 'app-page-section'},{'name': 'PdFiltersComponent', 'selector': 'app-pd-filters'},{'name': 'PlayerComponent', 'selector': 'app-player'},{'name': 'PopupComponent', 'selector': 'app-modal'},{'name': 'ProfileBadgeComponent', 'selector': 'app-profile-badge'},{'name': 'ProfileFrameworkPopupComponent', 'selector': 'app-popup'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'PublicBatchDetailsComponent', 'selector': 'app-public-batch-details'},{'name': 'PublicCourseConsumptionPageComponent', 'selector': ''},{'name': 'PublicCoursePlayerComponent', 'selector': 'app-public-course-player'},{'name': 'PublishedComponent', 'selector': 'app-published'},{'name': 'PublishedPopupComponent', 'selector': 'app-published-popup'},{'name': 'QrCodeModalComponent', 'selector': 'app-qr-code-modal'},{'name': 'QuestionnaireComponent', 'selector': 'app-questionnaire'},{'name': 'RecoverAccountComponent', 'selector': ''},{'name': 'RedirectComponent', 'selector': 'app-redirect'},{'name': 'ReIssueCertificateComponent', 'selector': 'app-re-issue-certificate'},{'name': 'ReportComponent', 'selector': 'app-report'},{'name': 'ReportSummaryComponent', 'selector': 'app-report-summary'},{'name': 'ReportViewComponent', 'selector': 'app-report-view'},{'name': 'RequestChangesPopupComponent', 'selector': 'app-request-changes-popup'},{'name': 'ReviewCommentsComponent', 'selector': 'app-review-comments'},{'name': 'ReviewSubmissionsComponent', 'selector': 'app-review-submissions'},{'name': 'ReviewsubmissionsContentplayerComponent', 'selector': 'app-reviewsubmissions-contentplayer'},{'name': 'SbBignumberComponent', 'selector': 'app-sb-bignumber'},{'name': 'SbChartComponent', 'selector': 'app-sb-chart'},{'name': 'SbDatatableComponent', 'selector': 'sb-datatable'},{'name': 'SbTableComponent', 'selector': 'app-sb-table'},{'name': 'SbTableComponent', 'selector': 'app-sb-table'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SearchFilterComponent', 'selector': 'app-search-filter'},{'name': 'SelectAccountIdentifierComponent', 'selector': ''},{'name': 'SelectOptionGroupComponent', 'selector': 'app-select-option-group'},{'name': 'SelectOrgComponent', 'selector': ''},{'name': 'ShareLinkComponent', 'selector': 'app-share-link'},{'name': 'SignupBasicInfoComponent', 'selector': 'app-signup-basic-info'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupEmailPasswordComponent', 'selector': 'app-signup-email-password'},{'name': 'SignupOnboardingInfoComponent', 'selector': 'app-signup-onboarding-info'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'SsoMergeConfirmationComponent', 'selector': 'app-sso-merge-confirmation'},{'name': 'StatusComponent', 'selector': 'app-status'},{'name': 'SubmissionsComponent', 'selector': 'submission'},{'name': 'SubmitTeacherDetailsComponent', 'selector': 'app-submit-teacher-details'},{'name': 'SvgEditorComponent', 'selector': 'app-svg-editor'},{'name': 'SystemWarningComponent', 'selector': 'app-system-warning'},{'name': 'TelemetryComponent', 'selector': 'app-telemetry'},{'name': 'TelemetryErrorModalComponent', 'selector': 'app-telemetry-error-modal'},{'name': 'TelemetryImportComponent', 'selector': 'app-telemetry-import'},{'name': 'TermsAndConditionsPopupComponent', 'selector': 'app-tnc-popup'},{'name': 'TopicPickerComponent', 'selector': 'app-topic-picker'},{'name': 'UciComponent', 'selector': 'app-uci'},{'name': 'UnEnrollBatchComponent', 'selector': 'app-unenroll-batch'},{'name': 'UpdateBatchComponent', 'selector': 'app-update-batch'},{'name': 'UpdateContactComponent', 'selector': ''},{'name': 'UpdateContactDetailsComponent', 'selector': 'app-update-contact-details'},{'name': 'UpdateCourseBatchComponent', 'selector': 'app-update-course-batch'},{'name': 'UpForReviewComponent', 'selector': 'app-up-for-review'},{'name': 'UpforreviewContentplayerComponent', 'selector': 'app-upforreview-contentplayer'},{'name': 'UpforReviewFilterComponent', 'selector': 'app-up-for-review-filter'},{'name': 'UploadedComponent', 'selector': 'app-uploaded'},{'name': 'UsageReportsComponent', 'selector': 'app-usage-reports'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserFilterComponent', 'selector': 'app-user-filter'},{'name': 'UserLocationComponent', 'selector': 'app-user-location'},{'name': 'UserOnboardingComponent', 'selector': 'app-user-onboarding'},{'name': 'UserOrgManagementComponent', 'selector': 'app-user-org-management'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRoleAssignComponent', 'selector': 'app-user-role-assign'},{'name': 'UserSearchComponent', 'selector': 'app-user-search'},{'name': 'ValidateTeacherIdentifierPopupComponent', 'selector': 'app-validate-teacher-identifier-popup'},{'name': 'VerifyAccountIdentifierComponent', 'selector': ''},{'name': 'ViewAllComponent', 'selector': 'app-view-all'},{'name': 'ViewOrgTypeComponent', 'selector': 'app-view-org-type'},{'name': 'WorkspaceComponent', 'selector': 'app-workspace'},{'name': 'WorkspaceContentFilterComponent', 'selector': 'app-workspace-content-filter'},{'name': 'WorkspacesidebarComponent', 'selector': 'app-workspacesidebar'},{'name': 'YearOfBirthComponent', 'selector': 'app-year-of-birth'}];
     var DIRECTIVES = [{'name': 'ActivityDashboardDirective', 'selector': '[appActivityDashboard]'},{'name': 'AddToGroupDirective', 'selector': '[appAddToGroup]'},{'name': 'BodyScrollDirective', 'selector': '[appBodyScroll]'},{'name': 'ComponentDeactivate', 'selector': ''},{'name': 'ContentDirectionDirective', 'selector': '[appContentDirection]'},{'name': 'DesktopOnlyDirective', 'selector': '[appDesktopOnly]'},{'name': 'HighlightTextDirective', 'selector': '[appHighlightText]'},{'name': 'MarkdownDirective', 'selector': '[appMarkdown]'},{'name': 'ModalContentDirective', 'selector': '[sbModalContent]'},{'name': 'OnlineOnlyDirective', 'selector': '[appOnlineOnly]'},{'name': 'PermissionDirective', 'selector': '[appPermission]'},{'name': 'TelemetryEndDirective', 'selector': '[appTelemetryEnd]'},{'name': 'TelemetryErrorDirective', 'selector': '[appTelemetryError]'},{'name': 'TelemetryEventsDirective', 'selector': '[telemetryEventsButton]'},{'name': 'TelemetryImpressionDirective', 'selector': '[appTelemetryImpression]'},{'name': 'TelemetryInteractDirective', 'selector': '[appTelemetryInteract]'},{'name': 'TelemetryShareDirective', 'selector': '[appTelemetryShare]'},{'name': 'TelemetryStartDirective', 'selector': '[appTelemetryStart]'}];
     var ACTUAL_COMPONENT = {'name': 'ExplorePageComponent'};
 </script>

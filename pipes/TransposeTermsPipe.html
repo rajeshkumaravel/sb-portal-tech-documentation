@@ -105,8 +105,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="44"
-                            class="link-to-prism">src/app/modules/shared/pipes/transposeTerms/transposeTerms.pipe.ts:44</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/app/modules/shared/pipes/transposeTerms/transposeTerms.pipe.ts:53</a></div>
                 </td>
             </tr>
 
@@ -365,7 +365,7 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Pipe, PipeTransform } from &#x27;@angular/core&#x27;;
 import { get } from &#x27;lodash-es&#x27;;
-import { GenericResourceService } from &#x27;@sunbird/shared&#x27;;
+import { GenericResourceService } from &#x27;../../services/genericResource/genericResource.service&#x27;;
 
 @Pipe({
   name: &#x27;transposeTerms&#x27;
@@ -390,8 +390,17 @@ export class TransposeTermsPipe implements PipeTransform {
     if (value) {
       if (value.indexOf(startsWith) &gt; -1) {
         // let term &#x3D; value.substring(value.indexOf(startsWith) + 1, value.lastIndexOf(endsWith));
-        let term &#x3D; value.match(/frameworkCategory([0-9])/g)?.[0];
-        return this.getTermsMapping(value, term, localStorage.getItem(&#x27;portalLanguage&#x27;), startsWith, endsWith, defaultValue);
+        let term &#x3D; value.match(/frameworkCategory([0-9])/g);
+        if (term &amp;&amp; term.length &gt; 0) {
+          // return this.getTermsMapping(value, term, localStorage.getItem(&#x27;portalLanguage&#x27;), startsWith, endsWith, defaultValue);
+          let resultStr &#x3D; value;
+          term.forEach(termString &#x3D;&gt; {
+            resultStr &#x3D; this.getTermsMapping(resultStr, termString, localStorage.getItem(&#x27;portalLanguage&#x27;), startsWith, endsWith, defaultValue);
+          });
+          return resultStr;
+        } else {
+          return value;
+        }
       } else {
         return value;
       }

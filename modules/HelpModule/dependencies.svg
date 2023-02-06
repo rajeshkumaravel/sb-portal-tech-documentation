@@ -14,143 +14,143 @@
 <title>cluster_HelpModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-32.8 8,-230.8 1019,-230.8 1019,-32.8 8,-32.8"/>
 </g>
+<g id="clust6" class="cluster">
+<title>cluster_HelpModule_imports</title>
+<polygon fill="none" stroke="black" points="507,-40.8 507,-92.8 1011,-92.8 1011,-40.8 507,-40.8"/>
+</g>
 <g id="clust2" class="cluster">
 <title>cluster_HelpModule_declarations</title>
-<polygon fill="none" stroke="black" points="528,-40.8 528,-92.8 1011,-92.8 1011,-40.8 528,-40.8"/>
+<polygon fill="none" stroke="black" points="16,-40.8 16,-92.8 499,-92.8 499,-40.8 16,-40.8"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_HelpModule_exports</title>
-<polygon fill="none" stroke="black" points="179,-170.8 179,-222.8 673,-222.8 673,-170.8 179,-170.8"/>
-</g>
-<g id="clust6" class="cluster">
-<title>cluster_HelpModule_imports</title>
-<polygon fill="none" stroke="black" points="16,-40.8 16,-92.8 520,-92.8 520,-40.8 16,-40.8"/>
+<polygon fill="none" stroke="black" points="284,-170.8 284,-222.8 778,-222.8 778,-170.8 284,-170.8"/>
 </g>
 <!-- FaqComponent -->
 <g id="node1" class="node">
 <title>FaqComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="1003.33,-84.8 900.67,-84.8 900.67,-48.8 1003.33,-48.8 1003.33,-84.8"/>
-<text text-anchor="middle" x="952" y="-62.6" font-family="Times,serif" font-size="14.00">FaqComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="491.33,-84.8 388.67,-84.8 388.67,-48.8 491.33,-48.8 491.33,-84.8"/>
+<text text-anchor="middle" x="440" y="-62.6" font-family="Times,serif" font-size="14.00">FaqComponent</text>
 </g>
 <!-- HelpModule -->
 <g id="node4" class="node">
 <title>HelpModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="512.27,-149.8 509.27,-153.8 488.27,-153.8 485.27,-149.8 425.73,-149.8 425.73,-113.8 512.27,-113.8 512.27,-149.8"/>
-<text text-anchor="middle" x="469" y="-127.6" font-family="Times,serif" font-size="14.00">HelpModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="617.27,-149.8 614.27,-153.8 593.27,-153.8 590.27,-149.8 530.73,-149.8 530.73,-113.8 617.27,-113.8 617.27,-149.8"/>
+<text text-anchor="middle" x="574" y="-127.6" font-family="Times,serif" font-size="14.00">HelpModule</text>
 </g>
 <!-- FaqComponent&#45;&gt;HelpModule -->
 <g id="edge1" class="edge">
 <title>FaqComponent&#45;&gt;HelpModule</title>
-<path fill="none" stroke="black" d="M952,-84.93C952,-105.37 952,-135.8 952,-135.8 952,-135.8 522.29,-135.8 522.29,-135.8"/>
-<polygon fill="black" stroke="black" points="522.29,-132.3 512.29,-135.8 522.29,-139.3 522.29,-132.3"/>
+<path fill="none" stroke="black" d="M487.62,-84.81C487.62,-100.85 487.62,-121.8 487.62,-121.8 487.62,-121.8 520.56,-121.8 520.56,-121.8"/>
+<polygon fill="black" stroke="black" points="520.56,-125.3 530.56,-121.8 520.56,-118.3 520.56,-125.3"/>
 </g>
 <!-- FaqReportComponent -->
 <g id="node2" class="node">
 <title>FaqReportComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="883.44,-84.8 742.56,-84.8 742.56,-48.8 883.44,-48.8 883.44,-84.8"/>
-<text text-anchor="middle" x="813" y="-62.6" font-family="Times,serif" font-size="14.00">FaqReportComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="371.44,-84.8 230.56,-84.8 230.56,-48.8 371.44,-48.8 371.44,-84.8"/>
+<text text-anchor="middle" x="301" y="-62.6" font-family="Times,serif" font-size="14.00">FaqReportComponent</text>
 </g>
 <!-- FaqReportComponent&#45;&gt;HelpModule -->
 <g id="edge2" class="edge">
 <title>FaqReportComponent&#45;&gt;HelpModule</title>
-<path fill="none" stroke="black" d="M813,-85.07C813,-103.36 813,-128.8 813,-128.8 813,-128.8 522.57,-128.8 522.57,-128.8"/>
-<polygon fill="black" stroke="black" points="522.57,-125.3 512.57,-128.8 522.57,-132.3 522.57,-125.3"/>
+<path fill="none" stroke="black" d="M331.57,-85.07C331.57,-103.36 331.57,-128.8 331.57,-128.8 331.57,-128.8 520.66,-128.8 520.66,-128.8"/>
+<polygon fill="black" stroke="black" points="520.66,-132.3 530.66,-128.8 520.66,-125.3 520.66,-132.3"/>
 </g>
 <!-- OfflineHelpVideosComponent -->
 <g id="node3" class="node">
 <title>OfflineHelpVideosComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="724.14,-84.8 535.86,-84.8 535.86,-48.8 724.14,-48.8 724.14,-84.8"/>
-<text text-anchor="middle" x="630" y="-62.6" font-family="Times,serif" font-size="14.00">OfflineHelpVideosComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="212.14,-84.8 23.86,-84.8 23.86,-48.8 212.14,-48.8 212.14,-84.8"/>
+<text text-anchor="middle" x="118" y="-62.6" font-family="Times,serif" font-size="14.00">OfflineHelpVideosComponent</text>
 </g>
 <!-- OfflineHelpVideosComponent&#45;&gt;HelpModule -->
 <g id="edge3" class="edge">
 <title>OfflineHelpVideosComponent&#45;&gt;HelpModule</title>
-<path fill="none" stroke="black" d="M550.03,-84.81C550.03,-100.85 550.03,-121.8 550.03,-121.8 550.03,-121.8 522.36,-121.8 522.36,-121.8"/>
-<polygon fill="black" stroke="black" points="522.36,-118.3 512.36,-121.8 522.36,-125.3 522.36,-118.3"/>
+<path fill="none" stroke="black" d="M118,-84.93C118,-105.37 118,-135.8 118,-135.8 118,-135.8 520.69,-135.8 520.69,-135.8"/>
+<polygon fill="black" stroke="black" points="520.69,-139.3 530.69,-135.8 520.69,-132.3 520.69,-139.3"/>
 </g>
 <!-- FaqComponent  -->
 <g id="node9" class="node">
 <title>FaqComponent </title>
-<polygon fill="#fb8072" stroke="black" points="664.83,-214.8 559.17,-214.8 559.17,-178.8 664.83,-178.8 664.83,-214.8"/>
-<text text-anchor="middle" x="612" y="-192.6" font-family="Times,serif" font-size="14.00">FaqComponent </text>
+<polygon fill="#fb8072" stroke="black" points="769.83,-214.8 664.17,-214.8 664.17,-178.8 769.83,-178.8 769.83,-214.8"/>
+<text text-anchor="middle" x="717" y="-192.6" font-family="Times,serif" font-size="14.00">FaqComponent </text>
 </g>
 <!-- HelpModule&#45;&gt;FaqComponent  -->
 <g id="edge8" class="edge">
 <title>HelpModule&#45;&gt;FaqComponent </title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M512.29,-142.8C554.38,-142.8 612,-142.8 612,-142.8 612,-142.8 612,-168.52 612,-168.52"/>
-<polygon fill="black" stroke="black" points="608.5,-168.52 612,-178.52 615.5,-168.52 608.5,-168.52"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M617.43,-142.8C656.12,-142.8 706.65,-142.8 706.65,-142.8 706.65,-142.8 706.65,-168.52 706.65,-168.52"/>
+<polygon fill="black" stroke="black" points="703.15,-168.52 706.65,-178.52 710.15,-168.52 703.15,-168.52"/>
 </g>
 <!-- FaqReportComponent  -->
 <g id="node10" class="node">
 <title>FaqReportComponent </title>
-<polygon fill="#fb8072" stroke="black" points="540.93,-214.8 397.07,-214.8 397.07,-178.8 540.93,-178.8 540.93,-214.8"/>
-<text text-anchor="middle" x="469" y="-192.6" font-family="Times,serif" font-size="14.00">FaqReportComponent </text>
+<polygon fill="#fb8072" stroke="black" points="645.93,-214.8 502.07,-214.8 502.07,-178.8 645.93,-178.8 645.93,-214.8"/>
+<text text-anchor="middle" x="574" y="-192.6" font-family="Times,serif" font-size="14.00">FaqReportComponent </text>
 </g>
 <!-- HelpModule&#45;&gt;FaqReportComponent  -->
 <g id="edge9" class="edge">
 <title>HelpModule&#45;&gt;FaqReportComponent </title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M469,-149.91C469,-149.91 469,-168.79 469,-168.79"/>
-<polygon fill="black" stroke="black" points="465.5,-168.79 469,-178.79 472.5,-168.79 465.5,-168.79"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M574,-149.91C574,-149.91 574,-168.79 574,-168.79"/>
+<polygon fill="black" stroke="black" points="570.5,-168.79 574,-178.79 577.5,-168.79 570.5,-168.79"/>
 </g>
 <!-- OfflineHelpVideosComponent  -->
 <g id="node11" class="node">
 <title>OfflineHelpVideosComponent </title>
-<polygon fill="#fb8072" stroke="black" points="379.13,-214.8 186.87,-214.8 186.87,-178.8 379.13,-178.8 379.13,-214.8"/>
-<text text-anchor="middle" x="283" y="-192.6" font-family="Times,serif" font-size="14.00">OfflineHelpVideosComponent </text>
+<polygon fill="#fb8072" stroke="black" points="484.13,-214.8 291.87,-214.8 291.87,-178.8 484.13,-178.8 484.13,-214.8"/>
+<text text-anchor="middle" x="388" y="-192.6" font-family="Times,serif" font-size="14.00">OfflineHelpVideosComponent </text>
 </g>
 <!-- HelpModule&#45;&gt;OfflineHelpVideosComponent  -->
 <g id="edge10" class="edge">
 <title>HelpModule&#45;&gt;OfflineHelpVideosComponent </title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M425.41,-142.8C383.85,-142.8 327.56,-142.8 327.56,-142.8 327.56,-142.8 327.56,-168.52 327.56,-168.52"/>
-<polygon fill="black" stroke="black" points="324.06,-168.52 327.56,-178.52 331.06,-168.52 324.06,-168.52"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M530.48,-142.8C490.18,-142.8 436.45,-142.8 436.45,-142.8 436.45,-142.8 436.45,-168.52 436.45,-168.52"/>
+<polygon fill="black" stroke="black" points="432.95,-168.52 436.45,-178.52 439.95,-168.52 432.95,-168.52"/>
 </g>
 <!-- CoreModule -->
 <g id="node5" class="node">
 <title>CoreModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="512.27,-84.8 509.27,-88.8 488.27,-88.8 485.27,-84.8 425.73,-84.8 425.73,-48.8 512.27,-48.8 512.27,-84.8"/>
-<text text-anchor="middle" x="469" y="-62.6" font-family="Times,serif" font-size="14.00">CoreModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="1003.27,-84.8 1000.27,-88.8 979.27,-88.8 976.27,-84.8 916.73,-84.8 916.73,-48.8 1003.27,-48.8 1003.27,-84.8"/>
+<text text-anchor="middle" x="960" y="-62.6" font-family="Times,serif" font-size="14.00">CoreModule</text>
 </g>
 <!-- CoreModule&#45;&gt;HelpModule -->
 <g id="edge4" class="edge">
 <title>CoreModule&#45;&gt;HelpModule</title>
-<path fill="none" stroke="black" d="M469,-84.91C469,-84.91 469,-103.79 469,-103.79"/>
-<polygon fill="black" stroke="black" points="465.5,-103.79 469,-113.79 472.5,-103.79 465.5,-103.79"/>
+<path fill="none" stroke="black" d="M960,-84.93C960,-105.37 960,-135.8 960,-135.8 960,-135.8 627.53,-135.8 627.53,-135.8"/>
+<polygon fill="black" stroke="black" points="627.53,-132.3 617.53,-135.8 627.53,-139.3 627.53,-132.3"/>
 </g>
 <!-- HelpRoutingModule -->
 <g id="node6" class="node">
 <title>HelpRoutingModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="407.88,-84.8 404.88,-88.8 383.88,-88.8 380.88,-84.8 276.12,-84.8 276.12,-48.8 407.88,-48.8 407.88,-84.8"/>
-<text text-anchor="middle" x="342" y="-62.6" font-family="Times,serif" font-size="14.00">HelpRoutingModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="898.88,-84.8 895.88,-88.8 874.88,-88.8 871.88,-84.8 767.12,-84.8 767.12,-48.8 898.88,-48.8 898.88,-84.8"/>
+<text text-anchor="middle" x="833" y="-62.6" font-family="Times,serif" font-size="14.00">HelpRoutingModule</text>
 </g>
 <!-- HelpRoutingModule&#45;&gt;HelpModule -->
 <g id="edge5" class="edge">
 <title>HelpRoutingModule&#45;&gt;HelpModule</title>
-<path fill="none" stroke="black" d="M402.49,-84.81C402.49,-100.85 402.49,-121.8 402.49,-121.8 402.49,-121.8 415.38,-121.8 415.38,-121.8"/>
-<polygon fill="black" stroke="black" points="415.38,-125.3 425.38,-121.8 415.38,-118.3 415.38,-125.3"/>
+<path fill="none" stroke="black" d="M834.43,-85.07C834.43,-103.36 834.43,-128.8 834.43,-128.8 834.43,-128.8 627.3,-128.8 627.3,-128.8"/>
+<polygon fill="black" stroke="black" points="627.3,-125.3 617.3,-128.8 627.3,-132.3 627.3,-125.3"/>
 </g>
 <!-- SharedModule -->
 <g id="node7" class="node">
 <title>SharedModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="258.43,-84.8 255.43,-88.8 234.43,-88.8 231.43,-84.8 159.57,-84.8 159.57,-48.8 258.43,-48.8 258.43,-84.8"/>
-<text text-anchor="middle" x="209" y="-62.6" font-family="Times,serif" font-size="14.00">SharedModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="749.43,-84.8 746.43,-88.8 725.43,-88.8 722.43,-84.8 650.57,-84.8 650.57,-48.8 749.43,-48.8 749.43,-84.8"/>
+<text text-anchor="middle" x="700" y="-62.6" font-family="Times,serif" font-size="14.00">SharedModule</text>
 </g>
 <!-- SharedModule&#45;&gt;HelpModule -->
 <g id="edge6" class="edge">
 <title>SharedModule&#45;&gt;HelpModule</title>
-<path fill="none" stroke="black" d="M222.57,-85.07C222.57,-103.36 222.57,-128.8 222.57,-128.8 222.57,-128.8 415.51,-128.8 415.51,-128.8"/>
-<polygon fill="black" stroke="black" points="415.51,-132.3 425.51,-128.8 415.51,-125.3 415.51,-132.3"/>
+<path fill="none" stroke="black" d="M657.44,-84.81C657.44,-100.85 657.44,-121.8 657.44,-121.8 657.44,-121.8 627.67,-121.8 627.67,-121.8"/>
+<polygon fill="black" stroke="black" points="627.67,-118.3 617.67,-121.8 627.67,-125.3 627.67,-118.3"/>
 </g>
 <!-- TelemetryModule -->
 <g id="node8" class="node">
 <title>TelemetryModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="141.58,-84.8 138.58,-88.8 117.58,-88.8 114.58,-84.8 24.42,-84.8 24.42,-48.8 141.58,-48.8 141.58,-84.8"/>
-<text text-anchor="middle" x="83" y="-62.6" font-family="Times,serif" font-size="14.00">TelemetryModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="632.58,-84.8 629.58,-88.8 608.58,-88.8 605.58,-84.8 515.42,-84.8 515.42,-48.8 632.58,-48.8 632.58,-84.8"/>
+<text text-anchor="middle" x="574" y="-62.6" font-family="Times,serif" font-size="14.00">TelemetryModule</text>
 </g>
 <!-- TelemetryModule&#45;&gt;HelpModule -->
 <g id="edge7" class="edge">
 <title>TelemetryModule&#45;&gt;HelpModule</title>
-<path fill="none" stroke="black" d="M83,-84.93C83,-105.37 83,-135.8 83,-135.8 83,-135.8 415.47,-135.8 415.47,-135.8"/>
-<polygon fill="black" stroke="black" points="415.47,-139.3 425.47,-135.8 415.47,-132.3 415.47,-139.3"/>
+<path fill="none" stroke="black" d="M574,-84.91C574,-84.91 574,-103.79 574,-103.79"/>
+<polygon fill="black" stroke="black" points="570.5,-103.79 574,-113.79 577.5,-103.79 570.5,-103.79"/>
 </g>
 </g>
 </svg>

@@ -816,8 +816,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="418"
-                            class="link-to-prism">src/app/plugins/location/components/delegate/sb-form-location-selection.delegate.ts:418</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="422"
+                            class="link-to-prism">src/app/plugins/location/components/delegate/sb-form-location-selection.delegate.ts:422</a></div>
                 </td>
             </tr>
 
@@ -848,7 +848,7 @@
             <tr>
                 <td class="col-md-4">
                     <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>init(deviceProfile?: <a href="../interfaces/IDeviceProfile.html" target="_self">IDeviceProfile</a>, showModal)</code>
+                    <code>init(deviceProfile?: <a href="../interfaces/IDeviceProfile.html" target="_self">IDeviceProfile</a>, showModal, isStepper)</code>
                 </td>
             </tr>
 
@@ -905,6 +905,20 @@
                                     </td>
 
                                 </tr>
+                                <tr>
+                                    <td>isStepper</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -937,7 +951,7 @@
             <tr>
                 <td class="col-md-4">
                     <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>loadForm(formInputParams, initial, showModal)</code>
+                    <code>loadForm(formInputParams, initial, showModal, isStepper)</code>
                 </td>
             </tr>
 
@@ -1000,6 +1014,18 @@
                                     </td>
 
                                 </tr>
+                                <tr>
+                                    <td>isStepper</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -1031,7 +1057,7 @@
             <tr>
                 <td class="col-md-4">
                     <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>onDataLoadStatusChange($event, showModal)</code>
+                    <code>onDataLoadStatusChange($event, showModal, isStepper)</code>
                 </td>
             </tr>
 
@@ -1079,6 +1105,18 @@
 
                                     <td>
                                         <code>true</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>isStepper</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
                                     </td>
 
                                 </tr>
@@ -1290,7 +1328,7 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Location as SbLocation} from &#x27;@project-sunbird/client-services/models/location&#x27;;
-import {FieldConfig, FieldConfigOption} from &#x27;@project-sunbird/common-form-elements-v9&#x27;;
+import {FieldConfig, FieldConfigOption} from &#x27;@project-sunbird/common-form-elements&#x27;;
 import {FormGroup} from &#x27;@angular/forms&#x27;;
 import {delay, distinctUntilChanged, map, mergeMap, take} from &#x27;rxjs/operators&#x27;;
 import {SbFormLocationOptionsFactory} from &#x27;./sb-form-location-options.factory&#x27;;
@@ -1343,7 +1381,7 @@ export class SbFormLocationSelectionDelegate {
     );
   }
 
-  async init(deviceProfile?: IDeviceProfile, showModal &#x3D; true) {
+  async init(deviceProfile?: IDeviceProfile, showModal &#x3D; true, isStepper&#x3D; false) {
     if (deviceProfile) {
       this.deviceProfile &#x3D; deviceProfile;
     }
@@ -1369,11 +1407,11 @@ export class SbFormLocationSelectionDelegate {
             SbFormLocationSelectionDelegate.DEFAULT_PERSONA_LOCATION_CONFIG_FORM_REQUEST.contentType;
         })();
       } 
-      await this.loadForm(formInputParams, true, showModal);
+      await this.loadForm(formInputParams, true, showModal, isStepper);
     } catch (e) {
       // load default form
       console.error(e);
-      await this.loadForm(SbFormLocationSelectionDelegate.DEFAULT_PERSONA_LOCATION_CONFIG_FORM_REQUEST, true, showModal);
+      await this.loadForm(SbFormLocationSelectionDelegate.DEFAULT_PERSONA_LOCATION_CONFIG_FORM_REQUEST, true, showModal, isStepper);
     }
   }
 
@@ -1396,7 +1434,7 @@ export class SbFormLocationSelectionDelegate {
     }
   }
 
-  async onDataLoadStatusChange($event, showModal &#x3D; true) {
+  async onDataLoadStatusChange($event, showModal &#x3D; true, isStepper &#x3D; false) {
     if (&#x27;LOADED&#x27; &#x3D;&#x3D;&#x3D; $event) {
       this.isLocationFormLoading &#x3D; false;
 
@@ -1434,12 +1472,12 @@ export class SbFormLocationSelectionDelegate {
               ...SbFormLocationSelectionDelegate.DEFAULT_PERSONA_LOCATION_CONFIG_FORM_REQUEST,
               contentType: (newStateValue as SbLocation).code,
             },
-            false, showModal
+            false, showModal, isStepper
           ).catch((e) &#x3D;&gt; {
             console.error(e);
             this.loadForm(
               SbFormLocationSelectionDelegate.DEFAULT_PERSONA_LOCATION_CONFIG_FORM_REQUEST,
-              false, showModal
+              false, showModal, isStepper
             );
           });
         });
@@ -1567,7 +1605,7 @@ export class SbFormLocationSelectionDelegate {
     }
   }
 
-  private async loadForm(formInputParams, initial &#x3D; false, showModal &#x3D; true) {
+  private async loadForm(formInputParams, initial &#x3D; false, showModal &#x3D; true, isStepper &#x3D; false) {
     let useCases: UseCase[];
     // If user register workflow
     if (!showModal) {
@@ -1584,7 +1622,7 @@ export class SbFormLocationSelectionDelegate {
       tempLocationFormConfig &#x3D; await this.formService.getFormConfig(formInputParams)
         .toPromise();
     }
-    if (!this.userService.loggedIn) {
+    if (!this.userService.loggedIn &amp;&amp; !isStepper) {
       this.guestUserDetails &#x3D; await this.userService.getGuestUser().toPromise();
     }
 
@@ -1601,7 +1639,11 @@ export class SbFormLocationSelectionDelegate {
         } else if (this.guestUserDetails) {
           config.templateOptions.hidden &#x3D; false;
           config.default &#x3D; (_.get(this.guestUserDetails, &#x27;formatedName&#x27;) || &#x27;Guest&#x27;);
-        } else {
+        } else if (!this.userService.loggedIn &amp;&amp; !this.guestUserDetails &amp;&amp; isStepper) {
+          config.templateOptions.hidden &#x3D; false;
+          config.default &#x3D; &#x27;Guest&#x27;;
+        }
+        else {
           config.validations &#x3D; [];
         }
       }

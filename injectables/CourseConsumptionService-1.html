@@ -361,8 +361,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="171"
-                            class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:171</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="176"
+                            class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:176</a></div>
                 </td>
             </tr>
 
@@ -426,8 +426,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="162"
-                            class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:162</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="167"
+                            class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:167</a></div>
                 </td>
             </tr>
 
@@ -491,8 +491,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="167"
-                            class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:167</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="172"
+                            class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:172</a></div>
                 </td>
             </tr>
 
@@ -556,8 +556,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="179"
-                            class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:179</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="184"
+                            class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:184</a></div>
                 </td>
             </tr>
 
@@ -1115,8 +1115,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="175"
-                            class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:175</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="180"
+                            class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:180</a></div>
                 </td>
             </tr>
 
@@ -1249,8 +1249,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="147"
-                            class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:147</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:152</a></div>
                 </td>
             </tr>
 
@@ -1286,8 +1286,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="133"
-                            class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:133</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="138"
+                            class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:138</a></div>
                 </td>
             </tr>
 
@@ -1669,7 +1669,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="158" class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:158</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="163" class="link-to-prism">src/app/modules/learn/services/course-consumption/course-consumption.service.ts:163</a></div>
                                 </td>
                             </tr>
 
@@ -1797,10 +1797,15 @@ getContentRollUp(tree, identifier) {
 }
 getAllOpenBatches(contents) {
   let openBatchCount &#x3D; 0;
+  let enrollementEndedBatch &#x3D; 0;
   _.map(_.get(contents, &#x27;content&#x27;), content &#x3D;&gt; {
-    if (content.enrollmentType &#x3D;&#x3D;&#x3D; &#x27;open&#x27; &amp;&amp;
-    (!(content.enrollmentEndDate &amp;&amp; dayjs(content.enrollmentEndDate).isBefore(dayjs(new Date()).format(&#x27;YYYY-MM-DD&#x27;))))) {
-      openBatchCount++;
+    if (content.enrollmentType &#x3D;&#x3D;&#x3D; &#x27;open&#x27;) {
+      if ((!(content.enrollmentEndDate &amp;&amp; dayjs(content.enrollmentEndDate).isBefore(dayjs(new Date()).format(&#x27;YYYY-MM-DD&#x27;))))) {
+        enrollementEndedBatch++;
+        openBatchCount++;
+      } else {
+        openBatchCount++;
+      }
     }
   });
   if (openBatchCount &#x3D;&#x3D;&#x3D; 0) {

@@ -510,8 +510,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="146"
-                            class="link-to-prism">src/app/plugins/location/components/delegate/sb-form-location-options.factory.ts:146</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/plugins/location/components/delegate/sb-form-location-options.factory.ts:147</a></div>
                 </td>
             </tr>
 
@@ -569,7 +569,7 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { FieldConfig, FieldConfigOptionsBuilder } from &#x27;@project-sunbird/common-form-elements-v9&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { FieldConfig, FieldConfigOptionsBuilder } from &#x27;@project-sunbird/common-form-elements&#x27;;
 import { Location as SbLocation } from &#x27;@project-sunbird/client-services/models/location&#x27;;
 import { FormControl } from &#x27;@angular/forms&#x27;;
 import { concat, defer, iif, of } from &#x27;rxjs&#x27;;
@@ -682,7 +682,8 @@ export class SbFormLocationOptionsFactory {
       return this.orgDetailsService.searchOrgDetails({
         filters: {
           &#x27;orgLocation.id&#x27;: (value as SbLocation).id,
-          isSchool: true
+          isSchool: true,
+          &#x27;status&#x27;: 1
         }
       }).pipe(
         map((list: any) &#x3D;&gt; list.content.map(ele &#x3D;&gt; {

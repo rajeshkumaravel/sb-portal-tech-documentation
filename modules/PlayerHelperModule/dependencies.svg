@@ -14,13 +14,13 @@
 <title>cluster_PlayerHelperModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-32.8 8,-230.8 3231,-230.8 3231,-32.8 8,-32.8"/>
 </g>
-<g id="clust2" class="cluster">
-<title>cluster_PlayerHelperModule_declarations</title>
-<polygon fill="none" stroke="black" points="379,-40.8 379,-92.8 3223,-92.8 3223,-40.8 379,-40.8"/>
-</g>
 <g id="clust19" class="cluster">
 <title>cluster_PlayerHelperModule_exports</title>
 <polygon fill="none" stroke="black" points="75,-170.8 75,-222.8 2971,-222.8 2971,-170.8 75,-170.8"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_PlayerHelperModule_declarations</title>
+<polygon fill="none" stroke="black" points="379,-40.8 379,-92.8 3223,-92.8 3223,-40.8 379,-40.8"/>
 </g>
 <g id="clust18" class="cluster">
 <title>cluster_PlayerHelperModule_imports</title>

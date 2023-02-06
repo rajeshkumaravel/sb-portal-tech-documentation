@@ -1,0 +1,2417 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  OnboardingPopupComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                                <code><a href="../miscellaneous/variables.html#L" target="_self" >{
+    provide: STEPPER_GLOBAL_OPTIONS, useValue: { displayDefaultIndicatorType: false }
+}</a></code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-onboarding-popup</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./onboarding-popup.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./onboarding-popup.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#deviceRegisterService" >deviceRegisterService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#formService" >formService</a>
+                            </li>
+                            <li>
+                                <a href="#guestUserStoredData" >guestUserStoredData</a>
+                            </li>
+                            <li>
+                                <a href="#isEditable" >isEditable</a>
+                            </li>
+                            <li>
+                                <a href="#isPreview" >isPreview</a>
+                            </li>
+                            <li>
+                                <a href="#isSkipped" >isSkipped</a>
+                            </li>
+                            <li>
+                                <a href="#onboardingFilterData" >onboardingFilterData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onBoardingPopup" >onBoardingPopup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#resourceService" >resourceService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#sanitizer" >sanitizer</a>
+                            </li>
+                            <li>
+                                <a href="#stepper" >stepper</a>
+                            </li>
+                            <li>
+                                <a href="#tenantInfo" >tenantInfo</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#unsubscribe$" >unsubscribe$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#userService" >userService</a>
+                            </li>
+                            <li>
+                                <a href="#userTypeStoredData" >userTypeStoredData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getLocation" >getLocation</a>
+                            </li>
+                            <li>
+                                <a href="#getOnboardingFormConfig" >getOnboardingFormConfig</a>
+                            </li>
+                            <li>
+                                <a href="#getSanitizedURL" >getSanitizedURL</a>
+                            </li>
+                            <li>
+                                <a href="#isAllScreenDisabled" >isAllScreenDisabled</a>
+                            </li>
+                            <li>
+                                <a href="#locationSubmit" >locationSubmit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onClickNext" >onClickNext</a>
+                            </li>
+                            <li>
+                                <a href="#onProcessComplete" >onProcessComplete</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#updateFrameWork" >updateFrameWork</a>
+                            </li>
+                            <li>
+                                <a href="#updateGuestUser" >updateGuestUser</a>
+                            </li>
+                            <li>
+                                <a href="#userTypeSubmit" >userTypeSubmit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#deviceProfile" >deviceProfile</a>
+                            </li>
+                            <li>
+                                <a href="#guestUserDetails" >guestUserDetails</a>
+                            </li>
+                            <li>
+                                <a href="#isGuestUser" >isGuestUser</a>
+                            </li>
+                            <li>
+                                <a href="#OnboardingFormConfig" >OnboardingFormConfig</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#close" >close</a>
+                            </li>
+                            <li>
+                                <a href="#isStepperCompleted" >isStepperCompleted</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#onboardingScreenType" >onboardingScreenType</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(sanitizer: <a href="https://angular.io/api/platform-browser/DomSanitizer" target="_blank">DomSanitizer</a>, deviceRegisterService: <a href="../injectables/DeviceRegisterService.html" target="_self">DeviceRegisterService</a>, formService: <a href="../injectables/FormService.html" target="_self">FormService</a>, resourceService: <a href="../injectables/ResourceService.html" target="_self">ResourceService</a>, userService: <a href="../injectables/UserService.html" target="_self">UserService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>sanitizer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/platform-browser/DomSanitizer" target="_blank" >DomSanitizer</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>deviceRegisterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DeviceRegisterService.html" target="_self" >DeviceRegisterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FormService.html" target="_self" >FormService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>resourceService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="deviceProfile"></a>
+                        <b>deviceProfile</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/IDeviceProfile.html" target="_self" >IDeviceProfile</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:23</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="guestUserDetails"></a>
+                        <b>guestUserDetails</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:24</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isGuestUser"></a>
+                        <b>isGuestUser</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:25</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="OnboardingFormConfig"></a>
+                        <b>OnboardingFormConfig</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:28</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="close"></a>
+                        <b>close</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:26</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isStepperCompleted"></a>
+                        <b>isStepperCompleted</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:27</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLocation"></a>
+                    <span class="name">
+                        <span ><b>getLocation</b></span>
+                        <a href="#getLocation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getLocation()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="91"
+                            class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:91</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOnboardingFormConfig"></a>
+                    <span class="name">
+                        <span ><b>getOnboardingFormConfig</b></span>
+                        <a href="#getOnboardingFormConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getOnboardingFormConfig(isBMGSkipped, isUserTypeSkipped, isLocationSkipped)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="118"
+                            class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:118</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>if all are disabled it wont show the popup</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>isBMGSkipped</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>Flag to indicate BMGS section</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>isUserTypeSkipped</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>Flag to indicate userType section</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>isLocationSkipped</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>Flag to indicate Location section</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSanitizedURL"></a>
+                    <span class="name">
+                        <span ><b>getSanitizedURL</b></span>
+                        <a href="#getSanitizedURL"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSanitizedURL(url: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="182"
+                            class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:182</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>url</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>Raw url</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isAllScreenDisabled"></a>
+                    <span class="name">
+                        <span ><b>isAllScreenDisabled</b></span>
+                        <a href="#isAllScreenDisabled"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isAllScreenDisabled()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="150"
+                            class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:150</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>emit a event to parent to disbale the stepepr popup if true
+preview screen will be disable if only one scrren is enabled in stepper</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="locationSubmit"></a>
+                    <span class="name">
+                        <span ><b>locationSubmit</b></span>
+                        <a href="#locationSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>locationSubmit(stepper: MatStepper)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>navigate to the next stepper when the submit event is emitted from  the location screen.
+call the getLocation function to get the location details to display on preview page</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>stepper</td>
+                                    <td>
+                                            <code>MatStepper</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>stepper event</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onClickNext"></a>
+                    <span class="name">
+                        <span ><b>onClickNext</b></span>
+                        <a href="#onClickNext"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onClickNext()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="189"
+                            class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:189</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onProcessComplete"></a>
+                    <span class="name">
+                        <span ><b>onProcessComplete</b></span>
+                        <a href="#onProcessComplete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onProcessComplete()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="164"
+                            class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:164</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateFrameWork"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>updateFrameWork</b></span>
+                        <a href="#updateFrameWork"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateFrameWork(stepper: MatStepper)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="101"
+                            class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:101</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>stepper</td>
+                                    <td>
+                                            <code>MatStepper</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>stepper event</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateGuestUser"></a>
+                    <span class="name">
+                        <span ><b>updateGuestUser</b></span>
+                        <a href="#updateGuestUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateGuestUser(defaultVal)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="136"
+                            class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:136</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>defaultVal</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>API request object</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userTypeSubmit"></a>
+                    <span class="name">
+                        <span ><b>userTypeSubmit</b></span>
+                        <a href="#userTypeSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>userTypeSubmit(stepper: MatStepper)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:61</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>stepper</td>
+                                    <td>
+                                            <code>MatStepper</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>stepper event</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deviceRegisterService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>deviceRegisterService</b></span>
+                        <a href="#deviceRegisterService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/DeviceRegisterService.html" target="_self" >DeviceRegisterService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>formService</b></span>
+                        <a href="#formService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/FormService.html" target="_self" >FormService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="guestUserStoredData"></a>
+                    <span class="name">
+                        <span ><b>guestUserStoredData</b></span>
+                        <a href="#guestUserStoredData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isEditable"></a>
+                    <span class="name">
+                        <span ><b>isEditable</b></span>
+                        <a href="#isEditable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isPreview"></a>
+                    <span class="name">
+                        <span ><b>isPreview</b></span>
+                        <a href="#isPreview"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isSkipped"></a>
+                    <span class="name">
+                        <span ><b>isSkipped</b></span>
+                        <a href="#isSkipped"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onboardingFilterData"></a>
+                    <span class="name">
+                        <span ><b>onboardingFilterData</b></span>
+                        <a href="#onboardingFilterData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onBoardingPopup"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>onBoardingPopup</b></span>
+                        <a href="#onBoardingPopup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;onboarding-popup&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resourceService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>resourceService</b></span>
+                        <a href="#resourceService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ResourceService.html" target="_self" >ResourceService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sanitizer"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>sanitizer</b></span>
+                        <a href="#sanitizer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/platform-browser/DomSanitizer" target="_blank" >DomSanitizer</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="stepper"></a>
+                    <span class="name">
+                        <span ><b>stepper</b></span>
+                        <a href="#stepper"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatStepper</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;stepper&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tenantInfo"></a>
+                    <span class="name">
+                        <span ><b>tenantInfo</b></span>
+                        <a href="#tenantInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/ITenantData.html" target="_self" >ITenantData</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unsubscribe$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>unsubscribe$</b></span>
+                        <a href="#unsubscribe$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>userService</b></span>
+                        <a href="#userService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/UserService.html" target="_self" >UserService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userTypeStoredData"></a>
+                    <span class="name">
+                        <span ><b>userTypeStoredData</b></span>
+                        <a href="#userTypeStoredData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onboardingScreenType"></a>
+                        <span class="name"><b>onboardingScreenType</b><a href="#onboardingScreenType"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>onboardingScreenType()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/modules/user-onboarding/components/onboarding-popup/onboarding-popup.component.ts:39</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from &#x27;@angular/core&#x27;;
+import { DeviceRegisterService, FormService, UserService } from &#x27;@sunbird/core&#x27;;
+import { ResourceService } from &#x27;@sunbird/shared&#x27;;
+import * as _ from &#x27;lodash-es&#x27;;
+import { Subject } from &#x27;rxjs&#x27;;
+import { takeUntil } from &#x27;rxjs/operators&#x27;;
+import { ITenantData } from &#x27;./../../../core/services/tenant/interfaces/tenant&#x27;;
+import { IDeviceProfile } from &#x27;../../../shared-feature/interfaces&#x27;;
+import { MatStepper } from &#x27;@angular/material/stepper&#x27;;
+import { DomSanitizer } from &#x27;@angular/platform-browser&#x27;;
+import { STEPPER_GLOBAL_OPTIONS } from &#x27;@angular/cdk/stepper&#x27;;
+import { onboardingScreenType } from &#x27;../../components/onboarding-popup/onboarding-popup.component.models&#x27;
+
+@Component({
+  selector: &#x27;app-onboarding-popup&#x27;,
+  templateUrl: &#x27;./onboarding-popup.component.html&#x27;,
+  styleUrls: [&#x27;./onboarding-popup.component.scss&#x27;],
+  providers: [{
+    provide: STEPPER_GLOBAL_OPTIONS, useValue: { displayDefaultIndicatorType: false }
+  }]
+})
+export class OnboardingPopupComponent implements OnInit {
+  @Input() deviceProfile: IDeviceProfile;
+  @Input() guestUserDetails;
+  @Input() isGuestUser;
+  @Output() close &#x3D; new EventEmitter&lt;any&gt;();
+  @Output() isStepperCompleted &#x3D; new EventEmitter&lt;any&gt;();
+  @Input() OnboardingFormConfig;
+  public unsubscribe$ &#x3D; new Subject&lt;void&gt;();
+  public onBoardingPopup &#x3D; &#x27;onboarding-popup&#x27;;
+  isEditable: boolean &#x3D; true;
+  guestUserStoredData;
+  userTypeStoredData;
+  tenantInfo: ITenantData;
+  isSkipped: boolean &#x3D; true;
+  onboardingFilterData;
+  isPreview &#x3D; true;
+  @ViewChild(&#x27;stepper&#x27;) stepper: MatStepper;
+  get onboardingScreenType() { return onboardingScreenType; }
+  constructor(
+    public sanitizer: DomSanitizer,
+    public deviceRegisterService: DeviceRegisterService,
+    public formService: FormService,
+    public resourceService: ResourceService,
+    public userService: UserService
+
+  ) { }
+  ngOnInit() {
+    this.guestUserStoredData &#x3D; JSON.parse(localStorage.getItem(&#x27;guestUserDetails&#x27;));
+    this.getOnboardingFormConfig(false, false, false);
+  }
+  ngOnDestroy() {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
+  }
+
+  /**
+   * @param  {MatStepper} stepper - stepper event 
+   * @description -   navigate to the next stepper when the submit event is emitted from  the userType screen.
+   */
+  userTypeSubmit(stepper: MatStepper) {
+    this.userTypeStoredData &#x3D; localStorage.getItem(&#x27;guestUserType&#x27;);
+    this.isSkipped &#x3D; false;
+    if (this.onboardingFilterData.length &#x3D;&#x3D;&#x3D; 1) {
+      this.isStepperCompleted.emit(true);
+    } else {
+      stepper.next();
+    }
+  }
+
+  /**
+   * @param  {MatStepper} stepper - stepper event 
+   * @description -  locationSubmit 
+   * navigate to the next stepper when the submit event is emitted from  the location screen.
+   * call the getLocation function to get the location details to display on preview page
+   */
+  locationSubmit(stepper: MatStepper) { // location form submit
+    this.guestUserStoredData &#x3D; JSON.parse(localStorage.getItem(&#x27;guestUserDetails&#x27;));
+    this.isSkipped &#x3D; false;
+    this.getLocation();
+    if (this.onboardingFilterData.length &#x3D;&#x3D;&#x3D; 1) {
+      this.isStepperCompleted.emit(true);
+    } else {
+      stepper.next();
+    }
+  }
+
+  /**
+  * @description -  to get the device profile details
+  */
+  getLocation() {
+    this.deviceRegisterService.fetchDeviceProfile().pipe(takeUntil(this.unsubscribe$)).subscribe((response) &#x3D;&gt; {
+      this.deviceProfile &#x3D; _.get(response, &#x27;result&#x27;);
+    });
+  }
+
+  /**
+   * @param  {MatStepper} stepper - stepper event 
+   * @description -  navigate to the next stepper when the submit event is emitted from  the BMGS screen.
+   */
+  public updateFrameWork(stepper: MatStepper) {
+    this.guestUserStoredData &#x3D; JSON.parse(localStorage.getItem(&#x27;guestUserDetails&#x27;));
+    this.isSkipped &#x3D; false;
+    if (this.onboardingFilterData.length &#x3D;&#x3D;&#x3D; 1) {
+      this.isStepperCompleted.emit(true);
+    } else {
+      stepper.next();
+    }
+  }
+
+  /**
+   * @param  {Boolean} isBMGSkipped - Flag to indicate BMGS section
+   * @param  {Boolean} isUserTypeSkipped - Flag to indicate userType section
+   * @param  {Boolean} isLocationSkipped - Flag to indicate Location section
+   * @description -  function to validate form config if disabled &amp; having default value. it will update the api based on default
+   * if all are disabled it wont show the popup
+   */
+  getOnboardingFormConfig(isBMGSkipped, isUserTypeSkipped, isLocationSkipped) { // condition for form config
+    _.map(this.OnboardingFormConfig, (formConfigRes) &#x3D;&gt; {
+      if (_.get(formConfigRes, &#x27;renderOptions.name&#x27;) &#x3D;&#x3D;&#x3D; onboardingScreenType.BMGS &amp;&amp; ((_.get(formConfigRes, &#x27;isEnabled&#x27;) &#x3D;&#x3D;&#x3D; false &amp;&amp; _.get(formConfigRes, &#x27;defaults&#x27;)) || (isBMGSkipped &amp;&amp; _.get(formConfigRes, &#x27;defaults&#x27;)))) {
+        this.updateGuestUser(_.get(formConfigRes, &#x27;defaults&#x27;));
+      } else if (_.get(formConfigRes, &#x27;renderOptions.name&#x27;) &#x3D;&#x3D;&#x3D; onboardingScreenType.USERTYPE &amp;&amp; ((_.get(formConfigRes, &#x27;isEnabled&#x27;) &#x3D;&#x3D;&#x3D; false &amp;&amp; _.get(formConfigRes, &#x27;defaults.role&#x27;)) || (isUserTypeSkipped &amp;&amp; _.get(formConfigRes, &#x27;defaults.role&#x27;)))) {
+        localStorage.setItem(&#x27;guestUserType&#x27;, _.get(formConfigRes, &#x27;defaults.role&#x27;));
+        this.userTypeStoredData &#x3D; localStorage.getItem(&#x27;guestUserType&#x27;)
+      } else if (_.get(formConfigRes, &#x27;renderOptions.name&#x27;) &#x3D;&#x3D;&#x3D; onboardingScreenType.LOCATION &amp;&amp; ((_.get(formConfigRes, &#x27;isEnabled&#x27;) &#x3D;&#x3D;&#x3D; false &amp;&amp; _.get(formConfigRes, &#x27;defaults&#x27;)) || (isLocationSkipped &amp;&amp; _.get(formConfigRes, &#x27;defaults&#x27;)))) {
+        this.deviceRegisterService.updateDeviceProfile(_.get(formConfigRes, &#x27;defaults&#x27;)).subscribe();
+      }
+      this.isAllScreenDisabled();
+    });
+  }
+
+  /**
+   * @param  {object} defaultVal -   API request object
+   * @description - update the guestUser Service with default value
+   */
+  updateGuestUser(defaultVal) {
+    const user: any &#x3D; { name: &#x27;guest&#x27;, formatedName: &#x27;Guest&#x27;, framework: defaultVal };
+    const userType &#x3D; localStorage.getItem(&#x27;userType&#x27;);
+    if (userType) {
+      user.role &#x3D; userType;
+    }
+    this.userService.createGuestUser(user).subscribe();
+  }
+
+  /**
+   * @description - function to check weather all the fileds are disabled
+   * emit a event to parent to disbale the stepepr popup if true
+   * preview screen will be disable if only one scrren is enabled in stepper
+   */
+  isAllScreenDisabled() {
+    this.onboardingFilterData &#x3D; _.filter(this.OnboardingFormConfig, (res) &#x3D;&gt; res.isEnabled &#x3D;&#x3D;&#x3D; true);
+    if (this.onboardingFilterData.length &#x3D;&#x3D;&#x3D; 0) {
+      this.isPreview &#x3D; false;
+      this.isStepperCompleted.emit(true);
+    }
+    if (this.onboardingFilterData.length &#x3D;&#x3D;&#x3D; 1) {
+      this.isPreview &#x3D; false;
+    }
+  }
+
+  /**
+  * @description - close the stepper popup when the user completes the process
+  */
+  onProcessComplete() {
+    const userType &#x3D; localStorage.getItem(&#x27;guestUserType&#x27;);
+    if (!this.guestUserStoredData) {
+      this.getOnboardingFormConfig(true, false, false);
+    }
+    if (!userType) {
+      this.getOnboardingFormConfig(false, true, false);
+    }
+    if (!this.deviceProfile) {
+      this.getOnboardingFormConfig(false, false, true);
+    }
+    this.isStepperCompleted.emit(true);
+  }
+
+  /**
+   * @param  {string} url  - Raw url
+   * @description - url to be sanitized to display in iframe
+   */
+  getSanitizedURL(url: string) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+
+  /**
+   * @description - it will return a flag if all the steps are skipped
+   */
+  onClickNext() {
+    if (this.onboardingFilterData.length &#x3D;&#x3D;&#x3D; 1) {
+      this.onProcessComplete();
+    }
+  }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div *ngIf&#x3D;&quot;OnboardingFormConfig.length&quot;&gt;
+  &lt;app-modal-wrapper #modal
+    [config]&#x3D;&quot;{disableClose: false, size: &#x27;small&#x27;, panelClass: [&#x27;material-modal&#x27; , &#x27;modal-stepper&#x27;]}&quot;&gt;
+    &lt;ng-template sbModalContent&gt;
+      &lt;div class&#x3D;&quot;sb-mat__modal&quot;&gt;
+        &lt;div mat-dialog-title class&#x3D;&quot;flex-dc mb-0 pt-24 pb-16&quot;&gt;
+          &lt;img height&#x3D;&quot;40&quot; src&#x3D;&quot;https://staging.sunbirded.org/assets/images/sunbird_logo.png&quot; alt&#x3D;&quot;Welcome to sunbird&quot;&gt;
+          &lt;h1 class&#x3D;&quot;mb-0 stepper-logo&quot;&gt;Welcome to sunbird &lt;/h1&gt;
+        &lt;/div&gt;
+
+        &lt;mat-horizontal-stepper style&#x3D;&quot;background: var(--sbt-body-bg);&quot; [linear]&#x3D;&quot;true&quot; #stepper labelPosition&#x3D;&quot;bottom&quot;&gt;
+
+          &lt;ng-container *ngFor&#x3D;&quot;let configData of OnboardingFormConfig | sortBy:&#x27;sequence&#x27;:&#x27;asc&#x27;&quot;&gt;
+            &lt;h3&gt;Your preferences&lt;/h3&gt;
+
+            &lt;!-- component --&gt;
+            &lt;mat-step
+              *ngIf&#x3D;&quot;configData?.isEnabled &amp;&amp; [onboardingScreenType.HTML, onboardingScreenType.URL,onboardingScreenType.VIDEO,onboardingScreenType.PDF,onboardingScreenType.COMPONENT ].includes(configData?.renderOptions?.type)&quot;&gt;
+              &lt;ng-template matStepLabel&gt;{{configData?.stepLabel}}&lt;/ng-template&gt;
+              &lt;!-- &lt;mat-label *ngIf&#x3D;&quot;configData?.description&quot;&gt;{{configData?.description}}&lt;/mat-label&gt; --&gt;
+
+
+              &lt;!-- #1 userType --&gt;
+              &lt;app-onboarding-user-selection *ngIf&#x3D;&quot;configData?.renderOptions?.name &#x3D;&#x3D;&#x3D; onboardingScreenType.USERTYPE&quot;
+                [tenantInfo]&#x3D;&quot;tenantInfo&quot; [isStepper]&#x3D;&quot;true&quot; (userSelect)&#x3D;&quot;userTypeSubmit(stepper)&quot;&gt;
+              &lt;/app-onboarding-user-selection&gt;
+
+              &lt;!-- #2 Location --&gt;
+              &lt;app-location-selection *ngIf&#x3D;&quot;configData?.renderOptions?.name &#x3D;&#x3D;&#x3D; onboardingScreenType.LOCATION&quot;
+                [deviceProfile]&#x3D;&quot;deviceProfile&quot; [isClosable]&#x3D;&quot;false&quot; [isStepper]&#x3D;&quot;true&quot;
+                (close)&#x3D;&quot;locationSubmit(stepper)&quot;&gt;
+                &lt;img [src]&#x3D;&quot;tenantInfo?.logo&quot; class&#x3D;&quot;b\rand-logo&quot; height&#x3D;&quot;40&quot;
+                  alt&#x3D;&quot;{{resourceService?.frmelmnts?.lbl?.welcomeToInstance | interpolate:&#x27;{instance}&#x27;: tenantInfo?.titleName}}&quot; /&gt;
+                &lt;h1 class&#x3D;&quot;mb-0 header-text&quot;&gt;{{resourceService?.frmelmnts?.lbl?.welcomeToInstance |
+                                interpolate:&#x27;{instance}&#x27;: tenantInfo?.titleName}}&lt;/h1&gt;
+              &lt;/app-location-selection&gt;
+
+              &lt;!-- #3 BMGS --&gt;
+              &lt;app-popup *ngIf&#x3D;&quot;configData?.renderOptions?.name &#x3D;&#x3D;&#x3D; onboardingScreenType.BMGS&quot; [dialogProps]&#x3D;&quot;data&quot;
+                [buttonLabel]&#x3D;&quot;resourceService?.frmelmnts?.btn?.submit&quot; [isGuestUser]&#x3D;&quot;isGuestUser&quot; [isStepper]&#x3D;&quot;true&quot;
+                (submit)&#x3D;&quot;updateFrameWork(stepper)&quot;&gt;
+              &lt;/app-popup&gt;
+
+              &lt;div class&#x3D;&quot;stepper-screen&quot;&gt;
+                &lt;!-- html code snippits --&gt;
+                &lt;div *ngIf&#x3D;&quot;configData?.renderOptions?.type &#x3D;&#x3D;&#x3D; onboardingScreenType.HTML&quot;
+                  [innerHTML]&#x3D;&quot;configData?.renderOptions?.content&quot;&gt;
+                &lt;/div&gt;
+
+                &lt;!-- url based screen --&gt;
+                &lt;div *ngIf&#x3D;&quot;configData?.renderOptions?.type &#x3D;&#x3D;&#x3D; onboardingScreenType.URL&quot;&gt;
+                  &lt;iframe width&#x3D;&quot;580&quot; height&#x3D;&quot;330&quot; frameborder&#x3D;&quot;0&quot; class&#x3D;&quot;dashboard-iframe&quot;
+                    [src]&#x3D;&quot;getSanitizedURL(configData?.url)&quot;&gt;
+                  &lt;/iframe&gt;
+                &lt;/div&gt;
+
+                &lt;!-- SunBird video Player --&gt;
+                &lt;div *ngIf&#x3D;&quot;configData?.renderOptions?.type &#x3D;&#x3D;&#x3D; onboardingScreenType.VIDEO&quot; class&#x3D;&quot;aspectratio&quot;
+                  data-ratio&#x3D;&quot;16:9&quot; id&#x3D;&quot;help-video-aspect-ratio&quot; #aspectRatio&gt;
+                  &lt;sunbird-video-player [playerConfig]&#x3D;&quot;configData?.renderOptions?.videoPlayerConfig&quot;&gt;
+                  &lt;/sunbird-video-player&gt;
+                &lt;/div&gt;
+
+                &lt;!-- SunBird pdf Player --&gt;
+                &lt;div *ngIf&#x3D;&quot;configData?.renderOptions?.type &#x3D;&#x3D;&#x3D; onboardingScreenType.PDF&quot; class&#x3D;&quot;aspectratio&quot;
+                  data-ratio&#x3D;&quot;16:9&quot; id&#x3D;&quot;help-video-aspect-ratio&quot; #aspectRatio&gt;
+                  &lt;sunbird-pdf-player [playerConfig]&#x3D;&quot;configData?.renderOptions?.pdfPlayerConfig&quot;&gt;
+                  &lt;/sunbird-pdf-player&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+
+              &lt;!-- action button show this buttons only for video, pdf and url screens--&gt;
+              &lt;div class&#x3D;&quot;stepper-btns d-flex&quot;&gt;
+                &lt;div *ngIf&#x3D;&quot;isPreview&quot;&gt;
+                  &lt;button *ngIf&#x3D;&quot;configData?.sequence !&#x3D; 1&quot;
+                    class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-outline-primary sb-left-icon-btn text-uppercase mx-8&quot;
+                    matStepperPrevious&gt;&lt;i class&#x3D;&quot;icon-svg icon-svg--xxs icon-back mr-4&quot;&gt;
+                      &lt;svg class&#x3D;&quot;icon icon-svg--primary&quot;&gt;
+                        &lt;use xlink:href&#x3D;&quot;assets/images/sprite.svg#arrow-long-left&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;&lt;/i&gt; Back&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;button *ngIf&#x3D;&quot;!configData?.isMandatory&quot;
+                  class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-primary text-uppercase stepper-next-btn&quot; (click)&#x3D;&quot;onClickNext()&quot;
+                  matStepperNext&gt;Next
+                  &lt;span class&#x3D;&quot;arrow-icon&quot;&gt;&lt;em class&#x3D;&quot;icon-svg icon-svg--xxs icon-back&quot;&gt;&lt;svg
+                        class&#x3D;&quot;icon icon-svg--white&quot;&gt;
+                        &lt;use xlink:href&#x3D;&quot;assets/images/sprite.svg#arrow-long-right&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;&lt;/em&gt;&lt;/span&gt;
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/mat-step&gt;
+          &lt;/ng-container&gt;
+
+          &lt;!-- by default preview screen --&gt;
+          &lt;mat-step *ngIf&#x3D;&quot;isPreview&quot;&gt;
+            &lt;ng-template matStepLabel&gt;Preview&lt;/ng-template&gt;
+            &lt;div class&#x3D;&quot;preview-content&quot;&gt;
+              &lt;p class&#x3D;&quot;my-24 subtitle&quot; *ngIf&#x3D;&quot;!isSkipped&quot;&gt;You have selected these below data in previous section !!
+              &lt;/p&gt;
+              &lt;p class&#x3D;&quot;my-24 subtitle&quot; *ngIf&#x3D;&quot;isSkipped&quot;&gt;You have skipped all previous sections !!&lt;/p&gt;
+              &lt;div *ngIf&#x3D;&quot;!isSkipped&quot; class&#x3D;&quot;user-detail-container p-24 my-16&quot; role&#x3D;&quot;list&quot;&gt;
+                &lt;div class&#x3D;&quot;user-detail-list&quot; role&#x3D;&quot;listitem&quot; tabindex&#x3D;&quot;0&quot;
+                  attr.aria-label&#x3D;&quot;Name:{{guestUserStoredData?.formatedName}}&quot;
+                  *ngIf&#x3D;&quot;guestUserStoredData &amp;&amp; guestUserStoredData?.formatedName&quot;&gt;
+                  &lt;label class&#x3D;&quot;label-names fnormal font-weight-normal pr-8&quot; role&#x3D;&quot;heading&quot;&gt;Name:&lt;/label&gt;
+                  &lt;label class&#x3D;&quot;label-values fnormal font-weight-bold&quot;&gt;{{guestUserStoredData?.formatedName}}&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;user-detail-list&quot; role&#x3D;&quot;listitem&quot; tabindex&#x3D;&quot;1&quot; attr.aria-label&#x3D;&quot;Role:{{userTypeStoredData}}&quot;
+                  *ngIf&#x3D;&quot;userTypeStoredData&quot;&gt;
+                  &lt;label class&#x3D;&quot;label-names fnormal font-weight-normal pr-8&quot; role&#x3D;&quot;heading&quot;&gt;Role:&lt;/label&gt;
+                  &lt;label class&#x3D;&quot;label-values fnormal font-weight-bold&quot;&gt;{{userTypeStoredData}}&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;user-detail-list&quot; role&#x3D;&quot;listitem&quot; tabindex&#x3D;&quot;0&quot;
+                  attr.aria-label&#x3D;&quot;Board:{{guestUserStoredData?.framework?.board}}&quot;
+                  *ngIf&#x3D;&quot;guestUserStoredData &amp;&amp; guestUserStoredData?.framework?.board&quot;&gt;
+                  &lt;label class&#x3D;&quot;label-names fnormal font-weight-normal pr-8&quot; role&#x3D;&quot;heading&quot;&gt;Board:&lt;/label&gt;
+                  &lt;label class&#x3D;&quot;label-values fnormal font-weight-bold&quot;&gt;{{guestUserStoredData?.framework?.board}}&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;user-detail-list&quot; role&#x3D;&quot;listitem&quot; tabindex&#x3D;&quot;0&quot;
+                  attr.aria-label&#x3D;&quot;Medium:{{guestUserStoredData?.framework?.medium}}&quot;
+                  *ngIf&#x3D;&quot;guestUserStoredData &amp;&amp; guestUserStoredData?.framework?.medium&quot;&gt;
+                  &lt;label class&#x3D;&quot;label-names fnormal font-weight-normal pr-8&quot; role&#x3D;&quot;heading&quot;&gt;Medium:&lt;/label&gt;
+                  &lt;label
+                    class&#x3D;&quot;label-values fnormal font-weight-bold&quot;&gt;{{guestUserStoredData?.framework?.medium}}&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;user-detail-list&quot; role&#x3D;&quot;listitem&quot; tabindex&#x3D;&quot;0&quot;
+                  attr.aria-label&#x3D;&quot;Grade:{{guestUserStoredData?.framework?.gradeLevel}}&quot;
+                  *ngIf&#x3D;&quot;guestUserStoredData &amp;&amp; guestUserStoredData?.framework?.gradeLevel&quot;&gt;
+                  &lt;label class&#x3D;&quot;label-names fnormal font-weight-normal pr-8&quot; role&#x3D;&quot;heading&quot;&gt;Grade:&lt;/label&gt;
+                  &lt;label
+                    class&#x3D;&quot;label-values fnormal font-weight-bold&quot;&gt;{{guestUserStoredData?.framework?.gradeLevel}}&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;user-detail-list&quot; role&#x3D;&quot;listitem&quot; tabindex&#x3D;&quot;0&quot;
+                  attr.aria-label&#x3D;&quot;District:{{deviceProfile?.userDeclaredLocation?.district}}&quot;
+                  *ngIf&#x3D;&quot;deviceProfile &amp;&amp; deviceProfile?.userDeclaredLocation?.district&quot;&gt;
+                  &lt;label class&#x3D;&quot;label-names fnormal font-weight-normal pr-8&quot; role&#x3D;&quot;heading&quot;&gt;District:&lt;/label&gt;
+                  &lt;label
+                    class&#x3D;&quot;label-values fnormal font-weight-bold&quot;&gt;{{deviceProfile?.userDeclaredLocation?.district}}&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;user-detail-list&quot; role&#x3D;&quot;listitem&quot; tabindex&#x3D;&quot;0&quot;
+                  attr.aria-label&#x3D;&quot;State:{{deviceProfile?.userDeclaredLocation?.state}}&quot;
+                  *ngIf&#x3D;&quot;deviceProfile &amp;&amp; deviceProfile?.userDeclaredLocation?.state&quot;&gt;
+                  &lt;label class&#x3D;&quot;label-names fnormal font-weight-normal pr-8&quot; role&#x3D;&quot;heading&quot;&gt;State:&lt;/label&gt;
+                  &lt;label
+                    class&#x3D;&quot;label-values fnormal font-weight-bold&quot;&gt;{{deviceProfile?.userDeclaredLocation?.state}}&lt;/label&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;stepper-btns d-flex&quot;&gt;
+                &lt;button *ngIf&#x3D;&quot;configData?.sequence !&#x3D; 1&quot;
+                  class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-outline-primary sb-left-icon-btn text-uppercase mx-8&quot;
+                  matStepperPrevious&gt; &lt;i class&#x3D;&quot;icon-svg icon-svg--xxs icon-back mr-4&quot;&gt;
+                    &lt;svg class&#x3D;&quot;icon icon-svg--primary&quot;&gt;
+                      &lt;use xlink:href&#x3D;&quot;assets/images/sprite.svg#arrow-long-left&quot;&gt;&lt;/use&gt;
+                    &lt;/svg&gt;&lt;/i&gt;Back&lt;/button&gt;
+                &lt;button class&#x3D;&quot;sb-btn sb-btn-normal sb-btn-primary text-uppercase stepper-done-btn&quot;
+                  (click)&#x3D;&quot;onProcessComplete()&quot;&gt;Done&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/mat-step&gt;
+        &lt;/mat-horizontal-stepper&gt;
+
+      &lt;/div&gt;
+    &lt;/ng-template&gt;
+  &lt;/app-modal-wrapper&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./onboarding-popup.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@use &quot;~@project-sunbird/sb-styles/assets/mixins/mixins&quot;as *;
+@use &quot;components/video&quot;as *;
+
+.stepper-logo {
+  color: var(--primary-400);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.stepper-btns {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+
+  @include respond-below(sm) {
+    left: 0;
+    right: 0;
+    padding: 0 1.5rem;
+    justify-content: center;
+  }
+
+  .stepper-done-btn,
+  .stepper-next-btn {
+    width: 10.5rem;
+  }
+}
+
+.stepper-screen .aspectratio[data-ratio&#x3D;&quot;16:9&quot;] {
+  padding-top: 48.25%;
+}
+
+// user-details gray box new design css
+.user-detail-container {
+  overflow-y: auto;
+  max-height: 11.8rem;
+  border-radius: 1.5rem;
+  background: var(--rc-e9e5e5);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5rem;
+  text-transform: capitalize;
+  width: 100%;
+  max-width: 36rem;
+  margin: 1rem auto;
+
+  .user-detail-list {
+    display: flex;
+
+    @include respond-below(sm) {
+      flex-direction: row;
+    }
+
+    .label-values {
+      word-break: break-word;
+    }
+  }
+
+  .user-detail-list:nth-child(1) {
+    order: 1;
+  }
+
+  .user-detail-list:nth-child(2) {
+    order: 2;
+  }
+
+  .user-detail-list:nth-child(3) {
+    order: 3;
+  }
+
+  .user-detail-list:nth-child(4) {
+    order: 4;
+  }
+
+  .user-detail-list:nth-child(5) {
+    order: 1;
+  }
+
+  .user-detail-list:nth-child(6) {
+    order: 2;
+  }
+
+  .user-detail-list:nth-child(7) {
+    order: 3;
+  }
+}
+
+@include respond-below(sm) {
+  .user-detail-container {
+    grid-template-columns: 1fr;
+    border-radius: 0;
+    max-height: 16rem;
+
+    .user-detail-list:nth-child(1) {
+      order: 1;
+    }
+
+    .user-detail-list:nth-child(2) {
+      order: 2;
+    }
+
+    .user-detail-list:nth-child(3) {
+      order: 3;
+    }
+
+    .user-detail-list:nth-child(4) {
+      order: 4;
+    }
+
+    .user-detail-list:nth-child(5) {
+      order: 5;
+    }
+
+    .user-detail-list:nth-child(6) {
+      order: 6;
+    }
+
+    .user-detail-list:nth-child(7) {
+      order: 7;
+    }
+
+  }
+}
+
+::ng-deep {
+  .cdk-overlay-pane.modal-stepper .mat-dialog-container .sb-mat__modal {
+    max-height: 36rem;
+    height: 100%;
+    position: relative;
+
+    @include respond-below(sm) {
+      max-height: 100%;
+    }
+
+    &amp; .mat-dialog-title {
+      text-align: center;
+    }
+  }
+
+  .cdk-overlay-pane.material-modal .mat-dialog-container .sb-mat__modal {
+    &amp; .sb-mat__modal__content {
+      padding: 0;
+      overflow-x: hidden;
+      max-height: 18.75rem;
+
+      @include respond-below(sm) {
+        max-height: 55vh;
+        height: 100%;
+      }
+    }
+  }
+
+  .mat-stepper-label-position-bottom .mat-horizontal-stepper-header-container {
+    align-items: flex-start;
+    padding: 0 1.5rem;
+  }
+
+  .cdk-overlay-container .cdk-global-overlay-wrapper .cdk-overlay-pane.material-modal .mat-dialog-container .sb-mat__modal .mat-dialog-title {
+    text-align: center;
+    padding: 0 0 1rem 0;
+  }
+
+  .mat-horizontal-stepper-header {
+    pointer-events: none;
+  }
+
+  .mat-stepper-horizontal.mat-stepper-label-position-bottom .mat-horizontal-stepper-header .mat-step-label {
+    padding: 0.25rem 0 0 0;
+  }
+
+  .mat-stepper-label-position-bottom .mat-horizontal-stepper-header,
+  .mat-vertical-stepper-header {
+    padding: 0.25rem;
+  }
+
+  .mat-step-header .mat-step-icon.mat-step-icon-selected,
+  .mat-step-header .mat-step-icon.mat-step-icon-state-edit {
+    border: 0.0625rem solid var(--primary-color);
+    color: var(--primary-color);
+    background: var(--white);
+  }
+
+  .mat-step-header .mat-step-icon.mat-step-icon-state-done {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 0.0625rem solid var(--primary-color);
+  }
+
+  .mat-step-header .mat-step-icon {
+    background-color: var(--gray-800);
+    color: var(--white);
+    border: 0.0625rem solid var(--gray-800);
+    color: var(--gray-800);
+    background: none;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .mat-step-header .mat-step-label.mat-step-label-active {
+    color: var(--primary-color);
+  }
+
+  .modal-stepper .mat-dialog-container .sb-mat__modal .mat-stepper-horizontal .mat-horizontal-content-container {
+    padding: 0 1.5rem 1.5rem;
+    height: 25rem;
+
+    @include respond-below(sm) {
+      height: 100%;
+    }
+  }
+
+  .modal-stepper .sb-mat__modal .mat-stepper-vertical,
+  .mat-stepper-horizontal.mat-stepper-label-position-bottom {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+    @include respond-below(sm) {
+      height: 100%;
+    }
+  }
+
+  .mat-stepper-label-position-bottom .mat-horizontal-stepper-header::after,
+  .mat-stepper-label-position-bottom .mat-horizontal-stepper-header::before {
+    top: 1.25rem;
+  }
+
+  .mat-stepper-label-position-bottom .mat-stepper-horizontal-line {
+    top: 1.25rem;
+  }
+
+  .mat-step-header.cdk-keyboard-focused,
+  .mat-step-header.cdk-program-focused,
+  .mat-step-header:hover {
+    background: none;
+  }
+
+  *:focus-visible {
+    border: none !important;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div *ngIf="OnboardingFormConfig.length">  <app-modal-wrapper #modal    [config]="{disableClose: false, size: \'small\', panelClass: [\'material-modal\' , \'modal-stepper\']}">    <ng-template sbModalContent>      <div class="sb-mat__modal">        <div mat-dialog-title class="flex-dc mb-0 pt-24 pb-16">          <img height="40" src="https://staging.sunbirded.org/assets/images/sunbird_logo.png" alt="Welcome to sunbird">          <h1 class="mb-0 stepper-logo">Welcome to sunbird </h1>        </div>        <mat-horizontal-stepper style="background: var(--sbt-body-bg);" [linear]="true" #stepper labelPosition="bottom">          <ng-container *ngFor="let configData of OnboardingFormConfig | sortBy:\'sequence\':\'asc\'">            <h3>Your preferences</h3>            <!-- component -->            <mat-step              *ngIf="configData?.isEnabled && [onboardingScreenType.HTML, onboardingScreenType.URL,onboardingScreenType.VIDEO,onboardingScreenType.PDF,onboardingScreenType.COMPONENT ].includes(configData?.renderOptions?.type)">              <ng-template matStepLabel>{{configData?.stepLabel}}</ng-template>              <!-- <mat-label *ngIf="configData?.description">{{configData?.description}}</mat-label> -->              <!-- #1 userType -->              <app-onboarding-user-selection *ngIf="configData?.renderOptions?.name === onboardingScreenType.USERTYPE"                [tenantInfo]="tenantInfo" [isStepper]="true" (userSelect)="userTypeSubmit(stepper)">              </app-onboarding-user-selection>              <!-- #2 Location -->              <app-location-selection *ngIf="configData?.renderOptions?.name === onboardingScreenType.LOCATION"                [deviceProfile]="deviceProfile" [isClosable]="false" [isStepper]="true"                (close)="locationSubmit(stepper)">                <img [src]="tenantInfo?.logo" class="b\rand-logo" height="40"                  alt="{{resourceService?.frmelmnts?.lbl?.welcomeToInstance | interpolate:\'{instance}\': tenantInfo?.titleName}}" />                <h1 class="mb-0 header-text">{{resourceService?.frmelmnts?.lbl?.welcomeToInstance |                                interpolate:\'{instance}\': tenantInfo?.titleName}}</h1>              </app-location-selection>              <!-- #3 BMGS -->              <app-popup *ngIf="configData?.renderOptions?.name === onboardingScreenType.BMGS" [dialogProps]="data"                [buttonLabel]="resourceService?.frmelmnts?.btn?.submit" [isGuestUser]="isGuestUser" [isStepper]="true"                (submit)="updateFrameWork(stepper)">              </app-popup>              <div class="stepper-screen">                <!-- html code snippits -->                <div *ngIf="configData?.renderOptions?.type === onboardingScreenType.HTML"                  [innerHTML]="configData?.renderOptions?.content">                </div>                <!-- url based screen -->                <div *ngIf="configData?.renderOptions?.type === onboardingScreenType.URL">                  <iframe width="580" height="330" frameborder="0" class="dashboard-iframe"                    [src]="getSanitizedURL(configData?.url)">                  </iframe>                </div>                <!-- SunBird video Player -->                <div *ngIf="configData?.renderOptions?.type === onboardingScreenType.VIDEO" class="aspectratio"                  data-ratio="16:9" id="help-video-aspect-ratio" #aspectRatio>                  <sunbird-video-player [playerConfig]="configData?.renderOptions?.videoPlayerConfig">                  </sunbird-video-player>                </div>                <!-- SunBird pdf Player -->                <div *ngIf="configData?.renderOptions?.type === onboardingScreenType.PDF" class="aspectratio"                  data-ratio="16:9" id="help-video-aspect-ratio" #aspectRatio>                  <sunbird-pdf-player [playerConfig]="configData?.renderOptions?.pdfPlayerConfig">                  </sunbird-pdf-player>                </div>              </div>              <!-- action button show this buttons only for video, pdf and url screens-->              <div class="stepper-btns d-flex">                <div *ngIf="isPreview">                  <button *ngIf="configData?.sequence != 1"                    class="sb-btn sb-btn-normal sb-btn-outline-primary sb-left-icon-btn text-uppercase mx-8"                    matStepperPrevious><i class="icon-svg icon-svg--xxs icon-back mr-4">                      <svg class="icon icon-svg--primary">                        <use xlink:href="assets/images/sprite.svg#arrow-long-left"></use>                      </svg></i> Back</button>                </div>                <button *ngIf="!configData?.isMandatory"                  class="sb-btn sb-btn-normal sb-btn-primary text-uppercase stepper-next-btn" (click)="onClickNext()"                  matStepperNext>Next                  <span class="arrow-icon"><em class="icon-svg icon-svg--xxs icon-back"><svg                        class="icon icon-svg--white">                        <use xlink:href="assets/images/sprite.svg#arrow-long-right"></use>                      </svg></em></span>                </button>              </div>            </mat-step>          </ng-container>          <!-- by default preview screen -->          <mat-step *ngIf="isPreview">            <ng-template matStepLabel>Preview</ng-template>            <div class="preview-content">              <p class="my-24 subtitle" *ngIf="!isSkipped">You have selected these below data in previous section !!              </p>              <p class="my-24 subtitle" *ngIf="isSkipped">You have skipped all previous sections !!</p>              <div *ngIf="!isSkipped" class="user-detail-container p-24 my-16" role="list">                <div class="user-detail-list" role="listitem" tabindex="0"                  attr.aria-label="Name:{{guestUserStoredData?.formatedName}}"                  *ngIf="guestUserStoredData && guestUserStoredData?.formatedName">                  <label class="label-names fnormal font-weight-normal pr-8" role="heading">Name:</label>                  <label class="label-values fnormal font-weight-bold">{{guestUserStoredData?.formatedName}}</label>                </div>                <div class="user-detail-list" role="listitem" tabindex="1" attr.aria-label="Role:{{userTypeStoredData}}"                  *ngIf="userTypeStoredData">                  <label class="label-names fnormal font-weight-normal pr-8" role="heading">Role:</label>                  <label class="label-values fnormal font-weight-bold">{{userTypeStoredData}}</label>                </div>                <div class="user-detail-list" role="listitem" tabindex="0"                  attr.aria-label="Board:{{guestUserStoredData?.framework?.board}}"                  *ngIf="guestUserStoredData && guestUserStoredData?.framework?.board">                  <label class="label-names fnormal font-weight-normal pr-8" role="heading">Board:</label>                  <label class="label-values fnormal font-weight-bold">{{guestUserStoredData?.framework?.board}}</label>                </div>                <div class="user-detail-list" role="listitem" tabindex="0"                  attr.aria-label="Medium:{{guestUserStoredData?.framework?.medium}}"                  *ngIf="guestUserStoredData && guestUserStoredData?.framework?.medium">                  <label class="label-names fnormal font-weight-normal pr-8" role="heading">Medium:</label>                  <label                    class="label-values fnormal font-weight-bold">{{guestUserStoredData?.framework?.medium}}</label>                </div>                <div class="user-detail-list" role="listitem" tabindex="0"                  attr.aria-label="Grade:{{guestUserStoredData?.framework?.gradeLevel}}"                  *ngIf="guestUserStoredData && guestUserStoredData?.framework?.gradeLevel">                  <label class="label-names fnormal font-weight-normal pr-8" role="heading">Grade:</label>                  <label                    class="label-values fnormal font-weight-bold">{{guestUserStoredData?.framework?.gradeLevel}}</label>                </div>                <div class="user-detail-list" role="listitem" tabindex="0"                  attr.aria-label="District:{{deviceProfile?.userDeclaredLocation?.district}}"                  *ngIf="deviceProfile && deviceProfile?.userDeclaredLocation?.district">                  <label class="label-names fnormal font-weight-normal pr-8" role="heading">District:</label>                  <label                    class="label-values fnormal font-weight-bold">{{deviceProfile?.userDeclaredLocation?.district}}</label>                </div>                <div class="user-detail-list" role="listitem" tabindex="0"                  attr.aria-label="State:{{deviceProfile?.userDeclaredLocation?.state}}"                  *ngIf="deviceProfile && deviceProfile?.userDeclaredLocation?.state">                  <label class="label-names fnormal font-weight-normal pr-8" role="heading">State:</label>                  <label                    class="label-values fnormal font-weight-bold">{{deviceProfile?.userDeclaredLocation?.state}}</label>                </div>              </div>              <div class="stepper-btns d-flex">                <button *ngIf="configData?.sequence != 1"                  class="sb-btn sb-btn-normal sb-btn-outline-primary sb-left-icon-btn text-uppercase mx-8"                  matStepperPrevious> <i class="icon-svg icon-svg--xxs icon-back mr-4">                    <svg class="icon icon-svg--primary">                      <use xlink:href="assets/images/sprite.svg#arrow-long-left"></use>                    </svg></i>Back</button>                <button class="sb-btn sb-btn-normal sb-btn-primary text-uppercase stepper-done-btn"                  (click)="onProcessComplete()">Done</button>              </div>            </div>          </mat-step>        </mat-horizontal-stepper>      </div>    </ng-template>  </app-modal-wrapper></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'app-access-discussion'},{'name': 'AccountMergeModalComponent', 'selector': 'app-account-merge-modal'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-info'},{'name': 'ActivityDashboardComponent', 'selector': 'app-activity-dashboard'},{'name': 'ActivityDetailsComponent', 'selector': 'app-activity-details'},{'name': 'ActivityFormComponent', 'selector': 'app-activity-form'},{'name': 'ActivityListComponent', 'selector': 'app-activity-list'},{'name': 'ActivitySearchComponent', 'selector': 'app-activity-search'},{'name': 'AddActivityComponent', 'selector': 'app-add-activity'},{'name': 'AddActivityContentTypesComponent', 'selector': 'app-add-activity-content-types'},{'name': 'AddEntityComponent', 'selector': 'add-entity'},{'name': 'AddMemberComponent', 'selector': 'app-add-member'},{'name': 'AddSummaryModalComponent', 'selector': 'app-add-summary-modal'},{'name': 'AlertModalComponent', 'selector': 'app-alert-modal'},{'name': 'AllContentComponent', 'selector': 'app-all-content'},{'name': 'AllEvidenceComponent', 'selector': 'app-all-evidence'},{'name': 'AllTextbooksComponent', 'selector': 'app-all-textbooks'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppLandingSectionComponent', 'selector': 'app-landing-section'},{'name': 'AppLoaderComponent', 'selector': 'app-loader'},{'name': 'AssessmentPlayerComponent', 'selector': 'app-assessment-player'},{'name': 'AssignBadgesContentComponent', 'selector': 'app-assign-badges-content'},{'name': 'AuthFailedComponent', 'selector': 'app-auth-failed'},{'name': 'BackButtonComponent', 'selector': 'app-back-button'},{'name': 'BatchCardComponent', 'selector': 'app-batch-card'},{'name': 'BatchDetailsComponent', 'selector': 'app-batch-details'},{'name': 'BatchInfoComponent', 'selector': 'app-batch-info'},{'name': 'BatchListComponent', 'selector': 'app-batch-list'},{'name': 'BatchPageSectionComponent', 'selector': 'app-batch-page-section'},{'name': 'BrowseImagePopupComponent', 'selector': 'browse-image-popup'},{'name': 'BrowserCompatibilityComponent', 'selector': 'app-browser-compatibility'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardCreationComponent', 'selector': 'app-card-creation'},{'name': 'CertificateConfigurationComponent', 'selector': 'app-certificate-configuration'},{'name': 'CertificateDetailsComponent', 'selector': 'app-certificate-details'},{'name': 'CertificateNameUpdatePopupComponent', 'selector': 'app-certificate-name-update-popup'},{'name': 'CertPreviewPopupComponent', 'selector': 'app-cert-preview-popup'},{'name': 'ChooseUserComponent', 'selector': 'app-choose-user'},{'name': 'CollaboratingOnComponent', 'selector': 'app-collaborating-on'},{'name': 'CollaborationContentFilterComponent', 'selector': 'app-collaboration-content-filter'},{'name': 'CollectionEditorComponent', 'selector': 'app-collection-editor'},{'name': 'CollectionPlayerComponent', 'selector': 'app-collection-player'},{'name': 'CollectionPlayerMetadataComponent', 'selector': 'app-collection-player-metadata'},{'name': 'CommingSoonComponent', 'selector': 'app-comming-soon'},{'name': 'ConfirmationPopupComponent', 'selector': 'app-confirmation-popup'},{'name': 'ConfirmPopupComponent', 'selector': 'app-confirm-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentBadgeComponent', 'selector': 'app-content-badge'},{'name': 'ContentChapterlistComponent', 'selector': 'app-content-chapterlist'},{'name': 'ContentCreditsComponent', 'selector': 'app-content-credits'},{'name': 'ContentEditorComponent', 'selector': 'app-content-editor'},{'name': 'ContentLicenceComponent', 'selector': 'app-content-licence'},{'name': 'ContentManagerComponent', 'selector': 'app-content-manager'},{'name': 'ContentManagerInfoPopUpComponent', 'selector': 'app-content-manager-info-pop-up'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerComponent', 'selector': 'app-content-player'},{'name': 'ContentPlayerMetadataComponent', 'selector': 'app-content-player-metadata'},{'name': 'ContentPlayerPageComponent', 'selector': 'app-contentplayer-page'},{'name': 'ContentRatingComponent', 'selector': 'app-content-rating'},{'name': 'ContentTypeComponent', 'selector': 'app-content-type'},{'name': 'CourseCompletionComponent', 'selector': 'app-course-completion'},{'name': 'CourseConsumptionComponent', 'selector': 'app-course-consumption'},{'name': 'CourseConsumptionHeaderComponent', 'selector': 'app-course-consumption-header'},{'name': 'CourseConsumptionPageComponent', 'selector': ''},{'name': 'CourseDashboardComponent', 'selector': 'app-course-dashboard'},{'name': 'CourseDetailsComponent', 'selector': 'app-course-details'},{'name': 'CourseInfoComponent', 'selector': 'app-course-info'},{'name': 'CoursePageComponent', 'selector': ''},{'name': 'CoursePlayerComponent', 'selector': 'app-course-player'},{'name': 'CourseProgressComponent', 'selector': 'app-course-progress'},{'name': 'CreateBatchComponent', 'selector': 'app-create-batch'},{'name': 'CreateContentComponent', 'selector': 'app-create-content'},{'name': 'CreateEditGroupComponent', 'selector': 'app-create-edit-group'},{'name': 'CreateOrgTypeComponent', 'selector': 'app-create-org-type'},{'name': 'CreateTemplateComponent', 'selector': 'app-create-template'},{'name': 'CreateUserComponent', 'selector': 'app-create-user'},{'name': 'CreditsAndLicenceComponent', 'selector': 'app-credits-and-licence'},{'name': 'CurriculumCardComponent', 'selector': 'app-curriculum-card'},{'name': 'CurriculumCoursesComponent', 'selector': 'app-curriculum-courses'},{'name': 'CurriculumInfoComponent', 'selector': 'app-curriculum-info'},{'name': 'CustomMultiSelectComponent', 'selector': 'app-custom-multi-select'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardSidebarComponent', 'selector': 'app-dashboard-sidebar'},{'name': 'DataChartComponent', 'selector': 'app-data-chart'},{'name': 'DataDrivenComponent', 'selector': 'app-data-driven'},{'name': 'DataDrivenFilterComponent', 'selector': 'app-data-driven-filter'},{'name': 'DatasetComponent', 'selector': 'app-dataset'},{'name': 'DatasetsComponent', 'selector': 'app-datasets'},{'name': 'DataTableComponent', 'selector': 'app-data-table'},{'name': 'DefaultTemplateComponent', 'selector': 'app-content-creation-default-template'},{'name': 'DesktopAppUpdateComponent', 'selector': 'app-desktop-app-update'},{'name': 'DialCodeCardComponent', 'selector': 'app-dial-code-card'},{'name': 'DialCodeComponent', 'selector': 'app-dial-code'},{'name': 'DraftComponent', 'selector': 'app-draft'},{'name': 'EditSubmissionComponent', 'selector': 'app-edit-submission'},{'name': 'EnrollBatchComponent', 'selector': 'app-enroll-batch'},{'name': 'EntityListComponent', 'selector': 'entity-list'},{'name': 'EntityListComponent', 'selector': 'app-entity-list'},{'name': 'ErrorPageComponent', 'selector': 'app-error-page'},{'name': 'ExploreContentComponent', 'selector': ''},{'name': 'ExploreCourseComponent', 'selector': ''},{'name': 'ExploreCurriculumCoursesComponent', 'selector': 'app-explore-curriculum-courses'},{'name': 'ExploreFtuPopupComponent', 'selector': 'app-explore-ftu-popup'},{'name': 'ExploreGroupComponent', 'selector': 'app-explore-group'},{'name': 'ExplorePageComponent', 'selector': 'app-explore-page-component'},{'name': 'FancyTreeComponent', 'selector': 'app-fancy-tree'},{'name': 'FaqComponent', 'selector': 'app-faq'},{'name': 'FaqReportComponent', 'selector': 'app-faq-report'},{'name': 'FilterComponent', 'selector': 'app-filter'},{'name': 'FlagConentplayerComponent', 'selector': 'app-flag-conentplayer'},{'name': 'FlaggedComponent', 'selector': 'app-flagged'},{'name': 'FlagReviewerComponent', 'selector': 'app-flag-reviewer'},{'name': 'ForumComponent', 'selector': 'app-forum'},{'name': 'FtuPopupComponent', 'selector': 'app-ftu-popup'},{'name': 'FullPageLoaderComponent', 'selector': 'app-full-page-loader'},{'name': 'FullPageModalComponent', 'selector': 'app-full-page-modal'},{'name': 'GenericEditorComponent', 'selector': 'app-generic-editor'},{'name': 'GetComponent', 'selector': 'app-get'},{'name': 'GlobalConsentPiiComponent', 'selector': 'app-global-consent-pii'},{'name': 'GlobalSearchFilterComponent', 'selector': 'app-global-search-filter'},{'name': 'GlobalSearchSelectedFilterComponent', 'selector': 'app-global-search-selected-filter'},{'name': 'GroupDetailsComponent', 'selector': 'app-group-details'},{'name': 'GroupHeaderComponent', 'selector': 'app-group-header'},{'name': 'GroupMembersComponent', 'selector': 'app-group-members'},{'name': 'GuestProfileComponent', 'selector': 'app-guest-profile'},{'name': 'HomeSearchComponent', 'selector': ''},{'name': 'IdentifyAccountComponent', 'selector': ''},{'name': 'InAppNotificationComponent', 'selector': 'app-in-app-notification'},{'name': 'InfoCardComponent', 'selector': 'app-info-card'},{'name': 'InstallAppComponent', 'selector': 'app-install-app'},{'name': 'LandingPageComponent', 'selector': 'app-landing-page'},{'name': 'LanguageDropdownComponent', 'selector': 'app-language-dropdown'},{'name': 'LibraryComponent', 'selector': 'app-library'},{'name': 'LimitedPublishedComponent', 'selector': 'app-limited-published'},{'name': 'ListAllReportsComponent', 'selector': 'app-list-all-reports'},{'name': 'LoadContentComponent', 'selector': 'app-load-content'},{'name': 'LoadOfflineContentComponent', 'selector': 'app-load-offline-content'},{'name': 'LocationSelectionComponent', 'selector': 'app-location-selection'},{'name': 'LockInfoPopupComponent', 'selector': 'app-contentlock-info-popup'},{'name': 'MainFooterComponent', 'selector': 'app-footer'},{'name': 'MainHeaderComponent', 'selector': 'app-header'},{'name': 'MainMenuComponent', 'selector': 'app-main-menu'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MaterialAutoCompleteComponent', 'selector': 'app-material-auto-complete'},{'name': 'MemberActionsComponent', 'selector': 'app-member-actions'},{'name': 'MergeAccountStatusComponent', 'selector': 'app-merge-account-status'},{'name': 'ModalWrapperComponent', 'selector': 'app-modal-wrapper'},{'name': 'MyGroupsComponent', 'selector': 'app-my-groups'},{'name': 'NetworkStatusComponent', 'selector': 'app-network-status'},{'name': 'NewCollectionEditorComponent', 'selector': 'app-new-collection-editor'},{'name': 'NoGroupResultComponent', 'selector': 'app-no-group-result'},{'name': 'NoResultComponent', 'selector': 'app-no-result-found'},{'name': 'NoResultComponent', 'selector': 'app-no-result'},{'name': 'ObservationDetailsComponent', 'selector': 'app-observation-details'},{'name': 'ObservationListingComponent', 'selector': 'app-observation-listing'},{'name': 'OfflineApplicationDownloadComponent', 'selector': 'app-offline-application-download'},{'name': 'OfflineBannerComponent', 'selector': 'app-offline-banner'},{'name': 'OfflineHelpVideosComponent', 'selector': 'app-offline-help-videos'},{'name': 'OnboardingPopupComponent', 'selector': 'app-onboarding-popup'},{'name': 'OnboardingUserSelectionComponent', 'selector': 'app-onboarding-user-selection'},{'name': 'OnDemandReportsComponent', 'selector': 'app-on-demand-reports'},{'name': 'OrganisationComponent', 'selector': 'app-organization'},{'name': 'OrganizationUploadComponent', 'selector': 'app-organization'},{'name': 'OtpComponent', 'selector': 'app-otp'},{'name': 'OtpPopupComponent', 'selector': 'app-otp-popup'},{'name': 'PageSectionComponent', 'selector': 'app-page-section'},{'name': 'PdFiltersComponent', 'selector': 'app-pd-filters'},{'name': 'PlayerComponent', 'selector': 'app-player'},{'name': 'PopupComponent', 'selector': 'app-modal'},{'name': 'ProfileBadgeComponent', 'selector': 'app-profile-badge'},{'name': 'ProfileFrameworkPopupComponent', 'selector': 'app-popup'},{'name': 'ProfilePageComponent', 'selector': ''},{'name': 'PublicBatchDetailsComponent', 'selector': 'app-public-batch-details'},{'name': 'PublicCourseConsumptionPageComponent', 'selector': ''},{'name': 'PublicCoursePlayerComponent', 'selector': 'app-public-course-player'},{'name': 'PublishedComponent', 'selector': 'app-published'},{'name': 'PublishedPopupComponent', 'selector': 'app-published-popup'},{'name': 'QrCodeModalComponent', 'selector': 'app-qr-code-modal'},{'name': 'QuestionnaireComponent', 'selector': 'app-questionnaire'},{'name': 'RecoverAccountComponent', 'selector': ''},{'name': 'RedirectComponent', 'selector': 'app-redirect'},{'name': 'ReIssueCertificateComponent', 'selector': 'app-re-issue-certificate'},{'name': 'ReportComponent', 'selector': 'app-report'},{'name': 'ReportSummaryComponent', 'selector': 'app-report-summary'},{'name': 'ReportViewComponent', 'selector': 'app-report-view'},{'name': 'RequestChangesPopupComponent', 'selector': 'app-request-changes-popup'},{'name': 'ReviewCommentsComponent', 'selector': 'app-review-comments'},{'name': 'ReviewSubmissionsComponent', 'selector': 'app-review-submissions'},{'name': 'ReviewsubmissionsContentplayerComponent', 'selector': 'app-reviewsubmissions-contentplayer'},{'name': 'SbBignumberComponent', 'selector': 'app-sb-bignumber'},{'name': 'SbChartComponent', 'selector': 'app-sb-chart'},{'name': 'SbDatatableComponent', 'selector': 'sb-datatable'},{'name': 'SbTableComponent', 'selector': 'app-sb-table'},{'name': 'SbTableComponent', 'selector': 'app-sb-table'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SearchFilterComponent', 'selector': 'app-search-filter'},{'name': 'SelectAccountIdentifierComponent', 'selector': ''},{'name': 'SelectOptionGroupComponent', 'selector': 'app-select-option-group'},{'name': 'SelectOrgComponent', 'selector': ''},{'name': 'ShareLinkComponent', 'selector': 'app-share-link'},{'name': 'SignupBasicInfoComponent', 'selector': 'app-signup-basic-info'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupEmailPasswordComponent', 'selector': 'app-signup-email-password'},{'name': 'SignupOnboardingInfoComponent', 'selector': 'app-signup-onboarding-info'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'SsoMergeConfirmationComponent', 'selector': 'app-sso-merge-confirmation'},{'name': 'StatusComponent', 'selector': 'app-status'},{'name': 'SubmissionsComponent', 'selector': 'submission'},{'name': 'SubmitTeacherDetailsComponent', 'selector': 'app-submit-teacher-details'},{'name': 'SvgEditorComponent', 'selector': 'app-svg-editor'},{'name': 'SystemWarningComponent', 'selector': 'app-system-warning'},{'name': 'TelemetryComponent', 'selector': 'app-telemetry'},{'name': 'TelemetryErrorModalComponent', 'selector': 'app-telemetry-error-modal'},{'name': 'TelemetryImportComponent', 'selector': 'app-telemetry-import'},{'name': 'TermsAndConditionsPopupComponent', 'selector': 'app-tnc-popup'},{'name': 'TopicPickerComponent', 'selector': 'app-topic-picker'},{'name': 'UciComponent', 'selector': 'app-uci'},{'name': 'UnEnrollBatchComponent', 'selector': 'app-unenroll-batch'},{'name': 'UpdateBatchComponent', 'selector': 'app-update-batch'},{'name': 'UpdateContactComponent', 'selector': ''},{'name': 'UpdateContactDetailsComponent', 'selector': 'app-update-contact-details'},{'name': 'UpdateCourseBatchComponent', 'selector': 'app-update-course-batch'},{'name': 'UpForReviewComponent', 'selector': 'app-up-for-review'},{'name': 'UpforreviewContentplayerComponent', 'selector': 'app-upforreview-contentplayer'},{'name': 'UpforReviewFilterComponent', 'selector': 'app-up-for-review-filter'},{'name': 'UploadedComponent', 'selector': 'app-uploaded'},{'name': 'UsageReportsComponent', 'selector': 'app-usage-reports'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserFilterComponent', 'selector': 'app-user-filter'},{'name': 'UserLocationComponent', 'selector': 'app-user-location'},{'name': 'UserOnboardingComponent', 'selector': 'app-user-onboarding'},{'name': 'UserOrgManagementComponent', 'selector': 'app-user-org-management'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserRoleAssignComponent', 'selector': 'app-user-role-assign'},{'name': 'UserSearchComponent', 'selector': 'app-user-search'},{'name': 'ValidateTeacherIdentifierPopupComponent', 'selector': 'app-validate-teacher-identifier-popup'},{'name': 'VerifyAccountIdentifierComponent', 'selector': ''},{'name': 'ViewAllComponent', 'selector': 'app-view-all'},{'name': 'ViewOrgTypeComponent', 'selector': 'app-view-org-type'},{'name': 'WorkspaceComponent', 'selector': 'app-workspace'},{'name': 'WorkspaceContentFilterComponent', 'selector': 'app-workspace-content-filter'},{'name': 'WorkspacesidebarComponent', 'selector': 'app-workspacesidebar'},{'name': 'YearOfBirthComponent', 'selector': 'app-year-of-birth'}];
+    var DIRECTIVES = [{'name': 'ActivityDashboardDirective', 'selector': '[appActivityDashboard]'},{'name': 'AddToGroupDirective', 'selector': '[appAddToGroup]'},{'name': 'BodyScrollDirective', 'selector': '[appBodyScroll]'},{'name': 'ComponentDeactivate', 'selector': ''},{'name': 'ContentDirectionDirective', 'selector': '[appContentDirection]'},{'name': 'DesktopOnlyDirective', 'selector': '[appDesktopOnly]'},{'name': 'HighlightTextDirective', 'selector': '[appHighlightText]'},{'name': 'MarkdownDirective', 'selector': '[appMarkdown]'},{'name': 'ModalContentDirective', 'selector': '[sbModalContent]'},{'name': 'OnlineOnlyDirective', 'selector': '[appOnlineOnly]'},{'name': 'PermissionDirective', 'selector': '[appPermission]'},{'name': 'TelemetryEndDirective', 'selector': '[appTelemetryEnd]'},{'name': 'TelemetryErrorDirective', 'selector': '[appTelemetryError]'},{'name': 'TelemetryEventsDirective', 'selector': '[telemetryEventsButton]'},{'name': 'TelemetryImpressionDirective', 'selector': '[appTelemetryImpression]'},{'name': 'TelemetryInteractDirective', 'selector': '[appTelemetryInteract]'},{'name': 'TelemetryShareDirective', 'selector': '[appTelemetryShare]'},{'name': 'TelemetryStartDirective', 'selector': '[appTelemetryStart]'}];
+    var ACTUAL_COMPONENT = {'name': 'OnboardingPopupComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'OnboardingPopupComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

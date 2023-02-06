@@ -254,8 +254,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="34"
-                            class="link-to-prism">src/app/modules/shared/services/window-scroll/window-scroll.service.ts:34</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/modules/shared/services/window-scroll/window-scroll.service.ts:36</a></div>
                 </td>
             </tr>
 
@@ -351,12 +351,14 @@ export class WindowScrollService {
 
   public elmYPosition(eID) {
     const elm: any &#x3D; document.getElementById(eID);
-    let y &#x3D; elm.offsetTop;
-    let node &#x3D; elm;
-    while (node.offsetParent &amp;&amp; node.offsetParent !&#x3D;&#x3D; document.body) {
-      node &#x3D; node.offsetParent;
-      y +&#x3D; node.offsetTop;
-    } return y;
+    if (elm) {
+      let y &#x3D; elm.offsetTop;
+      let node &#x3D; elm;
+      while (node.offsetParent &amp;&amp; node.offsetParent !&#x3D;&#x3D; document.body) {
+        node &#x3D; node.offsetParent;
+        y +&#x3D; node.offsetTop;
+      } return y;
+    }
   }
 
   public smoothScroll(eID, timeOut &#x3D; 0) {
